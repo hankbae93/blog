@@ -43,11 +43,21 @@ function generateMeta(dir) {
   index: {
     title: '홈',
     type: 'page',
-    display: 'hidden'
+    display: 'hidden',
+    theme: {
+      layout: 'full',
+      sidebar: false,
+      toc: false,
+      breadcrumb: false,
+      pagination: false,
+      footer: false,
+      copyPage: false,
+      timestamp: false,
+    },
   },
   insights: 'Insights',
   prd: 'PRD 문서',
-  persona: 'Persona'
+  persona: 'Persona',
 }
 `
     const metaPath = path.join(dirPath, '_meta.ts')
