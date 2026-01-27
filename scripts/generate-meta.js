@@ -33,27 +33,18 @@ function generateMeta(dir) {
     return
   }
 
-  const files = fs.readdirSync(dirPath)
-    .filter(f => (f.endsWith('.md') || f.endsWith('.mdx')) && !f.startsWith('_'))
+  const files = fs
+    .readdirSync(dirPath)
+    .filter(
+      (f) => (f.endsWith('.md') || f.endsWith('.mdx')) && !f.startsWith('_'),
+    )
     .sort((a, b) => b.localeCompare(a)) // 최신 순 정렬
 
   // content 루트는 특별 처리
   if (dir === 'content') {
     const meta = `export default {
   index: {
-    title: '홈',
-    type: 'page',
     display: 'hidden',
-    theme: {
-      layout: 'full',
-      sidebar: false,
-      toc: false,
-      breadcrumb: false,
-      pagination: false,
-      footer: false,
-      copyPage: false,
-      timestamp: false,
-    },
   },
   insights: 'Insights',
   prd: 'PRD 문서',
@@ -67,8 +58,8 @@ function generateMeta(dir) {
   }
 
   const entries = files
-    .filter(file => !file.startsWith('index.')) // index 파일은 별도 처리
-    .map(file => {
+    .filter((file) => !file.startsWith('index.')) // index 파일은 별도 처리
+    .map((file) => {
       const slug = file.replace(/\.(md|mdx)$/, '')
       const filePath = path.join(dirPath, file)
       const title = extractTitle(filePath) || slug
@@ -91,7 +82,7 @@ ${entries.join(',\n')}
 
 console.log('Generating _meta.ts files...\n')
 
-directories.forEach(dir => {
+directories.forEach((dir) => {
   generateMeta(dir)
 })
 

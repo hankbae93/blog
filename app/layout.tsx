@@ -51,7 +51,6 @@ export default async function RootLayout({
         <Layout
           pageMap={pageMap}
           navbar={<Navbar logo={logo} />}
-          footer={<Footer>Built with Claude Code</Footer>}
           sidebar={{ defaultMenuCollapseLevel: 1, toggleButton: true }}
           toc={{ float: true }}
           darkMode
