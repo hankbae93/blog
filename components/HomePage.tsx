@@ -11,7 +11,8 @@ export default function HomePage() {
           1인 개발자를 위한 아이디어 큐레이션
         </div>
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
-          "무엇을 만들까?"<br />
+          "무엇을 만들까?"
+          <br />
           <span className="bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent">
             더 이상 고민하지 마세요
           </span>
@@ -43,7 +44,8 @@ export default function HomePage() {
             이렇게 도움을 드려요
           </h2>
           <p className="text-center text-gray-600 dark:text-gray-400 mb-12 max-w-xl mx-auto">
-            AI 시대, 개발 허들은 낮아졌지만 "뭘 만들지"를 정하는 건 여전히 어렵습니다
+            AI 시대, 개발 허들은 낮아졌지만 "뭘 만들지"를 정하는 건 여전히
+            어렵습니다
           </p>
           <div className="grid md:grid-cols-3 gap-8">
             <FeatureCard
@@ -89,9 +91,13 @@ export default function HomePage() {
             안녕하세요!
           </h2>
           <p className="text-amber-800 dark:text-amber-200 text-lg leading-relaxed max-w-xl mx-auto mb-6">
-            <span className="font-semibold">4년차 풀스택 개발자</span>입니다.<br />
-            저도 여러분과 같은 1인 개발자로서, "다음에 뭘 만들지" 항상 고민합니다.<br />
-            그래서 직접 트렌드를 분석하고 아이디어를 정리하는 이 블로그를 시작했습니다.
+            <span className="font-semibold">4년차 풀스택 개발자</span>입니다.
+            <br />
+            저도 여러분과 같은 1인 개발자로서, "다음에 뭘 만들지" 항상
+            고민합니다.
+            <br />
+            그래서 직접 트렌드를 분석하고 아이디어를 정리하는 이 블로그를
+            시작했습니다.
           </p>
           <p className="text-amber-700 dark:text-amber-300 font-medium">
             혼자 고민하지 말고, 트렌드에서 힌트를 얻어보세요.
@@ -116,29 +122,28 @@ export default function HomePage() {
           </Link>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="px-6 py-8 border-t border-gray-200 dark:border-gray-700">
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-          <div className="flex items-center gap-2">
-            <img src="/assets/logo_circle.png" alt="Logo" className="w-6 h-6 rounded-full" />
-            <span className="text-gray-600 dark:text-gray-400">Blog</span>
-          </div>
-          <p className="text-gray-500 dark:text-gray-500 text-sm">
-            Built with Claude Code
-          </p>
-        </div>
-      </footer>
     </div>
   )
 }
 
-function FeatureCard({ icon, title, description }: { icon: string; title: string; description: string }) {
+function FeatureCard({
+  icon,
+  title,
+  description,
+}: {
+  icon: string
+  title: string
+  description: string
+}) {
   return (
     <div className="p-6 bg-gray-50 dark:bg-gray-800 rounded-2xl hover:shadow-lg transition">
       <div className="text-4xl mb-4">{icon}</div>
-      <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">{title}</h3>
-      <p className="text-gray-600 dark:text-gray-400 leading-relaxed">{description}</p>
+      <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+        {title}
+      </h3>
+      <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+        {description}
+      </p>
     </div>
   )
 }
@@ -146,7 +151,9 @@ function FeatureCard({ icon, title, description }: { icon: string; title: string
 function StatCard({ number, label }: { number: string; label: string }) {
   return (
     <div>
-      <div className="text-3xl md:text-4xl font-bold text-purple-600 dark:text-purple-400 mb-1">{number}</div>
+      <div className="text-3xl md:text-4xl font-bold text-purple-600 dark:text-purple-400 mb-1">
+        {number}
+      </div>
       <div className="text-gray-600 dark:text-gray-400 text-sm">{label}</div>
     </div>
   )
