@@ -1,0 +1,83 @@
+{
+  "sources": {
+    "product_hunt": {
+      "name": "Product Hunt",
+      "url": "https://www.producthunt.com/feed",
+      "type": "trending_products",
+      "enabled": true
+    },
+    "hacker_news": {
+      "name": "Hacker News",
+      "url": "https://news.ycombinator.com",
+      "type": "top_stories",
+      "enabled": true
+    },
+    "github_trending": {
+      "name": "GitHub Trending",
+      "url": "https://github.com/trending",
+      "type": "trending_repos",
+      "enabled": true
+    },
+    "geeknews": {
+      "name": "GeekNews (Hackers)",
+      "url": "https://news.hada.io",
+      "type": "top_stories",
+      "enabled": true
+    },
+    "dev_to": {
+      "name": "Dev.to",
+      "url": "https://dev.to/feed",
+      "type": "articles",
+      "enabled": true,
+      "note": "Reddit r/programming 대체"
+    },
+    "lobsters": {
+      "name": "Lobsters",
+      "url": "https://lobste.rs",
+      "type": "top_stories",
+      "enabled": true,
+      "note": "Reddit 대체 - 기술 커뮤니티"
+    },
+    "indie_hackers": {
+      "name": "Indie Hackers",
+      "url": "https://www.indiehackers.com",
+      "type": "trending_posts",
+      "enabled": true,
+      "note": "Reddit r/startups 대체"
+    },
+    "techcrunch": {
+      "name": "TechCrunch",
+      "url": "https://techcrunch.com/feed/",
+      "type": "startup_news",
+      "enabled": true,
+      "note": "스타트업 뉴스"
+    },
+    "youtube_trending": {
+      "name": "YouTube Trending (Tech)",
+      "type": "trending_videos",
+      "enabled": true,
+      "note": "YouTube Data API v3 - 기술/과학 카테고리 인기 영상",
+      "api_endpoint": "https://www.googleapis.com/youtube/v3/videos",
+      "params": {
+        "part": "snippet,statistics",
+        "chart": "mostPopular",
+        "regionCode": "KR",
+        "maxResults": 10,
+        "videoCategoryId": 28
+      }
+    }
+  },
+  "youtube_api": {
+    "api_key_env": "YOUTUBE_API_KEY",
+    "note": "YouTube Data API v3 Key - Set in .env.local or Vercel Environment Variables"
+  },
+  "collection": {
+    "max_items_per_source": 10,
+    "date_format": "YYYY-MM-DD"
+  },
+  "output": {
+    "sources_dir": "sources",
+    "insights_dir": "insights",
+    "prd_dir": "output"
+  }
+}

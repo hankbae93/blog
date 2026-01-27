@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 트랙 배지 */
+.badge-profit {
+  @apply bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-medium inline-block;
+}
+.badge-essence {
+  @apply bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-medium inline-block;
+}
+
+/* Nextra 테마 커스텀 */
+:root {
+  --nextra-primary-hue: 212deg;
+}
