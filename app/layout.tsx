@@ -2,33 +2,40 @@ import { Footer, Layout, Navbar } from 'nextra-theme-docs'
 import { Head } from 'nextra/components'
 import { getPageMap } from 'nextra/page-map'
 import '../styles/globals.css'
-import 'nextra-theme-docs/style.css'
 
 export const metadata = {
   title: {
     default: 'Blog',
-    template: '%s - Blog'
+    template: '%s - Blog',
   },
   description: '트렌드 데이터 기반 MVP 아이디어 도출 및 PRD 생성',
   openGraph: {
     type: 'article',
     siteName: 'Blog',
-    locale: 'ko_KR'
+    locale: 'ko_KR',
   },
   twitter: {
-    card: 'summary_large_image'
+    card: 'summary_large_image',
   },
-  robots: 'index, follow'
+  robots: 'index, follow',
 }
 
 const logo = (
   <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-    <img src="/assets/logo_circle.png" alt="Logo" style={{ width: '32px', height: '32px', borderRadius: '50%' }} />
+    <img
+      src="/assets/logo_circle.png"
+      alt="Logo"
+      style={{ width: '32px', height: '32px', borderRadius: '50%' }}
+    />
     <span style={{ fontWeight: 700, fontSize: '1.25rem' }}>Blog</span>
   </div>
 )
 
-export default async function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
   const pageMap = await getPageMap()
 
   return (
