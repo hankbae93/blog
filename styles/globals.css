@@ -1,6 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@variant dark (&:where(.dark, .dark *));
 
 /* 트랙 배지 */
 .badge-profit {

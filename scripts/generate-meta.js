@@ -5,10 +5,10 @@ const rootDir = process.cwd()
 
 // _meta.ts를 생성할 디렉토리들
 const directories = [
-  'pages',
-  'pages/insights',
-  'pages/prd',
-  'pages/persona',
+  'content',
+  'content/insights',
+  'content/prd',
+  'content/persona',
 ]
 
 function extractTitle(filePath) {
@@ -37,10 +37,14 @@ function generateMeta(dir) {
     .filter(f => (f.endsWith('.md') || f.endsWith('.mdx')) && !f.startsWith('_'))
     .sort((a, b) => b.localeCompare(a)) // 최신 순 정렬
 
-  // pages 루트는 특별 처리
-  if (dir === 'pages') {
+  // content 루트는 특별 처리
+  if (dir === 'content') {
     const meta = `export default {
-  index: '홈',
+  index: {
+    title: '홈',
+    type: 'page',
+    display: 'hidden'
+  },
   insights: 'Insights',
   prd: 'PRD 문서',
   persona: 'Persona'
