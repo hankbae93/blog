@@ -30,12 +30,78 @@
 ---
 
 ## 입력
-- `generated/sources/{YYYY-MM-DD}.json` 파일
+- `generated/sources/{YYYY-MM-DD}.json` 파일 (Deep Crawling 버전)
+
+### 입력 데이터 구조 (Deep Crawling)
+
+```json
+{
+  "collection_depth": "deep",
+  "deep_crawled_items": 32,
+
+  "product_hunt": {
+    "deep_crawled": [
+      {
+        "name": "...",
+        "deep_analysis": {
+          "problem_solved": "...",
+          "solution": "...",
+          "target_user": "...",
+          "pricing": "...",
+          "differentiator": "...",
+          "why_now": "...",
+          "weaknesses": "..."
+        }
+      }
+    ]
+  },
+
+  "cross_source_analysis": {
+    "converging_themes": [...],
+    "timing_factors": { "why_now": [...] }
+  }
+}
+```
+
+**핵심:** `deep_analysis` 필드와 `cross_source_analysis`를 적극 활용하여 피상적 분석을 피함
+
+---
 
 ## 분석 프레임워크
 
-### Step 1: 트렌드 클러스터링
-수집된 데이터에서 패턴을 찾되, **원천 기술**과 **응용 영역**을 구분:
+### Step 0: Deep Crawl 데이터 활용 (필수!)
+
+**반드시 `deep_analysis` 필드를 읽고 분석에 반영:**
+
+```
+✅ 좋은 분석:
+"Vibecoding 복귀 글의 deep_analysis에 따르면, 핵심 문제는
+'AI 코드 속도 이점이 디버깅 비용으로 상쇄됨'이며,
+이는 1-2년 AI 코딩 경험자들이 공통으로 겪는 문제다."
+
+❌ 나쁜 분석:
+"HN에서 Vibecoding 관련 글이 287 points를 받았다."
+(→ 타이틀과 숫자만 언급, 본질적 인사이트 없음)
+```
+
+**cross_source_analysis 활용:**
+- `converging_themes`: 여러 소스에서 동시 감지된 주제 → 강한 신호
+- `timing_factors.why_now`: 왜 지금인지에 대한 근거
+
+---
+
+### Step 1: 트렌드 클러스터링 (Deep Analysis 기반)
+
+수집된 데이터에서 패턴을 찾되, **deep_analysis의 인사이트**를 기반으로:
+
+| 분석 대상 | 활용 필드 | 추출할 인사이트 |
+|-----------|----------|----------------|
+| 문제/고충 | `core_problem`, `problem_solved` | 반복되는 문제 패턴 |
+| 타이밍 | `why_now`, `why_trending` | 왜 지금 뜨는가 |
+| Gap | `weaknesses`, `gaps_limitations` | 기존 솔루션의 약점 |
+| 기회 | `mvp_opportunity`, `integration_opportunities` | 직접적 기회 |
+
+**원천 기술**과 **응용 영역**을 구분:
 
 | 원천 기술 | 응용 가능 영역 |
 |-----------|----------------|
@@ -200,16 +266,18 @@ Task 도구:
 
 ---
 
-## 아이디어 작성 형식
+## 아이디어 작성 형식 (Deep Analysis 기반)
 
 ```markdown
 ### 💡 [아이디어 이름]
 
 **한 줄 요약:** [엘리베이터 피치]
 
-**영감 출처:** (최소 2개 소스 교차)
-- [소스1]: [관련 항목]
-- [소스2]: [관련 항목]
+**영감 출처:** (최소 2개 소스 교차, deep_analysis 인용 필수)
+- [소스1]: [항목명]
+  → deep_analysis 인사이트: "[core_problem 또는 key_insight 직접 인용]"
+- [소스2]: [항목명]
+  → deep_analysis 인사이트: "[관련 인사이트 직접 인용]"
 
 **Kill Zone 체크:** ✅ 통과 / ⚠️ 주의 필요
 - 주요 경쟁자: [있다면 누구, 왜 이길 수 있는지]

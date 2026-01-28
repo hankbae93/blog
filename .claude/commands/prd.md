@@ -33,9 +33,11 @@
 ```
 /prd (투 트랙)
   │
-  ├─▶ Step 1: /collect (리소스 수집)
-  │     └─▶ 9개 소스에서 최신 트렌드 수집
-  │     └─▶ generated/sources/{날짜}.json 저장
+  ├─▶ Step 1: /collect (Deep Crawling)
+  │     ├─▶ 1차: 9개 소스에서 타이틀 + URL 수집 (~80개)
+  │     ├─▶ 2차: 상위 32개 URL에 WebFetch로 본문 크롤링
+  │     ├─▶ 3차: Cross-source 분석 (공통 주제, 타이밍 요인)
+  │     └─▶ generated/sources/{날짜}.json 저장 (deep_analysis 포함)
   │
   ├─▶ Step 2: /analyze (인사이트 추출) - 투 트랙 병렬 실행
   │     ├─▶ 🧠 Essence Track
@@ -64,33 +66,57 @@
 
 ## 실행 지침
 
-### Step 1: 리소스 수집
+### Step 1: 리소스 수집 (Deep Crawling)
 
-다음 9개 소스에서 병렬로 데이터를 수집합니다:
+**2단계 수집 프로세스:**
 
-| 소스 | URL |
-|------|-----|
-| Product Hunt | https://www.producthunt.com/feed |
-| Hacker News | https://news.ycombinator.com |
-| GitHub Trending | https://github.com/trending |
-| GeekNews | https://news.hada.io |
-| Dev.to | https://dev.to/feed |
-| Lobsters | https://lobste.rs |
-| Indie Hackers | https://www.indiehackers.com |
-| TechCrunch | https://techcrunch.com/feed/ |
-| **YouTube Trending** | YouTube Data API v3 (config.json의 API 키 사용) |
+#### 1차 수집: Surface-level (병렬, ~30초)
+| 소스 | URL | 딥크롤 대상 |
+|------|-----|------------|
+| Product Hunt | https://www.producthunt.com/feed | 상위 5개 |
+| Hacker News | https://news.ycombinator.com | 상위 5개 |
+| GitHub Trending | https://github.com/trending | 상위 5개 |
+| GeekNews | https://news.hada.io | 상위 5개 |
+| Dev.to | https://dev.to | 상위 3개 |
+| Lobsters | https://lobste.rs | 상위 3개 |
+| Indie Hackers | https://www.indiehackers.com | 상위 3개 |
+| TechCrunch | https://techcrunch.com/feed/ | 상위 3개 |
+| YouTube | YouTube Data API v3 | 상위 5개 |
 
-WebFetch 또는 API를 사용하여 각 소스에서 최신 콘텐츠를 추출하고, `generated/sources/{YYYY-MM-DD}.json`에 저장합니다.
+#### 2차 수집: Deep Crawling (병렬, ~2-3분)
+상위 32개 URL에 WebFetch로 접근하여 본문 크롤링 + 맥락 추출:
+- `core_problem`: 어떤 문제를 다루는가
+- `key_insight`: 핵심 인사이트
+- `why_trending`: 왜 지금 뜨는가
+- `mvp_opportunity`: 어떤 기회가 있는가
+
+#### 3차: Cross-source 분석
+- `converging_themes`: 여러 소스에서 동시 감지된 주제
+- `timing_factors`: 왜 지금인지 근거
+
+→ `generated/sources/{YYYY-MM-DD}.json` 저장 (deep_analysis 포함)
 
 ### Step 2: 인사이트 추출 (투 트랙)
 
-수집된 데이터를 분석하여 MVP 아이디어를 도출합니다:
+**Deep Analysis 데이터를 적극 활용**하여 MVP 아이디어를 도출합니다:
 
-1. **트렌드 클러스터링** - 공통 키워드/주제 그룹화
+1. **Deep Analysis 기반 클러스터링**
+   - `deep_analysis.core_problem` 필드에서 반복되는 문제 패턴 식별
+   - `cross_source_analysis.converging_themes` 활용
+
 2. **Kill Zone 체크** - 대기업/기존 서비스와 경쟁 여부 확인
+   - `deep_analysis.weaknesses`에서 기존 솔루션 약점 확인
+
 3. **차별화 전략** - 니치/로컬/통합/가격/프라이버시 중 택1+
-4. **"왜 지금?" 분석** - 타이밍 근거
-5. **교차 조합** - 최소 2개 소스 트렌드 조합
+   - `deep_analysis.differentiator`와 `gaps_limitations` 참조
+
+4. **"왜 지금?" 분석**
+   - `deep_analysis.why_trending`, `why_now` 필드 활용
+   - `cross_source_analysis.timing_factors` 참조
+
+5. **교차 조합** - 최소 2개 소스의 deep_analysis 인사이트 조합
+   - 단순 타이틀 조합 ❌, 인사이트 조합 ✅
+
 6. **페르소나 평가 (서브에이전트)** - 선택된 트랙에 따라 실행
 
 #### 🧠 Essence Track 평가 기준
@@ -178,16 +204,29 @@ npm run sync && git add -A && git commit -m "Daily PRD update: {날짜}" && git 
                     PRD GENERATION WORKFLOW (DUAL TRACK)
 ═══════════════════════════════════════════════════════════════════════════════
 
-[Step 1/4] 📥 Collecting resources...
+[Step 1/4] 📥 Deep Crawling...
+
+  1차 Surface Collection:
   ✓ Product Hunt: 10 items
   ✓ Hacker News: 15 items
-  ✓ GitHub Trending: 9 items
+  ✓ GitHub Trending: 10 items
   ✓ GeekNews: 10 items
   ✓ Dev.to: 10 items
   ✓ Indie Hackers: 10 items
-  ✓ TechCrunch: 6 items
-  ✓ YouTube Trending (API v3): 10 items
-  → Saved: generated/sources/2026-01-26.json (80 items)
+  ✓ TechCrunch: 10 items
+  ✓ YouTube Trending: 10 items
+
+  2차 Deep Crawling (32 URLs):
+  ✓ [HN] "Vibecoding 2년 후 수동 코딩으로 복귀" - deep_analysis 완료
+  ✓ [PH] "Moltbot" - deep_analysis 완료
+  ✓ [GitHub] "supermemory" - deep_analysis 완료
+  ... (29 more)
+
+  3차 Cross-source Analysis:
+  ✓ Converging themes: 4개 감지
+  ✓ Timing factors: 3개 식별
+
+  → Saved: generated/sources/2026-01-26.json (80 items, 32 deep crawled)
 
 [Step 2/4] 🔍 Analyzing insights...
 
