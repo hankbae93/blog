@@ -1,320 +1,297 @@
 {
   "date": "2026-01-28",
-  "collected_at": "2026-01-28T09:55:00Z",
-  "deep_crawled_at": "2026-01-28T10:30:00Z",
-  "total_items": 76,
-  "deep_crawled_count": 10,
+  "collected_at": "2026-01-28T10:30:00Z",
+  "total_items": 58,
 
   "product_hunt": {
     "status": "success",
     "items": [
-      {"name": "Scout Out", "tagline": "AI generated proposals for residential construction projects", "url": "https://www.producthunt.com/products/scout-out-2"},
-      {"name": "Stacksync", "tagline": "The first AI-native Enterprise Integration Platform", "url": "https://www.producthunt.com/products/stacksync"},
-      {"name": "Donkey Support", "tagline": "Support your users through Discord/Telegram or Slack threads", "url": "https://www.producthunt.com/products/donkey-support"},
-      {"name": "Zenvault", "tagline": "One CLI to onboard any project instantly", "url": "https://www.producthunt.com/products/zenvault"},
-      {"name": "Trails", "tagline": "Automated insights from LLM agent runs", "url": "https://www.producthunt.com/products/trails-2"},
-      {"name": "ShapedQL", "tagline": "The SQL engine for search, feeds, and AI agents", "url": "https://www.producthunt.com/products/shaped"},
-      {"name": "Kilo Code Reviewer", "tagline": "Automatic AI-powered code reviews the moment you open a PR", "url": "https://www.producthunt.com/products/kilocode"},
-      {"name": "Trailward", "tagline": "Gamified micro-lessons that teach any topic in 90 seconds", "url": "https://www.producthunt.com/products/trailward"},
-      {"name": "GameCutAI", "tagline": "Turn game footage into viral highlights in seconds", "url": "https://www.producthunt.com/products/gamecutai"},
-      {"name": "Moltbot", "tagline": "The AI that actually does things", "url": "https://www.producthunt.com/products/clawdbot-2"}
+      {
+        "name": "Kilo Code Reviewer",
+        "tagline": "Automatic AI-powered code reviews the moment you open a PR",
+        "url": "https://www.producthunt.com/products/kilocode",
+        "votesCount": 568,
+        "commentsCount": 88,
+        "topics": ["Open Source", "Software Engineering", "Developer Tools", "GitHub"],
+        "thumbnail": "https://ph-files.imgix.net/1a41e8bf-2f29-42ee-8bce-d99357ebc0fb.gif?auto=format"
+      },
+      {
+        "name": "Moltbot",
+        "tagline": "The AI that actually does things",
+        "url": "https://www.producthunt.com/products/clawdbot-2",
+        "votesCount": 478,
+        "commentsCount": 26,
+        "topics": ["Open Source", "Developer Tools", "Artificial Intelligence", "GitHub"],
+        "thumbnail": "https://ph-files.imgix.net/a15ae988-f9b3-403f-b470-a5ef1d15162c.png?auto=format"
+      },
+      {
+        "name": "LobeHub",
+        "tagline": "Agent teammates that grow with you",
+        "url": "https://www.producthunt.com/products/lobehub",
+        "votesCount": 338,
+        "commentsCount": 56,
+        "topics": ["Productivity", "GitHub", "Maker Tools", "Marketing automation"],
+        "thumbnail": "https://ph-files.imgix.net/d91fc33b-29d2-4222-b0dc-977c6a78a670.png?auto=format"
+      },
+      {
+        "name": "Timeless",
+        "tagline": "Agents built from your conversations",
+        "url": "https://www.producthunt.com/products/timeos",
+        "votesCount": 232,
+        "commentsCount": 24,
+        "topics": ["Meetings", "Artificial Intelligence"],
+        "thumbnail": "https://ph-files.imgix.net/078f47db-70aa-48c6-aab1-8b5369c4fd31.png?auto=format"
+      },
+      {
+        "name": "ShapedQL",
+        "tagline": "The SQL engine for search, feeds, and AI agents",
+        "url": "https://www.producthunt.com/products/shaped",
+        "votesCount": 180,
+        "commentsCount": 21,
+        "topics": ["Software Engineering", "Developer Tools", "Artificial Intelligence"],
+        "thumbnail": "https://ph-files.imgix.net/8d7262f8-9277-4856-a3b1-3ab6c22a6582.png?auto=format"
+      },
+      {
+        "name": "Alfi",
+        "tagline": "Group chat app that remembers plans and helps you meet IRL",
+        "url": "https://www.producthunt.com/products/alfi",
+        "votesCount": 174,
+        "commentsCount": 14,
+        "topics": ["Messaging", "Social Network", "Artificial Intelligence"],
+        "thumbnail": "https://ph-files.imgix.net/113b0380-9052-407e-bd06-37f2c7767a7b.png?auto=format"
+      },
+      {
+        "name": "CapslockMute",
+        "tagline": "The fastest way to mute yourself on video calls",
+        "url": "https://www.producthunt.com/products/capslockmute",
+        "votesCount": 160,
+        "commentsCount": 30,
+        "topics": ["Mac", "Productivity", "GitHub", "Menu Bar Apps"],
+        "thumbnail": "https://ph-files.imgix.net/d503d1c4-1938-456b-99d2-310423276aea.png?auto=format"
+      },
+      {
+        "name": "Analog Reader",
+        "tagline": "turn your favorite newsletters into a printable newspaper",
+        "url": "https://www.producthunt.com/products/analog-reader",
+        "votesCount": 139,
+        "commentsCount": 14,
+        "topics": ["News", "User Experience", "Social Media"],
+        "thumbnail": "https://ph-files.imgix.net/1afaebdd-5ce8-4599-afc3-a423ab3c5c7a.svg?auto=format"
+      },
+      {
+        "name": "Jotform AI Chatbot for Canva",
+        "tagline": "Bring Canva designs to life with an embedded AI chatbot",
+        "url": "https://www.producthunt.com/products/jotform",
+        "votesCount": 126,
+        "commentsCount": 3,
+        "topics": ["Design Tools", "Productivity", "Artificial Intelligence"],
+        "thumbnail": "https://ph-files.imgix.net/8026fb84-be38-481a-90f4-c506464e8cd3.gif?auto=format"
+      },
+      {
+        "name": "Runo 2.0",
+        "tagline": "Metronome app that keeps your running cadence steady",
+        "url": "https://www.producthunt.com/products/runo-the-metronome-for-runners",
+        "votesCount": 122,
+        "commentsCount": 10,
+        "topics": ["Health & Fitness", "Health", "Running"],
+        "thumbnail": "https://ph-files.imgix.net/96d24bc4-cd28-48c4-a06f-e2129f7a905d.webp?auto=format"
+      }
     ]
   },
 
   "hacker_news": {
     "status": "success",
     "items": [
-      {"title": "Prism", "points": 393, "comments": 232, "url": "https://openai.com/index/introducing-prism"},
-      {"title": "Rust's Standard Library on the GPU", "points": 51, "comments": 5, "url": "https://www.vectorware.com/blog/rust-std-on-gpu/"},
-      {"title": "430k-year-old well-preserved wooden tools are the oldest ever found", "points": 335, "comments": 190, "url": "https://www.nytimes.com/2026/01/26/science/archaeology-neanderthals-tools.html"},
-      {"title": "A few random notes from Claude coding quite a bit last few weeks", "points": 287, "comments": 318, "url": "https://twitter.com/karpathy/status/2015883857489522876"},
-      {"title": "Time Station Emulator", "points": 79, "comments": 17, "url": "https://github.com/kangtastic/timestation"},
-      {"title": "Lennart Poettering, Christian Brauner founded a new company", "points": 215, "comments": 275, "url": "https://amutable.com/about"},
-      {"title": "Try text scaling support in Chrome Canary", "points": 61, "comments": 14, "url": "https://www.joshtumath.uk/posts/2026-01-27-try-text-scaling-support-in-chrome-canary/"},
-      {"title": "Doing the thing is doing the thing", "points": 195, "comments": 76, "url": "https://www.softwaredesign.ing/blog/doing-the-thing-is-doing-the-thing"},
-      {"title": "SoundCloud Data Breach Now on HaveIBeenPwned", "points": 141, "comments": 73, "url": "https://haveibeenpwned.com/Breach/SoundCloud"},
-      {"title": "Show HN: I wrapped the Zorks with an LLM", "points": 65, "comments": 38, "url": "https://infocom.tambo.co/"}
+      {
+        "title": "Prism",
+        "url": "https://openai.com/index/introducing-prism",
+        "points": 516,
+        "comments": 300,
+        "category": "ai",
+        "relevance_to_indie": "high",
+        "key_insight": "New AI capabilities may create opportunities for indie builders to develop novel applications."
+      },
+      {
+        "title": "A few random notes from Claude coding quite a bit last few weeks",
+        "url": "https://twitter.com/karpathy/status/2015883857489522876",
+        "points": 398,
+        "comments": 389,
+        "category": "discussion",
+        "relevance_to_indie": "high",
+        "key_insight": "Developer insights on AI-assisted coding workflows that indie developers can leverage."
+      },
+      {
+        "title": "Doing the thing is doing the thing",
+        "url": "https://www.softwaredesign.ing/blog/doing-the-thing-is-doing-the-thing",
+        "points": 285,
+        "comments": 98,
+        "category": "discussion",
+        "relevance_to_indie": "high",
+        "key_insight": "Philosophy on execution resonates with indie developers balancing perfectionism and shipping."
+      },
+      {
+        "title": "Show HN: One Human + One Agent = One Browser From Scratch in 20K LOC",
+        "url": "https://emsh.cat/one-human-one-agent-one-browser/",
+        "points": 178,
+        "comments": 90,
+        "category": "tools",
+        "relevance_to_indie": "high",
+        "key_insight": "AI-assisted development enables indie builders to tackle ambitious projects previously requiring teams."
+      },
+      {
+        "title": "AI2: Open Coding Agents",
+        "url": "https://allenai.org/blog/open-coding-agents",
+        "points": 146,
+        "comments": 19,
+        "category": "ai",
+        "relevance_to_indie": "high",
+        "key_insight": "Open coding agents accelerate development workflows, enabling solo developers to ship faster."
+      },
+      {
+        "title": "AI found 12 vulnerabilities in OpenSSL",
+        "url": "https://aisle.com/blog/aisle-discovered-12-out-of-12-openssl-vulnerabilities",
+        "points": 95,
+        "comments": 59,
+        "category": "technical",
+        "relevance_to_indie": "high",
+        "key_insight": "AI-powered security analysis could help solo developers audit their own code dependencies."
+      }
     ]
   },
 
   "github_trending": {
     "status": "success",
     "items": [
-      {"repo": "badlogic/pi-mono", "description": "AI agent toolkit: coding agent CLI, unified LLM API, TUI & web UI libraries", "language": "TypeScript", "stars": 2714},
-      {"repo": "supermemoryai/supermemory", "description": "Memory engine and app that is extremely fast, scalable. The Memory API for the AI era", "language": "TypeScript", "stars": 15561},
-      {"repo": "Blaizzy/mlx-audio", "description": "Text-to-speech, speech-to-text and speech-to-speech library built on Apple's MLX framework", "language": "Python", "stars": 5434},
-      {"repo": "Free-TV/IPTV", "description": "M3U Playlist for free TV channels", "language": "Python", "stars": 12551},
-      {"repo": "hashicorp/vault", "description": "Tool for secrets management, encryption as a service, and privileged access management", "language": "Go", "stars": 34105},
-      {"repo": "Shubhamsaboo/awesome-llm-apps", "description": "Collection of awesome LLM apps with AI Agents and RAG using OpenAI, Anthropic, Gemini", "language": "Python", "stars": 90161}
+      {
+        "repo": "supermemoryai/supermemory",
+        "description": "Memory engine and app that is extremely fast, scalable. The Memory API for the AI era.",
+        "language": "TypeScript",
+        "stars": 15663,
+        "stars_today": 435
+      },
+      {
+        "repo": "Blaizzy/mlx-audio",
+        "description": "Text-to-speech, speech-to-text and speech-to-speech library built on Apple's MLX framework",
+        "language": "Python",
+        "stars": 5483,
+        "stars_today": 458
+      },
+      {
+        "repo": "badlogic/pi-mono",
+        "description": "AI agent toolkit: coding agent CLI, unified LLM API, TUI & web UI libraries, Slack bot, vLLM pods",
+        "language": "TypeScript",
+        "stars": 2805,
+        "stars_today": 118
+      },
+      {
+        "repo": "Shubhamsaboo/awesome-llm-apps",
+        "description": "Collection of awesome LLM apps with AI Agents and RAG using OpenAI, Anthropic, Gemini",
+        "language": "Python",
+        "stars": 90317,
+        "stars_today": 294
+      }
     ]
   },
 
   "geeknews": {
     "status": "success",
     "items": [
-      {"title": "2년간의 'vibecoding'을 끝내고 다시 손으로 코드를 쓰기 시작했다", "url": "https://atmoio.substack.com/p/after-two-years-of-vibecoding-im", "summary": "AI 코딩 도구에 의존한 후 일관성과 구조적 완전성 문제로 수동 코딩으로 복귀"},
-      {"title": "Moltbot - 모든 OS와 플랫폼에서 작동하는 개인용 AI 비서", "url": "https://clawd.bot/", "summary": "쉘과 파일시스템 접근이 가능한 LLM 기반 에이전트, 이메일 관리 및 캘린더 조정 자동화"},
-      {"title": "소프트웨어 엔지니어링의 미래는 SRE다", "url": "https://swizec.com/blog/the-future-of-software-engineering-is-sre/", "summary": "에이전트 코딩 시대에도 SW 엔지니어 수요는 증가, 코드 작성에서 서비스 운영 전문성으로 초점 이동"},
-      {"title": "구글 클라우드, 공식적으로 요금 인상 발표", "url": "https://cloud.google.com/consulting/cloud-cdn-interconnect-peering-pricing", "summary": "2026년 5월 1일부터 CDN Interconnect, Direct Peering, Carrier Peering 서비스 가격 조정"},
-      {"title": "MapLibre Tile 공개 - 현대적이고 효율적인 벡터 타일 포맷", "url": "https://maplibre.org/news/2026-01-23-mlt-release/", "summary": "Mapbox Vector Tile 후속 차세대 벡터 포맷, 대규모 지리공간 데이터 처리 효율성 향상"},
-      {"title": "Andrej Karpathy의 최근 Claude 코딩 경험에 대한 단상", "url": "https://x.com/karpathy/status/2015883857489522876", "summary": "11월-12월 사이 수동 작업 80%에서 에이전트 코딩 80%로 워크플로우 전환"},
-      {"title": "Show GN: MCP Server 설정 파일 변환기", "url": "https://mcpuniv.lovable.app/", "summary": "여러 AI 코드 에디터 간 MCP 서버 설정 파일 변환 도구"},
-      {"title": "OpenWork - OpenCode 기반의 Claude Cowork 대체제", "url": "https://github.com/different-ai/openwork", "summary": "지식 노동자 워크플로우 자동화를 위한 확장 가능한 오픈소스 시스템"},
-      {"title": "Show GN: 복지 혜택 조회부터 직업훈련, 사업지원 AI 도우미", "url": "https://modubokji.com/", "summary": "복지 혜택, 직업훈련, 사업지원 프로그램 탐색을 돕는 AI 어시스턴트 플랫폼"},
-      {"title": "Ralph - 모든 PRD 항목이 완료될 때까지 반복 실행되는 자율형 AI 에이전트", "url": "https://github.com/snarktank/ralph", "summary": "PRD 기반 개발 자동화를 위한 자율 AI 루프 에이전트, Amp CLI와 jq 활용"}
+      {
+        "title": "Andrej Karpathy의 최근 몇 주간 Claude 코딩 경험에 대한 단상",
+        "url": "https://x.com/karpathy/status/2015883857489522876",
+        "summary": "코딩 워크플로우가 11월 80% 수동에서 12월 80% 에이전틱으로 드라마틱하게 변화"
+      },
+      {
+        "title": "Postgres 베스트 프랙티스를 AI 에이전트에 직접 가르치는 Agent Skills 공개",
+        "url": "https://supabase.com/blog/postgres-best-practices-for-ai-agents",
+        "summary": "Supabase가 AI 코딩 에이전트의 PostgreSQL 처리 개선을 위해 Agent Skills 도입"
+      },
+      {
+        "title": "Claude 안에서 바로 쓰는 인터랙티브 도구들",
+        "url": "https://claude.com/blog/interactive-tools-in-claude",
+        "summary": "Anthropic이 Claude 채팅 인터페이스 내에서 Slack, Figma 등 직접 사용 가능한 인터랙티브 도구 발표"
+      },
+      {
+        "title": "OpenAI, 논문 작성 및 협업 도구 Prism 공개",
+        "url": "https://openai.com/ko-KR/index/introducing-prism/",
+        "summary": "OpenAI가 GPT-5.2 기반 무료 AI 워크스페이스 Prism 출시, 과학/수학 추론 특화"
+      },
+      {
+        "title": "2년간의 'vibecoding'을 끝내고 다시 손으로 코드를 쓰기 시작했다",
+        "url": "https://atmoio.substack.com/p/after-two-years-of-vibecoding-im",
+        "summary": "AI 도구에 의존 후 수동 코딩으로 복귀한 개발자의 회고"
+      }
     ]
-  },
-
-  "dev_to": {
-    "status": "success",
-    "items": [
-      {"title": "We're Creating a Knowledge Collapse and No One's Talking About It", "author": "Daniel Nwaneri", "tags": ["discuss", "ai", "webdev", "career"]},
-      {"title": "Top 7 Featured DEV Posts of the Week", "author": "Jess Lee", "tags": ["discuss", "top7"]},
-      {"title": "Rewriting My First NUnit API Tests: Cleaner, Faster, Better", "author": "Alicia Marianne", "tags": ["api", "csharp", "automation", "testing"]},
-      {"title": "GitHub Copilot CLI Challenge: The Linux Compass", "author": "Maame Afua A. P. Fordjour", "tags": ["devchallenge", "githubchallenge", "cli", "githubcopilot"]},
-      {"title": "Introducing klag: The Kafka Lag Exporter I Always Wanted", "author": "A.D.", "tags": ["kafka", "monitoring"]},
-      {"title": "Building Real-Time Log Streaming with PostgreSQL LISTEN/NOTIFY", "author": "Polliog", "tags": ["postgres", "node", "programming", "webdev"]},
-      {"title": "If It's Not Accessible, It's Not Design", "author": "Tetiana Rachynska", "tags": ["a11y", "ux", "webdev", "design"]},
-      {"title": "Godot 4 in Practice", "author": "Richard Pascoe", "tags": ["discuss", "godot", "gamedev", "opensource"]},
-      {"title": "New Year, New You Portfolio Challenge", "author": "Ehsan Pourhadi", "tags": ["devchallenge", "googleaichallenge", "portfolio", "gemini"]},
-      {"title": "Meme Monday", "author": "Ben Halpern", "tags": ["discuss", "jokes", "watercooler"]}
-    ]
-  },
-
-  "lobsters": {
-    "status": "failed",
-    "error": "Rate limited (429)"
   },
 
   "indie_hackers": {
     "status": "success",
     "items": [
-      {"title": "From building client websites to launching my own SaaS", "description": "GA4 신뢰성 문제로 자체 제품 전환"},
-      {"title": "Building an app portfolio to $60k/mo after Apple froze his developer account", "description": "계정 정지 후 다중 앱 비즈니스로 회복"},
-      {"title": "Bazzly: How to win at SEO with Reddit", "description": "블로그 없이 Reddit으로 SEO 승리하는 비정통적 접근"},
-      {"title": "Clone The App: 14 validated app ideas at $10K+ MRR", "description": "검증된 앱 아이디어 데이터베이스 큐레이션"},
-      {"title": "SearchCans: $0.56 alternative to SerpApi ($10/1k)", "description": "비용 효율적인 API 대안 개발"},
-      {"title": "Everyone is Using AI for Vibe Coding, but What You Really Need is Vibe UX", "description": "AI 개발보다 UX 디자인이 더 중요"},
-      {"title": "From open-source donations to $13k MRR product", "description": "오픈소스 프로젝트 수익화"},
-      {"title": "Building a product in 20 hours and growing it to a 5-figure ARR", "description": "빠른 제품 개발과 5자릿수 ARR 성장"},
-      {"title": "Taking the leap and building a 6-figure-ARR portfolio", "description": "10년 만의 복귀로 6자릿수 ARR 달성"},
-      {"title": "Validating via services before building a $27k MRR product", "description": "서비스 검증 후 제품화로 $27k MRR"}
+      {
+        "title": "Building an app portfolio to $60k/mo after Apple froze his developer account",
+        "url": "https://www.indiehackers.com/post/tech/building-an-app-portfolio-to-60k-mo-after-apple-froze-his-developer-account-LD7oNYzKSmWucRfKV1AO",
+        "revenue": "$60k MRR",
+        "strategy": "app portfolio diversification"
+      },
+      {
+        "title": "From open-source donations to $13k MRR product",
+        "url": "https://www.indiehackers.com/post/tech/from-open-source-donations-to-13k-mrr-product-rl7FbRceFPj4ZvI0nGoV",
+        "revenue": "$13k MRR",
+        "strategy": "open-source monetization"
+      },
+      {
+        "title": "Building a product in 20 hours and growing it to a 5-figure ARR",
+        "url": "https://www.indiehackers.com/post/tech/building-a-product-in-20-hours-and-growing-it-to-a-5-figure-arr-p1fyDKtYj5HMItJxV87H",
+        "revenue": "5-figure ARR",
+        "build_time": "20 hours",
+        "strategy": "rapid SaaS launch"
+      },
+      {
+        "title": "Validating via services before building a $27k MRR product",
+        "url": "https://www.indiehackers.com/post/tech/validating-via-services-before-building-a-27k-mrr-product-7FrT6FXChPOiUK4PbXFp",
+        "revenue": "$27k MRR",
+        "strategy": "services-to-product transition"
+      },
+      {
+        "title": "Hitting $10k MRR in six weeks with an AI design tool",
+        "url": "https://www.indiehackers.com/post/tech/hitting-10k-mrr-in-six-weeks-with-an-ai-design-tool-pEvmU5qkWS6ny0AR9SUv",
+        "revenue": "$10k MRR",
+        "build_time": "3 weeks",
+        "strategy": "AI-powered design tool"
+      }
     ]
   },
 
-  "techcrunch": {
+  "devto": {
     "status": "success",
     "items": [
-      {"title": "Everything you need to know about viral personal AI assistant Clawdbot (now Moltbot)", "summary": "몇 주 만에 바이럴된 개인 AI 어시스턴트"},
-      {"title": "Fashion rental app By Rotation and Uber partner to deliver ski clothing", "summary": "P2P 의류 렌탈 플랫폼과 우버의 배달 파트너십"},
-      {"title": "Anduril has invented a wild new drone-flying contest where jobs are the prize", "summary": "자율 항공기 프로그래밍 대회, 상금 대신 취업 기회"},
-      {"title": "Anthropic reportedly upped its latest raise to $20B", "summary": "AI 안전 회사 $300B+ 기업가치로 $20B 펀딩"},
-      {"title": "Risotto raises $10M seed to use AI to make ticketing systems easier", "summary": "AI 기반 헬프데스크 플랫폼 시드 펀딩"},
-      {"title": "OpenAI launches Prism, a new AI workspace for scientists", "summary": "연구자를 위한 과학 연구 도구"},
-      {"title": "Google's more affordable AI Plus plan rolls out to all markets", "summary": "$7.99/월 AI 구독 글로벌 출시"},
-      {"title": "TikTok joins Snap to settle social media addiction lawsuit", "summary": "습관 형성 디자인 관련 법적 분쟁 해결"},
-      {"title": "Amazon agrees to pay consumers $309M in returns policy settlement", "summary": "반품 정책 관련 집단소송 합의"},
-      {"title": "Amazon is closing its physical Amazon Go and Amazon Fresh stores", "summary": "무인 편의점 및 Fresh 매장 폐쇄, 임대비용 문제"}
+      {
+        "title": "We're Creating a Knowledge Collapse and No One's Talking About It",
+        "author": "Daniel Nwaneri",
+        "tags": ["discuss", "ai", "webdev", "career"],
+        "reactions": 80
+      },
+      {
+        "title": "Has anyone actually shipped a free offline mobile LLM?",
+        "author": "ujja",
+        "tags": ["discuss", "ai", "mcp", "mobile"],
+        "reactions": 16
+      }
     ]
   },
 
   "youtube_trending": {
     "status": "success",
-    "region": "KR",
-    "category": "Science & Technology (28)",
-    "items": [
-      {"title": "미로 전원버튼 꼼수 완벽 차단!!", "channel": "Mr.아재", "views": 1006484, "tags": ["DIY", "만들기", "3D프린터"]},
-      {"title": "핸드폰만 달라고 했는데, 여기엔 한시간을 집중하네요", "channel": "템노트", "views": 1229320},
-      {"title": "대박..10년차 갤럭시 유저도 몰랐던 숨겨진 꿀팁 2가지", "channel": "1분미만", "views": 431860, "tags": ["꿀팁"]},
-      {"title": "지금 세대가 보면 어색한 스마트폰 대중화 직전의 오프라인 일상", "channel": "과거로간튜브", "views": 2556913, "tags": ["2000년대", "스마트폰", "오프라인"]},
-      {"title": "100kg 키보드 사온 MZ신입사원", "channel": "뭥데", "views": 1971378},
-      {"title": "가로등 전구 하나 갈려다 본체까지 뽑았습니다", "channel": "지식북", "views": 421239},
-      {"title": "1월 26일부터, 보조배터리는 애물단지 됩니다!", "channel": "키빛", "views": 224222, "tags": ["보조배터리", "비행기", "해외여행"]},
-      {"title": "모발 이식 하듯 CPU다리 레이저로 이식해보기", "channel": "복구천재 꼬마신발", "views": 147403, "tags": ["CPU", "수리"]},
-      {"title": "A genius technique to securely hold a car battery cable", "channel": "Tool Hacks Daily", "views": 7675884, "tags": ["tips"]},
-      {"title": "드디어 돈값하는 윈도우 근황..ㄷㄷ", "channel": "꿀무새", "views": 894344, "tags": ["꿀팁", "윈도우", "컴퓨터"]}
-    ]
-  },
-
-  "deep_crawled": [
-    {
-      "url": "https://atmoio.substack.com/p/after-two-years-of-vibecoding-im",
-      "source": "geeknews",
-      "title": "2년간의 vibecoding을 끝내고 다시 손으로 코드를 쓰기 시작했다",
-      "deep_analysis": {
-        "core_problem": "AI-assisted coding produces code that looks good in isolation but accumulates technical debt and lacks structural integrity across the full codebase",
-        "key_insight": "AI agents tell compelling stories through incremental improvements, but lack the holistic perspective needed for maintainable systems - like writing a novel where paragraphs make sense but chapters don't cohere",
-        "why_trending": "Challenges prevailing AI optimism with mature, grounded perspective from someone who tried at scale and retreated",
-        "target_audience": "Software engineers, engineering leaders, developers suffering from AI-generated technical debt",
-        "mvp_opportunity": "Code audit and refactoring service that identifies AI-generated technical debt patterns, or tooling that enforces architectural consistency",
-        "key_quotes": [
-          "Agents write units of changes that look good in isolation. They are consistent with themselves and your prompt. But respect for the whole, there is not.",
-          "I'm faster, more accurate, more creative, more productive when you price everything in, not just code tokens per hour."
-        ],
-        "related_trends": ["Technical debt accumulation", "Limits of specification-driven development", "Developer skill atrophy", "AI capabilities reevaluation"]
-      }
-    },
-    {
-      "url": "https://swizec.com/blog/the-future-of-software-engineering-is-sre/",
-      "source": "geeknews",
-      "title": "소프트웨어 엔지니어링의 미래는 SRE다",
-      "deep_analysis": {
-        "core_problem": "Misconception that cheap code generation will eliminate software engineering jobs - the real bottleneck is keeping systems reliable at scale",
-        "key_insight": "Writing code was always the easy part. The hard part was keeping your code running. SRE skills become the differentiator as code generation becomes commoditized",
-        "why_trending": "AI agents and no-code tools proliferating, but maintaining production systems and ensuring reliability is where real engineering value emerges",
-        "target_audience": "Engineers concerned about AI job displacement, engineering leaders, early-career developers choosing specializations",
-        "mvp_opportunity": "SRE-as-a-Service platform: managed services for proactive monitoring, incident response for startups without dedicated SRE teams",
-        "key_quotes": [
-          "People don't buy software, they hire a service",
-          "It's the other 190% that matters - the 10% effort to reach demo-ready versus the 190% effort for production reliability"
-        ],
-        "related_trends": ["AI/LLM commoditization", "DevOps/SRE role growth", "Shift from shipping fast to shipping reliably", "Platform engineering emergence"]
-      }
-    },
-    {
-      "url": "https://github.com/badlogic/pi-mono",
-      "source": "github_trending",
-      "title": "pi-mono: AI agent toolkit",
-      "deep_analysis": {
-        "core_problem": "Developers lack unified tooling for building AI agents and managing LLM deployments across multiple providers without vendor lock-in",
-        "key_insight": "Monorepo bundles complementary components—unified LLM API to terminal UI—enabling composition without piecing together disparate tools",
-        "why_trending": "AI agent adoption accelerating at the inflection point where teams need production-ready infrastructure beyond basic API wrappers",
-        "target_audience": "Full-stack developers building AI features, DevOps managing LLM infrastructure, teams seeking multi-provider abstraction",
-        "technical_stack": "TypeScript (96.2%), npm workspaces monorepo, Node.js CLI, vLLM deployment",
-        "mvp_opportunity": "Pre-built agent templates, visual node-based agent builder, SaaS hosting platform for deployed agents",
-        "key_features": ["Unified multi-provider LLM API", "Interactive CLI coding agent", "Terminal UI library", "Slack bot integration", "Web components for chat"]
-      }
-    },
-    {
-      "url": "https://github.com/supermemoryai/supermemory",
-      "source": "github_trending",
-      "title": "supermemory: Memory API for the AI era",
-      "deep_analysis": {
-        "core_problem": "Users struggle to save, organize, and retrieve information from diverse sources. Information scattered across tools becomes inaccessible to AI systems",
-        "key_insight": "Unified memory layer integrating with existing AI tools (Claude, Cursor) via MCP protocol, allowing AI systems to access curated knowledge bases contextually",
-        "why_trending": "AI tools proliferate but lack persistent user context. As AI agents become agentic, they need access to personal knowledge—Supermemory bridges this gap",
-        "target_audience": "AI power users and developers, knowledge workers, teams building AI applications requiring context awareness",
-        "technical_stack": "TypeScript, Remix, PostgreSQL, Cloudflare Workers, MCP integration",
-        "mvp_opportunity": "Specialized memory layers for domains (legal, medical), team collaboration features, custom AI agents pre-trained on organization knowledge",
-        "key_features": ["Save from URLs, PDFs, plain text", "Natural language chat", "MCP integration for Claude/Cursor", "Browser extension", "Self-hosting capabilities"]
-      }
-    },
-    {
-      "url": "https://clawd.bot/",
-      "source": "geeknews",
-      "title": "Moltbot: 개인용 AI 비서",
-      "deep_analysis": {
-        "core_problem": "Existing AI tools are chat-based only—they don't manage calendars, send emails, control smart home devices without constant prompting",
-        "key_insight": "Runs locally with full system access, persistent memory, and multi-channel chat integration. Unlike cloud assistants, it's hackable and self-improving",
-        "why_trending": "Claude's capabilities enable agents that work; open-source momentum vs corporate AI walled gardens; users want control over their infrastructure",
-        "target_audience": "Power users seeking autonomy, anyone frustrated with Siri/Google Assistant limitations, developers",
-        "mvp_opportunity": "AI task broker with simplified UI, skill marketplace with audited templates, mobile-first wrapper",
-        "key_features": ["Multi-OS support", "Shell and filesystem access", "Multi-app chat (WhatsApp, Telegram, Discord)", "50+ integrations", "Community-built skills", "Self-extension capabilities"]
-      }
-    },
-    {
-      "url": "https://www.softwaredesign.ing/blog/doing-the-thing-is-doing-the-thing",
-      "source": "hacker_news",
-      "title": "Doing the thing is doing the thing",
-      "deep_analysis": {
-        "core_problem": "Analysis paralysis—the gap between contemplating action and actually executing. Mental substitutes people use instead of concrete steps",
-        "key_insight": "Imperfect action beats perfect preparation. Failing, doing badly, or doing incompletely still counts as progress; planning and research do not",
-        "why_trending": "Resonates in era of content saturation where people consume endless productivity advice without shipping. Counterculture to optimization obsession",
-        "target_audience": "Aspiring creators and entrepreneurs stuck in planning loops, knowledge workers overwhelmed by self-improvement content",
-        "mvp_opportunity": "'Done Over Perfect' accountability platform tracking small imperfect actions, or browser extension blocking productivity content",
-        "key_quotes": [
-          "Thinking about doing the thing is not doing the thing...Failing while doing the thing IS doing the thing.",
-          "Writing a blog about doing the thing is not doing the thing."
-        ],
-        "related_trends": ["Anti-productivity movement", "Ship-fast mentality", "Rejection of infinite content consumption"]
-      }
-    },
-    {
-      "url": "https://github.com/Blaizzy/mlx-audio",
-      "source": "github_trending",
-      "title": "mlx-audio: Apple Silicon speech AI",
-      "deep_analysis": {
-        "core_problem": "Running speech AI models efficiently on consumer hardware. Traditional solutions require cloud APIs or significant computational resources",
-        "key_insight": "Optimization for Apple Silicon via MLX framework achieving fast inference while supporting multiple model architectures—rare combination for local speech processing",
-        "why_trending": "M4 Macs mainstream; privacy concerns driving local-first AI; recent models (Kokoro, Qwen3-TTS) only recently optimized for MLX",
-        "target_audience": "macOS/iOS developers, privacy-conscious enterprises, ML researchers, indie developers wanting accessible TTS/STT",
-        "technical_stack": "Apple MLX, Python 3.10+, FastAPI, React web UI",
-        "mvp_opportunity": "Voice cloning service, accessibility layer for live events, podcast production suite, healthcare transcription",
-        "key_features": ["8+ TTS models", "15+ language support", "Voice cloning", "Speaker diarization", "OpenAI-compatible API", "Streaming transcription"]
-      }
-    },
-    {
-      "url": "https://github.com/snarktank/ralph",
-      "source": "geeknews",
-      "title": "Ralph: PRD 기반 자율형 AI 에이전트",
-      "deep_analysis": {
-        "core_problem": "Autonomous AI agents struggle with context limitations and task complexity",
-        "key_insight": "Rather than fighting LLM context windows, embrace them. Each iteration starts fresh, working on one PRD item at a time—divide and conquer treating context constraints as feature",
-        "why_trending": "Tooling maturity (Claude Code, Amp CLI) enables autonomous execution; developer frustration with heavy human oversight; 8.2k stars showing validation",
-        "target_audience": "Solo developers, small teams, organizations experimenting with AI-driven development workflows",
-        "technical_stack": "Bash shell, Amp CLI or Claude Code, JSON config, TypeScript/React visualization, jq",
-        "mvp_opportunity": "AI Task Orchestration SaaS dashboard, IDE integration with UI monitoring, PRD-to-JSON conversion service",
-        "key_features": ["Supports Amp and Claude Code", "Automatic context handoff", "Git-based memory persistence", "Quality checks before commits", "Browser verification support"]
-      }
-    },
-    {
-      "url": "https://www.vectorware.com/blog/rust-std-on-gpu/",
-      "source": "hacker_news",
-      "title": "Rust's Standard Library on the GPU",
-      "deep_analysis": {
-        "core_problem": "GPU code cannot use Rust's standard library, forcing no_std abstractions and rewriting familiar patterns without OS-level functionality",
-        "key_insight": "Hostcall framework bridges GPU code and host CPU, allowing std library calls to work transparently—treating host mediation as implementation detail",
-        "why_trending": "Modern GPUs need direct access to storage/networking (GPUDirect); architectural convergence between CPUs and GPUs makes unified abstraction practical",
-        "target_audience": "GPU application developers, Rust developers in HPC, companies building GPU-native software",
-        "mvp_opportunity": "GPU Standard Library Abstraction Layer: vendor-agnostic tool providing device/host abstraction, expandable to multiple languages",
-        "key_quotes": [
-          "GPU code can now use Rust's standard library",
-          "Bringing the GPU to Rust instead of just bringing Rust to the GPU"
-        ],
-        "related_trends": ["GPU-CPU architectural convergence", "Heterogeneous computing", "GPU OS-like abstractions", "GPU-native software development"]
-      }
-    }
-  ],
-
-  "cross_source_analysis": {
-    "converging_themes": [
-      {
-        "theme": "AI 코딩의 한계와 균형점 탐색",
-        "sources": ["geeknews (vibecoding 기사)", "hacker_news (Karpathy notes)", "dev.to (Knowledge Collapse)"],
-        "insight": "AI 코딩 도구의 열광 이후 실제 사용 경험에서 한계 발견. 구조적 완전성 부족, 기술 부채 누적, 전체 맥락 이해 부재. 그러나 동시에 생산성 향상도 인정 - 80% 에이전트 코딩으로 전환한 Karpathy 사례",
-        "mvp_opportunity": "AI 생성 코드의 아키텍처 일관성 검증 도구, 기술 부채 탐지 서비스"
-      },
-      {
-        "theme": "로컬 퍼스트 AI 인프라 부상",
-        "sources": ["github (supermemory, mlx-audio, pi-mono)", "geeknews (Moltbot)"],
-        "insight": "클라우드 의존도 낮추고 개인 기기에서 AI 실행하려는 움직임. Apple Silicon 최적화, 셀프 호스팅, 로컬 메모리 레이어 등 개인 주권 강조",
-        "mvp_opportunity": "로컬 AI 스택 원클릭 설치 도구, Apple Silicon 최적화 모델 허브"
-      },
-      {
-        "theme": "실행 > 계획의 철학 확산",
-        "sources": ["hacker_news (Doing the thing)", "indie_hackers (20시간 5자릿수 ARR)", "geeknews (Ralph agent)"],
-        "insight": "과도한 계획보다 불완전한 실행이 진짜 진전. 빠른 검증과 반복이 핵심. AI 에이전트도 이 철학 반영 - 작은 태스크 반복 완료",
-        "mvp_opportunity": "'Done Over Perfect' 추적 앱, 최소 시간 제품 출시 워크샵/코스"
-      },
-      {
-        "theme": "SRE/운영이 새로운 차별화 요소",
-        "sources": ["geeknews (SRE 미래)", "techcrunch (Anthropic $20B)", "github (vault)"],
-        "insight": "코드 작성은 상품화되고 있음. 진짜 가치는 시스템을 안정적으로 운영하는 것. 인프라와 신뢰성이 핵심 경쟁력",
-        "mvp_opportunity": "스타트업용 SRE-as-a-Service, 운영 우수성 교육 플랫폼"
-      }
+    "KR": [
+      {"title": "미로 전원버튼 꼼수 완벽 차단!!", "channel": "Mr.아재", "views": 1010601},
+      {"title": "드디어 돈값하는 윈도우 근황", "channel": "꿀무새", "views": 897474},
+      {"title": "10년차 갤럭시 유저도 몰랐던 숨겨진 꿀팁 2가지", "channel": "1분미만", "views": 485300}
     ],
-    "emerging_patterns": {
-      "ai_agents_maturity": "AI 에이전트가 데모 단계를 넘어 실제 프로덕션 도구로 성숙 중. Ralph, Moltbot, Trails 등 자율 실행 패러다임 확산",
-      "monetization_speed": "인디해커들의 수익화 속도 가속 - 20시간 개발 후 5자릿수 ARR, 서비스 검증 후 $27k MRR 등 빠른 검증 사이클",
-      "memory_and_context": "AI의 컨텍스트 한계를 메모리 레이어로 해결하려는 시도 (supermemory MCP 통합, Ralph의 git 기반 메모리)"
-    }
-  },
-
-  "key_trends": {
-    "ai_agents": ["Moltbot", "Ralph", "Trails", "pi-mono", "awesome-llm-apps"],
-    "vibecoding_debate": ["2년간의 vibecoding 끝내고 수동 코딩 복귀", "Karpathy 에이전트 코딩 80% 전환", "Knowledge Collapse 논의"],
-    "developer_tools": ["Zenvault CLI", "Kilo Code Reviewer", "ShapedQL", "MCP Config Converter"],
-    "monetization": ["$60k/mo 앱 포트폴리오", "$27k MRR 제품", "$13k MRR 오픈소스", "5-figure ARR"],
-    "infrastructure": ["supermemory (Memory API)", "mlx-audio (Apple MLX)", "vault (secrets)", "SRE가 미래"]
+    "US": [
+      {"title": "Frame rate illusion creates frozen fan effect", "channel": "Lensevision", "views": 17204368},
+      {"title": "It technically works #coding #programming", "channel": "CodeVenture", "views": 6986689, "tags": ["programming", "coding", "claude"]},
+      {"title": "This camera is a time machine!", "channel": "Mrwhosetheboss", "views": 3225057},
+      {"title": "How AI Gaslights You Everyday", "channel": "Virexity", "views": 3126834}
+    ]
   }
 }
