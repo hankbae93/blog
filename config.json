@@ -71,9 +71,21 @@
     "api_key_env": "YOUTUBE_API_KEY",
     "note": "YouTube Data API v3 Key - Set in .env.local or Vercel Environment Variables"
   },
+  "producthunt_api": {
+    "api_key_env": "PRODUCTHUNT_ACCESS_TOKEN",
+    "endpoint": "https://api.producthunt.com/v2/api/graphql",
+    "note": "Product Hunt GraphQL API - 발급: https://www.producthunt.com/v2/oauth/applications"
+  },
   "collection": {
     "max_items_per_source": 10,
     "date_format": "YYYY-MM-DD"
+  },
+  "deep_crawl": {
+    "enabled": true,
+    "product_hunt": {
+      "count": 10,
+      "note": "Product Hunt 상위 10개 제품 상세 페이지 크롤링"
+    }
   },
   "output": {
     "sources_dir": "generated/sources",

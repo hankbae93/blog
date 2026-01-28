@@ -7,11 +7,15 @@ export default {
   'prd-secretsyncpro-profit-2026-01-28': 'PRD: SecretSync Pro',
   'prd-searchproxy-profit-2026-01-27': 'PRD: SearchProxy',
   'prd-modubokji-2026-01-26': 'PRD: 모두복지 Pro',
+  'prd-memoryapi-profit-2026-01-28': 'PRD: MemoryAPI Pro',
   'prd-mcpmarket-2026-01-26': 'PRD: MCP Market',
   'prd-localflash-2026-01-26': 'PRD: LocalFlash',
+  'prd-localfirst-essence-2026-01-28': 'PRD: LocalFirst Agent',
   'prd-docsync-profit-2026-01-27': 'PRD: DocSync Pro',
   'prd-devcontext-essence-2026-01-27': 'PRD: DevContext',
   'prd-communitybotpro-profit-2026-01-27': 'PRD: CommunityBot Pro',
   'prd-codedebtjournal-essence-2026-01-28': 'PRD: CodeDebt Journal',
+  'prd-agentcodeqa-profit-2026-01-28': 'PRD: AgentCodeQA',
+  'prd-agentbreak-essence-2026-01-28': 'PRD: AgentBreak',
   'prd-agentaudit-profit-2026-01-28': 'PRD: AgentAudit'
 }

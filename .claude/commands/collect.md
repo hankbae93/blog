@@ -28,14 +28,78 @@ WebFetch를 사용하여 각 소스에서 병렬로 데이터를 수집합니다
 
 각 소스별 수집 프롬프트:
 
-**Product Hunt:**
-```
-Extract today's top products. For each: name, tagline, link. Format as numbered list.
+**Product Hunt:** (API 우선, WebFetch 폴백)
+
+**방법 1: GraphQL API (권장 - 차단 없음, 빠름)**
+
+> API 문서: https://api.producthunt.com/v2/docs
+> Access Token 필요: `.env.local`에 `PRODUCTHUNT_ACCESS_TOKEN` 설정
+
+```bash
+# API 호출 (bash -c 필수)
+bash -c 'source .env.local && curl -s -X POST https://api.producthunt.com/v2/api/graphql \
+  -H "Authorization: Bearer ${PRODUCTHUNT_ACCESS_TOKEN}" \
+  -H "Content-Type: application/json" \
+  -d "{\"query\": \"{ posts(first: 10) { edges { node { id name tagline url votesCount commentsCount topics { edges { node { name } } } makers { id name headline } } } } }\"}"'
 ```
 
-**Hacker News:**
+**GraphQL 쿼리 (상세):**
+```graphql
+{
+  posts(first: 10) {
+    edges {
+      node {
+        id
+        name
+        tagline
+        url
+        votesCount
+        commentsCount
+        createdAt
+        featuredAt
+        topics { edges { node { name } } }
+        makers {
+          id
+          name
+          headline
+          twitterUsername
+        }
+        thumbnail { url }
+      }
+    }
+  }
+}
 ```
-Extract top 10 stories. For each: title, points, comments, URL. Format as numbered list.
+
+**방법 2: WebFetch 폴백 (API 실패 시)**
+```
+Extract today's top 10 products with RICH metadata for indie developers. For each product:
+- name: product name
+- tagline: one-line description
+- url: product page URL
+- makers: list of maker names visible on card
+- upvotes: current vote count (number)
+- comments: comment count (number)
+- category: product category or tags (array)
+- pricing: "Free", "Freemium", "Paid", or "Free Options" if visible
+- badge: "Product of the Day", "Launching today" etc if any
+- yc_batch: YC batch (e.g. "W26") if visible, null otherwise
+
+Return as JSON array. Extract ALL visible information from product cards.
+```
+
+**Hacker News:** (1인 개발자 관점에서 관련성 평가)
+```
+Extract top 10 stories with indie developer relevance analysis. For each:
+- title: story title
+- url: story URL
+- points: upvote count (number)
+- comments: comment count (number)
+- category: "technical", "startup", "ai", "tools", "career", "discussion", "other"
+- relevance_to_indie: "high", "medium", "low" (high = directly useful for solo devs building products)
+- key_insight: one-line takeaway for indie developers (if applicable, null otherwise)
+
+Return as JSON array. Prioritize stories about: building products, monetization, AI tools, developer experience, startup lessons.
 ```
 
 **GitHub Trending:**
@@ -58,9 +122,18 @@ Extract top 10 articles. For each: title, author, tags. Format as numbered list.
 Extract top 10 stories. For each: title, points, tags. Format as numbered list.
 ```
 
-**Indie Hackers:**
+**Indie Hackers:** (수익화 중심 - 구체적인 숫자와 전략 추출)
 ```
-Extract trending posts. For each: title, description. Format as numbered list.
+Extract trending posts focused on MONETIZATION insights for solo developers. For each post:
+- title: post title
+- url: post URL
+- revenue: MRR/ARR figures if mentioned (e.g. "$27k MRR", "$60k/mo", "5-figure ARR")
+- build_time: development time if mentioned (e.g. "20 hours", "3 months", "weekend project")
+- strategy: core strategy keyword (e.g. "Reddit SEO", "service-to-product", "multi-app portfolio", "open-source monetization")
+- founder_type: "solo", "team", "bootstrapped" if mentioned
+- problem_solved: one-line problem description
+
+Return as JSON array. Focus on extracting concrete NUMBERS and STRATEGIES that indie hackers can learn from.
 ```
 
 **TechCrunch:**
@@ -68,7 +141,78 @@ Extract trending posts. For each: title, description. Format as numbered list.
 Extract latest 10 startup articles. For each: title, summary. Format as numbered list.
 ```
 
-### 3. YouTube Trending 수집 (API 방식) - 확장형
+### 3. Deep Crawl - Product Hunt 상세 페이지 (10개 제품)
+
+기본 수집 후, Product Hunt 상위 10개 제품의 상세 페이지를 추가로 크롤링하여 1인 개발자에게 필요한 심층 정보를 수집합니다.
+
+**소요 시간:** 약 4분 추가
+
+**각 제품 상세 페이지 URL 패턴:**
+수집된 `url` 필드를 그대로 사용 (예: `https://www.producthunt.com/products/scout-out-2`)
+
+**Deep Crawl 프롬프트:**
+```
+For this Product Hunt product page, extract detailed information for indie developers:
+
+1. PRODUCT IDENTITY (3줄 요약용)
+- full_description: complete product description (first 500 chars)
+- value_proposition: core value in one sentence
+- target_audience: who is this product for (be specific)
+
+2. MONETIZATION (수익화 인사이트)
+- pricing_model: "free", "freemium", "subscription", "one-time", "usage-based"
+- pricing_details: pricing tiers if visible (e.g. "$29/mo starter, $99/mo pro")
+- free_trial: trial period if mentioned
+
+3. FOUNDER/MAKER INFO
+- maker_names: list of maker names
+- maker_titles: their roles (e.g. "Founder", "Co-founder & CEO")
+- yc_status: Y Combinator batch if mentioned (e.g. "YC W26"), null otherwise
+- company_info: any company background mentioned
+
+4. DIFFERENTIATION
+- key_features: top 3 features (array of strings)
+- differentiator: what makes this unique vs competitors
+- metrics_claimed: any success metrics mentioned (e.g. "+40% win rate", "14hrs saved weekly")
+
+5. LAUNCH INFO
+- launch_date: when launched if visible
+- badge: "Product of the Day", rank, or other badges
+
+Return as JSON object. Focus on information useful for indie hackers evaluating this product or learning from its approach.
+```
+
+**수집된 데이터를 `deep_crawled` 배열에 저장:**
+```json
+{
+  "product_hunt": {
+    "items": [...],
+    "deep_crawled": [
+      {
+        "name": "Scout Out",
+        "url": "https://www.producthunt.com/products/scout-out-2",
+        "full_description": "Upload building plans and Scout Out automatically generates...",
+        "value_proposition": "60-second AI estimates that win more jobs",
+        "target_audience": "Residential contractors, remodelers, handymen",
+        "pricing_model": "freemium",
+        "pricing_details": "3-day free trial, then subscription",
+        "maker_names": ["Nolan Rossi"],
+        "maker_titles": ["Founder"],
+        "yc_status": "YC W26",
+        "key_features": ["Instant AI estimates", "Professional proposals", "Mobile app"],
+        "differentiator": "AI-powered material & labor takeoffs from building plans",
+        "metrics_claimed": ["+14hrs saved weekly", "+40% win rate", "+$85K annual profit"],
+        "launch_date": "2026-01-28",
+        "badge": "Launching today"
+      }
+    ]
+  }
+}
+```
+
+---
+
+### 4. YouTube Trending 수집 (API 방식) - 확장형
 
 YouTube Data API v3를 사용하여 **다중 카테고리, 다중 지역, 키워드 검색**으로 포괄적인 트렌드를 수집합니다.
 
@@ -274,7 +418,7 @@ Format as JSON array.
 - `22` - People & Blogs
 - `10` - Music
 
-### 4. 데이터 저장
+### 5. 데이터 저장
 
 수집된 데이터를 `generated/sources/{YYYY-MM-DD}.json` 파일로 저장합니다.
 
@@ -309,7 +453,7 @@ Format as JSON array.
 }
 ```
 
-### 5. 인사이트 에이전트용 출력
+### 6. 인사이트 에이전트용 출력
 
 수집 완료 후, 다음 형식으로 콘솔에 요약을 출력합니다:
 
@@ -359,7 +503,7 @@ File saved: generated/sources/{날짜}.json
 Next step: Run /analyze to extract MVP insights
 ```
 
-### 6. 오류 처리
+### 7. 오류 처리
 - 특정 소스 수집 실패 시 해당 소스를 건너뛰고 계속 진행
 - 실패한 소스는 status: "failed"로 표시
 - YouTube API 실패 시 WebFetch 대안 URL로 시도

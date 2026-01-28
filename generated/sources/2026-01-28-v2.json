@@ -1,0 +1,295 @@
+{
+  "date": "2026-01-28",
+  "collected_at": "2026-01-28T12:30:00Z",
+  "total_items": 58,
+  "collection_method": "API + WebFetch (improved prompts)",
+
+  "product_hunt": {
+    "status": "success",
+    "method": "GraphQL API",
+    "items": [
+      {
+        "name": "Kilo Code Reviewer",
+        "tagline": "Automatic AI-powered code reviews the moment you open a PR",
+        "url": "https://www.producthunt.com/products/kilocode",
+        "votesCount": 545,
+        "commentsCount": 87,
+        "topics": ["Open Source", "Software Engineering", "Developer Tools", "GitHub"],
+        "makerCount": 7
+      },
+      {
+        "name": "Moltbot",
+        "tagline": "The AI that actually does things",
+        "url": "https://www.producthunt.com/products/clawdbot-2",
+        "votesCount": 460,
+        "commentsCount": 24,
+        "topics": ["Open Source", "Developer Tools", "Artificial Intelligence", "GitHub"],
+        "makerCount": 1
+      },
+      {
+        "name": "LobeHub",
+        "tagline": "Agent teammates that grow with you",
+        "url": "https://www.producthunt.com/products/lobehub",
+        "votesCount": 314,
+        "commentsCount": 47,
+        "topics": ["Productivity", "GitHub", "Maker Tools", "Marketing automation"],
+        "makerCount": 5
+      },
+      {
+        "name": "Timeless",
+        "tagline": "Agents built from your conversations",
+        "url": "https://www.producthunt.com/products/timeos",
+        "votesCount": 215,
+        "commentsCount": 22,
+        "topics": ["Meetings", "Artificial Intelligence"],
+        "makerCount": 7
+      },
+      {
+        "name": "ShapedQL",
+        "tagline": "The SQL engine for search, feeds, and AI agents",
+        "url": "https://www.producthunt.com/products/shaped",
+        "votesCount": 162,
+        "commentsCount": 21,
+        "topics": ["Software Engineering", "Developer Tools", "Artificial Intelligence"],
+        "makerCount": 3
+      },
+      {
+        "name": "CapslockMute",
+        "tagline": "The fastest way to mute yourself on video calls",
+        "url": "https://www.producthunt.com/products/capslockmute",
+        "votesCount": 156,
+        "commentsCount": 30,
+        "topics": ["Mac", "Productivity", "GitHub", "Menu Bar Apps"],
+        "makerCount": 1
+      },
+      {
+        "name": "Alfi",
+        "tagline": "Group chat app that remembers plans and helps you meet IRL",
+        "url": "https://www.producthunt.com/products/alfi",
+        "votesCount": 154,
+        "commentsCount": 12,
+        "topics": ["Messaging", "Social Network", "Artificial Intelligence"],
+        "makerCount": 3
+      },
+      {
+        "name": "Analog Reader",
+        "tagline": "turn your favorite newsletters into a printable newspaper",
+        "url": "https://www.producthunt.com/products/analog-reader",
+        "votesCount": 132,
+        "commentsCount": 14,
+        "topics": ["News", "User Experience", "Social Media"],
+        "makerCount": 1
+      },
+      {
+        "name": "Jotform AI Chatbot for Canva",
+        "tagline": "Bring Canva designs to life with an embedded AI chatbot",
+        "url": "https://www.producthunt.com/products/jotform",
+        "votesCount": 125,
+        "commentsCount": 3,
+        "topics": ["Design Tools", "Productivity", "Artificial Intelligence"],
+        "makerCount": 0
+      },
+      {
+        "name": "Runo 2.0",
+        "tagline": "Metronome app that keeps your running cadence steady",
+        "url": "https://www.producthunt.com/products/runo-the-metronome-for-runners",
+        "votesCount": 116,
+        "commentsCount": 10,
+        "topics": ["Health & Fitness", "Health", "Running"],
+        "makerCount": 2
+      }
+    ]
+  },
+
+  "hacker_news": {
+    "status": "success",
+    "items": [
+      {
+        "title": "Prism",
+        "url": "https://openai.com/index/introducing-prism",
+        "points": 474,
+        "comments": 287,
+        "category": "ai",
+        "relevance_to_indie": "high",
+        "key_insight": "New AI capabilities from OpenAI create opportunities for indie builders integrating advanced models"
+      },
+      {
+        "title": "A few random notes from Claude coding quite a bit last few weeks",
+        "url": "https://twitter.com/karpathy/status/2015883857489522876",
+        "points": 358,
+        "comments": 347,
+        "category": "discussion",
+        "relevance_to_indie": "high",
+        "key_insight": "Insights on AI-assisted coding workflows directly applicable to indie development practices"
+      },
+      {
+        "title": "I made my own Git",
+        "url": "https://tonystr.net/blog/git_immitation",
+        "points": 338,
+        "comments": 151,
+        "category": "technical",
+        "relevance_to_indie": "medium",
+        "key_insight": "Educational implementation project showcases value of rebuilding core tools for deep learning"
+      },
+      {
+        "title": "Doing the thing is doing the thing",
+        "url": "https://www.softwaredesign.ing/blog/doing-the-thing-is-doing-the-thing",
+        "points": 249,
+        "comments": 95,
+        "category": "discussion",
+        "relevance_to_indie": "high",
+        "key_insight": "Practical software development philosophy for independent builders prioritizing execution"
+      },
+      {
+        "title": "Lennart Poettering, Christian Brauner founded a new company",
+        "url": "https://amutable.com/about",
+        "points": 232,
+        "comments": 316,
+        "category": "startup",
+        "relevance_to_indie": "medium",
+        "key_insight": "Open-source developers building commercial ventures demonstrates viable indie-to-startup pathways"
+      },
+      {
+        "title": "Show HN: One Human + One Agent = One Browser From Scratch in 20K LOC",
+        "url": "https://emsh.cat/one-human-one-agent-one-browser/",
+        "points": 159,
+        "comments": 87,
+        "category": "tools",
+        "relevance_to_indie": "high",
+        "key_insight": "Solo developer building complex systems with AI assistance demonstrates feasible solo-dev scope"
+      },
+      {
+        "title": "Time Station Emulator",
+        "url": "https://github.com/kangtastic/timestation",
+        "points": 105,
+        "comments": 24,
+        "category": "tools",
+        "relevance_to_indie": "medium",
+        "key_insight": "Open-source emulator project reaching production-quality standards"
+      },
+      {
+        "title": "Rust's Standard Library on the GPU",
+        "url": "https://www.vectorware.com/blog/rust-std-on-gpu/",
+        "points": 84,
+        "comments": 11,
+        "category": "technical",
+        "relevance_to_indie": "medium",
+        "key_insight": "GPU computing support expands Rust's applicability for performance-critical projects"
+      },
+      {
+        "title": "Super Monkey Ball ported to a website",
+        "url": "https://monkeyball-online.pages.dev/",
+        "points": 80,
+        "comments": 28,
+        "category": "tools",
+        "relevance_to_indie": "high",
+        "key_insight": "Web-based game ports demonstrate feasibility of browser gaming for indie developers"
+      },
+      {
+        "title": "AI found 12 vulnerabilities in OpenSSL",
+        "url": "https://aisle.com/blog/aisle-discovered-12-out-of-12-openssl-vulnerabilities",
+        "points": 21,
+        "comments": 3,
+        "category": "technical",
+        "relevance_to_indie": "medium",
+        "key_insight": "AI-powered security testing shows emerging tools for vulnerability detection"
+      }
+    ]
+  },
+
+  "github_trending": {
+    "status": "success",
+    "items": [
+      {"repo": "badlogic/pi-mono", "description": "AI agent toolkit: coding agent CLI, unified LLM API, TUI & web UI libraries", "language": "TypeScript", "stars": 2768, "stars_today": 118},
+      {"repo": "supermemoryai/supermemory", "description": "Memory engine and app that is extremely fast, scalable. The Memory API for the AI era", "language": "TypeScript", "stars": 15620, "stars_today": 435},
+      {"repo": "Blaizzy/mlx-audio", "description": "Text-to-speech, speech-to-text library built on Apple's MLX framework", "language": "Python", "stars": 5463, "stars_today": 458},
+      {"repo": "Free-TV/IPTV", "description": "M3U Playlist for free TV channels", "language": "Python", "stars": 12608, "stars_today": 295},
+      {"repo": "hashicorp/vault", "description": "A tool for secrets management, encryption as a service", "language": "Go", "stars": 34139, "stars_today": 13},
+      {"repo": "Shubhamsaboo/awesome-llm-apps", "description": "Collection of awesome LLM apps with AI Agents and RAG", "language": "Python", "stars": 90250, "stars_today": 294}
+    ]
+  },
+
+  "geeknews": {
+    "status": "success",
+    "items": [
+      {"title": "Andrej Karpathy의 최근 몇 주간 Claude 코딩 경험에 대한 단상", "url": "https://x.com/karpathy/status/2015883857489522876", "summary": "11월-12월 사이 수동 작업 80%에서 에이전트 코딩 80%로 워크플로우 전환"},
+      {"title": "Postgres 베스트 프랙티스를 AI 에이전트에 직접 가르치는 Agent Skills 공개", "url": "https://supabase.com/blog/postgres-best-practices-for-ai-agents", "summary": "Supabase의 AI 에이전트 DB 처리 문제 해결을 위한 PostgreSQL 베스트 프랙티스"},
+      {"title": "2년간의 vibecoding을 끝내고 다시 손으로 코드를 쓰기 시작했다", "url": "https://atmoio.substack.com/p/after-two-years-of-vibecoding-im", "summary": "AI 코딩 도구의 일관성과 구조적 완전성 문제로 수동 코딩 복귀"},
+      {"title": "OpenAI, 논문 작성 및 협업 도구 Prism 공개", "url": "https://openai.com/ko-KR/index/introducing-prism/", "summary": "GPT-5.2 기반 과학 논문 작성/편집/협업 AI 워크스페이스"},
+      {"title": "Moltbot - 모든 OS와 플랫폼에서 작동하는 개인용 AI 비서", "url": "https://clawd.bot/", "summary": "쉘과 파일시스템 접근 가능한 로컬 LLM 에이전트"},
+      {"title": "구글 클라우드, 공식적으로 요금 인상 발표", "url": "https://cloud.google.com/consulting/cloud-cdn-interconnect-peering-pricing", "summary": "2026년 5월부터 CDN, Peering 서비스 가격 인상"},
+      {"title": "소프트웨어 엔지니어링의 미래는 SRE다", "url": "https://swizec.com/blog/the-future-of-software-engineering-is-sre/", "summary": "에이전트 코딩 시대에도 SW 엔지니어 수요 증가, 서비스 운영 전문성 중요"},
+      {"title": "MapLibre Tile 공개 - 현대적이고 효율적인 벡터 타일 포맷", "url": "https://maplibre.org/news/2026-01-23-mlt-release/", "summary": "Mapbox Vector Tile 후속 차세대 벡터 포맷"}
+    ]
+  },
+
+  "dev_to": {
+    "status": "success",
+    "items": [
+      {"title": "We're Creating a Knowledge Collapse and No One's Talking About It", "author": "Daniel Nwaneri", "tags": ["discuss", "ai", "webdev", "career"]},
+      {"title": "Has anyone actually shipped a free offline mobile LLM?", "author": "ujja", "tags": ["discuss", "ai", "mcp", "mobile"]},
+      {"title": "I Didn't Like Other Workout Tracking Apps, So I Built My Own", "author": "Dominic Magnifico", "tags": ["showdev", "webdev", "opensource", "learning"]},
+      {"title": "I Built a PDF Tool Because I Didn't Trust PDF Tools", "author": "Pranav Mailarpawar", "tags": ["productivity", "pdf", "programming", "ai"]},
+      {"title": "Introducing klag: The Kafka Lag Exporter I Always Wanted", "author": "A.D.", "tags": ["kafka", "monitoring"]},
+      {"title": "If It's Not Accessible, It's Not Design", "author": "Tetiana Rachynska", "tags": ["a11y", "ux", "webdev", "design"]},
+      {"title": "Clean Architecture in .NET 10", "author": "Brian Spann", "tags": ["dotnet", "cleanarchitecture", "csharp"]}
+    ]
+  },
+
+  "lobsters": {
+    "status": "failed",
+    "error": "Rate limited (429)"
+  },
+
+  "indie_hackers": {
+    "status": "success",
+    "items": [
+      {"title": "Building an app portfolio to $60k/mo after Apple froze his developer account", "revenue": "$60k/mo", "strategy": "diversified app portfolio", "founder_type": "solo", "problem_solved": "Recovery after platform account suspension"},
+      {"title": "From open-source donations to $13k MRR product", "revenue": "$13k MRR", "strategy": "monetizing open-source", "founder_type": "solo", "problem_solved": "Converting unpaid open-source work into recurring revenue"},
+      {"title": "Building a product in 20 hours and growing it to a 5-figure ARR", "revenue": "5-figure ARR", "build_time": "20 hours", "strategy": "rapid MVP to SaaS", "founder_type": "bootstrapped"},
+      {"title": "Validating via services before building a $27k MRR product", "revenue": "$27k MRR", "strategy": "service validation before productization", "founder_type": "bootstrapped"},
+      {"title": "Getting a multi-million-dollar foothold in a crowded market", "revenue": "multi-million ARR", "strategy": "indirect distribution in saturated market", "founder_type": "bootstrapped"},
+      {"title": "Hitting $10k MRR in six weeks with an AI design tool", "revenue": "$10k MRR", "build_time": "3 weeks development", "strategy": "AI-powered design automation", "founder_type": "solo"},
+      {"title": "I lost €50K to non-paying clients... so I built an AI contract tool", "revenue": "$0 MRR (300 users)", "strategy": "problem-to-product (payment protection)", "founder_type": "solo"},
+      {"title": "From building client websites to launching my own SaaS", "strategy": "analytics alternative", "founder_type": "solo", "problem_solved": "Distrust of GA4"}
+    ]
+  },
+
+  "techcrunch": {
+    "status": "partial",
+    "items": [
+      {"title": "Anduril has invented a wild new drone-flying contest where jobs are the prize", "summary": "Defense tech company Anduril created competition with employment opportunities for winners"},
+      {"title": "Bluesky teases 2026 roadmap: A better Discover feed, real-time features, and more", "summary": "Decentralized social platform announced enhanced content discovery and live communication"}
+    ]
+  },
+
+  "youtube_trending": {
+    "status": "failed",
+    "error": "YouTube API key not configured"
+  },
+
+  "key_trends": {
+    "ai_agents": ["Moltbot", "LobeHub", "Timeless", "pi-mono", "supermemory"],
+    "ai_coding_debate": ["Karpathy 80% agentic coding", "vibecoding 복귀", "Knowledge Collapse", "One Human + One Agent browser"],
+    "developer_tools": ["Kilo Code Reviewer", "ShapedQL", "CapslockMute", "Agent Skills for Postgres"],
+    "monetization_examples": ["$60k/mo app portfolio", "$27k MRR service-to-product", "$13k MRR open-source", "$10k MRR in 6 weeks", "20 hours to 5-figure ARR"]
+  },
+
+  "cross_source_themes": [
+    {
+      "theme": "AI 에이전트 코딩의 현실과 한계",
+      "sources": ["HN (Karpathy)", "GeekNews (vibecoding)", "Dev.to (Knowledge Collapse)", "PH (Kilo Code Reviewer)"],
+      "insight": "에이전트 코딩 80% 전환 vs 구조적 완전성 우려. 균형점 탐색 중"
+    },
+    {
+      "theme": "1인 개발자 빠른 수익화 성공 사례",
+      "sources": ["Indie Hackers (다수)", "PH (solo maker products)"],
+      "insight": "20시간 개발 → 5-figure ARR, 6주 만에 $10k MRR 등 빠른 검증 사이클"
+    },
+    {
+      "theme": "로컬/메모리 AI 인프라",
+      "sources": ["GitHub (supermemory, mlx-audio)", "GeekNews (Moltbot)", "PH (Moltbot)"],
+      "insight": "클라우드 의존 줄이고 로컬 AI 스택 구축 움직임"
+    }
+  ]
+}
