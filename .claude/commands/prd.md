@@ -1,306 +1,229 @@
-# /prd - 전체 워크플로우 실행
+# /prd - 데일리 인사이트 파이프라인
 
-리소스 수집부터 PRD 생성까지 전체 파이프라인을 한 번에 실행합니다.
-
-## 커맨드 옵션
-
-| 커맨드 | 설명 |
-|--------|------|
-| `/prd` | **투 트랙 실행** - 본질 + 수익화 페르소나 모두 실행 |
-| `/prd:essence` | 본질 추구형 페르소나만 실행 |
-| `/prd:profit` | 수익화 특화 페르소나만 실행 |
-
----
-
-## 페르소나 설명
-
-### 🧠 본질 추구형 (Essence)
-- 파일: `generated/my-persona/essence-persona.md`
-- 관점: "이 문제가 왜 존재하는가?"
-- 평가 기준: 전제 파괴, 방치 이유, 비합리적 행동, 진정성
-- 결과: 깊이 있는 문제 해결 아이디어
-
-### 💰 수익화 특화 (Profit)
-- 파일: `generated/my-persona/profit-persona.md`
-- 관점: "누가, 얼마를, 왜 지불하는가?"
-- 평가 기준: 지불자, 가격, 반복 매출, 첫 수익 속도
-- 결과: 빠르게 돈 되는 아이디어
-
----
+1인 개발자를 위한 데일리 트렌드 다이제스트를 수집, 분석, 배포합니다.
 
 ## 실행 순서
 
 ```
-/prd (투 트랙)
+/prd
   │
   ├─▶ Step 1: /collect (리소스 수집)
   │     └─▶ 9개 소스에서 최신 트렌드 수집
+  │     └─▶ Product Hunt 상위 10개 Deep Crawl
   │     └─▶ generated/sources/{날짜}.json 저장
   │
-  ├─▶ Step 2: /analyze (인사이트 추출) - 투 트랙 병렬 실행
-  │     ├─▶ 🧠 Essence Track
-  │     │     └─▶ 본질 추구형 페르소나 평가
-  │     │     └─▶ generated/insights/{날짜}-essence.md 저장
-  │     │
-  │     └─▶ 💰 Profit Track
-  │           └─▶ 수익화 특화 페르소나 평가
-  │           └─▶ generated/insights/{날짜}-profit.md 저장
+  ├─▶ Step 2: /analyze (데일리 다이제스트)
+  │     └─▶ 오늘의 핵심 흐름 3줄 요약
+  │     └─▶ 각 항목별 요약 + 이미지
+  │     └─▶ 교차 분석 키 테마
+  │     └─▶ generated/insights/{날짜}.md 저장
   │
-  ├─▶ Step 3: /generate (PRD 생성) - 투 트랙 병렬 실행
-  │     ├─▶ 🧠 Essence PRDs
-  │     │     └─▶ generated/output/prd-{이름}-essence-{날짜}.md
-  │     │
-  │     └─▶ 💰 Profit PRDs
-  │           └─▶ generated/output/prd-{이름}-profit-{날짜}.md
-  │
-  └─▶ Step 4: 블로그 동기화 및 배포
-        ├─▶ npm run sync (콘텐츠를 pages/로 복사)
-        ├─▶ git add -A
-        ├─▶ git commit -m "Daily PRD update: {날짜}"
-        └─▶ git push (Vercel 자동 배포 트리거)
+  └─▶ Step 3: 블로그 동기화 및 배포
+        ├─▶ npm run sync
+        ├─▶ git commit
+        └─▶ git push (Vercel 자동 배포)
 ```
 
 ---
 
-## 실행 지침
+## Step 1: 리소스 수집 (/collect)
 
-### Step 1: 리소스 수집
+다음 소스에서 데이터를 수집합니다:
 
-다음 9개 소스에서 병렬로 데이터를 수집합니다:
+| 소스 | 수집 방법 | 핵심 추출 필드 |
+|------|----------|---------------|
+| Product Hunt | **GraphQL API** (권장) | name, tagline, upvotes, makers, pricing, yc_batch |
+| Hacker News | WebFetch | title, points, comments, relevance_to_indie, key_insight |
+| Indie Hackers | WebFetch | title, revenue, build_time, strategy, founder_type |
+| GitHub Trending | WebFetch | repo, stars, stars_today, language, description |
+| GeekNews | WebFetch | title, url, comments |
+| Dev.to | WebFetch | title, tags, reactions |
+| TechCrunch | WebFetch | title, category |
+| YouTube | API v3 | title, channel, views (config.json API 키 필요) |
 
-| 소스 | URL |
+**Product Hunt Deep Crawl:**
+- 상위 10개 제품에 대해 상세 페이지 크롤링
+- 추출: full_description, pricing_details, maker_info, target_audience, differentiator
+
+**출력:** `generated/sources/{YYYY-MM-DD}.json`
+
+---
+
+## Step 2: 데일리 다이제스트 (/analyze)
+
+수집된 데이터를 1인 개발자 관점으로 정리합니다.
+
+### 출력 구조
+
+```markdown
+# 데일리 인사이트 - {날짜}
+
+## 오늘의 흐름
+> **한 줄 요약**: [전체를 관통하는 메시지]
+
+1. **[키워드1]**: [한 줄 설명]
+2. **[키워드2]**: [한 줄 설명]
+3. **[키워드3]**: [한 줄 설명]
+
+---
+
+## Product Hunt Today
+
+### 1. [제품명] ⬆️ {votes}
+![thumbnail]({이미지URL})
+**"{tagline}"**
+
+| 항목 | 내용 |
+|------|------|
+| 타겟 | [누구를 위한 제품] |
+| 차별화 | [기존 대비 뭐가 다른가] |
+| 수익화 | [free/freemium/paid] |
+| 메이커 | [몇 명, 배경] |
+
+**1인 개발자가 배울 점**: [한 줄]
+
+---
+
+## Hacker News Highlights
+
+### [제목] 🔥 {points}pts / {comments} comments
+**카테고리**: [technical/startup/ai/tools/discussion]
+**관련성**: [high/medium/low]
+
+> **핵심 인사이트**: [1인 개발자에게 어떤 의미인가]
+
+---
+
+## Indie Hackers 수익화 신호
+
+### 💰 [{제목}]({url})
+
+| 지표 | 값 |
 |------|-----|
-| Product Hunt | https://www.producthunt.com/feed |
-| Hacker News | https://news.ycombinator.com |
-| GitHub Trending | https://github.com/trending |
-| GeekNews | https://news.hada.io |
-| Dev.to | https://dev.to/feed |
-| Lobsters | https://lobste.rs |
-| Indie Hackers | https://www.indiehackers.com |
-| TechCrunch | https://techcrunch.com/feed/ |
-| **YouTube Trending** | YouTube Data API v3 (config.json의 API 키 사용) |
+| 수익 | {revenue} |
+| 빌딩 기간 | {build_time} |
+| 전략 | {strategy} |
 
-WebFetch 또는 API를 사용하여 각 소스에서 최신 콘텐츠를 추출하고, `generated/sources/{YYYY-MM-DD}.json`에 저장합니다.
-
-### Step 2: 인사이트 추출 (투 트랙)
-
-수집된 데이터를 분석하여 MVP 아이디어를 도출합니다:
-
-1. **트렌드 클러스터링** - 공통 키워드/주제 그룹화
-2. **Kill Zone 체크** - 대기업/기존 서비스와 경쟁 여부 확인
-3. **차별화 전략** - 니치/로컬/통합/가격/프라이버시 중 택1+
-4. **"왜 지금?" 분석** - 타이밍 근거
-5. **교차 조합** - 최소 2개 소스 트렌드 조합
-6. **페르소나 평가 (서브에이전트)** - 선택된 트랙에 따라 실행
-
-#### 🧠 Essence Track 평가 기준
-```
-Task 도구 호출 - subagent_type: "general-purpose"
-페르소나 파일: generated/my-persona/essence-persona.md
-
-5가지 질문:
-1. 전제 파괴: 이 제품은 어떤 전제를 깨거나 드러내는가?
-2. 방치 이유: 이 문제는 왜 지금까지 방치되었는가?
-3. 비합리적 행동: 사용자가 지금 어떤 비합리한 행동을 하고 있는가?
-4. 기능-가설 연결: 기능이 문제 가설과 직접 연결되는가?
-5. 진정성: 만드는 사람이 문제를 겪어본 것처럼 보이는가?
-```
-
-#### 💰 Profit Track 평가 기준
-```
-Task 도구 호출 - subagent_type: "general-purpose"
-페르소나 파일: generated/my-persona/profit-persona.md
-
-7가지 질문:
-1. 누가 돈을 내는가? - 지불자가 명확한가?
-2. 얼마를 내는가? - 구체적 가격이 있는가?
-3. 왜 지금 돈을 내는가? - 지불 동기가 강한가?
-4. 이미 돈을 쓰고 있는가? - 기존 지출을 대체하는가?
-5. 첫 수익까지 얼마나 걸리는가? - 30일 내 가능한가?
-6. 반복 매출인가? - 구독/리텐션 구조인가?
-7. 단위 경제가 맞는가? - CAC < LTV인가?
-```
-
-**출력 파일:**
-- 본질 트랙: `generated/insights/{YYYY-MM-DD}-essence.md`
-- 수익 트랙: `generated/insights/{YYYY-MM-DD}-profit.md`
-
-### Step 3: PRD 생성 (투 트랙)
-
-각 트랙의 상위 3개 아이디어에 대해 상세 PRD를 생성합니다:
-
-PRD 구조:
-1. 개요 (문제 정의, 솔루션, 성공 지표)
-2. 타겟 사용자 (페르소나, 시나리오)
-3. 기능 요구사항 (MVP 3개, 향후, 제외)
-4. 기술 요구사항 (아키텍처, 스택)
-5. 비즈니스 요구사항 (수익, 시장, GTM)
-6. 마일스톤
-7. 리스크
-8. 부록
-
-**출력 파일:**
-- 본질 트랙: `generated/output/prd-{이름}-essence-{날짜}.md`
-- 수익 트랙: `generated/output/prd-{이름}-profit-{날짜}.md`
-
-### Step 4: 블로그 동기화 및 배포
-
-PRD 생성이 완료되면 자동으로 블로그에 반영하고 배포합니다:
-
-1. **콘텐츠 동기화** - `npm run sync` 실행
-   - `insights/` → `pages/insights/`로 복사
-   - `output/` → `pages/prd/`로 복사
-   - `_meta.ts` 파일 자동 생성
-
-2. **Git 커밋 및 푸시**
-   ```bash
-   git add -A
-   git commit -m "Daily PRD update: {YYYY-MM-DD}"
-   git push
-   ```
-
-3. **Vercel 자동 배포**
-   - push 시 Vercel이 자동으로 빌드 및 배포
-
-**실행 방법:**
-```
-Bash 도구로 다음 명령어를 순차 실행:
-npm run sync && git add -A && git commit -m "Daily PRD update: {날짜}" && git push
-```
+**핵심 교훈**: [이 사례에서 배울 점]
 
 ---
 
-## 출력 형식
+## GitHub Trending
 
-### /prd (투 트랙) 실행 시:
+| 리포 | 스타 | 언어 | 왜 뜨는가 |
+|------|------|------|----------|
+| [{repo}]({url}) | ⭐ {stars} (+{today}) | {lang} | [한 줄] |
+
+---
+
+## 기타 소스 하이라이트
+
+**GeekNews**: [제목]: [한 줄]
+**Dev.to**: [제목]: [태그] - [한 줄]
+**TechCrunch**: [제목]: [한 줄]
+
+---
+
+## 교차 분석: 오늘의 키 테마
+
+### 테마 1: [키워드]
+- **출처**: [PH: 제품명], [HN: 제목], [IH: 제목]
+- **의미**: [1인 개발자에게 왜 중요한가]
+- **기회/경고**: [액션 아이템]
+```
+
+**출력:** `generated/insights/{YYYY-MM-DD}.md`
+
+---
+
+## Step 3: 블로그 동기화 및 배포
+
+다이제스트 생성 완료 후 자동 배포:
+
+```bash
+# 콘텐츠 동기화
+npm run sync
+
+# Git 커밋 및 푸시
+git add -A
+git commit -m "Daily PRD update: {YYYY-MM-DD}"
+git push
+```
+
+Vercel이 push 감지 시 자동 빌드 및 배포합니다.
+
+---
+
+## 커맨드 옵션
+
+| 옵션 | 설명 |
+|------|------|
+| `/prd` | 전체 파이프라인 실행 (수집 → 분석 → 배포) |
+| `/prd --skip-collect` | 기존 수집 데이터로 분석만 실행 |
+| `/analyze` | 분석만 단독 실행 |
+| `/analyze --quick` | 3줄 요약 + 키 테마만 |
+| `/collect` | 수집만 단독 실행 |
+
+---
+
+## 출력 예시
+
 ```
 ═══════════════════════════════════════════════════════════════════════════════
-                    PRD GENERATION WORKFLOW (DUAL TRACK)
+                    DAILY INSIGHT PIPELINE
 ═══════════════════════════════════════════════════════════════════════════════
 
-[Step 1/4] 📥 Collecting resources...
-  ✓ Product Hunt: 10 items
+[Step 1/3] 📥 Collecting resources...
+  ✓ Product Hunt (API): 10 items
+  ✓ Product Hunt Deep Crawl: 10 items
   ✓ Hacker News: 15 items
   ✓ GitHub Trending: 9 items
+  ✓ Indie Hackers: 10 items
   ✓ GeekNews: 10 items
   ✓ Dev.to: 10 items
-  ✓ Indie Hackers: 10 items
   ✓ TechCrunch: 6 items
-  ✓ YouTube Trending (API v3): 10 items
-  → Saved: generated/sources/2026-01-26.json (80 items)
+  → Saved: generated/sources/2026-01-28.json
 
-[Step 2/4] 🔍 Analyzing insights...
+[Step 2/3] 🔍 Generating daily digest...
+  ✓ Executive summary: 3 key trends
+  ✓ Product Hunt: 10 products analyzed
+  ✓ Hacker News: 5 high-relevance items
+  ✓ Indie Hackers: 3 monetization signals
+  ✓ GitHub: 5 trending repos
+  ✓ Cross-source themes: 2 identified
+  → Saved: generated/insights/2026-01-28.md
 
-  ───────────────────────────────────────────────────────────────────────────
-  🧠 ESSENCE TRACK (본질 추구형)
-  ───────────────────────────────────────────────────────────────────────────
-  ✓ Trend clustering: 6 clusters
-  ✓ Kill Zone check: 8 killed, 6 passed
-  ✓ Persona evaluation (sub-agent)...
-    → Idea #1: ✅ 추천 (5/5 passed)
-    → Idea #2: ⚠️ 보완 필요 (3/5 passed)
-    → Idea #3: ❌ 폐기 (1/5 passed)
-  → Saved: generated/insights/2026-01-26-essence.md
-
-  ───────────────────────────────────────────────────────────────────────────
-  💰 PROFIT TRACK (수익화 특화)
-  ───────────────────────────────────────────────────────────────────────────
-  ✓ Trend clustering: 6 clusters
-  ✓ Revenue model check: 4 strong, 8 weak
-  ✓ Persona evaluation (sub-agent)...
-    → Idea #1: ✅ 추천 (6/7 passed) - $49/mo potential
-    → Idea #2: ✅ 추천 (5/7 passed) - $29/mo potential
-    → Idea #3: ⚠️ 보완 필요 (4/7 passed)
-  → Saved: generated/insights/2026-01-26-profit.md
-
-[Step 3/4] 📝 Generating PRDs...
-
-  🧠 ESSENCE PRDs:
-  ✓ generated/output/prd-modubokji-essence-2026-01-26.md (18/20)
-  ✓ generated/output/prd-localflash-essence-2026-01-26.md (17/20)
-  ✓ generated/output/prd-mcpmarket-essence-2026-01-26.md (15/20)
-
-  💰 PROFIT PRDs:
-  ✓ generated/output/prd-reviewbot-profit-2026-01-26.md (17/20) - $49/mo
-  ✓ generated/output/prd-invoiceai-profit-2026-01-26.md (16/20) - $29/mo
-  ✓ generated/output/prd-leadgen-profit-2026-01-26.md (15/20) - $99/mo
-
-[Step 4/4] 🚀 Deploying to blog...
-  ✓ npm run sync - 콘텐츠 동기화 완료
-  ✓ git add -A
-  ✓ git commit -m "Daily PRD update: 2026-01-26"
-  ✓ git push - Vercel 배포 트리거됨
+[Step 3/3] 🚀 Deploying to blog...
+  ✓ npm run sync
+  ✓ git commit -m "Daily PRD update: 2026-01-28"
+  ✓ git push
 
 ═══════════════════════════════════════════════════════════════════════════════
-                              COMPLETE (DUAL TRACK)
+                              COMPLETE
 ═══════════════════════════════════════════════════════════════════════════════
 Output files:
-  📄 generated/sources/2026-01-26.json
-
-  🧠 ESSENCE TRACK:
-  📄 generated/insights/2026-01-26-essence.md
-  📄 generated/output/prd-modubokji-essence-2026-01-26.md
-  📄 generated/output/prd-localflash-essence-2026-01-26.md
-  📄 generated/output/prd-mcpmarket-essence-2026-01-26.md
-
-  💰 PROFIT TRACK:
-  📄 generated/insights/2026-01-26-profit.md
-  📄 generated/output/prd-reviewbot-profit-2026-01-26.md
-  📄 generated/output/prd-invoiceai-profit-2026-01-26.md
-  📄 generated/output/prd-leadgen-profit-2026-01-26.md
+  📄 generated/sources/2026-01-28.json
+  📄 generated/insights/2026-01-28.md
+  🌐 https://your-site.vercel.app/insights/2026-01-28
 ═══════════════════════════════════════════════════════════════════════════════
 ```
-
-### /prd:profit (단일 트랙) 실행 시:
-```
-═══════════════════════════════════════════════════════════════════════════════
-                    PRD GENERATION WORKFLOW (💰 PROFIT TRACK)
-═══════════════════════════════════════════════════════════════════════════════
-...
-```
-
----
-
-## 커맨드 분기 처리
-
-### 커맨드 파싱
-- `/prd` → dual_track = true, tracks = ["essence", "profit"]
-- `/prd:essence` → dual_track = false, tracks = ["essence"]
-- `/prd:profit` → dual_track = false, tracks = ["profit"]
-
-### 투 트랙 실행 시 병렬 처리
-Step 2와 Step 3에서 두 서브에이전트를 **병렬**로 실행:
-```
-Task 도구를 두 번 호출 (같은 메시지에서):
-1. Essence 평가 에이전트
-2. Profit 평가 에이전트
-```
-
----
-
-## 옵션
-
-| 옵션 | 설명 | 예시 |
-|------|------|------|
-| (기본) | 투 트랙 전체 실행 | `/prd` |
-| `:essence` | 본질 트랙만 | `/prd:essence` |
-| `:profit` | 수익 트랙만 | `/prd:profit` |
-| `--skip-collect` | 기존 수집 데이터 사용 | `/prd --skip-collect` |
-| `--ideas N` | 트랙당 PRD 생성 개수 | `/prd --ideas 5` |
 
 ---
 
 ## 에러 처리
 
 - 특정 소스 수집 실패 → 해당 소스 건너뛰고 계속 진행
-- 특정 트랙 분석 실패 → 해당 트랙 건너뛰고 다른 트랙 계속
-- PRD 생성 실패 → 해당 아이디어 건너뛰고 계속 진행
+- Product Hunt API 실패 → WebFetch 폴백 시도
+- 이미지 URL 없음 → 텍스트만 출력
 
 ---
 
-## 파일명 규칙
+## 파일 구조
 
-| 파일 유형 | 본질 트랙 | 수익 트랙 |
-|----------|-----------|-----------|
-| 인사이트 | `generated/insights/{날짜}-essence.md` | `generated/insights/{날짜}-profit.md` |
-| PRD | `generated/output/prd-{이름}-essence-{날짜}.md` | `generated/output/prd-{이름}-profit-{날짜}.md` |
+```
+generated/
+├── sources/
+│   └── {YYYY-MM-DD}.json    # 수집된 원본 데이터
+└── insights/
+    └── {YYYY-MM-DD}.md      # 데일리 다이제스트
+```
