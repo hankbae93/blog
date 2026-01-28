@@ -72,8 +72,22 @@ Extract latest 10 startup articles. For each: title, summary. Format as numbered
 
 YouTube Data API v3를 사용하여 **다중 카테고리, 다중 지역, 키워드 검색**으로 포괄적인 트렌드를 수집합니다.
 
+> **스킬 참조:** `.claude/skills/youtube/SKILL.md`
 > **API 할당량:** 하루 10,000 포인트 (videos.list: 1pt, search.list: 100pt)
 > 아래 설정으로 약 500~800 포인트 사용 예상
+
+#### 환경변수 로드 (필수)
+
+**중요:** Claude Code에서 파이프(|)를 사용할 때 환경변수가 사라지는 버그가 있습니다.
+반드시 `bash -c 'source .env.local && ...'` 형식으로 호출해야 합니다.
+
+```bash
+# 올바른 호출 방식
+bash -c 'source .env.local && curl -s "https://www.googleapis.com/youtube/v3/videos?..." | jq .'
+
+# 잘못된 호출 방식 (환경변수가 사라짐)
+source .env.local && curl -s "..." | jq .
+```
 
 ---
 
@@ -93,9 +107,10 @@ YouTube Data API v3를 사용하여 **다중 카테고리, 다중 지역, 키워
 - `KR` - 한국 (로컬 트렌드)
 - `US` - 미국 (글로벌 트렌드)
 
-**API URL 템플릿:**
-```
-https://www.googleapis.com/youtube/v3/videos?part=snippet,statistics&chart=mostPopular&regionCode={REGION}&maxResults=15&videoCategoryId={CATEGORY_ID}&key={API_KEY}
+**API 호출 명령어:**
+```bash
+# Trending 영상 조회 (카테고리별)
+bash -c 'source .env.local && curl -s "https://www.googleapis.com/youtube/v3/videos?part=snippet,statistics&chart=mostPopular&regionCode={REGION}&maxResults=15&videoCategoryId={CATEGORY_ID}&key=${YOUTUBE_API_KEY}"'
 ```
 
 **병렬 호출할 URL 목록:**
@@ -129,14 +144,15 @@ https://www.googleapis.com/youtube/v3/videos?part=snippet,statistics&chart=mostP
 | `developer tools productivity` | 개발자 도구 |
 | `no code automation` | 노코드/자동화 |
 
-**API URL 템플릿:**
-```
-https://www.googleapis.com/youtube/v3/search?part=snippet&q={QUERY}&type=video&order=viewCount&publishedAfter={7일전ISO날짜}&maxResults=10&relevanceLanguage=en&key={API_KEY}
+**API 호출 명령어:**
+```bash
+# 키워드 검색 (7일 내 인기순)
+bash -c 'source .env.local && curl -s "https://www.googleapis.com/youtube/v3/search?part=snippet&q={QUERY}&type=video&order=viewCount&publishedAfter={7일전ISO날짜}&maxResults=10&relevanceLanguage=en&key=${YOUTUBE_API_KEY}"'
 ```
 
-**예시 (7일 내 인기순):**
-```
-https://www.googleapis.com/youtube/v3/search?part=snippet&q=indie%20hacker%202026&type=video&order=viewCount&publishedAfter=2026-01-20T00:00:00Z&maxResults=10&key=${YOUTUBE_API_KEY}
+**예시:**
+```bash
+bash -c 'source .env.local && curl -s "https://www.googleapis.com/youtube/v3/search?part=snippet&q=indie%20hacker&type=video&order=viewCount&publishedAfter=2026-01-21T00:00:00Z&maxResults=10&key=${YOUTUBE_API_KEY}"'
 ```
 
 ---
@@ -238,12 +254,16 @@ Format as JSON array.
 
 #### 3-6. API Key
 
-> **환경변수에서 로드:** `.env.local` 파일의 `YOUTUBE_API_KEY` 값을 사용합니다.
+> **환경변수 위치:** `.env.local` 파일
+> **스킬 참조:** `.claude/skills/youtube/SKILL.md`
 >
 > ```bash
-> # .env.local에서 API 키 읽기
-> source .env.local && echo $YOUTUBE_API_KEY
+> # API 키 확인 (bash -c 필수!)
+> bash -c 'source .env.local && echo "Key: ${YOUTUBE_API_KEY:0:15}..."'
 > ```
+>
+> **중요:** 반드시 `bash -c 'source .env.local && ...'` 형식으로 호출해야 합니다.
+> 파이프(|)를 사용할 때 환경변수가 사라지는 Claude Code 버그가 있습니다.
 
 **카테고리 옵션 전체:**
 - `28` - Science & Technology
@@ -256,7 +276,7 @@ Format as JSON array.
 
 ### 4. 데이터 저장
 
-수집된 데이터를 `sources/{YYYY-MM-DD}.json` 파일로 저장합니다.
+수집된 데이터를 `generated/sources/{YYYY-MM-DD}.json` 파일로 저장합니다.
 
 **YouTube 데이터 형식 (확장형):**
 ```json
@@ -335,7 +355,7 @@ Total Items: {총 개수}
 ...
 
 ═══════════════════════════════════════════════════════════════════════════════
-File saved: sources/{날짜}.json
+File saved: generated/sources/{날짜}.json
 Next step: Run /analyze to extract MVP insights
 ```
 
@@ -354,12 +374,16 @@ API 키는 `.env.local` 파일에서 관리합니다 (Git에서 제외됨):
 YOUTUBE_API_KEY=your_api_key_here
 ```
 
-**API 호출 시 환경변수 사용:**
+**API 호출 시 환경변수 사용 (필수 형식):**
 ```bash
-# Bash에서 환경변수 로드 후 사용
-source .env.local
-curl "https://www.googleapis.com/youtube/v3/videos?...&key=$YOUTUBE_API_KEY"
+# 올바른 방식 - bash -c로 감싸서 호출
+bash -c 'source .env.local && curl -s "https://www.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&regionCode=KR&maxResults=5&key=${YOUTUBE_API_KEY}"'
+
+# 잘못된 방식 - 파이프 사용 시 환경변수 사라짐
+source .env.local && curl -s "..." | jq .  # ❌ 환경변수가 사라짐
 ```
+
+> **참고:** 자세한 API 사용법은 `.claude/skills/youtube/SKILL.md` 참조
 
 ### API Key 재발급 방법 (필요시)
 1. [Google Cloud Console](https://console.cloud.google.com) 접속

@@ -30,7 +30,7 @@
 ---
 
 ## 입력
-- `sources/{YYYY-MM-DD}.json` 파일
+- `generated/sources/{YYYY-MM-DD}.json` 파일
 
 ## 분석 프레임워크
 
@@ -103,7 +103,7 @@
 
 ## 🧠 ESSENCE TRACK (본질 추구형)
 
-**페르소나 파일:** `my-persona/essence-persona.md`
+**페르소나 파일:** `generated/my-persona/essence-persona.md`
 
 ### 평가 프레임워크
 
@@ -120,7 +120,7 @@
 Task 도구:
 - subagent_type: "general-purpose"
 - prompt:
-  "my-persona/essence-persona.md 파일을 읽고, 아래 아이디어들을 평가해주세요.
+  "generated/my-persona/essence-persona.md 파일을 읽고, 아래 아이디어들을 평가해주세요.
    [아이디어 목록]
    각 아이디어에 대해 5가지 질문으로 ✅/⚠️/❌ 판정 후 종합 판정 작성"
 ```
@@ -149,7 +149,7 @@ Task 도구:
 
 ## 💰 PROFIT TRACK (수익화 특화)
 
-**페르소나 파일:** `my-persona/profit-persona.md`
+**페르소나 파일:** `generated/my-persona/profit-persona.md`
 
 ### 평가 프레임워크
 
@@ -168,7 +168,7 @@ Task 도구:
 Task 도구:
 - subagent_type: "general-purpose"
 - prompt:
-  "my-persona/profit-persona.md 파일을 읽고, 아래 아이디어들을 수익화 관점에서 평가해주세요.
+  "generated/my-persona/profit-persona.md 파일을 읽고, 아래 아이디어들을 수익화 관점에서 평가해주세요.
    [아이디어 목록]
    각 아이디어에 대해 7가지 질문으로 ✅/⚠️/❌ 판정 후 종합 판정 작성.
    추천 가격대도 제안해주세요."
@@ -296,6 +296,6 @@ Analyzed: {항목 수} items
 ```
 
 ### 파일 저장:
-- 본질 트랙: `insights/{YYYY-MM-DD}-essence.md`
-- 수익 트랙: `insights/{YYYY-MM-DD}-profit.md`
+- 본질 트랙: `generated/insights/{YYYY-MM-DD}-essence.md`
+- 수익 트랙: `generated/insights/{YYYY-MM-DD}-profit.md`
 - 투 트랙: 두 파일 모두 생성

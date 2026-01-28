@@ -13,14 +13,14 @@
 ---
 
 ## 입력
-- 본질 트랙: `insights/{YYYY-MM-DD}-essence.md`
-- 수익 트랙: `insights/{YYYY-MM-DD}-profit.md`
+- 본질 트랙: `generated/insights/{YYYY-MM-DD}-essence.md`
+- 수익 트랙: `generated/insights/{YYYY-MM-DD}-profit.md`
 - 기본: 각 트랙 상위 3개 아이디어에 대해 PRD 생성
 - 옵션: 특정 아이디어만 지정 가능 (예: `/generate MCPmarket`)
 
 ## 출력
-- 본질 트랙: `output/prd-{아이디어명}-essence-{날짜}.md`
-- 수익 트랙: `output/prd-{아이디어명}-profit-{날짜}.md`
+- 본질 트랙: `generated/generated/output/prd-{아이디어명}-essence-{날짜}.md`
+- 수익 트랙: `generated/generated/output/prd-{아이디어명}-profit-{날짜}.md`
 
 ---
 
@@ -197,8 +197,8 @@ MVP에서 의도적으로 제외하는 것들:
 
 **트랙별 입력 파일:**
 - `/generate` (투 트랙): 두 파일 모두 로드
-- `/generate:essence`: `insights/{날짜}-essence.md`
-- `/generate:profit`: `insights/{날짜}-profit.md`
+- `/generate:essence`: `generated/insights/{날짜}-essence.md`
+- `/generate:profit`: `generated/insights/{날짜}-profit.md`
 
 ```
 각 인사이트 파일에서 top_ideas 섹션을 파싱합니다.
@@ -246,13 +246,13 @@ MVP에서 의도적으로 제외하는 것들:
 
 **트랙별 파일명 규칙:**
 ```
-본질 트랙: output/prd-{아이디어명 소문자}-essence-{YYYY-MM-DD}.md
-수익 트랙: output/prd-{아이디어명 소문자}-profit-{YYYY-MM-DD}.md
+본질 트랙: generated/generated/output/prd-{아이디어명 소문자}-essence-{YYYY-MM-DD}.md
+수익 트랙: generated/generated/output/prd-{아이디어명 소문자}-profit-{YYYY-MM-DD}.md
 ```
 
 예:
-- `output/prd-mcpmarket-essence-2026-01-26.md`
-- `output/prd-reviewbot-profit-2026-01-26.md`
+- `generated/generated/output/prd-mcpmarket-essence-2026-01-26.md`
+- `generated/generated/output/prd-reviewbot-profit-2026-01-26.md`
 
 ---
 
@@ -269,30 +269,30 @@ Generated: 6 PRD documents (3 per track)
 ───────────────────────────────────────────────────────────────────────────────
 🧠 ESSENCE TRACK PRDs
 ───────────────────────────────────────────────────────────────────────────────
-📄 output/prd-modubokji-essence-2026-01-26.md
+📄 generated/output/prd-modubokji-essence-2026-01-26.md
    → 모두복지: 복지제도 매칭 (18/20)
    → 전제파괴: ✅ | 본질: ✅ | 진정성: ✅
 
-📄 output/prd-localflash-essence-2026-01-26.md
+📄 generated/output/prd-localflash-essence-2026-01-26.md
    → 로컬플래시: 동네 급처분 마켓 (17/20)
    → 전제파괴: ✅ | 본질: ⚠️ | 진정성: ✅
 
-📄 output/prd-mcpmarket-essence-2026-01-26.md
+📄 generated/output/prd-mcpmarket-essence-2026-01-26.md
    → MCP마켓: 클로드 서버 허브 (15/20)
    → 전제파괴: ⚠️ | 본질: ✅ | 진정성: ⚠️
 
 ───────────────────────────────────────────────────────────────────────────────
 💰 PROFIT TRACK PRDs
 ───────────────────────────────────────────────────────────────────────────────
-📄 output/prd-reviewbot-profit-2026-01-26.md
+📄 generated/output/prd-reviewbot-profit-2026-01-26.md
    → 리뷰봇: 자동 리뷰 응답 (17/20) - $49/월
    → 지불자: ✅ | 반복매출: ✅ | 30일수익: ✅
 
-📄 output/prd-invoiceai-profit-2026-01-26.md
+📄 generated/output/prd-invoiceai-profit-2026-01-26.md
    → 인보이스AI: 자동 청구서 (16/20) - $29/월
    → 지불자: ✅ | 반복매출: ✅ | 30일수익: ⚠️
 
-📄 output/prd-leadgen-profit-2026-01-26.md
+📄 generated/output/prd-leadgen-profit-2026-01-26.md
    → 리드젠: B2B 리드 수집 (15/20) - $99/월
    → 지불자: ⚠️ | 반복매출: ✅ | 30일수익: ⚠️
 
@@ -309,7 +309,7 @@ Total: 6 PRDs | ~30,000 words | Ready for development
 Date: 2026-01-26
 Generated: 3 PRD documents
 
-📄 output/prd-modubokji-essence-2026-01-26.md
+📄 generated/output/prd-modubokji-essence-2026-01-26.md
    → 모두복지: 복지제도 매칭 (18/20)
 
 ...
@@ -325,7 +325,7 @@ Generated: 3 PRD documents
 Date: 2026-01-26
 Generated: 3 PRD documents
 
-📄 output/prd-reviewbot-profit-2026-01-26.md
+📄 generated/output/prd-reviewbot-profit-2026-01-26.md
    → 리뷰봇: 자동 리뷰 응답 (17/20) - $49/월
 
 ...

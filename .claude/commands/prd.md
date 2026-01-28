@@ -15,13 +15,13 @@
 ## 페르소나 설명
 
 ### 🧠 본질 추구형 (Essence)
-- 파일: `my-persona/essence-persona.md`
+- 파일: `generated/my-persona/essence-persona.md`
 - 관점: "이 문제가 왜 존재하는가?"
 - 평가 기준: 전제 파괴, 방치 이유, 비합리적 행동, 진정성
 - 결과: 깊이 있는 문제 해결 아이디어
 
 ### 💰 수익화 특화 (Profit)
-- 파일: `my-persona/profit-persona.md`
+- 파일: `generated/my-persona/profit-persona.md`
 - 관점: "누가, 얼마를, 왜 지불하는가?"
 - 평가 기준: 지불자, 가격, 반복 매출, 첫 수익 속도
 - 결과: 빠르게 돈 되는 아이디어
@@ -35,23 +35,23 @@
   │
   ├─▶ Step 1: /collect (리소스 수집)
   │     └─▶ 9개 소스에서 최신 트렌드 수집
-  │     └─▶ sources/{날짜}.json 저장
+  │     └─▶ generated/sources/{날짜}.json 저장
   │
   ├─▶ Step 2: /analyze (인사이트 추출) - 투 트랙 병렬 실행
   │     ├─▶ 🧠 Essence Track
   │     │     └─▶ 본질 추구형 페르소나 평가
-  │     │     └─▶ insights/{날짜}-essence.md 저장
+  │     │     └─▶ generated/insights/{날짜}-essence.md 저장
   │     │
   │     └─▶ 💰 Profit Track
   │           └─▶ 수익화 특화 페르소나 평가
-  │           └─▶ insights/{날짜}-profit.md 저장
+  │           └─▶ generated/insights/{날짜}-profit.md 저장
   │
   ├─▶ Step 3: /generate (PRD 생성) - 투 트랙 병렬 실행
   │     ├─▶ 🧠 Essence PRDs
-  │     │     └─▶ output/prd-{이름}-essence-{날짜}.md
+  │     │     └─▶ generated/output/prd-{이름}-essence-{날짜}.md
   │     │
   │     └─▶ 💰 Profit PRDs
-  │           └─▶ output/prd-{이름}-profit-{날짜}.md
+  │           └─▶ generated/output/prd-{이름}-profit-{날짜}.md
   │
   └─▶ Step 4: 블로그 동기화 및 배포
         ├─▶ npm run sync (콘텐츠를 pages/로 복사)
@@ -80,7 +80,7 @@
 | TechCrunch | https://techcrunch.com/feed/ |
 | **YouTube Trending** | YouTube Data API v3 (config.json의 API 키 사용) |
 
-WebFetch 또는 API를 사용하여 각 소스에서 최신 콘텐츠를 추출하고, `sources/{YYYY-MM-DD}.json`에 저장합니다.
+WebFetch 또는 API를 사용하여 각 소스에서 최신 콘텐츠를 추출하고, `generated/sources/{YYYY-MM-DD}.json`에 저장합니다.
 
 ### Step 2: 인사이트 추출 (투 트랙)
 
@@ -96,7 +96,7 @@ WebFetch 또는 API를 사용하여 각 소스에서 최신 콘텐츠를 추출�
 #### 🧠 Essence Track 평가 기준
 ```
 Task 도구 호출 - subagent_type: "general-purpose"
-페르소나 파일: my-persona/essence-persona.md
+페르소나 파일: generated/my-persona/essence-persona.md
 
 5가지 질문:
 1. 전제 파괴: 이 제품은 어떤 전제를 깨거나 드러내는가?
@@ -109,7 +109,7 @@ Task 도구 호출 - subagent_type: "general-purpose"
 #### 💰 Profit Track 평가 기준
 ```
 Task 도구 호출 - subagent_type: "general-purpose"
-페르소나 파일: my-persona/profit-persona.md
+페르소나 파일: generated/my-persona/profit-persona.md
 
 7가지 질문:
 1. 누가 돈을 내는가? - 지불자가 명확한가?
@@ -122,8 +122,8 @@ Task 도구 호출 - subagent_type: "general-purpose"
 ```
 
 **출력 파일:**
-- 본질 트랙: `insights/{YYYY-MM-DD}-essence.md`
-- 수익 트랙: `insights/{YYYY-MM-DD}-profit.md`
+- 본질 트랙: `generated/insights/{YYYY-MM-DD}-essence.md`
+- 수익 트랙: `generated/insights/{YYYY-MM-DD}-profit.md`
 
 ### Step 3: PRD 생성 (투 트랙)
 
@@ -140,8 +140,8 @@ PRD 구조:
 8. 부록
 
 **출력 파일:**
-- 본질 트랙: `output/prd-{이름}-essence-{날짜}.md`
-- 수익 트랙: `output/prd-{이름}-profit-{날짜}.md`
+- 본질 트랙: `generated/output/prd-{이름}-essence-{날짜}.md`
+- 수익 트랙: `generated/output/prd-{이름}-profit-{날짜}.md`
 
 ### Step 4: 블로그 동기화 및 배포
 
@@ -187,7 +187,7 @@ npm run sync && git add -A && git commit -m "Daily PRD update: {날짜}" && git 
   ✓ Indie Hackers: 10 items
   ✓ TechCrunch: 6 items
   ✓ YouTube Trending (API v3): 10 items
-  → Saved: sources/2026-01-26.json (80 items)
+  → Saved: generated/sources/2026-01-26.json (80 items)
 
 [Step 2/4] 🔍 Analyzing insights...
 
@@ -200,7 +200,7 @@ npm run sync && git add -A && git commit -m "Daily PRD update: {날짜}" && git 
     → Idea #1: ✅ 추천 (5/5 passed)
     → Idea #2: ⚠️ 보완 필요 (3/5 passed)
     → Idea #3: ❌ 폐기 (1/5 passed)
-  → Saved: insights/2026-01-26-essence.md
+  → Saved: generated/insights/2026-01-26-essence.md
 
   ───────────────────────────────────────────────────────────────────────────
   💰 PROFIT TRACK (수익화 특화)
@@ -211,19 +211,19 @@ npm run sync && git add -A && git commit -m "Daily PRD update: {날짜}" && git 
     → Idea #1: ✅ 추천 (6/7 passed) - $49/mo potential
     → Idea #2: ✅ 추천 (5/7 passed) - $29/mo potential
     → Idea #3: ⚠️ 보완 필요 (4/7 passed)
-  → Saved: insights/2026-01-26-profit.md
+  → Saved: generated/insights/2026-01-26-profit.md
 
 [Step 3/4] 📝 Generating PRDs...
 
   🧠 ESSENCE PRDs:
-  ✓ prd-modubokji-essence-2026-01-26.md (18/20)
-  ✓ prd-localflash-essence-2026-01-26.md (17/20)
-  ✓ prd-mcpmarket-essence-2026-01-26.md (15/20)
+  ✓ generated/output/prd-modubokji-essence-2026-01-26.md (18/20)
+  ✓ generated/output/prd-localflash-essence-2026-01-26.md (17/20)
+  ✓ generated/output/prd-mcpmarket-essence-2026-01-26.md (15/20)
 
   💰 PROFIT PRDs:
-  ✓ prd-reviewbot-profit-2026-01-26.md (17/20) - $49/mo
-  ✓ prd-invoiceai-profit-2026-01-26.md (16/20) - $29/mo
-  ✓ prd-leadgen-profit-2026-01-26.md (15/20) - $99/mo
+  ✓ generated/output/prd-reviewbot-profit-2026-01-26.md (17/20) - $49/mo
+  ✓ generated/output/prd-invoiceai-profit-2026-01-26.md (16/20) - $29/mo
+  ✓ generated/output/prd-leadgen-profit-2026-01-26.md (15/20) - $99/mo
 
 [Step 4/4] 🚀 Deploying to blog...
   ✓ npm run sync - 콘텐츠 동기화 완료
@@ -235,19 +235,19 @@ npm run sync && git add -A && git commit -m "Daily PRD update: {날짜}" && git 
                               COMPLETE (DUAL TRACK)
 ═══════════════════════════════════════════════════════════════════════════════
 Output files:
-  📄 sources/2026-01-26.json
+  📄 generated/sources/2026-01-26.json
 
   🧠 ESSENCE TRACK:
-  📄 insights/2026-01-26-essence.md
-  📄 output/prd-modubokji-essence-2026-01-26.md
-  📄 output/prd-localflash-essence-2026-01-26.md
-  📄 output/prd-mcpmarket-essence-2026-01-26.md
+  📄 generated/insights/2026-01-26-essence.md
+  📄 generated/output/prd-modubokji-essence-2026-01-26.md
+  📄 generated/output/prd-localflash-essence-2026-01-26.md
+  📄 generated/output/prd-mcpmarket-essence-2026-01-26.md
 
   💰 PROFIT TRACK:
-  📄 insights/2026-01-26-profit.md
-  📄 output/prd-reviewbot-profit-2026-01-26.md
-  📄 output/prd-invoiceai-profit-2026-01-26.md
-  📄 output/prd-leadgen-profit-2026-01-26.md
+  📄 generated/insights/2026-01-26-profit.md
+  📄 generated/output/prd-reviewbot-profit-2026-01-26.md
+  📄 generated/output/prd-invoiceai-profit-2026-01-26.md
+  📄 generated/output/prd-leadgen-profit-2026-01-26.md
 ═══════════════════════════════════════════════════════════════════════════════
 ```
 
@@ -302,5 +302,5 @@ Task 도구를 두 번 호출 (같은 메시지에서):
 
 | 파일 유형 | 본질 트랙 | 수익 트랙 |
 |----------|-----------|-----------|
-| 인사이트 | `insights/{날짜}-essence.md` | `insights/{날짜}-profit.md` |
-| PRD | `output/prd-{이름}-essence-{날짜}.md` | `output/prd-{이름}-profit-{날짜}.md` |
+| 인사이트 | `generated/insights/{날짜}-essence.md` | `generated/insights/{날짜}-profit.md` |
+| PRD | `generated/output/prd-{이름}-essence-{날짜}.md` | `generated/output/prd-{이름}-profit-{날짜}.md` |

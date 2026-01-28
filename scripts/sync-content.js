@@ -5,9 +5,9 @@ const rootDir = process.cwd()
 
 // 복사할 디렉토리 매핑
 const mappings = [
-  { source: 'insights', dest: 'content/insights', type: 'insight' },
-  { source: 'output', dest: 'content/prd', type: 'prd' },
-  { source: 'my-persona', dest: 'content/persona', type: 'persona' },
+  { source: 'generated/insights', dest: 'content/insights', type: 'insight' },
+  { source: 'generated/output', dest: 'content/prd', type: 'prd' },
+  { source: 'generated/my-persona', dest: 'content/persona', type: 'persona' },
 ]
 
 function ensureDir(dir) {

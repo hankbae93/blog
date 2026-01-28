@@ -76,8 +76,8 @@
     "date_format": "YYYY-MM-DD"
   },
   "output": {
-    "sources_dir": "sources",
-    "insights_dir": "insights",
-    "prd_dir": "output"
+    "sources_dir": "generated/sources",
+    "insights_dir": "generated/insights",
+    "prd_dir": "generated/output"
   }
 }
