@@ -1,5 +1,6 @@
 export default {
   index: '개요',
+  '2026-01-29': '데일리 인사이트 - 2026-01-29',
   '2026-01-28': '데일리 인사이트 - 2026-01-28',
   '2026-01-28-profit': 'Profit Track Insights - 2026-01-28',
   '2026-01-28-essence': 'MVP Insights - Essence Track',

@@ -1,0 +1,648 @@
+{
+  "collected_at": "2026-01-29T10:00:00Z",
+  "sources": {
+    "product_hunt": {
+      "status": "success",
+      "items": [
+        {
+          "name": "kuku",
+          "tagline": "Obsidian — but a lot has changed",
+          "url": "https://www.producthunt.com/products/kuku",
+          "category": ["productivity", "notes"]
+        },
+        {
+          "name": "Kimi K2.5",
+          "tagline": "Native multimodal model with self-directed agent swarms",
+          "url": "https://www.producthunt.com/products/kimi-ai-assistant",
+          "category": ["ai", "agents"]
+        },
+        {
+          "name": "CleanRoll AI",
+          "tagline": "AI-powered rent roll standardization for CRE investors",
+          "url": "https://www.producthunt.com/products/cleanroll-ai",
+          "category": ["ai", "real-estate"]
+        },
+        {
+          "name": "DevLensPro",
+          "tagline": "AI-powered debugging for Claude Code. Point, click, fix",
+          "url": "https://www.producthunt.com/products/devlenspro",
+          "category": ["developer-tools", "ai"]
+        },
+        {
+          "name": "Cloakly",
+          "tagline": "Hide apps during screen shares – keep your desktop private",
+          "url": "https://www.producthunt.com/products/cloakly",
+          "category": ["productivity", "privacy"]
+        },
+        {
+          "name": "employkids",
+          "tagline": "Hire your kids so they can retire millionaires",
+          "url": "https://www.producthunt.com/products/employkids",
+          "category": ["finance", "family"]
+        },
+        {
+          "name": "NetNewsWire 7",
+          "tagline": "Free and open source RSS reader for Mac, iPhone, and iPad",
+          "url": "https://www.producthunt.com/products/netnewswire-7",
+          "category": ["productivity", "open-source"]
+        },
+        {
+          "name": "Imagine",
+          "tagline": "Build something real with the most complete AI builder",
+          "url": "https://www.producthunt.com/products/imagine-2",
+          "category": ["ai", "no-code"]
+        },
+        {
+          "name": "Komo Playbook",
+          "tagline": "Turn your expertise into AI agents that work 24/7",
+          "url": "https://www.producthunt.com/products/komo-search",
+          "category": ["ai", "automation"]
+        },
+        {
+          "name": "Sayline",
+          "tagline": "The Most Productive Way to Type in 2026",
+          "url": "https://www.producthunt.com/products/sayline",
+          "category": ["productivity", "voice"]
+        }
+      ]
+    },
+    "hacker_news": {
+      "status": "success",
+      "items": [
+        {
+          "title": "Microsoft forced me to switch to Linux",
+          "url": "https://www.himthe.dev/blog/microsoft-to-linux",
+          "points": 1555,
+          "comments": 1240,
+          "category": "career",
+          "relevance_to_indie": "high",
+          "key_insight": "OS 마찰로 인한 개발환경 전환 - 인디 개발자의 도구 선택이 생산성에 직접 영향"
+        },
+        {
+          "title": "Airfoil (2024)",
+          "url": "https://ciechanow.ski/airfoil/",
+          "points": 353,
+          "comments": 48,
+          "category": "technical",
+          "relevance_to_indie": "medium",
+          "key_insight": "인터랙티브 시각화로 교육 콘텐츠 차별화 - 설명형 콘텐츠의 새로운 기준"
+        },
+        {
+          "title": "Somebody used spoofed ADSB signals to raster the meme of JD Vance",
+          "url": "https://alecmuffett.com/article/143548",
+          "points": 304,
+          "comments": 79,
+          "category": "technical",
+          "relevance_to_indie": "low",
+          "key_insight": null
+        },
+        {
+          "title": "The HN Arcade",
+          "url": "https://andrewgy8.github.io/hnarcade/",
+          "points": 299,
+          "comments": 77,
+          "category": "tools",
+          "relevance_to_indie": "medium",
+          "key_insight": "기존 콘텐츠를 새로운 형태로 리패키징 - 창의적 사이드 프로젝트의 좋은 예"
+        },
+        {
+          "title": "Please Don't Say Mean Things about the AI I Just Invested a Billion Dollars In",
+          "url": "https://www.mcsweeneys.net/articles/please-dont-say-mean-things-about-the-ai-that-i-just-invested-a-billion-dollars-in",
+          "points": 192,
+          "comments": 50,
+          "category": "discussion",
+          "relevance_to_indie": "medium",
+          "key_insight": "AI 투자 과열에 대한 풍자 - 실제 문제 해결에 집중하는 것이 중요"
+        },
+        {
+          "title": "Some notes on starting to use Django",
+          "url": "https://jvns.ca/blog/2026/01/27/some-notes-on-starting-to-use-django/",
+          "points": 190,
+          "comments": 107,
+          "category": "technical",
+          "relevance_to_indie": "high",
+          "key_insight": "Django 실전 팁 - 프레임워크 선택 시 실용적 관점의 중요성"
+        },
+        {
+          "title": "Oban, the job processing framework from Elixir, has come to Python",
+          "url": "https://www.dimamik.com/posts/oban_py/",
+          "points": 173,
+          "comments": 74,
+          "category": "tools",
+          "relevance_to_indie": "high",
+          "key_insight": "검증된 프레임워크의 Python 포팅 - 백그라운드 작업 처리 단순화"
+        },
+        {
+          "title": "Mousefood – Build embedded terminal UIs for microcontrollers",
+          "url": "https://github.com/ratatui/mousefood",
+          "points": 152,
+          "comments": 39,
+          "category": "tools",
+          "relevance_to_indie": "high",
+          "key_insight": "임베디드 터미널 UI 도구 - IoT 제품 개발 진입장벽 낮춤"
+        },
+        {
+          "title": "Android's desktop interface leaks",
+          "url": "https://9to5google.com/2026/01/27/android-desktop-leak/",
+          "points": 144,
+          "comments": 228,
+          "category": "discussion",
+          "relevance_to_indie": "medium",
+          "key_insight": "Android 데스크톱 모드 - 새로운 플랫폼 기회 예고"
+        },
+        {
+          "title": "The UK paid £4.1M for a bookmarks site",
+          "url": "https://mahadk.com/posts/ai-skills-hub",
+          "points": 137,
+          "comments": 39,
+          "category": "discussion",
+          "relevance_to_indie": "high",
+          "key_insight": "정부의 과도한 IT 지출 - 간단한 도구도 큰 가치를 가질 수 있음"
+        },
+        {
+          "title": "Jellyfin LLM/AI Development Policy",
+          "url": "https://jellyfin.org/docs/general/contributing/llm-policies/",
+          "points": 132,
+          "comments": 66,
+          "category": "discussion",
+          "relevance_to_indie": "high",
+          "key_insight": "오픈소스 프로젝트의 AI 정책 수립 - 인디 개발자도 명확한 AI 사용 정책 필요"
+        },
+        {
+          "title": "Trinity large: An open 400B sparse MoE model",
+          "url": "https://www.arcee.ai/blog/trinity-large",
+          "points": 90,
+          "comments": 29,
+          "category": "ai",
+          "relevance_to_indie": "medium",
+          "key_insight": "오픈소스 대규모 모델 - AI 제품 개발 비용 절감 가능성"
+        },
+        {
+          "title": "Show HN: A MitM proxy to see what your LLM tools are sending",
+          "url": "https://github.com/jmuncor/sherlock",
+          "points": 74,
+          "comments": 29,
+          "category": "tools",
+          "relevance_to_indie": "high",
+          "key_insight": "LLM API 디버깅 도구 - 비용 최적화와 데이터 검증에 필수"
+        },
+        {
+          "title": "I reverse-engineered Netflix's 4K restrictions",
+          "url": "https://github.com/Pickle-Pixel/netflix-force-4k",
+          "points": 54,
+          "comments": 34,
+          "category": "technical",
+          "relevance_to_indie": "medium",
+          "key_insight": "플랫폼 제약 우회 - 리버스 엔지니어링 기술의 가치"
+        }
+      ]
+    },
+    "github_trending": {
+      "status": "success",
+      "items": [
+        {
+          "repo": "badlogic/pi-mono",
+          "url": "https://github.com/badlogic/pi-mono",
+          "description": "AI agent toolkit: coding agent CLI, unified LLM API, TUI & web UI libraries, Slack bot, vLLM pods",
+          "language": "TypeScript",
+          "stars": 3129,
+          "stars_today": 467
+        },
+        {
+          "repo": "ran-j/PS2Recomp",
+          "url": "https://github.com/ran-j/PS2Recomp",
+          "description": "Playstation 2 Static Recompiler & Runtime Tool to make native PC ports",
+          "language": "C++",
+          "stars": 1460,
+          "stars_today": 458
+        },
+        {
+          "repo": "hashicorp/vault",
+          "url": "https://github.com/hashicorp/vault",
+          "description": "A tool for secrets management, encryption as a service, and privileged access management",
+          "language": "Go",
+          "stars": 34374,
+          "stars_today": 352
+        },
+        {
+          "repo": "MoonshotAI/kimi-cli",
+          "url": "https://github.com/MoonshotAI/kimi-cli",
+          "description": "Kimi Code CLI is your next CLI agent.",
+          "language": "Python",
+          "stars": 4548,
+          "stars_today": 298
+        },
+        {
+          "repo": "NevaMind-AI/memU",
+          "url": "https://github.com/NevaMind-AI/memU",
+          "description": "Memory for 24/7 proactive agents like moltbot (clawdbot).",
+          "language": "Python",
+          "stars": 5522,
+          "stars_today": 239
+        },
+        {
+          "repo": "asgeirtj/system_prompts_leaks",
+          "url": "https://github.com/asgeirtj/system_prompts_leaks",
+          "description": "Collection of extracted System Prompts from popular chatbots like ChatGPT, Claude & Gemini",
+          "language": "JavaScript",
+          "stars": 26577,
+          "stars_today": 216
+        },
+        {
+          "repo": "lobehub/lobehub",
+          "url": "https://github.com/lobehub/lobehub",
+          "description": "The ultimate space for work and life — to find, build, and collaborate with agent teammates that grow with you.",
+          "language": "TypeScript",
+          "stars": 70893,
+          "stars_today": 144
+        },
+        {
+          "repo": "bambulab/BambuStudio",
+          "url": "https://github.com/bambulab/BambuStudio",
+          "description": "PC Software for BambuLab and other 3D printers",
+          "language": "C++",
+          "stars": 3826,
+          "stars_today": 33
+        },
+        {
+          "repo": "kubernetes/ingress-nginx",
+          "url": "https://github.com/kubernetes/ingress-nginx",
+          "description": "Ingress NGINX Controller for Kubernetes",
+          "language": "Go",
+          "stars": 19352,
+          "stars_today": 29
+        },
+        {
+          "repo": "protocolbuffers/protobuf",
+          "url": "https://github.com/protocolbuffers/protobuf",
+          "description": "Protocol Buffers - Google's data interchange format",
+          "language": "C++",
+          "stars": 70446,
+          "stars_today": 16
+        }
+      ]
+    },
+    "indie_hackers": {
+      "status": "success",
+      "items": [
+        {
+          "title": "Building a product in 20 hours and growing it to a 5-figure ARR",
+          "url": "https://www.indiehackers.com/post/tech/building-a-product-in-20-hours-and-growing-it-to-a-5-figure-arr-p1fyDKtYj5HMItJxV87H",
+          "revenue": "5-figure ARR",
+          "build_time": "20 hours",
+          "strategy": "service-to-product",
+          "founder_type": "bootstrapped"
+        },
+        {
+          "title": "Validating via services before building a $27k MRR product",
+          "url": "https://www.indiehackers.com/post/tech/validating-via-services-before-building-a-27k-mrr-product-7FrT6FXChPOiUK4PbXFp",
+          "revenue": "$27k MRR",
+          "build_time": null,
+          "strategy": "service-validation before product",
+          "founder_type": "bootstrapped"
+        },
+        {
+          "title": "Building an app portfolio to $60k/mo after Apple froze his developer account",
+          "url": "https://www.indiehackers.com/post/tech/building-an-app-portfolio-to-60k-mo-after-apple-froze-his-developer-account-LD7oNYzKSmWucRfKV1AO",
+          "revenue": "$60k/mo",
+          "build_time": null,
+          "strategy": "multi-app portfolio diversification",
+          "founder_type": "solo"
+        },
+        {
+          "title": "From open-source donations to $13k MRR product",
+          "url": "https://www.indiehackers.com/post/tech/from-open-source-donations-to-13k-mrr-product-rl7FbRceFPj4ZvI0nGoV",
+          "revenue": "$13k MRR",
+          "build_time": null,
+          "strategy": "open-source monetization",
+          "founder_type": "bootstrapped"
+        },
+        {
+          "title": "Getting a multi-million-dollar foothold in a crowded market",
+          "url": "https://www.indiehackers.com/post/tech/getting-an-multi-million-dollar-foothold-in-a-crowded-market-IKfGcwhlcGQDnjExin8A",
+          "revenue": "several million ARR",
+          "build_time": null,
+          "strategy": "indirect distribution in saturated market",
+          "founder_type": "bootstrapped"
+        },
+        {
+          "title": "Clone The App: 14 validated app ideas making $10K+ MRR",
+          "url": "https://www.indiehackers.com/product/clone-the-app",
+          "revenue": "$10K+ MRR",
+          "build_time": null,
+          "strategy": "validated app portfolio",
+          "founder_type": "solo"
+        },
+        {
+          "title": "Bazzly: How to win at SEO with Reddit",
+          "url": "https://www.indiehackers.com/product/bazzly",
+          "revenue": null,
+          "build_time": null,
+          "strategy": "Reddit SEO distribution",
+          "founder_type": "solo"
+        },
+        {
+          "title": "$2k MRR after 228 days - What building a SaaS really looks like",
+          "url": "https://www.indiehackers.com/post/2k-mrr-after-228-days-this-is-what-building-a-saas-really-looks-like-435b69c112",
+          "revenue": "$2k MRR",
+          "build_time": "228 days",
+          "strategy": "realistic SaaS timeline",
+          "founder_type": "solo"
+        }
+      ]
+    },
+    "geeknews": {
+      "status": "success",
+      "items": [
+        {
+          "title": "Andrej Karpathy의 최근 몇 주간 Claude 코딩 경험에 대한 단상",
+          "url": "https://x.com/karpathy/status/2015883857489522876",
+          "points": 43,
+          "comments": 13,
+          "summary": "11월 80% 수동 + 자동완성 → 12월 80% 에이전틱 코딩으로 워크플로우 전환"
+        },
+        {
+          "title": "Postgres 베스트 프랙티스를 AI 에이전트에 직접 가르치는 Agent Skills 공개",
+          "url": "https://supabase.com/blog/postgres-best-practices-for-ai-agents",
+          "points": 34,
+          "comments": null,
+          "summary": "Supabase가 AI 코딩 에이전트의 DB 처리 문제 해결을 위해 Agent Skills 도입"
+        },
+        {
+          "title": "2년간의 'vibecoding'을 끝내고 다시 손으로 코드를 쓰기 시작했다",
+          "url": "https://atmoio.substack.com/p/after-two-years-of-vibecoding-im",
+          "points": 30,
+          "comments": 7,
+          "summary": "AI 보조 코딩의 일관성과 구조 문제로 수동 코딩으로 복귀"
+        },
+        {
+          "title": "Show GN: 액션베이스(Actionbase) – 좋아요, 최근 본, 팔로우를 위한 데이터베이스",
+          "url": "https://github.com/kakao",
+          "points": 19,
+          "comments": 24,
+          "summary": "Kakao의 좋아요/최근본/팔로우 기능 최적화 오픈소스 DB"
+        },
+        {
+          "title": "Show GN: 8주간 작은 브라우저를 만들어봤어요.",
+          "url": "https://github.com/beginner-jhj",
+          "points": 13,
+          "comments": 6,
+          "summary": "C++과 Qt로 8주간 브라우저 엔진 직접 구현"
+        },
+        {
+          "title": "Show GN: 치지직 클립 다운로더 크롬익스텐션",
+          "url": "https://media-processor.github.io",
+          "points": 13,
+          "comments": 12,
+          "summary": "외부 이동 없이 클립 다운로드하는 크롬 확장"
+        },
+        {
+          "title": "Claude 안에서 바로 쓰는 인터랙티브 도구들(Interactive Tools in Claude)",
+          "url": "https://claude.com/blog/interactive-tools-in-claude",
+          "points": 10,
+          "comments": 1,
+          "summary": "Claude 채팅에서 Slack 메시지, Figma 디자인 직접 연동"
+        },
+        {
+          "title": "QMD - 퀵 마크다운 서치",
+          "url": "https://github.com/tobi/qmd",
+          "points": 3,
+          "comments": null,
+          "summary": "BM25 전문 검색 기반 경량 마크다운 검색 CLI"
+        },
+        {
+          "title": "Show GN: 아직도 마피아 게임할 때 사회자 구하시나요? (AI 사회자 등판)",
+          "url": "https://im-mafia.com",
+          "points": 3,
+          "comments": 1,
+          "summary": "마피아 게임용 AI 사회자"
+        },
+        {
+          "title": "pg-status - PostgreSQL 호스트 상태 파악용 경량 마이크로서비스",
+          "url": "https://github.com/krylosov-aa/pg-status",
+          "points": 2,
+          "comments": null,
+          "summary": "PostgreSQL 클러스터 상태 실시간 감지용 사이드카"
+        }
+      ]
+    },
+    "dev_to": {
+      "status": "success",
+      "items": [
+        {
+          "title": "We're Creating a Knowledge Collapse and No One's Talking About It",
+          "author": "Daniel Nwaneri",
+          "url": "https://dev.to/dannwaneri/were-creating-a-knowledge-collapse-and-no-ones-talking-about-it-226d",
+          "tags": ["discuss", "ai", "webdev", "career"],
+          "reactions": 124,
+          "comments": 106
+        },
+        {
+          "title": "About Wizards & Warlocks, Programmers & Vibe Coders",
+          "author": "Manuel Artero Anguita",
+          "url": "https://dev.to/manuartero/about-wizards-warlocks-programmers-vibe-coders-4p6n",
+          "tags": ["programming", "ai", "vibecoding", "career"],
+          "reactions": 26,
+          "comments": 7
+        },
+        {
+          "title": "I spent a year building a PWA to track 150 cafe workspaces",
+          "author": "Kevin G",
+          "url": "https://dev.to/cafe_roamer/i-spent-a-year-building-a-pwa-to-track-150-cafe-workspaces-did-ai-actually-help-or-did-it-just-59jn",
+          "tags": ["webdev", "workplace", "ai", "startup"],
+          "reactions": 24,
+          "comments": 2
+        },
+        {
+          "title": "It's 2026. Why Are Teams Still Playing Planning Poker?",
+          "author": "Matt Lewandowski",
+          "url": "https://dev.to/mattlewandowski93/its-2026-why-are-teams-still-playing-planning-poker-29gn",
+          "tags": ["webdev", "scrum", "agile", "management"],
+          "reactions": 20,
+          "comments": 2
+        },
+        {
+          "title": "Building Connected Agents with MCP and A2A",
+          "author": "Mollie Pettit",
+          "url": "https://dev.to/googleai/building-connected-agents-with-mcp-and-a2a-47b6",
+          "tags": ["cloud", "agents", "ai", "database"],
+          "reactions": 17,
+          "comments": null
+        },
+        {
+          "title": "I built a brain for Claude Code because it keeps forgetting everything",
+          "author": "CyborgNinja1",
+          "url": "https://dev.to/mkdelta221/i-built-a-brain-for-claude-code-because-it-keeps-forgetting-everything-ef9",
+          "tags": ["claudecode", "ai", "opensource", "typescript"],
+          "reactions": 2,
+          "comments": null
+        },
+        {
+          "title": "Managing Unreliable Compilers",
+          "author": "Derek Cheng",
+          "url": "https://dev.to/derekcheng/managing-unreliable-compilers-5ah1",
+          "tags": ["career", "ai", "softwaredevelopment"],
+          "reactions": 5,
+          "comments": 2
+        }
+      ]
+    },
+    "lobsters": {
+      "status": "success",
+      "items": [
+        {
+          "title": "Cloudflare claimed they implemented Matrix on Cloudflare workers. They didn't",
+          "url": "https://tech.lgbt/@JadedBlueEyes/115967791152135761",
+          "points": 202,
+          "comments": 42,
+          "tags": ["distributed", "rant", "vibecoding"]
+        },
+        {
+          "title": "I Started Identifying Corporate Devices in My Software",
+          "url": "https://lgug2z.com/articles/i-started-identifying-corporate-devices-in-my-software/",
+          "points": 92,
+          "comments": 15,
+          "tags": ["law", "programming"]
+        },
+        {
+          "title": "Blocking Claude",
+          "url": "https://aphyr.com/posts/403-blocking-claude",
+          "points": 90,
+          "comments": 36,
+          "tags": ["networking"]
+        },
+        {
+          "title": "Lobsters Vibecoding Challenge (Winter 2025-2026)",
+          "url": "https://gist.github.com/MostAwesomeDude/bb8cbfd005a33f5dd262d1f20a63a693",
+          "points": 62,
+          "comments": 55,
+          "tags": ["nix", "python", "vibecoding"]
+        },
+        {
+          "title": "UEFIGame: Win -> Boot, Lose -> Shutdown",
+          "url": "https://github.com/mycroftsnm/UEFIGame",
+          "points": 39,
+          "comments": 0,
+          "tags": ["games"]
+        },
+        {
+          "title": "It is incorrect to normalize // in HTTP URL paths",
+          "url": "https://runxiyu.org/comp/doubleslash/",
+          "points": 36,
+          "comments": 47,
+          "tags": ["web"]
+        },
+        {
+          "title": "make.ts",
+          "url": "https://matklad.github.io/2026/01/27/make-ts.html",
+          "points": 32,
+          "comments": 18,
+          "tags": ["practices"]
+        },
+        {
+          "title": "Time Machine inside a FreeBSD jail",
+          "url": "https://it-notes.dragas.net/2026/01/28/time-machine-freebsd-jail/",
+          "points": 17,
+          "comments": 3,
+          "tags": ["freebsd", "mac"]
+        },
+        {
+          "title": "a bootstrap chain for NixOS which builds the whole system from a small hand-auditable binary seed",
+          "url": "https://chaos.social/@nzbr/115973847897716839",
+          "points": 15,
+          "comments": 2,
+          "tags": ["nix", "security"]
+        },
+        {
+          "title": "Ariel OS is a library operating system for secure, memory-safe, low-power IoT, written in Rust",
+          "url": "https://github.com/ariel-os/ariel-os",
+          "points": 14,
+          "comments": 2,
+          "tags": ["hardware", "rust"]
+        }
+      ]
+    },
+    "techcrunch": {
+      "status": "success",
+      "items": [
+        {
+          "title": "Microsoft gained $7.6B from OpenAI last quarter",
+          "url": "https://techcrunch.com/2026/01/28/microsoft-earnings-7-6-billion-openai/",
+          "category": "Enterprise",
+          "summary": "Microsoft가 OpenAI 파트너십에서 분기당 76억 달러 수익"
+        },
+        {
+          "title": "Zuckerberg teases agentic commerce tools and major AI rollout in 2026",
+          "url": "https://techcrunch.com/2026/01/28/zuckerberg-teases-agentic-commerce-tools-and-major-ai-rollout-in-2026/",
+          "category": "AI",
+          "summary": "Meta CEO가 올해 에이전틱 커머스와 대규모 AI 출시 예고"
+        },
+        {
+          "title": "AI security startup Outtake raises $40M from Iconiq, Satya Nadella, Bill Ackman",
+          "url": "https://techcrunch.com/2026/01/28/ai-security-startup-outtake-raises-40m-from-iconiq-satya-nadella-bill-ackman-and-other-big-names/",
+          "category": "Funding",
+          "summary": "AI 보안 스타트업 Outtake, 주요 투자자로부터 4천만 달러 조달"
+        },
+        {
+          "title": "Meta burned $19 billion on VR last year, and 2026 won't be any better",
+          "url": "https://techcrunch.com/2026/01/28/meta-burned-19-billion-on-vr-last-year-and-2026-wont-be-any-better/",
+          "category": "Social",
+          "summary": "Meta Reality Labs, VR에 190억 달러 지출"
+        },
+        {
+          "title": "Tesla is killing off the Model S and Model X",
+          "url": "https://techcrunch.com/2026/01/28/tesla-is-killing-off-the-model-s-and-model-x/",
+          "category": "Transportation",
+          "summary": "Tesla, Model S와 Model X 생산 중단"
+        },
+        {
+          "title": "Tesla profit tanked 46% in 2025",
+          "url": "https://techcrunch.com/2026/01/28/tesla-earnings-profit-q4-2025/",
+          "category": "Transportation",
+          "summary": "Tesla 수익 전년 대비 46% 감소"
+        }
+      ]
+    },
+    "youtube_trending": {
+      "status": "success",
+      "by_search": {
+        "ai_agent_coding": [
+          {
+            "title": "Claude Code Ends SaaS, the Gemini + Siri Partnership, and Math Finally Solves AI | #224",
+            "channel": "Peter H. Diamandis",
+            "videoId": "DTgrzlQtOd0"
+          },
+          {
+            "title": "I got a private lesson on Claude Cowork & Claude Code",
+            "channel": "Greg Isenberg",
+            "videoId": "DW4a1Cm8nG4"
+          },
+          {
+            "title": "Top 10 Crazy AI Apps You Must Try - Best Mobile & Web Apps | 2026",
+            "channel": "Trakin Tech",
+            "videoId": "KMVrA0_o1Ss"
+          },
+          {
+            "title": "Esto es lo que hace un programador moderno en 2026",
+            "channel": "Fazt",
+            "videoId": "S9g76vQA1bU"
+          }
+        ]
+      },
+      "by_category": {
+        "science_tech_US": [
+          {
+            "title": "This camera is a time machine!",
+            "channel": "Mrwhosetheboss",
+            "viewCount": "3919455"
+          },
+          {
+            "title": "I Spilled Liquid on my PC...now what?",
+            "channel": "Linus Tech Tips",
+            "viewCount": "2174391"
+          }
+        ]
+      }
+    }
+  }
+}
