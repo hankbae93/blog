@@ -74,7 +74,7 @@
   "producthunt_api": {
     "api_key_env": "PRODUCTHUNT_ACCESS_TOKEN",
     "endpoint": "https://api.producthunt.com/v2/api/graphql",
-    "note": "Product Hunt GraphQL API - 발급: https://www.producthunt.com/v2/oauth/applications"
+    "note": "Set in .env.local or Vercel Environment Variables"
   },
   "collection": {
     "max_items_per_source": 10,
