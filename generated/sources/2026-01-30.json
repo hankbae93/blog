@@ -1,0 +1,759 @@
+{
+  "collected_at": "2026-01-30T10:00:00Z",
+  "date": "2026-01-30",
+  "total_sources": 9,
+  "sources": {
+    "product_hunt": {
+      "status": "success",
+      "items": [
+        {
+          "id": "1062703",
+          "name": "Pandada AI",
+          "tagline": "Build data wealth: Turns files into McKinsey-level insights",
+          "url": "https://www.producthunt.com/products/pandada-ai",
+          "votesCount": 471,
+          "commentsCount": 185,
+          "createdAt": "2026-01-29T08:01:00Z",
+          "topics": ["Analytics", "Data & Analytics", "Data Visualization"],
+          "makers": 8,
+          "thumbnail": "https://ph-files.imgix.net/542d567e-7deb-4436-b390-befecdc6c479.png?auto=format"
+        },
+        {
+          "id": "1062783",
+          "name": "TravelAnimator",
+          "tagline": "Turn Google Maps URLs into stunning map animations.",
+          "url": "https://www.producthunt.com/products/travel-animator",
+          "votesCount": 420,
+          "commentsCount": 40,
+          "createdAt": "2026-01-29T08:01:00Z",
+          "topics": ["Travel", "Maps", "Video"],
+          "makers": 4,
+          "thumbnail": "https://ph-files.imgix.net/e88c89b8-6ee0-4d77-8f9c-ad6e9db179da.gif?auto=format"
+        },
+        {
+          "id": "1062446",
+          "name": "Meet-Ting",
+          "tagline": "AI that gives your schedule a brain.",
+          "url": "https://www.producthunt.com/products/meet-ting",
+          "votesCount": 242,
+          "commentsCount": 43,
+          "createdAt": "2026-01-29T08:01:00Z",
+          "topics": ["Productivity", "Meetings", "Calendar"],
+          "makers": 5,
+          "thumbnail": "https://ph-files.imgix.net/942e695d-8e68-4c5d-b1f6-e75c1fdba4ae.jpeg?auto=format"
+        },
+        {
+          "id": "1066020",
+          "name": "Meteroid",
+          "tagline": "Billing platform to launch, test, + scale business models",
+          "url": "https://www.producthunt.com/products/meteroid-2",
+          "votesCount": 217,
+          "commentsCount": 29,
+          "createdAt": "2026-01-29T08:01:00Z",
+          "topics": ["Open Source", "GitHub", "Finance", "Operations"],
+          "makers": 3,
+          "thumbnail": "https://ph-files.imgix.net/ca1ac5c9-ba15-4bc6-8577-1dfee414c9bd.svg?auto=format"
+        },
+        {
+          "id": "1069018",
+          "name": "AI Chrome Extension Builder",
+          "tagline": "Build Chrome Extensions by Talking to AI",
+          "url": "https://www.producthunt.com/products/shipper-now",
+          "votesCount": 211,
+          "commentsCount": 18,
+          "createdAt": "2026-01-29T08:01:00Z",
+          "topics": ["Browser Extensions", "Design Tools", "Development"],
+          "makers": 2,
+          "thumbnail": "https://ph-files.imgix.net/eb7982c8-31a2-46c4-8d50-431c2e1f810d.png?auto=format"
+        },
+        {
+          "id": "1069789",
+          "name": "The Prompting Company",
+          "tagline": "SEO is dead. Be the product cited by ChatGPT.",
+          "url": "https://www.producthunt.com/products/the-prompting-company",
+          "votesCount": 203,
+          "commentsCount": 31,
+          "createdAt": "2026-01-29T08:01:00Z",
+          "topics": ["Marketing", "SEO", "Artificial Intelligence"],
+          "makers": 3,
+          "thumbnail": "https://ph-files.imgix.net/784103dd-4b8d-4dac-b3d5-939fc7b1a598.png?auto=format"
+        },
+        {
+          "id": "1069411",
+          "name": "Agentic Vision in Gemini",
+          "tagline": "Agentic visual reasoning with code execution",
+          "url": "https://www.producthunt.com/products/gemini-6",
+          "votesCount": 161,
+          "commentsCount": 2,
+          "createdAt": "2026-01-29T08:01:00Z",
+          "topics": ["Artificial Intelligence", "Development"],
+          "makers": 1,
+          "thumbnail": "https://ph-files.imgix.net/8fa8b36b-a7a9-468e-b8f3-ca6d29408602.png?auto=format"
+        },
+        {
+          "id": "996890",
+          "name": "StoryCV",
+          "tagline": "Guided AI that interviews you and writes your resume for you",
+          "url": "https://www.producthunt.com/products/storycv",
+          "votesCount": 158,
+          "commentsCount": 17,
+          "createdAt": "2026-01-29T08:01:00Z",
+          "topics": ["Productivity", "Writing", "Career"],
+          "makers": 1,
+          "thumbnail": "https://ph-files.imgix.net/e608faf2-b87e-4fce-9511-a52a99a76e33.png?auto=format"
+        },
+        {
+          "id": "1057211",
+          "name": "Kipps AI WhatsApp Agent",
+          "tagline": "Turn WhatsApp chats into revenue on autopilot",
+          "url": "https://www.producthunt.com/products/kipps-ai",
+          "votesCount": 143,
+          "commentsCount": 27,
+          "createdAt": "2026-01-29T08:01:00Z",
+          "topics": ["Messaging", "Sales", "Artificial Intelligence"],
+          "makers": 2,
+          "thumbnail": "https://ph-files.imgix.net/dfeeb9dd-86dc-4e9d-83bf-4d6e46954bd4.png?auto=format"
+        },
+        {
+          "id": "1069189",
+          "name": "Willow on Windows",
+          "tagline": "Write anywhere on your computer. By voice.",
+          "url": "https://www.producthunt.com/products/willow-voice",
+          "votesCount": 127,
+          "commentsCount": 19,
+          "createdAt": "2026-01-29T08:01:00Z",
+          "topics": ["Windows", "Productivity", "Artificial Intelligence"],
+          "makers": 6,
+          "thumbnail": "https://ph-files.imgix.net/75bede2c-ac00-4f6e-b17d-6cc6187a54ac.png?auto=format"
+        }
+      ]
+    },
+    "hacker_news": {
+      "status": "success",
+      "items": [
+        {
+          "title": "Claude Code daily benchmarks for degradation tracking",
+          "url": "https://marginlab.ai/trackers/claude-code/",
+          "points": 573,
+          "comments": 282,
+          "category": "ai",
+          "relevance_to_indie": "high",
+          "key_insight": "Performance monitoring tools for AI coding assistants help developers make informed tool choices"
+        },
+        {
+          "title": "Project Genie: Experimenting with infinite, interactive worlds",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/project-genie/",
+          "points": 471,
+          "comments": 233,
+          "category": "ai",
+          "relevance_to_indie": "medium",
+          "key_insight": "AI-generated interactive content is becoming accessible; potential for indie game tools"
+        },
+        {
+          "title": "PlayStation 2 Recompilation Project Is Absolutely Incredible",
+          "url": "https://redgamingtech.com/playstation-2-recompilation-project-is-absolutely-incredible/",
+          "points": 309,
+          "comments": 131,
+          "category": "technical",
+          "relevance_to_indie": "medium",
+          "key_insight": "Complex technical projects demonstrate how specialized expertise can generate significant community interest"
+        },
+        {
+          "title": "AGENTS.md outperforms skills in our agent evals",
+          "url": "https://vercel.com/blog/agents-md-outperforms-skills-in-our-agent-evals",
+          "points": 189,
+          "comments": 84,
+          "category": "ai",
+          "relevance_to_indie": "high",
+          "key_insight": "Agent evaluation frameworks provide benchmarks for building and improving AI-powered features"
+        },
+        {
+          "title": "Grid: Forever free, local-first, browser-based 3D printing/CNC/laser slicer",
+          "url": "https://grid.space/stem/",
+          "points": 162,
+          "comments": 58,
+          "category": "tools",
+          "relevance_to_indie": "high",
+          "key_insight": "Open-source hardware software can attract users through free, privacy-first positioning"
+        },
+        {
+          "title": "Moltworker: a self-hosted personal AI agent, minus the minis",
+          "url": "https://blog.cloudflare.com/moltworker-self-hosted-ai-agent/",
+          "points": 159,
+          "comments": 56,
+          "category": "tools",
+          "relevance_to_indie": "high",
+          "key_insight": "Self-hosted AI infrastructure reduces vendor lock-in; attractive for privacy-conscious products"
+        },
+        {
+          "title": "How to choose colors for your CLI applications (2023)",
+          "url": "https://blog.xoria.org/terminal-colors/",
+          "points": 156,
+          "comments": 82,
+          "category": "technical",
+          "relevance_to_indie": "high",
+          "key_insight": "UX guidance for CLI tools helps indie developers create more professional command-line products"
+        },
+        {
+          "title": "My Mom and Dr. DeepSeek (2025)",
+          "url": "https://restofworld.org/2025/ai-chatbot-china-sick/",
+          "points": 136,
+          "comments": 82,
+          "category": "ai",
+          "relevance_to_indie": "medium",
+          "key_insight": "Real-world AI adoption stories reveal practical use cases beyond tech-focused audiences"
+        },
+        {
+          "title": "Is the RAM shortage killing small VPS hosts?",
+          "url": "https://www.fourplex.net/2026/01/29/is-the-ram-shortage-killing-small-vps-hosts/",
+          "points": 133,
+          "comments": 172,
+          "category": "discussion",
+          "relevance_to_indie": "high",
+          "key_insight": "Infrastructure cost pressures affect hosting choices; indie devs should monitor supply trends"
+        },
+        {
+          "title": "Flameshot",
+          "url": "https://github.com/flameshot-org/flameshot",
+          "points": 132,
+          "comments": 47,
+          "category": "tools",
+          "relevance_to_indie": "medium",
+          "key_insight": "Successful open-source utilities demonstrate demand for niche developer tools"
+        },
+        {
+          "title": "Deep dive into Turso, the \"SQLite rewrite in Rust\"",
+          "url": "https://kerkour.com/turso-sqlite",
+          "points": 123,
+          "comments": 100,
+          "category": "technical",
+          "relevance_to_indie": "high",
+          "key_insight": "Rust-based database modernization provides indie devs with scalable alternatives to traditional SQL"
+        },
+        {
+          "title": "Launch HN: AgentMail (YC S25) – An API that gives agents their own email inboxes",
+          "url": "https://news.ycombinator.com/item?id=46812608",
+          "points": 122,
+          "comments": 139,
+          "category": "startup",
+          "relevance_to_indie": "high",
+          "key_insight": "Email-based agent infrastructure opens new product categories for indie developers"
+        }
+      ]
+    },
+    "github_trending": {
+      "status": "success",
+      "items": [
+        {
+          "repo": "moltbot/moltbot",
+          "description": "Personal AI assistant across any OS and platform",
+          "language": "TypeScript",
+          "stars": 105410,
+          "stars_today": 16338,
+          "url": "https://github.com/moltbot/moltbot"
+        },
+        {
+          "repo": "asgeirtj/system_prompts_leaks",
+          "description": "Extracted system prompts from ChatGPT, Claude, and Gemini",
+          "language": "JavaScript",
+          "stars": 27760,
+          "stars_today": 1387,
+          "url": "https://github.com/asgeirtj/system_prompts_leaks"
+        },
+        {
+          "repo": "NevaMind-AI/memU",
+          "description": "Memory system for 24/7 proactive agents",
+          "language": "Python",
+          "stars": 6101,
+          "stars_today": 604,
+          "url": "https://github.com/NevaMind-AI/memU"
+        },
+        {
+          "repo": "MoonshotAI/kimi-cli",
+          "description": "CLI agent for code operations",
+          "language": "Python",
+          "stars": 5005,
+          "stars_today": 492,
+          "url": "https://github.com/MoonshotAI/kimi-cli"
+        },
+        {
+          "repo": "badlogic/pi-mono",
+          "description": "Coding agent CLI with unified LLM API and UI libraries",
+          "language": "TypeScript",
+          "stars": 3493,
+          "stars_today": 396,
+          "url": "https://github.com/badlogic/pi-mono"
+        },
+        {
+          "repo": "hashicorp/vault",
+          "description": "Secrets management and privileged access tool",
+          "language": "Go",
+          "stars": 34640,
+          "stars_today": 255,
+          "url": "https://github.com/hashicorp/vault"
+        },
+        {
+          "repo": "Shubhamsaboo/awesome-llm-apps",
+          "description": "Collection of LLM applications using AI agents and RAG with various models",
+          "language": "Python",
+          "stars": 90935,
+          "stars_today": 208,
+          "url": "https://github.com/Shubhamsaboo/awesome-llm-apps"
+        },
+        {
+          "repo": "modelcontextprotocol/ext-apps",
+          "description": "Spec and SDK for MCP Apps protocol supporting embedded AI chatbots",
+          "language": "TypeScript",
+          "stars": 861,
+          "stars_today": 117,
+          "url": "https://github.com/modelcontextprotocol/ext-apps"
+        },
+        {
+          "repo": "protocolbuffers/protobuf",
+          "description": "Google's data interchange format",
+          "language": "C++",
+          "stars": 70520,
+          "stars_today": 87,
+          "url": "https://github.com/protocolbuffers/protobuf"
+        },
+        {
+          "repo": "pedroslopez/whatsapp-web.js",
+          "description": "WhatsApp client library connecting through browser app",
+          "language": "JavaScript",
+          "stars": 20722,
+          "stars_today": 16,
+          "url": "https://github.com/pedroslopez/whatsapp-web.js"
+        }
+      ]
+    },
+    "geeknews": {
+      "status": "success",
+      "items": [
+        {
+          "title": "Andrej Karpathy의 최근 몇 주간 Claude 코딩 경험에 대한 단상",
+          "url": "https://x.com/karpathy/status/2015883857489522876",
+          "points": 57,
+          "comments": 15,
+          "summary": "Shift in coding workflow from 80% manual to 80% AI agent-based coding between November and December 2024."
+        },
+        {
+          "title": "MoltBot 제작자: \"나는 읽지 않은 코드를 배포한다\"",
+          "url": "https://newsletter.pragmaticengineer.com/p/the-creator-of-clawd-i-ship-code",
+          "points": 44,
+          "comments": 8,
+          "summary": "Interview with Peter Steinberger on leveraging AI agents for solo development, achieving over 6,600 commits in January using automated workflows."
+        },
+        {
+          "title": "Postgres 베스트 프랙티스를 AI 에이전트에 직접 가르치는 Agent Skills 공개",
+          "url": "https://supabase.com/blog/postgres-best-practices-for-ai-agents",
+          "points": 43,
+          "comments": null,
+          "summary": "Supabase releases Agent Skills framework that explicitly teaches AI coding agents proper PostgreSQL practices and database rules."
+        },
+        {
+          "title": "QMD - 퀵 마크다운 서치",
+          "url": "https://github.com/tobi/qmd",
+          "points": 24,
+          "comments": 1,
+          "summary": "Lightweight CLI search engine for local Markdown-based documents using BM25 full-text search across notes and technical documentation."
+        },
+        {
+          "title": "LLM과의 대화가 내 사고를 향상시킨 이유",
+          "url": "https://philipotoole.com/why-talking-to-llms-has-improved-my-thinking/",
+          "points": 21,
+          "comments": 9,
+          "summary": "Analysis of how conversing with LLMs enhances clarity of thought and verbal expression for previously unarticulable ideas."
+        },
+        {
+          "title": "마이크로소프트가 나를 리눅스로 강제로 옮기게 만들었다",
+          "url": "https://www.himthe.dev/blog/microsoft-to-linux",
+          "points": 14,
+          "comments": 2,
+          "summary": "Developer transitions from 20+ years of Windows development due to involuntary updates and system failures making the OS unusable."
+        },
+        {
+          "title": "Moltworker - Cloudflare Workers에서 Moltbot 실행하기",
+          "url": "https://github.com/cloudflare/moltworker",
+          "points": 5,
+          "comments": 1,
+          "summary": "Cloud-based deployment of Moltbot on Cloudflare Workers, eliminating the need for dedicated local hardware infrastructure."
+        },
+        {
+          "title": "Node.js 메인테이너가 경고하는 AI 시대 개발자의 진짜 위험",
+          "url": "https://adventures.nodeland.dev/archive/the-human-in-the-loop/",
+          "points": 3,
+          "comments": null,
+          "summary": "Matteo Collina warns that the real danger in the AI era is irresponsible attitudes toward code generation, not the technology itself."
+        },
+        {
+          "title": "Claude Code 성능 저하 추적용 일일 벤치마크",
+          "url": "https://marginlab.ai/trackers/claude-code/",
+          "points": 2,
+          "comments": 1,
+          "summary": "Daily performance tracking system monitoring Claude Code Opus 4.5 on SWE-Bench-Pro tasks for statistical anomaly detection."
+        },
+        {
+          "title": "피지컬 AI 모델 시장 지도: 로봇 지능을 둘러싼 경쟁의 이면",
+          "url": "https://www.cbinsights.com/research/the-physical-ai-models-market-map/",
+          "points": 1,
+          "comments": null,
+          "summary": "Robotics sector attracted record $40.7B in 2025 funding (74% increase), representing 9% of all venture capital amid intense AI competition."
+        }
+      ]
+    },
+    "devto": {
+      "status": "success",
+      "items": [
+        {
+          "title": "We're Creating a Knowledge Collapse and No One's Talking About It",
+          "url": "https://dev.to/dannwaneri/were-creating-a-knowledge-collapse-and-no-ones-talking-about-it-226d",
+          "author": "Daniel Nwaneri",
+          "tags": ["discuss", "ai", "webdev", "career"],
+          "reactions": 155
+        },
+        {
+          "title": "Is Learning CSS a Waste of Time in 2026?",
+          "url": "https://dev.to/sylwia-lask/is-learning-css-a-waste-of-time-in-2026-nj3",
+          "author": "Sylwia Laskowska",
+          "tags": ["css", "webdev", "frontend", "a11y"],
+          "reactions": 43
+        },
+        {
+          "title": "GitHub Copilot CLI Challenge Badges Are Here + 28 Chances to Win a Prize!",
+          "url": "https://dev.to/devteam/github-copilot-cli-challenge-badges-are-here-28-chances-to-win-a-prize-3c42",
+          "author": "Jess Lee",
+          "tags": ["devchallenge", "githubchallenge"],
+          "reactions": 37
+        },
+        {
+          "title": "The Internet's Addiction to Being Contrary",
+          "url": "https://dev.to/richardpascoe/the-internets-addiction-to-being-contrary-42ni",
+          "author": "Richard Pascoe",
+          "tags": ["discuss", "community"],
+          "reactions": 30
+        },
+        {
+          "title": "The Valley of Code: A Learning Resource",
+          "url": "https://dev.to/richardpascoe/the-valley-of-code-a-learning-resource-303o",
+          "author": "Richard Pascoe",
+          "tags": ["community", "learning", "programming", "webdev"],
+          "reactions": 25
+        },
+        {
+          "title": "Is the language war even real?",
+          "url": "https://dev.to/ujja/is-the-language-war-even-real-13n0",
+          "author": "ujja",
+          "tags": ["discuss", "programming", "coding", "software"],
+          "reactions": 22
+        },
+        {
+          "title": "Monthly Dev Report: January 2026",
+          "url": "https://dev.to/francistrdev/monthly-dev-report-january-2026-1f1e",
+          "author": "FrancisTRDev",
+          "tags": ["discuss", "devjournal", "programming", "community"],
+          "reactions": 19
+        },
+        {
+          "title": "Why I Sometimes Leave Tech Events Feeling Smaller",
+          "url": "https://dev.to/itsugo/why-i-sometimes-leave-tech-events-feeling-smaller-3p55",
+          "author": "Aryan Choudhary",
+          "tags": ["career", "learning", "community", "developers"],
+          "reactions": 15
+        }
+      ]
+    },
+    "lobsters": {
+      "status": "success",
+      "items": [
+        {
+          "title": "30 years of ReactOS",
+          "url": "https://reactos.org/blogs/30yrs-of-ros/",
+          "points": 67,
+          "comments": 7,
+          "tags": ["osdev"],
+          "submitter": "FedericoSchonborn"
+        },
+        {
+          "title": "Phantom Obligation",
+          "url": "https://terrygodier.com/phantom-obligation",
+          "points": 48,
+          "comments": 31,
+          "tags": ["design", "web"],
+          "submitter": "aarroyoc"
+        },
+        {
+          "title": "How to Choose Colors for Your CLI Applications (2023)",
+          "url": "https://blog.xoria.org/terminal-colors/",
+          "points": 44,
+          "comments": 24,
+          "tags": ["design"],
+          "submitter": "equeue"
+        },
+        {
+          "title": "Solving Fossil's ASCII art CAPTCHA in 171 characters",
+          "url": "https://blog.nns.ee/2026/01/29/fossil-captcha-solver/",
+          "points": 16,
+          "comments": 1,
+          "tags": ["security"],
+          "submitter": "raymii"
+        },
+        {
+          "title": "Gadgetbridge",
+          "url": "https://gadgetbridge.org",
+          "points": 13,
+          "comments": 2,
+          "tags": ["mobile"],
+          "submitter": "gioele"
+        },
+        {
+          "title": "Beta testing of WebUSBUnpinner",
+          "url": "https://reversing.works/posts/2026/01/help-reversing.works-empower-workers-by-testing-our-tool/",
+          "points": 12,
+          "comments": 5,
+          "tags": ["security", "testing"],
+          "submitter": "chobeat"
+        },
+        {
+          "title": "Introducing Fluux Messenger: A Modern XMPP Client Born from a Holiday Coding Session",
+          "url": "https://www.process-one.net/blog/introducing-fluux-messenger-a-modern-xmpp-client-born-from-a-holiday-coding-session/",
+          "points": 11,
+          "comments": 11,
+          "tags": ["release"],
+          "submitter": "adamcstephens"
+        },
+        {
+          "title": "10 Years of Wasm: A Retrospective",
+          "url": "https://bytecodealliance.org/articles/ten-years-of-webassembly-a-retrospective",
+          "points": 8,
+          "comments": 0,
+          "tags": ["wasm"],
+          "submitter": "fanf"
+        },
+        {
+          "title": "Building Docs Like a Product",
+          "url": "https://emschwartz.me/building-docs-like-a-product/",
+          "points": 7,
+          "comments": 0,
+          "tags": ["show", "practices"],
+          "submitter": "emschwartz"
+        }
+      ]
+    },
+    "indie_hackers": {
+      "status": "success",
+      "items": [
+        {
+          "title": "Building an app portfolio to $60k/mo after Apple froze his developer account",
+          "url": "https://www.indiehackers.com/post/tech/building-an-app-portfolio-to-60k-mo-after-apple-froze-his-developer-account-LD7oNYzKSmWucRfKV1AO",
+          "revenue": "$60k/mo",
+          "build_time": null,
+          "strategy": "multi-app portfolio",
+          "founder_type": "solo",
+          "problem_solved": "Recovered revenue stream after platform shutdown by diversifying across multiple apps"
+        },
+        {
+          "title": "Validating via services before building a $27k MRR product",
+          "url": "https://www.indiehackers.com/post/tech/validating-via-services-before-building-a-27k-mrr-product-7FrT6FXChPOiUK4PbXFp",
+          "revenue": "$27k MRR",
+          "build_time": null,
+          "strategy": "service-to-product",
+          "founder_type": "bootstrapped",
+          "problem_solved": "Validated market demand through services before building scalable SaaS"
+        },
+        {
+          "title": "From open-source donations to $13k MRR product",
+          "url": "https://www.indiehackers.com/post/tech/from-open-source-donations-to-13k-mrr-product-rl7FbRceFPj4ZvI0nGoV",
+          "revenue": "$13k MRR",
+          "build_time": null,
+          "strategy": "open-source monetization",
+          "founder_type": "solo",
+          "problem_solved": "Converted free open-source project into sustainable paid product"
+        },
+        {
+          "title": "Hitting $10k MRR in six weeks with an AI design tool",
+          "url": "https://www.indiehackers.com/post/tech/hitting-10k-mrr-in-six-weeks-with-an-ai-design-tool-pEvmU5qkWS6ny0AR9SUv",
+          "revenue": "$10k MRR",
+          "build_time": "3 weeks to build, 6 weeks to revenue",
+          "strategy": "AI tooling",
+          "founder_type": "solo",
+          "problem_solved": "Rapid monetization of AI-powered design automation"
+        },
+        {
+          "title": "Building a product in 20 hours and growing it to a 5-figure ARR",
+          "url": "https://www.indiehackers.com/post/tech/building-a-product-in-20-hours-and-growing-it-to-a-5-figure-arr-p1fyDKtYj5HMItJxV87H",
+          "revenue": "5-figure ARR",
+          "build_time": "20 hours",
+          "strategy": "rapid SaaS launch",
+          "founder_type": "bootstrapped",
+          "problem_solved": "Transitioned from service business to recurring revenue product"
+        },
+        {
+          "title": "Getting millions of impressions and hundreds of paying customers in 24 hours",
+          "url": "https://www.indiehackers.com/post/tech/getting-millions-of-impressions-and-hundreds-of-paying-customers-in-24-hours-SdR5OmCKzyviysmrVbdn",
+          "revenue": null,
+          "build_time": null,
+          "strategy": "viral distribution",
+          "founder_type": null,
+          "problem_solved": "Achieved rapid customer acquisition through explosive growth event"
+        },
+        {
+          "title": "From building client websites to launching my own SaaS — and why I stopped trusting GA4!",
+          "url": "https://www.indiehackers.com/post/from-building-client-websites-to-launching-my-own-saas-and-why-i-stopped-trusting-ga4-cdffa602c4",
+          "revenue": null,
+          "build_time": null,
+          "strategy": "agency-to-SaaS",
+          "founder_type": "bootstrapped",
+          "problem_solved": "Transitioned freelance business into analytics SaaS product"
+        }
+      ]
+    },
+    "techcrunch": {
+      "status": "success",
+      "items": [
+        {
+          "title": "Elon Musk's SpaceX, Tesla, and xAI in talks to merge, according to reports",
+          "url": "https://techcrunch.com/2026/01/29/elon-musk-spacex-tesla-xai-merger-talks-ipo-reuters/",
+          "category": "AI",
+          "summary": "Reports indicate potential merger discussions between Elon Musk's three major companies: SpaceX, Tesla, and xAI, with possible IPO implications."
+        },
+        {
+          "title": "The iPhone just had its best quarter ever",
+          "url": "https://techcrunch.com/2026/01/29/the-iphone-just-had-its-best-quarter-ever/",
+          "category": "Hardware",
+          "summary": "Apple's iPhone achieved record-breaking quarterly performance, demonstrating strong consumer demand for the device."
+        },
+        {
+          "title": "Microsoft won't stop buying AI chips from Nvidia, AMD, even after launching its own, Nadella says",
+          "url": "https://techcrunch.com/2026/01/29/microsoft-wont-stop-buying-ai-chips-from-nvidia-amd-even-after-launching-its-own-nadella-says/",
+          "category": "Enterprise",
+          "summary": "Microsoft CEO confirms the company will continue purchasing AI chips from external suppliers despite developing proprietary alternatives."
+        },
+        {
+          "title": "How Sequoia-backed Ethos reached the public market while rivals fell short",
+          "url": "https://techcrunch.com/2026/01/29/how-sequoia-backed-ethos-reached-the-public-market-while-rivals-fell-short/",
+          "category": "Startups",
+          "summary": "Ethos successfully achieved public market status with Sequoia backing while competing companies faced market challenges."
+        },
+        {
+          "title": "Medium gives employees Friday off to participate in national strike protesting ICE",
+          "url": "https://techcrunch.com/2026/01/29/medium-gives-employees-friday-off-to-participate-in-national-strike-protesting-ice/",
+          "category": "Social",
+          "summary": "Publishing platform Medium granted staff time off to join nationwide protests against Immigration and Customs Enforcement."
+        },
+        {
+          "title": "Fintech firm Marquis blames hack at firewall provider SonicWall for its data breach",
+          "url": "https://techcrunch.com/2026/01/29/fintech-firm-marquis-blames-hack-",
+          "category": "Security",
+          "summary": "Fintech company Marquis attributed its data breach to a security compromise at vendor SonicWall's firewall infrastructure."
+        }
+      ]
+    },
+    "youtube_trending": {
+      "status": "success",
+      "collected_at": "2026-01-30T10:00:00Z",
+      "by_category": {
+        "science_tech_KR": [
+          {
+            "title": "대박..10년차 갤럭시 유저도 몰랐던 숨겨진 꿀팁 2가지",
+            "channelTitle": "1분미만",
+            "viewCount": 868874,
+            "tags": ["1분미만", "꿀팁"]
+          },
+          {
+            "title": "모발 이식 하듯 CPU다리 레이저로 이식해보기",
+            "channelTitle": "복구천재 꼬마신발",
+            "viewCount": 345024,
+            "tags": ["CPU", "CPU핀", "레이저모발이식", "CPU수리"]
+          },
+          {
+            "title": "애플 맥미니 품절시킨 AI 에이전트",
+            "channelTitle": "군림보",
+            "viewCount": 223987,
+            "tags": ["shorts"]
+          },
+          {
+            "title": "아이폰 압수해도 '무용지물'",
+            "channelTitle": "YTN",
+            "viewCount": 357049,
+            "tags": ["아이폰 비밀번호", "아이폰 보안", "애플 보안"]
+          }
+        ],
+        "science_tech_US": [
+          {
+            "title": "I Spilled Liquid on my PC...now what?",
+            "channelTitle": "Linus Tech Tips",
+            "viewCount": 3682455
+          },
+          {
+            "title": "This camera is a time machine!",
+            "channelTitle": "Mrwhosetheboss",
+            "viewCount": 4386966
+          },
+          {
+            "title": "It technically works",
+            "channelTitle": "CodeVenture",
+            "viewCount": 7119918,
+            "tags": ["programming", "coding", "javascript", "python", "claude code"]
+          },
+          {
+            "title": "I've Never Seen A Feature Like This Before...",
+            "channelTitle": "Phone Repair Guru",
+            "viewCount": 1195214,
+            "tags": ["iphone repair", "phone repair", "right to repair"]
+          }
+        ]
+      },
+      "by_keyword_search": {
+        "indie_hacker": [
+          {
+            "title": "Founders, Introduce Yourself | Building SaaS, Apps & Startups in 2026",
+            "channelTitle": "sri charan rayala",
+            "publishedAt": "2026-01-27T11:53:41Z"
+          },
+          {
+            "title": "Steve Peak - Indie Hacker & Founder of Codecov (acquired)",
+            "channelTitle": "Sandra's Podcast",
+            "publishedAt": "2026-01-26T06:46:57Z"
+          },
+          {
+            "title": "Build Your Own Digital Empire: The Indie Hacker Way!",
+            "channelTitle": "siift",
+            "publishedAt": "2026-01-23T23:42:27Z"
+          }
+        ],
+        "ai_startup_saas": [
+          {
+            "title": "Steal SaaS Ideas That Are Already Making $266,000 MRR (Fully Validated)",
+            "channelTitle": "Astro K Joseph",
+            "publishedAt": "2026-01-27T11:32:00Z"
+          },
+          {
+            "title": "Why AI Software Can't Compete Like Old SaaS",
+            "channelTitle": "No Priors: AI, Machine Learning, Tech, & Startups",
+            "publishedAt": "2026-01-24T18:44:54Z"
+          },
+          {
+            "title": "How a 21-year-old built a $120M AI app",
+            "channelTitle": "zen progress",
+            "publishedAt": "2026-01-25T12:11:51Z"
+          },
+          {
+            "title": "BEST STARTUPS TO MAKE",
+            "channelTitle": "Zack",
+            "publishedAt": "2026-01-28T04:04:16Z"
+          },
+          {
+            "title": "Build a $10K Full Stack App with Zoer AI",
+            "channelTitle": "SoftwareGent",
+            "publishedAt": "2026-01-24T03:44:51Z"
+          }
+        ]
+      },
+      "aggregated_keywords": {
+        "top_20": ["AI", "startup", "SaaS", "agent", "coding", "Claude", "automation", "indie", "MRR", "hacker", "productivity", "Python", "JavaScript", "development", "tech", "open-source", "billing", "Chrome extension", "WhatsApp", "calendar"],
+        "trending_topics": ["AI 에이전트", "1인 개발", "SaaS 수익화", "코딩 자동화"],
+        "emerging": ["MCP", "Claude Code", "agentic AI", "voice-first", "AGENTS.md"]
+      }
+    }
+  }
+}
