@@ -7,8 +7,6 @@ const rootDir = process.cwd()
 const directories = [
   'content',
   'content/insights',
-  'content/prd',
-  'content/persona',
 ]
 
 function extractTitle(filePath) {
@@ -47,8 +45,6 @@ function generateMeta(dir) {
     display: 'hidden',
   },
   insights: 'Insights',
-  prd: 'PRD 문서',
-  persona: 'Persona',
 }
 `
     const metaPath = path.join(dirPath, '_meta.ts')
