@@ -30,6 +30,7 @@ dist/
 # Logs
 *.log
 npm-debug.log*
+logs/
 
 # Temporary files
 tmp/

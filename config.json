@@ -90,6 +90,22 @@
   },
   "output": {
     "sources_dir": "generated/sources",
-    "insights_dir": "generated/insights"
+    "insights_dir": "generated/insights",
+    "trends_dir": "generated/trends",
+    "summaries_dir": "generated/summaries"
+  },
+  "automation": {
+    "daily": {
+      "time": "09:00",
+      "timezone": "Asia/Seoul"
+    },
+    "weekly": {
+      "day": "Sunday",
+      "time": "10:00"
+    },
+    "monthly": {
+      "day": 1,
+      "time": "11:00"
+    }
   }
 }
