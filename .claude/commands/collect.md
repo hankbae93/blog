@@ -30,63 +30,124 @@ WebFetch를 사용하여 각 소스에서 병렬로 데이터를 수집합니다
 
 **Product Hunt:** (API 우선, WebFetch 폴백)
 
-**방법 1: GraphQL API (권장 - 차단 없음, 빠름)**
+**방법 1: GraphQL API (권장 - 차단 없음, 빠름, 상세정보 포함)**
 
 > API 문서: https://api.producthunt.com/v2/docs
-> Access Token 필요: `.env.local`에 `PRODUCTHUNT_ACCESS_TOKEN` 설정
+> **중요:** GraphQL API로 모든 상세 정보를 한 번에 가져옴 (Deep Crawl 불필요)
+
+**환경변수 (`.env.local`):**
+```bash
+PRODUCTHUNT_API_KEY=xxx        # Client ID
+PRODUCTHUNT_API_SECRET=xxx     # Client Secret
+PRODUCTHUNT_ACCESS_TOKEN=xxx   # Bearer Token (아래 명령으로 발급)
+```
+
+**Access Token 발급/갱신 (토큰 만료 시):**
+```bash
+# Client Credentials Grant로 Access Token 발급
+bash -c 'source .env.local && curl -s -X POST https://api.producthunt.com/v2/oauth/token \
+  -H "Content-Type: application/json" \
+  -d "{\"client_id\": \"${PRODUCTHUNT_API_KEY}\", \"client_secret\": \"${PRODUCTHUNT_API_SECRET}\", \"grant_type\": \"client_credentials\"}"'
+```
+→ 응답의 `access_token` 값을 `.env.local`의 `PRODUCTHUNT_ACCESS_TOKEN`에 저장
 
 ```bash
-# API 호출 (bash -c 필수)
+# API 호출 (bash -c 필수) - 상세 정보 포함
 bash -c 'source .env.local && curl -s -X POST https://api.producthunt.com/v2/api/graphql \
   -H "Authorization: Bearer ${PRODUCTHUNT_ACCESS_TOKEN}" \
   -H "Content-Type: application/json" \
-  -d "{\"query\": \"{ posts(first: 10) { edges { node { id name tagline url votesCount commentsCount topics { edges { node { name } } } makers { id name headline } } } } }\"}"'
+  -d "{\"query\": \"{ posts(first: 10) { edges { node { id name slug tagline description url website votesCount commentsCount reviewsRating createdAt featuredAt topics { edges { node { name } } } makers { id name headline twitterUsername } thumbnail { url } media { url type } } } } }\"}"'
 ```
 
-**GraphQL 쿼리 (상세):**
+**GraphQL 쿼리 (전체 상세정보):**
 ```graphql
 {
   posts(first: 10) {
     edges {
       node {
+        # 기본 정보
         id
         name
+        slug
         tagline
-        url
+        description          # 제품 상세 설명
+        url                  # Product Hunt URL
+        website              # 제품 공식 웹사이트 URL
+
+        # 지표
         votesCount
         commentsCount
+        reviewsRating        # 평균 리뷰 점수
+
+        # 시간
         createdAt
-        featuredAt
-        topics { edges { node { name } } }
+        featuredAt           # 피처드 일시 (Product of the Day 등)
+
+        # 카테고리
+        topics {
+          edges {
+            node { name }
+          }
+        }
+
+        # 제작자 정보
         makers {
           id
           name
-          headline
+          headline           # "Founder at X", "CEO" 등
           twitterUsername
         }
+
+        # 미디어
         thumbnail { url }
+        media {
+          url
+          type              # "image", "video" 등
+        }
       }
     }
   }
 }
 ```
 
-**방법 2: WebFetch 폴백 (API 실패 시)**
+**API 응답에서 추출할 핵심 정보:**
+| 필드 | 용도 |
+|------|------|
+| `description` | 제품 상세 설명 (full_description 대체) |
+| `tagline` | value_proposition |
+| `website` | 제품 공식 사이트 (랜딩페이지 분석용) |
+| `makers.headline` | 제작자 역할 (Founder, CEO 등) |
+| `reviewsRating` | 사용자 평가 점수 |
+| `featuredAt` | Product of the Day 여부 판단 |
+| `topics` | 카테고리/태그 |
+
+**방법 2: WebFetch 폴백 (API 실패 시 - 제한적)**
+
+> ⚠️ **주의:** WebFetch는 피드 페이지에서 **기본 정보만** 추출 가능합니다.
+> Product Hunt 개별 제품 페이지는 JavaScript 동적 렌더링으로 WebFetch 불가!
+> API Token이 없거나 만료된 경우에만 사용하세요.
+
+**WebFetch URL:** `https://www.producthunt.com/` (메인 피드)
+
 ```
-Extract today's top 10 products with RICH metadata for indie developers. For each product:
+Extract today's top 10 products from the feed. For each product card visible:
 - name: product name
 - tagline: one-line description
-- url: product page URL
+- url: product page URL (do NOT attempt to crawl these individually!)
 - makers: list of maker names visible on card
 - upvotes: current vote count (number)
 - comments: comment count (number)
-- category: product category or tags (array)
-- pricing: "Free", "Freemium", "Paid", or "Free Options" if visible
-- badge: "Product of the Day", "Launching today" etc if any
-- yc_batch: YC batch (e.g. "W26") if visible, null otherwise
+- category: product category or tags if visible (array)
+- badge: "Product of the Day", "#1", "#2" etc if any
 
-Return as JSON array. Extract ALL visible information from product cards.
+Return as JSON array.
+NOTE: Only extract what's visible on the feed page. Do NOT try to access individual product pages.
 ```
+
+**WebFetch 제한사항:**
+- 개별 제품 페이지 (`/products/xxx`, `/posts/xxx`) 접근 불가
+- description, website, makers.headline 등 상세 정보 없음
+- API Token 발급 권장: https://www.producthunt.com/v2/oauth/applications
 
 **Hacker News:** (1인 개발자 관점에서 관련성 평가)
 ```
@@ -141,73 +202,67 @@ Return as JSON array. Focus on extracting concrete NUMBERS and STRATEGIES that i
 Extract latest 10 startup articles. For each: title, summary. Format as numbered list.
 ```
 
-### 3. Deep Crawl - Product Hunt 상세 페이지 (10개 제품)
+### 3. Product Hunt 상세 정보 (GraphQL API로 통합 수집)
 
-기본 수집 후, Product Hunt 상위 10개 제품의 상세 페이지를 추가로 크롤링하여 1인 개발자에게 필요한 심층 정보를 수집합니다.
+> **중요:** 기존 WebFetch Deep Crawl 방식은 Product Hunt의 동적 렌더링/차단으로 실패합니다.
+> GraphQL API에서 모든 상세 정보를 한 번에 가져오므로 **별도 Deep Crawl이 불필요**합니다.
 
-**소요 시간:** 약 4분 추가
+**GraphQL API에서 가져오는 상세 정보:**
 
-**각 제품 상세 페이지 URL 패턴:**
-수집된 `url` 필드를 그대로 사용 (예: `https://www.producthunt.com/products/scout-out-2`)
+| 기존 Deep Crawl 필드 | GraphQL API 필드 | 비고 |
+|---------------------|------------------|------|
+| `full_description` | `description` | API에서 직접 제공 |
+| `value_proposition` | `tagline` | 한 줄 설명 |
+| `target_audience` | `topics` + `description` 분석 | AI가 추론 |
+| `pricing_model` | `website` → 랜딩페이지 분석 | 필요시 website URL 확인 |
+| `maker_names` | `makers.name` | 직접 제공 |
+| `maker_titles` | `makers.headline` | "Founder", "CEO" 등 |
+| `launch_date` | `featuredAt` / `createdAt` | 직접 제공 |
+| `badge` | `featuredAt` 유무로 판단 | featuredAt이 있으면 피처드 |
 
-**Deep Crawl 프롬프트:**
-```
-For this Product Hunt product page, extract detailed information for indie developers:
-
-1. PRODUCT IDENTITY (3줄 요약용)
-- full_description: complete product description (first 500 chars)
-- value_proposition: core value in one sentence
-- target_audience: who is this product for (be specific)
-
-2. MONETIZATION (수익화 인사이트)
-- pricing_model: "free", "freemium", "subscription", "one-time", "usage-based"
-- pricing_details: pricing tiers if visible (e.g. "$29/mo starter, $99/mo pro")
-- free_trial: trial period if mentioned
-
-3. FOUNDER/MAKER INFO
-- maker_names: list of maker names
-- maker_titles: their roles (e.g. "Founder", "Co-founder & CEO")
-- yc_status: Y Combinator batch if mentioned (e.g. "YC W26"), null otherwise
-- company_info: any company background mentioned
-
-4. DIFFERENTIATION
-- key_features: top 3 features (array of strings)
-- differentiator: what makes this unique vs competitors
-- metrics_claimed: any success metrics mentioned (e.g. "+40% win rate", "14hrs saved weekly")
-
-5. LAUNCH INFO
-- launch_date: when launched if visible
-- badge: "Product of the Day", rank, or other badges
-
-Return as JSON object. Focus on information useful for indie hackers evaluating this product or learning from its approach.
-```
-
-**수집된 데이터를 `deep_crawled` 배열에 저장:**
+**API 응답 데이터 구조 (통합):**
 ```json
 {
   "product_hunt": {
-    "items": [...],
-    "deep_crawled": [
+    "source": "GraphQL API",
+    "items": [
       {
+        "id": "123456",
         "name": "Scout Out",
-        "url": "https://www.producthunt.com/products/scout-out-2",
-        "full_description": "Upload building plans and Scout Out automatically generates...",
-        "value_proposition": "60-second AI estimates that win more jobs",
-        "target_audience": "Residential contractors, remodelers, handymen",
-        "pricing_model": "freemium",
-        "pricing_details": "3-day free trial, then subscription",
-        "maker_names": ["Nolan Rossi"],
-        "maker_titles": ["Founder"],
-        "yc_status": "YC W26",
-        "key_features": ["Instant AI estimates", "Professional proposals", "Mobile app"],
-        "differentiator": "AI-powered material & labor takeoffs from building plans",
-        "metrics_claimed": ["+14hrs saved weekly", "+40% win rate", "+$85K annual profit"],
-        "launch_date": "2026-01-28",
-        "badge": "Launching today"
+        "slug": "scout-out-2",
+        "tagline": "60-second AI estimates that win more jobs",
+        "description": "Upload building plans and Scout Out automatically generates accurate material and labor estimates...",
+        "url": "https://www.producthunt.com/posts/scout-out-2",
+        "website": "https://scoutout.ai",
+        "votesCount": 450,
+        "commentsCount": 32,
+        "reviewsRating": 4.8,
+        "createdAt": "2026-01-28T08:00:00Z",
+        "featuredAt": "2026-01-28T08:00:00Z",
+        "topics": ["Artificial Intelligence", "Construction", "Productivity"],
+        "makers": [
+          {
+            "name": "Nolan Rossi",
+            "headline": "Founder at Scout Out",
+            "twitterUsername": "nolanrossi"
+          }
+        ],
+        "thumbnail": "https://ph-files.imgix.net/...",
+        "media": [
+          {"url": "https://...", "type": "image"},
+          {"url": "https://...", "type": "video"}
+        ]
       }
     ]
   }
 }
+```
+
+**Pricing 정보가 필요한 경우 (선택적):**
+GraphQL API에는 pricing 필드가 없습니다. 필요시 `website` URL로 랜딩페이지를 확인하세요:
+```
+WebFetch로 website URL 접근 → pricing 정보 추출
+(단, 모든 사이트가 WebFetch로 접근 가능한 것은 아님)
 ```
 
 ---

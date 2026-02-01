@@ -1,0 +1,618 @@
+{
+  "date": "2026-02-01",
+  "collected_at": "2026-02-01T10:00:00Z",
+  "sources_count": 9,
+
+  "product_hunt": {
+    "source": "GraphQL API",
+    "status": "success",
+    "items": [
+      {
+        "id": "1067826",
+        "name": "ClaudeUsageBar",
+        "slug": "claudeusagebar",
+        "tagline": "Know exactly how much Claude you have left at a glance",
+        "description": "Free, open-source macOS menu bar app that displays your Claude AI usage percentage. Get notifications before hitting your limit. Lightweight, private, and native.",
+        "url": "https://www.producthunt.com/products/claudeusagebar",
+        "website": "https://github.com/claudeusagebar/claudeusagebar",
+        "votesCount": 310,
+        "commentsCount": 20,
+        "reviewsRating": 5.0,
+        "createdAt": "2026-01-31T08:01:00Z",
+        "featuredAt": "2026-01-31T08:01:00Z",
+        "topics": ["Open Source", "Developer Tools", "Menu Bar Apps"],
+        "makers": [],
+        "thumbnail": "https://ph-files.imgix.net/43240001-5ce0-4f43-8e55-e2829805e7fc.png?auto=format"
+      },
+      {
+        "id": "1070427",
+        "name": "skills.sh",
+        "slug": "skills-sh",
+        "tagline": "The Agent Skills Directory",
+        "description": "Discover and install skills for AI agents. Skills are reusable capabilities for AI agents. Install them with a single command to enhance your agents with access to procedural knowledge: npx skills add",
+        "url": "https://www.producthunt.com/products/vercel",
+        "website": "https://skills.sh",
+        "votesCount": 261,
+        "commentsCount": 4,
+        "reviewsRating": 4.95,
+        "createdAt": "2026-01-31T08:01:00Z",
+        "featuredAt": "2026-01-31T08:01:00Z",
+        "topics": ["Software Engineering", "Developer Tools"],
+        "makers": [],
+        "thumbnail": "https://ph-files.imgix.net/593ff5e2-9d11-491c-ab63-9e929e894214.jpeg?auto=format"
+      },
+      {
+        "id": "1066254",
+        "name": "Pretty Prompt 1.0 Extension and Web App",
+        "slug": "pretty-prompt-1-0-extension-and-web-app",
+        "tagline": "Grammarly for prompting. Turn any text into perfect prompts.",
+        "description": "Improve your prompts in one click without leaving your browser. Works inside ChatGPT, Gemini, Claude, Perplexity, Lovable, and more AI tools.",
+        "url": "https://www.producthunt.com/products/pretty-prompt",
+        "website": "https://prettyprompt.com",
+        "votesCount": 250,
+        "commentsCount": 38,
+        "reviewsRating": 5.0,
+        "createdAt": "2026-01-31T08:01:00Z",
+        "featuredAt": "2026-01-31T08:01:00Z",
+        "topics": ["Chrome Extensions", "Productivity", "Artificial Intelligence"],
+        "makers": [],
+        "thumbnail": "https://ph-files.imgix.net/77d7fdfe-35a2-4e62-8353-e02e185613f7.jpeg?auto=format"
+      },
+      {
+        "id": "1062925",
+        "name": "Herodot AI",
+        "slug": "herodot-ai-4",
+        "tagline": "Travel at any place like with a personal local guide",
+        "description": "We work on Herodot AI for more than two years moving from just a nice concept to truly reliable, easy to use app. Our task is to give you a feeling that you walk and travel with a knowledgeable local friend, who can guide you pretty much like a human, telling exciting stories on what is around, whatever catches your eye.",
+        "url": "https://www.producthunt.com/products/herodot-ai",
+        "website": "https://herodot.ai",
+        "votesCount": 181,
+        "commentsCount": 18,
+        "reviewsRating": 4.67,
+        "createdAt": "2026-01-31T08:01:00Z",
+        "featuredAt": "2026-01-31T08:01:00Z",
+        "topics": ["Android", "Travel", "Maps", "Vacation"],
+        "makers": [],
+        "thumbnail": "https://ph-files.imgix.net/8edd81ce-4b29-4198-beb2-e6ae02f29995.png?auto=format"
+      },
+      {
+        "id": "1068273",
+        "name": "DestMate",
+        "slug": "destmate",
+        "tagline": "Alarm with location wake-up and earphone-only sound",
+        "description": "Wake up exactly when you need to—even on long rides. DestMate is a smart, location-based travel alarm for commuters and travelers. Set your destination and get alerted as you approach, privately through your headphones or earbuds.",
+        "url": "https://www.producthunt.com/products/destmate-travel-alarm",
+        "website": "https://destmate.app",
+        "votesCount": 130,
+        "commentsCount": 9,
+        "reviewsRating": 0.0,
+        "createdAt": "2026-01-31T08:01:00Z",
+        "featuredAt": "2026-01-31T08:01:00Z",
+        "topics": ["Android", "Alarms", "Travel"],
+        "makers": [],
+        "thumbnail": "https://ph-files.imgix.net/09d67153-efca-4c2d-b1e4-dbcd77845f5c.png?auto=format"
+      },
+      {
+        "id": "1068840",
+        "name": "AI Proctor by Qlay",
+        "slug": "ai-proctor-by-qlay-2",
+        "tagline": "AI Proctor: AI that protects fairness in hiring & tests",
+        "description": "AI Proctor by Qlay detects the most sophisticated AI-assisted and other forms of cheating during online tests and interviews. It uses a mobile app that turns the candidate's smartphone into a second camera.",
+        "url": "https://www.producthunt.com/products/ai-proctor-by-qlay-2",
+        "website": "https://qlay.io",
+        "votesCount": 56,
+        "commentsCount": 17,
+        "reviewsRating": 0.0,
+        "createdAt": "2026-01-31T08:01:00Z",
+        "featuredAt": null,
+        "topics": ["Education", "Artificial Intelligence", "Human Resources"],
+        "makers": [],
+        "thumbnail": "https://ph-files.imgix.net/effcabc6-1e41-43a9-b23f-88094a5e3be4.png?auto=format"
+      },
+      {
+        "id": "1070664",
+        "name": "RUSTWA",
+        "slug": "rustwa",
+        "tagline": "A Unofficial WhatsApp Web API built in Rust",
+        "description": "No feature bloat. No crazy configs. Just the stuff most people actually need: send text + media, receive messages via webhooks, multi-session support, QR login with session persistence, web dashboard, fast async runtime with Tokio.",
+        "url": "https://www.producthunt.com/products/rustwa",
+        "website": "https://github.com/nicksm31/rustwa",
+        "votesCount": 39,
+        "commentsCount": 7,
+        "reviewsRating": 0.0,
+        "createdAt": "2026-01-31T08:01:00Z",
+        "featuredAt": null,
+        "topics": ["Messaging"],
+        "makers": [],
+        "thumbnail": "https://ph-files.imgix.net/4ce7bc9d-aa1c-4da9-ab15-acdded523eab.png?auto=format"
+      },
+      {
+        "id": "1063636",
+        "name": "DoppelIQ Atlas",
+        "slug": "doppeliq-atlas",
+        "tagline": "Pre-test marketing decisions with AI consumer simulations",
+        "description": "DoppelIQ Atlas is an AI consumer simulation engine that lets you simulate behavior at population scale. Instead of collecting opinions from small panels, Atlas runs 100,000 consumer simulations enriched with real-world attributes.",
+        "url": "https://www.producthunt.com/products/doppeliq-atlas",
+        "website": "https://doppeliq.com",
+        "votesCount": 37,
+        "commentsCount": 6,
+        "reviewsRating": 0.0,
+        "createdAt": "2026-01-31T08:01:00Z",
+        "featuredAt": null,
+        "topics": ["Analytics", "A/B Testing", "Marketing"],
+        "makers": [],
+        "thumbnail": "https://ph-files.imgix.net/0a42e4ee-b6fe-4296-aaf8-c070ed42d4f3.x-icon?auto=format"
+      },
+      {
+        "id": "1070446",
+        "name": "PageSpeed.cloud",
+        "slug": "pagespeed-cloud",
+        "tagline": "AI-based PageSpeed insights with clear actions for teams!",
+        "description": "Google PageSpeed Insights provides accurate performance data, but turning that data into clear actions is often difficult. PageSpeed.cloud is an AI-based layer on top of Google PageSpeed Insights that converts technical reports into prioritized, implementation-ready action items.",
+        "url": "https://www.producthunt.com/products/pagespeed-cloud",
+        "website": "https://pagespeed.cloud",
+        "votesCount": 33,
+        "commentsCount": 4,
+        "reviewsRating": 0.0,
+        "createdAt": "2026-01-31T08:01:00Z",
+        "featuredAt": null,
+        "topics": ["User Experience", "SEO", "Web Design"],
+        "makers": [],
+        "thumbnail": "https://ph-files.imgix.net/76efada8-4653-4918-b6a9-ca40a78bd1d4.png?auto=format"
+      },
+      {
+        "id": "1058302",
+        "name": "Supatrack",
+        "slug": "supatrack-2",
+        "tagline": "Fitness & Nutrition app",
+        "description": "Track calories with your friends, not alone. Supatrack makes nutrition fun with squads, challenges, and accountability. Join the movement to listen to world leading nutritionists through our exclusive podcasts and make healthy living social and motivating!",
+        "url": "https://www.producthunt.com/products/supatrack-2",
+        "website": "https://supatrack.app",
+        "votesCount": 28,
+        "commentsCount": 5,
+        "reviewsRating": 0.0,
+        "createdAt": "2026-01-31T08:01:00Z",
+        "featuredAt": null,
+        "topics": ["Android", "Health & Fitness", "Nutrition", "Fitness"],
+        "makers": [],
+        "thumbnail": "https://ph-files.imgix.net/aa84b872-1e59-479c-88a1-ae7bd5e173b3.jpeg?auto=format"
+      }
+    ]
+  },
+
+  "hacker_news": {
+    "status": "success",
+    "items": [
+      {
+        "title": "Mobile carriers can get your GPS location",
+        "url": "https://an.dywa.ng/carrier-gnss.html",
+        "points": 422,
+        "comments": 283,
+        "category": "technical",
+        "relevance_to_indie": "medium",
+        "key_insight": "Understanding carrier-level location tracking matters for privacy-conscious apps and features"
+      },
+      {
+        "title": "Generative AI and Wikipedia editing: What we learned in 2025",
+        "url": "https://wikiedu.org/blog/2026/01/29/generative-ai-and-wikipedia-editing-what-we-learned-in-2025/",
+        "points": 62,
+        "comments": 28,
+        "category": "ai",
+        "relevance_to_indie": "medium",
+        "key_insight": "AI content generation faces real-world adoption challenges worth studying before building similar tools"
+      },
+      {
+        "title": "Data Processing Benchmark Featuring Rust, Go, Swift, Zig, Julia etc.",
+        "url": "https://github.com/zupat/related_post_gen",
+        "points": 42,
+        "comments": 5,
+        "category": "technical",
+        "relevance_to_indie": "high",
+        "key_insight": "Performance comparisons across languages help indie devs choose the right tool for backend projects"
+      },
+      {
+        "title": "Swift is a more convenient Rust",
+        "url": "https://nmn.sh/blog/2023-10-02-swift-is-the-more-convenient-rust",
+        "points": 185,
+        "comments": 155,
+        "category": "technical",
+        "relevance_to_indie": "high",
+        "key_insight": "Language ergonomics directly impact indie dev productivity when building native applications"
+      },
+      {
+        "title": "Show HN: Minimal – Open-Source Community driven Hardened Container Images",
+        "url": "https://github.com/rtvkiz/minimal",
+        "points": 64,
+        "comments": 21,
+        "category": "tools",
+        "relevance_to_indie": "high",
+        "key_insight": "Open-source infrastructure tools reduce deployment complexity for bootstrapped startups"
+      },
+      {
+        "title": "In Praise of –dry-run",
+        "url": "https://henrikwarne.com/2026/01/31/in-praise-of-dry-run/",
+        "points": 29,
+        "comments": 10,
+        "category": "technical",
+        "relevance_to_indie": "high",
+        "key_insight": "Defensive coding practices prevent costly production mistakes for solo-operated services"
+      },
+      {
+        "title": "Finland to end uncontrolled human experiment with ban on youth social media",
+        "url": "https://yle.fi/a/74-20207494",
+        "points": 469,
+        "comments": 335,
+        "category": "discussion",
+        "relevance_to_indie": "medium",
+        "key_insight": "Regulatory shifts reshape markets for kid-focused app developers and platforms"
+      },
+      {
+        "title": "CPython Internals Explained",
+        "url": "https://github.com/zpoint/CPython-Internals",
+        "points": 165,
+        "comments": 38,
+        "category": "technical",
+        "relevance_to_indie": "medium",
+        "key_insight": "Deep language knowledge helps optimize performance-critical Python applications"
+      },
+      {
+        "title": "My ridiculously robust photo management system (Immich edition)",
+        "url": "https://jaisenmathai.com/articles/my-ridiculously-robust-photo-management-system-immich-edition/",
+        "points": 246,
+        "comments": 114,
+        "category": "tools",
+        "relevance_to_indie": "high",
+        "key_insight": "Open-source tools enable indie devs to build personal infrastructure reducing vendor lock-in"
+      },
+      {
+        "title": "We have ipinfo at home or how to geolocate IPs in your CLI using latency",
+        "url": "https://blog.globalping.io/we-have-ipinfo-at-home-or-how-to-geolocate-ips-in-your-cli-using-latency/",
+        "points": 203,
+        "comments": 52,
+        "category": "technical",
+        "relevance_to_indie": "high",
+        "key_insight": "Cost-effective geolocation alternatives help indie devs reduce third-party API expenses"
+      }
+    ]
+  },
+
+  "github_trending": {
+    "status": "success",
+    "items": [
+      {
+        "repo": "ThePrimeagen/99",
+        "url": "https://github.com/ThePrimeagen/99",
+        "description": "Neovim AI agent done right",
+        "language": "Lua",
+        "stars": 2272,
+        "stars_today": 542,
+        "forks": 104
+      },
+      {
+        "repo": "microsoft/BitNet",
+        "url": "https://github.com/microsoft/BitNet",
+        "description": "Official inference framework for 1-bit LLMs",
+        "language": "Python",
+        "stars": 27273,
+        "stars_today": 137,
+        "forks": 2207
+      },
+      {
+        "repo": "microsoft/agent-lightning",
+        "url": "https://github.com/microsoft/agent-lightning",
+        "description": "The absolute trainer to light up AI agents.",
+        "language": "Python",
+        "stars": 12627,
+        "stars_today": 516,
+        "forks": 1040
+      },
+      {
+        "repo": "PaddlePaddle/PaddleOCR",
+        "url": "https://github.com/PaddlePaddle/PaddleOCR",
+        "description": "Turn any PDF or image document into structured data for your AI",
+        "language": "Python",
+        "stars": 69597,
+        "stars_today": 171,
+        "forks": 9753
+      },
+      {
+        "repo": "anthropics/claude-plugins-official",
+        "url": "https://github.com/anthropics/claude-plugins-official",
+        "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+        "language": "Shell",
+        "stars": 5861,
+        "stars_today": 237,
+        "forks": 579
+      },
+      {
+        "repo": "microsoft/PowerToys",
+        "url": "https://github.com/microsoft/PowerToys",
+        "description": "Collection of utilities that help you customize Windows and streamline everyday tasks",
+        "language": "C#",
+        "stars": 128748,
+        "stars_today": 46,
+        "forks": 7658
+      },
+      {
+        "repo": "openclaw/openclaw",
+        "url": "https://github.com/openclaw/openclaw",
+        "description": "Your own personal AI assistant. Any OS. Any Platform.",
+        "language": "TypeScript",
+        "stars": 132735,
+        "stars_today": 14780,
+        "forks": 19241
+      },
+      {
+        "repo": "pedroslopez/whatsapp-web.js",
+        "url": "https://github.com/pedroslopez/whatsapp-web.js",
+        "description": "WhatsApp client library for NodeJS that connects through browser app",
+        "language": "JavaScript",
+        "stars": 20997,
+        "stars_today": 137,
+        "forks": 4829
+      },
+      {
+        "repo": "cline/cline",
+        "url": "https://github.com/cline/cline",
+        "description": "Autonomous coding agent in your IDE, capable of creating/editing files and executing commands",
+        "language": "TypeScript",
+        "stars": 57372,
+        "stars_today": 44,
+        "forks": 5688
+      }
+    ]
+  },
+
+  "geeknews": {
+    "status": "success",
+    "items": [
+      {
+        "title": "2026년에 주목해야 할 AI 코딩의 주요 토픽과 트렌드",
+        "url": "https://beyond.addy.ie/2026-trends/",
+        "points": 14,
+        "comments": null,
+        "summary": "Google Cloud AI Director Addy Osmani discusses emerging AI coding trends and agentic AI developments for 2026"
+      },
+      {
+        "title": "GlyphLang - AI 최적화를 위한 프로그래밍 언어",
+        "url": "https://github.com/GlyphLang/GlyphLang",
+        "points": 2,
+        "comments": null,
+        "summary": "Programming language designed to simplify REST API backend development through AI-centric approaches"
+      },
+      {
+        "title": "토스 프론트엔드 챕터 140명 조직을 운영하며 배운 것",
+        "url": "https://evan-moon.github.io/2026/01/24/leading-frontend-organization/",
+        "points": 10,
+        "comments": null,
+        "summary": "Insights from leading a large-scale frontend organization at Toss"
+      },
+      {
+        "title": "MoltBot 제작자: 나는 읽지 않은 코드를 배포한다",
+        "url": "https://newsletter.pragmaticengineer.com/p/the-creator-of-clawd-i-ship-code",
+        "points": 56,
+        "comments": 15,
+        "summary": "Interview with Peter Steinberger on leveraging AI agents to achieve over 6,600 commits in one month"
+      },
+      {
+        "title": "Node.js 메인테이너가 경고하는 AI 시대 개발자의 진짜 위험",
+        "url": "https://adventures.nodeland.dev/archive/the-human-in-the-loop/",
+        "points": 26,
+        "comments": 3,
+        "summary": "Node.js maintainer Matteo Collina warns about irresponsible attitudes toward AI-generated code"
+      },
+      {
+        "title": "Claude 구독형 요금제가 API보다 최대 36배 저렴한 이유",
+        "url": "https://www.reddit.com/r/ClaudeAI/comments/1qpcj8q/claude_subscriptions_are_up_to_36x_cheaper_than/",
+        "points": 20,
+        "comments": 2,
+        "summary": "Analysis comparing subscription pricing versus API costs for Claude"
+      },
+      {
+        "title": "clopus-watcher - Claude Code 형태의 자율 24/7 온콜 엔지니어",
+        "url": "https://github.com/kubeden/clopus-watcher",
+        "points": 8,
+        "comments": 1,
+        "summary": "AI-powered monitoring tool leveraging Claude Code for automated incident response"
+      },
+      {
+        "title": "Andrej Karpathy의 최근 몇 주간 Claude 코딩 경험에 대한 단상",
+        "url": "https://x.com/karpathy/status/2015883857489522876",
+        "points": 60,
+        "comments": 15,
+        "summary": "Karpathy observes a significant shift from 20% to 80% agentic coding between November and December"
+      },
+      {
+        "title": "Netflix 애니메이션 스튜디오, 3D 도구 Blender에 기업 후원사로 참여",
+        "url": "https://www.blender.org/press/netflix-animation-studios-joins-the-blender-development-fund-as-corporate-patron/",
+        "points": 7,
+        "comments": 2,
+        "summary": "Netflix Animation Studios joins Blender Development Fund as a corporate patron"
+      }
+    ]
+  },
+
+  "dev_to": {
+    "status": "success",
+    "items": [
+      {
+        "title": "C++ Signatures: It's Not Just About Performance, It's About Ownership",
+        "author": "Rafael Granza",
+        "url": "https://dev.to/granza/c-signatures-its-not-just-about-performance-its-about-ownership-2hi7",
+        "tags": ["cpp", "api", "softwaredevelopment"]
+      },
+      {
+        "title": "The Human-Machine Interface: An Intelligent Engineering Portfolio",
+        "author": "Salwaaa",
+        "url": "https://dev.to/phoenixa/the-human-machine-interface-an-intelligent-engineering-portfolio-o0p",
+        "tags": ["devchallenge", "googleaichallenge", "portfolio", "gemini"]
+      },
+      {
+        "title": "Great Refactor Initiative: AI Transforms Critical Code to Rust",
+        "author": "alexmorgan",
+        "url": "https://dev.to/alexmorgantech/great-refactor-initiative-ai-transforms-critical-code-to-rust-4e74",
+        "tags": ["ai", "news", "research", "aicodetranslation"]
+      },
+      {
+        "title": "How I Solved Streamlit Session Persistence (After 3 Failed Attempts)",
+        "author": "hendrixAIDev",
+        "url": "https://dev.to/hendrixaidev/how-i-solved-streamlit-session-persistence-after-3-failed-attempts-b4c",
+        "tags": ["streamlit", "python", "webdev", "tutorial"]
+      },
+      {
+        "title": "The Missing Piece in Angular i18n",
+        "author": "Anastasios Theodosiou",
+        "url": "https://dev.to/atheodosiou/the-missing-piece-in-angular-i18n-57m0",
+        "tags": ["angular", "i18n", "webdev", "cli"]
+      },
+      {
+        "title": "C# 14 extension blocks",
+        "author": "Karen Payne",
+        "url": "https://dev.to/karenpayneoregon/c-14-extension-blocks-1d6k",
+        "tags": ["csharp", "dotnetcore", "softwaredevelopment", "coding"]
+      }
+    ]
+  },
+
+  "lobsters": {
+    "status": "failed",
+    "error": "Rate limited (429)"
+  },
+
+  "indie_hackers": {
+    "status": "success",
+    "items": [
+      {
+        "title": "Validating via services before building a $27k MRR product",
+        "url": "https://www.indiehackers.com/post/tech/validating-via-services-before-building-a-27k-mrr-product-7FrT6FXChPOiUK4PbXFp",
+        "revenue": "$27k MRR",
+        "build_time": null,
+        "strategy": "service-to-product",
+        "founder_type": "bootstrapped",
+        "problem_solved": "Monetizing growth tactics from previous exit into standalone tool"
+      },
+      {
+        "title": "Building an app portfolio to $60k/mo after Apple froze his developer account",
+        "url": "https://www.indiehackers.com/post/tech/building-an-app-portfolio-to-60k-mo-after-apple-froze-his-developer-account-LD7oNYzKSmWucRfKV1AO",
+        "revenue": "$60k/mo",
+        "build_time": null,
+        "strategy": "multi-app portfolio recovery",
+        "founder_type": "bootstrapped",
+        "problem_solved": "Rebuilding revenue stream after platform account suspension"
+      },
+      {
+        "title": "Building a product in 20 hours and growing it to a 5-figure ARR",
+        "url": "https://www.indiehackers.com/post/tech/building-a-product-in-20-hours-and-growing-it-to-a-5-figure-arr-p1fyDKtYj5HMItJxV87H",
+        "revenue": "5-figure ARR",
+        "build_time": "20 hours",
+        "strategy": "rapid SaaS launch",
+        "founder_type": "solo",
+        "problem_solved": "Transitioning from services to recurring revenue product"
+      },
+      {
+        "title": "From open-source donations to $13k MRR product",
+        "url": "https://www.indiehackers.com/post/tech/from-open-source-donations-to-13k-mrr-product-rl7FbRceFPj4ZvI0nGoV",
+        "revenue": "$13k MRR",
+        "build_time": null,
+        "strategy": "open-source monetization",
+        "founder_type": "bootstrapped",
+        "problem_solved": "Converting unpaid open-source project into viable revenue product"
+      },
+      {
+        "title": "Taking the leap and building a 6-figure-ARR portfolio",
+        "url": "https://www.indiehackers.com/post/tech/taking-the-leap-and-building-a-6-figure-arr-portfolio-8Gc6h3b74cjmNEgOgY3L",
+        "revenue": "$100k+/yr",
+        "build_time": null,
+        "strategy": "multi-product portfolio",
+        "founder_type": "solo",
+        "problem_solved": "Building diversified income across multiple products after career break"
+      }
+    ]
+  },
+
+  "techcrunch": {
+    "status": "success",
+    "items": [
+      {
+        "title": "Waymo reportedly raising a $16B funding round",
+        "url": "https://techcrunch.com/2026/01/31/waymo-reportedly-raising-a-16-billion-funding-round/",
+        "category": "Funding",
+        "summary": "The robotaxi company is finalizing a funding round that values it at $110 billion."
+      },
+      {
+        "title": "SpaceX seeks federal approval to launch 1 million solar-powered satellite data centers",
+        "url": "https://techcrunch.com/2026/01/31/spacex-seeks-federal-approval-to-launch-1-million-solar-powered-satellite-data-centers/",
+        "category": "Space",
+        "summary": "SpaceX filed for permission to deploy solar-powered satellites for a Kardashev II-level civilization."
+      },
+      {
+        "title": "Nvidia CEO pushes back against report that his company's $100B OpenAI investment has stalled",
+        "url": "https://techcrunch.com/2026/01/31/nvidia-ceo-pushes-back-against-report-that-his-companys-100b-openai-investment-has-stalled/",
+        "category": "AI",
+        "summary": "Jensen Huang disputed reports of friction between Nvidia and OpenAI over their partnership."
+      },
+      {
+        "title": "HomeBoost's app will show you where to save on your utility bills",
+        "url": "https://techcrunch.com/2026/01/31/homeboosts-app-will-show-you-where-to-save-on-your-utility-bills/",
+        "category": "Startups",
+        "summary": "The startup partners with utilities to help homeowners identify energy-efficient upgrades."
+      },
+      {
+        "title": "Physical Intelligence, the startup building Silicon Valley's buzziest robot brains",
+        "url": "https://techcrunch.com/2026/01/30/physical-intelligence-stripe-veteran-lachy-grooms-latest-bet-is-building-silicon-valleys-buzziest-robot-brains/",
+        "category": "Robotics",
+        "summary": "Co-founder Lachy Groom leads Physical Intelligence advancing robotic AI capabilities."
+      },
+      {
+        "title": "OpenClaw's AI assistants are now building their own social network",
+        "url": "https://techcrunch.com/2026/01/30/openclaws-ai-assistants-are-now-building-their-own-social-network/",
+        "category": "AI",
+        "summary": "The viral AI assistant enables autonomous agents to develop social networking capabilities."
+      },
+      {
+        "title": "Anthropic brings agentic plug-ins to Cowork",
+        "url": "https://techcrunch.com/2026/01/30/anthropic-brings-agentic-plugins-to-cowork/",
+        "category": "AI",
+        "summary": "Anthropic enables Claude users to configure plugins that streamline workflows."
+      }
+    ]
+  },
+
+  "youtube_trending": {
+    "status": "success",
+    "region": "KR",
+    "category": "Science & Technology",
+    "items": [
+      {
+        "title": "대박..10년차 갤럭시 유저도 몰랐던 숨겨진 꿀팁 2가지",
+        "channelTitle": "1분미만",
+        "viewCount": 1138512,
+        "tags": ["1분미만", "꿀팁"]
+      },
+      {
+        "title": "아이폰 압수해도 무용지물",
+        "channelTitle": "YTN",
+        "viewCount": 499879,
+        "tags": ["아이폰 보안", "애플 보안", "페이스아이디"]
+      },
+      {
+        "title": "잘라서 붙이면 끝인 디스플레이",
+        "channelTitle": "목작소",
+        "viewCount": 177023,
+        "tags": ["투명LED", "미래기술", "디스플레이"]
+      },
+      {
+        "title": "삼성이 글로벌 스마트폰 업계를 무너뜨리는 방법",
+        "channelTitle": "국뽕실록",
+        "viewCount": 243162,
+        "tags": ["한국기술", "삼성전자", "투명폰"]
+      },
+      {
+        "title": "애플 맥미니 품절시킨 AI 에이전트",
+        "channelTitle": "군림보",
+        "viewCount": 236657,
+        "tags": ["AI", "에이전트", "맥미니"]
+      }
+    ]
+  }
+}

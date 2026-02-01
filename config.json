@@ -84,7 +84,8 @@
     "enabled": true,
     "product_hunt": {
       "count": 10,
-      "note": "Product Hunt 상위 10개 제품 상세 페이지 크롤링"
+      "method": "graphql_api",
+      "note": "GraphQL API로 상세 정보 통합 수집 (WebFetch 개별 페이지 크롤링 불가)"
     }
   },
   "output": {
