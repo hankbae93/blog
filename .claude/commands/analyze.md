@@ -8,6 +8,7 @@
 1. **모든 내용은 한글로 작성** - 영어 인용문도 반드시 번역
 2. **제품/회사 설명 필수** - "무엇을 하는 제품인지" 명확히 설명
 3. **테이블은 보조 수단** - 설명 먼저, 테이블은 요약용
+4. **"오늘의 핵심 숫자", "상승 키워드" 섹션은 사용하지 않음** - 무의미한 정보 제외
 
 ---
 
@@ -18,39 +19,9 @@
 
 ## 출력 구조
 
-### 0. 오늘의 핵심 숫자 (대시보드)
+### 0. 오늘의 흐름 (3줄 요약)
 
-**반드시 맨 위에 포함 - history.json의 metrics/comparisons 참조**
-
-```markdown
-## 📊 오늘의 핵심 숫자
-
-<div className="dashboard-grid">
-  <StatCard label="PH 최고 득표" value={316} change="+12% vs 어제" icon="🏆" />
-  <StatCard label="HN 최고 점수" value={521} change="+8% vs 어제" icon="🔥" />
-  <StatCard label="GitHub 오늘의 스타" value={1234} change="+25% vs 지난주" icon="⭐" />
-  <StatCard label="YouTube 최고 조회" value="308만" change="+15%" icon="▶️" />
-</div>
-
-### 상승 키워드
-
-<div className="trend-badges">
-  <TrendBadge direction="up" label="AI" value="+37%" />
-  <TrendBadge direction="up" label="Agent" value="+22%" />
-  <TrendBadge direction="new" label="vibecoding" />
-  <TrendBadge direction="new" label="MCP" />
-</div>
-```
-
-**작성 규칙:**
-- `generated/trends/history.json`의 `metrics`와 `comparisons` 섹션 참조
-- 변화율이 있으면 반드시 표시 (vs 어제, vs 지난주)
-- 변화율이 없으면 change 속성 생략
-- 상승 키워드는 history.json의 `keywords`에서 trend가 'rising' 또는 'new'인 것
-
----
-
-### 1. 오늘의 핵심 흐름 (3줄 요약)
+**반드시 맨 위에 포함**
 
 ```markdown
 ## 오늘의 흐름
@@ -64,7 +35,27 @@
 
 ---
 
-### 2. Product Hunt Today
+### 1. 오늘의 신호 테이블
+
+**신호 → 의미 → 기회를 한 테이블로 - 오늘의 흐름 바로 아래에 배치**
+
+```markdown
+## 오늘의 신호
+
+| 신호 | 의미 | 기회 |
+|------|------|------|
+| [관찰된 현상 - 구체적 수치 포함] | [왜 중요한가] | [1인 개발자가 할 수 있는 것] |
+| [예: PH Top 3가 모두 AI 도구] | [AI UX 개선 시장 형성] | [Claude 유저 페인포인트 도구] |
+```
+
+**작성 규칙:**
+- 3-5개 신호 선정
+- 신호는 구체적 관찰 (숫자, 순위 포함)
+- 기회는 액션 가능한 아이디어
+
+---
+
+### 2. Product Hunt 오늘의 제품
 
 **중요: 제품이 무엇인지 반드시 상세히 설명할 것**
 
@@ -90,54 +81,15 @@
 | 타겟 사용자 | [누구를 위한 제품] |
 | 기존 대비 차별점 | [뭐가 다른가] |
 | 수익 모델 | [무료/프리미엄/유료 구독 등] |
-| 제작자 | [인원, 배경 - 솔로/팀/전직 대기업 등] |
-| 이용자 수 | {website_metrics.user_count} {website_metrics.metric_type} 또는 "정보 없음" |
+| 제작자 | [인원, 배경] |
 | 커뮤니티 반응 | 댓글 {commentsCount}개, 평점 {reviewsRating}/5.0 |
 
 **배울 점**: [1인 개발자가 이 제품에서 배울 수 있는 것]
-
----
-```
-
-**잘못된 예시 (피해야 할 것):**
-```markdown
-### Kilo Code Reviewer ⬆️ 568
-**"Automatic AI-powered code reviews"**  ← 영어 그대로 사용 금지
-
-| 타겟 | 개발팀 |  ← 설명 없이 테이블만 있음
-```
-
-**올바른 예시:**
-```markdown
-### 킬로 코드 리뷰어 ⬆️ 568 | 💬 42 | ⭐ 4.8
-![thumbnail](https://ph-files.imgix.net/...)
-
-🔗 [Product Hunt](https://www.producthunt.com/posts/kilo-code-reviewer) | [공식 사이트](https://kilo.dev)
-📂 Developer Tools, AI, Code Review
-
-#### 이 제품은 무엇인가?
-PR(풀 리퀘스트)을 열면 AI가 자동으로 코드 리뷰를 해주는 도구다.
-기존에는 팀원에게 리뷰를 요청하고 기다려야 했지만, 이 도구를 쓰면 PR을
-열자마자 즉시 AI가 코드 품질, 버그 가능성, 개선점을 분석해서 코멘트를 남긴다.
-
-GitHub Actions와 연동되어 별도 설정 없이 바로 사용 가능하다.
-
-#### 왜 주목할만한가?
-1인 개발자는 코드 리뷰를 받을 사람이 없다. 이 도구로 "혼자서도 리뷰받는 환경"을 만들 수 있다.
-
-| 구분 | 내용 |
-|------|------|
-| 타겟 사용자 | 솔로 개발자, 소규모 팀 |
-| 기존 대비 차별점 | PR 열면 즉시 자동 리뷰 |
-| 수익 모델 | 프리미엄 (무료 100회/월) |
-| 제작자 | 2인 팀, 전직 GitHub 엔지니어 |
-| 이용자 수 | 10,000+ users |
-| 커뮤니티 반응 | 댓글 42개, 평점 4.8/5.0 |
 ```
 
 ---
 
-### 3. Hacker News 하이라이트
+### 3. 해커뉴스 하이라이트
 
 **영어 제목/내용도 반드시 번역**
 
@@ -152,40 +104,11 @@ GitHub Actions와 연동되어 별도 설정 없이 바로 사용 가능하다.
 
 #### 1인 개발자에게 의미하는 바
 [이 기사가 왜 중요한지, 어떤 시사점이 있는지]
-
----
 ```
 
 ---
 
-### 4. Indie Hackers 수익화 신호
-
-**구체적인 숫자와 전략, 그리고 맥락 설명**
-
-```markdown
-## 인디해커스 수익화 사례
-
-### 💰 [제목 번역]
-**원문**: [{영어 제목}]({url})
-
-#### 이 사례는 무엇인가?
-[2-3문장으로 어떤 사람이 어떤 제품을 만들어서 어떻게 수익화했는지 설명]
-
-#### 핵심 전략
-- **수익 규모**: {revenue}
-- **개발 기간**: {build_time}
-- **핵심 전략**: {strategy}
-- **창업자 유형**: {founder_type}
-
-#### 배울 점
-[1인 개발자가 이 사례에서 구체적으로 배울 수 있는 것]
-
----
-```
-
----
-
-### 5. GitHub 트렌딩
+### 4. 깃허브 트렌딩
 
 **레포지토리가 무엇인지 설명 필수**
 
@@ -193,7 +116,7 @@ GitHub Actions와 연동되어 별도 설정 없이 바로 사용 가능하다.
 ## 깃허브 트렌딩
 
 ### [{owner/repo}]({url})
-**오늘 ⭐ +{stars_today} | 총 {stars}개**
+**총 ⭐ {stars}개**
 
 #### 이 프로젝트는 무엇인가?
 [레포지토리가 무엇을 하는 프로젝트인지 2-3문장 설명]
@@ -203,66 +126,54 @@ GitHub Actions와 연동되어 별도 설정 없이 바로 사용 가능하다.
 
 #### 1인 개발자 활용법
 [이 프로젝트를 어떻게 활용할 수 있는지]
-
----
 ```
 
 ---
 
-### 6. 기타 소스 (GeekNews, Dev.to, YouTube)
+### 5. 기타 소스 하이라이트
 
 ```markdown
 ## 기타 소스 하이라이트
 
-### GeekNews (한국 개발자 커뮤니티)
-**[제목]**
+### Lobsters (개발자 커뮤니티)
+**[제목]** - {points}점
 - [2줄 요약 및 시사점]
 
-### Dev.to (글로벌 개발 커뮤니티)
-**[제목 번역]** (원문: {영어 제목})
+### TechCrunch (테크 뉴스)
+**[제목]**
 - [2줄 요약]
 ```
 
 ---
 
-### 6.1 YouTube 트렌딩 (Science & Tech)
+### 6. YouTube 개발 콘텐츠
 
-**IT/기술 카테고리에서 수집된 영상 10개 이상 나열**
+**프로그래밍/개발 관련 영상만 - 클릭 가능한 링크 포함**
 
 ```markdown
-## YouTube 트렌딩 (Science & Tech)
+## YouTube 개발 콘텐츠
 
-한국과 미국의 Science & Tech 카테고리 트렌딩 영상입니다.
+프로그래밍/개발 관련 트렌딩 영상입니다.
 
-### 한국 (KR)
+| # | 제목 | 채널 | 조회수 |
+|---|------|------|-------:|
+| 1 | [{title}](https://www.youtube.com/watch?v={videoId}) | {channel} | {views} |
+| 2 | [{title}](https://www.youtube.com/watch?v={videoId}) | {channel} | {views} |
+| ... | ... | ... | ... |
 
-| # | 제목 | 채널 | 조회수 | 구독자 | 길이 |
-|---|------|------|--------|--------|------|
-| 1 | {title} | {channel} | {views} | {channelSubscribers} | {duration} |
-| 2 | {title} | {channel} | {views} | {channelSubscribers} | {duration} |
-| ... | ... | ... | ... | ... | ... |
-
-### 미국 (US)
-
-| # | 제목 | 채널 | 조회수 | 구독자 | 길이 |
-|---|------|------|--------|--------|------|
-| 1 | {title} | {channel} | {views} | {channelSubscribers} | {duration} |
-| 2 | {title} | {channel} | {views} | {channelSubscribers} | {duration} |
-| ... | ... | ... | ... | ... | ... |
-
-### 주목할 영상 (1-2개 선정)
+### 주목할 영상
 
 **[영상 제목]** - {channel}
-- 조회수: {views} | 좋아요 비율: {likeRatio}%
+- 조회수: {views}
 - **왜 뜨고 있나**: [1-2문장 분석]
 - **1인 개발자 시사점**: [배울 점이나 아이디어]
 ```
 
 **작성 규칙:**
-- `sources/{날짜}.json`의 youtube_trending에서 Science & Tech 카테고리만 사용
-- 한국(KR), 미국(US) 지역별로 구분하여 테이블로 나열
-- 각 지역당 최소 5개 이상 영상 표시
-- 테이블 아래에 특히 주목할 영상 1-2개만 간단히 분석
+- `youtube_trending`에서 개발/프로그래밍 관련 영상 선별
+- 제목에 YouTube 링크 반드시 포함 (클릭 가능하게)
+- 조회수 높은 순으로 최대 10개
+- 주목할 영상 1-2개는 상세 분석
 
 ---
 
@@ -276,15 +187,13 @@ GitHub Actions와 연동되어 별도 설정 없이 바로 사용 가능하다.
 #### 어디서 발견되었나?
 - Product Hunt: [제품명] - [연관성]
 - Hacker News: [기사 제목] - [연관성]
-- Indie Hackers: [사례 제목] - [연관성]
+- GitHub: [레포명] - [연관성]
 
 #### 무엇을 의미하는가?
 [이 테마가 1인 개발자에게 왜 중요한지 2-3문장]
 
 #### 기회 또는 경고
 [액션 아이템 또는 주의사항]
-
----
 ```
 
 ---
@@ -310,7 +219,15 @@ GitHub Actions와 연동되어 별도 설정 없이 바로 사용 가능하다.
 
 - **경로**: `generated/insights/{YYYY-MM-DD}.md`
 - **인코딩**: UTF-8
-- 기존 essence/profit 분리 제거, 단일 통합 파일
+
+---
+
+## 제외 섹션 (사용하지 않음)
+
+다음 섹션들은 무의미하거나 정보가 불충분하므로 포함하지 않음:
+- ❌ 오늘의 핵심 숫자 (StatCard 대시보드)
+- ❌ 상승 키워드 (TrendBadge)
+- ❌ 트렌드 히스토리 연동 (history.json 참조)
 
 ---
 
@@ -319,13 +236,4 @@ GitHub Actions와 연동되어 별도 설정 없이 바로 사용 가능하다.
 | 옵션 | 설명 |
 |------|------|
 | `/analyze` | 기본 - 전체 다이제스트 |
-| `/analyze --quick` | 요약만 (오늘의 흐름 + 키 테마) |
-
----
-
-## 8. 트렌드 히스토리 연동
-
-`generated/trends/history.json`이 있으면 참조하여:
-- 오늘 새로 등장한 키워드 표시 (✨ New)
-- 상승 중인 키워드 표시 (🔥 Rising)
-- 하락 중인 키워드 표시 (📉 Falling)
+| `/analyze --quick` | 요약만 (오늘의 흐름 + 신호 + 키 테마) |

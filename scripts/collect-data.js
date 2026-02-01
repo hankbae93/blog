@@ -196,7 +196,7 @@ async function collectGitHubTrending() {
   }
 }
 
-// YouTube Trending (API)
+// YouTube 개발자/프로그래밍 콘텐츠 검색 (Search API)
 async function collectYouTubeTrending() {
   const apiKey = process.env.YOUTUBE_API_KEY
   if (!apiKey) {
@@ -204,17 +204,20 @@ async function collectYouTubeTrending() {
     return { status: 'skipped', items: [] }
   }
 
-  // IT/기술 관련 카테고리만
-  const categories = [
-    { id: 28, name: 'Science & Tech' }        // 기술 트렌드
+  // 개발자 친화적 검색 키워드
+  const searchQueries = [
+    { query: 'programming tutorial 2026', region: 'US', label: 'Programming' },
+    { query: 'coding project', region: 'US', label: 'Coding' },
+    { query: 'software development', region: 'US', label: 'Software Dev' },
+    { query: 'web development react', region: 'US', label: 'Web Dev' },
+    { query: '개발자 코딩', region: 'KR', label: '한국 개발' },
+    { query: '프로그래밍 튜토리얼', region: 'KR', label: '한국 튜토리얼' }
   ]
-  const regions = ['KR', 'US']
-  const maxResultsPerRegion = 10  // 지역당 10개씩 수집
+  const maxResultsPerQuery = 5
 
-  // 채널 구독자 수 캐시 (중복 API 호출 방지)
+  // 채널 구독자 수 캐시
   const channelCache = new Map()
 
-  // 채널 구독자 수 조회 함수
   async function getChannelSubscribers(channelId) {
     if (channelCache.has(channelId)) {
       return channelCache.get(channelId)
@@ -232,7 +235,6 @@ async function collectYouTubeTrending() {
     }
   }
 
-  // ISO 8601 duration을 사람이 읽기 쉬운 형식으로 변환 (PT4M13S -> 4:13)
   function parseDuration(isoDuration) {
     if (!isoDuration) return null
     const match = isoDuration.match(/PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?/)
@@ -247,56 +249,68 @@ async function collectYouTubeTrending() {
   }
 
   const allItems = []
+  const seenVideoIds = new Set()
 
-  for (const category of categories) {
-    for (const region of regions) {
-      try {
-        // contentDetails 추가하여 영상 길이 등 정보 수집 (지역당 10개)
-        const url = `https://www.googleapis.com/youtube/v3/videos?part=snippet,statistics,contentDetails&chart=mostPopular&regionCode=${region}&maxResults=${maxResultsPerRegion}&videoCategoryId=${category.id}&key=${apiKey}`
-        const res = await fetch(url)
-        const data = JSON.parse(res.data)
+  for (const sq of searchQueries) {
+    try {
+      // Search API로 최근 인기 영상 검색
+      const searchUrl = `https://www.googleapis.com/youtube/v3/search?part=snippet&q=${encodeURIComponent(sq.query)}&type=video&order=viewCount&publishedAfter=${new Date(Date.now() - 30 * 24 * 60 * 60 * 1000).toISOString()}&regionCode=${sq.region}&maxResults=${maxResultsPerQuery}&key=${apiKey}`
+      const searchRes = await fetch(searchUrl)
+      const searchData = JSON.parse(searchRes.data)
 
-        const items = []
-        for (const video of (data.items || [])) {
-          // 채널 구독자 수 조회
-          const channelSubscribers = await getChannelSubscribers(video.snippet.channelId)
-          const views = parseInt(video.statistics?.viewCount || 0)
-          const likes = parseInt(video.statistics?.likeCount || 0)
+      const videoIds = (searchData.items || [])
+        .map(item => item.id?.videoId)
+        .filter(id => id && !seenVideoIds.has(id))
 
-          items.push({
-            title: video.snippet.title,
-            channel: video.snippet.channelTitle,
-            channelId: video.snippet.channelId,
-            channelSubscribers: channelSubscribers,
-            videoId: video.id,
-            url: `https://www.youtube.com/watch?v=${video.id}`,
-            thumbnail: video.snippet.thumbnails?.maxres?.url
-              || video.snippet.thumbnails?.high?.url
-              || video.snippet.thumbnails?.medium?.url,
-            views: views,
-            likes: likes,
-            likeRatio: views > 0 ? ((likes / views) * 100).toFixed(2) : 0,
-            commentCount: parseInt(video.statistics?.commentCount || 0),
-            duration: parseDuration(video.contentDetails?.duration),
-            durationRaw: video.contentDetails?.duration,
-            definition: video.contentDetails?.definition,
-            publishedAt: video.snippet.publishedAt,
-            category: category.name,
-            region: region,
-            tags: video.snippet.tags?.slice(0, 5) || []
-          })
-        }
+      if (videoIds.length === 0) continue
 
-        allItems.push(...items)
-      } catch (e) {
-        console.log(`  ⚠️  YouTube ${category.name} (${region}): ${e.message}`)
+      // 비디오 상세 정보 조회
+      const videoUrl = `https://www.googleapis.com/youtube/v3/videos?part=snippet,statistics,contentDetails&id=${videoIds.join(',')}&key=${apiKey}`
+      const videoRes = await fetch(videoUrl)
+      const videoData = JSON.parse(videoRes.data)
+
+      for (const video of (videoData.items || [])) {
+        if (seenVideoIds.has(video.id)) continue
+        seenVideoIds.add(video.id)
+
+        const channelSubscribers = await getChannelSubscribers(video.snippet.channelId)
+        const views = parseInt(video.statistics?.viewCount || 0)
+        const likes = parseInt(video.statistics?.likeCount || 0)
+
+        allItems.push({
+          title: video.snippet.title,
+          channel: video.snippet.channelTitle,
+          channelId: video.snippet.channelId,
+          channelSubscribers: channelSubscribers,
+          videoId: video.id,
+          url: `https://www.youtube.com/watch?v=${video.id}`,
+          thumbnail: video.snippet.thumbnails?.maxres?.url
+            || video.snippet.thumbnails?.high?.url
+            || video.snippet.thumbnails?.medium?.url,
+          views: views,
+          likes: likes,
+          likeRatio: views > 0 ? ((likes / views) * 100).toFixed(2) : 0,
+          commentCount: parseInt(video.statistics?.commentCount || 0),
+          duration: parseDuration(video.contentDetails?.duration),
+          durationRaw: video.contentDetails?.duration,
+          definition: video.contentDetails?.definition,
+          publishedAt: video.snippet.publishedAt,
+          category: sq.label,
+          region: sq.region,
+          tags: video.snippet.tags?.slice(0, 5) || []
+        })
       }
+    } catch (e) {
+      console.log(`  ⚠️  YouTube "${sq.query}": ${e.message}`)
     }
   }
 
+  // 조회수 순으로 정렬
+  allItems.sort((a, b) => b.views - a.views)
+
   return {
     status: allItems.length > 0 ? 'success' : 'failed',
-    items: allItems
+    items: allItems.slice(0, 20)  // 최대 20개
   }
 }
 
