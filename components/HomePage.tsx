@@ -19,20 +19,14 @@ export default function HomePage() {
         </h1>
         <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-10 leading-relaxed">
           매일 글로벌 트렌드를 분석하고, 1인 개발자가 실제로 만들 수 있는
-          아이디어와 PRD를 제공합니다.
+          MVP 아이디어와 인사이트를 제공합니다.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
             href="/insights"
             className="px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-500 text-white font-semibold rounded-xl hover:opacity-90 transition shadow-lg shadow-purple-500/25"
           >
-            트렌드 인사이트 보기
-          </Link>
-          <Link
-            href="/prd"
-            className="px-8 py-4 bg-white dark:bg-gray-800 text-gray-900 dark:text-white font-semibold rounded-xl border-2 border-gray-200 dark:border-gray-700 hover:border-purple-500 dark:hover:border-purple-500 transition"
-          >
-            PRD 문서 둘러보기
+            오늘의 인사이트 보기
           </Link>
         </div>
       </section>
@@ -59,9 +53,9 @@ export default function HomePage() {
               description="Profit Track(빠른 수익화)과 Essence Track(본질적 문제 해결), 두 가지 관점으로 아이디어를 평가합니다."
             />
             <FeatureCard
-              icon="📝"
-              title="PRD 자동 생성"
-              description="유망한 아이디어는 바로 개발을 시작할 수 있도록 상세한 PRD 문서까지 제공합니다."
+              icon="💡"
+              title="MVP 아이디어"
+              description="트렌드에서 발견한 기회를 1인 개발자가 바로 시작할 수 있는 MVP 아이디어로 정리합니다."
             />
           </div>
         </div>
@@ -70,11 +64,10 @@ export default function HomePage() {
       {/* Stats Section */}
       <section className="px-6 py-16">
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <div className="grid grid-cols-3 gap-8 text-center">
             <StatCard number="9+" label="데이터 소스" />
             <StatCard number="10시" label="매일 업데이트" />
             <StatCard number="2가지" label="평가 트랙" />
-            <StatCard number="PRD" label="문서 자동 생성" />
           </div>
         </div>
       </section>
