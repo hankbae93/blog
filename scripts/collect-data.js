@@ -167,43 +167,32 @@ async function collectHackerNews() {
   }
 }
 
-// GitHub Trending (scrape via API alternative)
+// GitHub Trending (gh CLI 사용)
 async function collectGitHubTrending() {
   try {
-    // GitHub doesn't have official trending API, use ghapi.huchen.dev
-    const res = await fetch('https://api.gitterapp.com/repositories?since=daily')
-    const repos = JSON.parse(res.data).slice(0, 10)
+    // gh CLI로 최근 인기 저장소 검색 (updated:최근 7일, stars 순)
+    const { execSync } = require('child_process')
+    const sevenDaysAgo = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString().split('T')[0]
 
+    const result = execSync(
+      `gh search repos --updated=">=${sevenDaysAgo}" --sort=stars --order=desc --limit=15 --json fullName,description,language,stargazersCount,url`,
+      { encoding: 'utf8', timeout: 30000 }
+    )
+
+    const repos = JSON.parse(result)
     const items = repos.map(repo => ({
-      name: `${repo.author}/${repo.name}`,
+      name: repo.fullName,
       description: repo.description || '',
       language: repo.language || 'Unknown',
-      stars_today: repo.currentPeriodStars || 0,
-      total_stars: repo.stars || 0,
-      url: repo.url || `https://github.com/${repo.author}/${repo.name}`
+      stars_today: 0,
+      total_stars: repo.stargazersCount || 0,
+      url: repo.url || `https://github.com/${repo.fullName}`
     }))
 
     return { status: 'success', items }
   } catch (error) {
-    // Fallback: try alternative API
-    try {
-      const res = await fetch('https://api.github.com/search/repositories?q=created:>' +
-        new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString().split('T')[0] +
-        '&sort=stars&order=desc&per_page=10')
-      const data = JSON.parse(res.data)
-      const items = data.items?.map(repo => ({
-        name: repo.full_name,
-        description: repo.description || '',
-        language: repo.language || 'Unknown',
-        stars_today: 0,
-        total_stars: repo.stargazers_count,
-        url: repo.html_url
-      })) || []
-      return { status: 'success', items }
-    } catch (e) {
-      console.log(`  ❌ GitHub Trending error: ${error.message}`)
-      return { status: 'failed', error: error.message, items: [] }
-    }
+    console.log(`  ❌ GitHub Trending error: ${error.message}`)
+    return { status: 'failed', error: error.message, items: [] }
   }
 }
 
@@ -215,32 +204,88 @@ async function collectYouTubeTrending() {
     return { status: 'skipped', items: [] }
   }
 
+  // IT/기술 관련 카테고리만
   const categories = [
-    { id: 28, name: 'Science & Tech' },
-    { id: 27, name: 'Education' }
+    { id: 28, name: 'Science & Tech' }        // 기술 트렌드
   ]
   const regions = ['KR', 'US']
+  const maxResultsPerRegion = 10  // 지역당 10개씩 수집
+
+  // 채널 구독자 수 캐시 (중복 API 호출 방지)
+  const channelCache = new Map()
+
+  // 채널 구독자 수 조회 함수
+  async function getChannelSubscribers(channelId) {
+    if (channelCache.has(channelId)) {
+      return channelCache.get(channelId)
+    }
+    try {
+      const url = `https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${channelId}&key=${apiKey}`
+      const res = await fetch(url)
+      const data = JSON.parse(res.data)
+      const subscriberCount = parseInt(data.items?.[0]?.statistics?.subscriberCount || 0)
+      channelCache.set(channelId, subscriberCount)
+      return subscriberCount
+    } catch (e) {
+      channelCache.set(channelId, 0)
+      return 0
+    }
+  }
+
+  // ISO 8601 duration을 사람이 읽기 쉬운 형식으로 변환 (PT4M13S -> 4:13)
+  function parseDuration(isoDuration) {
+    if (!isoDuration) return null
+    const match = isoDuration.match(/PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?/)
+    if (!match) return isoDuration
+    const hours = parseInt(match[1] || 0)
+    const minutes = parseInt(match[2] || 0)
+    const seconds = parseInt(match[3] || 0)
+    if (hours > 0) {
+      return `${hours}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`
+    }
+    return `${minutes}:${String(seconds).padStart(2, '0')}`
+  }
 
   const allItems = []
 
   for (const category of categories) {
     for (const region of regions) {
       try {
-        const url = `https://www.googleapis.com/youtube/v3/videos?part=snippet,statistics&chart=mostPopular&regionCode=${region}&maxResults=5&videoCategoryId=${category.id}&key=${apiKey}`
+        // contentDetails 추가하여 영상 길이 등 정보 수집 (지역당 10개)
+        const url = `https://www.googleapis.com/youtube/v3/videos?part=snippet,statistics,contentDetails&chart=mostPopular&regionCode=${region}&maxResults=${maxResultsPerRegion}&videoCategoryId=${category.id}&key=${apiKey}`
         const res = await fetch(url)
         const data = JSON.parse(res.data)
 
-        const items = data.items?.map(video => ({
-          title: video.snippet.title,
-          channel: video.snippet.channelTitle,
-          url: `https://www.youtube.com/watch?v=${video.id}`,
-          views: parseInt(video.statistics?.viewCount || 0),
-          likes: parseInt(video.statistics?.likeCount || 0),
-          publishedAt: video.snippet.publishedAt,
-          category: category.name,
-          region: region,
-          tags: video.snippet.tags?.slice(0, 5) || []
-        })) || []
+        const items = []
+        for (const video of (data.items || [])) {
+          // 채널 구독자 수 조회
+          const channelSubscribers = await getChannelSubscribers(video.snippet.channelId)
+          const views = parseInt(video.statistics?.viewCount || 0)
+          const likes = parseInt(video.statistics?.likeCount || 0)
+
+          items.push({
+            title: video.snippet.title,
+            channel: video.snippet.channelTitle,
+            channelId: video.snippet.channelId,
+            channelSubscribers: channelSubscribers,
+            videoId: video.id,
+            url: `https://www.youtube.com/watch?v=${video.id}`,
+            thumbnail: video.snippet.thumbnails?.maxres?.url
+              || video.snippet.thumbnails?.high?.url
+              || video.snippet.thumbnails?.medium?.url,
+            views: views,
+            likes: likes,
+            likeRatio: views > 0 ? ((likes / views) * 100).toFixed(2) : 0,
+            commentCount: parseInt(video.statistics?.commentCount || 0),
+            duration: parseDuration(video.contentDetails?.duration),
+            durationRaw: video.contentDetails?.duration,
+            definition: video.contentDetails?.definition,
+            publishedAt: video.snippet.publishedAt,
+            category: category.name,
+            region: region,
+            tags: video.snippet.tags?.slice(0, 5) || []
+          })
+        }
 
         allItems.push(...items)
       } catch (e) {

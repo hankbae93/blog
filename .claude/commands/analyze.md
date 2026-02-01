@@ -18,6 +18,38 @@
 
 ## 출력 구조
 
+### 0. 오늘의 핵심 숫자 (대시보드)
+
+**반드시 맨 위에 포함 - history.json의 metrics/comparisons 참조**
+
+```markdown
+## 📊 오늘의 핵심 숫자
+
+<div className="dashboard-grid">
+  <StatCard label="PH 최고 득표" value={316} change="+12% vs 어제" icon="🏆" />
+  <StatCard label="HN 최고 점수" value={521} change="+8% vs 어제" icon="🔥" />
+  <StatCard label="GitHub 오늘의 스타" value={1234} change="+25% vs 지난주" icon="⭐" />
+  <StatCard label="YouTube 최고 조회" value="308만" change="+15%" icon="▶️" />
+</div>
+
+### 상승 키워드
+
+<div className="trend-badges">
+  <TrendBadge direction="up" label="AI" value="+37%" />
+  <TrendBadge direction="up" label="Agent" value="+22%" />
+  <TrendBadge direction="new" label="vibecoding" />
+  <TrendBadge direction="new" label="MCP" />
+</div>
+```
+
+**작성 규칙:**
+- `generated/trends/history.json`의 `metrics`와 `comparisons` 섹션 참조
+- 변화율이 있으면 반드시 표시 (vs 어제, vs 지난주)
+- 변화율이 없으면 change 속성 생략
+- 상승 키워드는 history.json의 `keywords`에서 trend가 'rising' 또는 'new'인 것
+
+---
+
 ### 1. 오늘의 핵심 흐름 (3줄 요약)
 
 ```markdown
@@ -189,12 +221,48 @@ GitHub Actions와 연동되어 별도 설정 없이 바로 사용 가능하다.
 ### Dev.to (글로벌 개발 커뮤니티)
 **[제목 번역]** (원문: {영어 제목})
 - [2줄 요약]
-
-### YouTube 트렌딩
-**[영상 제목]** - {channel}
-- 조회수: {views}
-- [왜 뜨고 있는지 한 줄]
 ```
+
+---
+
+### 6.1 YouTube 트렌딩 (Science & Tech)
+
+**IT/기술 카테고리에서 수집된 영상 10개 이상 나열**
+
+```markdown
+## YouTube 트렌딩 (Science & Tech)
+
+한국과 미국의 Science & Tech 카테고리 트렌딩 영상입니다.
+
+### 한국 (KR)
+
+| # | 제목 | 채널 | 조회수 | 구독자 | 길이 |
+|---|------|------|--------|--------|------|
+| 1 | {title} | {channel} | {views} | {channelSubscribers} | {duration} |
+| 2 | {title} | {channel} | {views} | {channelSubscribers} | {duration} |
+| ... | ... | ... | ... | ... | ... |
+
+### 미국 (US)
+
+| # | 제목 | 채널 | 조회수 | 구독자 | 길이 |
+|---|------|------|--------|--------|------|
+| 1 | {title} | {channel} | {views} | {channelSubscribers} | {duration} |
+| 2 | {title} | {channel} | {views} | {channelSubscribers} | {duration} |
+| ... | ... | ... | ... | ... | ... |
+
+### 주목할 영상 (1-2개 선정)
+
+**[영상 제목]** - {channel}
+- 조회수: {views} | 좋아요 비율: {likeRatio}%
+- **왜 뜨고 있나**: [1-2문장 분석]
+- **1인 개발자 시사점**: [배울 점이나 아이디어]
+```
+
+**작성 규칙:**
+- `sources/{날짜}.json`의 youtube_trending에서 Science & Tech 카테고리만 사용
+- 한국(KR), 미국(US) 지역별로 구분하여 테이블로 나열
+- 각 지역당 최소 5개 이상 영상 표시
+- 테이블 아래에 특히 주목할 영상 1-2개만 간단히 분석
 
 ---
 
@@ -255,37 +323,7 @@ GitHub Actions와 연동되어 별도 설정 없이 바로 사용 가능하다.
 
 ---
 
-## 8. 오늘의 액션 아이템
-
-**반드시 포함해야 하는 섹션**
-
-```markdown
-## 오늘의 액션 아이템
-
-### 즉시 실행 가능 (This Week)
-- [ ] **[제품명] 클론**: [구체적 MVP 스펙 - 핵심 기능 1-3개]
-  - 기술 스택: [추천 스택]
-  - 예상 개발 시간: [솔로 개발자 기준]
-  - 수익화 전략: [프리미엄/광고/구독 등]
-
-### 아이디어 메모 (Backlog)
-- [ ] **[아이디어명]**: [한 줄 설명]
-  - 필요 리소스: [API, 데이터, 도메인 지식 등]
-
-### 장기 관찰 대상 (Watch List)
-- [ ] **[트렌드명]**: [어떤 신호를 봐야 하는지]
-  - 관찰 지표: [GitHub stars, Product Hunt 반응, 커뮤니티 언급 등]
-  - 진입 시점: [언제 시작하면 좋을지]
-```
-
-**작성 원칙:**
-1. **즉시 실행 가능**은 이번 주 안에 프로토타입 가능한 것만
-2. **아이디어 메모**는 리서치가 더 필요한 것
-3. **장기 관찰**은 트렌드가 더 검증될 때까지 기다릴 것
-
----
-
-## 9. 트렌드 히스토리 연동
+## 8. 트렌드 히스토리 연동
 
 `generated/trends/history.json`이 있으면 참조하여:
 - 오늘 새로 등장한 키워드 표시 (✨ New)

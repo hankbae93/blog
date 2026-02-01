@@ -192,7 +192,9 @@ function copyMdFiles(sourceDir, destDir, type) {
   files.forEach(file => {
     if (file.endsWith('.md') || file.endsWith('.mdx')) {
       const sourcePath = path.join(sourceDir, file)
-      const destPath = path.join(destDir, file)
+      // .md 파일을 .mdx로 변환 (커스텀 컴포넌트 사용을 위해)
+      const destFile = file.replace(/\.md$/, '.mdx')
+      const destPath = path.join(destDir, destFile)
 
       // 파일 읽기
       let content = fs.readFileSync(sourcePath, 'utf8')
@@ -202,7 +204,7 @@ function copyMdFiles(sourceDir, destDir, type) {
 
       // 파일 쓰기
       fs.writeFileSync(destPath, content)
-      console.log(`Copied with SEO: ${file}`)
+      console.log(`Copied with SEO: ${file} -> ${destFile}`)
     }
   })
 }

@@ -16,3 +16,137 @@
 :root {
   --nextra-primary-hue: 212deg;
 }
+
+/* 카테고리별 색상 보더 */
+.category-ai {
+  @apply border-l-4 border-l-purple-500 pl-4;
+}
+.category-dev-tools {
+  @apply border-l-4 border-l-blue-500 pl-4;
+}
+.category-saas {
+  @apply border-l-4 border-l-green-500 pl-4;
+}
+.category-productivity {
+  @apply border-l-4 border-l-orange-500 pl-4;
+}
+.category-design {
+  @apply border-l-4 border-l-pink-500 pl-4;
+}
+.category-finance {
+  @apply border-l-4 border-l-emerald-500 pl-4;
+}
+.category-marketing {
+  @apply border-l-4 border-l-amber-500 pl-4;
+}
+
+/* 큰 썸네일 카드 */
+.product-card {
+  @apply bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden border border-gray-200 dark:border-gray-700;
+  @apply hover:shadow-lg transition-shadow duration-200;
+}
+.product-card-header {
+  @apply relative aspect-video overflow-hidden bg-gray-100 dark:bg-gray-900;
+}
+.product-card-body {
+  @apply p-4;
+}
+.product-card-title {
+  @apply text-lg font-bold text-gray-900 dark:text-white mb-2;
+}
+.product-card-description {
+  @apply text-sm text-gray-600 dark:text-gray-300;
+}
+
+/* 대시보드 그리드 */
+.dashboard-grid {
+  @apply grid gap-4 mb-6;
+  @apply grid-cols-1 sm:grid-cols-2 lg:grid-cols-4;
+}
+
+.dashboard-grid-2 {
+  @apply grid gap-4 mb-6;
+  @apply grid-cols-1 sm:grid-cols-2;
+}
+
+.dashboard-grid-3 {
+  @apply grid gap-4 mb-6;
+  @apply grid-cols-1 sm:grid-cols-2 lg:grid-cols-3;
+}
+
+/* 숫자 강조 */
+.highlight-number {
+  @apply font-mono tabular-nums;
+  font-feature-settings: 'tnum' on, 'lnum' on;
+}
+
+/* YouTube 썸네일 그리드 */
+.youtube-grid {
+  @apply grid gap-4 mb-6;
+  @apply grid-cols-1 md:grid-cols-2;
+}
+
+/* 트렌드 뱃지 컨테이너 */
+.trend-badges {
+  @apply flex flex-wrap gap-2 mb-4;
+}
+
+/* StatCard 호버 효과 */
+.stat-card {
+  @apply transition-transform duration-200;
+}
+.stat-card:hover {
+  @apply -translate-y-0.5;
+}
+
+/* 순위 리스트 */
+.rank-list {
+  @apply space-y-3;
+}
+
+/* 메트릭 비교 섹션 */
+.metrics-comparison {
+  @apply bg-gradient-to-r from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900;
+  @apply rounded-xl p-6 mb-6;
+}
+
+/* 키워드 태그 */
+.keyword-tag {
+  @apply inline-flex items-center px-2 py-1 rounded text-xs font-medium;
+  @apply bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300;
+}
+.keyword-tag-rising {
+  @apply bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-300;
+}
+.keyword-tag-new {
+  @apply bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-300;
+}
+.keyword-tag-falling {
+  @apply bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-300;
+}
+
+/* 섹션 헤더 */
+.section-header {
+  @apply flex items-center gap-2 mb-4;
+}
+.section-header-icon {
+  @apply text-2xl;
+}
+.section-header-title {
+  @apply text-xl font-bold text-gray-900 dark:text-white;
+}
+
+/* 다크모드 개선 */
+@variant dark {
+  .product-card {
+    @apply shadow-none;
+  }
+
+  .stat-card {
+    @apply shadow-none;
+  }
+
+  .youtube-thumbnail > div {
+    @apply shadow-none;
+  }
+}
