@@ -3,6 +3,4 @@ export default {
     display: 'hidden',
   },
   insights: 'Insights',
-  prd: 'PRD 문서',
-  persona: 'Persona',
 }
