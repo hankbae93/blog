@@ -267,7 +267,51 @@ WebFetch로 website URL 접근 → pricing 정보 추출
 
 ---
 
-### 4. YouTube Trending 수집 (API 방식) - 확장형
+### 4. Product Hunt 웹사이트 이용자 수 크롤링
+
+> **목적:** Product Hunt 상위 10개 제품의 공식 웹사이트에서 이용자 수/다운로드 수 등 정량 지표 추출
+> **주의:** 웹사이트 크롤링은 실패할 수 있음 (JavaScript 렌더링, 차단 등)
+
+**실행 조건:**
+- GraphQL API에서 `website` URL이 존재하는 제품만 대상
+- 상위 10개 제품에 대해 병렬로 WebFetch 실행
+
+**WebFetch 프롬프트:**
+```
+Extract user/customer metrics from this product landing page. Look for:
+- User count (e.g., "10,000+ users", "1M customers")
+- Download count (e.g., "500k downloads")
+- Company count (e.g., "Used by 1,000+ companies")
+
+Return JSON: { "user_count": "string or null", "metric_type": "users|downloads|customers|companies|null" }
+If no metrics found, return { "user_count": null, "metric_type": null }
+```
+
+**수집 데이터 구조:**
+```json
+{
+  "product_hunt": {
+    "items": [
+      {
+        "name": "ClaudeUsageBar",
+        "website": "https://github.com/claudeusagebar/claudeusagebar",
+        "website_metrics": {
+          "user_count": "5,000+",
+          "metric_type": "users"
+        }
+      }
+    ]
+  }
+}
+```
+
+**오류 처리:**
+- WebFetch 실패 시: `website_metrics: { "user_count": null, "metric_type": null, "error": "fetch_failed" }`
+- 지표 없는 경우: `website_metrics: { "user_count": null, "metric_type": null }`
+
+---
+
+### 5. YouTube Trending 수집 (API 방식) - 확장형
 
 YouTube Data API v3를 사용하여 **다중 카테고리, 다중 지역, 키워드 검색**으로 포괄적인 트렌드를 수집합니다.
 
@@ -473,7 +517,7 @@ Format as JSON array.
 - `22` - People & Blogs
 - `10` - Music
 
-### 5. 데이터 저장
+### 6. 데이터 저장
 
 수집된 데이터를 `generated/sources/{YYYY-MM-DD}.json` 파일로 저장합니다.
 
@@ -508,7 +552,7 @@ Format as JSON array.
 }
 ```
 
-### 6. 인사이트 에이전트용 출력
+### 7. 인사이트 에이전트용 출력
 
 수집 완료 후, 다음 형식으로 콘솔에 요약을 출력합니다:
 
@@ -558,7 +602,7 @@ File saved: generated/sources/{날짜}.json
 Next step: Run /analyze to extract MVP insights
 ```
 
-### 7. 오류 처리
+### 8. 오류 처리
 - 특정 소스 수집 실패 시 해당 소스를 건너뛰고 계속 진행
 - 실패한 소스는 status: "failed"로 표시
 - YouTube API 실패 시 WebFetch 대안 URL로 시도

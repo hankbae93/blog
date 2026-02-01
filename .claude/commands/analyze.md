@@ -39,8 +39,11 @@
 ```markdown
 ## Product Hunt 오늘의 제품
 
-### 1. [제품명] ⬆️ {votes}
+### 1. [제품명] ⬆️ {votesCount} | 💬 {commentsCount} | ⭐ {reviewsRating}
 ![thumbnail]({이미지URL})
+
+🔗 [Product Hunt]({url}) | [공식 사이트]({website})
+📂 {topics}
 
 #### 이 제품은 무엇인가?
 [2-3문장으로 제품이 무엇을 하는지 명확히 설명]
@@ -56,6 +59,8 @@
 | 기존 대비 차별점 | [뭐가 다른가] |
 | 수익 모델 | [무료/프리미엄/유료 구독 등] |
 | 제작자 | [인원, 배경 - 솔로/팀/전직 대기업 등] |
+| 이용자 수 | {website_metrics.user_count} {website_metrics.metric_type} 또는 "정보 없음" |
+| 커뮤니티 반응 | 댓글 {commentsCount}개, 평점 {reviewsRating}/5.0 |
 
 **배울 점**: [1인 개발자가 이 제품에서 배울 수 있는 것]
 
@@ -72,7 +77,11 @@
 
 **올바른 예시:**
 ```markdown
-### 킬로 코드 리뷰어 ⬆️ 568
+### 킬로 코드 리뷰어 ⬆️ 568 | 💬 42 | ⭐ 4.8
+![thumbnail](https://ph-files.imgix.net/...)
+
+🔗 [Product Hunt](https://www.producthunt.com/posts/kilo-code-reviewer) | [공식 사이트](https://kilo.dev)
+📂 Developer Tools, AI, Code Review
 
 #### 이 제품은 무엇인가?
 PR(풀 리퀘스트)을 열면 AI가 자동으로 코드 리뷰를 해주는 도구다.
@@ -83,6 +92,15 @@ GitHub Actions와 연동되어 별도 설정 없이 바로 사용 가능하다.
 
 #### 왜 주목할만한가?
 1인 개발자는 코드 리뷰를 받을 사람이 없다. 이 도구로 "혼자서도 리뷰받는 환경"을 만들 수 있다.
+
+| 구분 | 내용 |
+|------|------|
+| 타겟 사용자 | 솔로 개발자, 소규모 팀 |
+| 기존 대비 차별점 | PR 열면 즉시 자동 리뷰 |
+| 수익 모델 | 프리미엄 (무료 100회/월) |
+| 제작자 | 2인 팀, 전직 GitHub 엔지니어 |
+| 이용자 수 | 10,000+ users |
+| 커뮤니티 반응 | 댓글 42개, 평점 4.8/5.0 |
 ```
 
 ---

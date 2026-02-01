@@ -6,8 +6,6 @@ const rootDir = process.cwd()
 // 복사할 디렉토리 매핑
 const mappings = [
   { source: 'generated/insights', dest: 'content/insights', type: 'insight' },
-  { source: 'generated/output', dest: 'content/prd', type: 'prd' },
-  { source: 'generated/my-persona', dest: 'content/persona', type: 'persona' },
 ]
 
 function ensureDir(dir) {
@@ -51,8 +49,6 @@ function extractDescription(content, type) {
   // 기본 설명
   const defaults = {
     insight: 'MVP 아이디어 인사이트 분석',
-    prd: 'Product Requirements Document',
-    persona: '페르소나 설정',
   }
   return defaults[type] || '블로그 콘텐츠'
 }
@@ -66,16 +62,6 @@ function extractKeywords(content, type, filename) {
     keywords.push('MVP', '인사이트', '트렌드', '아이디어')
     if (filename.includes('profit')) keywords.push('수익화', 'Profit')
     if (filename.includes('essence')) keywords.push('본질', 'Essence')
-  } else if (type === 'prd') {
-    keywords.push('PRD', '기획서', '요구사항', 'MVP')
-    // PRD 제목에서 제품명 추출
-    const title = extractTitle(content)
-    if (title) {
-      const productName = title.replace(/^PRD:\s*/i, '').trim()
-      if (productName) keywords.push(productName)
-    }
-  } else if (type === 'persona') {
-    keywords.push('페르소나', '사용자', '프로덕트')
   }
 
   return keywords.join(', ')

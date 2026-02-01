@@ -90,7 +90,6 @@
   },
   "output": {
     "sources_dir": "generated/sources",
-    "insights_dir": "generated/insights",
-    "prd_dir": "generated/output"
+    "insights_dir": "generated/insights"
   }
 }
