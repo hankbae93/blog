@@ -91,74 +91,125 @@
 
 ### 3. 해커뉴스 하이라이트
 
-**영어 제목/내용도 반드시 번역**
+**영어 제목/내용도 반드시 번역 - HackerNewsCard 컴포넌트 활용 가능**
 
 ```markdown
 ## 해커뉴스 하이라이트
 
-### [번역된 제목] 🔥 {points}점 / 댓글 {comments}개
+### 주요 토론 (상위 6개를 카드로 표시)
+
+<div className="hn-card-grid">
+<HackerNewsCard title="[번역된 제목]" url="{url}" points={points} comments={comments} />
+<HackerNewsCard title="[번역된 제목]" url="{url}" points={points} comments={comments} />
+<HackerNewsCard title="[번역된 제목]" url="{url}" points={points} comments={comments} />
+<HackerNewsCard title="[번역된 제목]" url="{url}" points={points} comments={comments} />
+<HackerNewsCard title="[번역된 제목]" url="{url}" points={points} comments={comments} />
+<HackerNewsCard title="[번역된 제목]" url="{url}" points={points} comments={comments} />
+</div>
+
+### 주목할 기사
+
+#### [번역된 제목] 🔥 {points}점 | 💬 {comments}개
 **원문**: [{영어 제목}]({url})
 
-#### 무슨 내용인가?
+**무슨 내용인가?**
 [기사/토론 내용을 2-3문장으로 요약 설명 - 한글]
 
-#### 1인 개발자에게 의미하는 바
+**1인 개발자에게 의미하는 바**
 [이 기사가 왜 중요한지, 어떤 시사점이 있는지]
 ```
+
+**점수별 표시 기준:**
+- 300점 이상: 🔥🔥 (카드에서 주황색 보더)
+- 100점 이상: 🔥 (카드에서 노란색 보더)
+- 그 외: 기본 (회색 보더)
 
 ---
 
 ### 4. 깃허브 트렌딩
 
-**레포지토리가 무엇인지 설명 필수**
+**레포지토리가 무엇인지 설명 필수 - GitHubRepoCard 컴포넌트 활용**
 
 ```markdown
 ## 깃허브 트렌딩
 
-### [{owner/repo}]({url})
-**총 ⭐ {stars}개**
+<div className="github-card-grid">
+<GitHubRepoCard name="{owner/repo}" description="{description}" language="{language}" stars={stars} url="{url}" />
+<GitHubRepoCard name="{owner/repo}" description="{description}" language="{language}" stars={stars} url="{url}" />
+<GitHubRepoCard name="{owner/repo}" description="{description}" language="{language}" stars={stars} url="{url}" />
+</div>
 
-#### 이 프로젝트는 무엇인가?
+### 주목할 프로젝트
+
+#### [{owner/repo}]({url})
+<SourceTag tag="{language}" /> ⭐ {stars}
+
+**이 프로젝트는 무엇인가?**
 [레포지토리가 무엇을 하는 프로젝트인지 2-3문장 설명]
 
-#### 왜 뜨고 있나?
+**왜 뜨고 있나?**
 [현재 트렌드와 연결지어 설명]
 
-#### 1인 개발자 활용법
+**1인 개발자 활용법**
 [이 프로젝트를 어떻게 활용할 수 있는지]
 ```
+
+**지원 언어 색상:**
+TypeScript(파랑), JavaScript(노랑), Python(초록), Rust(주황), Go(청록), Java(빨강), C++(핑크), Swift(주황), Kotlin(보라), Dart(청록), Shell(초록)
 
 ---
 
 ### 5. 기타 소스 하이라이트
 
+**Lobsters는 태그 시각화 - SourceTag 컴포넌트 활용**
+
 ```markdown
 ## 기타 소스 하이라이트
 
 ### Lobsters (개발자 커뮤니티)
+
 **[제목]** - {points}점
-- [2줄 요약 및 시사점]
+<div className="source-tags">
+<SourceTag tag="{tag1}" />
+<SourceTag tag="{tag2}" />
+</div>
+
+[2줄 요약 및 시사점]
+
+---
 
 ### TechCrunch (테크 뉴스)
+
 **[제목]**
-- [2줄 요약]
+[2줄 요약]
 ```
+
+**Lobsters 태그 색상 지원:**
+security(빨강), api(파랑), performance(초록), ml(보라), practices(주황), programming(남색), web(청록), devops(노랑), linux(회색), retrocomputing(호박색), vibecoding(보라)
 
 ---
 
 ### 6. YouTube 개발 콘텐츠
 
-**프로그래밍/개발 관련 영상만 - 클릭 가능한 링크 포함**
+**프로그래밍/개발 관련 영상만 - YouTubeThumbnail 컴포넌트 활용**
 
 ```markdown
 ## YouTube 개발 콘텐츠
 
-프로그래밍/개발 관련 트렌딩 영상입니다.
+### 주요 영상
+
+<div className="youtube-grid">
+<YouTubeThumbnail id="{videoId}" title="{title}" views={views} channel="{channel}" />
+<YouTubeThumbnail id="{videoId}" title="{title}" views={views} channel="{channel}" />
+<YouTubeThumbnail id="{videoId}" title="{title}" views={views} channel="{channel}" />
+<YouTubeThumbnail id="{videoId}" title="{title}" views={views} channel="{channel}" />
+</div>
+
+### 더 많은 영상
 
 | # | 제목 | 채널 | 조회수 |
 |---|------|------|-------:|
-| 1 | [{title}](https://www.youtube.com/watch?v={videoId}) | {channel} | {views} |
-| 2 | [{title}](https://www.youtube.com/watch?v={videoId}) | {channel} | {views} |
+| 5 | [{title}](https://www.youtube.com/watch?v={videoId}) | {channel} | {views} |
 | ... | ... | ... | ... |
 
 ### 주목할 영상
@@ -171,9 +222,10 @@
 
 **작성 규칙:**
 - `youtube_trending`에서 개발/프로그래밍 관련 영상 선별
-- 제목에 YouTube 링크 반드시 포함 (클릭 가능하게)
+- **상위 4개는 YouTubeThumbnail 컴포넌트로 표시** (시각적 임팩트)
+- 나머지는 테이블로 표시 (스캔 용이)
 - 조회수 높은 순으로 최대 10개
-- 주목할 영상 1-2개는 상세 분석
+- 주목할 영상 2-3개는 상세 분석
 
 ---
 

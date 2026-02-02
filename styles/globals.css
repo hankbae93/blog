@@ -136,6 +136,23 @@
   @apply text-xl font-bold text-gray-900 dark:text-white;
 }
 
+/* Hacker News 카드 그리드 */
+.hn-card-grid {
+  @apply grid gap-3 mb-6;
+  @apply grid-cols-1 lg:grid-cols-2;
+}
+
+/* GitHub 카드 그리드 */
+.github-card-grid {
+  @apply grid gap-4 mb-6;
+  @apply grid-cols-1 md:grid-cols-2 lg:grid-cols-3;
+}
+
+/* 소스 태그 컨테이너 */
+.source-tags {
+  @apply flex flex-wrap gap-1.5 mt-1;
+}
+
 /* 다크모드 개선 */
 @variant dark {
   .product-card {
@@ -147,6 +164,14 @@
   }
 
   .youtube-thumbnail > div {
+    @apply shadow-none;
+  }
+
+  .hn-card > div {
+    @apply shadow-none;
+  }
+
+  .github-card > div {
     @apply shadow-none;
   }
 }

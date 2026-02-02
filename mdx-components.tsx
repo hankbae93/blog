@@ -191,6 +191,145 @@ function RankBar({
   )
 }
 
+// Hacker News 카드 컴포넌트
+function HackerNewsCard({
+  title,
+  url,
+  points,
+  comments
+}: {
+  title: string
+  url: string
+  points: number
+  comments: number
+}) {
+  const isHot = points >= 300
+  const isWarm = points >= 100
+
+  return (
+    <a
+      href={url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hn-card block no-underline hover:no-underline"
+    >
+      <div className={`p-4 bg-white dark:bg-gray-800 rounded-lg border-l-4 ${
+        isHot ? 'border-l-orange-500' : isWarm ? 'border-l-yellow-500' : 'border-l-gray-300 dark:border-l-gray-600'
+      } hover:shadow-md transition-shadow`}>
+        <div className="flex justify-between items-start gap-3 mb-2">
+          <span className="font-medium text-gray-900 dark:text-white text-sm leading-snug">
+            {title}
+          </span>
+          <span className={`shrink-0 text-sm font-bold ${
+            isHot ? 'text-orange-500' : isWarm ? 'text-yellow-600 dark:text-yellow-400' : 'text-gray-500'
+          }`}>
+            {isHot ? '🔥🔥' : isWarm ? '🔥' : '▲'} {points}
+          </span>
+        </div>
+        <div className="text-xs text-gray-500 dark:text-gray-400">
+          💬 {comments} comments
+        </div>
+      </div>
+    </a>
+  )
+}
+
+// GitHub 레포지토리 카드 컴포넌트
+function GitHubRepoCard({
+  name,
+  description,
+  language,
+  stars,
+  url
+}: {
+  name: string
+  description: string
+  language?: string
+  stars: number
+  url: string
+}) {
+  const languageColors: Record<string, string> = {
+    TypeScript: 'bg-blue-500',
+    JavaScript: 'bg-yellow-400',
+    Python: 'bg-green-500',
+    Rust: 'bg-orange-600',
+    Go: 'bg-cyan-500',
+    Java: 'bg-red-500',
+    'C++': 'bg-pink-500',
+    C: 'bg-gray-600',
+    Ruby: 'bg-red-600',
+    PHP: 'bg-indigo-400',
+    Swift: 'bg-orange-500',
+    Kotlin: 'bg-purple-500',
+    Dart: 'bg-cyan-400',
+    Shell: 'bg-green-600',
+    MDX: 'bg-yellow-500'
+  }
+
+  return (
+    <a
+      href={url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="github-card block no-underline hover:no-underline"
+    >
+      <div className="p-4 bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 hover:shadow-md transition-shadow h-full">
+        <div className="flex items-center gap-2 mb-2">
+          <svg className="w-4 h-4 text-gray-500" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8z"/>
+          </svg>
+          <span className="font-mono text-sm font-medium text-blue-600 dark:text-blue-400 truncate">{name}</span>
+        </div>
+        <p className="text-sm text-gray-600 dark:text-gray-300 line-clamp-2 mb-3">{description}</p>
+        <div className="flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
+          <div className="flex items-center gap-1">
+            {language && (
+              <>
+                <span className={`w-3 h-3 rounded-full ${languageColors[language] || 'bg-gray-400'}`}></span>
+                <span>{language}</span>
+              </>
+            )}
+          </div>
+          <div className="flex items-center gap-1">
+            <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"/>
+            </svg>
+            <span className="font-medium">{stars.toLocaleString()}</span>
+          </div>
+        </div>
+      </div>
+    </a>
+  )
+}
+
+// 소스 태그 컴포넌트 (Lobsters 등)
+function SourceTag({ tag }: { tag: string }) {
+  const tagColors: Record<string, string> = {
+    security: 'bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-300',
+    api: 'bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300',
+    performance: 'bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-300',
+    ml: 'bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-300',
+    practices: 'bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-300',
+    programming: 'bg-indigo-100 text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-300',
+    web: 'bg-cyan-100 text-cyan-700 dark:bg-cyan-900/30 dark:text-cyan-300',
+    nix: 'bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300',
+    devops: 'bg-yellow-100 text-yellow-700 dark:bg-yellow-900/30 dark:text-yellow-300',
+    linux: 'bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300',
+    'c++': 'bg-pink-100 text-pink-700 dark:bg-pink-900/30 dark:text-pink-300',
+    retrocomputing: 'bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-300',
+    reversing: 'bg-rose-100 text-rose-700 dark:bg-rose-900/30 dark:text-rose-300',
+    hardware: 'bg-slate-100 text-slate-700 dark:bg-slate-700 dark:text-slate-300',
+    art: 'bg-fuchsia-100 text-fuchsia-700 dark:bg-fuchsia-900/30 dark:text-fuchsia-300',
+    vibecoding: 'bg-violet-100 text-violet-700 dark:bg-violet-900/30 dark:text-violet-300'
+  }
+
+  return (
+    <span className={`inline-flex px-2 py-0.5 rounded text-xs font-medium ${tagColors[tag] || 'bg-gray-100 text-gray-600 dark:bg-gray-700 dark:text-gray-300'}`}>
+      {tag}
+    </span>
+  )
+}
+
 export function useMDXComponents(components?: Record<string, React.ComponentType>) {
   return {
     ...docsComponents,
@@ -198,6 +337,9 @@ export function useMDXComponents(components?: Record<string, React.ComponentType
     StatCard,
     TrendBadge,
     RankBar,
+    HackerNewsCard,
+    GitHubRepoCard,
+    SourceTag,
     ...components
   }
 }
