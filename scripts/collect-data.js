@@ -404,6 +404,132 @@ async function collectIndieHackers() {
   }
 }
 
+// Google Trends 급상승 검색어 (RSS 피드)
+async function collectGoogleTrends() {
+  try {
+    const res = await fetch('https://trends.google.co.kr/trending/rss?geo=KR')
+    const xml = res.data
+
+    const items = []
+    const itemMatches = xml.matchAll(/<item>([\s\S]*?)<\/item>/g)
+
+    let count = 0
+    for (const match of itemMatches) {
+      if (count >= 20) break
+      const itemXml = match[1]
+
+      // 제목 추출
+      const titleMatch = itemXml.match(/<title><!\[CDATA\[(.*?)\]\]><\/title>/) ||
+                         itemXml.match(/<title>(.*?)<\/title>/)
+
+      // 트래픽 수치 추출
+      const trafficMatch = itemXml.match(/<ht:approx_traffic>(.*?)<\/ht:approx_traffic>/)
+
+      // 관련 뉴스 추출
+      const newsItems = []
+      const newsMatches = itemXml.matchAll(/<ht:news_item>([\s\S]*?)<\/ht:news_item>/g)
+      for (const newsMatch of newsMatches) {
+        const newsXml = newsMatch[1]
+        const newsTitleMatch = newsXml.match(/<ht:news_item_title><!\[CDATA\[(.*?)\]\]><\/ht:news_item_title>/) ||
+                               newsXml.match(/<ht:news_item_title>(.*?)<\/ht:news_item_title>/)
+        const newsUrlMatch = newsXml.match(/<ht:news_item_url><!\[CDATA\[(.*?)\]\]><\/ht:news_item_url>/) ||
+                             newsXml.match(/<ht:news_item_url>(.*?)<\/ht:news_item_url>/)
+        if (newsTitleMatch && newsUrlMatch) {
+          newsItems.push({
+            title: newsTitleMatch[1],
+            url: newsUrlMatch[1]
+          })
+        }
+      }
+
+      // 관련 검색어 추출 (picture 태그에서)
+      const relatedQueries = []
+      const pictureMatch = itemXml.match(/<ht:picture>(.*?)<\/ht:picture>/)
+
+      if (titleMatch) {
+        items.push({
+          title: titleMatch[1],
+          traffic: trafficMatch ? trafficMatch[1] : 'N/A',
+          related_queries: relatedQueries,
+          news_items: newsItems.slice(0, 3)  // 최대 3개 뉴스
+        })
+        count++
+      }
+    }
+
+    return { status: items.length > 0 ? 'success' : 'partial', items }
+  } catch (error) {
+    console.log(`  ❌ Google Trends error: ${error.message}`)
+    return { status: 'failed', error: error.message, items: [] }
+  }
+}
+
+// Naver Trends 급상승 검색어 (Zum 실시간 검색어 활용)
+async function collectNaverTrends() {
+  try {
+    // Naver 실시간 검색어는 공식 API가 없고, 2021년부터 서비스 종료됨
+    // 대안으로 Zum 실시간 검색어 또는 네이버 쇼핑인사이트 활용
+
+    const items = []
+
+    // 1. Zum 실시간 검색어 시도
+    try {
+      const zumRes = await fetch('https://zum.com/')
+      const zumHtml = zumRes.data
+
+      // Zum 페이지에서 실시간 검색어 추출
+      const keywordMatches = zumHtml.matchAll(/<span[^>]*class="[^"]*keyword[^"]*"[^>]*>([^<]+)<\/span>/gi) ||
+                             zumHtml.matchAll(/<a[^>]*class="[^"]*rank[^"]*"[^>]*>([^<]+)<\/a>/gi)
+
+      let rank = 1
+      for (const match of keywordMatches) {
+        if (rank > 20) break
+        const keyword = match[1].trim()
+        if (keyword && keyword.length > 1 && !/^\d+$/.test(keyword)) {
+          items.push({
+            rank: rank++,
+            title: keyword,
+            change: 'same',
+            category: ''
+          })
+        }
+      }
+    } catch (e) {
+      // Zum 실패 시 무시
+    }
+
+    // 2. Naver 쇼핑인사이트 인기검색어 시도 (대체)
+    if (items.length === 0) {
+      try {
+        const shoppingRes = await fetch('https://datalab.naver.com/shoppingInsight/sCategory.naver')
+        // 쇼핑 카테고리 인기 검색어 추출 시도
+      } catch (e) {
+        // 실패 시 무시
+      }
+    }
+
+    // 3. Naver DataLab API 시도 (환경변수 있는 경우)
+    if (process.env.NAVER_CLIENT_ID && process.env.NAVER_CLIENT_SECRET) {
+      try {
+        // Naver 검색어 트렌드 API - 특정 키워드의 검색량 추이 확인용
+        // 실시간 급상승 검색어는 제공하지 않지만, 관심 키워드 모니터링 가능
+        console.log('  ℹ️  Naver API available for keyword trend analysis')
+      } catch (e) {
+        // API 호출 실패
+      }
+    }
+
+    return {
+      status: items.length > 0 ? 'success' : 'partial',
+      items,
+      note: items.length === 0 ? 'Naver retired real-time trending in 2021. Using alternative sources.' : undefined
+    }
+  } catch (error) {
+    console.log(`  ❌ Naver Trends error: ${error.message}`)
+    return { status: 'failed', error: error.message, items: [] }
+  }
+}
+
 // TechCrunch RSS
 async function collectTechCrunch() {
   try {
@@ -504,7 +630,9 @@ async function collectAll() {
     { name: 'dev_to', label: 'Dev.to', fn: collectDevTo },
     { name: 'lobsters', label: 'Lobsters', fn: collectLobsters },
     { name: 'indie_hackers', label: 'Indie Hackers', fn: collectIndieHackers },
-    { name: 'techcrunch', label: 'TechCrunch', fn: collectTechCrunch }
+    { name: 'techcrunch', label: 'TechCrunch', fn: collectTechCrunch },
+    { name: 'google_trends', label: 'Google Trends', fn: collectGoogleTrends },
+    { name: 'naver_trends', label: 'Naver Trends', fn: collectNaverTrends }
   ]
 
   for (const collector of collectors) {

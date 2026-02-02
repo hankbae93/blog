@@ -65,7 +65,26 @@
         "maxResults": 10,
         "videoCategoryId": 28
       }
+    },
+    "google_trends": {
+      "name": "Google Trends",
+      "enabled": true,
+      "type": "rss",
+      "url": "https://trends.google.co.kr/trending/rss?geo=KR",
+      "geo": "KR",
+      "note": "한국 실시간 급상승 검색어 (RSS 피드, API 키 불필요)"
+    },
+    "naver_trends": {
+      "name": "Naver Trends",
+      "enabled": true,
+      "type": "scraping",
+      "note": "네이버 실시간 검색어는 2021년 서비스 종료. 대체 소스(Zum 등) 활용"
     }
+  },
+  "naver_api": {
+    "client_id_env": "NAVER_CLIENT_ID",
+    "client_secret_env": "NAVER_CLIENT_SECRET",
+    "note": "Naver DataLab API (선택) - 실시간 검색어 API는 미제공"
   },
   "youtube_api": {
     "api_key_env": "YOUTUBE_API_KEY",

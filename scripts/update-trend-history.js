@@ -195,6 +195,30 @@ function extractKeywords(sourceData) {
     })
   })
 
+  // Google Trends 급상승 검색어 (가중치 4배 - 트렌드 신호로 중요)
+  sourceData.sources?.google_trends?.items?.forEach(item => {
+    if (item.title) {
+      const normalized = item.title.toLowerCase().trim()
+      // 급상승 검색어는 가중치 4배
+      keywords[normalized] = (keywords[normalized] || 0) + 4
+
+      // 관련 검색어도 추가 (가중치 2)
+      item.related_queries?.forEach(query => {
+        const relNormalized = query.toLowerCase().trim()
+        keywords[relNormalized] = (keywords[relNormalized] || 0) + 2
+      })
+    }
+  })
+
+  // Naver Trends 급상승 검색어 (가중치 4배 - 트렌드 신호로 중요)
+  sourceData.sources?.naver_trends?.items?.forEach(item => {
+    if (item.title) {
+      const normalized = item.title.toLowerCase().trim()
+      // 급상승 검색어는 가중치 4배
+      keywords[normalized] = (keywords[normalized] || 0) + 4
+    }
+  })
+
   // key_trends에서 직접 추가
   sourceData.key_trends?.forEach(trend => {
     const normalized = trend.toLowerCase().trim()
