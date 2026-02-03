@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-02-01",
+  "last_updated": "2026-02-03",
   "keywords": {
     "open source": {
       "first_seen": "2026-02-01",
@@ -18,10 +18,14 @@
         {
           "date": "2026-02-01",
           "count": 11
+        },
+        {
+          "date": "2026-02-03",
+          "count": 14
         }
       ],
-      "trend": "new",
-      "total_count": 11
+      "trend": "rising",
+      "total_count": 25
     },
     "menu bar apps": {
       "first_seen": "2026-02-01",
@@ -40,10 +44,14 @@
         {
           "date": "2026-02-01",
           "count": 8
+        },
+        {
+          "date": "2026-02-03",
+          "count": 3
         }
       ],
-      "trend": "new",
-      "total_count": 8
+      "trend": "rising",
+      "total_count": 11
     },
     "chrome extensions": {
       "first_seen": "2026-02-01",
@@ -62,10 +70,18 @@
         {
           "date": "2026-02-01",
           "count": 8
+        },
+        {
+          "date": "2026-02-02",
+          "count": 17
+        },
+        {
+          "date": "2026-02-03",
+          "count": 14
         }
       ],
-      "trend": "new",
-      "total_count": 8
+      "trend": "rising",
+      "total_count": 39
     },
     "artificial intelligence": {
       "first_seen": "2026-02-01",
@@ -73,10 +89,18 @@
         {
           "date": "2026-02-01",
           "count": 11
+        },
+        {
+          "date": "2026-02-02",
+          "count": 20
+        },
+        {
+          "date": "2026-02-03",
+          "count": 14
         }
       ],
-      "trend": "new",
-      "total_count": 11
+      "trend": "rising",
+      "total_count": 45
     },
     "android": {
       "first_seen": "2026-02-01",
@@ -84,10 +108,14 @@
         {
           "date": "2026-02-01",
           "count": 14
+        },
+        {
+          "date": "2026-02-02",
+          "count": 3
         }
       ],
-      "trend": "new",
-      "total_count": 14
+      "trend": "rising",
+      "total_count": 17
     },
     "travel": {
       "first_seen": "2026-02-01",
@@ -183,10 +211,14 @@
         {
           "date": "2026-02-01",
           "count": 3
+        },
+        {
+          "date": "2026-02-03",
+          "count": 3
         }
       ],
-      "trend": "new",
-      "total_count": 3
+      "trend": "rising",
+      "total_count": 6
     },
     "marketing": {
       "first_seen": "2026-02-01",
@@ -194,10 +226,14 @@
         {
           "date": "2026-02-01",
           "count": 3
+        },
+        {
+          "date": "2026-02-03",
+          "count": 14
         }
       ],
-      "trend": "new",
-      "total_count": 3
+      "trend": "rising",
+      "total_count": 17
     },
     "user experience": {
       "first_seen": "2026-02-01",
@@ -205,10 +241,18 @@
         {
           "date": "2026-02-01",
           "count": 3
+        },
+        {
+          "date": "2026-02-02",
+          "count": 3
+        },
+        {
+          "date": "2026-02-03",
+          "count": 3
         }
       ],
-      "trend": "new",
-      "total_count": 3
+      "trend": "rising",
+      "total_count": 9
     },
     "seo": {
       "first_seen": "2026-02-01",
@@ -238,10 +282,14 @@
         {
           "date": "2026-02-01",
           "count": 3
+        },
+        {
+          "date": "2026-02-02",
+          "count": 8
         }
       ],
-      "trend": "new",
-      "total_count": 3
+      "trend": "rising",
+      "total_count": 11
     },
     "nutrition": {
       "first_seen": "2026-02-01",
@@ -282,10 +330,18 @@
         {
           "date": "2026-02-01",
           "count": 1
+        },
+        {
+          "date": "2026-02-02",
+          "count": 1
+        },
+        {
+          "date": "2026-02-03",
+          "count": 1
         }
       ],
-      "trend": "new",
-      "total_count": 1
+      "trend": "stable",
+      "total_count": 3
     },
     "praise": {
       "first_seen": "2026-02-01",
@@ -326,10 +382,978 @@
         {
           "date": "2026-02-01",
           "count": 1
+        },
+        {
+          "date": "2026-02-02",
+          "count": 1
+        }
+      ],
+      "trend": "stable",
+      "total_count": 2
+    },
+    "ios": {
+      "first_seen": "2026-02-02",
+      "occurrences": [
+        {
+          "date": "2026-02-02",
+          "count": 8
+        }
+      ],
+      "trend": "new",
+      "total_count": 8
+    },
+    "time tracking": {
+      "first_seen": "2026-02-02",
+      "occurrences": [
+        {
+          "date": "2026-02-02",
+          "count": 8
+        }
+      ],
+      "trend": "new",
+      "total_count": 8
+    },
+    "quantified self": {
+      "first_seen": "2026-02-02",
+      "occurrences": [
+        {
+          "date": "2026-02-02",
+          "count": 8
+        }
+      ],
+      "trend": "new",
+      "total_count": 8
+    },
+    "lifestyle": {
+      "first_seen": "2026-02-02",
+      "occurrences": [
+        {
+          "date": "2026-02-02",
+          "count": 8
+        }
+      ],
+      "trend": "new",
+      "total_count": 8
+    },
+    "accounting": {
+      "first_seen": "2026-02-02",
+      "occurrences": [
+        {
+          "date": "2026-02-02",
+          "count": 8
+        }
+      ],
+      "trend": "new",
+      "total_count": 8
+    },
+    "budgeting": {
+      "first_seen": "2026-02-02",
+      "occurrences": [
+        {
+          "date": "2026-02-02",
+          "count": 8
+        }
+      ],
+      "trend": "new",
+      "total_count": 8
+    },
+    "virtual assistants": {
+      "first_seen": "2026-02-02",
+      "occurrences": [
+        {
+          "date": "2026-02-02",
+          "count": 8
+        }
+      ],
+      "trend": "new",
+      "total_count": 8
+    },
+    "data": {
+      "first_seen": "2026-02-02",
+      "occurrences": [
+        {
+          "date": "2026-02-02",
+          "count": 8
+        }
+      ],
+      "trend": "new",
+      "total_count": 8
+    },
+    "saas": {
+      "first_seen": "2026-02-02",
+      "occurrences": [
+        {
+          "date": "2026-02-02",
+          "count": 11
+        }
+      ],
+      "trend": "new",
+      "total_count": 11
+    },
+    "marketing automation": {
+      "first_seen": "2026-02-02",
+      "occurrences": [
+        {
+          "date": "2026-02-02",
+          "count": 3
+        }
+      ],
+      "trend": "new",
+      "total_count": 3
+    },
+    "github": {
+      "first_seen": "2026-02-02",
+      "occurrences": [
+        {
+          "date": "2026-02-02",
+          "count": 3
+        }
+      ],
+      "trend": "new",
+      "total_count": 3
+    },
+    "video": {
+      "first_seen": "2026-02-02",
+      "occurrences": [
+        {
+          "date": "2026-02-02",
+          "count": 3
+        }
+      ],
+      "trend": "new",
+      "total_count": 3
+    },
+    "hiring": {
+      "first_seen": "2026-02-02",
+      "occurrences": [
+        {
+          "date": "2026-02-02",
+          "count": 3
+        }
+      ],
+      "trend": "new",
+      "total_count": 3
+    },
+    "no-code": {
+      "first_seen": "2026-02-02",
+      "occurrences": [
+        {
+          "date": "2026-02-02",
+          "count": 3
+        }
+      ],
+      "trend": "new",
+      "total_count": 3
+    },
+    "community": {
+      "first_seen": "2026-02-02",
+      "occurrences": [
+        {
+          "date": "2026-02-02",
+          "count": 3
+        }
+      ],
+      "trend": "new",
+      "total_count": 3
+    },
+    "finance": {
+      "first_seen": "2026-02-02",
+      "occurrences": [
+        {
+          "date": "2026-02-02",
+          "count": 3
+        }
+      ],
+      "trend": "new",
+      "total_count": 3
+    },
+    "typescript": {
+      "first_seen": "2026-02-02",
+      "occurrences": [
+        {
+          "date": "2026-02-02",
+          "count": 13
+        },
+        {
+          "date": "2026-02-03",
+          "count": 11
+        }
+      ],
+      "trend": "rising",
+      "total_count": 24
+    },
+    "unknown": {
+      "first_seen": "2026-02-02",
+      "occurrences": [
+        {
+          "date": "2026-02-02",
+          "count": 4
+        },
+        {
+          "date": "2026-02-03",
+          "count": 4
+        }
+      ],
+      "trend": "rising",
+      "total_count": 8
+    },
+    "python": {
+      "first_seen": "2026-02-02",
+      "occurrences": [
+        {
+          "date": "2026-02-02",
+          "count": 11
+        },
+        {
+          "date": "2026-02-03",
+          "count": 13
+        }
+      ],
+      "trend": "rising",
+      "total_count": 24
+    },
+    "javascript": {
+      "first_seen": "2026-02-02",
+      "occurrences": [
+        {
+          "date": "2026-02-02",
+          "count": 2
+        },
+        {
+          "date": "2026-02-03",
+          "count": 2
+        }
+      ],
+      "trend": "rising",
+      "total_count": 4
+    },
+    "c": {
+      "first_seen": "2026-02-02",
+      "occurrences": [
+        {
+          "date": "2026-02-02",
+          "count": 2
+        },
+        {
+          "date": "2026-02-03",
+          "count": 2
+        }
+      ],
+      "trend": "rising",
+      "total_count": 4
+    },
+    "c++": {
+      "first_seen": "2026-02-02",
+      "occurrences": [
+        {
+          "date": "2026-02-02",
+          "count": 2
+        },
+        {
+          "date": "2026-02-03",
+          "count": 2
+        }
+      ],
+      "trend": "rising",
+      "total_count": 4
+    },
+    "shell": {
+      "first_seen": "2026-02-02",
+      "occurrences": [
+        {
+          "date": "2026-02-02",
+          "count": 2
+        },
+        {
+          "date": "2026-02-03",
+          "count": 2
+        }
+      ],
+      "trend": "rising",
+      "total_count": 4
+    },
+    "dart": {
+      "first_seen": "2026-02-02",
+      "occurrences": [
+        {
+          "date": "2026-02-02",
+          "count": 2
+        },
+        {
+          "date": "2026-02-03",
+          "count": 2
+        }
+      ],
+      "trend": "rising",
+      "total_count": 4
+    },
+    "mdx": {
+      "first_seen": "2026-02-02",
+      "occurrences": [
+        {
+          "date": "2026-02-02",
+          "count": 2
+        },
+        {
+          "date": "2026-02-03",
+          "count": 2
+        }
+      ],
+      "trend": "rising",
+      "total_count": 4
+    },
+    "daily": {
+      "first_seen": "2026-02-02",
+      "occurrences": [
+        {
+          "date": "2026-02-02",
+          "count": 1
         }
       ],
       "trend": "new",
       "total_count": 1
+    },
+    "오태석": {
+      "first_seen": "2026-02-02",
+      "occurrences": [
+        {
+          "date": "2026-02-02",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "창원대": {
+      "first_seen": "2026-02-02",
+      "occurrences": [
+        {
+          "date": "2026-02-02",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "강원기": {
+      "first_seen": "2026-02-02",
+      "occurrences": [
+        {
+          "date": "2026-02-02",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "경상대": {
+      "first_seen": "2026-02-02",
+      "occurrences": [
+        {
+          "date": "2026-02-02",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "서울교통공사": {
+      "first_seen": "2026-02-02",
+      "occurrences": [
+        {
+          "date": "2026-02-02",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "인하대": {
+      "first_seen": "2026-02-02",
+      "occurrences": [
+        {
+          "date": "2026-02-02",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "chappell roan": {
+      "first_seen": "2026-02-02",
+      "occurrences": [
+        {
+          "date": "2026-02-02",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "고성국": {
+      "first_seen": "2026-02-02",
+      "occurrences": [
+        {
+          "date": "2026-02-02",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "고영욱": {
+      "first_seen": "2026-02-02",
+      "occurrences": [
+        {
+          "date": "2026-02-02",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "kospi": {
+      "first_seen": "2026-02-02",
+      "occurrences": [
+        {
+          "date": "2026-02-02",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "감사위원 임명 제청": {
+      "first_seen": "2026-02-02",
+      "occurrences": [
+        {
+          "date": "2026-02-02",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "김동연 이재명 정부 협력": {
+      "first_seen": "2026-02-02",
+      "occurrences": [
+        {
+          "date": "2026-02-02",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "중수청 수사 중복 우려": {
+      "first_seen": "2026-02-02",
+      "occurrences": [
+        {
+          "date": "2026-02-02",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "그래미 케이팝 수상": {
+      "first_seen": "2026-02-02",
+      "occurrences": [
+        {
+          "date": "2026-02-02",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "김지연 가정폭력 외도": {
+      "first_seen": "2026-02-02",
+      "occurrences": [
+        {
+          "date": "2026-02-02",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "전현희 서울시장 출마": {
+      "first_seen": "2026-02-02",
+      "occurrences": [
+        {
+          "date": "2026-02-02",
+          "count": 4
+        },
+        {
+          "date": "2026-02-03",
+          "count": 4
+        }
+      ],
+      "trend": "rising",
+      "total_count": 8
+    },
+    "장동혁 디스카운트 우려": {
+      "first_seen": "2026-02-02",
+      "occurrences": [
+        {
+          "date": "2026-02-02",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "은애하는 도적님아 문상민": {
+      "first_seen": "2026-02-02",
+      "occurrences": [
+        {
+          "date": "2026-02-02",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "김선호 탈세 의혹": {
+      "first_seen": "2026-02-02",
+      "occurrences": [
+        {
+          "date": "2026-02-02",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "김시우 준우승": {
+      "first_seen": "2026-02-02",
+      "occurrences": [
+        {
+          "date": "2026-02-02",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "manage": {
+      "first_seen": "2026-02-02",
+      "occurrences": [
+        {
+          "date": "2026-02-02",
+          "count": 5
+        }
+      ],
+      "trend": "new",
+      "total_count": 5
+    },
+    "fintech": {
+      "first_seen": "2026-02-03",
+      "occurrences": [
+        {
+          "date": "2026-02-03",
+          "count": 8
+        }
+      ],
+      "trend": "new",
+      "total_count": 8
+    },
+    "payments": {
+      "first_seen": "2026-02-03",
+      "occurrences": [
+        {
+          "date": "2026-02-03",
+          "count": 8
+        }
+      ],
+      "trend": "new",
+      "total_count": 8
+    },
+    "e-commerce": {
+      "first_seen": "2026-02-03",
+      "occurrences": [
+        {
+          "date": "2026-02-03",
+          "count": 8
+        }
+      ],
+      "trend": "new",
+      "total_count": 8
+    },
+    "social media": {
+      "first_seen": "2026-02-03",
+      "occurrences": [
+        {
+          "date": "2026-02-03",
+          "count": 8
+        }
+      ],
+      "trend": "new",
+      "total_count": 8
+    },
+    "design tools": {
+      "first_seen": "2026-02-03",
+      "occurrences": [
+        {
+          "date": "2026-02-03",
+          "count": 11
+        }
+      ],
+      "trend": "new",
+      "total_count": 11
+    },
+    "open world games": {
+      "first_seen": "2026-02-03",
+      "occurrences": [
+        {
+          "date": "2026-02-03",
+          "count": 8
+        }
+      ],
+      "trend": "new",
+      "total_count": 8
+    },
+    "3d modeling": {
+      "first_seen": "2026-02-03",
+      "occurrences": [
+        {
+          "date": "2026-02-03",
+          "count": 8
+        }
+      ],
+      "trend": "new",
+      "total_count": 8
+    },
+    "product hunt": {
+      "first_seen": "2026-02-03",
+      "occurrences": [
+        {
+          "date": "2026-02-03",
+          "count": 8
+        }
+      ],
+      "trend": "new",
+      "total_count": 8
+    },
+    "slack": {
+      "first_seen": "2026-02-03",
+      "occurrences": [
+        {
+          "date": "2026-02-03",
+          "count": 3
+        }
+      ],
+      "trend": "new",
+      "total_count": 3
+    },
+    "task management": {
+      "first_seen": "2026-02-03",
+      "occurrences": [
+        {
+          "date": "2026-02-03",
+          "count": 3
+        }
+      ],
+      "trend": "new",
+      "total_count": 3
+    },
+    "sales": {
+      "first_seen": "2026-02-03",
+      "occurrences": [
+        {
+          "date": "2026-02-03",
+          "count": 3
+        }
+      ],
+      "trend": "new",
+      "total_count": 3
+    },
+    "audio": {
+      "first_seen": "2026-02-03",
+      "occurrences": [
+        {
+          "date": "2026-02-03",
+          "count": 3
+        }
+      ],
+      "trend": "new",
+      "total_count": 3
+    },
+    "data & analytics": {
+      "first_seen": "2026-02-03",
+      "occurrences": [
+        {
+          "date": "2026-02-03",
+          "count": 3
+        }
+      ],
+      "trend": "new",
+      "total_count": 3
+    },
+    "xai": {
+      "first_seen": "2026-02-03",
+      "occurrences": [
+        {
+          "date": "2026-02-03",
+          "count": 5
+        }
+      ],
+      "trend": "new",
+      "total_count": 5
+    },
+    "codex": {
+      "first_seen": "2026-02-03",
+      "occurrences": [
+        {
+          "date": "2026-02-03",
+          "count": 1
+        }
+      ],
+      "trend": "new",
+      "total_count": 1
+    },
+    "maintainer": {
+      "first_seen": "2026-02-03",
+      "occurrences": [
+        {
+          "date": "2026-02-03",
+          "count": 1
+        }
+      ],
+      "trend": "new",
+      "total_count": 1
+    },
+    "nano-vllm:": {
+      "first_seen": "2026-02-03",
+      "occurrences": [
+        {
+          "date": "2026-02-03",
+          "count": 1
+        }
+      ],
+      "trend": "new",
+      "total_count": 1
+    },
+    "vllm-style": {
+      "first_seen": "2026-02-03",
+      "occurrences": [
+        {
+          "date": "2026-02-03",
+          "count": 1
+        }
+      ],
+      "trend": "new",
+      "total_count": 1
+    },
+    "sunderland vs burnley": {
+      "first_seen": "2026-02-03",
+      "occurrences": [
+        {
+          "date": "2026-02-03",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "국제금시세": {
+      "first_seen": "2026-02-03",
+      "occurrences": [
+        {
+          "date": "2026-02-03",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "벤제마": {
+      "first_seen": "2026-02-03",
+      "occurrences": [
+        {
+          "date": "2026-02-03",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "pltr": {
+      "first_seen": "2026-02-03",
+      "occurrences": [
+        {
+          "date": "2026-02-03",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "중앙일보": {
+      "first_seen": "2026-02-03",
+      "occurrences": [
+        {
+          "date": "2026-02-03",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "손아섭": {
+      "first_seen": "2026-02-03",
+      "occurrences": [
+        {
+          "date": "2026-02-03",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "다우지수": {
+      "first_seen": "2026-02-03",
+      "occurrences": [
+        {
+          "date": "2026-02-03",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "팔란티어": {
+      "first_seen": "2026-02-03",
+      "occurrences": [
+        {
+          "date": "2026-02-03",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "al-riyadh đấu với al-nassr": {
+      "first_seen": "2026-02-03",
+      "occurrences": [
+        {
+          "date": "2026-02-03",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "대통령 k팝 축하": {
+      "first_seen": "2026-02-03",
+      "occurrences": [
+        {
+          "date": "2026-02-03",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "황재균 아나운서 킬러": {
+      "first_seen": "2026-02-03",
+      "occurrences": [
+        {
+          "date": "2026-02-03",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "구준엽 서희원 추모": {
+      "first_seen": "2026-02-03",
+      "occurrences": [
+        {
+          "date": "2026-02-03",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "한동훈 제명 논란": {
+      "first_seen": "2026-02-03",
+      "occurrences": [
+        {
+          "date": "2026-02-03",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "한국전력 승리": {
+      "first_seen": "2026-02-03",
+      "occurrences": [
+        {
+          "date": "2026-02-03",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "박지수 더블더블 활약": {
+      "first_seen": "2026-02-03",
+      "occurrences": [
+        {
+          "date": "2026-02-03",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "황재균 이혼 심경 변화": {
+      "first_seen": "2026-02-03",
+      "occurrences": [
+        {
+          "date": "2026-02-03",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "서울시장 레이스": {
+      "first_seen": "2026-02-03",
+      "occurrences": [
+        {
+          "date": "2026-02-03",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "한동훈 제명 후폭풍": {
+      "first_seen": "2026-02-03",
+      "occurrences": [
+        {
+          "date": "2026-02-03",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "agents": {
+      "first_seen": "2026-02-03",
+      "occurrences": [
+        {
+          "date": "2026-02-03",
+          "count": 5
+        }
+      ],
+      "trend": "new",
+      "total_count": 5
     }
   },
   "daily_summaries": [
@@ -348,6 +1372,142 @@
         "maps"
       ],
       "total_keywords": 30
+    },
+    {
+      "date": "2026-02-02",
+      "top_keywords": [
+        "artificial intelligence",
+        "productivity",
+        "typescript",
+        "saas",
+        "python",
+        "ios",
+        "health & fitness",
+        "time tracking",
+        "quantified self",
+        "lifestyle"
+      ],
+      "total_keywords": 54
+    },
+    {
+      "date": "2026-02-03",
+      "top_keywords": [
+        "artificial intelligence",
+        "marketing",
+        "developer tools",
+        "productivity",
+        "python",
+        "design tools",
+        "typescript",
+        "fintech",
+        "payments",
+        "e-commerce"
+      ],
+      "total_keywords": 55
     }
-  ]
+  ],
+  "metrics": {
+    "2026-02-02": {
+      "product_hunt": {
+        "avgVotes": 167,
+        "maxVotes": 359,
+        "avgComments": 13,
+        "totalItems": 10
+      },
+      "hacker_news": {
+        "avgPoints": 182,
+        "maxPoints": 582,
+        "avgComments": 72,
+        "totalItems": 15
+      },
+      "github_trending": {
+        "avgStarsToday": 0,
+        "maxStarsToday": 0,
+        "totalItems": 15
+      },
+      "youtube_trending": {
+        "avgViews": 661021,
+        "maxViews": 1547401,
+        "totalItems": 20
+      }
+    },
+    "2026-02-03": {
+      "product_hunt": {
+        "avgVotes": 208,
+        "maxVotes": 346,
+        "avgComments": 23,
+        "totalItems": 10
+      },
+      "hacker_news": {
+        "avgPoints": 177,
+        "maxPoints": 465,
+        "avgComments": 137,
+        "totalItems": 15
+      },
+      "github_trending": {
+        "avgStarsToday": 0,
+        "maxStarsToday": 0,
+        "totalItems": 15
+      },
+      "youtube_trending": {
+        "avgViews": 725253,
+        "maxViews": 1770115,
+        "totalItems": 20
+      }
+    }
+  },
+  "comparisons": {
+    "2026-02-02": {
+      "vs_yesterday": {
+        "product_hunt": {
+          "votesChange": 19,
+          "maxVotesChange": 8
+        },
+        "hacker_news": {
+          "pointsChange": 63,
+          "maxPointsChange": 5
+        },
+        "github_trending": {
+          "starsChange": null
+        },
+        "youtube_trending": {
+          "viewsChange": 11
+        }
+      }
+    },
+    "2026-02-03": {
+      "vs_yesterday": {
+        "product_hunt": {
+          "votesChange": 24,
+          "maxVotesChange": -4
+        },
+        "hacker_news": {
+          "pointsChange": -4,
+          "maxPointsChange": -21
+        },
+        "github_trending": {
+          "starsChange": null
+        },
+        "youtube_trending": {
+          "viewsChange": 10
+        }
+      },
+      "vs_last_week": {
+        "product_hunt": {
+          "votesChange": null,
+          "maxVotesChange": null
+        },
+        "hacker_news": {
+          "pointsChange": 16,
+          "maxPointsChange": 42
+        },
+        "github_trending": {
+          "starsChange": -100
+        },
+        "youtube_trending": {
+          "viewsChange": -54
+        }
+      }
+    }
+  }
 }

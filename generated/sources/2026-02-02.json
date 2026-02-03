@@ -1,6 +1,6 @@
 {
   "date": "2026-02-02",
-  "collected_at": "2026-02-02T07:23:01.777Z",
+  "collected_at": "2026-02-02T07:35:59.639Z",
   "total_items": 100,
   "sources": {
     "product_hunt": {
@@ -16,8 +16,8 @@
           "description": "Private AI Journal that helps you reflect. All data is stored on-device for maximum privacy. When using Apple Intelligence as the LLM, personal data never leaves your device. chatGPT, Gemini and Claude are running in the cloud, but will not store data or use it for training.",
           "url": "https://www.producthunt.com/products/dottie?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29",
           "website": "https://www.producthunt.com/r/QUOKHX2VQBZ2MQ?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29",
-          "votesCount": 359,
-          "commentsCount": 25,
+          "votesCount": 361,
+          "commentsCount": 26,
           "reviewsRating": 0,
           "createdAt": "2026-02-01T08:01:00Z",
           "featuredAt": "2026-02-01T08:01:00Z",
@@ -106,7 +106,7 @@
           "description": "Good Assistant is a passion project with simple goal. To give us all an assistant that will make real impact on the goals most important to us. With powerful memory, notes, proactivity, reminders / tasks of any kind, focus and persistence in helping you get to where you want to be.",
           "url": "https://www.producthunt.com/products/good-assistant?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29",
           "website": "https://www.producthunt.com/r/KK6RMP3SLP4WQC?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29",
-          "votesCount": 201,
+          "votesCount": 205,
           "commentsCount": 9,
           "reviewsRating": 5,
           "createdAt": "2026-02-01T08:01:00Z",
@@ -134,7 +134,7 @@
           "description": "Hyta powers post-training teams, RL vendors, AI labs, agent builders, and enterprises to run AI post-training reliably at scale by orchestrating always-on pipelines of high-quality specialised human signals across workflows and industries, tracking verified post-training contributions across domains, and compounding frontier capabilities.",
           "url": "https://www.producthunt.com/products/hyta?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29",
           "website": "https://www.producthunt.com/r/AVDRFBXPBYFNRQ?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29",
-          "votesCount": 164,
+          "votesCount": 165,
           "commentsCount": 16,
           "reviewsRating": 0,
           "createdAt": "2026-02-01T08:01:00Z",
@@ -190,7 +190,7 @@
           "url": "https://www.producthunt.com/products/compressor-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29",
           "website": "https://www.producthunt.com/r/7EQ4OPIGYMY3A4?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29",
           "votesCount": 131,
-          "commentsCount": 8,
+          "commentsCount": 9,
           "reviewsRating": 5,
           "createdAt": "2026-02-01T08:01:00Z",
           "featuredAt": "2026-02-01T08:01:00Z",
@@ -309,63 +309,63 @@
         {
           "title": "Defeating a 40-year-old copy protection dongle",
           "url": "https://dmitrybrant.com/2026/02/01/defeating-a-40-year-old-copy-protection-dongle",
-          "points": 425,
-          "comments": 123,
+          "points": 433,
+          "comments": 124,
           "author": "zdw",
           "time": 1769981451
         },
         {
           "title": "Apple's MacBook Pro DFU port documentation is wrong",
           "url": "https://lapcatsoftware.com/articles/2026/2/1.html",
-          "points": 55,
-          "comments": 5,
+          "points": 60,
+          "comments": 9,
           "author": "zdw",
           "time": 1770002995
+        },
+        {
+          "title": "My iPhone 16 Pro Max produces garbage output when running MLX LLMs",
+          "url": "https://journal.rafaelcosta.me/my-thousand-dollar-iphone-cant-do-math/",
+          "points": 247,
+          "comments": 118,
+          "author": "rafaelcosta",
+          "time": 1769979116
         },
         {
           "title": "Show HN: NanoClaw – “Clawdbot” in 500 lines of TS with Apple container isolation",
           "url": "https://github.com/gavrielc/nanoclaw",
           "points": 318,
-          "comments": 94,
+          "comments": 95,
           "author": "jimminyx",
           "time": 1769986162
         },
         {
           "title": "Actors: A Model of Concurrent Computation [pdf] (1985)",
           "url": "https://apps.dtic.mil/sti/tr/pdf/ADA157917.pdf",
-          "points": 56,
-          "comments": 23,
+          "points": 58,
+          "comments": 24,
           "author": "kioku",
           "time": 1769994675
         },
         {
-          "title": "Notepad++ hijacked by state-sponsored actors",
-          "url": "https://notepad-plus-plus.org/news/hijacked-incident-info-update/",
-          "points": 582,
-          "comments": 305,
-          "author": "mysterydip",
-          "time": 1769997596
-        },
-        {
-          "title": "My thousand dollar iPhone can't do math",
-          "url": "https://journal.rafaelcosta.me/my-thousand-dollar-iphone-cant-do-math/",
-          "points": 243,
-          "comments": 115,
-          "author": "rafaelcosta",
-          "time": 1769979116
-        },
-        {
           "title": "Apple I Advertisement (1976)",
           "url": "http://apple1.chez.com/Apple1project/Gallery/Gallery.htm",
-          "points": 216,
+          "points": 217,
           "comments": 126,
           "author": "janandonly",
           "time": 1769967417
         },
         {
+          "title": "Notepad++ hijacked by state-sponsored actors",
+          "url": "https://notepad-plus-plus.org/news/hijacked-incident-info-update/",
+          "points": 587,
+          "comments": 310,
+          "author": "mysterydip",
+          "time": 1769997596
+        },
+        {
           "title": "Show HN: Wikipedia as a doomscrollable social media feed",
           "url": "https://xikipedia.org",
-          "points": 111,
+          "points": 118,
           "comments": 48,
           "author": "rebane2001",
           "time": 1769991139
@@ -373,7 +373,7 @@
         {
           "title": "Contracts in Nix",
           "url": "https://sraka.xyz/posts/contracts.html",
-          "points": 32,
+          "points": 36,
           "comments": 7,
           "author": "todsacerdoti",
           "time": 1769933721
@@ -382,14 +382,14 @@
           "title": "Adventure Game Studio: OSS software for creating adventure games",
           "url": "https://www.adventuregamestudio.co.uk/",
           "points": 302,
-          "comments": 54,
+          "comments": 55,
           "author": "doener",
           "time": 1769954216
         },
         {
           "title": "Time Machine-style Backups with rsync (2018)",
           "url": "https://samuelhewitt.com/blog/2018-06-05-time-machine-style-backups-with-rsync",
-          "points": 62,
+          "points": 64,
           "comments": 23,
           "author": "accrual",
           "time": 1769990407
@@ -397,7 +397,7 @@
         {
           "title": "Treasures found on HS2 route stored in secret warehouse",
           "url": "https://www.bbc.com/news/articles/c93v21q5xdvo",
-          "points": 48,
+          "points": 49,
           "comments": 17,
           "author": "breve",
           "time": 1769984079
@@ -405,24 +405,24 @@
         {
           "title": "Leaked Chats Expose the Daily Life of a Scam Compound's Enslaved Workforce",
           "url": "https://www.wired.com/story/the-red-bull-leaks/",
-          "points": 43,
-          "comments": 2,
+          "points": 44,
+          "comments": 5,
           "author": "smurda",
           "time": 1770009059
         },
         {
           "title": "Ian's Shoelace Site",
           "url": "https://www.fieggen.com/shoelace/",
-          "points": 103,
-          "comments": 16,
+          "points": 109,
+          "comments": 18,
           "author": "righthand",
           "time": 1769971084
         },
         {
           "title": "Two kinds of AI users are emerging",
           "url": "https://martinalderson.com/posts/two-kinds-of-ai-users-are-emerging/",
-          "points": 132,
-          "comments": 121,
+          "points": 135,
+          "comments": 123,
           "author": "martinald",
           "time": 1769989518
         }
@@ -446,7 +446,7 @@
           "description": "😎 Awesome lists about all kinds of interesting topics",
           "language": "Unknown",
           "stars_today": 0,
-          "total_stars": 434314,
+          "total_stars": 434316,
           "url": "https://github.com/sindresorhus/awesome"
         },
         {
@@ -462,7 +462,7 @@
           "description": "Interactive roadmaps, guides and other educational content to help developers grow in their careers.",
           "language": "TypeScript",
           "stars_today": 0,
-          "total_stars": 348428,
+          "total_stars": 348429,
           "url": "https://github.com/kamranahmedse/developer-roadmap"
         },
         {
@@ -470,7 +470,7 @@
           "description": "An opinionated list of awesome Python frameworks, libraries, software and resources.",
           "language": "Python",
           "stars_today": 0,
-          "total_stars": 281034,
+          "total_stars": 281035,
           "url": "https://github.com/vinta/awesome-python"
         },
         {
@@ -478,7 +478,7 @@
           "description": "A list of Free Software network services and web applications which can be hosted on your own servers",
           "language": "Unknown",
           "stars_today": 0,
-          "total_stars": 271192,
+          "total_stars": 271193,
           "url": "https://github.com/awesome-selfhosted/awesome-selfhosted"
         },
         {
@@ -526,7 +526,7 @@
           "description": "Visual Studio Code",
           "language": "TypeScript",
           "stars_today": 0,
-          "total_stars": 181260,
+          "total_stars": 181261,
           "url": "https://github.com/microsoft/vscode"
         },
         {
@@ -568,7 +568,7 @@
           "videoId": "jXcpUVZBP_0",
           "url": "https://www.youtube.com/watch?v=jXcpUVZBP_0",
           "thumbnail": "https://i.ytimg.com/vi/jXcpUVZBP_0/maxresdefault.jpg",
-          "views": 1547401,
+          "views": 1547962,
           "likes": 5591,
           "likeRatio": "0.36",
           "commentCount": 75,
@@ -594,7 +594,7 @@
           "videoId": "MNfqPG_xNak",
           "url": "https://www.youtube.com/watch?v=MNfqPG_xNak",
           "thumbnail": "https://i.ytimg.com/vi/MNfqPG_xNak/maxresdefault.jpg",
-          "views": 1329210,
+          "views": 1329250,
           "likes": 17271,
           "likeRatio": "1.30",
           "commentCount": 366,
@@ -640,7 +640,7 @@
           "videoId": "S8W6ZaxDnxI",
           "url": "https://www.youtube.com/watch?v=S8W6ZaxDnxI",
           "thumbnail": "https://i.ytimg.com/vi/S8W6ZaxDnxI/maxresdefault.jpg",
-          "views": 1298127,
+          "views": 1298157,
           "likes": 32364,
           "likeRatio": "2.49",
           "commentCount": 467,
@@ -660,8 +660,8 @@
           "videoId": "EKOU3JWDNLI",
           "url": "https://www.youtube.com/watch?v=EKOU3JWDNLI",
           "thumbnail": "https://i.ytimg.com/vi/EKOU3JWDNLI/maxresdefault.jpg",
-          "views": 1249656,
-          "likes": 45705,
+          "views": 1249738,
+          "likes": 45707,
           "likeRatio": "3.66",
           "commentCount": 1391,
           "duration": "9:11",
@@ -686,8 +686,8 @@
           "videoId": "7AWHmCQq35Q",
           "url": "https://www.youtube.com/watch?v=7AWHmCQq35Q",
           "thumbnail": "https://i.ytimg.com/vi/7AWHmCQq35Q/maxresdefault.jpg",
-          "views": 1226703,
-          "likes": 8423,
+          "views": 1226751,
+          "likes": 8424,
           "likeRatio": "0.69",
           "commentCount": 4112,
           "duration": "11:12",
@@ -712,8 +712,8 @@
           "videoId": "ts0nH_pSAdM",
           "url": "https://www.youtube.com/watch?v=ts0nH_pSAdM",
           "thumbnail": "https://i.ytimg.com/vi/ts0nH_pSAdM/maxresdefault.jpg",
-          "views": 734689,
-          "likes": 21004,
+          "views": 735099,
+          "likes": 21008,
           "likeRatio": "2.86",
           "commentCount": 3052,
           "duration": "9:18",
@@ -734,8 +734,8 @@
           "videoId": "k9SLiklDeZY",
           "url": "https://www.youtube.com/watch?v=k9SLiklDeZY",
           "thumbnail": "https://i.ytimg.com/vi/k9SLiklDeZY/maxresdefault.jpg",
-          "views": 632911,
-          "likes": 16645,
+          "views": 632947,
+          "likes": 16646,
           "likeRatio": "2.63",
           "commentCount": 676,
           "duration": "1:00",
@@ -754,7 +754,7 @@
           "videoId": "iVaykBrfrGQ",
           "url": "https://www.youtube.com/watch?v=iVaykBrfrGQ",
           "thumbnail": "https://i.ytimg.com/vi/iVaykBrfrGQ/maxresdefault.jpg",
-          "views": 610561,
+          "views": 610579,
           "likes": 19604,
           "likeRatio": "3.21",
           "commentCount": 150,
@@ -774,7 +774,7 @@
           "videoId": "q-yETrWwAXs",
           "url": "https://www.youtube.com/watch?v=q-yETrWwAXs",
           "thumbnail": "https://i.ytimg.com/vi/q-yETrWwAXs/maxresdefault.jpg",
-          "views": 556243,
+          "views": 556255,
           "likes": 15240,
           "likeRatio": "2.74",
           "commentCount": 364,
@@ -800,8 +800,8 @@
           "videoId": "BF4fQlUDC7s",
           "url": "https://www.youtube.com/watch?v=BF4fQlUDC7s",
           "thumbnail": "https://i.ytimg.com/vi/BF4fQlUDC7s/maxresdefault.jpg",
-          "views": 541957,
-          "likes": 42276,
+          "views": 541986,
+          "likes": 42278,
           "likeRatio": "7.80",
           "commentCount": 2629,
           "duration": "1:36:32",
@@ -820,8 +820,8 @@
           "videoId": "tYKtYAu1gX0",
           "url": "https://www.youtube.com/watch?v=tYKtYAu1gX0",
           "thumbnail": "https://i.ytimg.com/vi/tYKtYAu1gX0/maxresdefault.jpg",
-          "views": 506981,
-          "likes": 21051,
+          "views": 507095,
+          "likes": 21053,
           "likeRatio": "4.15",
           "commentCount": 918,
           "duration": "2:35",
@@ -846,8 +846,8 @@
           "videoId": "Ebe9NFgQnnU",
           "url": "https://www.youtube.com/watch?v=Ebe9NFgQnnU",
           "thumbnail": "https://i.ytimg.com/vi/Ebe9NFgQnnU/maxresdefault.jpg",
-          "views": 396589,
-          "likes": 18828,
+          "views": 396650,
+          "likes": 18830,
           "likeRatio": "4.75",
           "commentCount": 1185,
           "duration": "24:52",
@@ -872,8 +872,8 @@
           "videoId": "xb-fcoMMiTM",
           "url": "https://www.youtube.com/watch?v=xb-fcoMMiTM",
           "thumbnail": "https://i.ytimg.com/vi/xb-fcoMMiTM/maxresdefault.jpg",
-          "views": 378742,
-          "likes": 15252,
+          "views": 378804,
+          "likes": 15253,
           "likeRatio": "4.03",
           "commentCount": 4077,
           "duration": "10:11",
@@ -892,10 +892,10 @@
           "videoId": "EV7WhVT270Q",
           "url": "https://www.youtube.com/watch?v=EV7WhVT270Q",
           "thumbnail": "https://i.ytimg.com/vi/EV7WhVT270Q/maxresdefault.jpg",
-          "views": 292961,
-          "likes": 7012,
+          "views": 294321,
+          "likes": 7022,
           "likeRatio": "2.39",
-          "commentCount": 505,
+          "commentCount": 507,
           "duration": "4:25:13",
           "durationRaw": "PT4H25M13S",
           "definition": "hd",
@@ -918,7 +918,7 @@
           "videoId": "5DG0-_lseR4",
           "url": "https://www.youtube.com/watch?v=5DG0-_lseR4",
           "thumbnail": "https://i.ytimg.com/vi/5DG0-_lseR4/maxresdefault.jpg",
-          "views": 175102,
+          "views": 175127,
           "likes": 11715,
           "likeRatio": "6.69",
           "commentCount": 2001,
@@ -938,10 +938,10 @@
           "videoId": "zxMjOqM7DFs",
           "url": "https://www.youtube.com/watch?v=zxMjOqM7DFs",
           "thumbnail": "https://i.ytimg.com/vi/zxMjOqM7DFs/maxresdefault.jpg",
-          "views": 158640,
-          "likes": 4483,
+          "views": 158663,
+          "likes": 4484,
           "likeRatio": "2.83",
-          "commentCount": 300,
+          "commentCount": 301,
           "duration": "31:28",
           "durationRaw": "PT31M28S",
           "definition": "hd",
@@ -964,7 +964,7 @@
           "videoId": "ek7hmv5PVV8",
           "url": "https://www.youtube.com/watch?v=ek7hmv5PVV8",
           "thumbnail": "https://i.ytimg.com/vi/ek7hmv5PVV8/maxresdefault.jpg",
-          "views": 149936,
+          "views": 149965,
           "likes": 5381,
           "likeRatio": "3.59",
           "commentCount": 512,
@@ -1015,7 +1015,7 @@
           "videoId": "gGGMUC42_Vg",
           "url": "https://www.youtube.com/watch?v=gGGMUC42_Vg",
           "thumbnail": "https://i.ytimg.com/vi/gGGMUC42_Vg/maxresdefault.jpg",
-          "views": 39089,
+          "views": 39090,
           "likes": 1351,
           "likeRatio": "3.46",
           "commentCount": 53,
@@ -1049,7 +1049,7 @@
         {
           "title": "archive.today is directing a DDOS attack against my blog",
           "url": "https://gyrovague.com/2026/02/01/archive-today-is-directing-a-ddos-attack-against-my-blog/",
-          "points": 33,
+          "points": 32,
           "comments": 14,
           "tags": [
             "security",
@@ -1071,7 +1071,7 @@
         {
           "title": "Defeating a 40-year-old copy protection dongle",
           "url": "https://dmitrybrant.com/2026/02/01/defeating-a-40-year-old-copy-protection-dongle",
-          "points": 28,
+          "points": 30,
           "comments": 0,
           "tags": [
             "retrocomputing",
@@ -1093,7 +1093,7 @@
           "title": "Notepad++ Hijacked by State-Sponsored Hackers",
           "url": "https://notepad-plus-plus.org/news/hijacked-incident-info-update/",
           "points": 10,
-          "comments": 0,
+          "comments": 1,
           "tags": [
             "security"
           ],
@@ -1291,7 +1291,7 @@
         },
         {
           "title": "경상대",
-          "traffic": "100+",
+          "traffic": "200+",
           "related_queries": [],
           "news_items": []
         },
@@ -1347,8 +1347,8 @@
               "url": "https://www.marieclaire.com/beauty/makeup/chappell-roan-2026-grammys-beauty-tattoos/"
             },
             {
-              "title": "Chappell Roan&apos;s Personal Life Unwrapped Amid The Singer&apos;s Grammy Awards 2026 Outfit Domination",
-              "url": "https://www.bollywoodshaadis.com/articles/chappell-roans-personal-life-74477"
+              "title": "Chappell Roan&apos;s topless Grammy look is bid to &apos;outdare&apos; Bianca Censori&apos;s nude moment",
+              "url": "https://www.dailymail.co.uk/tvshowbiz/article-15518693/Chappell-Roan-topless-Grammy-body-language-expert.html"
             }
           ]
         },
@@ -1377,7 +1377,7 @@
           "related_queries": [],
           "news_items": [
             {
-              "title": "고영욱 “13년간 실업자… 날 써줄 곳 없다” 하소��",
+              "title": "고영욱 “13년간 실업자… 날 써줄 곳 없다” 하소연",
               "url": "https://www.chosun.com/culture-life/k-culture/2026/02/02/DLUD5DFHPRAADGRCY3Z2JAKCVU/"
             },
             {
@@ -1404,8 +1404,8 @@
               "url": "https://pulse.mk.co.kr/news/english/11950043"
             },
             {
-              "title": "Seoul stocks open sharply lower amid new Fed chair nomination",
-              "url": "https://en.yna.co.kr/view/AEN20260202002200320"
+              "title": "Seoul stocks nosedive over 5 pct on Fed chair nomination, drop in gold prices",
+              "url": "https://en.yna.co.kr/view/AEN20260202008600320"
             }
           ]
         }

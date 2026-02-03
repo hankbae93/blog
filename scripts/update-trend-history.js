@@ -366,6 +366,10 @@ async function main() {
   const todayMetrics = calculateSourceMetrics(sourceData)
 
   if (todayMetrics) {
+    // metrics와 comparisons 객체가 없으면 초기화
+    if (!updatedHistory.metrics) updatedHistory.metrics = {}
+    if (!updatedHistory.comparisons) updatedHistory.comparisons = {}
+
     updatedHistory.metrics[today] = todayMetrics
 
     // 전일 비교
