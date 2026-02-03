@@ -2,6 +2,7 @@ const fs = require('fs')
 const path = require('path')
 
 const rootDir = process.cwd()
+const siteUrl = 'https://blog-three-lac-61.vercel.app'
 
 // 복사할 디렉토리 매핑
 const mappings = [
@@ -168,11 +169,23 @@ function addFrontmatter(content, filename, type) {
   const categoriesYaml = categories.map(c => `  - "${c}"`).join('\n')
   const tagsYaml = tags.map(t => `  - "${t}"`).join('\n')
 
+  // slug 생성 (파일명 기반)
+  const slug = filename.replace(/\.(md|mdx)$/, '')
+  const canonicalUrl = `${siteUrl}/insights/${slug}`
+
   const frontmatter = `---
 title: "${title}"
 description: "${description}"
 keywords: "${keywords}"
 date: "${date}"
+canonical: "${canonicalUrl}"
+openGraph:
+  type: "article"
+  title: "${title}"
+  description: "${description}"
+  url: "${canonicalUrl}"
+  siteName: "Hank Dev Log"
+  locale: "ko_KR"
 categories:
 ${categoriesYaml}
 tags:

@@ -2,8 +2,12 @@
 User-agent: *
 Allow: /
 
+# Googlebot
+User-agent: Googlebot
+Allow: /
+
 # Host
-Host: https://blog-three-lac-61.vercel.app/
+Host: https://blog-three-lac-61.vercel.app
 
 # Sitemaps
 Sitemap: https://blog-three-lac-61.vercel.app/sitemap.xml
