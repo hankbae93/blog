@@ -44,7 +44,18 @@ function generateMeta(dir) {
   index: {
     display: 'hidden',
   },
-  insights: 'Insights',
+  insights: {
+    title: 'Insights',
+    type: 'page',
+  },
+  'dev-log': {
+    title: '1인개발기',
+    type: 'page',
+  },
+  retrospective: {
+    title: '회고',
+    type: 'page',
+  },
 }
 `
     const metaPath = path.join(dirPath, '_meta.ts')

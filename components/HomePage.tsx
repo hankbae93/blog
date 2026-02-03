@@ -28,6 +28,12 @@ export default function HomePage() {
           >
             오늘의 인사이트 보기
           </Link>
+          <Link
+            href="/dev-log"
+            className="px-8 py-4 bg-white dark:bg-gray-800 text-gray-900 dark:text-white font-semibold rounded-xl hover:bg-gray-50 dark:hover:bg-gray-700 transition border border-gray-200 dark:border-gray-700"
+          >
+            1인 개발기 둘러보기
+          </Link>
         </div>
       </section>
 

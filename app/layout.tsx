@@ -8,7 +8,7 @@ export const metadata = {
     default: 'Blog',
     template: '%s - Blog',
   },
-  description: '트렌드 데이터 기반 MVP 아이디어 도출 및 PRD 생성',
+  description: '1인 개발자를 위한 트렌드 인사이트 및 개발기',
   openGraph: {
     type: 'article',
     siteName: 'Blog',
