@@ -316,6 +316,30 @@ security(빨강), api(파랑), performance(초록), ml(보라), practices(주황
 - **경로**: `generated/insights/{YYYY-MM-DD}.md`
 - **인코딩**: UTF-8
 
+### 파일 양식 (필수)
+
+**모든 인사이트 파일은 반드시 다음 양식으로 시작해야 합니다:**
+
+```markdown
+---
+title: "{YYYY-MM-DD} 데일리 인사이트"
+date: "{YYYY-MM-DD}"
+description: "[오늘의 한 줄 요약 - 60자 이내]"
+keywords: ["키워드1", "키워드2", "키워드3"]
+---
+
+# {YYYY-MM-DD} 데일리 인사이트
+
+## 오늘의 흐름
+...
+```
+
+**주의사항:**
+- frontmatter (`---`로 감싸진 영역)와 마크다운 제목 (`#`) 둘 다 필수
+- frontmatter의 title과 마크다운 제목은 동일한 형식 사용
+- description은 SEO를 위한 짧은 요약 (오늘의 흐름의 한 줄 요약과 동일하게)
+- keywords는 오늘의 주요 테마 3-5개
+
 ---
 
 ## 제외 섹션 (사용하지 않음)

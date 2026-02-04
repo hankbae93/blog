@@ -1357,10 +1357,14 @@
         {
           "date": "2026-02-03",
           "count": 4
+        },
+        {
+          "date": "2026-02-04",
+          "count": 4
         }
       ],
-      "trend": "new",
-      "total_count": 4
+      "trend": "rising",
+      "total_count": 8
     },
     "한동훈 제명 논란": {
       "first_seen": "2026-02-03",
@@ -1827,6 +1831,193 @@
       ],
       "trend": "new",
       "total_count": 5
+    },
+    "서울시교육청": {
+      "first_seen": "2026-02-04",
+      "occurrences": [
+        {
+          "date": "2026-02-04",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "송민규": {
+      "first_seen": "2026-02-04",
+      "occurrences": [
+        {
+          "date": "2026-02-04",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "이스타항공": {
+      "first_seen": "2026-02-04",
+      "occurrences": [
+        {
+          "date": "2026-02-04",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "계명대학교": {
+      "first_seen": "2026-02-04",
+      "occurrences": [
+        {
+          "date": "2026-02-04",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "제주": {
+      "first_seen": "2026-02-04",
+      "occurrences": [
+        {
+          "date": "2026-02-04",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "에이피알": {
+      "first_seen": "2026-02-04",
+      "occurrences": [
+        {
+          "date": "2026-02-04",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "중진공": {
+      "first_seen": "2026-02-04",
+      "occurrences": [
+        {
+          "date": "2026-02-04",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "한국보건복지인재원": {
+      "first_seen": "2026-02-04",
+      "occurrences": [
+        {
+          "date": "2026-02-04",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "상명대": {
+      "first_seen": "2026-02-04",
+      "occurrences": [
+        {
+          "date": "2026-02-04",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "claude cowork": {
+      "first_seen": "2026-02-04",
+      "occurrences": [
+        {
+          "date": "2026-02-04",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "대통령 부동산 정책": {
+      "first_seen": "2026-02-04",
+      "occurrences": [
+        {
+          "date": "2026-02-04",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "김다현 정산금 미지급": {
+      "first_seen": "2026-02-04",
+      "occurrences": [
+        {
+          "date": "2026-02-04",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "신동엽 딸 서울대 합격": {
+      "first_seen": "2026-02-04",
+      "occurrences": [
+        {
+          "date": "2026-02-04",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "김선호 탈세 논란": {
+      "first_seen": "2026-02-04",
+      "occurrences": [
+        {
+          "date": "2026-02-04",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "아스널 첼시 리그컵 결승": {
+      "first_seen": "2026-02-04",
+      "occurrences": [
+        {
+          "date": "2026-02-04",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "트와이스 미사모 play": {
+      "first_seen": "2026-02-04",
+      "occurrences": [
+        {
+          "date": "2026-02-04",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "엔하이픈 빌보드 200": {
+      "first_seen": "2026-02-04",
+      "occurrences": [
+        {
+          "date": "2026-02-04",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
     }
   },
   "daily_summaries": [
@@ -1877,6 +2068,22 @@
         "e-commerce"
       ],
       "total_keywords": 55
+    },
+    {
+      "date": "2026-02-04",
+      "top_keywords": [
+        "artificial intelligence",
+        "saas",
+        "python",
+        "typescript",
+        "customer communication",
+        "development",
+        "vibe coding",
+        "marketing",
+        "seo",
+        "search"
+      ],
+      "total_keywords": 57
     },
     {
       "date": "2026-02-04",
@@ -1946,15 +2153,15 @@
     },
     "2026-02-04": {
       "product_hunt": {
-        "avgVotes": 235,
-        "maxVotes": 416,
-        "avgComments": 40,
+        "avgVotes": 240,
+        "maxVotes": 413,
+        "avgComments": 49,
         "totalItems": 10
       },
       "hacker_news": {
-        "avgPoints": 248,
-        "maxPoints": 772,
-        "avgComments": 155,
+        "avgPoints": 221,
+        "maxPoints": 579,
+        "avgComments": 145,
         "totalItems": 15
       },
       "github_trending": {
@@ -1963,8 +2170,8 @@
         "totalItems": 15
       },
       "youtube_trending": {
-        "avgViews": 731914,
-        "maxViews": 1819247,
+        "avgViews": 766831,
+        "maxViews": 1819274,
         "totalItems": 20
       }
     }
@@ -2025,18 +2232,18 @@
     "2026-02-04": {
       "vs_yesterday": {
         "product_hunt": {
-          "votesChange": 13,
-          "maxVotesChange": 20
+          "votesChange": 15,
+          "maxVotesChange": 19
         },
         "hacker_news": {
-          "pointsChange": 40,
-          "maxPointsChange": 66
+          "pointsChange": 25,
+          "maxPointsChange": 25
         },
         "github_trending": {
           "starsChange": null
         },
         "youtube_trending": {
-          "viewsChange": 1
+          "viewsChange": 6
         }
       }
     }
