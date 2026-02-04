@@ -100,18 +100,13 @@ export default async function RootLayout({
 
   return (
     <html lang="ko" dir="ltr" suppressHydrationWarning>
-      <Head>
+      <head>
+        <link rel="canonical" href={siteUrl} />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6199862544071798"
-          crossOrigin="anonymous"
-        />
-        <link rel="canonical" href={siteUrl} />
-      </Head>
+      </head>
       <body>
         <Layout
           pageMap={pageMap}
