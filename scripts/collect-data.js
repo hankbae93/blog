@@ -641,6 +641,47 @@ function calculateNicheScore(app) {
   return Math.min(100, score)
 }
 
+// 최신 앱 판별 함수 (설정된 개월 수 이내 출시)
+function isRecentApp(releasedDate, thresholdMonths = 12) {
+  if (!releasedDate) return false
+
+  const released = new Date(releasedDate)
+  if (isNaN(released.getTime())) return false
+
+  const threshold = new Date()
+  threshold.setMonth(threshold.getMonth() - thresholdMonths)
+
+  return released >= threshold
+}
+
+// 최신 앱 쿼터를 적용한 최종 선정 함수
+function selectAppsWithRecentQuota(apps, totalCount = 10, minRecentCount = 5) {
+  // 최신 앱과 기존 앱 분류
+  const recentApps = apps.filter(a => a.isRecent).sort((a, b) => b.nicheScore - a.nicheScore)
+  const olderApps = apps.filter(a => !a.isRecent).sort((a, b) => b.nicheScore - a.nicheScore)
+
+  const selected = []
+
+  // 1. 최신 앱 먼저 선정 (최소 minRecentCount개)
+  const recentToSelect = Math.min(recentApps.length, Math.max(minRecentCount, totalCount - olderApps.length))
+  selected.push(...recentApps.slice(0, recentToSelect))
+
+  // 2. 나머지 슬롯에 기존 앱 채우기
+  const remainingSlots = totalCount - selected.length
+  if (remainingSlots > 0 && olderApps.length > 0) {
+    selected.push(...olderApps.slice(0, remainingSlots))
+  }
+
+  // 3. 최신 앱이 부족하면 추가로 채우기
+  if (selected.length < totalCount && recentApps.length > recentToSelect) {
+    const moreRecent = recentApps.slice(recentToSelect, recentToSelect + (totalCount - selected.length))
+    selected.push(...moreRecent)
+  }
+
+  // nicheScore 순으로 최종 정렬
+  return selected.slice(0, totalCount).sort((a, b) => b.nicheScore - a.nicheScore)
+}
+
 // 딜레이 함수
 function delay(ms) {
   return new Promise(resolve => setTimeout(resolve, ms))
@@ -657,6 +698,9 @@ async function collectPlayStoreNiche() {
   const categories = settings.categories || ['PRODUCTIVITY', 'HEALTH_AND_FITNESS', 'FINANCE', 'TOOLS', 'LIFESTYLE']
   const countries = settings.countries || ['us']
   const excludeTopRanks = settings.exclude_top_ranks || 30
+  const recentThresholdMonths = settings.recent_app_threshold_months || 12
+  const minRecentApps = settings.min_recent_apps || 5
+  const totalApps = settings.total_apps || 10
   const collections = [gplay.collection.TOP_FREE, gplay.collection.TOP_PAID, gplay.collection.GROSSING]
   const collectionNames = ['TOP_FREE', 'TOP_PAID', 'TOP_GROSSING']
 
@@ -688,30 +732,67 @@ async function collectPlayStoreNiche() {
             .slice(excludeTopRanks) // 상위 30개 제외
             .map((app, idx) => ({ ...app, rank: excludeTopRanks + idx + 1 }))
             .filter(app => isNicheApp(app, 'android'))
-            .slice(0, 10) // 카테고리/차트당 최대 10개
+            .slice(0, 15) // 카테고리/차트당 최대 15개 (fullDetail 조회 대상)
 
+          // 니치 앱 후보에 대해 fullDetail 조회하여 출시일 확인
           for (const app of filteredApps) {
             if (seenIds.has(app.appId)) continue
-            seenIds.add(app.appId)
 
-            items.push({
-              id: app.appId,
-              title: app.title,
-              developer: app.developer,
-              url: app.url,
-              score: app.score || 0,
-              reviews: app.reviews || 0,
-              installs: app.installs || 'N/A',
-              offersIAP: app.offersIAP || false,
-              iapRange: app.IAPRange || 'N/A',
-              category: category,
-              collection: collectionName,
-              country: country,
-              rank: app.rank,
-              nicheScore: calculateNicheScore(app),
-              platform: 'android',
-              icon: app.icon
-            })
+            try {
+              await delay(300) // Rate limiting for detail API
+              const detail = await gplay.app({ appId: app.appId, country: country })
+
+              seenIds.add(app.appId)
+
+              const releasedDate = detail.released || null
+              const recentFlag = isRecentApp(releasedDate, recentThresholdMonths)
+
+              items.push({
+                id: app.appId,
+                title: app.title,
+                developer: app.developer,
+                url: app.url,
+                score: detail.score || app.score || 0,
+                reviews: detail.reviews || app.reviews || 0,
+                installs: detail.installs || app.installs || 'N/A',
+                offersIAP: detail.offersIAP || app.offersIAP || false,
+                iapRange: detail.IAPRange || app.IAPRange || 'N/A',
+                category: category,
+                collection: collectionName,
+                country: country,
+                rank: app.rank,
+                nicheScore: calculateNicheScore({ ...app, ...detail }),
+                platform: 'android',
+                icon: detail.icon || app.icon,
+                released: releasedDate,
+                updated: detail.updated || null,
+                isRecent: recentFlag
+              })
+            } catch (detailError) {
+              // Detail 조회 실패 시 기본 정보로 추가 (최신 아님으로 처리)
+              seenIds.add(app.appId)
+              items.push({
+                id: app.appId,
+                title: app.title,
+                developer: app.developer,
+                url: app.url,
+                score: app.score || 0,
+                reviews: app.reviews || 0,
+                installs: app.installs || 'N/A',
+                offersIAP: app.offersIAP || false,
+                iapRange: app.IAPRange || 'N/A',
+                category: category,
+                collection: collectionName,
+                country: country,
+                rank: app.rank,
+                nicheScore: calculateNicheScore(app),
+                platform: 'android',
+                icon: app.icon,
+                released: null,
+                updated: null,
+                isRecent: false
+              })
+            }
           }
         } catch (e) {
           // 개별 카테고리 오류는 무시하고 계속
@@ -721,12 +802,16 @@ async function collectPlayStoreNiche() {
     }
   }
 
-  // nicheScore 순으로 정렬
-  items.sort((a, b) => b.nicheScore - a.nicheScore)
+  // 최신 앱 쿼터를 적용한 최종 선정 (10개 중 최소 5개 최신)
+  const selectedItems = selectAppsWithRecentQuota(items, totalApps, minRecentApps)
+
+  // 통계 로그
+  const recentCount = selectedItems.filter(a => a.isRecent).length
+  console.log(`    📊 Play Store: ${recentCount}/${selectedItems.length} recent apps (total candidates: ${items.length})`)
 
   return {
-    status: items.length > 0 ? 'success' : 'partial',
-    items: items.slice(0, 50) // 최대 50개
+    status: selectedItems.length > 0 ? 'success' : 'partial',
+    items: selectedItems
   }
 }
 
@@ -741,6 +826,9 @@ async function collectAppStoreNiche() {
   const categories = settings.categories || ['PRODUCTIVITY', 'HEALTH_AND_FITNESS', 'FINANCE', 'UTILITIES', 'LIFESTYLE']
   const countries = settings.countries || ['us']
   const excludeTopRanks = settings.exclude_top_ranks || 30
+  const recentThresholdMonths = settings.recent_app_threshold_months || 12
+  const minRecentApps = settings.min_recent_apps || 5
+  const totalApps = settings.total_apps || 10
 
   // App Store 카테고리 매핑
   const categoryMap = {
@@ -783,29 +871,65 @@ async function collectAppStoreNiche() {
             .slice(excludeTopRanks)
             .map((app, idx) => ({ ...app, rank: excludeTopRanks + idx + 1 }))
             .filter(app => isNicheApp(app, 'ios'))
-            .slice(0, 10)
+            .slice(0, 15) // 카테고리/차트당 최대 15개 (fullDetail 조회 대상)
 
+          // 니치 앱 후보에 대해 fullDetail 조회하여 출시일 확인
           for (const app of filteredApps) {
             if (seenIds.has(app.id)) continue
-            seenIds.add(app.id)
 
-            items.push({
-              id: String(app.id),
-              title: app.title || app.name,
-              developer: app.developer || app.artistName,
-              url: app.url,
-              score: app.score || 0,
-              reviews: app.reviews || app.ratings || 0,
-              offersIAP: app.offersIAP || false,
-              price: app.price || 0,
-              category: category,
-              collection: col.name,
-              country: country,
-              rank: app.rank,
-              nicheScore: calculateNicheScore(app),
-              platform: 'ios',
-              icon: app.icon
-            })
+            try {
+              await delay(300) // Rate limiting for detail API
+              const detail = await appStore.app({ id: app.id, country: country })
+
+              seenIds.add(app.id)
+
+              const releasedDate = detail.released || null
+              const recentFlag = isRecentApp(releasedDate, recentThresholdMonths)
+
+              items.push({
+                id: String(app.id),
+                title: detail.title || app.title || app.name,
+                developer: detail.developer || app.developer || app.artistName,
+                url: detail.url || app.url,
+                score: detail.score || app.score || 0,
+                reviews: detail.reviews || app.reviews || app.ratings || 0,
+                offersIAP: detail.offersIAP || app.offersIAP || false,
+                price: detail.price || app.price || 0,
+                category: category,
+                collection: col.name,
+                country: country,
+                rank: app.rank,
+                nicheScore: calculateNicheScore({ ...app, ...detail }),
+                platform: 'ios',
+                icon: detail.icon || app.icon,
+                released: releasedDate,
+                updated: detail.updated || null,
+                isRecent: recentFlag
+              })
+            } catch (detailError) {
+              // Detail 조회 실패 시 기본 정보로 추가 (최신 아님으로 처리)
+              seenIds.add(app.id)
+              items.push({
+                id: String(app.id),
+                title: app.title || app.name,
+                developer: app.developer || app.artistName,
+                url: app.url,
+                score: app.score || 0,
+                reviews: app.reviews || app.ratings || 0,
+                offersIAP: app.offersIAP || false,
+                price: app.price || 0,
+                category: category,
+                collection: col.name,
+                country: country,
+                rank: app.rank,
+                nicheScore: calculateNicheScore(app),
+                platform: 'ios',
+                icon: app.icon,
+                released: null,
+                updated: null,
+                isRecent: false
+              })
+            }
           }
         } catch (e) {
           console.log(`    ⚠️  App Store ${category}/${col.name}/${country}: ${e.message}`)
@@ -814,12 +938,16 @@ async function collectAppStoreNiche() {
     }
   }
 
-  // nicheScore 순으로 정렬
-  items.sort((a, b) => b.nicheScore - a.nicheScore)
+  // 최신 앱 쿼터를 적용한 최종 선정 (10개 중 최소 5개 최신)
+  const selectedItems = selectAppsWithRecentQuota(items, totalApps, minRecentApps)
+
+  // 통계 로그
+  const recentCount = selectedItems.filter(a => a.isRecent).length
+  console.log(`    📊 App Store: ${recentCount}/${selectedItems.length} recent apps (total candidates: ${items.length})`)
 
   return {
-    status: items.length > 0 ? 'success' : 'partial',
-    items: items.slice(0, 50)
+    status: selectedItems.length > 0 ? 'success' : 'partial',
+    items: selectedItems
   }
 }
 

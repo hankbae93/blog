@@ -125,7 +125,10 @@
     "max_reviews": 10000,
     "min_reviews": 100,
     "min_rating": 4.0,
-    "countries": ["us"]
+    "countries": ["us"],
+    "recent_app_threshold_months": 12,
+    "min_recent_apps": 5,
+    "total_apps": 10
   },
   "output": {
     "sources_dir": "generated/sources",
