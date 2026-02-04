@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-02-03",
+  "last_updated": "2026-02-04",
   "keywords": {
     "open source": {
       "first_seen": "2026-02-01",
@@ -22,10 +22,14 @@
         {
           "date": "2026-02-03",
           "count": 14
+        },
+        {
+          "date": "2026-02-04",
+          "count": 3
         }
       ],
       "trend": "rising",
-      "total_count": 25
+      "total_count": 28
     },
     "menu bar apps": {
       "first_seen": "2026-02-01",
@@ -59,10 +63,14 @@
         {
           "date": "2026-02-01",
           "count": 8
+        },
+        {
+          "date": "2026-02-04",
+          "count": 3
         }
       ],
-      "trend": "new",
-      "total_count": 8
+      "trend": "rising",
+      "total_count": 11
     },
     "productivity": {
       "first_seen": "2026-02-01",
@@ -78,10 +86,14 @@
         {
           "date": "2026-02-03",
           "count": 14
+        },
+        {
+          "date": "2026-02-04",
+          "count": 3
         }
       ],
       "trend": "rising",
-      "total_count": 39
+      "total_count": 42
     },
     "artificial intelligence": {
       "first_seen": "2026-02-01",
@@ -97,10 +109,14 @@
         {
           "date": "2026-02-03",
           "count": 14
+        },
+        {
+          "date": "2026-02-04",
+          "count": 26
         }
       ],
       "trend": "rising",
-      "total_count": 45
+      "total_count": 71
     },
     "android": {
       "first_seen": "2026-02-01",
@@ -230,10 +246,14 @@
         {
           "date": "2026-02-03",
           "count": 14
+        },
+        {
+          "date": "2026-02-04",
+          "count": 8
         }
       ],
       "trend": "rising",
-      "total_count": 17
+      "total_count": 25
     },
     "user experience": {
       "first_seen": "2026-02-01",
@@ -260,10 +280,14 @@
         {
           "date": "2026-02-01",
           "count": 3
+        },
+        {
+          "date": "2026-02-04",
+          "count": 8
         }
       ],
-      "trend": "new",
-      "total_count": 3
+      "trend": "rising",
+      "total_count": 11
     },
     "web design": {
       "first_seen": "2026-02-01",
@@ -319,10 +343,14 @@
         {
           "date": "2026-02-01",
           "count": 1
+        },
+        {
+          "date": "2026-02-04",
+          "count": 1
         }
       ],
-      "trend": "new",
-      "total_count": 1
+      "trend": "stable",
+      "total_count": 2
     },
     "ai": {
       "first_seen": "2026-02-01",
@@ -371,10 +399,14 @@
         {
           "date": "2026-02-01",
           "count": 1
+        },
+        {
+          "date": "2026-02-04",
+          "count": 1
         }
       ],
-      "trend": "new",
-      "total_count": 1
+      "trend": "stable",
+      "total_count": 2
     },
     "container": {
       "first_seen": "2026-02-01",
@@ -485,10 +517,14 @@
         {
           "date": "2026-02-02",
           "count": 11
+        },
+        {
+          "date": "2026-02-04",
+          "count": 14
         }
       ],
-      "trend": "new",
-      "total_count": 11
+      "trend": "rising",
+      "total_count": 25
     },
     "marketing automation": {
       "first_seen": "2026-02-02",
@@ -518,10 +554,14 @@
         {
           "date": "2026-02-02",
           "count": 3
+        },
+        {
+          "date": "2026-02-04",
+          "count": 3
         }
       ],
-      "trend": "new",
-      "total_count": 3
+      "trend": "rising",
+      "total_count": 6
     },
     "hiring": {
       "first_seen": "2026-02-02",
@@ -577,10 +617,14 @@
         {
           "date": "2026-02-03",
           "count": 11
+        },
+        {
+          "date": "2026-02-04",
+          "count": 11
         }
       ],
       "trend": "rising",
-      "total_count": 24
+      "total_count": 35
     },
     "unknown": {
       "first_seen": "2026-02-02",
@@ -592,10 +636,14 @@
         {
           "date": "2026-02-03",
           "count": 4
+        },
+        {
+          "date": "2026-02-04",
+          "count": 4
         }
       ],
       "trend": "rising",
-      "total_count": 8
+      "total_count": 12
     },
     "python": {
       "first_seen": "2026-02-02",
@@ -607,10 +655,14 @@
         {
           "date": "2026-02-03",
           "count": 13
+        },
+        {
+          "date": "2026-02-04",
+          "count": 13
         }
       ],
       "trend": "rising",
-      "total_count": 24
+      "total_count": 37
     },
     "javascript": {
       "first_seen": "2026-02-02",
@@ -622,10 +674,14 @@
         {
           "date": "2026-02-03",
           "count": 2
+        },
+        {
+          "date": "2026-02-04",
+          "count": 2
         }
       ],
       "trend": "rising",
-      "total_count": 4
+      "total_count": 6
     },
     "c": {
       "first_seen": "2026-02-02",
@@ -637,10 +693,14 @@
         {
           "date": "2026-02-03",
           "count": 2
+        },
+        {
+          "date": "2026-02-04",
+          "count": 2
         }
       ],
       "trend": "rising",
-      "total_count": 4
+      "total_count": 6
     },
     "c++": {
       "first_seen": "2026-02-02",
@@ -652,10 +712,14 @@
         {
           "date": "2026-02-03",
           "count": 2
+        },
+        {
+          "date": "2026-02-04",
+          "count": 2
         }
       ],
       "trend": "rising",
-      "total_count": 4
+      "total_count": 6
     },
     "shell": {
       "first_seen": "2026-02-02",
@@ -667,10 +731,14 @@
         {
           "date": "2026-02-03",
           "count": 2
+        },
+        {
+          "date": "2026-02-04",
+          "count": 2
         }
       ],
       "trend": "rising",
-      "total_count": 4
+      "total_count": 6
     },
     "dart": {
       "first_seen": "2026-02-02",
@@ -682,10 +750,14 @@
         {
           "date": "2026-02-03",
           "count": 2
+        },
+        {
+          "date": "2026-02-04",
+          "count": 2
         }
       ],
       "trend": "rising",
-      "total_count": 4
+      "total_count": 6
     },
     "mdx": {
       "first_seen": "2026-02-02",
@@ -697,10 +769,14 @@
         {
           "date": "2026-02-03",
           "count": 2
+        },
+        {
+          "date": "2026-02-04",
+          "count": 2
         }
       ],
       "trend": "rising",
-      "total_count": 4
+      "total_count": 6
     },
     "daily": {
       "first_seen": "2026-02-02",
@@ -921,10 +997,14 @@
         {
           "date": "2026-02-02",
           "count": 4
+        },
+        {
+          "date": "2026-02-04",
+          "count": 4
         }
       ],
-      "trend": "new",
-      "total_count": 4
+      "trend": "rising",
+      "total_count": 8
     },
     "김시우 준우승": {
       "first_seen": "2026-02-02",
@@ -1053,10 +1133,14 @@
         {
           "date": "2026-02-03",
           "count": 3
+        },
+        {
+          "date": "2026-02-04",
+          "count": 8
         }
       ],
-      "trend": "new",
-      "total_count": 3
+      "trend": "rising",
+      "total_count": 11
     },
     "sales": {
       "first_seen": "2026-02-03",
@@ -1350,6 +1434,395 @@
         {
           "date": "2026-02-03",
           "count": 5
+        },
+        {
+          "date": "2026-02-04",
+          "count": 1
+        }
+      ],
+      "trend": "rising",
+      "total_count": 6
+    },
+    "customer communication": {
+      "first_seen": "2026-02-04",
+      "occurrences": [
+        {
+          "date": "2026-02-04",
+          "count": 8
+        }
+      ],
+      "trend": "new",
+      "total_count": 8
+    },
+    "development": {
+      "first_seen": "2026-02-04",
+      "occurrences": [
+        {
+          "date": "2026-02-04",
+          "count": 8
+        }
+      ],
+      "trend": "new",
+      "total_count": 8
+    },
+    "vibe coding": {
+      "first_seen": "2026-02-04",
+      "occurrences": [
+        {
+          "date": "2026-02-04",
+          "count": 8
+        }
+      ],
+      "trend": "new",
+      "total_count": 8
+    },
+    "search": {
+      "first_seen": "2026-02-04",
+      "occurrences": [
+        {
+          "date": "2026-02-04",
+          "count": 8
+        }
+      ],
+      "trend": "new",
+      "total_count": 8
+    },
+    "robots": {
+      "first_seen": "2026-02-04",
+      "occurrences": [
+        {
+          "date": "2026-02-04",
+          "count": 8
+        }
+      ],
+      "trend": "new",
+      "total_count": 8
+    },
+    "customer success": {
+      "first_seen": "2026-02-04",
+      "occurrences": [
+        {
+          "date": "2026-02-04",
+          "count": 8
+        }
+      ],
+      "trend": "new",
+      "total_count": 8
+    },
+    "email": {
+      "first_seen": "2026-02-04",
+      "occurrences": [
+        {
+          "date": "2026-02-04",
+          "count": 3
+        }
+      ],
+      "trend": "new",
+      "total_count": 3
+    },
+    "writing": {
+      "first_seen": "2026-02-04",
+      "occurrences": [
+        {
+          "date": "2026-02-04",
+          "count": 3
+        }
+      ],
+      "trend": "new",
+      "total_count": 3
+    },
+    "api": {
+      "first_seen": "2026-02-04",
+      "occurrences": [
+        {
+          "date": "2026-02-04",
+          "count": 3
+        }
+      ],
+      "trend": "new",
+      "total_count": 3
+    },
+    "xcode": {
+      "first_seen": "2026-02-04",
+      "occurrences": [
+        {
+          "date": "2026-02-04",
+          "count": 2
+        }
+      ],
+      "trend": "new",
+      "total_count": 2
+    },
+    "developers": {
+      "first_seen": "2026-02-04",
+      "occurrences": [
+        {
+          "date": "2026-02-04",
+          "count": 1
+        }
+      ],
+      "trend": "new",
+      "total_count": 1
+    },
+    "agent": {
+      "first_seen": "2026-02-04",
+      "occurrences": [
+        {
+          "date": "2026-02-04",
+          "count": 1
+        }
+      ],
+      "trend": "new",
+      "total_count": 1
+    },
+    "chain": {
+      "first_seen": "2026-02-04",
+      "occurrences": [
+        {
+          "date": "2026-02-04",
+          "count": 1
+        }
+      ],
+      "trend": "new",
+      "total_count": 1
+    },
+    "qwen3-coder-next": {
+      "first_seen": "2026-02-04",
+      "occurrences": [
+        {
+          "date": "2026-02-04",
+          "count": 1
+        }
+      ],
+      "trend": "new",
+      "total_count": 1
+    },
+    "제주에어": {
+      "first_seen": "2026-02-04",
+      "occurrences": [
+        {
+          "date": "2026-02-04",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "동계 올림픽 일정": {
+      "first_seen": "2026-02-04",
+      "occurrences": [
+        {
+          "date": "2026-02-04",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "백석대": {
+      "first_seen": "2026-02-04",
+      "occurrences": [
+        {
+          "date": "2026-02-04",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "anthropic": {
+      "first_seen": "2026-02-04",
+      "occurrences": [
+        {
+          "date": "2026-02-04",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "다주택자 양도세 중과": {
+      "first_seen": "2026-02-04",
+      "occurrences": [
+        {
+          "date": "2026-02-04",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "강선우": {
+      "first_seen": "2026-02-04",
+      "occurrences": [
+        {
+          "date": "2026-02-04",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "amd": {
+      "first_seen": "2026-02-04",
+      "occurrences": [
+        {
+          "date": "2026-02-04",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "코파 델 레이": {
+      "first_seen": "2026-02-04",
+      "occurrences": [
+        {
+          "date": "2026-02-04",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "อาร์เซนอล พบ เชลซี": {
+      "first_seen": "2026-02-04",
+      "occurrences": [
+        {
+          "date": "2026-02-04",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "arsenal đấu với chelsea": {
+      "first_seen": "2026-02-04",
+      "occurrences": [
+        {
+          "date": "2026-02-04",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "구준엽 서희원": {
+      "first_seen": "2026-02-04",
+      "occurrences": [
+        {
+          "date": "2026-02-04",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "안보현 충격 고백": {
+      "first_seen": "2026-02-04",
+      "occurrences": [
+        {
+          "date": "2026-02-04",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "아스널 첼시 결승": {
+      "first_seen": "2026-02-04",
+      "occurrences": [
+        {
+          "date": "2026-02-04",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "이나영 아너 피습": {
+      "first_seen": "2026-02-04",
+      "occurrences": [
+        {
+          "date": "2026-02-04",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "신동엽 딸 서울대": {
+      "first_seen": "2026-02-04",
+      "occurrences": [
+        {
+          "date": "2026-02-04",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "윤유선 이성호 부부": {
+      "first_seen": "2026-02-04",
+      "occurrences": [
+        {
+          "date": "2026-02-04",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "중산층 분노": {
+      "first_seen": "2026-02-04",
+      "occurrences": [
+        {
+          "date": "2026-02-04",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "대미 투자 노력": {
+      "first_seen": "2026-02-04",
+      "occurrences": [
+        {
+          "date": "2026-02-04",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "spc삼립 시화공장 화재": {
+      "first_seen": "2026-02-04",
+      "occurrences": [
+        {
+          "date": "2026-02-04",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "that": {
+      "first_seen": "2026-02-04",
+      "occurrences": [
+        {
+          "date": "2026-02-04",
+          "count": 5
+        }
+      ],
+      "trend": "new",
+      "total_count": 5
+    },
+    "ideas": {
+      "first_seen": "2026-02-04",
+      "occurrences": [
+        {
+          "date": "2026-02-04",
+          "count": 5
         }
       ],
       "trend": "new",
@@ -1404,6 +1877,22 @@
         "e-commerce"
       ],
       "total_keywords": 55
+    },
+    {
+      "date": "2026-02-04",
+      "top_keywords": [
+        "artificial intelligence",
+        "saas",
+        "python",
+        "typescript",
+        "customer communication",
+        "development",
+        "vibe coding",
+        "marketing",
+        "seo",
+        "search"
+      ],
+      "total_keywords": 57
     }
   ],
   "metrics": {
@@ -1452,6 +1941,30 @@
       "youtube_trending": {
         "avgViews": 725253,
         "maxViews": 1770115,
+        "totalItems": 20
+      }
+    },
+    "2026-02-04": {
+      "product_hunt": {
+        "avgVotes": 235,
+        "maxVotes": 416,
+        "avgComments": 40,
+        "totalItems": 10
+      },
+      "hacker_news": {
+        "avgPoints": 248,
+        "maxPoints": 772,
+        "avgComments": 155,
+        "totalItems": 15
+      },
+      "github_trending": {
+        "avgStarsToday": 0,
+        "maxStarsToday": 0,
+        "totalItems": 15
+      },
+      "youtube_trending": {
+        "avgViews": 731914,
+        "maxViews": 1819247,
         "totalItems": 20
       }
     }
@@ -1506,6 +2019,24 @@
         },
         "youtube_trending": {
           "viewsChange": -54
+        }
+      }
+    },
+    "2026-02-04": {
+      "vs_yesterday": {
+        "product_hunt": {
+          "votesChange": 13,
+          "maxVotesChange": 20
+        },
+        "hacker_news": {
+          "pointsChange": 40,
+          "maxPointsChange": 66
+        },
+        "github_trending": {
+          "starsChange": null
+        },
+        "youtube_trending": {
+          "viewsChange": 1
         }
       }
     }
