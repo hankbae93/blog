@@ -14,6 +14,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "app-store-scraper": "^0.18.0",
+    "google-play-scraper": "^10.1.2",
     "gray-matter": "^4.0.3",
     "next": "^15",
     "next-sitemap": "^4.2.3",

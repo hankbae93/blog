@@ -95,6 +95,20 @@ run_update_trends() {
     fi
 }
 
+# 3.5. 앱 트렌드 분석 (Week 2)
+run_analyze_app_trends() {
+    log "📱 Step 3.5: Analyzing app trends..."
+    if [ -f scripts/analyze-app-trends.js ]; then
+        if node scripts/analyze-app-trends.js 2>&1 | tee -a "logs/pipeline-$DATE.log"; then
+            log "✅ App trends analysis complete"
+        else
+            log "⚠️  App trends analysis failed, continuing..."
+        fi
+    else
+        log "⏭️  App trends script not found, skipping..."
+    fi
+}
+
 # 4. 콘텐츠 동기화
 run_sync() {
     log "🔄 Step 4: Syncing content..."
@@ -147,10 +161,14 @@ main() {
         --git)
             run_git
             ;;
+        --app-trends)
+            run_analyze_app_trends
+            ;;
         all|*)
             run_collect
             run_analyze
             run_update_trends
+            run_analyze_app_trends
             run_sync
             run_git
             ;;

@@ -28,6 +28,16 @@ loadEnv()
 
 const config = require('../config.json')
 
+// App Store Scrapers
+let gplay, appStore
+try {
+  const gplayModule = require('google-play-scraper')
+  gplay = gplayModule.default || gplayModule
+  appStore = require('app-store-scraper')
+} catch (e) {
+  console.log('⚠️  App store scrapers not installed. Run: npm install google-play-scraper app-store-scraper')
+}
+
 // 오늘 날짜
 const today = new Date().toISOString().split('T')[0]
 
@@ -570,6 +580,249 @@ async function collectTechCrunch() {
   }
 }
 
+// 니치 앱 판별 함수 (신규로 뜨고 있는 앱 찾기)
+function isNicheApp(app, platform = 'android') {
+  // 대기업 제외
+  const bigPlayers = ['Google', 'Meta', 'Microsoft', 'Apple', 'Amazon', 'Tencent', 'ByteDance',
+                      'Facebook', 'Instagram', 'WhatsApp', 'Alibaba', 'Baidu', 'Samsung', 'Netflix',
+                      'Spotify', 'Uber', 'Airbnb', 'Twitter', 'Snap Inc', 'Pinterest', 'LinkedIn',
+                      'Adobe', 'Oracle', 'Salesforce', 'SAP', 'IBM', 'Cisco', 'Intel', 'NVIDIA',
+                      'AT&T', 'Verizon', 'T-Mobile', 'Comcast', 'Disney', 'Warner', 'Sony', 'LG',
+                      'Dropbox', 'Zoom', 'Slack', 'Notion', 'Canva', 'Grammarly', 'OpenAI', 'xAI',
+                      'Anthropic', 'Yahoo', 'PayPal', 'eBay', 'Booking', 'Expedia', 'TripAdvisor']
+  const developerName = app.developer || app.artistName || app.developerId || ''
+  if (bigPlayers.some(p => developerName.toLowerCase().includes(p.toLowerCase()))) return false
+
+  // 니치 앱 설정 가져오기
+  const settings = config.niche_app_settings || {}
+  const minRating = settings.min_rating || 4.0
+
+  // 평점 확인 (정보가 있는 경우만 - App Store list API는 score를 제공하지 않음)
+  const score = app.score || app.rating
+  if (score !== undefined && score < minRating) return false
+
+  // 리뷰 수 확인 (있는 경우만)
+  const reviews = app.reviews || app.ratings
+  if (reviews !== undefined) {
+    const minReviews = settings.min_reviews || 100
+    const maxReviews = settings.max_reviews || 10000
+    if (reviews < minReviews || reviews > maxReviews) return false
+  }
+
+  return true
+}
+
+// 니치 점수 계산 함수
+function calculateNicheScore(app) {
+  let score = 50 // 기본 점수
+
+  const reviews = app.reviews || app.ratings
+  const rating = app.score || app.rating || 0
+  const hasIAP = app.offersIAP
+
+  // 리뷰 수 점수 (정보가 있는 경우만)
+  if (reviews !== undefined) {
+    if (reviews >= 500 && reviews <= 3000) score += 20
+    else if (reviews >= 100 && reviews <= 5000) score += 10
+  }
+
+  // 평점 점수
+  if (rating >= 4.5) score += 20
+  else if (rating >= 4.2) score += 10
+
+  // 인앱 결제 점수 (정보가 있는 경우만)
+  if (hasIAP === true) score += 10
+
+  // 순위 점수 (50-100위가 최적)
+  const rank = app.rank || 100
+  if (rank >= 50 && rank <= 100) score += 10
+  else if (rank >= 30 && rank <= 150) score += 5
+
+  return Math.min(100, score)
+}
+
+// 딜레이 함수
+function delay(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms))
+}
+
+// Play Store 니치 앱 수집
+async function collectPlayStoreNiche() {
+  if (!gplay) {
+    console.log('  ⚠️  google-play-scraper not installed, skipping...')
+    return { status: 'skipped', items: [] }
+  }
+
+  const settings = config.niche_app_settings || {}
+  const categories = settings.categories || ['PRODUCTIVITY', 'HEALTH_AND_FITNESS', 'FINANCE', 'TOOLS', 'LIFESTYLE']
+  const countries = settings.countries || ['us']
+  const excludeTopRanks = settings.exclude_top_ranks || 30
+  const collections = [gplay.collection.TOP_FREE, gplay.collection.TOP_PAID, gplay.collection.GROSSING]
+  const collectionNames = ['TOP_FREE', 'TOP_PAID', 'TOP_GROSSING']
+
+  const items = []
+  const seenIds = new Set()
+
+  for (const country of countries) {
+    for (let catIdx = 0; catIdx < categories.length; catIdx++) {
+      const category = categories[catIdx]
+
+      for (let colIdx = 0; colIdx < collections.length; colIdx++) {
+        const collection = collections[colIdx]
+        const collectionName = collectionNames[colIdx]
+
+        try {
+          // Rate limiting: 1초 딜레이
+          await delay(1000)
+
+          const apps = await gplay.list({
+            category: gplay.category[category] || category,
+            collection: collection,
+            country: country,
+            num: 150, // 상위 150개 가져와서 필터링
+            fullDetail: false
+          })
+
+          // 상위 30개 제외하고 니치 앱 필터링
+          const filteredApps = apps
+            .slice(excludeTopRanks) // 상위 30개 제외
+            .map((app, idx) => ({ ...app, rank: excludeTopRanks + idx + 1 }))
+            .filter(app => isNicheApp(app, 'android'))
+            .slice(0, 10) // 카테고리/차트당 최대 10개
+
+          for (const app of filteredApps) {
+            if (seenIds.has(app.appId)) continue
+            seenIds.add(app.appId)
+
+            items.push({
+              id: app.appId,
+              title: app.title,
+              developer: app.developer,
+              url: app.url,
+              score: app.score || 0,
+              reviews: app.reviews || 0,
+              installs: app.installs || 'N/A',
+              offersIAP: app.offersIAP || false,
+              iapRange: app.IAPRange || 'N/A',
+              category: category,
+              collection: collectionName,
+              country: country,
+              rank: app.rank,
+              nicheScore: calculateNicheScore(app),
+              platform: 'android',
+              icon: app.icon
+            })
+          }
+        } catch (e) {
+          // 개별 카테고리 오류는 무시하고 계속
+          console.log(`    ⚠️  Play Store ${category}/${collectionName}/${country}: ${e.message}`)
+        }
+      }
+    }
+  }
+
+  // nicheScore 순으로 정렬
+  items.sort((a, b) => b.nicheScore - a.nicheScore)
+
+  return {
+    status: items.length > 0 ? 'success' : 'partial',
+    items: items.slice(0, 50) // 최대 50개
+  }
+}
+
+// App Store 니치 앱 수집
+async function collectAppStoreNiche() {
+  if (!appStore) {
+    console.log('  ⚠️  app-store-scraper not installed, skipping...')
+    return { status: 'skipped', items: [] }
+  }
+
+  const settings = config.niche_app_settings || {}
+  const categories = settings.categories || ['PRODUCTIVITY', 'HEALTH_AND_FITNESS', 'FINANCE', 'UTILITIES', 'LIFESTYLE']
+  const countries = settings.countries || ['us']
+  const excludeTopRanks = settings.exclude_top_ranks || 30
+
+  // App Store 카테고리 매핑
+  const categoryMap = {
+    'PRODUCTIVITY': appStore.category.PRODUCTIVITY,
+    'HEALTH_AND_FITNESS': appStore.category.HEALTH_AND_FITNESS,
+    'FINANCE': appStore.category.FINANCE,
+    'UTILITIES': appStore.category.UTILITIES,
+    'TOOLS': appStore.category.UTILITIES, // iOS에서는 UTILITIES
+    'LIFESTYLE': appStore.category.LIFESTYLE
+  }
+
+  const collections = [
+    { type: appStore.collection.TOP_FREE_IOS, name: 'TOP_FREE' },
+    { type: appStore.collection.TOP_PAID_IOS, name: 'TOP_PAID' },
+    { type: appStore.collection.TOP_GROSSING_IOS, name: 'TOP_GROSSING' }
+  ]
+
+  const items = []
+  const seenIds = new Set()
+
+  for (const country of countries) {
+    for (const category of categories) {
+      const categoryId = categoryMap[category]
+      if (!categoryId) continue
+
+      for (const col of collections) {
+        try {
+          // Rate limiting: 1초 딜레이
+          await delay(1000)
+
+          const apps = await appStore.list({
+            category: categoryId,
+            collection: col.type,
+            country: country,
+            num: 150
+          })
+
+          // 상위 30개 제외하고 니치 앱 필터링
+          const filteredApps = apps
+            .slice(excludeTopRanks)
+            .map((app, idx) => ({ ...app, rank: excludeTopRanks + idx + 1 }))
+            .filter(app => isNicheApp(app, 'ios'))
+            .slice(0, 10)
+
+          for (const app of filteredApps) {
+            if (seenIds.has(app.id)) continue
+            seenIds.add(app.id)
+
+            items.push({
+              id: String(app.id),
+              title: app.title || app.name,
+              developer: app.developer || app.artistName,
+              url: app.url,
+              score: app.score || 0,
+              reviews: app.reviews || app.ratings || 0,
+              offersIAP: app.offersIAP || false,
+              price: app.price || 0,
+              category: category,
+              collection: col.name,
+              country: country,
+              rank: app.rank,
+              nicheScore: calculateNicheScore(app),
+              platform: 'ios',
+              icon: app.icon
+            })
+          }
+        } catch (e) {
+          console.log(`    ⚠️  App Store ${category}/${col.name}/${country}: ${e.message}`)
+        }
+      }
+    }
+  }
+
+  // nicheScore 순으로 정렬
+  items.sort((a, b) => b.nicheScore - a.nicheScore)
+
+  return {
+    status: items.length > 0 ? 'success' : 'partial',
+    items: items.slice(0, 50)
+  }
+}
+
 // 키 트렌드 추출
 function extractKeyTrends(data) {
   const keywords = {}
@@ -632,7 +885,9 @@ async function collectAll() {
     { name: 'indie_hackers', label: 'Indie Hackers', fn: collectIndieHackers },
     { name: 'techcrunch', label: 'TechCrunch', fn: collectTechCrunch },
     { name: 'google_trends', label: 'Google Trends', fn: collectGoogleTrends },
-    { name: 'naver_trends', label: 'Naver Trends', fn: collectNaverTrends }
+    { name: 'naver_trends', label: 'Naver Trends', fn: collectNaverTrends },
+    { name: 'playstore_niche', label: 'Play Store Niche', fn: collectPlayStoreNiche },
+    { name: 'appstore_niche', label: 'App Store Niche', fn: collectAppStoreNiche }
   ]
 
   for (const collector of collectors) {

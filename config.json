@@ -79,6 +79,18 @@
       "enabled": true,
       "type": "scraping",
       "note": "네이버 실시간 검색어는 2021년 서비스 종료. 대체 소스(Zum 등) 활용"
+    },
+    "playstore_niche": {
+      "name": "Play Store Niche Apps",
+      "type": "scraper",
+      "enabled": true,
+      "note": "google-play-scraper npm - API 키 불필요"
+    },
+    "appstore_niche": {
+      "name": "App Store Niche Apps",
+      "type": "scraper",
+      "enabled": true,
+      "note": "app-store-scraper npm - API 키 불필요"
     }
   },
   "naver_api": {
@@ -107,11 +119,20 @@
       "note": "GraphQL API로 상세 정보 통합 수집 (WebFetch 개별 페이지 크롤링 불가)"
     }
   },
+  "niche_app_settings": {
+    "categories": ["PRODUCTIVITY", "HEALTH_AND_FITNESS", "FINANCE", "TOOLS", "LIFESTYLE"],
+    "exclude_top_ranks": 30,
+    "max_reviews": 10000,
+    "min_reviews": 100,
+    "min_rating": 4.0,
+    "countries": ["us"]
+  },
   "output": {
     "sources_dir": "generated/sources",
     "insights_dir": "generated/insights",
     "trends_dir": "generated/trends",
-    "summaries_dir": "generated/summaries"
+    "summaries_dir": "generated/summaries",
+    "app_trends_dir": "generated/app-trends"
   },
   "automation": {
     "daily": {
