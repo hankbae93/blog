@@ -51,12 +51,12 @@ export default function HomePage() {
             <FeatureCard
               icon="📊"
               title="Daily Insights"
-              description="Product Hunt, Hacker News, GitHub Trending 등 9개 소스에서 매일 트렌드를 수집하고 분석합니다."
+              description="Product Hunt, Hacker News, GitHub, YouTube 등 11개 소스에서 매일 트렌드를 수집하고 1인 개발자 시선으로 분석합니다."
             />
             <FeatureCard
-              icon="🎯"
-              title="Two Tracks"
-              description="Profit Track(빠른 수익화)과 Essence Track(본질적 문제 해결), 두 가지 관점으로 아이디어를 평가합니다."
+              icon="🔍"
+              title="교차 분석"
+              description="여러 소스를 관통하는 키 테마를 발견하고, 실제 기회와 경고 신호를 짚어드립니다."
             />
             <FeatureCard
               icon="💻"
@@ -71,9 +71,9 @@ export default function HomePage() {
       <section className="px-6 py-16">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-3 gap-8 text-center">
-            <StatCard number="9+" label="데이터 소스" />
-            <StatCard number="10시" label="매일 업데이트" />
-            <StatCard number="2가지" label="평가 트랙" />
+            <StatCard number="11개" label="데이터 소스" />
+            <StatCard number="매일" label="자동 업데이트" />
+            <StatCard number="1인" label="개발자 시선" />
           </div>
         </div>
       </section>
