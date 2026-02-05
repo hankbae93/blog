@@ -89,229 +89,52 @@
 
 ---
 
-### 3. 해커뉴스 하이라이트
+### 3. 앱 마켓 니치 트렌드
 
-**영어 제목/내용도 반드시 번역 - HackerNewsCard 컴포넌트 활용 가능**
-
-```markdown
-## 해커뉴스 하이라이트
-
-### 주요 토론 (상위 6개를 카드로 표시)
-
-<div className="hn-card-grid">
-<HackerNewsCard title="[번역된 제목]" url="{url}" points={points} comments={comments} />
-<HackerNewsCard title="[번역된 제목]" url="{url}" points={points} comments={comments} />
-<HackerNewsCard title="[번역된 제목]" url="{url}" points={points} comments={comments} />
-<HackerNewsCard title="[번역된 제목]" url="{url}" points={points} comments={comments} />
-<HackerNewsCard title="[번역된 제목]" url="{url}" points={points} comments={comments} />
-<HackerNewsCard title="[번역된 제목]" url="{url}" points={points} comments={comments} />
-</div>
-
-### 주목할 기사
-
-#### [번역된 제목] 🔥 {points}점 | 💬 {comments}개
-**원문**: [{영어 제목}]({url})
-
-**무슨 내용인가?**
-[기사/토론 내용을 2-3문장으로 요약 설명 - 한글]
-
-**1인 개발자에게 의미하는 바**
-[이 기사가 왜 중요한지, 어떤 시사점이 있는지]
-```
-
-**점수별 표시 기준:**
-- 300점 이상: 🔥🔥 (카드에서 주황색 보더)
-- 100점 이상: 🔥 (카드에서 노란색 보더)
-- 그 외: 기본 (회색 보더)
-
----
-
-### 4. 깃허브 트렌딩
-
-**레포지토리가 무엇인지 설명 필수 - GitHubRepoCard 컴포넌트 활용**
-
-```markdown
-## 깃허브 트렌딩
-
-<div className="github-card-grid">
-<GitHubRepoCard name="{owner/repo}" description="{description}" language="{language}" stars={stars} url="{url}" />
-<GitHubRepoCard name="{owner/repo}" description="{description}" language="{language}" stars={stars} url="{url}" />
-<GitHubRepoCard name="{owner/repo}" description="{description}" language="{language}" stars={stars} url="{url}" />
-</div>
-
-### 주목할 프로젝트
-
-#### [{owner/repo}]({url})
-<SourceTag tag="{language}" /> ⭐ {stars}
-
-**이 프로젝트는 무엇인가?**
-[레포지토리가 무엇을 하는 프로젝트인지 2-3문장 설명]
-
-**왜 뜨고 있나?**
-[현재 트렌드와 연결지어 설명]
-
-**1인 개발자 활용법**
-[이 프로젝트를 어떻게 활용할 수 있는지]
-```
-
-**지원 언어 색상:**
-TypeScript(파랑), JavaScript(노랑), Python(초록), Rust(주황), Go(청록), Java(빨강), C++(핑크), Swift(주황), Kotlin(보라), Dart(청록), Shell(초록)
-
----
-
-### 5. 기타 소스 하이라이트
-
-**Lobsters는 태그 시각화 - SourceTag 컴포넌트 활용**
-
-```markdown
-## 기타 소스 하이라이트
-
-### Lobsters (개발자 커뮤니티)
-
-**[제목]** - {points}점
-<div className="source-tags">
-<SourceTag tag="{tag1}" />
-<SourceTag tag="{tag2}" />
-</div>
-
-[2줄 요약 및 시사점]
-
----
-
-### TechCrunch (테크 뉴스)
-
-**[제목]**
-[2줄 요약]
-```
-
-**Lobsters 태그 색상 지원:**
-security(빨강), api(파랑), performance(초록), ml(보라), practices(주황), programming(남색), web(청록), devops(노랑), linux(회색), retrocomputing(호박색), vibecoding(보라)
-
----
-
-### 6. YouTube 개발 콘텐츠
-
-**프로그래밍/개발 관련 영상만 - YouTubeThumbnail 컴포넌트 활용**
-
-```markdown
-## YouTube 개발 콘텐츠
-
-### 주요 영상
-
-<div className="youtube-grid">
-<YouTubeThumbnail id="{videoId}" title="{title}" views={views} channel="{channel}" />
-<YouTubeThumbnail id="{videoId}" title="{title}" views={views} channel="{channel}" />
-<YouTubeThumbnail id="{videoId}" title="{title}" views={views} channel="{channel}" />
-<YouTubeThumbnail id="{videoId}" title="{title}" views={views} channel="{channel}" />
-</div>
-
-### 더 많은 영상
-
-| # | 제목 | 채널 | 조회수 |
-|---|------|------|-------:|
-| 5 | [{title}](https://www.youtube.com/watch?v={videoId}) | {channel} | {views} |
-| ... | ... | ... | ... |
-
-### 주목할 영상
-
-**[영상 제목]** - {channel}
-- 조회수: {views}
-- **왜 뜨고 있나**: [1-2문장 분석]
-- **1인 개발자 시사점**: [배울 점이나 아이디어]
-```
-
-**작성 규칙:**
-- `youtube_trending`에서 개발/프로그래밍 관련 영상 선별
-- **상위 4개는 YouTubeThumbnail 컴포넌트로 표시** (시각적 임팩트)
-- 나머지는 테이블로 표시 (스캔 용이)
-- 조회수 높은 순으로 최대 10개
-- 주목할 영상 2-3개는 상세 분석
-
----
-
-### 7. 검색 트렌드 (Google/Naver 급상승 검색어)
-
-```markdown
-## 검색 트렌드
-
-### Google Trends 급상승 검색어 (한국)
-
-| 순위 | 검색어 | 트래픽 | 관련 뉴스 |
-|------|--------|--------|-----------|
-| 1 | {title} | {traffic} | [{news_title}]({news_url}) |
-| 2 | {title} | {traffic} | [{news_title}]({news_url}) |
-| ... | ... | ... | ... |
-
-### Naver 급상승 검색어
-
-| 순위 | 검색어 | 변동 | 카테고리 |
-|------|--------|------|----------|
-| 1 | {title} | ⬆️ 상승 | {category} |
-| 2 | {title} | 🆕 신규 | {category} |
-| ... | ... | ... | ... |
-
-### 검색 트렌드 교차 분석
-
-#### Google/Naver 공통 급상승 키워드
-[양쪽에서 동시에 급상승하는 키워드가 있다면 특별히 주목]
-
-#### 기술/스타트업 관련 검색어
-[검색 트렌드 중 개발자/스타트업과 연관된 키워드 선별]
-- **{검색어}**: [왜 뜨고 있는지, 1인 개발자 관점 시사점]
-
-#### 트렌드 신호
-[검색 트렌드에서 발견되는 새로운 기회나 관심 영역]
-```
-
-**작성 규칙:**
-- Google Trends: 상위 10개 급상승 검색어 표시
-- Naver Trends: 상위 10개 급상승 검색어 표시
-- 변동 표시: ⬆️ (상승), ⬇️ (하락), 🆕 (신규), ➡️ (유지)
-- 기술/스타트업 관련 검색어는 별도 분석
-- Google/Naver 공통 키워드는 강조 (사회적 관심사 반영)
-
----
-
-### 8. 앱 마켓 니치 트렌드
-
-**Play Store/App Store 니치 앱 데이터 분석**
+**Play Store/App Store 니치 앱 데이터 분석 - Product Hunt 바로 다음에 배치**
 
 ```markdown
 ## 앱 마켓 니치 트렌드
 
-### 이번 주 떠오르는 니치 앱
+Play Store와 App Store에서 30~150위권에 있는 앱 중 **대기업이 아닌 개발사**가 만든 **평점 4.0 이상** 앱을 분석합니다. 1인 개발자가 진입할 수 있는 기회를 찾는 것이 목표입니다.
 
-#### Android (Play Store)
+### 1. [앱 이름] 🆕 📱 {platform} | {category} #{rank}
+![icon]({iconUrl})
 
-| 앱 | 카테고리 | 순위 | 평점 | 리뷰 | 니치 점수 |
-|----|----------|------|------|------|-----------|
-| [{title}]({url}) | {category} | #{rank} | {score} | {reviews} | {nicheScore}/100 |
+🔗 [{Store Name}]({url})
+⭐ {score} | 📊 리뷰 {reviews}개 | 📥 {installs} 설치 | 🗓️ {releaseInfo}
 
-**왜 주목할만한가?**
-- 개발사: {developer} (1인/소규모 확인)
-- 수익 모델: {인앱 결제 여부, 가격대}
-- 시장 기회: [경쟁 상황, 차별화 포인트]
+#### 이 앱은 무엇인가?
+[2-3문장으로 앱이 무엇을 하는지 명확히 설명]
+- 핵심 기능: [구체적으로]
+- 작동 방식: [어떻게 동작하는지]
 
-#### iOS (App Store)
+#### 왜 주목할만한가?
+[1인 개발자 관점에서 이 앱이 흥미로운 이유]
 
-| 앱 | 카테고리 | 순위 | 평점 | 리뷰 | 니치 점수 |
-|----|----------|------|------|------|-----------|
-| [{title}]({url}) | {category} | #{rank} | {score} | {reviews} | {nicheScore}/100 |
+| 구분 | 내용 |
+|------|------|
+| 타겟 사용자 | [누구를 위한 앱] |
+| 기존 대비 차별점 | [뭐가 다른가] |
+| 수익 모델 | [무료/프리미엄/유료 구독 등] |
+| 개발사 규모 | [1인/소규모/스타트업] |
+| 성공 요인 | [왜 성공했는지] |
 
-### 1인 개발자 추천 니치
+**1인 개발자가 배울 점**: [이 앱에서 배울 수 있는 것]
 
-**이번 주 발견된 기회:**
+---
 
-1. **{니치 영역}**: {카테고리}
-   - 현재 상황: {상위 앱들의 문제점이나 부족한 점}
-   - 기회: {1인 개발자가 할 수 있는 것}
-   - 예상 수익 모델: {구독/IAP/유료 등}
-   - 난이도: {쉬움/보통/어려움}
+### 앱 마켓 니치 기회 요약
+
+| 기회 영역 | 사례 | 접근 전략 | 난이도 |
+|-----------|------|-----------|--------|
+| {니치 영역} | {앱 이름} | {전략} | ⭐/⭐⭐/⭐⭐⭐ |
 ```
 
 **데이터 소스:**
 - `playstore_niche`: Play Store 30-150위 니치 앱
 - `appstore_niche`: App Store 30-150위 니치 앱
+- `generated/app-trends/analysis-{date}.json`: 당일 분석 결과
 
 **니치 앱 선정 기준:**
 - 리뷰 100~10,000개 (검증됨 + 아직 작음)
@@ -319,9 +142,15 @@ security(빨강), api(파랑), performance(초록), ml(보라), practices(주황
 - 대기업 앱 제외
 - 인앱 결제 또는 유료 앱 (수익화 모델 있음)
 
+**작성 규칙:**
+- 니치 점수가 높은 앱 5-10개를 상세 분석
+- 각 앱에 대해 Product Hunt 제품처럼 상세 설명 제공
+- "1인 개발자가 배울 점"은 필수
+- 마지막에 니치 기회 요약 테이블 포함
+
 ---
 
-### 9. 앱 마켓 급상승 알림
+### 4. 앱 마켓 급상승 알림
 
 **순위 변동 분석 (history.json 기반)**
 
@@ -368,6 +197,178 @@ security(빨강), api(파랑), performance(초록), ml(보라), practices(주황
 
 ---
 
+### 5. 해커뉴스 하이라이트
+
+**영어 제목/내용도 반드시 번역 - HackerNewsCard 컴포넌트 활용 가능**
+
+```markdown
+## 해커뉴스 하이라이트
+
+### 주요 토론 (상위 6개를 카드로 표시)
+
+<div className="hn-card-grid">
+<HackerNewsCard title="[번역된 제목]" url="{url}" points={points} comments={comments} />
+<HackerNewsCard title="[번역된 제목]" url="{url}" points={points} comments={comments} />
+<HackerNewsCard title="[번역된 제목]" url="{url}" points={points} comments={comments} />
+<HackerNewsCard title="[번역된 제목]" url="{url}" points={points} comments={comments} />
+<HackerNewsCard title="[번역된 제목]" url="{url}" points={points} comments={comments} />
+<HackerNewsCard title="[번역된 제목]" url="{url}" points={points} comments={comments} />
+</div>
+
+### 주목할 기사
+
+#### [번역된 제목] 🔥 {points}점 | 💬 {comments}개
+**원문**: [{영어 제목}]({url})
+
+**무슨 내용인가?**
+[기사/토론 내용을 2-3문장으로 요약 설명 - 한글]
+
+**1인 개발자에게 의미하는 바**
+[이 기사가 왜 중요한지, 어떤 시사점이 있는지]
+```
+
+**점수별 표시 기준:**
+- 300점 이상: 🔥🔥 (카드에서 주황색 보더)
+- 100점 이상: 🔥 (카드에서 노란색 보더)
+- 그 외: 기본 (회색 보더)
+
+---
+
+### 6. 깃허브 트렌딩
+
+**레포지토리가 무엇인지 설명 필수 - GitHubRepoCard 컴포넌트 활용**
+
+```markdown
+## 깃허브 트렌딩
+
+<div className="github-card-grid">
+<GitHubRepoCard name="{owner/repo}" description="{description}" language="{language}" stars={stars} url="{url}" />
+<GitHubRepoCard name="{owner/repo}" description="{description}" language="{language}" stars={stars} url="{url}" />
+<GitHubRepoCard name="{owner/repo}" description="{description}" language="{language}" stars={stars} url="{url}" />
+</div>
+
+### 주목할 프로젝트
+
+#### [{owner/repo}]({url})
+<SourceTag tag="{language}" /> ⭐ {stars}
+
+**이 프로젝트는 무엇인가?**
+[레포지토리가 무엇을 하는 프로젝트인지 2-3문장 설명]
+
+**왜 뜨고 있나?**
+[현재 트렌드와 연결지어 설명]
+
+**1인 개발자 활용법**
+[이 프로젝트를 어떻게 활용할 수 있는지]
+```
+
+**지원 언어 색상:**
+TypeScript(파랑), JavaScript(노랑), Python(초록), Rust(주황), Go(청록), Java(빨강), C++(핑크), Swift(주황), Kotlin(보라), Dart(청록), Shell(초록)
+
+---
+
+### 7. 기타 소스 하이라이트
+
+**Lobsters는 태그 시각화 - SourceTag 컴포넌트 활용**
+
+```markdown
+## 기타 소스 하이라이트
+
+### Lobsters (개발자 커뮤니티)
+
+**[제목]** - {points}점
+<div className="source-tags">
+<SourceTag tag="{tag1}" />
+<SourceTag tag="{tag2}" />
+</div>
+
+[2줄 요약 및 시사점]
+
+---
+
+### TechCrunch (테크 뉴스)
+
+**[제목]**
+[2줄 요약]
+```
+
+**Lobsters 태그 색상 지원:**
+security(빨강), api(파랑), performance(초록), ml(보라), practices(주황), programming(남색), web(청록), devops(노랑), linux(회색), retrocomputing(호박색), vibecoding(보라)
+
+---
+
+### 8. YouTube 개발 콘텐츠
+
+**프로그래밍/개발 관련 영상만 - YouTubeThumbnail 컴포넌트 활용**
+
+```markdown
+## YouTube 개발 콘텐츠
+
+<div className="youtube-grid">
+<YouTubeThumbnail id="{videoId}" title="{title}" views={views} channel="{channel}" />
+<YouTubeThumbnail id="{videoId}" title="{title}" views={views} channel="{channel}" />
+<YouTubeThumbnail id="{videoId}" title="{title}" views={views} channel="{channel}" />
+<YouTubeThumbnail id="{videoId}" title="{title}" views={views} channel="{channel}" />
+</div>
+
+### 더 많은 영상
+
+| # | 제목 | 채널 | 조회수 |
+|---|------|------|-------:|
+| 5 | [{title}](https://www.youtube.com/watch?v={videoId}) | {channel} | {views} |
+| ... | ... | ... | ... |
+
+### 주목할 영상
+
+**[영상 제목]** - {channel}
+- 조회수: {views}
+- **왜 뜨고 있나**: [1-2문장 분석]
+- **1인 개발자 시사점**: [배울 점이나 아이디어]
+```
+
+**작성 규칙:**
+- `youtube_trending`에서 개발/프로그래밍 관련 영상 선별
+- **상위 4개는 YouTubeThumbnail 컴포넌트로 표시** (시각적 임팩트)
+- 나머지는 테이블로 표시 (스캔 용이)
+- 조회수 높은 순으로 최대 10개
+- 주목할 영상 2-3개는 상세 분석
+
+---
+
+### 9. 검색 트렌드 (Google/Naver 급상승 검색어)
+
+```markdown
+## 검색 트렌드
+
+### Google Trends 급상승 검색어 (한국)
+
+| 순위 | 검색어 | 트래픽 | 관련 뉴스 |
+|------|--------|--------|-----------|
+| 1 | {title} | {traffic} | [{news_title}]({news_url}) |
+| 2 | {title} | {traffic} | [{news_title}]({news_url}) |
+| ... | ... | ... | ... |
+
+### Naver 급상승 검색어
+
+| 순위 | 검색어 | 변동 | 카테고리 |
+|------|--------|------|----------|
+| 1 | {title} | ⬆️ 상승 | {category} |
+| 2 | {title} | 🆕 신규 | {category} |
+| ... | ... | ... | ... |
+
+### 기술/스타트업 관련 검색어
+[검색 트렌드 중 개발자/스타트업과 연관된 키워드 선별]
+- **{검색어}**: [왜 뜨고 있는지, 1인 개발자 관점 시사점]
+```
+
+**작성 규칙:**
+- Google Trends: 상위 10개 급상승 검색어 표시
+- Naver Trends: 상위 10개 급상승 검색어 표시
+- 변동 표시: ⬆️ (상승), ⬇️ (하락), 🆕 (신규), ➡️ (유지)
+- 기술/스타트업 관련 검색어는 별도 분석
+
+---
+
 ### 10. 교차 분석: 오늘의 키 테마
 
 ```markdown
@@ -377,6 +378,7 @@ security(빨강), api(파랑), performance(초록), ml(보라), practices(주황
 
 #### 어디서 발견되었나?
 - Product Hunt: [제품명] - [연관성]
+- App Store/Play Store: [앱 이름] - [연관성]
 - Hacker News: [기사 제목] - [연관성]
 - GitHub: [레포명] - [연관성]
 - Google/Naver Trends: [검색어] - [연관성]
