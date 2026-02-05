@@ -411,8 +411,9 @@ security(빨강), api(파랑), performance(초록), ml(보라), practices(주황
 
 ## 파일 저장
 
-- **경로**: `content/insights/{YYYY-MM-DD}.mdx`
+- **경로**: `generated/insights/{YYYY-MM-DD}.md`
 - **인코딩**: UTF-8
+- **참고**: `npm run sync` 실행 시 `content/insights/{YYYY-MM-DD}.mdx`로 변환됨 (SEO 메타데이터 자동 추가)
 
 ### 파일 양식 (필수)
 
@@ -420,34 +421,11 @@ security(빨강), api(파랑), performance(초록), ml(보라), practices(주황
 
 ```markdown
 ---
-title: "Insight | {YYYY-MM-DD}"
+title: "{YYYY-MM-DD} 데일리 인사이트"
 date: "{YYYY-MM-DD}"
 description: "[오늘의 한 줄 요약 - 60자 이내]"
-keywords:
-  - "키워드1"
-  - "키워드2"
-  - "키워드3"
-openGraph:
-  type: "article"
-  title: "Insight | {YYYY-MM-DD}"
-  description: "[오늘의 한 줄 요약과 동일]"
-  url: "https://blog-three-lac-61.vercel.app/insights/{YYYY-MM-DD}"
-  siteName: "Hank Dev Log"
-  locale: "ko_KR"
-  images:
-    - url: "https://blog-three-lac-61.vercel.app/assets/og-image.png"
-      width: 1200
-      height: 630
-      alt: "Insight | {YYYY-MM-DD}"
-twitter:
-  card: "summary_large_image"
-  title: "Insight | {YYYY-MM-DD}"
-  description: "[오늘의 한 줄 요약과 동일]"
-  images:
-    - "https://blog-three-lac-61.vercel.app/assets/og-image.png"
-canonical: "https://blog-three-lac-61.vercel.app/insights/{YYYY-MM-DD}"
+keywords: ["키워드1", "키워드2", "키워드3"]
 ---
-
 
 # {YYYY-MM-DD} 데일리 인사이트
 
@@ -456,11 +434,10 @@ canonical: "https://blog-three-lac-61.vercel.app/insights/{YYYY-MM-DD}"
 ```
 
 **주의사항:**
-- frontmatter (`---`로 감싸진 영역)와 마크다운 제목 (`#`) 둘 다 필수
-- title 형식: `"Insight | {YYYY-MM-DD}"` (예: `"Insight | 2026-02-05"`)
-- openGraph, twitter, canonical은 SEO를 위해 필수 포함
-- description은 SEO를 위한 짧은 요약 (오늘의 흐름의 한 줄 요약과 동일하게)
-- keywords는 오늘의 주요 테마 3-5개 (YAML 배열 형식으로)
+- frontmatter는 기본 정보만 포함 (title, date, description, keywords)
+- openGraph, twitter, canonical 등 SEO 메타데이터는 `npm run sync`가 자동 생성
+- description은 오늘의 흐름의 한 줄 요약과 동일하게
+- keywords는 오늘의 주요 테마 3-5개 (JSON 배열 형식)
 
 ---
 
