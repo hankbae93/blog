@@ -100,13 +100,13 @@ export default async function RootLayout({
 
   return (
     <html lang="ko" dir="ltr" suppressHydrationWarning>
-      <head>
+      <Head>
         <link rel="canonical" href={siteUrl} />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-      </head>
+      </Head>
       <body>
         <Layout
           pageMap={pageMap}
