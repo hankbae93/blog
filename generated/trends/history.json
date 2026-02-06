@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-02-05",
+  "last_updated": "2026-02-06",
   "keywords": {
     "open source": {
       "first_seen": "2026-02-01",
@@ -2530,6 +2530,11 @@
         "shopping"
       ],
       "total_keywords": 54
+    },
+    {
+      "date": "2026-02-06",
+      "top_keywords": [],
+      "total_keywords": 0
     }
   ],
   "metrics": {
@@ -2628,7 +2633,8 @@
         "maxViews": 1867547,
         "totalItems": 20
       }
-    }
+    },
+    "2026-02-06": {}
   },
   "comparisons": {
     "2026-02-02": {
@@ -2731,6 +2737,10 @@
           "starsChange": -100
         }
       }
+    },
+    "2026-02-06": {
+      "vs_yesterday": {},
+      "vs_last_week": {}
     }
   }
 }
