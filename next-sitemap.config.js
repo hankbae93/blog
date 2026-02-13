@@ -17,6 +17,10 @@ module.exports = {
         userAgent: 'Googlebot',
         allow: '/',
       },
+      {
+        userAgent: 'Yeti',
+        allow: '/',
+      },
     ],
     additionalSitemaps: [],
   },
