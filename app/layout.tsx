@@ -57,7 +57,10 @@ export const metadata = {
     },
   },
   verification: {
-    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
+    google: 'L07y4m1dMP_fhe56OVknn-3N91UN5rfpPr4VWF4ATkw',
+    other: {
+      'naver-site-verification': '901128da4dca75f92016e881220b0db522fe3c29',
+    },
   },
 }
 
