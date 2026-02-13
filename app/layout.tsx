@@ -59,9 +59,6 @@ export const metadata = {
   verification: {
     google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
   },
-  alternates: {
-    canonical: siteUrl,
-  },
 }
 
 const logo = (
@@ -101,7 +98,6 @@ export default async function RootLayout({
   return (
     <html lang="ko" dir="ltr" suppressHydrationWarning>
       <Head>
-        <link rel="canonical" href={siteUrl} />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
