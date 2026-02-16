@@ -3,6 +3,7 @@ module.exports = {
   siteUrl: 'https://blog-three-lac-61.vercel.app',
   generateRobotsTxt: true,
   generateIndexSitemap: false,
+  sitemapBaseFileName: 'sitemap-0',
   sitemapSize: 7000,
   changefreq: 'daily',
   priority: 0.7,
