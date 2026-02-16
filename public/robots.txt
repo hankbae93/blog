@@ -1,0 +1,17 @@
+# *
+User-agent: *
+Allow: /
+
+# Googlebot
+User-agent: Googlebot
+Allow: /
+
+# Yeti
+User-agent: Yeti
+Allow: /
+
+# Host
+Host: https://blog-three-lac-61.vercel.app
+
+# Sitemaps
+Sitemap: https://blog-three-lac-61.vercel.app/sitemap/sitemap.xml
