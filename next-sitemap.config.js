@@ -1,9 +1,8 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
   siteUrl: 'https://blog-three-lac-61.vercel.app',
-  generateRobotsTxt: false,
+  generateRobotsTxt: true,
   generateIndexSitemap: false,
-  outDir: 'public/sitemap',
   sitemapSize: 7000,
   changefreq: 'daily',
   priority: 0.7,

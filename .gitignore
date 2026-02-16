@@ -22,7 +22,8 @@ build/
 dist/
 
 # Build artifacts
-public/sitemap/
+public/sitemap*.xml
+public/robots.txt
 public/_pagefind
 
 # Vercel
