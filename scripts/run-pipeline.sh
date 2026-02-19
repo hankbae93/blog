@@ -43,6 +43,24 @@ log "=========================================="
 log "PRD-Agent Daily Pipeline Started"
 log "=========================================="
 
+# 네트워크 준비 대기 (launchd에서 부팅 직후 실행 시 DNS 미준비 방지)
+wait_for_network() {
+    local max_wait=60
+    local waited=0
+    while [ $waited -lt $max_wait ]; do
+        if host -W 2 api.github.com > /dev/null 2>&1; then
+            return 0
+        fi
+        log "⏳ Waiting for network... (${waited}s)"
+        sleep 5
+        waited=$((waited + 5))
+    done
+    log "⚠️  Network not ready after ${max_wait}s, proceeding anyway..."
+    return 0
+}
+
+wait_for_network
+
 # 환경변수 로드
 if [ -f .env.local ]; then
     source .env.local

@@ -42,14 +42,17 @@ try {
 const today = new Date().toISOString().split('T')[0]
 
 // HTTP/HTTPS 요청 헬퍼
-function fetch(url, options = {}) {
+function fetchOnce(url, options = {}) {
   return new Promise((resolve, reject) => {
     const urlObj = new URL(url)
     const protocol = urlObj.protocol === 'https:' ? https : require('http')
 
     const req = protocol.request(url, {
       method: options.method || 'GET',
-      headers: options.headers || {},
+      headers: {
+        'User-Agent': 'PRD-Agent/1.0',
+        ...options.headers
+      },
       timeout: 30000
     }, (res) => {
       let data = ''
@@ -74,6 +77,29 @@ function fetch(url, options = {}) {
     }
     req.end()
   })
+}
+
+// 재시도 로직 포함 fetch (DNS 일시 장애 대응)
+async function fetch(url, options = {}) {
+  const maxRetries = 3
+  for (let attempt = 1; attempt <= maxRetries; attempt++) {
+    try {
+      return await fetchOnce(url, options)
+    } catch (error) {
+      const isRetryable = error.message.includes('ENOTFOUND') ||
+        error.message.includes('ETIMEDOUT') ||
+        error.message.includes('ECONNRESET') ||
+        error.message.includes('EAI_AGAIN') ||
+        error.message.includes('Request timeout')
+      if (isRetryable && attempt < maxRetries) {
+        const delay = attempt * 3000
+        console.log(`  ⏳ Retry ${attempt}/${maxRetries} for ${new URL(url).hostname} (${delay/1000}s)...`)
+        await new Promise(r => setTimeout(r, delay))
+        continue
+      }
+      throw error
+    }
+  }
 }
 
 // Product Hunt GraphQL API

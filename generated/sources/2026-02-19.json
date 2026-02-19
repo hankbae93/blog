@@ -1,19 +1,538 @@
 {
   "date": "2026-02-19",
-  "collected_at": "2026-02-19T02:21:41.513Z",
-  "total_items": 95,
+  "collected_at": "2026-02-19T03:41:23.778Z",
+  "total_items": 130,
   "sources": {
     "product_hunt": {
       "name": "Product Hunt",
-      "status": "failed",
-      "items_count": 0,
-      "items": []
+      "status": "success",
+      "items_count": 10,
+      "items": [
+        {
+          "id": "1081071",
+          "name": "Sonnet 4.6",
+          "slug": "sonnet-4-6",
+          "tagline": "The most capable Sonnet model yet",
+          "description": "Claude Sonnet 4.6 is a full upgrade across coding, computer use, long-context reasoning, agent planning, knowledge work, and design. It also features a 1M token context window in beta. Sonnet 4.6 has improved on benchmarks across the board. It approaches Opus-level intelligence at a price point that makes it practical for far more tasks. It also shows a major improvement in computer use skills.",
+          "url": "https://www.producthunt.com/products/claude?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29",
+          "website": "https://www.producthunt.com/r/XRJAQEGV3YYNPN?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29",
+          "votesCount": 482,
+          "commentsCount": 11,
+          "reviewsRating": 4.96,
+          "createdAt": "2026-02-18T08:01:00Z",
+          "featuredAt": "2026-02-18T08:01:00Z",
+          "topics": [
+            "Artificial Intelligence"
+          ],
+          "makers": [
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            },
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            },
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            },
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            },
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            },
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            }
+          ],
+          "thumbnail": "https://ph-files.imgix.net/d380c6b9-155e-44c8-9e1d-133b15003a0e.png?auto=format"
+        },
+        {
+          "id": "1077208",
+          "name": "Moda",
+          "slug": "moda-2",
+          "tagline": "Finally, AI designs you can edit",
+          "description": "Moda helps you design beautiful, brand-aligned content - slides, posters, ads, and more - with an AI trained in graphic design. Unlike other AI tools, everything is fully editable on a powerful layered canvas.",
+          "url": "https://www.producthunt.com/products/moda-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29",
+          "website": "https://www.producthunt.com/r/CXN2YMANFHJXCU?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29",
+          "votesCount": 432,
+          "commentsCount": 59,
+          "reviewsRating": 0,
+          "createdAt": "2026-02-18T08:01:00Z",
+          "featuredAt": "2026-02-18T08:01:00Z",
+          "topics": [
+            "Productivity",
+            "Design",
+            "Graphic Design"
+          ],
+          "makers": [
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            },
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            },
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            },
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            },
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            },
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            }
+          ],
+          "thumbnail": "https://ph-files.imgix.net/7e17458a-c9b5-4970-8edb-2240b52ded3e.png?auto=format"
+        },
+        {
+          "id": "1081050",
+          "name": "Omnia",
+          "slug": "omnia-3",
+          "tagline": "Become the brand AI recommends",
+          "description": "Omnia is an AI visibility tool that shows how AI sees your brand and helps you take action. Discover real AI prompts, monitor brand presence, benchmark competitors, and create content that boosts visibility and citations in AI search.",
+          "url": "https://www.producthunt.com/products/omnia-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29",
+          "website": "https://www.producthunt.com/r/P2QNFKXIJOJQ5N?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29",
+          "votesCount": 256,
+          "commentsCount": 37,
+          "reviewsRating": 0,
+          "createdAt": "2026-02-18T08:01:00Z",
+          "featuredAt": "2026-02-18T08:01:00Z",
+          "topics": [
+            "Marketing",
+            "Growth Hacking",
+            "SEO"
+          ],
+          "makers": [
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            },
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            }
+          ],
+          "thumbnail": "https://ph-files.imgix.net/db9db39e-238a-422b-a1c2-63b030bfc898.png?auto=format"
+        },
+        {
+          "id": "1078798",
+          "name": "Flixier Generate AI Video in Timeline",
+          "slug": "flixier-generate-ai-video-in-timeline",
+          "tagline": "Extend shots, connect clips, generate from any frame",
+          "description": "Most AI video tools stop at generation. Flixier brings AI into the editing timeline, so you can generate, extend, and connect clips, trim, polish and finish videos in one place, without exporting or rebuilding elsewhere.",
+          "url": "https://www.producthunt.com/products/flixier?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29",
+          "website": "https://www.producthunt.com/r/2J7TBBVCY7KL7J?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29",
+          "votesCount": 173,
+          "commentsCount": 21,
+          "reviewsRating": 4.37,
+          "createdAt": "2026-02-18T08:01:00Z",
+          "featuredAt": "2026-02-18T08:01:00Z",
+          "topics": [
+            "Artificial Intelligence",
+            "Video"
+          ],
+          "makers": [
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            },
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            },
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            }
+          ],
+          "thumbnail": "https://ph-files.imgix.net/058de8ca-cacf-475e-9f8e-6e019a30ef18.png?auto=format"
+        },
+        {
+          "id": "1081207",
+          "name": "ClawMetry for OpenClaw",
+          "slug": "clawmetry-for-openclaw",
+          "tagline": "Real-time observability dashboard for OpenClaw AI agents",
+          "description": "ClawMetry is a free, open-source observability dashboard for OpenClaw AI agents. Think Grafana, but purpose-built for AI. One command install (pip install clawmetry), zero config. Monitor token costs, sub-agent activity, cron jobs, memory changes, and session history. All in real-time with a beautiful live flow visualization. Works on macOS, Linux, Windows, even Raspberry Pi",
+          "url": "https://www.producthunt.com/products/clawmetry?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29",
+          "website": "https://www.producthunt.com/r/JKIL5I3A43NUWI?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29",
+          "votesCount": 143,
+          "commentsCount": 6,
+          "reviewsRating": 0,
+          "createdAt": "2026-02-18T08:01:00Z",
+          "featuredAt": "2026-02-18T08:01:00Z",
+          "topics": [
+            "Open Source",
+            "Developer Tools",
+            "Artificial Intelligence"
+          ],
+          "makers": [
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            }
+          ],
+          "thumbnail": "https://ph-files.imgix.net/c581354e-493f-4bf8-87b7-9029b8eeb45d.png?auto=format"
+        },
+        {
+          "id": "1080157",
+          "name": "Travel Animator",
+          "slug": "travel-animator-2",
+          "tagline": "Name every stop your way with Place Labels",
+          "description": "Place Labels are here ✨ Now you can highlight the places you’ve visited right on your animated map, helping every route feel clearer, more personal, and easier to follow. With the new Place Label Customiser, you can choose from 6 thoughtfully designed styles, explore 7 colors to match your mood, and decide how labels appear with Current, Visited, or Always-on modes. Edit or remove them anytime. Tell your journey your way 🚀",
+          "url": "https://www.producthunt.com/products/travel-animator?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29",
+          "website": "https://www.producthunt.com/r/VOTWBNKKAFFXMB?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29",
+          "votesCount": 129,
+          "commentsCount": 11,
+          "reviewsRating": 0,
+          "createdAt": "2026-02-18T08:01:00Z",
+          "featuredAt": "2026-02-18T08:01:00Z",
+          "topics": [
+            "Travel",
+            "Maps",
+            "Video"
+          ],
+          "makers": [
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            },
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            },
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            },
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            }
+          ],
+          "thumbnail": "https://ph-files.imgix.net/e88c89b8-6ee0-4d77-8f9c-ad6e9db179da.gif?auto=format"
+        },
+        {
+          "id": "1079063",
+          "name": "Empirical Health for web",
+          "slug": "empirical-health-for-web",
+          "tagline": "Comprehensive preventive heart health solution scaled w/ AI",
+          "description": "When Empirical Health first launched, it was centered around iOS and Android apps to help you optimize your heart health in your daily life. But sometimes you need a larger screen, especially when viewing blood test reports (there are 100+ biomarkers per test). Now, you can view all of your blood test results, check heart attack risk scores, message your doctor, and schedule lab reviews from your desktop or phone without downloading an app.",
+          "url": "https://www.producthunt.com/products/empirical-health?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29",
+          "website": "https://www.producthunt.com/r/YDLCIZK56UJV22?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29",
+          "votesCount": 119,
+          "commentsCount": 7,
+          "reviewsRating": 5,
+          "createdAt": "2026-02-18T08:01:00Z",
+          "featuredAt": "2026-02-18T08:01:00Z",
+          "topics": [
+            "Web App",
+            "Health & Fitness"
+          ],
+          "makers": [
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            },
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            },
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            }
+          ],
+          "thumbnail": "https://ph-files.imgix.net/4c0dcc00-1f91-492c-b460-f2c755511f6e.png?auto=format"
+        },
+        {
+          "id": "1080578",
+          "name": "Design Rails",
+          "slug": "design-rails-2",
+          "tagline": "Get an agent-ready brand in minutes",
+          "description": "Chat with an AI creative director. Get a complete brand identity in minutes—logo, colors, typography, voice & tone, UI styles—all packaged as agent-ready files. No more generic UI. Drop the files into your project, and tools like Claude and Lovable generate on-brand UI from day one.",
+          "url": "https://www.producthunt.com/products/design-rails-ai-native-brand-in-mins?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29",
+          "website": "https://www.producthunt.com/r/OB4CXSZGF6WGRV?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29",
+          "votesCount": 118,
+          "commentsCount": 14,
+          "reviewsRating": 0,
+          "createdAt": "2026-02-18T08:01:00Z",
+          "featuredAt": "2026-02-18T08:01:00Z",
+          "topics": [
+            "Design Tools",
+            "Developer Tools",
+            "Vibe coding"
+          ],
+          "makers": [
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            },
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            },
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            }
+          ],
+          "thumbnail": "https://ph-files.imgix.net/580d6e9d-70db-4faa-8c9c-e75366ec3a4e.png?auto=format"
+        },
+        {
+          "id": "1080341",
+          "name": "Calendarly",
+          "slug": "calendarly-2",
+          "tagline": "Turn your calendar into a live Lock Screen wallpaper",
+          "description": "Calendarly turns your calendar into a live Lock Screen wallpaper that updates automatically throughout the day. See your schedule the moment you pick up your phone - no widgets to configure, no apps to open, no distractions pulling you away. Choose from beautifully designed templates and fully customize them to match your style, layout, and priorities. Fully private. Everything runs on-device.",
+          "url": "https://www.producthunt.com/products/calendarly-calendar-on-lock-screen?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29",
+          "website": "https://www.producthunt.com/r/VXIJIWRE4LHY6B?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29",
+          "votesCount": 109,
+          "commentsCount": 5,
+          "reviewsRating": 0,
+          "createdAt": "2026-02-18T08:01:00Z",
+          "featuredAt": "2026-02-18T08:01:00Z",
+          "topics": [
+            "iOS",
+            "Calendar",
+            "Wallpaper"
+          ],
+          "makers": [
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            }
+          ],
+          "thumbnail": "https://ph-files.imgix.net/771f55c0-6eb6-4345-a746-2a2235dbedfc.png?auto=format"
+        },
+        {
+          "id": "1080976",
+          "name": "SPECTRE",
+          "slug": "spectre-5",
+          "tagline": "An agentic coding workflow for product builders",
+          "description": "SPECTRE is an agentic Coding Workflow - /Scope, /Plan, /Execute, /Clean, /Test, /Rebase, /Evaluate - that uses simply step by step product development workflow to generate high quality results from your AI Coding Agents. - Codename-Inc/spectre",
+          "url": "https://www.producthunt.com/products/spectre-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29",
+          "website": "https://www.producthunt.com/r/CZQAMGV6OW6DHH?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29",
+          "votesCount": 107,
+          "commentsCount": 13,
+          "reviewsRating": 0,
+          "createdAt": "2026-02-18T08:01:00Z",
+          "featuredAt": "2026-02-18T08:01:00Z",
+          "topics": [
+            "Software Engineering",
+            "Developer Tools",
+            "GitHub",
+            "Maker Tools"
+          ],
+          "makers": [
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            }
+          ],
+          "thumbnail": "https://ph-files.imgix.net/875d7f97-3a0b-43f2-b927-ff6201512f04.jpeg?auto=format"
+        }
+      ]
     },
     "hacker_news": {
       "name": "Hacker News",
-      "status": "failed",
-      "items_count": 0,
-      "items": []
+      "status": "success",
+      "items_count": 15,
+      "items": [
+        {
+          "title": "Anthropic officially bans using subscription auth for third party use",
+          "url": "https://code.claude.com/docs/en/legal-and-compliance",
+          "points": 38,
+          "comments": 26,
+          "author": "theahura",
+          "time": 1771469546
+        },
+        {
+          "title": "Sizing chaos",
+          "url": "https://pudding.cool/2026/02/womens-sizing/",
+          "points": 333,
+          "comments": 199,
+          "author": "zdw",
+          "time": 1771449500
+        },
+        {
+          "title": "27-year-old Apple iBooks can connect to Wi-Fi and download official updates",
+          "url": "https://old.reddit.com/r/MacOS/comments/1r8900z/macos_which_officially_supports_27_year_old/",
+          "points": 191,
+          "comments": 103,
+          "author": "surprisetalk",
+          "time": 1771448071
+        },
+        {
+          "title": "Cosmologically Unique IDs",
+          "url": "https://jasonfantl.com/posts/Universal-Unique-IDs/",
+          "points": 299,
+          "comments": 89,
+          "author": "jfantl",
+          "time": 1771439842
+        },
+        {
+          "title": "How to Choose Between Hindley-Milner and Bidirectional Typing",
+          "url": "https://thunderseethe.dev/posts/how-to-choose-between-hm-and-bidir/",
+          "points": 44,
+          "comments": 4,
+          "author": "thunderseethe",
+          "time": 1771178864
+        },
+        {
+          "title": "15 years of FP64 segmentation, and why the Blackwell Ultra breaks the pattern",
+          "url": "https://nicolasdickenmann.com/blog/the-great-fp64-divide.html",
+          "points": 25,
+          "comments": 4,
+          "author": "fp64enjoyer",
+          "time": 1771465567
+        },
+        {
+          "title": "Zero-day CSS: CVE-2026-2441 exists in the wild",
+          "url": "https://chromereleases.googleblog.com/2026/02/stable-channel-update-for-desktop_13.html",
+          "points": 269,
+          "comments": 144,
+          "author": "idoxer",
+          "time": 1771432099
+        },
+        {
+          "title": "Tailscale Peer Relays is now generally available",
+          "url": "https://tailscale.com/blog/peer-relays-ga",
+          "points": 345,
+          "comments": 180,
+          "author": "sz4kerto",
+          "time": 1771433172
+        },
+        {
+          "title": "Minecraft Java is switching from OpenGL to Vulkan",
+          "url": "https://www.gamingonlinux.com/2026/02/minecraft-java-is-switching-from-opengl-to-vulkan-for-the-vibrant-visuals-update/",
+          "points": 74,
+          "comments": 19,
+          "author": "tuananh",
+          "time": 1771466133
+        },
+        {
+          "title": "DNS-Persist-01: A New Model for DNS-Based Challenge Validation",
+          "url": "https://letsencrypt.org/2026/02/18/dns-persist-01.html",
+          "points": 221,
+          "comments": 102,
+          "author": "todsacerdoti",
+          "time": 1771437853
+        },
+        {
+          "title": "Closing this as we are no longer pursuing Swift adoption",
+          "url": "https://github.com/LadybirdBrowser/ladybird/issues/933",
+          "points": 222,
+          "comments": 169,
+          "author": "thewavelength",
+          "time": 1771456118
+        },
+        {
+          "title": "The Perils of ISBN",
+          "url": "https://rygoldstein.com/posts/perils-of-isbn",
+          "points": 85,
+          "comments": 44,
+          "author": "evakhoury",
+          "time": 1771436077
+        },
+        {
+          "title": "R3forth: A concatenative language derived from ColorForth",
+          "url": "https://github.com/phreda4/r3/blob/main/doc/r3forth_tutorial.md",
+          "points": 64,
+          "comments": 9,
+          "author": "tosh",
+          "time": 1771442939
+        },
+        {
+          "title": "Making a font with ligatures to display thirteenth-century monk numerals",
+          "url": "https://digitalseams.com/blog/making-a-font-with-9999-ligatures-to-display-thirteenth-century-monk-numerals",
+          "points": 49,
+          "comments": 8,
+          "author": "a7b3fa",
+          "time": 1771170251
+        },
+        {
+          "title": "Step 3.5 Flash: Fast Enough to Think. Reliable Enough to Act",
+          "url": "https://static.stepfun.com/blog/step-3.5-flash/",
+          "points": 5,
+          "comments": 2,
+          "author": "kristianp",
+          "time": 1771468320
+        }
+      ]
     },
     "github_trending": {
       "name": "GitHub Trending",
@@ -25,7 +544,7 @@
           "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
           "language": "TypeScript",
           "stars_today": 0,
-          "total_stars": 437214,
+          "total_stars": 437220,
           "url": "https://github.com/freeCodeCamp/freeCodeCamp"
         },
         {
@@ -33,7 +552,7 @@
           "description": ":books: Freely available programming books",
           "language": "Python",
           "stars_today": 0,
-          "total_stars": 382703,
+          "total_stars": 382711,
           "url": "https://github.com/EbookFoundation/free-programming-books"
         },
         {
@@ -41,7 +560,7 @@
           "description": "Interactive roadmaps, guides and other educational content to help developers grow in their careers.",
           "language": "TypeScript",
           "stars_today": 0,
-          "total_stars": 349297,
+          "total_stars": 349303,
           "url": "https://github.com/kamranahmedse/developer-roadmap"
         },
         {
@@ -49,7 +568,7 @@
           "description": "An opinionated list of awesome Python frameworks, libraries, software and resources.",
           "language": "Python",
           "stars_today": 0,
-          "total_stars": 283470,
+          "total_stars": 283488,
           "url": "https://github.com/vinta/awesome-python"
         },
         {
@@ -57,7 +576,7 @@
           "description": "A list of Free Software network services and web applications which can be hosted on your own servers",
           "language": "Unknown",
           "stars_today": 0,
-          "total_stars": 273939,
+          "total_stars": 273949,
           "url": "https://github.com/awesome-selfhosted/awesome-selfhosted"
         },
         {
@@ -65,7 +584,7 @@
           "description": "The library for web and native user interfaces.",
           "language": "JavaScript",
           "stars_today": 0,
-          "total_stars": 243107,
+          "total_stars": 243110,
           "url": "https://github.com/facebook/react"
         },
         {
@@ -73,7 +592,7 @@
           "description": "Linux kernel source tree",
           "language": "C",
           "stars_today": 0,
-          "total_stars": 217853,
+          "total_stars": 217859,
           "url": "https://github.com/torvalds/linux"
         },
         {
@@ -81,7 +600,7 @@
           "description": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 ",
           "language": "TypeScript",
           "stars_today": 0,
-          "total_stars": 208996,
+          "total_stars": 209158,
           "url": "https://github.com/openclaw/openclaw"
         },
         {
@@ -89,7 +608,7 @@
           "description": "📝 Algorithms and data structures implemented in JavaScript with explanations and links to further readings",
           "language": "JavaScript",
           "stars_today": 0,
-          "total_stars": 195578,
+          "total_stars": 195583,
           "url": "https://github.com/trekhleb/javascript-algorithms"
         },
         {
@@ -97,7 +616,7 @@
           "description": "An Open Source Machine Learning Framework for Everyone",
           "language": "C++",
           "stars_today": 0,
-          "total_stars": 193800,
+          "total_stars": 193803,
           "url": "https://github.com/tensorflow/tensorflow"
         },
         {
@@ -105,7 +624,7 @@
           "description": "🙃   A delightful community-driven (with 2,400+ contributors) framework for managing your zsh configuration. Includes 300+ optional plugins (rails, git, macOS, hub, docker, homebrew, node, php, python, etc), 140+ themes to spice up your morning, and an auto-update tool that makes it easy to keep up with the latest updates from the community.",
           "language": "Shell",
           "stars_today": 0,
-          "total_stars": 184798,
+          "total_stars": 184804,
           "url": "https://github.com/ohmyzsh/ohmyzsh"
         },
         {
@@ -121,7 +640,7 @@
           "description": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
           "language": "Python",
           "stars_today": 0,
-          "total_stars": 181872,
+          "total_stars": 181874,
           "url": "https://github.com/Significant-Gravitas/AutoGPT"
         },
         {
@@ -129,7 +648,7 @@
           "description": "Visual Studio Code",
           "language": "TypeScript",
           "stars_today": 0,
-          "total_stars": 181823,
+          "total_stars": 181825,
           "url": "https://github.com/microsoft/vscode"
         },
         {
@@ -137,7 +656,7 @@
           "description": "Python - 100天从新手到大师",
           "language": "Jupyter Notebook",
           "stars_today": 0,
-          "total_stars": 178708,
+          "total_stars": 178709,
           "url": "https://github.com/jackfrued/Python-100-Days"
         }
       ]
@@ -151,12 +670,12 @@
           "title": "Subscribe for more coding tips⬆️ #shorts #study #smartstudy #viral",
           "channel": "Coder Furious",
           "channelId": "UCIS7kJBq0Yspb67coHivhmg",
-          "channelSubscribers": 33400,
+          "channelSubscribers": 33500,
           "videoId": "htx348BbCb4",
           "url": "https://www.youtube.com/watch?v=htx348BbCb4",
           "thumbnail": "https://i.ytimg.com/vi/htx348BbCb4/maxresdefault.jpg",
-          "views": 5239012,
-          "likes": 194302,
+          "views": 5239618,
+          "likes": 194334,
           "likeRatio": "3.71",
           "commentCount": 1344,
           "duration": "0:42",
@@ -171,14 +690,14 @@
           "title": "Subscribe for more coding tips⬆️ #shorts #viral #earnmoney #website",
           "channel": "Coder Furious",
           "channelId": "UCIS7kJBq0Yspb67coHivhmg",
-          "channelSubscribers": 33400,
+          "channelSubscribers": 33500,
           "videoId": "-bnRL8pw0fM",
           "url": "https://www.youtube.com/watch?v=-bnRL8pw0fM",
           "thumbnail": "https://i.ytimg.com/vi/-bnRL8pw0fM/maxresdefault.jpg",
-          "views": 5083224,
-          "likes": 143799,
+          "views": 5083780,
+          "likes": 143829,
           "likeRatio": "2.83",
-          "commentCount": 1443,
+          "commentCount": 1442,
           "duration": "0:46",
           "durationRaw": "PT46S",
           "definition": "hd",
@@ -195,10 +714,10 @@
           "videoId": "aajit9VVkmk",
           "url": "https://www.youtube.com/watch?v=aajit9VVkmk",
           "thumbnail": "https://i.ytimg.com/vi/aajit9VVkmk/maxresdefault.jpg",
-          "views": 4556356,
-          "likes": 102151,
+          "views": 4557899,
+          "likes": 102159,
           "likeRatio": "2.24",
-          "commentCount": 3014,
+          "commentCount": 3016,
           "duration": "0:28",
           "durationRaw": "PT28S",
           "definition": "hd",
@@ -215,8 +734,8 @@
           "videoId": "MLpgy0jqciI",
           "url": "https://www.youtube.com/watch?v=MLpgy0jqciI",
           "thumbnail": "https://i.ytimg.com/vi/MLpgy0jqciI/maxresdefault.jpg",
-          "views": 3361605,
-          "likes": 39161,
+          "views": 3362424,
+          "likes": 39162,
           "likeRatio": "1.16",
           "commentCount": 1017,
           "duration": "0:19",
@@ -237,12 +756,12 @@
           "title": "Subscribe for more coding tips⬆️ #shorts #questionpaper #exams #viral",
           "channel": "Coder Furious",
           "channelId": "UCIS7kJBq0Yspb67coHivhmg",
-          "channelSubscribers": 33400,
+          "channelSubscribers": 33500,
           "videoId": "nPNSZou05mA",
           "url": "https://www.youtube.com/watch?v=nPNSZou05mA",
           "thumbnail": "https://i.ytimg.com/vi/nPNSZou05mA/maxresdefault.jpg",
-          "views": 2464964,
-          "likes": 79943,
+          "views": 2464978,
+          "likes": 79942,
           "likeRatio": "3.24",
           "commentCount": 621,
           "duration": "0:41",
@@ -261,10 +780,10 @@
           "videoId": "WfjGZCuxl-U",
           "url": "https://www.youtube.com/watch?v=WfjGZCuxl-U",
           "thumbnail": "https://i.ytimg.com/vi/WfjGZCuxl-U/maxresdefault.jpg",
-          "views": 2207062,
-          "likes": 51949,
+          "views": 2208158,
+          "likes": 51977,
           "likeRatio": "2.35",
-          "commentCount": 6277,
+          "commentCount": 6279,
           "duration": "8:12",
           "durationRaw": "PT8M12S",
           "definition": "hd",
@@ -281,14 +800,14 @@
           "title": "404 ERROR PAGE !!! #coding #programming #javascript #python",
           "channel": "Aziz Syntax",
           "channelId": "UCCrEpVALr901PP01fkVo58g",
-          "channelSubscribers": 4990,
+          "channelSubscribers": 5000,
           "videoId": "B97rwQ2KWfU",
           "url": "https://www.youtube.com/watch?v=B97rwQ2KWfU",
           "thumbnail": "https://i.ytimg.com/vi/B97rwQ2KWfU/maxresdefault.jpg",
-          "views": 2182798,
-          "likes": 21652,
+          "views": 2186938,
+          "likes": 21748,
           "likeRatio": "0.99",
-          "commentCount": 179,
+          "commentCount": 180,
           "duration": "0:07",
           "durationRaw": "PT7S",
           "definition": "hd",
@@ -312,7 +831,7 @@
           "url": "https://www.youtube.com/watch?v=7D7X561NLPs",
           "thumbnail": "https://i.ytimg.com/vi/7D7X561NLPs/maxresdefault.jpg",
           "views": 1824474,
-          "likes": 46107,
+          "likes": 46104,
           "likeRatio": "2.53",
           "commentCount": 784,
           "duration": "0:40",
@@ -331,10 +850,10 @@
           "videoId": "ssYt09bCgUY",
           "url": "https://www.youtube.com/watch?v=ssYt09bCgUY",
           "thumbnail": "https://i.ytimg.com/vi/ssYt09bCgUY/maxresdefault.jpg",
-          "views": 1537058,
-          "likes": 43625,
+          "views": 1538623,
+          "likes": 43647,
           "likeRatio": "2.84",
-          "commentCount": 1760,
+          "commentCount": 1759,
           "duration": "5:19",
           "durationRaw": "PT5M19S",
           "definition": "hd",
@@ -353,12 +872,12 @@
           "title": "Is software engineering cooked?",
           "channel": "Alberta Tech",
           "channelId": "UCkdgAA0rfK7lG5dv4o__Paw",
-          "channelSubscribers": 387000,
+          "channelSubscribers": 388000,
           "videoId": "mhCGr6gJ2dM",
           "url": "https://www.youtube.com/watch?v=mhCGr6gJ2dM",
           "thumbnail": "https://i.ytimg.com/vi/mhCGr6gJ2dM/maxresdefault.jpg",
-          "views": 1303697,
-          "likes": 40802,
+          "views": 1303915,
+          "likes": 40805,
           "likeRatio": "3.13",
           "commentCount": 1680,
           "duration": "0:32",
@@ -370,32 +889,6 @@
           "tags": []
         },
         {
-          "title": "The Future of Software Engineering with AI | Spiros Xanthos, Resolve AI",
-          "channel": "Lightspeed Venture Partners",
-          "channelId": "UCwBTFE_6Bsb_EtmXlW2aTlg",
-          "channelSubscribers": 12400,
-          "videoId": "6rZ-ruRKQ4Q",
-          "url": "https://www.youtube.com/watch?v=6rZ-ruRKQ4Q",
-          "thumbnail": "https://i.ytimg.com/vi/6rZ-ruRKQ4Q/maxresdefault.jpg",
-          "views": 1074405,
-          "likes": 0,
-          "likeRatio": "0.00",
-          "commentCount": 0,
-          "duration": "28:53",
-          "durationRaw": "PT28M53S",
-          "definition": "hd",
-          "publishedAt": "2026-02-04T14:00:21Z",
-          "category": "Software Dev",
-          "region": "US",
-          "tags": [
-            "Investment Memo Podcast",
-            "Lightspeed",
-            "ResolveAI",
-            "Spiros Xanthos",
-            "AI for production"
-          ]
-        },
-        {
           "title": "State of AI in 2026: LLMs, Coding, Scaling Laws, China, Agents, GPUs, AGI | Lex Fridman Podcast #490",
           "channel": "Lex Fridman",
           "channelId": "UCSHZKyawb77ixDdsGog4iWA",
@@ -403,8 +896,8 @@
           "videoId": "EV7WhVT270Q",
           "url": "https://www.youtube.com/watch?v=EV7WhVT270Q",
           "thumbnail": "https://i.ytimg.com/vi/EV7WhVT270Q/maxresdefault.jpg",
-          "views": 679875,
-          "likes": 11711,
+          "views": 680118,
+          "likes": 11713,
           "likeRatio": "1.72",
           "commentCount": 1021,
           "duration": "4:25:13",
@@ -429,10 +922,10 @@
           "videoId": "6kaHzDQf32Y",
           "url": "https://www.youtube.com/watch?v=6kaHzDQf32Y",
           "thumbnail": "https://i.ytimg.com/vi/6kaHzDQf32Y/maxresdefault.jpg",
-          "views": 630064,
-          "likes": 21106,
+          "views": 630439,
+          "likes": 21110,
           "likeRatio": "3.35",
-          "commentCount": 501,
+          "commentCount": 502,
           "duration": "0:50",
           "durationRaw": "PT50S",
           "definition": "hd",
@@ -446,6 +939,32 @@
           ]
         },
         {
+          "title": "A brief history of programming...",
+          "channel": "Fireship",
+          "channelId": "UCsBjURrPoezykLs9EqgamOA",
+          "channelSubscribers": 4100000,
+          "videoId": "9uW6B9LPntY",
+          "url": "https://www.youtube.com/watch?v=9uW6B9LPntY",
+          "thumbnail": "https://i.ytimg.com/vi/9uW6B9LPntY/maxresdefault.jpg",
+          "views": 597873,
+          "likes": 36980,
+          "likeRatio": "6.19",
+          "commentCount": 1343,
+          "duration": "6:09",
+          "durationRaw": "PT6M9S",
+          "definition": "hd",
+          "publishedAt": "2026-01-20T17:58:16Z",
+          "category": "Software Dev",
+          "region": "US",
+          "tags": [
+            "webdev",
+            "app development",
+            "lesson",
+            "tutorial",
+            "history of code"
+          ]
+        },
+        {
           "title": "Make Your Own Cute Dasai Mochi Robot🤖 | #ashwinprojects #AltiumStudentLab",
           "channel": "Ashwin Projects",
           "channelId": "UCjyUVetvO2y8phUwad2TsfA",
@@ -453,8 +972,8 @@
           "videoId": "KsDxCDsoWMk",
           "url": "https://www.youtube.com/watch?v=KsDxCDsoWMk",
           "thumbnail": "https://i.ytimg.com/vi/KsDxCDsoWMk/maxresdefault.jpg",
-          "views": 579541,
-          "likes": 20609,
+          "views": 579649,
+          "likes": 20617,
           "likeRatio": "3.56",
           "commentCount": 119,
           "duration": "1:49",
@@ -479,8 +998,8 @@
           "videoId": "8lF7HmQ_RgY",
           "url": "https://www.youtube.com/watch?v=8lF7HmQ_RgY",
           "thumbnail": "https://i.ytimg.com/vi/8lF7HmQ_RgY/maxresdefault.jpg",
-          "views": 456946,
-          "likes": 5358,
+          "views": 457028,
+          "likes": 5361,
           "likeRatio": "1.17",
           "commentCount": 414,
           "duration": "1:54:05",
@@ -499,7 +1018,7 @@
           "videoId": "a63dUwXUgDo",
           "url": "https://www.youtube.com/watch?v=a63dUwXUgDo",
           "thumbnail": "https://i.ytimg.com/vi/a63dUwXUgDo/maxresdefault.jpg",
-          "views": 327593,
+          "views": 328083,
           "likes": 0,
           "likeRatio": "0.00",
           "commentCount": 207,
@@ -521,14 +1040,14 @@
           "title": "I Have Spent 500+ Hours Programming With AI. This Is what I learned",
           "channel": "The Coding Sloth",
           "channelId": "UCxVPH8W2ayMey1-b0SY8rBQ",
-          "channelSubscribers": 586000,
+          "channelSubscribers": 587000,
           "videoId": "91B_v-wOaws",
           "url": "https://www.youtube.com/watch?v=91B_v-wOaws",
           "thumbnail": "https://i.ytimg.com/vi/91B_v-wOaws/maxresdefault.jpg",
-          "views": 287073,
-          "likes": 17263,
+          "views": 287258,
+          "likes": 17277,
           "likeRatio": "6.01",
-          "commentCount": 733,
+          "commentCount": 734,
           "duration": "13:38",
           "durationRaw": "PT13M38S",
           "definition": "hd",
@@ -544,52 +1063,6 @@
           ]
         },
         {
-          "title": "The third golden age of software engineering – thanks to AI, with Grady Booch",
-          "channel": "The Pragmatic Engineer",
-          "channelId": "UCPbwhExawYrn9xxI21TFfyw",
-          "channelSubscribers": 455000,
-          "videoId": "OfMAtaocvJw",
-          "url": "https://www.youtube.com/watch?v=OfMAtaocvJw",
-          "thumbnail": "https://i.ytimg.com/vi/OfMAtaocvJw/maxresdefault.jpg",
-          "views": 276183,
-          "likes": 2819,
-          "likeRatio": "1.02",
-          "commentCount": 241,
-          "duration": "1:17:05",
-          "durationRaw": "PT1H17M5S",
-          "definition": "hd",
-          "publishedAt": "2026-02-04T18:41:58Z",
-          "category": "Software Dev",
-          "region": "US",
-          "tags": []
-        },
-        {
-          "title": "We Studied 150 Developers Using AI (Here’s What's Actually Changed...)",
-          "channel": "Modern Software Engineering",
-          "channelId": "UCCfqyGl3nq_V0bo64CjZh8g",
-          "channelSubscribers": 257000,
-          "videoId": "b9EbCb5A408",
-          "url": "https://www.youtube.com/watch?v=b9EbCb5A408",
-          "thumbnail": "https://i.ytimg.com/vi/b9EbCb5A408/maxresdefault.jpg",
-          "views": 224367,
-          "likes": 11035,
-          "likeRatio": "4.92",
-          "commentCount": 1143,
-          "duration": "11:55",
-          "durationRaw": "PT11M55S",
-          "definition": "hd",
-          "publishedAt": "2026-01-27T19:00:41Z",
-          "category": "Software Dev",
-          "region": "US",
-          "tags": [
-            "claude code",
-            "how to use claude code",
-            "claude code tips",
-            "claude code agents",
-            "vibe coding"
-          ]
-        },
-        {
           "title": "100 Hours Testing Clawdbot vs Claude Code (honest results)",
           "channel": "Nate Herk | AI Automation",
           "channelId": "UC2ojq-nuP8ceeHqiroeKhBA",
@@ -597,10 +1070,10 @@
           "videoId": "CBNbcbMs_Lc",
           "url": "https://www.youtube.com/watch?v=CBNbcbMs_Lc",
           "thumbnail": "https://i.ytimg.com/vi/CBNbcbMs_Lc/maxresdefault.jpg",
-          "views": 216871,
-          "likes": 4940,
+          "views": 216969,
+          "likes": 4945,
           "likeRatio": "2.28",
-          "commentCount": 514,
+          "commentCount": 512,
           "duration": "22:47",
           "durationRaw": "PT22M47S",
           "definition": "hd",
@@ -608,6 +1081,52 @@
           "category": "Coding",
           "region": "US",
           "tags": []
+        },
+        {
+          "title": "Frameworks don't matter anymore...",
+          "channel": "Awesome",
+          "channelId": "UCXzw-OdotBUcNA9yhuYQBwA",
+          "channelSubscribers": 113000,
+          "videoId": "wkXvv0iJffg",
+          "url": "https://www.youtube.com/watch?v=wkXvv0iJffg",
+          "thumbnail": "https://i.ytimg.com/vi/wkXvv0iJffg/maxresdefault.jpg",
+          "views": 159027,
+          "likes": 5793,
+          "likeRatio": "3.64",
+          "commentCount": 639,
+          "duration": "8:26",
+          "durationRaw": "PT8M26S",
+          "definition": "hd",
+          "publishedAt": "2026-02-09T11:01:51Z",
+          "category": "Web Dev",
+          "region": "US",
+          "tags": []
+        },
+        {
+          "title": "My Honest Thoughts on AI and the Job Market in 2026",
+          "channel": "Web Dev Simplified",
+          "channelId": "UCFbNIlppjAuEX4znoulh0Cw",
+          "channelSubscribers": 1760000,
+          "videoId": "CFI1ZnlHEFM",
+          "url": "https://www.youtube.com/watch?v=CFI1ZnlHEFM",
+          "thumbnail": "https://i.ytimg.com/vi/CFI1ZnlHEFM/maxresdefault.jpg",
+          "views": 148174,
+          "likes": 5281,
+          "likeRatio": "3.56",
+          "commentCount": 577,
+          "duration": "16:41",
+          "durationRaw": "PT16M41S",
+          "definition": "hd",
+          "publishedAt": "2026-01-20T17:00:19Z",
+          "category": "Web Dev",
+          "region": "US",
+          "tags": [
+            "webdevsimplified",
+            "web dev guide",
+            "web dev 2026",
+            "ai 2026 web dev",
+            "programming 2026"
+          ]
         }
       ]
     },
@@ -619,9 +1138,148 @@
     },
     "dev_to": {
       "name": "Dev.to",
-      "status": "failed",
-      "items_count": 0,
-      "items": []
+      "status": "success",
+      "items_count": 10,
+      "items": [
+        {
+          "title": "A New Chapter: DEV is Joining Forces with Major League Hacking (MLH)",
+          "author": "ben",
+          "url": "https://dev.to/devteam/a-new-chapter-dev-is-joining-forces-with-major-league-hacking-mlh-3kfd",
+          "reactions": 245,
+          "comments": 52,
+          "tags": [
+            "news",
+            "devto",
+            "hackathon",
+            "discuss"
+          ],
+          "published_at": "2026-02-18T14:10:31Z"
+        },
+        {
+          "title": "The Future of Software Has a Lot More Builders. They’re Going to Need a Home.",
+          "author": "jonmarkgo",
+          "url": "https://dev.to/mlh/the-future-of-software-has-a-lot-more-builders-theyre-going-to-need-a-home-1k65",
+          "reactions": 63,
+          "comments": 14,
+          "tags": [
+            "discuss",
+            "news",
+            "ai",
+            "programming"
+          ],
+          "published_at": "2026-02-18T14:00:30Z"
+        },
+        {
+          "title": "How I Turned an Ugly Spreadsheet into an AI Assisted App with Antigravity",
+          "author": "shirmeirlador",
+          "url": "https://dev.to/googleai/how-i-turned-an-ugly-spreadsheet-into-an-ai-assisted-app-with-antigravity-3j52",
+          "reactions": 14,
+          "comments": 0,
+          "tags": [
+            "antigravity",
+            "ai",
+            "gemini",
+            "googlecloud"
+          ],
+          "published_at": "2026-02-18T17:39:12Z"
+        },
+        {
+          "title": "If You See These Red Flags in an IT Interview — Run (Real Stories)",
+          "author": "sylwia-lask",
+          "url": "https://dev.to/sylwia-lask/if-you-see-these-red-flags-in-an-it-interview-run-real-stories-4am7",
+          "reactions": 49,
+          "comments": 25,
+          "tags": [
+            "webdev",
+            "discuss"
+          ],
+          "published_at": "2026-02-18T10:54:17Z"
+        },
+        {
+          "title": "Ran out of Cursor tokens and switched to GitHub Copilot: Side-by-Side",
+          "author": "maximsaplin",
+          "url": "https://dev.to/maximsaplin/ran-out-of-cursor-tokens-and-switched-to-github-copilot-side-by-side-2n5p",
+          "reactions": 20,
+          "comments": 5,
+          "tags": [
+            "ai",
+            "githubcopilot",
+            "programming",
+            "productivity"
+          ],
+          "published_at": "2026-02-18T17:38:27Z"
+        },
+        {
+          "title": "If Writing still Matters, How to Do it Right and Avoid AI Suspicion?",
+          "author": "ingosteinke",
+          "url": "https://dev.to/ingosteinke/if-writing-still-matters-how-to-do-it-right-and-avoid-ai-suspicion-2nac",
+          "reactions": 18,
+          "comments": 0,
+          "tags": [
+            "writing",
+            "ai",
+            "watercooler",
+            "nanobanana"
+          ],
+          "published_at": "2026-02-18T14:10:39Z"
+        },
+        {
+          "title": "How I Tricked AWS Elastic Beanstalk Into Using pnpm",
+          "author": "tirtht",
+          "url": "https://dev.to/tirtht/how-i-tricked-aws-elastic-beanstalk-into-using-pnpm-ef4",
+          "reactions": 3,
+          "comments": 0,
+          "tags": [
+            "beginners",
+            "devops",
+            "aws",
+            "npm"
+          ],
+          "published_at": "2026-02-18T06:43:47Z"
+        },
+        {
+          "title": "A CI tool that stops AI from undoing your team's architectural decisions",
+          "author": "stewartjarod",
+          "url": "https://dev.to/stewartjarod/a-ci-tool-that-stops-ai-from-undoing-your-teams-architectural-decisions-1e32",
+          "reactions": 1,
+          "comments": 0,
+          "tags": [
+            "opensource",
+            "rust",
+            "react",
+            "webdev"
+          ],
+          "published_at": "2026-02-18T16:10:31Z"
+        },
+        {
+          "title": "Build a Container from Scratch in Go (Modern Namespaces + cgroup v2)",
+          "author": "faizanfirdousi",
+          "url": "https://dev.to/faizanfirdousi/build-a-container-from-scratch-in-go-modern-namespaces-cgroup-v2-5556",
+          "reactions": 2,
+          "comments": 2,
+          "tags": [
+            "devops",
+            "go",
+            "containers",
+            "linux"
+          ],
+          "published_at": "2026-02-18T15:38:24Z"
+        },
+        {
+          "title": "Every AI Agent Framework Trusts the Agent. That's the Problem.",
+          "author": "saezbaldo",
+          "url": "https://dev.to/saezbaldo/every-ai-agent-framework-trusts-the-agent-thats-the-problem-5gfa",
+          "reactions": 1,
+          "comments": 3,
+          "tags": [
+            "ai",
+            "security",
+            "distributedsystems",
+            "opensource"
+          ],
+          "published_at": "2026-02-18T13:10:27Z"
+        }
+      ]
     },
     "lobsters": {
       "name": "Lobsters",
@@ -629,10 +1287,20 @@
       "items_count": 10,
       "items": [
         {
+          "title": "Ditching Discord",
+          "url": "https://wiki.alopex.li/DitchingDiscord",
+          "points": 21,
+          "comments": 3,
+          "tags": [
+            "networking"
+          ],
+          "author": "icefox"
+        },
+        {
           "title": "Current - An RSS reader",
           "url": "https://www.terrygodier.com/current",
-          "points": 27,
-          "comments": 18,
+          "points": 29,
+          "comments": 20,
           "tags": [
             "design",
             "mobile"
@@ -642,7 +1310,7 @@
         {
           "title": "15+ years later, Microsoft morged my diagram",
           "url": "https://nvie.com/posts/15-years-later/",
-          "points": 105,
+          "points": 107,
           "comments": 18,
           "tags": [
             "vibecoding"
@@ -652,7 +1320,7 @@
         {
           "title": "DNS-PERSIST-01: A New Model for DNS-based Challenge Validation",
           "url": "https://letsencrypt.org/2026/02/18/dns-persist-01.html",
-          "points": 43,
+          "points": 48,
           "comments": 7,
           "tags": [
             "networking",
@@ -661,19 +1329,30 @@
           "author": "fanf"
         },
         {
-          "title": "Ditching Discord",
-          "url": "https://wiki.alopex.li/DitchingDiscord",
+          "title": "Why I don't think AGI is imminent",
+          "url": "https://dlants.me/agi-not-imminent.html",
           "points": 12,
-          "comments": 1,
+          "comments": 3,
           "tags": [
-            "networking"
+            "vibecoding"
           ],
-          "author": "icefox"
+          "author": "dlants"
+        },
+        {
+          "title": "how openai, the US government, and persona built an identity surveillance machine that files reports on you to the feds",
+          "url": "https://vmfunc.re/blog/persona/",
+          "points": 15,
+          "comments": 3,
+          "tags": [
+            "reversing",
+            "security"
+          ],
+          "author": "kriive"
         },
         {
           "title": "Asahi Linux Progress Report: Linux 6.19",
           "url": "https://asahilinux.org/2026/02/progress-report-6-19/",
-          "points": 72,
+          "points": 75,
           "comments": 9,
           "tags": [
             "linux"
@@ -684,7 +1363,7 @@
           "title": "Bruteforcing the Bitwarden master password I forgor",
           "url": "https://compilercrim.es/forgor/",
           "points": 20,
-          "comments": 4,
+          "comments": 5,
           "tags": [
             "cryptography",
             "reversing"
@@ -692,25 +1371,14 @@
           "author": "BD103"
         },
         {
-          "title": "Why I don't think AGI is imminent",
-          "url": "https://dlants.me/agi-not-imminent.html",
-          "points": 8,
-          "comments": 0,
-          "tags": [
-            "vibecoding"
-          ],
-          "author": "dlants"
-        },
-        {
-          "title": "how openai, the US government, and persona built an identity surveillance machine that files reports on you to the feds",
-          "url": "https://vmfunc.re/blog/persona/",
-          "points": 7,
+          "title": "Notes on clarifying man pages",
+          "url": "https://jvns.ca/blog/2026/02/18/man-pages/",
+          "points": 10,
           "comments": 3,
           "tags": [
-            "reversing",
-            "security"
+            "practices"
           ],
-          "author": "kriive"
+          "author": "calvin"
         },
         {
           "title": "What's cooking on SourceHut? Q1 2026",
@@ -721,17 +1389,6 @@
             "devops"
           ],
           "author": "runxiyu"
-        },
-        {
-          "title": "The case for gatekeeping, or: why medieval guilds had it figured out",
-          "url": "https://www.joanwestenberg.com/the-case-for-gatekeeping-or-why-medieval-guilds-had-it-figured-out/",
-          "points": 25,
-          "comments": 18,
-          "tags": [
-            "practices",
-            "vibecoding"
-          ],
-          "author": "alper"
         }
       ]
     },
@@ -746,6 +1403,12 @@
       "status": "success",
       "items_count": 10,
       "items": [
+        {
+          "title": "OpenAI deepens India push with Pine Labs fintech partnership",
+          "url": "https://techcrunch.com/2026/02/18/openai-deepens-india-push-with-pine-labs-fintech-partnership/",
+          "author": "Jagmeet Singh",
+          "date": "Thu, 19 Feb 2026 03:30:00 +0000"
+        },
         {
           "title": "Etsy sells secondhand clothing marketplace Depop to eBay for $1.2B",
           "url": "https://techcrunch.com/2026/02/18/etsy-sells-secondhand-clothing-marketplace-depop-to-ebay-for-1-2b/",
@@ -799,12 +1462,6 @@
           "url": "https://techcrunch.com/2026/02/18/world-labs-lands-200m-from-autodesk-to-bring-world-models-into-3d-workflows/",
           "author": "Rebecca Bellan",
           "date": "Wed, 18 Feb 2026 18:07:16 +0000"
-        },
-        {
-          "title": "Google debuts $499 Pixel 10a",
-          "url": "https://techcrunch.com/2026/02/18/google-debuts-499-pixel-10a/",
-          "author": "Aisha Malik",
-          "date": "Wed, 18 Feb 2026 17:41:46 +0000"
         }
       ]
     },
@@ -813,6 +1470,63 @@
       "status": "success",
       "items_count": 10,
       "items": [
+        {
+          "title": "한화솔루션",
+          "traffic": "100+",
+          "related_queries": [],
+          "news_items": [
+            {
+              "title": "한화솔루션, 일론 머스크발 &apos;우주 AI센터&apos; 수혜 기대감에 9%↑",
+              "url": "https://marketin.edaily.co.kr/News/ReadE?newsId=03198006645352160"
+            },
+            {
+              "title": "韓, 페로브스카이트 합성 신기술 개발…태양광 관련주 급등",
+              "url": "https://www.hankyung.com/article/2026021905206"
+            },
+            {
+              "title": "한화솔루션 주가 21%대 급등, 차세대 태양전지 페로브스카이트 상용화 기대",
+              "url": "https://www.businesspost.co.kr/BP?command=article_view&amp;num=430500"
+            }
+          ]
+        },
+        {
+          "title": "한전",
+          "traffic": "200+",
+          "related_queries": [],
+          "news_items": [
+            {
+              "title": "한전-한국에너지공과대학교, 에너지 AI 공동연구 본격화",
+              "url": "https://www.electimes.com/news/articleView.html?idxno=365299"
+            },
+            {
+              "title": "한전 전력연구원·켄텍, ‘K-전력’ 디지털 동맹... 산학협력 모델 구축",
+              "url": "https://www.skenews.kr/news/articleView.html?idxno=51297"
+            },
+            {
+              "title": "켄텍-한국전력, 에너지 인공지능 공동 연구 협약",
+              "url": "https://www.yna.co.kr/view/AKR20260212064600054"
+            }
+          ]
+        },
+        {
+          "title": "장학재단",
+          "traffic": "100+",
+          "related_queries": [],
+          "news_items": [
+            {
+              "title": "(재)춘천지역로타리장학재단 정호순 19대 이사장 취임",
+              "url": "https://www.kwnews.co.kr/page/view/2026021810340995746"
+            },
+            {
+              "title": "춘천지역로타리장학재단 이사장 이·취임식",
+              "url": "https://www.kado.net/news/articleView.html?idxno=2034552"
+            },
+            {
+              "title": "역대 최대 5조 1천억 투입된 2026 국가장학금, 2차 신청 놓치면 &apos;구제&apos; 없다",
+              "url": "https://www.kyobit.com/news/articleView.html?idxno=4118"
+            }
+          ]
+        },
         {
           "title": "한화오션 주가",
           "traffic": "200+",
@@ -842,7 +1556,7 @@
               "url": "https://v.daum.net/v/20260218170527877"
             },
             {
-              "title": "NH농협금융 서민ᐧ청년 대상 포용금융 상품 3종 순차 출시, 이찬우 &quot;포용금융 전도사&quot;",
+              "title": "NH농협금융 서민ᐧ청년 대상 포용금융 상품 3종 순차 출시, 이찬우 &quot;포용금융 전도���&quot;",
               "url": "https://www.businesspost.co.kr/BP?command=article_view&amp;num=430427"
             },
             {
@@ -902,78 +1616,21 @@
           "news_items": []
         },
         {
-          "title": "성균관대학교",
-          "traffic": "200+",
-          "related_queries": [],
-          "news_items": [
-            {
-              "title": "성균관대, 코발트 없애고 니켈 줄인 차세대 배터리 양극 소재 개발",
-              "url": "https://www.newsis.com/view/NISX20260219_0003518049"
-            },
-            {
-              "title": "김기출 건국대 화학공학과 교수 연구팀, 유기 배터리 성능 한계 돌파 위한 설계 원리 제시",
-              "url": "https://www.dailysmart.co.kr/news/articleView.html?idxno=119839"
-            },
-            {
-              "title": "성균관대 김종순 교수팀, 과리튬계 양극 소재 구조 열화 원인 규명·코발트 프리 고안성 신소재 개발",
-              "url": "http://www.newstnt.com/news/articleView.html?idxno=587074"
-            }
-          ]
-        },
-        {
           "title": "삼성전자 주가",
           "traffic": "2000+",
           "related_queries": [],
           "news_items": [
             {
-              "title": "프리마켓 삼전 3.6%·SK하닉 2%대 급등…‘18만전자’ 밟았다",
-              "url": "https://v.daum.net/v/20260219081742023"
-            },
-            {
-              "title": "삼성전자, 프리마켓서 18만8000원…사상 최고가 경신",
-              "url": "https://marketin.edaily.co.kr/News/ReadE?newsId=02853606645352160"
+              "title": "삼성전자 주식보상 목표 조기 도달...관건은 주가 유지",
+              "url": "https://v.daum.net/v/20260219113306164"
             },
             {
               "title": "[속보] 삼성전자, ‘19만 전자’ 돌파...코스피 5600선 넘어 사상 최고",
               "url": "https://www.kyeonggi.com/article/20260219580024"
-            }
-          ]
-        },
-        {
-          "title": "두산에너빌리티 주가",
-          "traffic": "500+",
-          "related_queries": [],
-          "news_items": [
-            {
-              "title": "iM증권 &quot;두산에너빌, 한미협력·SMR사업 가시화로 원전수주↑&quot;",
-              "url": "https://www.yna.co.kr/view/AKR20260219025600008"
             },
             {
-              "title": "두산에너빌리티, 신규수주 사상 최대…美 원전 협력 수주 행렬 기대-iM",
-              "url": "https://marketin.edaily.co.kr/News/ReadE?newsId=02489526645352160"
-            },
-            {
-              "title": "교보증권 &quot;두산에너빌리티 목표주가 상향, 올해 수주 목표 달성 가능 기대&quot;",
-              "url": "https://www.businesspost.co.kr/BP?command=article_view&amp;num=430456"
-            }
-          ]
-        },
-        {
-          "title": "에어로케이",
-          "traffic": "1000+",
-          "related_queries": [],
-          "news_items": [
-            {
-              "title": "에어로케이, 청주~타이중 노선 취항 성공… 대만 하늘길 확장",
-              "url": "https://www.asiae.co.kr/article/2026021908260739201"
-            },
-            {
-              "title": "에어로케이, 대만 노선 확장 성과···청주공항 거점 전략 ‘속도전’",
-              "url": "https://www.bzeronews.com/news/articleView.html?idxno=811663"
-            },
-            {
-              "title": "에어로케이항공, 청주-타이중 노선 취항으로 대만 하늘길 활짝 연다",
-              "url": "https://www.econovill.com/news/articleView.html?idxno=730149"
+              "title": "설연휴 핫토픽된 ‘18만전자’, 삼전 강세는 계속될까",
+              "url": "https://www.khan.co.kr/article/202602181349001"
             }
           ]
         }
@@ -986,61 +1643,61 @@
       "items": [
         {
           "rank": 1,
-          "title": "김여정 정동영 평가",
+          "title": "김대현 차관 올림픽",
           "change": "same",
           "category": ""
         },
         {
           "rank": 2,
-          "title": "대전 전세사기 지원",
+          "title": "정청래 尹 사형",
           "change": "same",
           "category": ""
         },
         {
           "rank": 3,
-          "title": "제이홉 3억 기부",
+          "title": "색동원 시설장 구속",
           "change": "same",
           "category": ""
         },
         {
           "rank": 4,
-          "title": "트럼프 이란 인도양",
+          "title": "지드래곤 두바이 열기",
           "change": "same",
           "category": ""
         },
         {
           "rank": 5,
-          "title": "장동혁 대표",
+          "title": "전북 슈퍼컵",
           "change": "same",
           "category": ""
         },
         {
           "rank": 6,
-          "title": "김대현 차관 폐회식",
+          "title": "키플레이어 안현민",
           "change": "same",
           "category": ""
         },
         {
           "rank": 7,
-          "title": "올림픽 린샤오쥔 노메달",
+          "title": "제이홉 3억 기부",
           "change": "same",
           "category": ""
         },
         {
           "rank": 8,
-          "title": "심형탁 하루 돌잔치",
+          "title": "쇼트트랙 폰타나 메달",
           "change": "same",
           "category": ""
         },
         {
           "rank": 9,
-          "title": "안현민 WBC 키플레이어",
+          "title": "손메대전",
           "change": "same",
           "category": ""
         },
         {
           "rank": 10,
-          "title": "우다비 어썸이엔티 전속",
+          "title": "에이티즈 빌보드 석권",
           "change": "same",
           "category": ""
         }
@@ -1056,7 +1713,7 @@
           "title": "Manus AI",
           "developer": "BUTTERFLY EFFECT PTE. LTD.",
           "url": "https://play.google.com/store/apps/details?id=tech.butterfly.app",
-          "score": 4.6198006,
+          "score": 4.620747,
           "reviews": 1801,
           "installs": "1,000,000+",
           "offersIAP": true,
@@ -1064,7 +1721,7 @@
           "category": "PRODUCTIVITY",
           "collection": "TOP_FREE",
           "country": "us",
-          "rank": 53,
+          "rank": 52,
           "nicheScore": 100,
           "platform": "android",
           "icon": "https://play-lh.googleusercontent.com/7RIeDBEnjVVn3d1yr441p7u0BK9eT8E6P9i__XYTcJAzOe7sqVgJp7pmlypqY9NBqjI",
@@ -1077,7 +1734,7 @@
           "title": "Thrift & Profit Finder - Gemli",
           "developer": "326 LAB - FZCO",
           "url": "https://play.google.com/store/apps/details?id=com.labs326.gemli",
-          "score": 4.687034,
+          "score": 4.6869435,
           "reviews": 542,
           "installs": "100,000+",
           "offersIAP": true,
@@ -1098,7 +1755,7 @@
           "title": "Antique Identifier Zophi",
           "developer": "326 LAB - FZCO",
           "url": "https://play.google.com/store/apps/details?id=com.labs326.antique",
-          "score": 4.73064,
+          "score": 4.731993,
           "reviews": 530,
           "installs": "100,000+",
           "offersIAP": true,
@@ -1119,7 +1776,7 @@
           "title": "QR Code Scanner & Barcode Read",
           "developer": "QR & Barcode Scanner",
           "url": "https://play.google.com/store/apps/details?id=com.qrcodescanner.barcodereader.qrcode",
-          "score": 4.2708335,
+          "score": 4.2723494,
           "reviews": 1348,
           "installs": "10,000,000+",
           "offersIAP": true,
@@ -1127,7 +1784,7 @@
           "category": "PRODUCTIVITY",
           "collection": "TOP_FREE",
           "country": "us",
-          "rank": 52,
+          "rank": 51,
           "nicheScore": 100,
           "platform": "android",
           "icon": "https://play-lh.googleusercontent.com/erc_vz_JVeYuEl6EPVxx2JR01DvP7jaX1LHA35oW6faYltogwornTSC3bDImHcCE6VME",
@@ -1203,8 +1860,8 @@
           "title": "Runna: Running Plans & Coach",
           "developer": "Strava Inc.",
           "url": "https://play.google.com/store/apps/details?id=com.runbuddy.prod",
-          "score": 4.6151686,
-          "reviews": 585,
+          "score": 4.6173186,
+          "reviews": 586,
           "installs": "1,000,000+",
           "offersIAP": true,
           "iapRange": "$19.99 - $119.99 per item",
@@ -1224,7 +1881,7 @@
           "title": "AI Calorie Counter - Appediet",
           "developer": "Appediet Information PTE. LTD",
           "url": "https://play.google.com/store/apps/details?id=com.appediet.appediet",
-          "score": 4.7515373,
+          "score": 4.751678,
           "reviews": 271,
           "installs": "500,000+",
           "offersIAP": true,
@@ -1232,7 +1889,7 @@
           "category": "HEALTH_AND_FITNESS",
           "collection": "TOP_FREE",
           "country": "us",
-          "rank": 35,
+          "rank": 32,
           "nicheScore": 95,
           "platform": "android",
           "icon": "https://play-lh.googleusercontent.com/ONZMjbf458-8OY_oQ_8LEy0UsWRxV3WazznHh6A_pEkkqGjlOVbRxpTWfoC0Mz89qw",
@@ -1245,8 +1902,8 @@
           "title": "Tai Chi for Beginners Seniors",
           "developer": "7M Limited",
           "url": "https://play.google.com/store/apps/details?id=net.workoutinc.tai_chi_for_beginners",
-          "score": 4.6197915,
-          "reviews": 365,
+          "score": 4.621762,
+          "reviews": 366,
           "installs": "100,000+",
           "offersIAP": true,
           "iapRange": "$19.99 - $59.99 per item",
@@ -1472,17 +2129,20 @@
     }
   },
   "key_trends": [
+    "Artificial Intelligence",
+    "Developer Tools",
+    "Video",
     "TypeScript",
     "Python",
-    "Unknown",
-    "JavaScript",
-    "available",
-    "developers",
-    "C",
-    "C++",
-    "Shell",
-    "(rails,",
-    "tools,",
-    "Jupyter Notebook"
+    "Productivity",
+    "Design",
+    "Graphic Design",
+    "Marketing",
+    "Growth Hacking",
+    "SEO",
+    "brand",
+    "Open Source",
+    "Travel",
+    "Maps"
   ]
 }
