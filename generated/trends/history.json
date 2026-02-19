@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-02-18",
+  "last_updated": "2026-02-19",
   "keywords": {
     "open source": {
       "first_seen": "2026-02-01",
@@ -1105,10 +1105,14 @@
         {
           "date": "2026-02-18",
           "count": 14
+        },
+        {
+          "date": "2026-02-19",
+          "count": 13
         }
       ],
       "trend": "stable",
-      "total_count": 181
+      "total_count": 194
     },
     "unknown": {
       "first_seen": "2026-02-02",
@@ -1168,10 +1172,14 @@
         {
           "date": "2026-02-18",
           "count": 4
+        },
+        {
+          "date": "2026-02-19",
+          "count": 9
         }
       ],
-      "trend": "stable",
-      "total_count": 42
+      "trend": "rising",
+      "total_count": 51
     },
     "python": {
       "first_seen": "2026-02-02",
@@ -1231,10 +1239,14 @@
         {
           "date": "2026-02-18",
           "count": 11
+        },
+        {
+          "date": "2026-02-19",
+          "count": 11
         }
       ],
       "trend": "stable",
-      "total_count": 166
+      "total_count": 177
     },
     "javascript": {
       "first_seen": "2026-02-02",
@@ -1294,10 +1306,14 @@
         {
           "date": "2026-02-18",
           "count": 2
+        },
+        {
+          "date": "2026-02-19",
+          "count": 9
         }
       ],
       "trend": "stable",
-      "total_count": 29
+      "total_count": 38
     },
     "c": {
       "first_seen": "2026-02-02",
@@ -1357,10 +1373,14 @@
         {
           "date": "2026-02-18",
           "count": 2
+        },
+        {
+          "date": "2026-02-19",
+          "count": 7
         }
       ],
       "trend": "stable",
-      "total_count": 28
+      "total_count": 35
     },
     "c++": {
       "first_seen": "2026-02-02",
@@ -1420,10 +1440,14 @@
         {
           "date": "2026-02-18",
           "count": 2
+        },
+        {
+          "date": "2026-02-19",
+          "count": 7
         }
       ],
       "trend": "stable",
-      "total_count": 28
+      "total_count": 35
     },
     "shell": {
       "first_seen": "2026-02-02",
@@ -1483,10 +1507,14 @@
         {
           "date": "2026-02-18",
           "count": 2
+        },
+        {
+          "date": "2026-02-19",
+          "count": 7
         }
       ],
       "trend": "stable",
-      "total_count": 28
+      "total_count": 35
     },
     "dart": {
       "first_seen": "2026-02-02",
@@ -2579,10 +2607,14 @@
         {
           "date": "2026-02-09",
           "count": 5
+        },
+        {
+          "date": "2026-02-19",
+          "count": 5
         }
       ],
       "trend": "rising",
-      "total_count": 6
+      "total_count": 11
     },
     "agent": {
       "first_seen": "2026-02-04",
@@ -2904,10 +2936,14 @@
         {
           "date": "2026-02-04",
           "count": 4
+        },
+        {
+          "date": "2026-02-19",
+          "count": 4
         }
       ],
-      "trend": "new",
-      "total_count": 4
+      "trend": "rising",
+      "total_count": 8
     },
     "계명대학교": {
       "first_seen": "2026-02-04",
@@ -5113,10 +5149,14 @@
         {
           "date": "2026-02-18",
           "count": 2
+        },
+        {
+          "date": "2026-02-19",
+          "count": 7
         }
       ],
       "trend": "rising",
-      "total_count": 10
+      "total_count": 17
     },
     "code/codex": {
       "first_seen": "2026-02-14",
@@ -6396,6 +6436,248 @@
       ],
       "trend": "new",
       "total_count": 4
+    },
+    "한화오션 주가": {
+      "first_seen": "2026-02-19",
+      "occurrences": [
+        {
+          "date": "2026-02-19",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "농협은행": {
+      "first_seen": "2026-02-19",
+      "occurrences": [
+        {
+          "date": "2026-02-19",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "미래에셋증권 주가": {
+      "first_seen": "2026-02-19",
+      "occurrences": [
+        {
+          "date": "2026-02-19",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "삼성중공업 주가": {
+      "first_seen": "2026-02-19",
+      "occurrences": [
+        {
+          "date": "2026-02-19",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "예비군": {
+      "first_seen": "2026-02-19",
+      "occurrences": [
+        {
+          "date": "2026-02-19",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "성균관대학교": {
+      "first_seen": "2026-02-19",
+      "occurrences": [
+        {
+          "date": "2026-02-19",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "삼성전자 주가": {
+      "first_seen": "2026-02-19",
+      "occurrences": [
+        {
+          "date": "2026-02-19",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "두산에너빌리티 주가": {
+      "first_seen": "2026-02-19",
+      "occurrences": [
+        {
+          "date": "2026-02-19",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "에어로케이": {
+      "first_seen": "2026-02-19",
+      "occurrences": [
+        {
+          "date": "2026-02-19",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "김여정 정동영 평가": {
+      "first_seen": "2026-02-19",
+      "occurrences": [
+        {
+          "date": "2026-02-19",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "대전 전세사기 지원": {
+      "first_seen": "2026-02-19",
+      "occurrences": [
+        {
+          "date": "2026-02-19",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "제이홉 3억 기부": {
+      "first_seen": "2026-02-19",
+      "occurrences": [
+        {
+          "date": "2026-02-19",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "트럼프 이란 인도양": {
+      "first_seen": "2026-02-19",
+      "occurrences": [
+        {
+          "date": "2026-02-19",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "장동혁 대표": {
+      "first_seen": "2026-02-19",
+      "occurrences": [
+        {
+          "date": "2026-02-19",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "김대현 차관 폐회식": {
+      "first_seen": "2026-02-19",
+      "occurrences": [
+        {
+          "date": "2026-02-19",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "올림픽 린샤오쥔 노메달": {
+      "first_seen": "2026-02-19",
+      "occurrences": [
+        {
+          "date": "2026-02-19",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "심형탁 하루 돌잔치": {
+      "first_seen": "2026-02-19",
+      "occurrences": [
+        {
+          "date": "2026-02-19",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "안현민 wbc 키플레이어": {
+      "first_seen": "2026-02-19",
+      "occurrences": [
+        {
+          "date": "2026-02-19",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "우다비 어썸이엔티 전속": {
+      "first_seen": "2026-02-19",
+      "occurrences": [
+        {
+          "date": "2026-02-19",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "available": {
+      "first_seen": "2026-02-19",
+      "occurrences": [
+        {
+          "date": "2026-02-19",
+          "count": 5
+        }
+      ],
+      "trend": "new",
+      "total_count": 5
+    },
+    "(rails,": {
+      "first_seen": "2026-02-19",
+      "occurrences": [
+        {
+          "date": "2026-02-19",
+          "count": 5
+        }
+      ],
+      "trend": "new",
+      "total_count": 5
+    },
+    "tools,": {
+      "first_seen": "2026-02-19",
+      "occurrences": [
+        {
+          "date": "2026-02-19",
+          "count": 5
+        }
+      ],
+      "trend": "new",
+      "total_count": 5
     }
   },
   "daily_summaries": [
@@ -6680,6 +6962,22 @@
         "database"
       ],
       "total_keywords": 58
+    },
+    {
+      "date": "2026-02-19",
+      "top_keywords": [
+        "typescript",
+        "python",
+        "unknown",
+        "javascript",
+        "c",
+        "c++",
+        "shell",
+        "jupyter notebook",
+        "available",
+        "developers"
+      ],
+      "total_keywords": 32
     }
   ],
   "metrics": {
@@ -7018,6 +7316,18 @@
       "youtube_trending": {
         "avgViews": 1660082,
         "maxViews": 5186254,
+        "totalItems": 20
+      }
+    },
+    "2026-02-19": {
+      "github_trending": {
+        "avgStarsToday": 0,
+        "maxStarsToday": 0,
+        "totalItems": 15
+      },
+      "youtube_trending": {
+        "avgViews": 1725658,
+        "maxViews": 5239012,
         "totalItems": 20
       }
     }
@@ -7392,6 +7702,24 @@
         },
         "youtube_trending": {
           "viewsChange": 77
+        }
+      }
+    },
+    "2026-02-19": {
+      "vs_yesterday": {
+        "github_trending": {
+          "starsChange": null
+        },
+        "youtube_trending": {
+          "viewsChange": 4
+        }
+      },
+      "vs_last_week": {
+        "github_trending": {
+          "starsChange": null
+        },
+        "youtube_trending": {
+          "viewsChange": 84
         }
       }
     }
