@@ -7,6 +7,8 @@ const rootDir = process.cwd()
 const directories = [
   'content',
   'content/insights',
+  'content/summaries/weekly',
+  'content/summaries/monthly',
 ]
 
 function extractTitle(filePath) {
@@ -38,6 +40,28 @@ function generateMeta(dir) {
     )
     .sort((a, b) => b.localeCompare(a)) // 최신 순 정렬
 
+  // content/summaries 중간 디렉토리 생성
+  if (dir === 'content/summaries/weekly' || dir === 'content/summaries/monthly') {
+    const summariesDir = path.join(rootDir, 'content/summaries')
+    if (!fs.existsSync(summariesDir)) {
+      fs.mkdirSync(summariesDir, { recursive: true })
+    }
+    const summariesMetaPath = path.join(summariesDir, '_meta.ts')
+    if (!fs.existsSync(summariesMetaPath)) {
+      const summariesMeta = `export default {
+  weekly: {
+    title: 'Weekly',
+  },
+  monthly: {
+    title: 'Monthly',
+  },
+}
+`
+      fs.writeFileSync(summariesMetaPath, summariesMeta)
+      console.log(`Generated: content/summaries/_meta.ts (navigation)`)
+    }
+  }
+
   // content 루트는 특별 처리
   if (dir === 'content') {
     const meta = `export default {
@@ -46,6 +70,10 @@ function generateMeta(dir) {
   },
   insights: {
     title: 'Insights',
+    type: 'page',
+  },
+  summaries: {
+    title: 'Summaries',
     type: 'page',
   },
   'dev-log': {
@@ -75,9 +103,12 @@ function generateMeta(dir) {
       return `  '${slug}': '${escapedTitle}'`
     })
 
+  // index 라벨 결정
+  const indexLabel = dir.includes('weekly') ? '주간 요약' : dir.includes('monthly') ? '월간 리포트' : '개요'
+
   // index 항목을 맨 앞에 추가
   const meta = `export default {
-  index: '개요',
+  index: '${indexLabel}',
 ${entries.join(',\n')}
 }
 `

@@ -6,6 +6,10 @@ export default {
     title: 'Insights',
     type: 'page',
   },
+  summaries: {
+    title: 'Summaries',
+    type: 'page',
+  },
   'dev-log': {
     title: '1인개발기',
     type: 'page',

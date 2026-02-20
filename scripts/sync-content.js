@@ -8,6 +8,8 @@ const siteName = 'Hank Dev Log'
 // 복사할 디렉토리 매핑
 const mappings = [
   { source: 'generated/insights', dest: 'content/insights', type: 'insight' },
+  { source: 'generated/summaries/weekly', dest: 'content/summaries/weekly', type: 'weekly' },
+  { source: 'generated/summaries/monthly', dest: 'content/summaries/monthly', type: 'monthly' },
 ]
 
 function ensureDir(dir) {
@@ -73,24 +75,35 @@ function parseFrontmatter(content) {
   return { frontmatter, body }
 }
 
-// 날짜에서 타이틀 생성
-function generateTitle(date) {
-  return `Insight | ${date}`
+// 타이틀 생성 (타입별)
+function generateTitle(filename, type) {
+  if (type === 'weekly') {
+    const weekMatch = filename.match(/(\d{4}-W\d{2})/)
+    return weekMatch ? `Weekly Summary | ${weekMatch[1]}` : `Weekly Summary`
+  }
+  if (type === 'monthly') {
+    const monthMatch = filename.match(/(\d{4}-\d{2})/)
+    return monthMatch ? `Monthly Report | ${monthMatch[1]}` : `Monthly Report`
+  }
+  const dateMatch = filename.match(/(\d{4}-\d{2}-\d{2})/)
+  return dateMatch ? `Insight | ${dateMatch[1]}` : `Insight`
 }
 
 // SEO용 frontmatter 생성
-function generateSeoFrontmatter(originalFm, filename, body) {
+function generateSeoFrontmatter(originalFm, filename, body, type) {
   const dateMatch = filename.match(/(\d{4}-\d{2}-\d{2})/)
-  const date = dateMatch ? dateMatch[1] : originalFm.date || new Date().toISOString().split('T')[0]
+  const weekMatch = filename.match(/(\d{4})-W(\d{2})/)
+  const date = dateMatch ? dateMatch[1] : weekMatch ? `${weekMatch[1]}-01-01` : originalFm.date || new Date().toISOString().split('T')[0]
 
-  const title = generateTitle(date)
+  const title = generateTitle(filename, type)
   const description = originalFm.description || '1인 개발자를 위한 데일리 트렌드 인사이트'
   const keywords = Array.isArray(originalFm.keywords)
     ? originalFm.keywords
     : (originalFm.keywords ? [originalFm.keywords] : ['트렌드', '인사이트', '1인개발자'])
 
   const slug = filename.replace(/\.(md|mdx)$/, '')
-  const canonicalUrl = `${siteUrl}/insights/${slug}`
+  const urlPrefix = type === 'weekly' ? 'summaries/weekly' : type === 'monthly' ? 'summaries/monthly' : 'insights'
+  const canonicalUrl = `${siteUrl}/${urlPrefix}/${slug}`
   const ogImage = `${siteUrl}/assets/og-image.png`
 
   // YAML 이스케이프
@@ -144,7 +157,7 @@ function copyMdFiles(sourceDir, destDir, type) {
       const { frontmatter, body } = parseFrontmatter(content)
 
       // SEO frontmatter 생성
-      const seoFrontmatter = generateSeoFrontmatter(frontmatter, file, body)
+      const seoFrontmatter = generateSeoFrontmatter(frontmatter, file, body, type)
 
       // 최종 콘텐츠
       const finalContent = seoFrontmatter + body
