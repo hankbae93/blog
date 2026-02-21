@@ -159,8 +159,12 @@ function copyMdFiles(sourceDir, destDir, type) {
       // SEO frontmatter 생성
       const seoFrontmatter = generateSeoFrontmatter(frontmatter, file, body, type)
 
+      // MDX에서 중괄호를 JSX 표현식으로 해석하지 않도록 이스케이프
+      // 코드 블록(```) 밖의 {{ }} 패턴을 {`{{ }}`}로 변환
+      const escapedBody = body.replace(/(?<!`)(\{\{[^}`]+\}\})(?!`)/g, '{`$1`}')
+
       // 최종 콘텐츠
-      const finalContent = seoFrontmatter + body
+      const finalContent = seoFrontmatter + escapedBody
 
       // 파일 쓰기
       fs.writeFileSync(destPath, finalContent)

@@ -65,9 +65,6 @@ function generateMeta(dir) {
   // content 루트는 특별 처리
   if (dir === 'content') {
     const meta = `export default {
-  index: {
-    display: 'hidden',
-  },
   insights: {
     title: 'Insights',
     type: 'page',
@@ -103,13 +100,13 @@ function generateMeta(dir) {
       return `  '${slug}': '${escapedTitle}'`
     })
 
-  // index 라벨 결정
+  // index.mdx 파일 존재 여부 확인
+  const hasIndex = fs.existsSync(path.join(dirPath, 'index.mdx')) || fs.existsSync(path.join(dirPath, 'index.md'))
   const indexLabel = dir.includes('weekly') ? '주간 요약' : dir.includes('monthly') ? '월간 리포트' : '개요'
 
-  // index 항목을 맨 앞에 추가
+  const indexEntry = hasIndex ? `  index: '${indexLabel}',\n` : ''
   const meta = `export default {
-  index: '${indexLabel}',
-${entries.join(',\n')}
+${indexEntry}${entries.join(',\n')}
 }
 `
 

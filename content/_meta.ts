@@ -1,7 +1,4 @@
 export default {
-  index: {
-    display: 'hidden',
-  },
   insights: {
     title: 'Insights',
     type: 'page',
