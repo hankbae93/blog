@@ -2,7 +2,7 @@ const fs = require('fs')
 const path = require('path')
 
 const rootDir = process.cwd()
-const siteUrl = 'https://blog-three-lac-61.vercel.app'
+const siteUrl = 'https://www.hankbae.cloud'
 const siteName = 'Hank Dev Log'
 
 // 복사할 디렉토리 매핑

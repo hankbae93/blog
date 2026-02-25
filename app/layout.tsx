@@ -3,7 +3,7 @@ import { Head } from 'nextra/components'
 import { getPageMap } from 'nextra/page-map'
 import '../styles/globals.css'
 
-const siteUrl = 'https://blog-three-lac-61.vercel.app'
+const siteUrl = 'https://www.hankbae.cloud'
 const siteName = 'Hank Dev Log'
 const siteDescription = '1인 개발자 Hank의 트렌드 인사이트, 개발기, 회고를 담은 기술 블로그. MVP 아이디어, Product Hunt 트렌드, 프론트엔드/백엔드 개발 경험을 공유합니다.'
 

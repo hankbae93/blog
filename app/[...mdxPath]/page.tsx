@@ -1,7 +1,7 @@
 import { generateStaticParamsFor, importPage } from 'nextra/pages'
 import { useMDXComponents as getMDXComponents } from '../../mdx-components'
 
-const siteUrl = 'https://blog-three-lac-61.vercel.app'
+const siteUrl = 'https://www.hankbae.cloud'
 
 export const generateStaticParams = generateStaticParamsFor('mdxPath')
 

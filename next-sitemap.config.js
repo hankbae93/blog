@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://blog-three-lac-61.vercel.app',
+  siteUrl: 'https://www.hankbae.cloud',
   generateRobotsTxt: true,
   generateIndexSitemap: false,
   sitemapBaseFileName: 'sitemap-0',
