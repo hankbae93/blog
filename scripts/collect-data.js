@@ -483,11 +483,23 @@ async function collectGoogleTrends() {
       const pictureMatch = itemXml.match(/<ht:picture>(.*?)<\/ht:picture>/)
 
       if (titleMatch) {
+        // 기술 관련성 판별
+        const techTerms = ['ai', 'gpt', 'claude', 'coding', '코딩', '개발', 'startup',
+          'saas', '앱', 'app', '프로그래밍', 'github', 'openai', 'google', 'apple',
+          '인공지능', 'tech', '기술', 'api', '소프트웨어', '그록', 'grok', 'gemini',
+          '로봇', 'robot', 'bitcoin', 'crypto', '블록체인', 'blockchain', '메타',
+          '테슬라', 'tesla', '엔비디아', 'nvidia', '스타트업', '창업']
+        const titleLower = titleMatch[1].toLowerCase()
+        const newsText = newsItems.map(n => n.title.toLowerCase()).join(' ')
+        const combinedText = titleLower + ' ' + newsText
+        const techRelevant = techTerms.some(t => combinedText.includes(t))
+
         items.push({
           title: titleMatch[1],
           traffic: trafficMatch ? trafficMatch[1] : 'N/A',
           related_queries: relatedQueries,
-          news_items: newsItems.slice(0, 3)  // 최대 3개 뉴스
+          news_items: newsItems.slice(0, 3),  // 최대 3개 뉴스
+          tech_relevant: techRelevant
         })
         count++
       }
@@ -500,69 +512,92 @@ async function collectGoogleTrends() {
   }
 }
 
-// Naver Trends 급상승 검색어 (Zum 실시간 검색어 활용)
-async function collectNaverTrends() {
-  try {
-    // Naver 실시간 검색어는 공식 API가 없고, 2021년부터 서비스 종료됨
-    // 대안으로 Zum 실시간 검색어 또는 네이버 쇼핑인사이트 활용
+// 한국 테크 커뮤니티 트렌드 (Naver DataLab + Disquiet)
+async function collectKoreanTechTrends() {
+  const items = []
 
-    const items = []
-
-    // 1. Zum 실시간 검색어 시도
+  // 1. Naver DataLab Search Trend API (기술 키워드 모니터링)
+  if (process.env.NAVER_CLIENT_ID && process.env.NAVER_CLIENT_SECRET) {
     try {
-      const zumRes = await fetch('https://zum.com/')
-      const zumHtml = zumRes.data
+      const techKeywords = [
+        { groupName: 'AI', keywords: ['AI', '인공지능'] },
+        { groupName: '코딩', keywords: ['코딩', '프로그래밍'] },
+        { groupName: 'SaaS', keywords: ['SaaS', '클라우드서비스'] },
+        { groupName: '앱개발', keywords: ['앱개발', '앱만들기'] },
+        { groupName: '자동화', keywords: ['자동화', 'RPA'] },
+        { groupName: 'GPT', keywords: ['GPT', 'ChatGPT'] },
+        { groupName: 'Claude', keywords: ['클로드', 'Claude AI'] },
+        { groupName: '노코드', keywords: ['노코드', '로우코드'] }
+      ]
 
-      // Zum 페이지에서 실시간 검색어 추출
-      const keywordMatches = zumHtml.matchAll(/<span[^>]*class="[^"]*keyword[^"]*"[^>]*>([^<]+)<\/span>/gi) ||
-                             zumHtml.matchAll(/<a[^>]*class="[^"]*rank[^"]*"[^>]*>([^<]+)<\/a>/gi)
+      const endDate = new Date().toISOString().split('T')[0]
+      const startDate = new Date(Date.now() - 30 * 24 * 60 * 60 * 1000).toISOString().split('T')[0]
 
-      let rank = 1
-      for (const match of keywordMatches) {
-        if (rank > 20) break
-        const keyword = match[1].trim()
-        if (keyword && keyword.length > 1 && !/^\d+$/.test(keyword)) {
+      const body = JSON.stringify({
+        startDate,
+        endDate,
+        timeUnit: 'date',
+        keywordGroups: techKeywords
+      })
+
+      const res = await fetch('https://openapi.naver.com/v1/datalab/search', {
+        method: 'POST',
+        headers: {
+          'X-Naver-Client-Id': process.env.NAVER_CLIENT_ID,
+          'X-Naver-Client-Secret': process.env.NAVER_CLIENT_SECRET,
+          'Content-Type': 'application/json'
+        },
+        body
+      })
+
+      const data = JSON.parse(res.data)
+      for (const result of (data.results || [])) {
+        const values = result.data || []
+        if (values.length >= 2) {
+          const recent = values[values.length - 1].ratio
+          const weekAgo = values[Math.max(0, values.length - 8)].ratio
+          const change = recent - weekAgo
           items.push({
-            rank: rank++,
-            title: keyword,
-            change: 'same',
-            category: ''
+            title: result.title,
+            type: 'naver_datalab',
+            ratio: recent,
+            change: change > 0 ? 'rising' : change < 0 ? 'falling' : 'stable',
+            change_value: change.toFixed(1)
           })
         }
       }
     } catch (e) {
-      // Zum 실패 시 무시
+      console.log(`    ⚠️  Naver DataLab: ${e.message}`)
     }
+  }
 
-    // 2. Naver 쇼핑인사이트 인기검색어 시도 (대체)
-    if (items.length === 0) {
-      try {
-        const shoppingRes = await fetch('https://datalab.naver.com/shoppingInsight/sCategory.naver')
-        // 쇼핑 카테고리 인기 검색어 추출 시도
-      } catch (e) {
-        // 실패 시 무시
+  // 2. Disquiet (한국 스타트업 커뮤니티) 인기 제품
+  try {
+    const res = await fetch('https://disquiet.io/')
+    const html = res.data
+    const matches = html.matchAll(/<a[^>]*href="(\/product\/[^"]+)"[^>]*>([^<]+)<\/a>/g)
+    let count = 0
+    for (const match of matches) {
+      if (count >= 5) break
+      const title = match[2].trim()
+      if (title && title.length > 1) {
+        items.push({
+          title,
+          url: `https://disquiet.io${match[1]}`,
+          type: 'disquiet',
+          change: 'new'
+        })
+        count++
       }
     }
+  } catch (e) {
+    console.log(`    ⚠️  Disquiet: ${e.message}`)
+  }
 
-    // 3. Naver DataLab API 시도 (환경변수 있는 경우)
-    if (process.env.NAVER_CLIENT_ID && process.env.NAVER_CLIENT_SECRET) {
-      try {
-        // Naver 검색어 트렌드 API - 특정 키워드의 검색량 추이 확인용
-        // 실시간 급상승 검색어는 제공하지 않지만, 관심 키워드 모니터링 가능
-        console.log('  ℹ️  Naver API available for keyword trend analysis')
-      } catch (e) {
-        // API 호출 실패
-      }
-    }
-
-    return {
-      status: items.length > 0 ? 'success' : 'partial',
-      items,
-      note: items.length === 0 ? 'Naver retired real-time trending in 2021. Using alternative sources.' : undefined
-    }
-  } catch (error) {
-    console.log(`  ❌ Naver Trends error: ${error.message}`)
-    return { status: 'failed', error: error.message, items: [] }
+  return {
+    status: items.length > 0 ? 'success' : 'partial',
+    items,
+    note: 'Korean tech community trends (Naver DataLab + Disquiet)'
   }
 }
 
@@ -1039,7 +1074,7 @@ async function collectAll() {
     { name: 'indie_hackers', label: 'Indie Hackers', fn: collectIndieHackers },
     { name: 'techcrunch', label: 'TechCrunch', fn: collectTechCrunch },
     { name: 'google_trends', label: 'Google Trends', fn: collectGoogleTrends },
-    { name: 'naver_trends', label: 'Naver Trends', fn: collectNaverTrends },
+    { name: 'korean_tech_trends', label: 'Korean Tech Trends', fn: collectKoreanTechTrends },
     { name: 'playstore_niche', label: 'Play Store Niche', fn: collectPlayStoreNiche },
     { name: 'appstore_niche', label: 'App Store Niche', fn: collectAppStoreNiche }
   ]

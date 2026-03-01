@@ -74,11 +74,11 @@
       "geo": "KR",
       "note": "한국 실시간 급상승 검색어 (RSS 피드, API 키 불필요)"
     },
-    "naver_trends": {
-      "name": "Naver Trends",
+    "korean_tech_trends": {
+      "name": "Korean Tech Trends",
       "enabled": true,
-      "type": "scraping",
-      "note": "네이버 실시간 검색어는 2021년 서비스 종료. 대체 소스(Zum 등) 활용"
+      "type": "multi_source",
+      "note": "Naver DataLab 기술 키워드 검색량 + Disquiet 한국 스타트업 커뮤니티"
     },
     "playstore_niche": {
       "name": "Play Store Niche Apps",
@@ -96,7 +96,7 @@
   "naver_api": {
     "client_id_env": "NAVER_CLIENT_ID",
     "client_secret_env": "NAVER_CLIENT_SECRET",
-    "note": "Naver DataLab API (선택) - 실시간 검색어 API는 미제공"
+    "note": "Naver DataLab Search Trend API - 기술 키워드 검색량 모니터링용"
   },
   "youtube_api": {
     "api_key_env": "YOUTUBE_API_KEY",

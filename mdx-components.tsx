@@ -1,4 +1,5 @@
 import { useMDXComponents as getDocsMDXComponents } from 'nextra-theme-docs'
+import { Callout, Tabs, Cards, Steps } from 'nextra/components'
 
 const docsComponents = getDocsMDXComponents()
 
@@ -68,6 +69,65 @@ function YouTubeThumbnail({
         </div>
       </div>
     </a>
+  )
+}
+
+// YouTube 임베드 컴포넌트 (인라인 재생)
+function YouTubeEmbed({
+  id,
+  title,
+  views,
+  channel,
+  start
+}: {
+  id: string
+  title?: string
+  views?: number
+  channel?: string
+  start?: number
+}) {
+  const formatViews = (num: number) => {
+    if (num >= 1000000) return `${(num / 1000000).toFixed(1)}M`
+    if (num >= 1000) return `${(num / 1000).toFixed(1)}K`
+    return num.toString()
+  }
+
+  return (
+    <div className="youtube-embed my-4">
+      <div className="relative rounded-lg overflow-hidden shadow-md bg-gray-100 dark:bg-gray-800">
+        <div className="relative aspect-video">
+          <iframe
+            src={`https://www.youtube-nocookie.com/embed/${id}${start ? `?start=${start}` : ''}`}
+            title={title || 'YouTube video'}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            loading="lazy"
+            className="absolute inset-0 w-full h-full border-0"
+          />
+        </div>
+        {(title || channel || views !== undefined) && (
+          <div className="p-3">
+            {title && (
+              <h4 className="font-medium text-gray-900 dark:text-gray-100 text-sm mb-1">
+                {title}
+              </h4>
+            )}
+            <div className="flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
+              {channel && <span>{channel}</span>}
+              {views !== undefined && (
+                <span className="flex items-center gap-1">
+                  <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                  </svg>
+                  {formatViews(views)}
+                </span>
+              )}
+            </div>
+          </div>
+        )}
+      </div>
+    </div>
   )
 }
 
@@ -333,7 +393,12 @@ function SourceTag({ tag }: { tag: string }) {
 export function useMDXComponents(components?: Record<string, React.ComponentType>) {
   return {
     ...docsComponents,
+    Callout,
+    Tabs,
+    Cards,
+    Steps,
     YouTubeThumbnail,
+    YouTubeEmbed,
     StatCard,
     TrendBadge,
     RankBar,

@@ -127,6 +127,18 @@ run_analyze_app_trends() {
     fi
 }
 
+# 3.7. 피처된 앱 추적 업데이트
+run_update_featured_apps() {
+    log "📝 Step 3.7: Updating featured apps tracking..."
+    if [ -f scripts/update-featured-apps.js ]; then
+        if node scripts/update-featured-apps.js 2>&1 | tee -a "logs/pipeline-$DATE.log"; then
+            log "✅ Featured apps updated"
+        else
+            log "⚠️  Featured apps update failed, continuing..."
+        fi
+    fi
+}
+
 # 4. 콘텐츠 동기화
 run_sync() {
     log "🔄 Step 4: Syncing content..."
@@ -164,6 +176,61 @@ Co-Authored-By: Claude <noreply@anthropic.com>"
     fi
 }
 
+# 6. 주간/월간 요약 catch-up (누락 시 자동 실행)
+run_catchup_summaries() {
+    log "🔍 Step 6: Checking for missed weekly/monthly summaries..."
+
+    # 주간 요약 catch-up
+    WEEKLY_LOCK="logs/.last-run-weekly"
+    SHOULD_RUN_WEEKLY=false
+
+    if [ ! -f "$WEEKLY_LOCK" ]; then
+        # 한 번도 실행 안 됨
+        SHOULD_RUN_WEEKLY=true
+    else
+        LAST_WEEKLY=$(cat "$WEEKLY_LOCK")
+        # macOS date: 마지막 실행일로부터 경과일 계산
+        LAST_WEEKLY_EPOCH=$(date -j -f "%Y-%m-%d" "$LAST_WEEKLY" "+%s" 2>/dev/null || echo "0")
+        NOW_EPOCH=$(date "+%s")
+        DAYS_SINCE_WEEKLY=$(( (NOW_EPOCH - LAST_WEEKLY_EPOCH) / 86400 ))
+
+        if [ "$DAYS_SINCE_WEEKLY" -ge 7 ]; then
+            SHOULD_RUN_WEEKLY=true
+            log "  ⏰ Weekly summary overdue (last: $LAST_WEEKLY, ${DAYS_SINCE_WEEKLY} days ago)"
+        fi
+    fi
+
+    if [ "$SHOULD_RUN_WEEKLY" = true ]; then
+        log "  📊 Triggering weekly summary catch-up..."
+        if bash scripts/run-weekly.sh 2>&1 | tee -a "logs/pipeline-$DATE.log"; then
+            log "  ✅ Weekly catch-up complete"
+        else
+            log "  ⚠️  Weekly catch-up failed, continuing..."
+        fi
+    else
+        log "  ✅ Weekly summary is up to date"
+    fi
+
+    # 월간 요약 catch-up (매월 1~5일 사이에 전월 리포트 확인)
+    DAY_OF_MONTH=$(date +%d)
+    if [ "$DAY_OF_MONTH" -le 5 ]; then
+        LAST_MONTH=$(date -v-1m +%Y-%m)
+        MONTHLY_FILE="generated/summaries/monthly/${LAST_MONTH}.md"
+
+        if [ ! -f "$MONTHLY_FILE" ]; then
+            log "  ⏰ Monthly summary missing for $LAST_MONTH"
+            log "  📊 Triggering monthly summary catch-up..."
+            if bash scripts/run-monthly.sh 2>&1 | tee -a "logs/pipeline-$DATE.log"; then
+                log "  ✅ Monthly catch-up complete"
+            else
+                log "  ⚠️  Monthly catch-up failed, continuing..."
+            fi
+        else
+            log "  ✅ Monthly summary for $LAST_MONTH exists"
+        fi
+    fi
+}
+
 # 메인 실행
 main() {
     case "${1:-all}" in
@@ -187,8 +254,10 @@ main() {
             run_analyze
             run_update_trends
             run_analyze_app_trends
+            run_update_featured_apps
             run_sync
             run_git
+            run_catchup_summaries
             ;;
     esac
 

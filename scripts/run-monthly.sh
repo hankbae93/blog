@@ -2,6 +2,7 @@
 
 # PRD-Agent Monthly Summary Pipeline
 # 매월 1일 자동으로 실행되는 월간 요약 파이프라인
+# catch-up 로직: launchd RunAtLoad로 매번 호출되어도 안전하게 중복 방지
 
 set -e
 
@@ -18,6 +19,29 @@ mkdir -p generated/summaries/monthly
 DATE=$(date +%Y-%m-%d)
 LAST_MONTH=$(date -v-1m +%Y-%m)  # macOS
 # Linux: LAST_MONTH=$(date -d "1 month ago" +%Y-%m)
+
+# Lock 파일 기반 중복 실행 방지
+LOCK_FILE="logs/.last-run-monthly"
+
+# 이번 달의 리포트(전월 대상)가 이미 존재하면 스킵
+MONTHLY_FILE="generated/summaries/monthly/${LAST_MONTH}.md"
+if [ -f "$MONTHLY_FILE" ]; then
+    echo "[$(date '+%Y-%m-%d %H:%M:%S')] Monthly summary for ${LAST_MONTH} already exists, skipping..."
+    exit 0
+fi
+
+# 마지막 실행 후 28일 미경과 시 스킵 (RunAtLoad 매일 호출 방지)
+if [ -f "$LOCK_FILE" ]; then
+    LAST_RUN=$(cat "$LOCK_FILE")
+    LAST_RUN_EPOCH=$(date -j -f "%Y-%m-%d" "$LAST_RUN" "+%s" 2>/dev/null || echo "0")
+    NOW_EPOCH=$(date "+%s")
+    DAYS_SINCE=$(( (NOW_EPOCH - LAST_RUN_EPOCH) / 86400 ))
+
+    if [ "$DAYS_SINCE" -lt 28 ]; then
+        echo "[$(date '+%Y-%m-%d %H:%M:%S')] Last monthly run was ${DAYS_SINCE} days ago (${LAST_RUN}), skipping..."
+        exit 0
+    fi
+fi
 
 # 로그 함수
 log() {
@@ -76,6 +100,9 @@ Co-Authored-By: Claude <noreply@anthropic.com>"
         log "❌ Git push failed"
     fi
 fi
+
+# 실행 완료 기록
+echo "$DATE" > "$LOCK_FILE"
 
 log "=========================================="
 log "Monthly pipeline completed!"

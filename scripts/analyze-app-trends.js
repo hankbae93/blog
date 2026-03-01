@@ -266,6 +266,43 @@ async function main() {
   console.log('📊 Analyzing trends...')
   const results = analyzeAppTrends(history)
 
+  // 6.5 피처 이력 어노테이션
+  console.log('📝 Annotating featured status...')
+  const featuredPath = path.join(historyDir, 'featured-apps.json')
+  let featuredData = { featured: {} }
+  if (fs.existsSync(featuredPath)) {
+    featuredData = JSON.parse(fs.readFileSync(featuredPath, 'utf8'))
+  }
+
+  const sevenDaysAgo = new Date()
+  sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7)
+  const cutoff = sevenDaysAgo.toISOString().split('T')[0]
+
+  const annotate = (apps) => {
+    for (const app of apps) {
+      const feat = featuredData.featured[app.id]
+      if (feat && feat.last_featured >= cutoff) {
+        app.recently_featured = true
+        app.last_featured_date = feat.last_featured
+        app.feature_count = feat.feature_count
+      } else {
+        app.recently_featured = false
+      }
+    }
+  }
+
+  annotate(results.rising || [])
+  annotate(results.newEntries || [])
+  annotate(results.consistent || [])
+  annotate(results.falling || [])
+
+  const recentlyFeaturedCount = [
+    ...results.rising || [],
+    ...results.newEntries || [],
+    ...results.consistent || []
+  ].filter(a => a.recently_featured).length
+  console.log(`  Recently featured (skip in analysis): ${recentlyFeaturedCount}`)
+
   // 7. 결과 저장
   saveAnalysisResults(results)
 
