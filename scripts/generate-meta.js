@@ -100,13 +100,8 @@ function generateMeta(dir) {
       return `  '${slug}': '${escapedTitle}'`
     })
 
-  // index.mdx 파일 존재 여부 확인
-  const hasIndex = fs.existsSync(path.join(dirPath, 'index.mdx')) || fs.existsSync(path.join(dirPath, 'index.md'))
-  const indexLabel = dir.includes('weekly') ? '주간 요약' : dir.includes('monthly') ? '월간 리포트' : '개요'
-
-  const indexEntry = hasIndex ? `  index: '${indexLabel}',\n` : ''
   const meta = `export default {
-${indexEntry}${entries.join(',\n')}
+${entries.join(',\n')}
 }
 `
 
