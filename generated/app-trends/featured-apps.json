@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-03-02T03:06:07.127Z",
-  "total_apps": 94,
+  "last_updated": "2026-03-03T00:58:09.330Z",
+  "total_apps": 95,
   "featured": {
     "323061162": {
       "id": "323061162",
@@ -246,10 +246,11 @@
     "1210251567": {
       "id": "1210251567",
       "first_featured": "2026-02-11",
-      "last_featured": "2026-02-11",
-      "feature_count": 1,
+      "last_featured": "2026-03-03",
+      "feature_count": 2,
       "last_featured_dates": [
-        "2026-02-11"
+        "2026-02-11",
+        "2026-03-03"
       ]
     },
     "1244429473": {
@@ -541,8 +542,8 @@
     "com.replit.app": {
       "id": "com.replit.app",
       "first_featured": "2026-02-07",
-      "last_featured": "2026-03-02",
-      "feature_count": 15,
+      "last_featured": "2026-03-03",
+      "feature_count": 16,
       "last_featured_dates": [
         "2026-02-07",
         "2026-02-10",
@@ -558,7 +559,8 @@
         "2026-02-23",
         "2026-02-25",
         "2026-03-01",
-        "2026-03-02"
+        "2026-03-02",
+        "2026-03-03"
       ]
     },
     "com.appointfix": {
@@ -772,8 +774,8 @@
     "tech.butterfly.app": {
       "id": "tech.butterfly.app",
       "first_featured": "2026-02-17",
-      "last_featured": "2026-03-02",
-      "feature_count": 8,
+      "last_featured": "2026-03-03",
+      "feature_count": 9,
       "last_featured_dates": [
         "2026-02-17",
         "2026-02-18",
@@ -782,7 +784,8 @@
         "2026-02-27",
         "2026-02-28",
         "2026-03-01",
-        "2026-03-02"
+        "2026-03-02",
+        "2026-03-03"
       ]
     },
     "com.qrcodescanner.barcodereader.qrcode": {
@@ -1040,19 +1043,30 @@
     "6742278016": {
       "id": "6742278016",
       "first_featured": "2026-03-02",
-      "last_featured": "2026-03-02",
-      "feature_count": 1,
+      "last_featured": "2026-03-03",
+      "feature_count": 2,
       "last_featured_dates": [
-        "2026-03-02"
+        "2026-03-02",
+        "2026-03-03"
       ]
     },
     "6756063147": {
       "id": "6756063147",
       "first_featured": "2026-03-02",
-      "last_featured": "2026-03-02",
+      "last_featured": "2026-03-03",
+      "feature_count": 2,
+      "last_featured_dates": [
+        "2026-03-02",
+        "2026-03-03"
+      ]
+    },
+    "com.lasta": {
+      "id": "com.lasta",
+      "first_featured": "2026-03-03",
+      "last_featured": "2026-03-03",
       "feature_count": 1,
       "last_featured_dates": [
-        "2026-03-02"
+        "2026-03-03"
       ]
     }
   }
