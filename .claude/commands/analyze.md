@@ -346,7 +346,7 @@ TypeScript(파랑), JavaScript(노랑), Python(초록), Rust(주황), Go(청록)
 
 ### Lobsters (개발자 커뮤니티)
 
-**[제목]** - {points}점
+**[{제목}]({url})** - {points}점
 <div className="source-tags">
 <SourceTag tag="{tag1}" />
 <SourceTag tag="{tag2}" />
@@ -358,9 +358,13 @@ TypeScript(파랑), JavaScript(노랑), Python(초록), Rust(주황), Go(청록)
 
 ### TechCrunch (테크 뉴스)
 
-**[제목]**
+**[{제목}]({url})**
 [2줄 요약]
 ```
+
+**작성 규칙:**
+- Lobsters와 TechCrunch 모든 항목에 반드시 원문 링크를 포함할 것
+- 제목은 한글로 번역하되, 링크는 원문 url 사용: `**[번역된 제목]({url})**`
 
 **Lobsters 태그 색상 지원:**
 security(빨강), api(파랑), performance(초록), ml(보라), practices(주황), programming(남색), web(청록), devops(노랑), linux(회색), retrocomputing(호박색), vibecoding(보라)
