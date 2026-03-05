@@ -1,0 +1,676 @@
+---
+title: "Insight | 2026-03-05"
+date: "2026-03-05"
+description: "MacBook Neo 발표와 AI 모델 대전, 글로벌 증시 폭락 속에서도 AI 도구 경쟁은 더 뜨거워진다"
+keywords:
+  - "MacBook Neo"
+  - "Gemini 3.1"
+  - "GPT-5.3"
+  - "바이브 코딩"
+  - "증시 폭락"
+openGraph:
+  type: "article"
+  title: "Insight | 2026-03-05"
+  description: "MacBook Neo 발표와 AI 모델 대전, 글로벌 증시 폭락 속에서도 AI 도구 경쟁은 더 뜨거워진다"
+  url: "https://www.hankbae.cloud/insights/2026-03-05"
+  siteName: "Hank Dev Log"
+  locale: "ko_KR"
+  images:
+    - url: "https://www.hankbae.cloud/assets/og-image.png"
+      width: 1200
+      height: 630
+      alt: "Insight | 2026-03-05"
+twitter:
+  card: "summary_large_image"
+  title: "Insight | 2026-03-05"
+  description: "MacBook Neo 발표와 AI 모델 대전, 글로벌 증시 폭락 속에서도 AI 도구 경쟁은 더 뜨거워진다"
+  images:
+    - "https://www.hankbae.cloud/assets/og-image.png"
+canonical: "https://www.hankbae.cloud/insights/2026-03-05"
+---
+
+
+# 2026-03-05 데일리 인사이트
+
+## 오늘의 흐름
+
+> **한 줄 요약**: Apple의 MacBook Neo가 해커뉴스를 뒤흔들고, Google·OpenAI가 동시에 신모델을 쏟아내며, "API 없는 웹사이트를 API로 만들어주는" 도구가 PH 1위를 차지한 하루
+
+1. **MacBook Neo 충격**: Apple이 완전히 새로운 라인업 MacBook Neo를 발표하며 HN 1,512점 역대급 관심 — 개발자 생태계에 새로운 하드웨어 기준 제시
+2. **AI 모델 가격 전쟁**: Gemini 3.1 Flash-Lite($0.25/M 토큰)와 GPT-5.3 Instant가 PH에 동시 등장하며 "더 싸고 더 빠르게" 경쟁 가속
+3. **바이브 코딩 메인스트림화**: PH에서 Enia Code, Projekt 등 AI 코딩 도구가 4개나 Top 10 진입, YouTube에서도 바이브 코딩 관련 영상이 대거 트렌딩
+
+---
+
+## 오늘의 신호
+
+| 신호 | 의미 | 기회 |
+|------|------|------|
+| MacBook Neo가 HN 1,512점 + 1,841개 댓글 기록 | Apple이 기존 Mac 라인업을 넘는 새 카테고리를 만들 정도로 하드웨어 혁신에 투자 중 | 새 하드웨어 폼팩터에 최적화된 앱/도구 선점 |
+| Gemini 3.1 Flash-Lite: 토큰당 $0.25 입력, 2.5배 빠른 첫 토큰 | AI API 비용이 급격히 하락 — 소규모 개발자도 대규모 AI 기능 도입 가능 | 고빈도 API 호출이 필요한 실시간 AI 앱 (채팅, 코드 어시스턴트, 번역) |
+| PH Top 10 중 AI 코딩/빌딩 도구가 5개 (Anything API, Kodo, Enia Code, Maxclaw, Projekt) | AI 코딩 시장이 "코드 생성" 에서 "전체 워크플로우 자동화"로 진화 중 | 특정 도메인(의료, 법률, 회계)에 특화된 AI 코딩 워크플로우 도구 |
+| Qwen3.5 관련 글이 HN 두 건 동시 화제 (505점 + 269점) | 오픈소스 AI 모델이 상용 모델에 근접 — 기업 종속 없는 AI 개발 가능 | Qwen3.5 파인튜닝으로 니치 도메인 전용 모델 구축 |
+| 글로벌 증시 폭락 (코스피 12% 급락, Google Trends 상위 10개 중 8개가 주식 관련) | 경기 불확실성 증가 — 하지만 AI/테크 투자는 지속 | 금융 불안 시기에 수요 증가하는 도구 (자산 관리, 가계부, 포트폴리오 분석) |
+
+---
+
+## Product Hunt 오늘의 제품
+
+### 1. Anything API ⬆️ 380 | 💬 86
+![thumbnail](https://ph-files.imgix.net/a5d945d7-db55-4fd6-a412-0b332c5cc687.png?auto=format)
+
+🔗 [Product Hunt](https://www.producthunt.com/products/notte?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29) | [공식 사이트](https://www.producthunt.com/r/XORVIP366I6U5U?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29)
+📂 API, Developer Tools, Artificial Intelligence
+
+#### 이 제품은 무엇인가?
+Anything API(Notte)는 **공개 API가 없는 웹사이트를 API로 변환**해주는 도구다. 브라우저에서 하는 작업을 설명하면, AI 에이전트가 해당 사이트를 직접 호출하는 커스텀 함수를 만들어준다. 서버리스로 배포하거나, Cron 스케줄로 돌리거나, API 엔드포인트로 호출할 수 있다.
+
+- 핵심 기능: 웹사이트 → 프로덕션 레디 API 엔드포인트 자동 생성
+- 작동 방식: 태스크를 자연어로 설명 → AI 에이전트가 브라우저 자동화 함수 빌드 → 서버리스 배포
+
+#### 왜 주목할만한가?
+1인 개발자가 가장 자주 겪는 고통 중 하나가 "이 서비스에 API가 없다"는 것이다. 스크래핑은 유지보수가 힘들고, 공식 API 대기는 끝이 없다. Anything API는 이 문제를 AI로 해결하며, 댓글 86개라는 높은 참여도가 실제 수요를 증명한다.
+
+| 구분 | 내용 |
+|------|------|
+| 타겟 사용자 | API 통합이 필요한 개발자, 자동화 빌더 |
+| 기존 대비 차별점 | 수동 스크래핑/Selenium 대신 AI가 자동으로 함수 생성 |
+| 수익 모델 | 서버리스 실행 기반 종량제 (추정) |
+| 제작자 | 4인 팀 |
+| 커뮤니티 반응 | 댓글 86개 — PH 오늘 최다 댓글 |
+
+**배울 점**: "API가 없는 서비스를 API화한다"는 명확한 가치 제안. 기술적으로 복잡하지만 사용자 입장에서는 "설명만 하면 된다"는 단순한 UX가 핵심.
+
+---
+
+### 2. Kodo ⬆️ 269 | 💬 29
+![thumbnail](https://ph-files.imgix.net/d75e31e6-ed25-4883-aa25-15d892d1a27d.png?auto=format)
+
+🔗 [Product Hunt](https://www.producthunt.com/products/kodo-3?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29) | [공식 사이트](https://www.producthunt.com/r/EWHRT3ACB66Z6J?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29)
+📂 Design Tools, Artificial Intelligence, Tech
+
+#### 이 제품은 무엇인가?
+Kodo는 **프롬프트 하나로 완전히 편집 가능한 디자인을 생성**하는 AI 디자인 도구다. 포스터, 슬라이드, 메뉴, SNS 그래픽 등을 만들 수 있는데, 기존 AI 디자인 도구와 달리 **평면 이미지가 아닌 레이어 구조**로 생성해서 텍스트, 색상, 레이아웃 등을 즉시 수정할 수 있다.
+
+- 핵심 기능: 프롬프트 → 편집 가능한 레이어드 디자인 생성
+- 작동 방식: 자연어 입력 → 구조화된 디자인 출력 → 인라인 편집 → 내보내기
+
+#### 왜 주목할만한가?
+Canva의 AI 기능은 이미지를 생성하지만 편집이 제한적이고, Midjourney는 평면 이미지만 만든다. Kodo는 이 둘 사이의 갭을 정확히 노렸다. 1인 메이커에게 필수적인 디자인 작업을 "생성 → 편집 → 내보내기" 원스톱으로 해결한다.
+
+| 구분 | 내용 |
+|------|------|
+| 타겟 사용자 | 디자이너 없이 마케팅 소재가 필요한 1인 창업자/마케터 |
+| 기존 대비 차별점 | AI 생성이지만 레이어 구조로 자유롭게 편집 가능 |
+| 수익 모델 | 프리미엄 (무료 체험 + 유료 구독 추정) |
+| 제작자 | 1인 메이커 |
+| 커뮤니티 반응 | 댓글 29개 |
+
+**배울 점**: "AI 생성물의 편집 가능성"이 차별화 포인트. 1인 메이커라도 명확한 틈새를 노리면 269표를 받을 수 있다.
+
+---
+
+### 3. Gemini 3.1 Flash-Lite ⬆️ 236 | 💬 7 | ⭐ 4.85
+![thumbnail](https://ph-files.imgix.net/671252b6-6a3d-4e71-9d3a-81b94e27d23b.avif?auto=format)
+
+🔗 [Product Hunt](https://www.producthunt.com/products/gemini-6?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29) | [공식 사이트](https://www.producthunt.com/r/D5ZTQM2ERPLXVN?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29)
+📂 API, Artificial Intelligence, Development
+
+#### 이 제품은 무엇인가?
+Google의 Gemini 3 시리즈 중 **가장 빠르고 저렴한 모델**이다. 입력 토큰당 $0.25, 출력 토큰당 $1.50으로, 이전 모델(Gemini 2.5 Flash) 대비 첫 토큰 생성이 2.5배 빠르고 출력 속도가 45% 향상되었으면서도 품질은 동등하거나 더 좋다.
+
+- 핵심 기능: 초저가 고속 AI 추론
+- 작동 방식: API 호출로 사용, 고빈도 작업(분류, 요약, 변환)에 최적화
+
+#### 왜 주목할만한가?
+토큰당 $0.25는 대규모 자동화를 구축하는 1인 개발자에게 게임 체인저다. 이전에는 비용 때문에 포기했던 "모든 사용자 입력에 AI를 거치는" 패턴이 현실적으로 가능해진다.
+
+| 구분 | 내용 |
+|------|------|
+| 타겟 사용자 | 대규모 AI 워크로드를 운영하는 개발자/기업 |
+| 기존 대비 차별점 | 2.5 Flash 대비 2.5배 빠른 첫 토큰 + 45% 높은 출력 속도 |
+| 수익 모델 | 종량제 API |
+| 제작자 | Google |
+| 커뮤니티 반응 | 댓글 7개, 평점 4.85/5.0 |
+
+**배울 점**: AI 모델 비용 하락은 곧 새로운 앱 카테고리의 탄생을 의미한다. "비용 때문에 안 됐던 것"이 무엇인지 역으로 생각하면 기회가 보인다.
+
+---
+
+### 4. Enia Code ⬆️ 230 | 💬 46
+![thumbnail](https://ph-files.imgix.net/7075d8de-5407-4355-928e-abe5f8e6cb29.png?auto=format)
+
+🔗 [Product Hunt](https://www.producthunt.com/products/enia-code?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29) | [공식 사이트](https://www.producthunt.com/r/KXALRUT4YHMUUE?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29)
+📂 Software Engineering, Developer Tools, Vibe coding
+
+#### 이 제품은 무엇인가?
+Enia Code는 **프롬프트 없이 알아서 작동하는 AI 코딩 에이전트**다. 대부분의 AI 코딩 도구는 사용자가 질문해야 답하지만, Enia Code는 코드를 작성하는 도중에 **버그, 성능 문제, 아키텍처 불일치, 리팩토링 기회를 자동으로 감지**한다. 프롬프팅도, 컨텍스트 재설명도 필요 없다.
+
+- 핵심 기능: 코딩 중 실시간 자동 코드 리뷰/개선 제안
+- 작동 방식: IDE에 통합되어 코드 변경을 감시하며 능동적으로 피드백 제공
+
+#### 왜 주목할만한가?
+"바이브 코딩" 토픽에 태그된 것이 의미심장하다. AI로 코드를 빠르게 작성하는 시대에, 그 코드의 품질을 자동으로 관리해주는 도구의 수요가 폭발적이다.
+
+| 구분 | 내용 |
+|------|------|
+| 타겟 사용자 | AI 코딩 도구를 사용하는 개발자 |
+| 기존 대비 차별점 | "물어봐야 답하는" 기존 AI 도구 대신 "알아서 감지" |
+| 수익 모델 | 구독형 SaaS (추정) |
+| 제작자 | 2인 팀 |
+| 커뮤니티 반응 | 댓글 46개 — 활발한 토론 |
+
+**배울 점**: "능동적(proactive) AI"는 다음 세대 개발자 도구의 핵심 패턴. 사용자가 요청하기 전에 문제를 찾아주는 도구가 차별화된다.
+
+---
+
+### 5. day1tabs ⬆️ 112 | 💬 17
+![thumbnail](https://ph-files.imgix.net/0a249463-4bff-402a-9c7e-7a368868d28b.png?auto=format)
+
+🔗 [Product Hunt](https://www.producthunt.com/products/day1tabs?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29) | [공식 사이트](https://www.producthunt.com/r/RNIZ7GDLV2RDOG?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29)
+📂 Chrome Extensions, Productivity
+
+#### 이 제품은 무엇인가?
+day1tabs는 **자정에 자동으로 브라우저 탭을 닫아주는 크롬 확장**이다. 단순히 닫기만 하는 게 아니라, 하루 동안 "실제로 사용한 탭"과 "안 쓴 탭"을 구분해서 보여준다. 중요한 탭은 다시 열 수 있고, 특정 도메인(Gmail, Docs 등)은 절대 닫지 않는 설정도 가능하다.
+
+- 핵심 기능: 자정 자동 탭 정리 + 사용/미사용 탭 분류
+- 작동 방식: 로컬에서만 동작, 데이터 수집 없음, 영구 무료
+
+#### 왜 주목할만한가?
+1인 개발자가 만든 간단한 크롬 확장인데 112표를 받았다. "탭 100개 열어놓는" 보편적 고통에 "자정에 리셋"이라는 직관적 해결책을 제시했다. AI 없이도 명확한 페인포인트를 풀면 주목받을 수 있다는 좋은 사례.
+
+| 구분 | 내용 |
+|------|------|
+| 타겟 사용자 | 탭을 수십 개 열어놓는 모든 사람 |
+| 기존 대비 차별점 | AI 없이 "시간 기반 자동 정리" + 사용 패턴 분석 |
+| 수익 모델 | 완전 무료 |
+| 제작자 | 1인 개발자 |
+| 커뮤니티 반응 | 댓글 17개 |
+
+**배울 점**: AI를 안 써도 된다. "자정에 탭 닫기"처럼 극도로 단순한 아이디어도 보편적 고통을 해결하면 100표 이상 받을 수 있다. 크롬 확장은 1인 개발자의 최적 런칭 채널.
+
+---
+
+## 앱 마켓 니치 트렌드
+
+Play Store와 App Store에서 30~150위권에 있는 앱 중 **대기업이 아닌 개발사**가 만든 **평점 4.0 이상** 앱을 분석합니다. 1인 개발자가 진입할 수 있는 기회를 찾는 것이 목표입니다.
+
+### 1. Notee: AI Note Taker 🆕 📱 iOS | PRODUCTIVITY #46
+![icon](https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c2/18/e7/c218e70b-b21b-d176-d73a-a5a6591575f0/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg)
+
+🔗 [App Store](https://apps.apple.com/us/app/notee-ai-note-taker/id6745517667?uo=4)
+⭐ 4.83 | 📊 리뷰 3,356개 | 🗓️ 2025년 5월 출시
+
+#### 이 앱은 무엇인가?
+Notee는 AI를 활용한 노트 앱으로, 음성 녹음이나 텍스트 입력을 자동으로 정리·요약해주는 도구다. 회의록, 강의 노트, 아이디어 메모 등을 AI가 구조화된 노트로 변환해준다.
+
+- 핵심 기능: AI 기반 노트 자동 정리 및 요약
+- 작동 방식: 음성/텍스트 입력 → AI 구조화 → 검색 가능한 노트 저장
+
+#### 왜 주목할만한가?
+2025년 5월 출시 후 불과 10개월 만에 리뷰 3,356개, 평점 4.83이라는 놀라운 성과를 거뒀다. App Store 생산성 TOP_GROSSING 46위는 실제로 돈을 내는 사용자가 많다는 뜻이다.
+
+| 구분 | 내용 |
+|------|------|
+| 타겟 사용자 | 학생, 직장인, 회의 참석자 |
+| 기존 대비 차별점 | AI 요약에 집중한 심플한 노트 앱 (기존 노트 앱과 경쟁하지 않고 "AI 정리" 기능으로 포지셔닝) |
+| 수익 모델 | 인앱 구독 |
+| 개발사 규모 | GM UniverseApps Limited (소규모) |
+| 성공 요인 | 명확한 유즈케이스 (회의록 정리) + 높은 평점 유지 |
+
+**1인 개발자가 배울 점**: "AI + 노트"라는 레드오션에서도 "요약 특화"라는 포지셔닝으로 성공 가능. 핵심은 하나의 기능을 극도로 잘 하는 것.
+
+---
+
+### 2. CardCosmic 🆕 📱 iOS | TOOLS #40
+![icon](https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/80/25/03/80250317-1adb-17a1-6775-add31274260f/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg)
+
+🔗 [App Store](https://apps.apple.com/us/app/cardcosmic/id6756063147?uo=4)
+⭐ 4.33 | 📊 리뷰 853개 | 🗓️ 2025년 12월 출시
+
+#### 이 앱은 무엇인가?
+CardCosmic은 디지털 명함/카드 관리 앱이다. 2025년 12월에 출시되어 3개월 만에 App Store 도구 카테고리 40위에 진입했다.
+
+- 핵심 기능: 디지털 명함 생성 및 관리
+- 작동 방식: 카드 디자인 → 공유 → 연락처 관리
+
+#### 왜 주목할만한가?
+출시 3개월 만에 리뷰 853개를 모은 빠른 성장세가 인상적이다. 디지털 명함은 반복적으로 시도되는 카테고리지만, 타이밍과 실행력으로 틈새를 잡은 사례.
+
+| 구분 | 내용 |
+|------|------|
+| 타겟 사용자 | 네트워킹이 중요한 프리랜서, 영업직 |
+| 기존 대비 차별점 | 심플한 카드 디자인 + 빠른 공유 |
+| 수익 모델 | 무료 (수익화 모델 발전 중 추정) |
+| 개발사 규모 | CardCosmic, Inc. (스타트업) |
+| 성공 요인 | 간결한 UX + 빠른 출시 후 반복 개선 |
+
+**1인 개발자가 배울 점**: "디지털 명함"처럼 이미 시장이 있는 카테고리도 UX를 극도로 단순하게 만들면 진입 가능하다.
+
+---
+
+### 3. Runna: Running Plans & Coach 🆕 📱 Android | HEALTH_AND_FITNESS #32
+🔗 [Play Store](https://play.google.com/store/apps/details?id=com.runbuddy.prod)
+⭐ 4.60 | 📊 리뷰 594개 | 니치 점수 100
+
+#### 이 앱은 무엇인가?
+Runna는 개인화된 러닝 훈련 계획을 제공하는 코칭 앱이다. 사용자의 피트니스 수준에 맞춰 훈련 스케줄을 자동 생성하고, 달리기 중 실시간 가이드를 제공한다. Strava와 연계되어 운동 데이터를 통합 관리할 수 있다.
+
+- 핵심 기능: AI 기반 개인화 러닝 코칭 + 훈련 계획 자동 생성
+- 작동 방식: 목표 설정 → 맞춤형 주간 플랜 → 실시간 오디오 코칭
+
+#### 왜 주목할만한가?
+건강/피트니스 TOP_GROSSING 32위는 실제 구독 매출이 발생한다는 뜻이다. 니치 점수 100으로 대기업 앱이 아니면서 수익화에 성공한 사례.
+
+| 구분 | 내용 |
+|------|------|
+| 타겟 사용자 | 러닝을 시작하거나 체계적으로 훈련하려는 러너 |
+| 기존 대비 차별점 | Strava 연계 + AI 개인화 코칭 (단순 트래킹 넘어 코칭) |
+| 수익 모델 | 구독형 ($19.99~$204.99 인앱) |
+| 개발사 규모 | Strava Inc. 산하 |
+| 성공 요인 | "트래킹"에서 "코칭"으로 가치 이동 |
+
+**1인 개발자가 배울 점**: 운동 앱은 "기록"만으로는 차별화가 어렵다. "다음에 뭘 해야 하는지 알려주는" 코칭 기능이 수익화의 핵심.
+
+---
+
+### 4. Yoink - Improved Drag and Drop 🆕 📱 iOS | PRODUCTIVITY #40
+🔗 [App Store](https://apps.apple.com/us/app/yoink-improved-drag-and-drop/id1260915283?uo=4)
+⭐ 4.74 | 📊 리뷰 1,036개 | 니치 점수 95
+
+#### 이 앱은 무엇인가?
+Yoink은 iOS/iPad에서 드래그 앤 드롭을 개선하는 유틸리티 앱이다. 파일, 이미지, 텍스트 등을 임시로 보관하는 "쉘프" 역할을 해서, 앱 간 콘텐츠 이동을 훨씬 쉽게 만든다.
+
+- 핵심 기능: 드래그 앤 드롭 임시 보관소
+- 작동 방식: 콘텐츠를 쉘프에 드롭 → 다른 앱에서 꺼내 쓰기
+
+#### 왜 주목할만한가?
+1인 개발자(Matthias Gansrigler-Hrad)가 만든 유료 앱($4.99)인데 유료 생산성 앱 40위에 올라있다. macOS 버전도 있어 Apple 생태계 전반에서 꾸준히 팔리는 유틸리티다.
+
+| 구분 | 내용 |
+|------|------|
+| 타겟 사용자 | iPad/Mac 파워 유저 |
+| 기존 대비 차별점 | OS 레벨의 UX 불편함을 해결하는 유틸리티 |
+| 수익 모델 | 유료 앱 $4.99 (일회성 구매) |
+| 개발사 규모 | 1인 개발자 |
+| 성공 요인 | Apple 에코시스템의 빈 틈을 정확히 공략 |
+
+**1인 개발자가 배울 점**: OS의 작은 불편함을 해결하는 유틸리티 앱은 경쟁이 적고, 유료 모델로도 충분히 먹힌다. MacBook Neo 출시로 Apple 생태계 유틸리티 수요가 더 늘어날 수 있다.
+
+---
+
+### 5. Story Planner for Writers 🆕 📱 iOS | PRODUCTIVITY #43
+🔗 [App Store](https://apps.apple.com/us/app/story-planner-for-writers/id860024390?uo=4)
+⭐ 4.73 | 📊 리뷰 1,138개 | 니치 점수 95
+
+#### 이 앱은 무엇인가?
+Story Planner는 작가를 위한 스토리 구조화 도구다. 캐릭터, 플롯, 장면, 세계관 등을 체계적으로 정리하고 관리할 수 있다. 소설, 시나리오, 웹소설 작가들이 주요 사용자다.
+
+- 핵심 기능: 스토리 구조 관리 (캐릭터, 플롯, 장면 정리)
+- 작동 방식: 템플릿 기반 스토리 구조화 → 장면별 메모 → 전체 구조 시각화
+
+#### 왜 주목할만한가?
+1인 개발자(Bartolome Masco Lopez)가 만든 유료 앱으로, 작가라는 매우 특화된 니치 시장에서 리뷰 1,138개를 쌓았다. "모든 사람을 위한 앱"이 아닌 "작가만을 위한 앱"이 유료 42위까지 올라간 사례.
+
+| 구분 | 내용 |
+|------|------|
+| 타겟 사용자 | 소설/시나리오/웹소설 작가 |
+| 기존 대비 차별점 | 범용 노트 앱이 아닌 "스토리 구조" 전용 도구 |
+| 수익 모델 | 유료 앱 (일회성) |
+| 개발사 규모 | 1인 개발자 |
+| 성공 요인 | 극도로 특화된 타겟 + 오랜 기간 꾸준한 업데이트 |
+
+**1인 개발자가 배울 점**: "작가를 위한 플롯 관리"처럼 극도로 특화된 도구는 경쟁이 적고 충성 고객이 높다. 전문가용 니치 도구는 유료 모델이 자연스럽다.
+
+---
+
+### 여전히 순위권인 앱 (이전 분석 참조)
+
+| 앱 | 플랫폼 | 현재 순위 | 변동 | 최근 분석일 |
+|----|--------|-----------|------|------------|
+| [Manus AI](https://play.google.com/store/apps/details?id=tech.butterfly.app) | Android | #42 | 유지 | 2026-03-04 |
+| [YarnPal - Crochet for Beginner](https://play.google.com/store/apps/details?id=com.yarnpal.ai) | Android | #31 | 유지 | 2026-02-26 |
+| [Antique Identifier Zophi](https://play.google.com/store/apps/details?id=com.labs326.antique) | Android | #41 | 유지 | 2026-03-02 |
+| [Thrift & Profit Finder - Gemli](https://play.google.com/store/apps/details?id=com.labs326.gemli) | Android | #50 | 유지 | 2026-03-02 |
+| [Replit: Build apps with AI](https://play.google.com/store/apps/details?id=com.replit.app) | Android | #38 | 유지 | 2026-03-03 |
+| [AI Calorie Counter - Appediet](https://play.google.com/store/apps/details?id=com.appediet.appediet) | Android | #34 | 유지 | 2026-03-02 |
+| [Payout: Claim Class Actions](https://apps.apple.com/us/app/payout-claim-class-actions/id6748968935?uo=4) | iOS | #31 | 유지 | 2026-03-02 |
+| [Candle: Couples & Relationship](https://apps.apple.com/us/app/candle-couples-relationship/id6743355635?uo=4) | iOS | #43 | 유지 | 2026-03-02 |
+
+---
+
+### 앱 마켓 니치 기회 요약
+
+| 기회 영역 | 사례 | 접근 전략 | 난이도 |
+|-----------|------|-----------|--------|
+| AI 노트/요약 도구 | Notee: AI Note Taker | 특정 유즈케이스(회의록, 강의)에 특화된 노트 앱 | ⭐⭐ |
+| 디지털 명함/네트워킹 | CardCosmic | 미니멀 UX + 빠른 공유 기능 중심 | ⭐ |
+| 운동 코칭 (기록→가이드) | Runna | "다음에 뭘 해야 하는지" 알려주는 AI 코칭 앱 | ⭐⭐⭐ |
+| OS 유틸리티 (Apple 생태계) | Yoink | macOS/iOS의 작은 UX 불편함 해결 | ⭐⭐ |
+| 전문가용 니치 도구 | Story Planner | 특정 직업군(작가, 디자이너, 음악가)을 위한 전용 도구 | ⭐ |
+
+---
+
+## 앱 마켓 급상승 알림
+
+### 신규 진입 앱
+
+| 앱 | 플랫폼 | 카테고리 | 진입 순위 | 리뷰 | 평점 |
+|----|--------|----------|-----------|------|------|
+| [Notee: AI Note Taker](https://apps.apple.com/us/app/notee-ai-note-taker/id6745517667?uo=4) | iOS | PRODUCTIVITY | #46 | 3,356 | 4.83 |
+| [CardCosmic](https://apps.apple.com/us/app/cardcosmic/id6756063147?uo=4) | iOS | TOOLS | #40 | 853 | 4.33 |
+| [Runna](https://play.google.com/store/apps/details?id=com.runbuddy.prod) | Android | HEALTH_AND_FITNESS | #32 | 594 | 4.60 |
+| [CNC Machinist Calculator Pro](https://apps.apple.com/us/app/cnc-machinist-calculator-pro/id1037668281?uo=4) | iOS | PRODUCTIVITY | #46 | 659 | 4.71 |
+| [Yoink](https://apps.apple.com/us/app/yoink-improved-drag-and-drop/id1260915283?uo=4) | iOS | PRODUCTIVITY | #40 | 1,036 | 4.74 |
+| [Story Planner for Writers](https://apps.apple.com/us/app/story-planner-for-writers/id860024390?uo=4) | iOS | PRODUCTIVITY | #43 | 1,138 | 4.73 |
+| [Contacts Sync Pro](https://apps.apple.com/us/app/contacts-sync-pro/id686378579?uo=4) | iOS | PRODUCTIVITY | #45 | 788 | 4.72 |
+
+**신규 진입 앱 분석:**
+- iOS 생산성 유료 앱에 유틸리티 앱(Yoink, Contacts Sync Pro, CNC Calculator)이 대거 진입한 것이 눈에 띈다
+- MacBook Neo 발표와 함께 Apple 생태계 유틸리티에 대한 관심이 높아졌을 가능성
+
+---
+
+## 해커뉴스 하이라이트
+
+### 주요 토론
+
+<div className="hn-card-grid">
+<HackerNewsCard title="MacBook Neo 발표" url="https://www.apple.com/newsroom/2026/03/say-hello-to-macbook-neo/" points={1512} comments={1841} />
+<HackerNewsCard title="Qwen 세계에 무슨 일이 일어나고 있는가" url="https://simonwillison.net/2026/Mar/4/qwen/" points={505} comments={238} />
+<HackerNewsCard title="Flock 카메라 인터랙티브 지도" url="https://deflock.org/map#map=5/37.125286/-96.284180" points={498} comments={189} />
+<HackerNewsCard title="새로운 Flash 만들기" url="https://bill.newgrounds.com/news/post/1607118" points={282} comments={71} />
+<HackerNewsCard title="Qwen3.5 파인튜닝 가이드 – Unsloth 문서" url="https://unsloth.ai/docs/models/qwen3.5/fine-tune" points={269} comments={64} />
+<HackerNewsCard title="'알고 보니(It turns out)' (2010)" url="https://jsomers.net/blog/it-turns-out" points={236} comments={75} />
+</div>
+
+### 주목할 기사
+
+#### MacBook Neo 발표 🔥🔥 1,512점 | 💬 1,841개
+**원문**: [MacBook Neo](https://www.apple.com/newsroom/2026/03/say-hello-to-macbook-neo/)
+
+**무슨 내용인가?**
+Apple이 기존 MacBook Air/Pro 라인업과는 별도로 완전히 새로운 "MacBook Neo" 카테고리를 발표했다. HN 역대급인 1,512점과 1,841개 댓글이 달렸다. 댓글에서는 가격, 스펙, 기존 라인업과의 차별점, 개발자 작업에 적합한지 등이 집중 토론되고 있다.
+
+**1인 개발자에게 의미하는 바**
+새로운 Apple 하드웨어 폼팩터는 곧 새로운 앱 기회를 의미한다. 특히 새 디바이스에 최적화된 유틸리티, 개발 도구, 생산성 앱이 초기 진입 기회가 될 수 있다.
+
+---
+
+#### Qwen 세계에 무슨 일이 일어나고 있는가 🔥 505점 | 💬 238개
+**원문**: [Something is afoot in the land of Qwen](https://simonwillison.net/2026/Mar/4/qwen/)
+
+**무슨 내용인가?**
+Simon Willison이 Qwen3.5 모델군의 급격한 성능 향상을 분석한 글이다. 오픈소스 AI 모델이 상용 모델과의 격차를 빠르게 좁히고 있으며, Unsloth를 이용한 파인튜닝 가이드까지 HN에서 동시에 화제가 되었다 (269점).
+
+**1인 개발자에게 의미하는 바**
+OpenAI/Anthropic/Google에 종속되지 않고 자체 AI 모델을 운영할 수 있는 시대가 다가온다. 특히 프라이버시가 중요한 도메인(의료, 법률, 금융)에서 로컬/자체 호스팅 AI의 기회가 커진다. Unsloth를 활용한 파인튜닝으로 진입 장벽도 낮아지고 있다.
+
+---
+
+#### 새로운 Flash 만들기 🔥 282점 | 💬 71개
+**원문**: [Building a new Flash](https://bill.newgrounds.com/news/post/1607118)
+
+**무슨 내용인가?**
+Newgrounds의 Tom Fulp가 Flash의 정신을 계승하는 새로운 웹 크리에이티브 플랫폼을 구축 중이라는 소식이다. Flash가 사라진 후 웹에서 잃어버린 "쉽게 인터랙티브 콘텐츠를 만드는" 문화를 되살리려는 시도.
+
+**1인 개발자에게 의미하는 바**
+웹 인터랙티브 콘텐츠 플랫폼에 대한 향수와 수요가 여전히 존재한다. HN 같은 곳에서 Moss(픽셀 캔버스, 175점)도 화제가 된 것을 보면, "브라우저에서 가볍게 창작하는 도구"에 대한 니즈가 있다.
+
+---
+
+## 깃허브 트렌딩
+
+<div className="github-card-grid">
+<GitHubRepoCard name="openclaw/openclaw" description="Your own personal AI assistant. Any OS. Any Platform. The lobster way." language="TypeScript" stars={260314} url="https://github.com/openclaw/openclaw" />
+<GitHubRepoCard name="Significant-Gravitas/AutoGPT" description="AutoGPT is the vision of accessible AI for everyone, to use and to build on." language="Python" stars={182193} url="https://github.com/Significant-Gravitas/AutoGPT" />
+<GitHubRepoCard name="kamranahmedse/developer-roadmap" description="Interactive roadmaps, guides and other educational content to help developers grow in their careers." language="TypeScript" stars={350188} url="https://github.com/kamranahmedse/developer-roadmap" />
+</div>
+
+### 주목할 프로젝트
+
+#### [openclaw/openclaw](https://github.com/openclaw/openclaw)
+<SourceTag tag="TypeScript" /> ⭐ 260,314
+
+**이 프로젝트는 무엇인가?**
+OpenClaw는 모든 OS와 플랫폼에서 작동하는 개인 AI 어시스턴트 프레임워크다. 오픈소스로 공개되어 자유롭게 커스터마이징할 수 있으며, 26만 스타를 넘긴 대형 프로젝트다.
+
+**왜 뜨고 있나?**
+"AI 어시스턴트의 민주화"라는 트렌드와 맞물려 있다. 특정 기업 서비스에 종속되지 않고 자체 AI 어시스턴트를 구축하려는 수요가 꾸준히 증가하고 있으며, Qwen3.5 같은 오픈소스 모델의 성능 향상과 맞물려 관심이 더 높아지고 있다.
+
+**1인 개발자 활용법**
+자체 AI 어시스턴트를 구축하는 기반으로 활용하거나, OpenClaw 위에 특정 도메인에 특화된 플러그인/확장을 만들어 배포할 수 있다.
+
+---
+
+#### [Significant-Gravitas/AutoGPT](https://github.com/Significant-Gravitas/AutoGPT)
+<SourceTag tag="Python" /> ⭐ 182,193
+
+**이 프로젝트는 무엇인가?**
+AutoGPT는 AI 에이전트를 누구나 만들고 사용할 수 있게 하려는 오픈소스 프로젝트다. 복잡한 작업을 여러 단계로 나눠 자동으로 수행하는 AI 에이전트를 빌드할 수 있는 도구를 제공한다.
+
+**왜 뜨고 있나?**
+PH에서도 Maxclaw, Anything API, Enia Code 등 AI 에이전트 기반 제품이 대거 등장한 것과 궤를 같이한다. "AI 에이전트"가 2026년 테크 시장의 핵심 키워드로 자리잡고 있다.
+
+**1인 개발자 활용법**
+AutoGPT의 에이전트 프레임워크를 활용해 특정 도메인(부동산 조사, 가격 비교, 콘텐츠 큐레이션)에 특화된 자동화 에이전트를 만들 수 있다.
+
+---
+
+## 기타 소스 하이라이트
+
+### Lobsters (개발자 커뮤니티)
+
+**[단순함으로는 아무도 승진하지 못한다](https://terriblesoftware.org/2026/03/03/nobody-gets-promoted-for-simplicity/)** - 139점
+<div className="source-tags">
+<SourceTag tag="practices" />
+</div>
+
+소프트웨어 엔지니어링에서 복잡한 시스템을 만들어야 승진하고, 단순하게 만드는 사람은 보상받지 못하는 구조적 문제를 지적한 글. 1인 개발자에게는 오히려 반대로 적용된다 — 단순함이 곧 경쟁력이다.
+
+---
+
+**[Claude는 Electron 앱이다 — 네이티브를 잃어가고 있다](https://tonsky.me/blog/fall-of-native/)** - 121점
+<div className="source-tags">
+<SourceTag tag="web" />
+</div>
+
+Tonsky가 Claude 데스크톱 앱이 Electron 기반인 것을 시작으로, 네이티브 앱 개발 문화의 쇠퇴를 비판한 글. 128개 댓글이 달릴 정도로 뜨거운 논쟁이 벌어졌다. 네이티브 앱을 잘 만드는 것 자체가 차별화가 될 수 있다는 시사점.
+
+---
+
+**[jj v0.39.0 출시](https://github.com/jj-vcs/jj/releases/tag/v0.39.0)** - 46점
+<div className="source-tags">
+<SourceTag tag="vcs" />
+</div>
+
+Git의 대안 버전 관리 시스템 Jujutsu(jj)가 v0.39.0을 릴리스했다. Git의 복잡성에 불만을 가진 개발자들 사이에서 꾸준히 관심을 받고 있다.
+
+---
+
+**[RE#: F#으로 세계에서 가장 빠른 정규식 엔진을 만든 방법](https://iev.ee/blog/resharp-how-we-built-the-fastest-regex-in-fsharp/)** - 21점
+<div className="source-tags">
+<SourceTag tag="ml" />
+<SourceTag tag="performance" />
+</div>
+
+F#으로 극한의 성능 최적화를 달성한 정규식 엔진 구현 사례. 함수형 프로그래밍으로도 성능 중심 도구를 만들 수 있다는 기술적 영감을 준다.
+
+---
+
+**[패키지 매니저는 좀 진정할 필요가 있다](https://nesbitt.io/2026/03/04/package-managers-need-to-cool-down.html)** - 17점
+<div className="source-tags">
+<SourceTag tag="practices" />
+</div>
+
+패키지 매니저의 과도한 기능 확장과 복잡성 증가를 비판하는 글. npm, pip 등이 점점 더 많은 역할을 맡으면서 오히려 개발자 경험이 나빠지고 있다는 지적.
+
+---
+
+### TechCrunch (테크 뉴스)
+
+**[Jensen Huang, Nvidia가 OpenAI·Anthropic에서 철수 중이라고 발언](https://techcrunch.com/2026/03/04/jensen-huang-says-nvidia-is-pulling-back-from-openai-and-anthropic-but-his-explanation-raises-more-questions-than-it-answers/)**
+Nvidia CEO가 OpenAI와 Anthropic 투자에서 한발 물러나겠다고 밝혔지만, 설명이 모호해 오히려 더 많은 의문을 낳고 있다. AI 기업 간 관계가 복잡해지는 신호.
+
+---
+
+**[Dario Amodei, OpenAI의 군사 계약 관련 메시징을 '노골적 거짓말'이라 비판](https://techcrunch.com/2026/03/04/anthropic-ceo-dario-amodei-calls-openais-messaging-around-military-deal-straight-up-lies-report-says/)**
+Anthropic CEO가 OpenAI의 군사 계약 관련 커뮤니케이션을 강하게 비판. AI 기업들의 군사 분야 진출에 대한 윤리적 논쟁이 격화되고 있다. HN에서도 109점으로 화제.
+
+---
+
+**[Google, Epic Games와 합의 — Play Store 수수료 20%로 인하](https://techcrunch.com/2026/03/04/google-settles-with-epic-games-drops-its-play-store-commissions-to-20/)**
+Google이 Epic Games와의 법적 분쟁을 해결하며 Play Store 수수료를 30%에서 20%로 인하했다. 앱 개발자 수익이 10%p 개선되는 중요한 변화. 1인 개발자에게 직접적인 수익 영향.
+
+---
+
+**[Apple Music, AI 생성 음악 구분을 위한 투명성 태그 도입](https://techcrunch.com/2026/03/04/apple-music-to-add-transparency-tags-to-distinguish-ai-music-says-report/)**
+Apple Music이 AI로 만든 음악에 별도 태그를 붙여 사람이 만든 음악과 구분하겠다고 발표. AI 생성 콘텐츠의 투명성 요구가 음악 산업으로 확산 중.
+
+---
+
+**[Google Search, AI Mode에서 Gemini Canvas를 미국 전체 사용자에게 출시](https://techcrunch.com/2026/03/04/https-techcrunch-com-2026-03-04-google-search-rolls-out-geminis-canvas-in-ai-mode-to-all-us-users/)**
+Google 검색의 AI Mode에 Gemini Canvas가 추가되었다. 검색 결과를 AI가 직접 캔버스에서 편집·정리해주는 기능으로, 검색 경험 자체가 변화하고 있다.
+
+---
+
+## YouTube 개발 콘텐츠
+
+<div className="youtube-grid">
+<YouTubeThumbnail id="WfjGZCuxl-U" title="왜 AI로 개발자를 대체하는 것이 끔찍하게 실패하고 있는가" views={2434294} channel="Mackard" />
+<YouTubeThumbnail id="pAWw6Ao5tr4" title="바이브 코더 vs 프로그래머" views={2281877} channel="Alberta Tech" />
+<YouTubeThumbnail id="6QryFk4RYaM" title="Anthropic이 컴파일러를 만든 진짜 이유" views={796296} channel="The PrimeTime" />
+<YouTubeThumbnail id="lBGsKTThSF0" title="사람들이 AI 에이전트에 프롬프트를 보내 '바이브 코딩'을 하고 있다" views={720473} channel="Dave Jorgenson" />
+</div>
+
+### 더 많은 영상
+
+| # | 제목 | 채널 | 조회수 |
+|---|------|------|-------:|
+| 5 | [오픈소스 코드 공개가 잘못될 때](https://www.youtube.com/watch?v=wzzh7Not8XE) | Fireship | 627,749 |
+| 6 | [2026 AI 도구 5분마다 새로 나옴](https://www.youtube.com/watch?v=w043Oap4g-w) | BAIZADA LABS | 554,490 |
+| 7 | [CLAUDE CODE 풀 코스 4시간: 만들고 판매하기 (2026)](https://www.youtube.com/watch?v=QoQBzR1NIqI) | Nick Saraev | 470,631 |
+| 8 | [Harvard CS50 (2026) – 풀 컴퓨터 사이언스 강좌](https://www.youtube.com/watch?v=gmuTjeQUbTM) | freeCodeCamp.org | 415,091 |
+| 9 | [Claude Code 책임자: 코딩이 해결된 후 무슨 일이 일어나나](https://www.youtube.com/watch?v=We7BZVKbCVw) | Lenny's Podcast | 318,177 |
+| 10 | [Meta 시니어 엔지니어의 Claude Code 사용법](https://www.youtube.com/watch?v=mZzhfPle9QU) | John Kim | 217,030 |
+
+### 주목할 영상
+
+<YouTubeEmbed id="WfjGZCuxl-U" title="왜 AI로 개발자를 대체하는 것이 끔찍하게 실패하고 있는가" views={2434294} channel="Mackard" />
+
+**왜 뜨고 있나**: 243만뷰, 댓글 6,707개로 AI 코딩 관련 영상 중 가장 뜨거운 반응. "AI가 개발자를 대체한다"는 과대선전에 대한 반론을 제시하며, 실제 기업들이 AI로 개발자를 대체하려다 실패한 사례들을 분석한다.
+**1인 개발자 시사점**: AI는 개발자를 대체하는 게 아니라 개발자의 능력을 증폭시키는 도구다. 이 관점을 가진 개발자가 AI를 더 효과적으로 활용한다.
+
+<YouTubeEmbed id="6QryFk4RYaM" title="Anthropic이 컴파일러를 만든 진짜 이유" views={796296} channel="The PrimeTime" />
+
+**왜 뜨고 있나**: The PrimeTime이 Anthropic의 컴파일러 프로젝트를 분석한 영상으로, 79만뷰를 기록하며 개발자 커뮤니티에서 큰 관심을 받고 있다. AI 회사가 왜 전통적인 컴파일러 기술에 투자하는지를 설명한다.
+**1인 개발자 시사점**: AI 회사들이 인프라 레벨까지 내려가고 있다는 것은, 개발 도구 생태계 전체가 재편되고 있다는 신호. 이 흐름을 이해하면 다음 기회를 미리 볼 수 있다.
+
+<YouTubeEmbed id="We7BZVKbCVw" title="Claude Code 책임자: 코딩이 해결된 후 무슨 일이 일어나나" views={318177} channel="Lenny's Podcast" />
+
+**왜 뜨고 있나**: Claude Code 총괄 Boris Cherny가 Lenny's Podcast에 출연해 "코딩이 완전히 자동화되면 그 다음은 뭔가"를 논의한다. 31만뷰, 댓글 943개로 미래 전망에 대한 진지한 토론이 이어지고 있다.
+**1인 개발자 시사점**: 코딩 자동화가 진행될수록, "무엇을 만들 것인가"를 결정하는 능력(제품 감각)이 더 중요해진다. 기술력보다 문제 발견 능력이 차별화 요소가 된다.
+
+---
+
+## 테크 시그널
+
+### Google Trends 기술 관련 검색어
+
+오늘 Google Trends 상위 10개 중 8개가 증시 폭락(코스피 12% 급락) 관련 검색어로, 기술 관련 급상승 검색어는 거의 없습니다.
+
+| 검색어 | 트래픽 | 왜 뜨고 있나 | 1인 개발자 시사점 |
+|--------|--------|-------------|-----------------|
+| vi발동 | 500+ | 주식시장 변동성 급등으로 VI(Volatility Interruption) 발동이 잦아지면서 관심 폭증. 로봇주와 연결된 테크 관련 검색 | 주식/금융 관련 알림·분석 도구에 대한 수요가 급등하는 시기. 변동성 알림 앱이나 포트폴리오 리밸런싱 도구 기회 |
+
+### 한국 테크 커뮤니티 트렌드
+
+한국 테크 커뮤니티 데이터가 수집되지 않았습니다 (status: partial).
+
+---
+
+## 교차 분석: 오늘의 키 테마
+
+### 테마 1: AI 코딩 도구의 "능동형" 진화
+
+#### 어디서 발견되었나?
+- Product Hunt: Enia Code (알아서 코드 리뷰) — 230표
+- Product Hunt: Anything API (알아서 API 만들기) — 380표
+- YouTube: "왜 AI로 개발자 대체가 실패하는가" — 243만뷰
+- YouTube: Claude Code 관련 영상 3개가 Top 10 진입
+- Lobsters: "단순함으로 승진 못한다" — AI 도구가 복잡성을 대신 관리해주는 방향
+
+#### 무엇을 의미하는가?
+
+<Callout type="info">
+AI 코딩 도구가 "물어봐야 답하는" 패시브 모드에서 "알아서 찾아내는" 액티브 모드로 전환 중이다. 이것은 바이브 코딩 시대의 품질 관리 레이어가 되고 있다.
+</Callout>
+
+바이브 코딩으로 코드를 빠르게 생성하는 것은 쉬워졌지만, 그 코드의 품질·보안·성능을 보장하는 것은 여전히 어렵다. Enia Code 같은 "능동형 AI 코드 리뷰" 도구의 등장은 이 갭을 정확히 노린 것이다. YouTube에서 "AI 개발자 대체 실패" 영상이 243만뷰를 기록한 것도 같은 맥락 — AI는 도구이지 대체물이 아니다.
+
+#### 기회 또는 경고
+
+<Steps>
+### 아이디어 1: 바이브 코딩 결과물 검증 도구
+AI가 생성한 코드의 보안 취약점, 성능 병목, 아키텍처 안티패턴을 자동 감지하는 특화 도구. Enia Code보다 특정 프레임워크(Next.js, Flutter)에 집중하면 차별화 가능.
+
+### 아이디어 2: AI 생성 코드 → 프로덕션 체크리스트
+바이브 코딩으로 만든 프로토타입을 프로덕션 레벨로 끌어올리기 위한 자동 체크리스트 도구. "이 코드는 프로덕션에 배포해도 되는가?"를 판단해주는 게이트키퍼 역할.
+</Steps>
+
+---
+
+### 테마 2: AI 모델 비용 급락과 새로운 앱 카테고리
+
+#### 어디서 발견되었나?
+- Product Hunt: Gemini 3.1 Flash-Lite ($0.25/M 토큰) — 236표
+- Product Hunt: GPT-5.3 Instant — 162표
+- Hacker News: Qwen3.5 관련 글 2건 (505점 + 269점)
+- GitHub: AutoGPT, OpenClaw 등 AI 에이전트 프레임워크 트렌딩
+- TechCrunch: Google Play Store 수수료 20% 인하
+
+#### 무엇을 의미하는가?
+
+<Callout type="info">
+AI API 비용이 떨어지고 + 앱 스토어 수수료가 줄어드는 동시 효과로, 1인 개발자가 AI 기반 앱으로 수익을 내기 가장 좋은 시점이 다가오고 있다.
+</Callout>
+
+Gemini 3.1 Flash-Lite의 $0.25/M 토큰은 6개월 전 대비 5배 이상 저렴하다. 여기에 Google Play 수수료 10%p 인하(30%→20%)까지 더하면, AI 기반 앱의 마진이 크게 개선된다. 오픈소스 모델(Qwen3.5)까지 활용하면 비용을 더 줄일 수 있다.
+
+#### 기회 또는 경고
+
+<Steps>
+### 아이디어 1: "이전에는 비용 때문에 안 됐던" AI 앱
+모든 사용자 입력에 AI를 거치는 앱 — 실시간 문법 교정, 모든 메시지 요약, 상시 코드 리뷰 등. $0.25/M 토큰이면 사용자당 월 비용이 $1 이하로 내려간다.
+
+### 아이디어 2: 오픈소스 모델 기반 프라이버시 중심 앱
+Qwen3.5를 활용한 로컬 AI 앱. 의료 데이터, 법률 문서, 재무 정보 등 클라우드에 보내기 꺼려지는 데이터를 기기에서 직접 처리하는 앱.
+</Steps>
+
+---
+
+### 테마 3: Apple 하드웨어 혁신과 생태계 기회
+
+#### 어디서 발견되었나?
+- Hacker News: MacBook Neo — 1,512점 (오늘 HN 1위)
+- TechCrunch: MacBook Neo, iPhone 17e 등 Apple 발표 총정리
+- App Store: iOS 유틸리티 앱(Yoink 등) 대거 순위 진입
+- Lobsters: "Claude는 Electron 앱 — 네이티브를 잃었다" (121점)
+
+#### 무엇을 의미하는가?
+
+<Callout type="info">
+새로운 Apple 하드웨어는 새로운 앱 수요를 만든다. 특히 네이티브 앱의 가치가 재조명되는 시점에서, MacBook Neo에 최적화된 네이티브 도구가 초기 선점 기회다.
+</Callout>
+
+MacBook Neo 발표로 Apple 생태계 전반에 관심이 높아진 가운데, Lobsters에서 "네이티브 앱의 가치"를 재조명하는 글이 121점을 기록한 것은 의미심장하다. Electron이 아닌 Swift/SwiftUI로 만든 네이티브 앱이 차별화 포인트가 될 수 있다.
+
+#### 기회 또는 경고
+
+<Steps>
+### 아이디어 1: MacBook Neo 전용 유틸리티
+새 폼팩터에 맞는 윈도우 관리, 입력 방식, 제스처 커스터마이징 도구. 새 하드웨어 출시 직후가 유틸리티 앱의 최적 타이밍.
+
+### 아이디어 2: Swift 네이티브 개발자 도구
+Electron 대신 SwiftUI로 만든 가벼운 개발 도구. "Claude는 Electron이다"라는 비판이 121점을 받은 것은, 네이티브 앱에 대한 갈증이 있다는 뜻이다.
+</Steps>
