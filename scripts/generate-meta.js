@@ -65,6 +65,9 @@ function generateMeta(dir) {
   // content 루트는 특별 처리
   if (dir === 'content') {
     const meta = `export default {
+  index: {
+    display: 'hidden',
+  },
   insights: {
     title: 'Insights',
     type: 'page',
