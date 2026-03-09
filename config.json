@@ -91,6 +91,12 @@
       "type": "scraper",
       "enabled": true,
       "note": "app-store-scraper npm - API 키 불필요"
+    },
+    "app_reviews": {
+      "name": "App Review Complaints",
+      "type": "scraper",
+      "enabled": true,
+      "note": "니치 앱의 1-3점 리뷰에서 불만/페인포인트 수집"
     }
   },
   "naver_api": {
@@ -128,14 +134,20 @@
     "countries": ["us"],
     "recent_app_threshold_months": 12,
     "min_recent_apps": 5,
-    "total_apps": 10
+    "total_apps": 10,
+    "review_mining": {
+      "max_reviews_per_app": 20,
+      "star_range": [1, 3],
+      "max_apps_per_platform": 5
+    }
   },
   "output": {
     "sources_dir": "generated/sources",
     "insights_dir": "generated/insights",
     "trends_dir": "generated/trends",
     "summaries_dir": "generated/summaries",
-    "app_trends_dir": "generated/app-trends"
+    "app_trends_dir": "generated/app-trends",
+    "ideas_dir": "generated/ideas"
   },
   "automation": {
     "daily": {

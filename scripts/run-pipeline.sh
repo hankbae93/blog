@@ -207,6 +207,17 @@ run_catchup_summaries() {
         else
             log "  ⚠️  Weekly catch-up failed, continuing..."
         fi
+
+        # 위클리 아이디어 브리프 생성
+        log "  💡 Triggering weekly ideas brief..."
+        WEEK_NUM=$(date +%Y-W%V)
+        IDEAS_DIR="generated/ideas/weekly"
+        mkdir -p "$IDEAS_DIR"
+        if claude -p "/weekly-ideas" --allowedTools "Read,Write,Glob,Grep" 2>&1 | tee -a "logs/pipeline-$DATE.log"; then
+            log "  ✅ Weekly ideas brief complete"
+        else
+            log "  ⚠️  Weekly ideas brief failed, continuing..."
+        fi
     else
         log "  ✅ Weekly summary is up to date"
     fi

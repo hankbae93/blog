@@ -1012,6 +1012,150 @@ async function collectAppStoreNiche() {
   }
 }
 
+// 앱 리뷰 불만 수집 (니치 앱의 1-3점 리뷰에서 페인포인트 마이닝)
+async function collectAppReviewComplaints(previousResults) {
+  if (!gplay || !appStore) {
+    console.log('  ⚠️  App store scrapers not installed, skipping review mining...')
+    return { status: 'skipped', items: [] }
+  }
+
+  const settings = config.niche_app_settings?.review_mining || {}
+  const maxReviewsPerApp = settings.max_reviews_per_app || 20
+  const maxAppsPerPlatform = settings.max_apps_per_platform || 5
+
+  // 이전 수집 결과에서 니치 앱 목록 가져오기
+  const playStoreApps = (previousResults?.sources?.playstore_niche?.items || []).slice(0, maxAppsPerPlatform)
+  const appStoreApps = (previousResults?.sources?.appstore_niche?.items || []).slice(0, maxAppsPerPlatform)
+
+  if (playStoreApps.length === 0 && appStoreApps.length === 0) {
+    console.log('  ⚠️  No niche apps found from previous collection, skipping review mining...')
+    return { status: 'skipped', items: [] }
+  }
+
+  const items = []
+
+  // Play Store 리뷰 수집
+  for (const app of playStoreApps) {
+    try {
+      await delay(500)
+      const reviews = await gplay.reviews({
+        appId: app.id,
+        sort: gplay.sort.RATING,
+        num: maxReviewsPerApp * 3, // 더 많이 가져와서 낮은 평점만 필터
+        lang: 'en'
+      })
+
+      const reviewData = reviews.data || reviews
+      const lowRatingReviews = reviewData
+        .filter(r => r.score >= 1 && r.score <= 3)
+        .slice(0, maxReviewsPerApp)
+
+      if (lowRatingReviews.length > 0) {
+        const complaints = clusterComplaints(lowRatingReviews.map(r => r.text || r.content || ''))
+        items.push({
+          appId: app.id,
+          appName: app.title,
+          platform: 'android',
+          category: app.category,
+          appScore: app.score,
+          appReviews: app.reviews,
+          appRank: app.rank,
+          reviewCount: lowRatingReviews.length,
+          top_complaints: complaints,
+          sample_reviews: lowRatingReviews.slice(0, 5).map(r => ({
+            score: r.score,
+            text: (r.text || r.content || '').slice(0, 300),
+            thumbsUp: r.thumbsUp || 0
+          }))
+        })
+      }
+    } catch (e) {
+      console.log(`    ⚠️  Play Store reviews for ${app.title}: ${e.message}`)
+    }
+  }
+
+  // App Store 리뷰 수집
+  for (const app of appStoreApps) {
+    try {
+      await delay(500)
+      const reviews = await appStore.reviews({
+        id: parseInt(app.id),
+        sort: appStore.sort.RECENT,
+        page: 1
+      })
+
+      const lowRatingReviews = reviews
+        .filter(r => r.score >= 1 && r.score <= 3)
+        .slice(0, maxReviewsPerApp)
+
+      if (lowRatingReviews.length > 0) {
+        const complaints = clusterComplaints(lowRatingReviews.map(r => r.text || r.title || ''))
+        items.push({
+          appId: app.id,
+          appName: app.title,
+          platform: 'ios',
+          category: app.category,
+          appScore: app.score,
+          appReviews: app.reviews,
+          appRank: app.rank,
+          reviewCount: lowRatingReviews.length,
+          top_complaints: complaints,
+          sample_reviews: lowRatingReviews.slice(0, 5).map(r => ({
+            score: r.score,
+            text: (r.text || r.title || '').slice(0, 300),
+            thumbsUp: r.vote || 0
+          }))
+        })
+      }
+    } catch (e) {
+      console.log(`    ⚠️  App Store reviews for ${app.title}: ${e.message}`)
+    }
+  }
+
+  console.log(`    📊 Review mining: ${items.length} apps with complaints collected`)
+
+  return {
+    status: items.length > 0 ? 'success' : 'partial',
+    items
+  }
+}
+
+// 리뷰 텍스트에서 불만 테마 간이 클러스터링
+function clusterComplaints(reviewTexts) {
+  const themes = {
+    'crash/bugs': { keywords: ['crash', 'bug', 'error', 'freeze', 'stuck', 'broken', 'glitch'], count: 0, samples: [] },
+    'slow/performance': { keywords: ['slow', 'lag', 'loading', 'performance', 'battery', 'drain', 'heavy'], count: 0, samples: [] },
+    'ui/ux issues': { keywords: ['confusing', 'hard to use', 'interface', 'layout', 'navigate', 'unintuitive', 'cluttered', 'ugly'], count: 0, samples: [] },
+    'missing features': { keywords: ['missing', 'need', 'wish', 'should', 'feature', 'option', 'support', 'add', 'want', 'lack'], count: 0, samples: [] },
+    'pricing/subscription': { keywords: ['expensive', 'price', 'subscription', 'pay', 'cost', 'free', 'premium', 'money', 'paywall'], count: 0, samples: [] },
+    'ads': { keywords: ['ad', 'ads', 'advertisement', 'popup', 'banner', 'spam'], count: 0, samples: [] },
+    'sync/data': { keywords: ['sync', 'data', 'backup', 'export', 'import', 'lost', 'save', 'cloud', 'transfer'], count: 0, samples: [] },
+    'notifications': { keywords: ['notification', 'alert', 'remind', 'push', 'annoying'], count: 0, samples: [] }
+  }
+
+  for (const text of reviewTexts) {
+    const lower = text.toLowerCase()
+    for (const [theme, data] of Object.entries(themes)) {
+      if (data.keywords.some(k => lower.includes(k))) {
+        data.count++
+        if (data.samples.length < 2) {
+          data.samples.push(text.slice(0, 200))
+        }
+      }
+    }
+  }
+
+  // count > 0인 테마만 반환, count 순 정렬
+  return Object.entries(themes)
+    .filter(([, data]) => data.count > 0)
+    .sort((a, b) => b[1].count - a[1].count)
+    .map(([theme, data]) => ({
+      theme,
+      count: data.count,
+      sample_reviews: data.samples
+    }))
+}
+
 // 키 트렌드 추출
 function extractKeyTrends(data) {
   const keywords = {}
@@ -1076,13 +1220,14 @@ async function collectAll() {
     { name: 'google_trends', label: 'Google Trends', fn: collectGoogleTrends },
     { name: 'korean_tech_trends', label: 'Korean Tech Trends', fn: collectKoreanTechTrends },
     { name: 'playstore_niche', label: 'Play Store Niche', fn: collectPlayStoreNiche },
-    { name: 'appstore_niche', label: 'App Store Niche', fn: collectAppStoreNiche }
+    { name: 'appstore_niche', label: 'App Store Niche', fn: collectAppStoreNiche },
+    { name: 'app_reviews', label: 'App Review Complaints', fn: collectAppReviewComplaints, needsResults: true }
   ]
 
   for (const collector of collectors) {
     process.stdout.write(`📥 ${collector.label}... `)
     try {
-      const result = await collector.fn()
+      const result = collector.needsResults ? await collector.fn(results) : await collector.fn()
       results.sources[collector.name] = {
         name: collector.label,
         status: result.status,
