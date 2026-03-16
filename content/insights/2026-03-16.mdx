@@ -1,0 +1,731 @@
+---
+title: "Insight | 2026-03-16"
+date: "2026-03-16"
+description: "AI 에이전트 생태계가 보안·메모리·스케줄링까지 전 계층을 커버하며 성숙 단계에 진입한 하루"
+keywords:
+  - "AI 에이전트"
+  - "OpenClaw 보안"
+  - "로컬-퍼스트"
+  - "바이브코딩"
+  - "Chrome DevTools MCP"
+openGraph:
+  type: "article"
+  title: "Insight | 2026-03-16"
+  description: "AI 에이전트 생태계가 보안·메모리·스케줄링까지 전 계층을 커버하며 성숙 단계에 진입한 하루"
+  url: "https://www.hankbae.cloud/insights/2026-03-16"
+  siteName: "Hank Dev Log"
+  locale: "ko_KR"
+  images:
+    - url: "https://www.hankbae.cloud/assets/og-image.png"
+      width: 1200
+      height: 630
+      alt: "Insight | 2026-03-16"
+twitter:
+  card: "summary_large_image"
+  title: "Insight | 2026-03-16"
+  description: "AI 에이전트 생태계가 보안·메모리·스케줄링까지 전 계층을 커버하며 성숙 단계에 진입한 하루"
+  images:
+    - "https://www.hankbae.cloud/assets/og-image.png"
+canonical: "https://www.hankbae.cloud/insights/2026-03-16"
+---
+
+
+# 2026-03-16 데일리 인사이트
+
+## 오늘의 흐름
+
+> **한 줄 요약**: AI 에이전트 생태계가 보안·메모리·스케줄링·CLI까지 전 계층을 커버하며 본격적인 플랫폼 시대에 진입했고, 로컬-퍼스트 프라이버시 앱이 다시 주목받고 있다
+
+1. **AI 에이전트 풀스택 생태계**: PH 상위 10개 중 5개가 에이전트 관련 — 보안(ClawSecure), 메모리(ByteRover), 스케줄링(Cal.com Agents), CLI(Google Workspace CLI), 리딩(LaterAI)
+2. **로컬-퍼스트 부상**: Morgen(로컬 대시보드 111↑), LaterAI(온디바이스 AI 109↑) — "No cloud, No tracking"이 핵심 셀링포인트
+3. **Chrome DevTools MCP**: HN 275점 129댓글로 폭발 — 브라우저 디버깅이 MCP로 연결되며 AI 에이전트의 웹 접근성이 한 단계 올라감
+
+---
+
+## 오늘의 신호
+
+| 신호 | 의미 | 기회 |
+|------|------|------|
+| PH Top 5 중 3개가 AI 에이전트 인프라 도구 (CLI, 보안, 스케줄링) | 에이전트가 "만드는 단계"를 넘어 "운영하는 단계"로 진화 | 에이전트 운영 대시보드, 모니터링 도구 |
+| ClawSecure "41%의 인기 스킬이 위험" (271↑, 60💬) | OpenClaw 생태계 보안 문제가 심각, 신뢰 인프라 필요 | 에이전트/스킬 보안 스캐너, 감사 도구 |
+| Chrome DevTools MCP (HN 275점, 129댓글) | 브라우저 디버깅 + AI 에이전트 통합이 현실화 | MCP 기반 개발자 도구 확장, 자동 디버깅 워크플로우 |
+| Morgen + LaterAI 모두 "No cloud, No account" 강조 | 프라이버시 피로감이 제품 차별점으로 작동 | 로컬-퍼스트 유틸리티 앱 (데이터가 기기를 떠나지 않는) |
+| Glassworm 유니코드 공격 재등장 (HN 206점, 118댓글) | GitHub/npm/VSCode 대상 공급망 공격이 진화 중 | 코드 보안 린터, 의존성 감사 도구 |
+
+---
+
+## Product Hunt 오늘의 제품
+
+### 1. DynamicLake ⬆️ 366 | 💬 31 | ⭐ 5.0
+![thumbnail](https://ph-files.imgix.net/6e327aa3-a037-498f-81a9-ca3535d60ee9.png?auto=format)
+
+🔗 [Product Hunt](https://www.producthunt.com/products/dynamiclake?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29) | [공식 사이트](https://www.producthunt.com/r/IFBBYGO3QEQNYM?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29)
+📂 Mac, Productivity, Menu Bar Apps
+
+#### 이 제품은 무엇인가?
+DynamicLake는 iPhone의 Dynamic Island 경험을 Mac으로 가져온 메뉴바 앱이다. 알림, 타이머, 통화, AirDrop, 드래그앤드롭 등 다양한 기능을 Dynamic Island 형태의 인터페이스로 통합한다.
+- 핵심 기능: Mac 화면 상단에 Dynamic Island 스타일의 알림 허브를 생성
+- 작동 방식: 시스템 알림을 가로채서 컴팩트한 애니메이션 인터페이스로 표시, 변환기·타이머 등 위젯 내장
+
+#### 왜 주목할만한가?
+PH 1위 + 평점 5.0이라는 압도적 반응. iPhone에서 익숙한 UX를 Mac에 이식한다는 간단한 아이디어가 366표를 받았다. "플랫폼 간 UX 격차를 메우는 도구"가 여전히 강력한 제품 공식임을 보여준다.
+
+| 구분 | 내용 |
+|------|------|
+| 타겟 사용자 | Mac 사용자, 멀티태스킹 유저, Apple 생태계 애호가 |
+| 기존 대비 차별점 | Mac에는 없는 Dynamic Island 경험을 메뉴바 앱으로 구현 |
+| 수익 모델 | 유료 앱 (가격 미공개) |
+| 제작자 | 1인 개발자 |
+| 커뮤니티 반응 | 댓글 31개, 평점 5.0/5.0 — 압도적 호평 |
+
+**배울 점**: "모바일에서 검증된 UX를 데스크탑으로 옮기기"는 1인 개발자가 실행하기 좋은 패턴. 기존 UX에 익숙한 사용자가 이미 존재하므로 설명 비용이 낮다.
+
+---
+
+### 2. Google Workspace CLI ⬆️ 319 | 💬 16
+![thumbnail](https://ph-files.imgix.net/5f28d0b3-c7d0-47f6-abd9-a089565b7afc.jpeg?auto=format)
+
+🔗 [Product Hunt](https://www.producthunt.com/products/github-google-workspace-cli?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29) | [공식 사이트](https://www.producthunt.com/r/P6R7Q7CBZWTAFR?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29)
+📂 Open Source, Developer Tools, Artificial Intelligence, GitHub
+
+#### 이 제품은 무엇인가?
+Google Workspace CLI는 Drive, Gmail, Calendar, Sheets, Docs 등 Google Workspace 전체를 커맨드라인에서 제어할 수 있는 도구다. 사람과 AI 에이전트 모두를 위해 설계되었다.
+- 핵심 기능: 하나의 CLI로 Google Workspace 전체 생태계 제어, 100+ 에이전트 스킬 내장
+- 작동 방식: Google Discovery Service 기반으로 자동 업데이트, "MCP 컨텍스트 세금" 없이 워크플로우 자동화
+
+#### 왜 주목할만한가?
+"MCP 컨텍스트 세금(context tax)"이라는 표현이 인상적이다. MCP가 범용성을 위해 과도한 컨텍스트를 요구하는 문제를 인식하고, CLI 기반의 경량 접근으로 차별화했다. 에이전트 시대에 Google Workspace를 프로그래밍적으로 제어할 수 있다는 것은 자동화의 핵심 퍼즐 조각이다.
+
+| 구분 | 내용 |
+|------|------|
+| 타겟 사용자 | 개발자, AI 에이전트 빌더, 자동화 파워유저 |
+| 기존 대비 차별점 | MCP 대비 가벼운 컨텍스트, CLI 네이티브 |
+| 수익 모델 | 오픈소스 |
+| 제작자 | 3인 팀 |
+| 커뮤니티 반응 | 댓글 16개 |
+
+**배울 점**: SaaS의 API를 CLI로 래핑하되 "에이전트 친화적"으로 만드는 것은 새로운 카테고리. 아직 Notion, Linear, Figma 등 많은 SaaS의 에이전트 CLI가 비어 있다.
+
+---
+
+### 3. ClawSecure ⬆️ 271 | 💬 60
+![thumbnail](https://ph-files.imgix.net/873bfac3-e845-4fb1-b40c-77ea20b054ae.png?auto=format)
+
+🔗 [Product Hunt](https://www.producthunt.com/products/clawsecure?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29) | [공식 사이트](https://www.producthunt.com/r/XDD2HZ57YTZCDT?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29)
+📂 Open Source, Developer Tools, Security
+
+#### 이 제품은 무엇인가?
+ClawSecure는 OpenClaw AI 에이전트를 위한 보안 플랫폼이다. "CrowdStrike for OpenClaw"를 표방하며, 에이전트 스킬의 보안 감사, 실시간 모니터링, 마켓플레이스 보안을 제공한다.
+- 핵심 기능: 3단계 보안 감사, 실시간 Watchtower 모니터링, OWASP ASI 10/10 커버리지
+- 작동 방식: 30초 내 에이전트 보안 설정 완료, 위험한 스킬 자동 탐지 및 차단
+
+#### 왜 주목할만한가?
+"인기 스킬의 41%가 위험하고, 5개 중 1개는 데이터를 공격자에게 전송 중"이라는 수치가 충격적이다. 댓글 60개로 오늘 PH 최다 토론 — 에이전트 보안이 뜨거운 이슈임을 증명한다.
+
+| 구분 | 내용 |
+|------|------|
+| 타겟 사용자 | OpenClaw 사용자, AI 에이전트 운영자, 기업 보안팀 |
+| 기존 대비 차별점 | AI 에이전트 전용 보안 — 기존 보안 도구가 커버하지 못하는 영역 |
+| 수익 모델 | 프리미엄 (기본 무료) |
+| 제작자 | 2인 팀 |
+| 커뮤니티 반응 | 댓글 60개 — 오늘 PH 최다 토론 |
+
+**배울 점**: 새로운 플랫폼이 성장하면 보안 도구가 반드시 따라온다. "X의 CrowdStrike" 포지셔닝은 에이전트 생태계가 충분히 커졌다는 신호.
+
+---
+
+### 4. ElevenCreative by ElevenLabs ⬆️ 234 | 💬 8
+![thumbnail](https://ph-files.imgix.net/07e15e7b-eaa8-4fc6-bf64-07053c8d831e.png?auto=format)
+
+🔗 [Product Hunt](https://www.producthunt.com/products/elevencreative-by-elevenlabs?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29) | [공식 사이트](https://www.producthunt.com/r/7NZN4PWH35PU5N?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29)
+📂 Artificial Intelligence, Audio, Video
+
+#### 이 제품은 무엇인가?
+ElevenLabs가 출시한 통합 크리에이티브 플랫폼. 음성, 음악, 효과음, 이미지, 비디오를 하나의 플랫폼에서 생성·편집·현지화할 수 있다.
+- 핵심 기능: AI 기반 음성·음악·효과음·이미지·비디오 생성 및 편집
+- 작동 방식: 고급 AI 모델을 단일 플랫폼에 통합, 수백만 크리에이터와 마케팅팀이 사용 중
+
+#### 왜 주목할만한가?
+ElevenLabs가 음성 AI에서 풀스택 크리에이티브 플랫폼으로 확장했다. 개별 AI 도구를 쓰던 크리에이터들에게 "올인원" 대안을 제시한 것.
+
+| 구분 | 내용 |
+|------|------|
+| 타겟 사용자 | 콘텐츠 크리에이터, 마케팅팀, 미디어 기업 |
+| 기존 대비 차별점 | 음성+음악+효과음+이미지+비디오를 단일 플랫폼에서 |
+| 수익 모델 | 프리미엄 구독 |
+| 제작자 | ElevenLabs (유니콘 스타트업) |
+| 커뮤니티 반응 | 댓글 8개 |
+
+**배울 점**: 빅플레이어가 올인원으로 가면, 1인 개발자는 특정 니치(예: 팟캐스트 전용 음향, 게임 효과음)에서 더 깊은 솔루션을 만들 수 있다.
+
+---
+
+### 5. Cal.com Agents ⬆️ 203 | 💬 19 | ⭐ 4.81
+![thumbnail](https://ph-files.imgix.net/8c1f18b3-136c-4e39-b2f3-a8e47a0eb3e3.png?auto=format)
+
+🔗 [Product Hunt](https://www.producthunt.com/products/cal?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29) | [공식 사이트](https://www.producthunt.com/r/B3NXSIRWGV5OKE?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29)
+📂 Productivity, Calendar, Artificial Intelligence
+
+#### 이 제품은 무엇인가?
+Cal.com이 출시한 AI 스케줄링 에이전트. Slack, Telegram, OpenClaw에 설치하거나 Cal.com API로 직접 빌드할 수 있는 AI 기반 일정 관리 에이전트다.
+- 핵심 기능: 대화형 일정 조율, 멀티 플랫폼 에이전트 배포
+- 작동 방식: 자연어로 일정 요청 → AI가 가용 시간 확인 → 자동 예약
+
+#### 왜 주목할만한가?
+기존 SaaS가 "AI 에이전트 인터페이스"를 추가하는 전형적인 패턴. Cal.com처럼 이미 스케줄링 인프라를 갖춘 제품이 에이전트를 붙이면 경쟁 우위가 크다.
+
+| 구분 | 내용 |
+|------|------|
+| 타겟 사용자 | 미팅이 잦은 개인/팀, 에이전트 빌더 |
+| 기존 대비 차별점 | 오픈소스 스케줄링 + AI 에이전트 통합 |
+| 수익 모델 | 프리미엄 구독 |
+| 제작자 | Cal.com 팀 |
+| 커뮤니티 반응 | 댓글 19개, 평점 4.81/5.0 |
+
+**배울 점**: "기존 SaaS + AI 에이전트 레이어"가 2026년 제품 업그레이드의 표준 패턴이 되고 있다.
+
+---
+
+## 앱 마켓 니치 트렌드
+
+Play Store와 App Store에서 30~150위권에 있는 앱 중 **대기업이 아닌 개발사**가 만든 **평점 4.0 이상** 앱을 분석합니다. 1인 개발자가 진입할 수 있는 기회를 찾는 것이 목표입니다.
+
+### 1. Tai Chi for Beginners Seniors 🆕 📱 Android | HEALTH_AND_FITNESS #42
+![icon](https://play-lh.googleusercontent.com/PDJCfalSdlxTGbCYMSaCVqEqzbBi6TeOKsedbYQkHXw-EoOCkXF0lkIGIjBB2m1rsLHo8iEVC3VzhetCI2vgzt0)
+
+🔗 [Play Store](https://play.google.com/store/apps/details?id=net.workoutinc.tai_chi_for_beginners)
+⭐ 4.70 | 📊 리뷰 515개 | 📥 100,000+ 설치 | 🗓️ 2025년 11월 출시
+
+#### 이 앱은 무엇인가?
+시니어를 위한 태극권 가이드 앱. 초보자도 따라할 수 있는 태극권 동작을 영상과 함께 안내한다.
+- 핵심 기능: 단계별 태극권 루틴, 시니어 맞춤 UI
+- 작동 방식: 영상 가이드 + 일정 관리 + 진도 추적
+
+#### 왜 주목할만한가?
+TOP_GROSSING 42위, 니치 점수 100. IAP $19.99~$59.99로 높은 가격대임에도 시니어 건강 시장에서 강한 수요를 증명했다. 출시 4개월 만에 10만+ 설치.
+
+| 구분 | 내용 |
+|------|------|
+| 타겟 사용자 | 시니어, 저강도 운동을 원하는 사용자 |
+| 기존 대비 차별점 | 시니어 특화 UI + 태극권이라는 좁은 니치 |
+| 수익 모델 | IAP $19.99~$59.99 |
+| 개발사 규모 | 소규모 (7M Limited) |
+| 성공 요인 | 고령화 사회 + 태극권의 저부하 운동 특성 |
+
+**1인 개발자가 배울 점**: "특정 연령대 + 특정 운동"이라는 이중 니치가 높은 IAP를 정당화한다. 요가/필라테스 시장은 레드오션이지만, 태극권·기공·스트레칭 같은 시니어 니치는 아직 여백이 있다.
+
+---
+
+### 2. Antique Identifier Zophi 🆕 📱 Android | LIFESTYLE #41
+![icon](https://play-lh.googleusercontent.com/ASDcmhUC4O6kaahIe5SMZUqUCLQAKrsL8DS6pKXMokgidM54iTgpWenuP_ORbnG65KPNIvhZkw9JeAPa7b_EvQ)
+
+🔗 [Play Store](https://play.google.com/store/apps/details?id=com.labs326.antique)
+⭐ 4.69 | 📊 리뷰 646개 | 📥 100,000+ 설치 | 🗓️ 2025년 10월 출시
+
+#### 이 앱은 무엇인가?
+카메라로 골동품을 촬영하면 AI가 해당 물건의 종류, 시대, 예상 가치를 알려주는 앱이다.
+- 핵심 기능: 사진 기반 골동품 식별, 가치 평가, 역사적 정보 제공
+- 작동 방식: 사진 촬영 → AI 분석 → 종류/시대/가치 추정
+
+#### 왜 주목할만한가?
+같은 개발사(326 LAB)가 Thrift & Profit Finder(Gemli)와 함께 "중고품 가치 평가" 니치를 양면으로 공략 중. 두 앱 모두 니치 점수 100, TOP_FREE 41~42위. "사진 찍으면 AI가 알려주는" 패턴이 골동품/중고 시장에서 강하게 작동한다.
+
+| 구분 | 내용 |
+|------|------|
+| 타겟 사용자 | 골동품 수집가, 벼룩시장/중고거래 이용자 |
+| 기존 대비 차별점 | AI 기반 즉시 감정 — 전문가 없이도 가치 추정 가능 |
+| 수익 모델 | IAP $3.99~$39.99 |
+| 개발사 규모 | 소규모 (326 LAB - FZCO) |
+| 성공 요인 | AI 이미지 인식 + 명확한 사용자 니즈(이게 얼마짜리인지 알고 싶다) |
+
+**1인 개발자가 배울 점**: "사진 → AI 식별 → 가치 추정" 패턴은 다양한 도메인에 복제 가능. 보석, 시계, 스니커즈, 카드 게임(포켓몬/유희왕) 등 수집품 시장마다 기회가 있다.
+
+---
+
+### 3. YarnPal - Crochet for Beginner 🆕 📱 Android | LIFESTYLE #33
+![icon](https://play-lh.googleusercontent.com/-4MuBBNJ5PBpvCcnHtizCJa2YMGn8y_vEF19fCGBB2EbDuc8AIkUCHW3JHZ2ijQWPvd5xwdT2UKSoW8NjtfVS-s)
+
+🔗 [Play Store](https://play.google.com/store/apps/details?id=com.yarnpal.ai)
+⭐ 4.61 | 📊 리뷰 818개 | 📥 1,000,000+ 설치 | 🗓️ 2025년 8월 출시
+
+#### 이 앱은 무엇인가?
+뜨개질(크로셰) 초보자를 위한 AI 가이드 앱. 패턴 생성, 단계별 튜토리얼, 프로젝트 관리를 제공한다.
+- 핵심 기능: AI 기반 크로셰 패턴 생성, 단계별 영상 가이드, 프로젝트 추적
+- 작동 방식: 원하는 작품 선택 → AI가 패턴 생성 → 단계별 안내
+
+#### 왜 주목할만한가?
+7개월 만에 100만+ 설치, TOP_GROSSING 33위. 크로셰라는 극도로 좁은 니치에서 AI를 활용해 대규모 사용자를 확보했다. IAP $3.99~$49.99로 수익화도 성공적.
+
+| 구분 | 내용 |
+|------|------|
+| 타겟 사용자 | 뜨개질 입문자, 크래프트 취미 사용자 |
+| 기존 대비 차별점 | AI 패턴 생성 — 기존 앱은 기성 패턴만 제공 |
+| 수익 모델 | IAP $3.99~$49.99 |
+| 개발사 규모 | 소규모 (PIXELCELL PTE. LIMITED) |
+| 성공 요인 | 크래프트 취미 붐 + AI 패턴 생성의 실용성 |
+
+**1인 개발자가 배울 점**: 취미 시장에서 "AI가 패턴/레시피/설계도를 생성"하는 모델이 검증됨. 자수, 비즈 공예, 목공, 종이접기 등 유사 크래프트 니치에 적용 가능.
+
+---
+
+### 4. AI Calorie Counter - Appediet 🆕 📱 Android | HEALTH_AND_FITNESS #31
+![icon](https://play-lh.googleusercontent.com/ONZMjbf458-8OY_oQ_8LEy0UsWRxV3WazznHh6A_pEkkqGjlOVbRxpTWfoC0Mz89qw)
+
+🔗 [Play Store](https://play.google.com/store/apps/details?id=com.appediet.appediet)
+⭐ 4.78 | 📊 리뷰 341개 | 📥 500,000+ 설치 | 🗓️ 2025년 4월 출시
+
+#### 이 앱은 무엇인가?
+음식 사진을 찍으면 AI가 칼로리와 영양소를 자동 분석해주는 칼로리 카운터 앱이다.
+- 핵심 기능: 사진 기반 음식 인식, 칼로리/영양소 자동 계산, 식단 기록
+- 작동 방식: 음식 촬영 → AI 분석 → 칼로리/탄단지 자동 기록
+
+#### 왜 주목할만한가?
+평점 4.78은 칼로리 앱 중 최고 수준. TOP_FREE 31위로 레드오션(칼로리 추적)에서도 AI 정확도로 차별화에 성공. 11개월 만에 50만+ 설치.
+
+| 구분 | 내용 |
+|------|------|
+| 타겟 사용자 | 다이어터, 건강 관리 사용자 |
+| 기존 대비 차별점 | AI 사진 인식 정확도 + 높은 사용자 만족도(4.78) |
+| 수익 모델 | IAP $6.99~$95.00 |
+| 개발사 규모 | 스타트업 (Appediet Information PTE. LTD) |
+| 성공 요인 | AI 정확도가 핵심 — 기존 앱의 "인식 못 함" 불만을 해결 |
+
+**1인 개발자가 배울 점**: 레드오션에서도 AI 정확도 하나로 차별화 가능. 특정 식문화권(한식, 일식 등) 특화 칼로리 앱은 아직 공백.
+
+---
+
+### 5. Story Planner for Writers 📱 iOS | PRODUCTIVITY #35
+![icon](https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/84/9c/d7/849cd7e9-1504-3e55-8ff2-5dfc18684a59/AppIcon-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/512x512bb.jpg)
+
+🔗 [App Store](https://apps.apple.com/us/app/story-planner-for-writers/id860024390?uo=4)
+⭐ 4.73 | 📊 리뷰 1,139개 | 💰 $8.99 | 🗓️ 2014년 출시
+
+#### 이 앱은 무엇인가?
+작가를 위한 스토리 기획 도구. 캐릭터, 세계관, 플롯 구조를 체계적으로 관리할 수 있다.
+- 핵심 기능: 캐릭터 시트, 플롯 구조 관리, 세계관 설정, 타임라인
+- 작동 방식: 템플릿 기반 스토리 요소 관리 + 멀티 디바이스 동기화
+
+#### 왜 주목할만한가?
+2014년에 출시되어 12년째 TOP_PAID 35위를 유지하는 롱셀러. $8.99 일회성 유료 앱으로 구독 모델 없이도 꾸준한 수익을 올리고 있다. 다만 리뷰에서 동기화 문제, 데이터 손실 불만이 다수 — 명확한 개선 기회.
+
+| 구분 | 내용 |
+|------|------|
+| 타겟 사용자 | 소설 작가, 시나리오 작가, 웹소설 작가 |
+| 기존 대비 차별점 | 스토리 기획 전용 구조화 도구 |
+| 수익 모델 | 일회성 유료 $8.99 |
+| 개발사 규모 | 1인 개발자 (Bartolome Masco Lopez) |
+| 성공 요인 | 니치 충성도 — 작가들은 한번 쓰면 잘 안 바꿈 |
+
+**1인 개발자가 배울 점**: 리뷰에서 동기화 버그(4건), 데이터 손실, 업데이트 후 초기화 불만이 반복된다. 이 시장은 "동기화가 완벽한 스토리 플래너"만으로도 진입 가능.
+
+---
+
+### 6. JigglyPaint: Draw/Shake/Share! 🆕 📱 iOS | PRODUCTIVITY #36
+![icon](https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/db/b3/a7/dbb3a752-0bb5-89bc-75ee-82c72ad8d208/AppIcon-0-0-1x_U007epad-0-1-85-220.jpeg/512x512bb.jpg)
+
+🔗 [App Store](https://apps.apple.com/us/app/jigglypaint-draw-shake-share/id6751747069?uo=4)
+⭐ 4.83 | 📊 리뷰 461개 | 💰 $5.99 | 🗓️ 2025년 8월 출시
+
+#### 이 앱은 무엇인가?
+그림을 그리고 폰을 흔들면 물리 엔진이 적용되어 그림이 젤리처럼 흔들리는 재미있는 드로잉 앱이다.
+- 핵심 기능: 드로잉 + 물리 시뮬레이션 + 공유
+- 작동 방식: 그림 그리기 → 폰 흔들기 → 젤리 물리 적용 → GIF/영상으로 공유
+
+#### 왜 주목할만한가?
+평점 4.83, TOP_PAID 36위. "그리고 흔들어" 한 문장으로 설명되는 직관적 컨셉이 $5.99 유료 앱에서도 통했다. 바이럴 공유에 최적화된 "재미" 중심 앱.
+
+| 구분 | 내용 |
+|------|------|
+| 타겟 사용자 | 캐주얼 크리에이터, SNS 콘텐츠 제작자 |
+| 기존 대비 차별점 | 드로잉 + 물리 엔진의 독특한 조합 |
+| 수익 모델 | 일회성 유료 $5.99 |
+| 개발사 규모 | 1인 개발자 (Kunliang Wu) |
+| 성공 요인 | 한 문장 설명 가능 + SNS 바이럴 요소 |
+
+**1인 개발자가 배울 점**: "한 문장으로 설명 가능 + 결과물이 공유하고 싶은 것"이 유료 앱 성공 공식. 물리 엔진 같은 기술적 장난감을 크리에이티브 도구로 포장하는 전략.
+
+---
+
+### 앱 마켓 니치 기회 요약
+
+| 기회 영역 | 사례 | 접근 전략 | 난이도 |
+|-----------|------|-----------|--------|
+| 시니어 건강/운동 | Tai Chi for Beginners | 시니어 특화 UI + 저강도 운동 영상 가이드 | ⭐⭐ |
+| AI 사진 식별/감정 | Antique Identifier Zophi | 사진→AI 분석→가치 추정 패턴 복제 (수집품 니치) | ⭐⭐ |
+| 취미 AI 패턴 생성 | YarnPal | AI로 크래프트 패턴/설계도 생성 | ⭐⭐⭐ |
+| 작가 도구 (동기화 강화) | Story Planner | 기존 앱의 동기화 버그를 해결한 대안 | ⭐⭐ |
+| 바이럴 크리에이티브 도구 | JigglyPaint | 한 문장 컨셉 + SNS 공유 최적화 | ⭐⭐ |
+
+### 여전히 순위권인 앱 (이전 분석 참조)
+
+| 앱 | 플랫폼 | 현재 순위 | 변동 | 최근 분석일 |
+|----|--------|-----------|------|------------|
+| [Progressive Alarm Clock](https://apps.apple.com/us/app/progressive-alarm-clock/id362389803?uo=4) | iOS | #42 | - | 2026-03-10 |
+
+---
+
+## 앱 마켓 급상승 알림
+
+### 오늘의 신규/주목 앱
+
+| 앱 | 플랫폼 | 카테고리 | 순위 | 리뷰 | 평점 |
+|----|--------|----------|------|------|------|
+| [Payout: Claim Class Actions](https://apps.apple.com/us/app/payout-claim-class-actions/id6748968935?uo=4) | iOS | FINANCE | #33 | 3,848 | 4.58 |
+| [VoKit - Image Effects Creator](https://apps.apple.com/us/app/vokit-image-effects-creator/id6757728397?uo=4) | iOS | TOOLS | #37 | 413 | 4.70 |
+| [Replit: Vibe code in AI fast](https://play.google.com/store/apps/details?id=com.replit.app) | Android | PRODUCTIVITY | #45 | 1,369 | 4.57 |
+
+**신규 진입 앱 분석:**
+- **Payout**: 집단소송 보상금을 쉽게 청구할 수 있는 앱. 리뷰 3,848개로 빠르게 성장 — "돈 받을 수 있는데 몰랐던 보상금"이라는 강력한 후크
+- **VoKit**: 이미지 효과 생성기. 2026년 1월 출시 후 빠르게 TOP_GROSSING 37위 진입 — 숏폼 콘텐츠용 이펙트 수요
+- **Replit**: 앱 이름을 "Vibe code in AI fast"로 변경한 것이 인상적. 바이브코딩 트렌드를 브랜딩에 즉시 반영
+
+---
+
+## 해커뉴스 하이라이트
+
+### 주요 토론 (상위 6개)
+
+<div className="hn-card-grid">
+<HackerNewsCard title="Chrome DevTools MCP" url="https://developer.chrome.com/blog/chrome-devtools-mcp-debug-your-browser-session" points={275} comments={129} />
+<HackerNewsCard title="49MB짜리 웹 페이지" url="https://thatshubham.com/blog/news-audit" points={234} comments={141} />
+<HackerNewsCard title="Glassworm 귀환: 깃허브·npm·VSCode를 노리는 유니코드 공격의 새 물결" url="https://www.aikido.dev/blog/glassworm-returns-unicode-attack-github-npm-vscode" points={206} comments={118} />
+<HackerNewsCard title="Wayland 컴포지터와 윈도우 매니저 분리하기" url="https://isaacfreund.com/blog/river-window-management/" points={198} comments={85} />
+<HackerNewsCard title="LLM 아키텍처 갤러리" url="https://sebastianraschka.com/llm-architecture-gallery/" points={193} comments={12} />
+<HackerNewsCard title="Intel Optane이 특별한 이유 (2023)" url="https://blog.zuthof.nl/2023/06/02/what-makes-intel-optane-stand-out/" points={170} comments={113} />
+</div>
+
+### 주목할 기사
+
+#### Chrome DevTools MCP 🔥 275점 | 💬 129개
+**원문**: [Chrome DevTools MCP](https://developer.chrome.com/blog/chrome-devtools-mcp-debug-your-browser-session)
+
+**무슨 내용인가?**
+Chrome DevTools가 MCP(Model Context Protocol)를 지원하여, AI 에이전트가 브라우저 디버깅 세션에 직접 접근할 수 있게 되었다. 개발자가 브라우저에서 보는 것을 AI 에이전트도 볼 수 있다는 의미다.
+
+**1인 개발자에게 의미하는 바**
+프론트엔드 디버깅의 게임 체인저. AI 에이전트가 콘솔 에러, 네트워크 요청, DOM 상태를 직접 읽을 수 있으므로, "이 버그 고쳐줘"라고 말하면 AI가 실제 브라우저 상태를 보고 수정할 수 있게 된다. 129개 댓글에서 기대와 우려(보안, 프라이버시)가 동시에 폭발.
+
+---
+
+#### 49MB짜리 웹 페이지 🔥 234점 | 💬 141개
+**원문**: [The 49MB web page](https://thatshubham.com/blog/news-audit)
+
+**무슨 내용인가?**
+뉴스 웹사이트의 페이지 크기가 49MB에 달한다는 분석 기사. 광고, 추적 스크립트, 비최적화 미디어가 웹을 얼마나 무겁게 만들었는지를 보여준다.
+
+**1인 개발자에게 의미하는 바**
+141개 댓글로 오늘 HN 최다 토론. 웹 성능과 사용자 경험에 대한 불만이 팽배하다는 신호. 경량 뉴스 리더, 광고 차단, 리더 모드 도구에 대한 수요가 지속적으로 존재한다. LaterAI(PH 10위)와도 맥락이 연결된다.
+
+---
+
+#### Glassworm: 유니코드 공격 재등장 🔥 206점 | 💬 118개
+**원문**: [Glassworm Is Back](https://www.aikido.dev/blog/glassworm-returns-unicode-attack-github-npm-vscode)
+
+**무슨 내용인가?**
+투명한 유니코드 문자를 이용해 GitHub 레포, npm 패키지, VSCode 확장에 악성 코드를 숨기는 공급망 공격이 다시 등장했다. 사람의 눈에는 보이지 않지만 실행되는 코드를 삽입하는 기법이다.
+
+**1인 개발자에게 의미하는 바**
+오픈소스 의존성을 쓰는 모든 개발자에게 직결되는 보안 이슈. ClawSecure(PH 3위)가 에이전트 보안을, 이 기사가 코드 보안을 각각 경고하는 구도. 의존성 감사 도구, 코드 리뷰 자동화 수요가 증가할 것.
+
+---
+
+## 깃허브 트렌딩
+
+> 오늘 GitHub Trending 데이터 수집이 실패했습니다. 내일 복구 예정.
+
+---
+
+## 기타 소스 하이라이트
+
+### Lobsters (개발자 커뮤니티)
+
+**[Compose 키는 마법이다](https://crescentro.se/posts/compose-key/)** — 109점
+<div className="source-tags">
+<SourceTag tag="linux" />
+</div>
+
+Linux의 Compose 키 기능이 특수문자 입력에 얼마나 편리한지 소개하는 글. 40개 댓글에서 "왜 모든 OS에 없는 거냐"는 반응이 다수. 작은 UX 기능이 큰 관심을 받는 사례.
+
+---
+
+**[트리형 초대 시스템이 AI 쓰레기를 줄인다](https://abyss.fish/tree-style_invite_systems_reduce_AI_slop)** — 76점
+<div className="source-tags">
+<SourceTag tag="culture" />
+</div>
+
+AI 생성 콘텐츠(슬롭)가 범람하는 시대에, 트리 구조 초대 시스템이 커뮤니티 품질을 유지하는 방법을 제안. 30개 댓글에서 "검증된 사람의 네트워크"가 새로운 스팸 방지 메커니즘이 될 수 있다는 논의.
+
+---
+
+**[Rust 프로젝트의 AI에 대한 관점 요약](https://nikomatsakis.github.io/rust-project-perspectives-on-ai/feb27-summary.html)** — 24점
+<div className="source-tags">
+<SourceTag tag="rust" />
+<SourceTag tag="vibecoding" />
+</div>
+
+Rust 프로젝트가 AI 코드 생성에 대한 공식 입장을 정리. 바이브코딩이 오픈소스 프로젝트에 미치는 영향에 대한 진지한 논의가 시작되었다.
+
+---
+
+**[Gothub이 라이브 상태다](https://x61.sh/log/2026/03/14032026191148-gothub.html)** — 58점
+<div className="source-tags">
+<SourceTag tag="openbsd" />
+<SourceTag tag="vcs" />
+</div>
+
+OpenBSD 기반의 경량 Git 호스팅 서비스 Gothub이 런칭. GitHub 대안을 찾는 미니멀리스트 개발자들의 관심.
+
+---
+
+### TechCrunch (테크 뉴스)
+
+**[Google·Accel 인도 엑셀러레이터, 4000개 AI 스타트업 중 5개 선정 — 'AI 래퍼'는 0개](https://techcrunch.com/2026/03/15/google-and-accel-cut-through-wrappers-in-4000-ai-startup-pitches-to-pick-five-tied-to-india/)**
+4000개 AI 스타트업 피칭 중 선정된 5개에 "AI 래퍼"가 하나도 없었다. 투자자들이 진짜 기술 차별점을 요구하기 시작했다는 강력한 신호.
+
+**[ByteDance, Seedance 2.0 비디오 생성기의 글로벌 출시 보류](https://techcrunch.com/2026/03/15/bytedance-reportedly-pauses-global-launch-of-its-seedance-2-0-video-generator/)**
+ByteDance가 영상 생성 AI Seedance 2.0의 글로벌 출시를 잠정 중단. 규제 압력 또는 품질 이슈로 추정.
+
+**[AI 정신병 사례 변호사, 대량 피해 위험 경고](https://techcrunch.com/2026/03/15/lawyer-behind-ai-psychosis-cases-warns-of-mass-casualty-risks/)**
+AI 챗봇으로 인한 정신건강 피해 소송을 담당하는 변호사가 더 큰 위험을 경고. AI 안전성과 규제 논의가 법적 영역으로 확대 중.
+
+**[Wiz 투자자, Google의 $32B 인수를 분석](https://techcrunch.com/2026/03/15/wiz-investor-unpacks-googles-32b-acquisition/)**
+클라우드 보안 기업 Wiz의 $32B 인수가 완료됨에 따른 투자자 관점의 분석. 보안 스타트업에 대한 빅테크의 프리미엄 인수 의지를 보여준다.
+
+---
+
+## YouTube 개발 콘텐츠
+
+<div className="youtube-grid">
+<YouTubeThumbnail id="cxcb55zr2Q8" title="AI가 SaaS 비즈니스 모델을 파괴하는 방법" views={702102} channel="Fireship" />
+<YouTubeThumbnail id="lBGsKTThSF0" title="사람들이 AI 에이전트에게 프롬프트를 보내 '바이브 코딩'을 하고 있다" views={734781} channel="Dave Jorgenson" />
+<YouTubeThumbnail id="bzWI3Dil9Ig" title="OpenClaw로 만든 나의 멀티에이전트 팀" views={538596} channel="Brian Casel" />
+<YouTubeThumbnail id="We7BZVKbCVw" title="Claude Code 책임자: 코딩이 해결된 후에는 무슨 일이 벌어지나" views={387219} channel="Lenny's Podcast" />
+</div>
+
+### 더 많은 영상
+
+| # | 제목 | 채널 | 조회수 |
+|---|------|------|-------:|
+| 5 | [전 구글맵 PM이 주말에 Palantir를 바이브코딩](https://www.youtube.com/watch?v=rXvU7bPJ8n4) | Bilawal Sidhu | 489,995 |
+| 6 | [Claude Code - 초보자 전체 튜토리얼](https://www.youtube.com/watch?v=ntDIxaeo3Wg) | Tech With Tim | 327,862 |
+| 7 | [Apple M5 Max가 로컬 AI 판도를 바꾼다](https://www.youtube.com/watch?v=XGe7ldwFLSE) | Alex Ziskind | 291,063 |
+| 8 | [코드 작성에서 에이전트 관리로 — 대부분의 엔지니어는 준비되지 않았다](https://www.youtube.com/watch?v=wEsjK3Smovw) | EO (Stanford) | 200,521 |
+| 9 | [2026 웹 개발 로드맵 (진짜 가이드)](https://www.youtube.com/watch?v=-4e3ewcTupM) | CodeWithHarry | 196,615 |
+| 10 | [Claude Code로 아름다운 웹사이트 만들기가 너무 쉽다](https://www.youtube.com/watch?v=86HM0RUWhCk) | Nate Herk | 194,153 |
+
+### 주목할 영상
+
+<YouTubeEmbed id="cxcb55zr2Q8" title="AI가 SaaS 비즈니스 모델을 파괴하는 방법" views={702102} channel="Fireship" />
+
+**왜 뜨고 있나**: Fireship이 AI 에이전트가 기존 SaaS 구독 모델을 어떻게 해체하고 있는지 분석. 70만 뷰, 1,292개 댓글로 어제에 이어 지속적으로 화제.
+**1인 개발자 시사점**: SaaS 구독 피로가 현실이 되고 있다. AI가 기존 SaaS를 대체할 때, "대체되는 SaaS"가 아닌 "대체를 돕는 도구"를 만드는 게 포지셔닝.
+
+<YouTubeEmbed id="We7BZVKbCVw" title="Claude Code 책임자: 코딩이 해결된 후에는 무슨 일이 벌어지나" views={387219} channel="Lenny's Podcast" />
+
+**왜 뜨고 있나**: Claude Code의 책임자 Boris Cherny가 Lenny's Podcast에 출연. "코딩이 해결되면 무슨 일이 벌어지나"라는 근본적 질문을 다룬다. 1,041개 댓글.
+**1인 개발자 시사점**: AI가 코딩을 자동화하면 개발자의 가치는 "무엇을 만들 것인가"의 판단력으로 이동한다. 오늘 PH의 DynamicLake, Morgen처럼 "명확한 문제 인식"이 기술력보다 중요해지는 시대.
+
+<YouTubeEmbed id="wEsjK3Smovw" title="코드 작성에서 에이전트 관리로 — 대부분의 엔지니어는 준비되지 않았다" views={200521} channel="EO" />
+
+**왜 뜨고 있나**: Stanford의 Mihail Eric이 "엔지니어의 역할이 코드 작성에서 에이전트 관리로 전환된다"고 주장. PH에서 에이전트 도구가 쏟아지는 현상과 정확히 맞물린다.
+**1인 개발자 시사점**: "에이전트를 잘 관리하는 방법"을 가르치는 교육 콘텐츠, 에이전트 워크플로우 템플릿 시장이 열리고 있다.
+
+---
+
+## 테크 시그널
+
+### Google Trends 기술 관련 검색어
+
+오늘은 기술 관련 급상승 검색어가 없습니다. 전체 10개 검색어가 부동산(영등포자이, 청약홈), 스포츠(프리미어리그, 테니스), 연예(오스카, 이해인) 등으로 구성되었습니다.
+
+### 한국 테크 커뮤니티 트렌드
+
+한국 테크 트렌드 데이터 수집이 부분적으로 실패했습니다.
+
+---
+
+## 교차 분석: 오늘의 키 테마
+
+### 테마 1: AI 에이전트 생태계의 성숙
+
+#### 어디서 발견되었나?
+- Product Hunt: Google Workspace CLI(319↑), ClawSecure(271↑), Cal.com Agents(203↑), ByteRover Memory(119↑) — 에이전트 인프라 4개 동시 출현
+- Hacker News: Chrome DevTools MCP(275점) — 에이전트의 브라우저 접근성 확대
+- YouTube: "코드 작성에서 에이전트 관리로"(Stanford, 20만 뷰), "OpenClaw 멀티에이전트 팀"(53만 뷰)
+- Lobsters: Rust 프로젝트의 AI 관점 요약 — 오픈소스에서도 에이전트 논의 시작
+
+#### 무엇을 의미하는가?
+
+<Callout type="info">
+AI 에이전트가 "프로토타입 단계"를 넘어 "보안·메모리·스케줄링·CLI 도구"까지 갖춘 본격적인 플랫폼으로 진화하고 있다. 에이전트를 만드는 것이 아니라 운영하는 시대.
+</Callout>
+
+어제 Agent 37이 호스팅을, 오늘 ClawSecure가 보안을, ByteRover가 메모리를, Cal.com이 스케줄링을, Google Workspace CLI가 도구 접근을 각각 해결하면서, 에이전트 "운영 스택"이 빠르게 완성되고 있다.
+
+#### 기회 또는 경고
+
+<Steps>
+### 에이전트 워크플로우 마켓플레이스
+여러 에이전트 도구를 조합한 "레시피"를 공유·판매하는 플랫폼. Zapier 템플릿처럼 에이전트 워크플로우를 패키지로 제공.
+
+### 에이전트 감사/모니터링 대시보드
+ClawSecure가 보안을 다루지만, 비용·성능·결과물 품질을 모니터링하는 "에이전트 옵저버빌리티" 도구는 아직 비어 있다.
+
+### "MCP 없이" 경량 에이전트 도구
+Google Workspace CLI가 "MCP 컨텍스트 세금"을 언급한 것처럼, MCP 오버헤드를 줄인 가벼운 에이전트 도구 연결 방식에 기회가 있다.
+</Steps>
+
+---
+
+### 테마 2: 로컬-퍼스트와 프라이버시 반동
+
+#### 어디서 발견되었나?
+- Product Hunt: Morgen(111↑, "No cloud. No tracking."), LaterAI(109↑, "100% on your device")
+- Hacker News: 49MB 웹 페이지(234점) — 웹 비대화에 대한 불만
+- Lobsters: StageX(단일 장애점 제거 리눅스 배포판), Compose 키(로컬 도구 애호)
+- TechCrunch: AI 정신건강 피해 경고 — AI 서비스의 데이터 수집에 대한 우려 확대
+
+#### 무엇을 의미하는가?
+
+<Callout type="info">
+"No cloud, No account, No tracking"이 2026년 제품의 핵심 셀링포인트가 되고 있다. 프라이버시가 기능이 아니라 브랜드가 되는 시대.
+</Callout>
+
+Morgen은 날씨, 시계, 구독 관리를 하는 단순한 대시보드인데, "로컬에서만 돌아간다"는 점 하나로 111표를 받았다. 사용자들이 클라우드 서비스에 점점 더 피로감을 느끼고 있다.
+
+#### 기회 또는 경고
+
+<Steps>
+### 로컬-퍼스트 유틸리티 앱
+메모, 할일, 습관 추적 등 간단한 유틸리티를 "데이터가 기기를 떠나지 않는다"는 약속과 함께 출시. 기술 차별점은 없어도 신뢰 차별점이 된다.
+
+### 온디바이스 AI 도구
+LaterAI처럼 AI 기능을 기기에서 직접 실행하는 앱. Apple M5 Max의 로컬 AI 성능 향상(YouTube 29만 뷰)과 맞물려 수요 증가 예상.
+</Steps>
+
+---
+
+## 💡 아이디어 카드
+
+### 카드 1: CraftGenius — AI 크래프트 패턴 생성기 (크로셰 → 자수/비즈)
+
+**조합 공식**: YarnPal(크로셰 AI 패턴, 100만+ 설치)의 "AI 패턴 생성" + 자수/비즈 공예 시장의 "디지털 패턴 부재" 공백
+
+**문제 발견 경로**:
+- Play Store: YarnPal 니치 점수 100, TOP_GROSSING #33, 100만+ 설치 — 크래프트 AI 패턴 시장이 검증됨
+- App Store: Story Planner 리뷰에서 "창작 도구의 동기화·템플릿 품질" 불만 4건+ — 크리에이티브 도구에 대한 기대 수준 상승
+
+**문제**: 자수, 비즈 공예, 마크라메 등 크래프트 취미를 하는 사람들이 원하는 디자인의 패턴을 찾기 어렵고, 직접 디자인하려면 전문 소프트웨어가 필요하다.
+
+**솔루션**: 사진이나 텍스트 설명을 입력하면 AI가 자수/비즈 패턴을 자동 생성하고, 단계별 가이드를 제공하는 웹앱.
+
+**MVP 스펙 (핵심 기능 3개)**:
+1. 텍스트/이미지 → 자수 패턴 변환 — OpenAI Vision API로 이미지 분석 후 그리드 패턴 생성
+2. 단계별 제작 가이드 — 실 색상, 스티치 순서, 필요 재료 자동 산출
+3. 패턴 PDF 다운로드 — 인쇄 가능한 고품질 패턴 시트
+
+**기술 스택**: Next.js + OpenAI API (Vision + GPT) + Canvas/SVG 렌더링
+
+**수익 검증 데이터**:
+- 유사 앱 YarnPal: 리뷰 818개, 평점 4.61, 순위 #33, IAP $3.99~$49.99
+- 추정 DAU: 818 ÷ 20 ≈ 40,900명 (크로셰만)
+- 예상 수익 모델: 프리미엄 $4.99/월 — 벤치마크 YarnPal $3.99~$49.99
+
+**1인 개발자 실현 가능성**: ⭐⭐⭐⭐☆ (4/5)
+
+| 평가 항목 | 점수 | 근거 |
+|-----------|------|------|
+| 기술 난이도 | ⭐⭐/5 | Next.js + OpenAI API + Canvas — 익숙한 스택 |
+| 시장 진입 장벽 | ⭐⭐/5 | YarnPal이 크로셰를 점유했지만 자수/비즈는 비어 있음 |
+| 초기 유저 확보 | ⭐⭐⭐/5 | Reddit r/CrossStitch(68만), r/Embroidery(36만) 커뮤니티 |
+| 수익화 가능성 | ⭐⭐⭐⭐/5 | YarnPal이 $49.99 IAP도 팔리는 시장 검증 |
+| MVP 개발 기간 | 2주 | 패턴 생성 알고리즘 + 기본 UI |
+
+**경쟁 분석**:
+- 기존 솔루션: YarnPal(크로셰 전용), Stitch Fiddle(수동 디자인), DMC 앱(실 색상만)
+- 이들의 약점: AI 패턴 생성이 없거나 크로셰에만 한정
+- 이 아이디어의 차별점: AI로 "아무 이미지 → 자수 패턴" 자동 변환
+
+---
+
+### 카드 2: WriteSync — 동기화가 완벽한 스토리 플래너
+
+**조합 공식**: Story Planner for Writers(#35, $8.99)의 "작가 전용 기획 도구" + 리뷰 불만 "동기화가 깨지고 데이터가 사라진다"(sync/data 불만 4건, crash 1건)
+
+**문제 발견 경로**:
+- App Store: Story Planner 리뷰에서 "동기화 시 프로젝트 삭제", "기기 간 동기화 안 됨", "업데이트 후 전체 초기화" 불만이 반복 (11개 리뷰 중 4건 sync/data)
+- Product Hunt: Morgen(로컬-퍼스트 대시보드 111↑) — 로컬-퍼스트 아키텍처에 대한 수요 증가
+
+**문제**: 소설/시나리오 작가들이 Story Planner를 쓰면서 디바이스 간 동기화가 깨져 작성한 내용이 삭제되는 문제를 반복적으로 겪고 있다. "iPhone에서 입력하면 맥북에서 삭제됨"이라는 리뷰가 대표적.
+
+**솔루션**: CRDT 기반 로컬-퍼스트 동기화를 적용한 작가용 스토리 기획 웹앱. 오프라인에서도 작동하고 충돌이 절대 데이터를 삭제하지 않는다.
+
+**MVP 스펙 (핵심 기능 3개)**:
+1. 캐릭터/플롯/세계관 시트 — Story Planner의 핵심 기능을 웹으로 구현
+2. CRDT 기반 동기화 — Yjs 라이브러리로 충돌 없는 멀티 디바이스 동기화
+3. 버전 히스토리 — 모든 변경 사항을 타임라인으로 추적, 언제든 복원 가능
+
+**기술 스택**: Next.js + Yjs(CRDT) + IndexedDB(로컬 스토리지) + Cloudflare Workers(동기화 서버)
+
+**수익 검증 데이터**:
+- 유사 앱 Story Planner: 리뷰 1,139개, 평점 4.73, 순위 #35, $8.99 일회성
+- 추정 DAU: 1,139 ÷ 20 ≈ 56,950명
+- 앱 리뷰 불만: "동기화 시 프로젝트 삭제" (4건 동일 불만)
+- 예상 수익 모델: 프리미엄 $5.99/월 또는 일회성 $9.99
+
+**1인 개발자 실현 가능성**: ⭐⭐⭐⭐☆ (4/5)
+
+| 평가 항목 | 점수 | 근거 |
+|-----------|------|------|
+| 기술 난이도 | ⭐⭐/5 | Yjs는 성숙한 라이브러리, 통합 간단 |
+| 시장 진입 장벽 | ⭐⭐/5 | Story Planner가 2023년 이후 업데이트 없음 — abandonware 신호 |
+| 초기 유저 확보 | ⭐⭐⭐/5 | NaNoWriMo 커뮤니티, r/writing(2100만), 작가 Discord |
+| 수익화 가능성 | ⭐⭐⭐⭐/5 | $8.99 일회성이 12년째 팔리는 시장 — 가격 저항 없음 |
+| MVP 개발 기간 | 2주 | 캐릭터/플롯 시트 + Yjs 동기화 + 기본 UI |
+
+**경쟁 분석**:
+- 기존 솔루션: Story Planner($8.99), World Anvil(웹 기반), Campfire(데스크탑)
+- 이들의 약점: Story Planner는 동기화 버그, World Anvil은 과도한 복잡성, Campfire는 높은 가격
+- 이 아이디어의 차별점: "동기화가 절대 데이터를 삭제하지 않는다"는 단일 약속
+
+---
+
+### 카드 3: AgentAudit — 에이전트 스킬 보안 스캐너 (경량 CLI)
+
+**조합 공식**: ClawSecure(PH 271↑, "41% 스킬이 위험")의 보안 수요 + Google Workspace CLI(319↑)의 "MCP 컨텍스트 세금 없이" 접근 + Glassworm 유니코드 공격(HN 206점)의 공급망 보안 경고
+
+**문제 발견 경로**:
+- Product Hunt: ClawSecure 60개 댓글 — 에이전트 보안에 대한 강렬한 수요
+- Hacker News: Glassworm 206점, 118댓글 — 코드 공급망 공격 재등장
+- YouTube: "코드 작성에서 에이전트 관리로" 20만 뷰 — 에이전트 운영 역량 필요
+
+**문제**: OpenClaw 스킬/에이전트를 설치할 때, 해당 스킬이 안전한지 빠르게 확인할 방법이 없다. ClawSecure는 풀 플랫폼이지만, 개인 개발자에게는 무겁다.
+
+**솔루션**: `npx agent-audit check <skill-name>` 한 줄로 에이전트 스킬의 보안 위험을 스캔하는 경량 CLI 도구. 권한 과다 요청, 데이터 외부 전송, 알려진 취약 패턴을 탐지.
+
+**MVP 스펙 (핵심 기능 3개)**:
+1. 스킬 퍼미션 분석 — 요청하는 권한 목록을 파싱하고 과다 요청 경고
+2. 네트워크 요청 패턴 감지 — 외부 서버로 데이터를 전송하는 코드 패턴 탐지
+3. 알려진 위험 스킬 DB — 커뮤니티 기여 기반 블랙리스트/그레이리스트
+
+**기술 스택**: Node.js CLI (Commander.js) + AST 파서 (Babel) + SQLite (로컬 DB)
+
+**수익 검증 데이터**:
+- ClawSecure: 271↑, 60댓글 — 보안 도구 수요 검증
+- Glassworm 기사: 206점, 118댓글 — 공급망 보안 관심 폭발
+- 예상 수익 모델: CLI 무료 + Pro 대시보드 $9.99/월 (팀 리포트, CI/CD 통합)
+
+**1인 개발자 실현 가능성**: ⭐⭐⭐☆☆ (3/5)
+
+| 평가 항목 | 점수 | 근거 |
+|-----------|------|------|
+| 기술 난이도 | ⭐⭐⭐/5 | AST 파싱 + 보안 패턴 매칭은 중급 난이도 |
+| 시장 진입 장벽 | ⭐⭐/5 | ClawSecure가 풀 플랫폼, CLI 경량 도구는 아직 없음 |
+| 초기 유저 확보 | ⭐⭐⭐⭐/5 | npm 배포 + GitHub 오픈소스 → 개발자 자연 유입 |
+| 수익화 가능성 | ⭐⭐⭐/5 | 개발자 도구 수익화는 느리지만 Pro 대시보드로 전환 가능 |
+| MVP 개발 기간 | 2주 | 기본 스캐너 + CLI + 로컬 DB |
+
+**경쟁 분석**:
+- 기존 솔루션: ClawSecure(풀 플랫폼), npm audit(패키지 전용)
+- 이들의 약점: ClawSecure는 무겁고, npm audit은 에이전트 스킬을 모름
+- 이 아이디어의 차별점: `npx` 한 줄 실행, 설치 없이 즉시 스캔
