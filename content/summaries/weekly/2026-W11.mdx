@@ -1,0 +1,197 @@
+---
+title: "Weekly Summary | 2026-W11"
+date: "2026-01-01"
+description: "1인 개발자를 위한 데일리 트렌드 인사이트"
+keywords:
+  - "트렌드"
+  - "인사이트"
+  - "1인개발자"
+openGraph:
+  type: "article"
+  title: "Weekly Summary | 2026-W11"
+  description: "1인 개발자를 위한 데일리 트렌드 인사이트"
+  url: "https://www.hankbae.cloud/summaries/weekly/2026-W11"
+  siteName: "Hank Dev Log"
+  locale: "ko_KR"
+  images:
+    - url: "https://www.hankbae.cloud/assets/og-image.png"
+      width: 1200
+      height: 630
+      alt: "Weekly Summary | 2026-W11"
+twitter:
+  card: "summary_large_image"
+  title: "Weekly Summary | 2026-W11"
+  description: "1인 개발자를 위한 데일리 트렌드 인사이트"
+  images:
+    - "https://www.hankbae.cloud/assets/og-image.png"
+canonical: "https://www.hankbae.cloud/summaries/weekly/2026-W11"
+---
+
+# 주간 PRD 인사이트 - 2026년 W11주차
+
+> **요약**: AI 에이전트가 결제·호스팅·보안·스케줄링까지 풀스택 생태계를 형성하며, "바이브 코딩"이 메인스트림 논쟁으로 부상하고, 로컬 AI·프라이버시 요구가 입법 수준까지 확대된 한 주.
+
+## 이번 주 핵심 숫자
+
+| 지표 | 값 |
+|------|-----|
+| 분석한 제품 | 38개 |
+| 발견한 트렌드 | 5개 |
+| 액션 아이템 | 7개 |
+| PH 최고 업보트 | Naoma AI 529↑ |
+| HN 최고 포인트 | Tony Hoare 추모 1,459pts |
+| YouTube 최고 조회 | "Vibe Coder vs Programmer" ~2.59M views |
+
+---
+
+## 1. 주간 트렌드 TOP 5
+
+### 1. AI 에이전트 풀스택 생태계 🔥 Rising
+**이번 주 등장 횟수**: 매일 (7/7일)
+**관련 제품/기사**:
+- [Prava](https://www.producthunt.com) (267↑) - 에이전트 결제 인프라
+- [Agent 37](https://www.producthunt.com) (333↑) - $3.99/월 에이전트 호스팅
+- [ClawSecure](https://www.producthunt.com) (271↑) - 에이전트 보안 레이어
+- [Cal.com Agents](https://www.producthunt.com) (203↑) - 에이전트 스케줄링
+- [Google Workspace CLI](https://www.producthunt.com) (319↑) - 에이전트용 CLI 인터페이스
+- [Naoma AI Demo Agent](https://www.producthunt.com) (529↑) - AI 세일즈 데모 에이전트
+
+**왜 주목해야 하나**:
+지난주(W10)에는 "에이전트 파이프라인 완성"이 키워드였다면, 이번 주는 결제(Prava) → 호스팅(Agent 37, $3.99) → 보안(ClawSecure) → 스케줄링(Cal.com) → CLI(Google Workspace)까지 에이전트가 실제 비즈니스에 배포되기 위한 모든 인프라 레이어가 동시에 등장했다. 에이전트 보안 투자만 $190M 규모로 추산.
+
+**1인 개발자 기회**:
+에이전트 모니터링/옵저버빌리티 SaaS — 에이전트가 실제 결제·작업을 수행하면 "무엇을 했는지" 추적하는 대시보드 수요 급증. Agent 37의 $3.99 호스팅 위에 월 $9.99 모니터링 애드온 모델 가능.
+
+---
+
+### 2. 바이브 코딩(Vibe Coding) 메인스트림 논쟁 🔥 Rising
+**이번 주 등장 횟수**: 5회
+**관련 제품/기사**:
+- "Vibe Coder vs Programmer" (YouTube ~2.59M views)
+- "Shall I implement it? No" (HN 839pts)
+- Redox OS "LLM 없이 개발" (HN 372pts)
+- Claude Code Review (PH 393↑)
+- Debian AI 생성 코드 정책 논의
+
+**왜 주목해야 하나**:
+"바이브 코딩"이 개발자 밈에서 진지한 업계 논쟁으로 전환. YouTube에서 259만 뷰를 기록한 영상이 촉발점이 되어, HN에서는 "구현할까요? 아니요(839pts)"라는 반-바이브코딩 글이 화제. 동시에 Redox OS는 "LLM 없이 OS 개발"을 어필하며 372pts 획득. 코드 품질 검증 도구(Claude Code Review 393↑)도 동반 성장.
+
+**1인 개발자 기회**:
+AI 생성 코드 품질 감사 도구 — "바이브 코딩으로 만든 코드베이스"를 분석해 보안 취약점·기술부채를 리포트하는 CLI 도구. Amazon GenAI 장애 사례가 수요 증거.
+
+---
+
+### 3. 로컬 AI / 프라이버시 운동 📈 Accelerating
+**이번 주 등장 횟수**: 4회
+**관련 제품/기사**:
+- "Can I run AI locally?" (HN 853pts)
+- Montana Right to Compute Act (HN 234pts)
+- GStack - 로컬 AI 스택 (PH 255↑)
+- DynamicLake - 프라이버시 우선 데이터 레이크 (PH 366↑)
+
+**왜 주목해야 하나**:
+"로컬에서 AI 돌릴 수 있나요?"가 HN 853pts로 이번 주 기술 토론 1위. Montana주는 "컴퓨팅 권리법"을 발의하며 프라이버시·자기주권 컴퓨팅이 입법 단계까지 진입. 제품 측면에서도 GStack(로컬 AI 스택)과 DynamicLake(프라이버시 우선)이 동시 출시.
+
+**1인 개발자 기회**:
+로컬 LLM 원클릭 설치 + 벤치마크 도구 — "내 맥북에서 어떤 모델이 가장 잘 돌아가는지" 자동 테스트하는 앱. 하드웨어별 최적 모델 추천까지.
+
+---
+
+### 4. AI 코드 품질·검증 위기 ⚠️ Warning
+**이번 주 등장 횟수**: 4회
+**관련 제품/기사**:
+- Amazon GenAI 코드로 인한 서비스 장애 (HN)
+- Claude Code Review (PH 393↑)
+- Debian AI 생성 코드 정책 논의
+- Glassworm 유니코드 공격 (HN 206pts)
+
+**왜 주목해야 하나**:
+Amazon의 AI 생성 코드 장애가 실제 대규모 서비스에서 발생하며 "AI 코드를 그냥 쓰면 안 된다"는 인식 확산. Debian은 AI 생성 코드에 대한 공식 정책을 논의 중. Claude Code Review(393↑)가 이 틈새를 공략. Glassworm 유니코드 공격(206pts)은 AI가 감지하기 어려운 보안 취약점의 새로운 벡터를 보여줌.
+
+**1인 개발자 기회**:
+PR별 "AI 생성 코드 비율" 감지 + 리스크 스코어링 GitHub Action — 팀에서 AI 코드 품질 관리를 자동화하려는 수요. Freemium 모델로 월 $19 Pro.
+
+---
+
+### 5. 콘텐츠 로컬라이제이션 파이프라인 📈 Accelerating
+**이번 주 등장 횟수**: 3회
+**관련 제품/기사**:
+- [Visual Translate](https://www.producthunt.com) (492↑) - 이미지 내 텍스트 번역
+- [Fish Audio S2](https://www.producthunt.com) (276↑) - 음성 합성/복제
+- FFmpeg-over-IP (HN) - 원격 미디어 처리
+
+**왜 주목해야 하나**:
+이미지 번역(Visual Translate 492↑) + 음성 복제(Fish Audio) + 미디어 처리(FFmpeg-over-IP)가 동시에 등장하며, "콘텐츠를 현지화하는 전체 파이프라인"이 AI로 자동화되는 흐름. 지난주 대비 새로운 트렌드.
+
+**1인 개발자 기회**:
+유튜브 영상 자동 현지화 SaaS — 영상 업로드 → 자막 추출 → 번역 → 음성 더빙 → 썸네일 번역까지 원스톱. 크리에이터 시장 타겟.
+
+---
+
+## 2. 이번 주 베스트 제품
+
+| 순위 | 제품명 | 카테고리 | Upvotes | 핵심 가치 |
+|------|--------|----------|---------|-----------|
+| 1 | Naoma AI Demo Agent | AI Sales | 529↑ | AI가 제품 데모를 자동 진행 |
+| 2 | Visual Translate | AI/번역 | 492↑ | 이미지 내 텍스트 실시간 번역 |
+| 3 | Chronicle 2.0 | Productivity | 453↑ | 팀 타임라인 시각화 |
+| 4 | Needle 2.0 | AI Search | 424↑ | 기업 문서 AI 검색 |
+| 5 | Timelaps | Dev Tools | 419↑ | 개발 시간 자동 추적 |
+| 6 | Claude Code Review | Dev Tools | 393↑ | AI 코드 리뷰 자동화 |
+| 7 | DynamicLake | Data/Privacy | 366↑ | 프라이버시 우선 데이터 레이크 |
+| 8 | Your Next Store | E-commerce | 363↑ | Next.js 기반 즉시 배포 스토어 |
+| 9 | Perplexity Computer Skills | AI | 357↑ | AI 데스크톱 자동화 |
+| 10 | Agent 37 | AI Infra | 333↑ | $3.99/월 에이전트 호스팅 |
+
+---
+
+## 3. 주간 GitHub 하이라이트
+
+| 저장소 | 언어 | 주간 ⭐ | 설명 |
+|--------|------|---------|------|
+| open-webui/open-webui (OpenClaw) | Python | +23,000 (290K→313K) | 로컬 LLM 웹 UI, 3주 연속 폭발적 성장 |
+| nicbarker/clay | C | +4,100 (39.9K→44K) | 고성능 UI 레이아웃 라이브러리 |
+| punkpeye/awesome-mcp-servers | - | +3,400 (31K→34.4K) | MCP 서버 큐레이션 목록 |
+| anthropics/claude-code | TypeScript | 신규 등장 | Claude Code 오픈소스 |
+| LadybirdBrowser/ladybird | C++ | 지속 성장 | 독립 웹 브라우저 엔진 |
+
+---
+
+## 4. Indie Hackers 수익화 사례
+
+### 💰 이번 주 베스트 사례
+**Agent 37 - $3.99/월 에이전트 호스팅** - MRR 미공개 (론칭 주)
+- 핵심 전략: 기존 에이전트 호스팅 대비 10x 저가 포지셔닝으로 PH 333↑ 달성
+- 배울 점: 인프라 비용이 빠르게 하락하는 시장에서 "가격 파괴" 포지셔닝은 초기 사용자 확보에 매우 효과적
+
+### 💰 주목할 모바일 앱 패턴
+**반복 등장 앱 분석** (일주일간 차트 지속):
+- YarnPal (뜨개질 카운터, #31-47 유지) — 초니치 + 실용성 = 장기 차트 잔류
+- Antique Identifier Zophi (#37-49) — AI 감정 = 호기심 + 실용
+- Appediet (#31-37) — 음식 사진 → 칼로리 = 마찰 최소화
+- 배울 점: "한 가지를 극도로 잘하는 앱"이 차트에 오래 머무름. 기능 추가보다 핵심 경험 완성이 핵심.
+
+---
+
+## 5. 주간 액션 아이템 종합
+
+### 🚀 이번 주 실행 추천
+- [ ] **에이전트 옵저버빌리티 MVP**: 에이전트 API 호출 로그 + 비용 추적 대시보드. Agent 37 위에서 동작하는 사이드카 서비스로 시작
+- [ ] **AI 코드 감사 CLI**: `npx ai-audit` 한 줄로 AI 생성 코드 비율 + 리스크 스코어 출력. GitHub Action으로 확장
+- [ ] **로컬 LLM 벤치마크 앱**: 맥/윈도우에서 원클릭으로 Llama/Mistral/Phi 벤치마크 → "당신의 하드웨어 최적 모델" 추천
+
+### 👀 계속 관찰
+- [ ] **바이브 코딩 논쟁 추이**: 기업 채용에서 "AI 코딩 역량"을 어떻게 평가하기 시작하는지 관찰
+- [ ] **Montana Right to Compute Act**: 통과 시 로컬 AI 시장 폭발 → 준비 필요
+- [ ] **에이전트 보안 시장**: ClawSecure 후속 제품들이 어떤 보안 레이어에 집중하는지 모니터링
+
+### ⏸️ 보류/재검토
+- [ ] **콘텐츠 로컬라이제이션 SaaS**: Visual Translate(492↑)가 높은 관심을 받았으나, 기존 플레이어(번역 API + 더빙 서비스) 대비 차별화 포인트가 아직 불명확. 시장 반응 추가 관찰 후 결정
+
+---
+
+## 6. 다음 주 관전 포인트
+
+1. **에이전트 결제 표준**: Prava 이후 Stripe/PayPal이 에이전트 결제 API를 발표할지. 발표 시 인프라 레이어 경쟁 본격화
+2. **바이브 코딩 기업 반응**: Amazon GenAI 장애 이후 기업들의 AI 코드 정책 변화. "AI 코드 리뷰 필수화" 움직임 예상
+3. **OpenClaw 성장 지속성**: 3주 연속 2만+ 스타 증가 중 (247K→273K→313K). 이 속도가 유지되면 4월 중 400K 돌파 가능 — 로컬 AI 수요의 바로미터
