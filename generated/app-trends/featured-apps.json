@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-03-19T01:23:14.968Z",
-  "total_apps": 109,
+  "last_updated": "2026-03-20T01:43:00.666Z",
+  "total_apps": 110,
   "featured": {
     "323061162": {
       "id": "323061162",
@@ -114,10 +114,11 @@
     "471786434": {
       "id": "471786434",
       "first_featured": "2026-03-01",
-      "last_featured": "2026-03-01",
-      "feature_count": 1,
+      "last_featured": "2026-03-20",
+      "feature_count": 2,
       "last_featured_dates": [
-        "2026-03-01"
+        "2026-03-01",
+        "2026-03-20"
       ]
     },
     "482482660": {
@@ -244,11 +245,12 @@
     "1008697836": {
       "id": "1008697836",
       "first_featured": "2026-02-14",
-      "last_featured": "2026-02-25",
-      "feature_count": 2,
+      "last_featured": "2026-03-20",
+      "feature_count": 3,
       "last_featured_dates": [
         "2026-02-14",
-        "2026-02-25"
+        "2026-02-25",
+        "2026-03-20"
       ]
     },
     "1037668281": {
@@ -355,10 +357,11 @@
     "1428570992": {
       "id": "1428570992",
       "first_featured": "2026-02-27",
-      "last_featured": "2026-02-27",
-      "feature_count": 1,
+      "last_featured": "2026-03-20",
+      "feature_count": 2,
       "last_featured_dates": [
-        "2026-02-27"
+        "2026-02-27",
+        "2026-03-20"
       ]
     },
     "1428802675": {
@@ -419,8 +422,8 @@
     "com.appediet.appediet": {
       "id": "com.appediet.appediet",
       "first_featured": "2026-02-04",
-      "last_featured": "2026-03-16",
-      "feature_count": 21,
+      "last_featured": "2026-03-20",
+      "feature_count": 22,
       "last_featured_dates": [
         "2026-02-04",
         "2026-02-09",
@@ -442,7 +445,8 @@
         "2026-03-10",
         "2026-03-11",
         "2026-03-13",
-        "2026-03-16"
+        "2026-03-16",
+        "2026-03-20"
       ]
     },
     "net.workoutinc.tai_chi_for_beginners": {
@@ -651,8 +655,8 @@
     "io.foodvisor.foodvisor": {
       "id": "io.foodvisor.foodvisor",
       "first_featured": "2026-02-07",
-      "last_featured": "2026-02-24",
-      "feature_count": 7,
+      "last_featured": "2026-03-20",
+      "feature_count": 8,
       "last_featured_dates": [
         "2026-02-07",
         "2026-02-08",
@@ -660,14 +664,15 @@
         "2026-02-21",
         "2026-02-22",
         "2026-02-23",
-        "2026-02-24"
+        "2026-02-24",
+        "2026-03-20"
       ]
     },
     "com.replit.app": {
       "id": "com.replit.app",
       "first_featured": "2026-02-07",
-      "last_featured": "2026-03-18",
-      "feature_count": 26,
+      "last_featured": "2026-03-20",
+      "feature_count": 27,
       "last_featured_dates": [
         "2026-02-07",
         "2026-02-10",
@@ -694,7 +699,8 @@
         "2026-03-15",
         "2026-03-16",
         "2026-03-17",
-        "2026-03-18"
+        "2026-03-18",
+        "2026-03-20"
       ]
     },
     "com.appointfix": {
@@ -712,12 +718,13 @@
     "com.signnow.android": {
       "id": "com.signnow.android",
       "first_featured": "2026-02-07",
-      "last_featured": "2026-03-13",
-      "feature_count": 3,
+      "last_featured": "2026-03-20",
+      "feature_count": 4,
       "last_featured_dates": [
         "2026-02-07",
         "2026-03-01",
-        "2026-03-13"
+        "2026-03-13",
+        "2026-03-20"
       ]
     },
     "6749705807": {
@@ -806,10 +813,9 @@
     "com.labs326.antique": {
       "id": "com.labs326.antique",
       "first_featured": "2026-02-10",
-      "last_featured": "2026-03-19",
-      "feature_count": 30,
+      "last_featured": "2026-03-20",
+      "feature_count": 31,
       "last_featured_dates": [
-        "2026-02-10",
         "2026-02-11",
         "2026-02-14",
         "2026-02-15",
@@ -838,7 +844,8 @@
         "2026-03-16",
         "2026-03-17",
         "2026-03-18",
-        "2026-03-19"
+        "2026-03-19",
+        "2026-03-20"
       ]
     },
     "6751747069": {
@@ -1330,6 +1337,15 @@
       "feature_count": 1,
       "last_featured_dates": [
         "2026-03-18"
+      ]
+    },
+    "com.getholodex.app": {
+      "id": "com.getholodex.app",
+      "first_featured": "2026-03-20",
+      "last_featured": "2026-03-20",
+      "feature_count": 1,
+      "last_featured_dates": [
+        "2026-03-20"
       ]
     }
   }
