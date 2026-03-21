@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-03-20T01:43:00.666Z",
-  "total_apps": 110,
+  "last_updated": "2026-03-21T00:45:38.262Z",
+  "total_apps": 111,
   "featured": {
     "323061162": {
       "id": "323061162",
@@ -298,12 +298,13 @@
     "1201419241": {
       "id": "1201419241",
       "first_featured": "2026-02-16",
-      "last_featured": "2026-03-17",
-      "feature_count": 3,
+      "last_featured": "2026-03-21",
+      "feature_count": 4,
       "last_featured_dates": [
         "2026-02-16",
         "2026-03-06",
-        "2026-03-17"
+        "2026-03-17",
+        "2026-03-21"
       ]
     },
     "1210251567": {
@@ -422,8 +423,8 @@
     "com.appediet.appediet": {
       "id": "com.appediet.appediet",
       "first_featured": "2026-02-04",
-      "last_featured": "2026-03-20",
-      "feature_count": 22,
+      "last_featured": "2026-03-21",
+      "feature_count": 23,
       "last_featured_dates": [
         "2026-02-04",
         "2026-02-09",
@@ -446,7 +447,8 @@
         "2026-03-11",
         "2026-03-13",
         "2026-03-16",
-        "2026-03-20"
+        "2026-03-20",
+        "2026-03-21"
       ]
     },
     "net.workoutinc.tai_chi_for_beginners": {
@@ -498,20 +500,21 @@
     "6749690755": {
       "id": "6749690755",
       "first_featured": "2026-02-04",
-      "last_featured": "2026-03-17",
-      "feature_count": 4,
+      "last_featured": "2026-03-21",
+      "feature_count": 5,
       "last_featured_dates": [
         "2026-02-04",
         "2026-02-21",
         "2026-03-06",
-        "2026-03-17"
+        "2026-03-17",
+        "2026-03-21"
       ]
     },
     "6748968935": {
       "id": "6748968935",
       "first_featured": "2026-02-04",
-      "last_featured": "2026-03-18",
-      "feature_count": 24,
+      "last_featured": "2026-03-21",
+      "feature_count": 25,
       "last_featured_dates": [
         "2026-02-04",
         "2026-02-05",
@@ -536,7 +539,8 @@
         "2026-03-15",
         "2026-03-16",
         "2026-03-17",
-        "2026-03-18"
+        "2026-03-18",
+        "2026-03-21"
       ]
     },
     "6751308654": {
@@ -602,8 +606,8 @@
     "com.yarnpal.ai": {
       "id": "com.yarnpal.ai",
       "first_featured": "2026-02-06",
-      "last_featured": "2026-03-19",
-      "feature_count": 26,
+      "last_featured": "2026-03-21",
+      "feature_count": 27,
       "last_featured_dates": [
         "2026-02-06",
         "2026-02-07",
@@ -630,7 +634,8 @@
         "2026-03-16",
         "2026-03-17",
         "2026-03-18",
-        "2026-03-19"
+        "2026-03-19",
+        "2026-03-21"
       ]
     },
     "6751181747": {
@@ -671,8 +676,8 @@
     "com.replit.app": {
       "id": "com.replit.app",
       "first_featured": "2026-02-07",
-      "last_featured": "2026-03-20",
-      "feature_count": 27,
+      "last_featured": "2026-03-21",
+      "feature_count": 28,
       "last_featured_dates": [
         "2026-02-07",
         "2026-02-10",
@@ -700,7 +705,8 @@
         "2026-03-16",
         "2026-03-17",
         "2026-03-18",
-        "2026-03-20"
+        "2026-03-20",
+        "2026-03-21"
       ]
     },
     "com.appointfix": {
@@ -813,10 +819,9 @@
     "com.labs326.antique": {
       "id": "com.labs326.antique",
       "first_featured": "2026-02-10",
-      "last_featured": "2026-03-20",
-      "feature_count": 31,
+      "last_featured": "2026-03-21",
+      "feature_count": 32,
       "last_featured_dates": [
-        "2026-02-11",
         "2026-02-14",
         "2026-02-15",
         "2026-02-16",
@@ -845,7 +850,8 @@
         "2026-03-17",
         "2026-03-18",
         "2026-03-19",
-        "2026-03-20"
+        "2026-03-20",
+        "2026-03-21"
       ]
     },
     "6751747069": {
@@ -934,8 +940,8 @@
     "tech.butterfly.app": {
       "id": "tech.butterfly.app",
       "first_featured": "2026-02-17",
-      "last_featured": "2026-03-11",
-      "feature_count": 16,
+      "last_featured": "2026-03-21",
+      "feature_count": 17,
       "last_featured_dates": [
         "2026-02-17",
         "2026-02-18",
@@ -952,7 +958,8 @@
         "2026-03-08",
         "2026-03-09",
         "2026-03-10",
-        "2026-03-11"
+        "2026-03-11",
+        "2026-03-21"
       ]
     },
     "com.qrcodescanner.barcodereader.qrcode": {
@@ -1342,10 +1349,20 @@
     "com.getholodex.app": {
       "id": "com.getholodex.app",
       "first_featured": "2026-03-20",
-      "last_featured": "2026-03-20",
+      "last_featured": "2026-03-21",
+      "feature_count": 2,
+      "last_featured_dates": [
+        "2026-03-20",
+        "2026-03-21"
+      ]
+    },
+    "6747917472": {
+      "id": "6747917472",
+      "first_featured": "2026-03-21",
+      "last_featured": "2026-03-21",
       "feature_count": 1,
       "last_featured_dates": [
-        "2026-03-20"
+        "2026-03-21"
       ]
     }
   }
