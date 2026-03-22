@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-03-21T00:45:38.262Z",
-  "total_apps": 111,
+  "last_updated": "2026-03-22T01:41:22.993Z",
+  "total_apps": 112,
   "featured": {
     "323061162": {
       "id": "323061162",
@@ -256,12 +256,13 @@
     "1037668281": {
       "id": "1037668281",
       "first_featured": "2026-02-05",
-      "last_featured": "2026-03-05",
-      "feature_count": 3,
+      "last_featured": "2026-03-22",
+      "feature_count": 4,
       "last_featured_dates": [
         "2026-02-05",
         "2026-02-19",
-        "2026-03-05"
+        "2026-03-05",
+        "2026-03-22"
       ]
     },
     "1062625944": {
@@ -310,12 +311,13 @@
     "1210251567": {
       "id": "1210251567",
       "first_featured": "2026-02-11",
-      "last_featured": "2026-03-11",
-      "feature_count": 3,
+      "last_featured": "2026-03-22",
+      "feature_count": 4,
       "last_featured_dates": [
         "2026-02-11",
         "2026-03-03",
-        "2026-03-11"
+        "2026-03-11",
+        "2026-03-22"
       ]
     },
     "1244429473": {
@@ -423,8 +425,8 @@
     "com.appediet.appediet": {
       "id": "com.appediet.appediet",
       "first_featured": "2026-02-04",
-      "last_featured": "2026-03-21",
-      "feature_count": 23,
+      "last_featured": "2026-03-22",
+      "feature_count": 24,
       "last_featured_dates": [
         "2026-02-04",
         "2026-02-09",
@@ -448,7 +450,8 @@
         "2026-03-13",
         "2026-03-16",
         "2026-03-20",
-        "2026-03-21"
+        "2026-03-21",
+        "2026-03-22"
       ]
     },
     "net.workoutinc.tai_chi_for_beginners": {
@@ -513,8 +516,8 @@
     "6748968935": {
       "id": "6748968935",
       "first_featured": "2026-02-04",
-      "last_featured": "2026-03-21",
-      "feature_count": 25,
+      "last_featured": "2026-03-22",
+      "feature_count": 26,
       "last_featured_dates": [
         "2026-02-04",
         "2026-02-05",
@@ -540,7 +543,8 @@
         "2026-03-16",
         "2026-03-17",
         "2026-03-18",
-        "2026-03-21"
+        "2026-03-21",
+        "2026-03-22"
       ]
     },
     "6751308654": {
@@ -606,8 +610,8 @@
     "com.yarnpal.ai": {
       "id": "com.yarnpal.ai",
       "first_featured": "2026-02-06",
-      "last_featured": "2026-03-21",
-      "feature_count": 27,
+      "last_featured": "2026-03-22",
+      "feature_count": 28,
       "last_featured_dates": [
         "2026-02-06",
         "2026-02-07",
@@ -635,7 +639,8 @@
         "2026-03-17",
         "2026-03-18",
         "2026-03-19",
-        "2026-03-21"
+        "2026-03-21",
+        "2026-03-22"
       ]
     },
     "6751181747": {
@@ -940,8 +945,8 @@
     "tech.butterfly.app": {
       "id": "tech.butterfly.app",
       "first_featured": "2026-02-17",
-      "last_featured": "2026-03-21",
-      "feature_count": 17,
+      "last_featured": "2026-03-22",
+      "feature_count": 18,
       "last_featured_dates": [
         "2026-02-17",
         "2026-02-18",
@@ -959,7 +964,8 @@
         "2026-03-09",
         "2026-03-10",
         "2026-03-11",
-        "2026-03-21"
+        "2026-03-21",
+        "2026-03-22"
       ]
     },
     "com.qrcodescanner.barcodereader.qrcode": {
@@ -1159,11 +1165,12 @@
     "com.bowerydigital.bend": {
       "id": "com.bowerydigital.bend",
       "first_featured": "2026-02-27",
-      "last_featured": "2026-03-19",
-      "feature_count": 2,
+      "last_featured": "2026-03-22",
+      "feature_count": 3,
       "last_featured_dates": [
         "2026-02-27",
-        "2026-03-19"
+        "2026-03-19",
+        "2026-03-22"
       ]
     },
     "6754900760": {
@@ -1349,11 +1356,12 @@
     "com.getholodex.app": {
       "id": "com.getholodex.app",
       "first_featured": "2026-03-20",
-      "last_featured": "2026-03-21",
-      "feature_count": 2,
+      "last_featured": "2026-03-22",
+      "feature_count": 3,
       "last_featured_dates": [
         "2026-03-20",
-        "2026-03-21"
+        "2026-03-21",
+        "2026-03-22"
       ]
     },
     "6747917472": {
@@ -1363,6 +1371,15 @@
       "feature_count": 1,
       "last_featured_dates": [
         "2026-03-21"
+      ]
+    },
+    "6748622471": {
+      "id": "6748622471",
+      "first_featured": "2026-03-22",
+      "last_featured": "2026-03-22",
+      "feature_count": 1,
+      "last_featured_dates": [
+        "2026-03-22"
       ]
     }
   }
