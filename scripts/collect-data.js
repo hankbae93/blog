@@ -38,8 +38,9 @@ try {
   console.log('⚠️  App store scrapers not installed. Run: npm install google-play-scraper app-store-scraper')
 }
 
-// 오늘 날짜
-const today = new Date().toISOString().split('T')[0]
+// 오늘 날짜 (로컬 시간 기준)
+const now = new Date()
+const today = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`
 
 // HTTP/HTTPS 요청 헬퍼
 function fetchOnce(url, options = {}) {
