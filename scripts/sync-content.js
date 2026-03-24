@@ -161,7 +161,21 @@ function copyMdFiles(sourceDir, destDir, type) {
 
       // MDX에서 중괄호를 JSX 표현식으로 해석하지 않도록 이스케이프
       // 코드 블록(```) 밖의 {{ }} 패턴을 {`{{ }}`}로 변환
-      const escapedBody = body.replace(/(?<!`)(\{\{[^}`]+\}\})(?!`)/g, '{`$1`}')
+      let escapedBody = body.replace(/(?<!`)(\{\{[^}`]+\}\})(?!`)/g, '{`$1`}')
+
+      // MDX에서 일반 텍스트의 < > 가 JSX 태그로 파싱되는 문제 방지
+      // JSX 컴포넌트/HTML 태그가 아닌 본문 텍스트의 < > 를 HTML 엔티티로 이스케이프
+      escapedBody = escapedBody.split('\n').map(line => {
+        // JSX 컴포넌트 라인은 건드리지 않음 (태그로 시작하는 라인)
+        if (line.match(/^\s*<\/?[A-Za-z]/)) return line
+        // img, a 등 인라인 HTML 태그가 있는 라인도 건드리지 않음
+        if (line.match(/!\[.*\]\(/) || line.match(/<(img|a|br|hr)\s/)) return line
+        // 코드 블록 내부는 건드리지 않음
+        if (line.match(/^```/)) return line
+        // 일반 텍스트에서 태그가 아닌 < > 를 이스케이프
+        // < 뒤에 알파벳/슬래시가 오지 않는 경우 (즉 HTML/JSX 태그가 아닌 경우)
+        return line.replace(/<(?![A-Za-z\/!])/g, '&lt;').replace(/(?<![A-Za-z"'\d\/\-])>/g, '&gt;')
+      }).join('\n')
 
       // 최종 콘텐츠
       const finalContent = seoFrontmatter + escapedBody
