@@ -1,0 +1,2666 @@
+{
+  "date": "2026-03-25",
+  "collected_at": "2026-03-25T01:48:45.420Z",
+  "total_items": 125,
+  "sources": {
+    "product_hunt": {
+      "name": "Product Hunt",
+      "status": "success",
+      "items_count": 10,
+      "items": [
+        {
+          "id": "1105495",
+          "name": "Claude Computer Use",
+          "slug": "claude-computer-use-2",
+          "tagline": "Enable Claude to use your computer to complete tasks ",
+          "description": "Anthropic’s Claude can now operate your computer like a human—clicking, typing, browsing, and running apps autonomously. With “computer use” and Dispatch, you can assign tasks from your phone and let Claude execute them on your Mac. From emails to reports, it bridges AI reasoning with real-world action.",
+          "url": "https://www.producthunt.com/products/claude?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29",
+          "website": "https://www.producthunt.com/r/AYTPIHDXORCWT2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29",
+          "votesCount": 512,
+          "commentsCount": 21,
+          "reviewsRating": 4.97,
+          "createdAt": "2026-03-24T07:01:00Z",
+          "featuredAt": "2026-03-24T07:01:00Z",
+          "topics": [
+            "Productivity",
+            "Task Management",
+            "Artificial Intelligence"
+          ],
+          "makers": [
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            },
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            }
+          ],
+          "thumbnail": "https://ph-files.imgix.net/d1459dd2-9d0e-439b-a021-6882f260f965.png?auto=format"
+        },
+        {
+          "id": "1101061",
+          "name": "Kitty Points Leaderboard",
+          "slug": "kitty-points-leaderboard",
+          "tagline": "Find interesting community members and see how you stack up",
+          "description": "Product Hunt is known for its lively and friendly community. To accentuate different ways you can be active in the community, we built a leaderboard for community members. Ranking highly will give you exposure as well as lend credibility to your content. We also want to showcase the various ways members of the community can participate and build stories around those participants.",
+          "url": "https://www.producthunt.com/products/producthunt?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29",
+          "website": "https://www.producthunt.com/r/UA5BMACRSNW472?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29",
+          "votesCount": 368,
+          "commentsCount": 44,
+          "reviewsRating": 4.81,
+          "createdAt": "2026-03-24T07:01:00Z",
+          "featuredAt": "2026-03-24T07:01:00Z",
+          "topics": [
+            "Product Hunt"
+          ],
+          "makers": [
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            },
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            },
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            },
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            },
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            },
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            },
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            },
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            },
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            },
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            },
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            },
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            },
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            },
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            },
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            }
+          ],
+          "thumbnail": "https://ph-files.imgix.net/d618ea86-70ae-4d12-8ec2-0ed78c723ddf.png?auto=format"
+        },
+        {
+          "id": "1102041",
+          "name": "Cekura",
+          "slug": "cekura-2",
+          "tagline": "Observe and analyze your voice and chat AI agents",
+          "description": "Out-of-the-box 30+ predefined metrics for analysis on CX, accuracy, conversation and voice quality. Compile perfect LLM judges by annotating just ~20 conversations and auto-improve in Cekura labs. Real-time, segmented dashboards to identify trends in Conversational AI. Smart statistical alerts so that you get notified only when metrics shift from historical baselines. Automated system pings to catch silent production failures.",
+          "url": "https://www.producthunt.com/products/vocera?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29",
+          "website": "https://www.producthunt.com/r/BVQAPOUNVQ25FB?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29",
+          "votesCount": 361,
+          "commentsCount": 99,
+          "reviewsRating": 0,
+          "createdAt": "2026-03-24T07:01:00Z",
+          "featuredAt": "2026-03-24T07:01:00Z",
+          "topics": [
+            "SaaS",
+            "Developer Tools",
+            "Audio"
+          ],
+          "makers": [
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            },
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            },
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            },
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            },
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            },
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            },
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            },
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            },
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            },
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            },
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            },
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            },
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            },
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            },
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            },
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            },
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            }
+          ],
+          "thumbnail": "https://ph-files.imgix.net/857e2ce7-a8f2-41d6-9815-8bbdde1d37f6.png?auto=format"
+        },
+        {
+          "id": "1105598",
+          "name": "jared.so",
+          "slug": "jared-so",
+          "tagline": "AI that monitors convos & proactively jumps in when needed",
+          "description": "Jared is an AI employee that lives in Slack, connects to 10,000+ tools, and gets work done without being asked. Unlike every other AI tool, it reads the room, follows conversations, knows your team and speaks up when it matters. Your social AI employee.",
+          "url": "https://www.producthunt.com/products/jared-so?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29",
+          "website": "https://www.producthunt.com/r/7P5NYVK4WNFYBG?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29",
+          "votesCount": 251,
+          "commentsCount": 40,
+          "reviewsRating": 5,
+          "createdAt": "2026-03-24T07:01:00Z",
+          "featuredAt": "2026-03-24T07:01:00Z",
+          "topics": [
+            "Productivity",
+            "Artificial Intelligence",
+            "Business"
+          ],
+          "makers": [
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            },
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            },
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            },
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            }
+          ],
+          "thumbnail": "https://ph-files.imgix.net/59ad353f-50b4-4d0a-91a3-c763af3c4cc2.png?auto=format"
+        },
+        {
+          "id": "1102904",
+          "name": "Drift",
+          "slug": "drift-82b9b3b7-86ad-4424-8668-65350c29c191",
+          "tagline": "AI agent to run robot simulations faster and reliably",
+          "description": "Build robotics simulation in minutes, straight from your terminal with just prompts. Everything you need for ROS, Simulator, Plugins, and OS orchestration. Build any robot and world, launch it in simulation, and wire up your control loop - all from a single prompt. Fix issues swiftly with drift as it actively tracks all ROS states, workspace and the simulator.",
+          "url": "https://www.producthunt.com/products/drift-ai?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29",
+          "website": "https://www.producthunt.com/r/W65GW52TI2TQVF?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29",
+          "votesCount": 226,
+          "commentsCount": 30,
+          "reviewsRating": 0,
+          "createdAt": "2026-03-24T07:01:00Z",
+          "featuredAt": "2026-03-24T07:01:00Z",
+          "topics": [
+            "Robots",
+            "Developer Tools",
+            "Artificial Intelligence"
+          ],
+          "makers": [
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            },
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            },
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            },
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            }
+          ],
+          "thumbnail": "https://ph-files.imgix.net/384bff8a-f623-4c41-8125-ef9ee9500324.jpeg?auto=format"
+        },
+        {
+          "id": "1095068",
+          "name": "Google Gemini in Chrome",
+          "slug": "google-gemini-in-chrome",
+          "tagline": "Turn your browser into an AI workspace",
+          "description": "Gemini in Chrome embeds AI directly into your browsing experience, eliminating the need for constant tab switching and copy-pasting. It can summarize long articles, compare information across multiple tabs, draft and send emails, schedule events, and even transform images—all from a side panel within your current tab. Built on Gemini 3.1, it integrates seamlessly with Gmail, Calendar, Maps, and YouTube.",
+          "url": "https://www.producthunt.com/products/googlegemini-in-chrome?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29",
+          "website": "https://www.producthunt.com/r/3VDHSZVTJSEVW7?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29",
+          "votesCount": 173,
+          "commentsCount": 6,
+          "reviewsRating": 0,
+          "createdAt": "2026-03-24T07:01:00Z",
+          "featuredAt": "2026-03-24T07:01:00Z",
+          "topics": [
+            "Productivity",
+            "Artificial Intelligence",
+            "Tech"
+          ],
+          "makers": [
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            },
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            },
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            }
+          ],
+          "thumbnail": "https://ph-files.imgix.net/98ee00a0-f8cd-4b20-8fd1-b10fa5083118.svg?auto=format"
+        },
+        {
+          "id": "1101682",
+          "name": "Jotform AI",
+          "slug": "jotform-ai",
+          "tagline": "Build forms faster with Jotform AI",
+          "description": "Jotform AI lets you create and edit forms using natural language. Describe what you need, and it generates fields, conditional logic, structure, and best practices instantly. No manual setup. Just prompt, refine, and publish.",
+          "url": "https://www.producthunt.com/products/jotform?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29",
+          "website": "https://www.producthunt.com/r/VAASWLHBUAACHF?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29",
+          "votesCount": 154,
+          "commentsCount": 10,
+          "reviewsRating": 4.82,
+          "createdAt": "2026-03-24T07:01:00Z",
+          "featuredAt": "2026-03-24T07:01:00Z",
+          "topics": [
+            "Productivity",
+            "Artificial Intelligence",
+            "No-Code"
+          ],
+          "makers": [],
+          "thumbnail": "https://ph-files.imgix.net/5c5497f4-01ba-4f50-9d8f-4c1d34126113.gif?auto=format"
+        },
+        {
+          "id": "1105168",
+          "name": "Maestri",
+          "slug": "maestri",
+          "tagline": "An infinite canvas where coding agents work in concert",
+          "description": "Maestri is a native macOS app with an infinite canvas for coding agents. Each terminal is a visual node you position freely alongside notes and sketches. Connect agents by dragging a line and they collaborate across harnesses through PTY orchestration. Claude Code talks to Codex. Gemini delegates to OpenCode. Ombro, an on-device AI companion via Apple Intelligence, monitors everything and summarizes what happened while you were away. SwiftUI, custom engine, zero cloud, no telemetry.",
+          "url": "https://www.producthunt.com/products/maestri?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29",
+          "website": "https://www.producthunt.com/r/FLNQUUNPKJDWPD?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29",
+          "votesCount": 151,
+          "commentsCount": 10,
+          "reviewsRating": 0,
+          "createdAt": "2026-03-24T07:01:00Z",
+          "featuredAt": "2026-03-24T07:01:00Z",
+          "topics": [
+            "Mac",
+            "Developer Tools",
+            "Artificial Intelligence"
+          ],
+          "makers": [
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            }
+          ],
+          "thumbnail": "https://ph-files.imgix.net/e25affca-e9a1-4a73-9d3a-6a01019b7fee.png?auto=format"
+        },
+        {
+          "id": "1105520",
+          "name": "TypeScript 6.0",
+          "slug": "typescript-6-0",
+          "tagline": "The last TypeScript release built on JavaScript",
+          "description": "TypeScript 6.0 is the last release built on JavaScript — and the bridge to TypeScript 7.0, which is being rewritten in Go for native speed and parallel type-checking. This release modernizes defaults (strict mode on, ESM-first, ES2025 target), adds built-in Temporal API types, Map.getOrInsert, and RegExp.escape, and deprecates legacy patterns that won't survive the native port. If you write TypeScript, the migration window to the native era starts now.",
+          "url": "https://www.producthunt.com/products/the-new-typescript-website?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29",
+          "website": "https://www.producthunt.com/r/INYIHBZCKD6YHZ?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29",
+          "votesCount": 140,
+          "commentsCount": 2,
+          "reviewsRating": 5,
+          "createdAt": "2026-03-24T07:01:00Z",
+          "featuredAt": "2026-03-24T07:01:00Z",
+          "topics": [
+            "Open Source",
+            "GitHub",
+            "Development Language"
+          ],
+          "makers": [
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            }
+          ],
+          "thumbnail": "https://ph-files.imgix.net/a905cf3f-49df-46e4-998c-3f336006ec38.webp?auto=format"
+        },
+        {
+          "id": "1104511",
+          "name": "Agent Hub Builder",
+          "slug": "agent-hub-builder",
+          "tagline": "Build a Netflix-style library of AI-powered tools to sell",
+          "description": "Turn your expertise into a branded, Netflix-style hub of AI tools your audience can browse, chat with, and pay for. Build the core intelligence with MindPal, generate the full hub with Base44, Lovable, Replit, or any vibe coding platform. Auth, usage tracking, chat history, personalized profiles, paywall — all included. Your audience gets 24/7 AI-guided support. You get higher retention, lower churn, and a new self-serve revenue stream.",
+          "url": "https://www.producthunt.com/products/mindpal-ai?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29",
+          "website": "https://www.producthunt.com/r/QXVYVZIXG7CBNI?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29",
+          "votesCount": 131,
+          "commentsCount": 19,
+          "reviewsRating": 4.5,
+          "createdAt": "2026-03-24T07:01:00Z",
+          "featuredAt": "2026-03-24T07:01:00Z",
+          "topics": [
+            "Artificial Intelligence",
+            "No-Code",
+            "Online Learning"
+          ],
+          "makers": [
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            },
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            },
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            },
+            {
+              "id": "0",
+              "name": "[REDACTED]",
+              "headline": null,
+              "twitterUsername": null
+            }
+          ],
+          "thumbnail": "https://ph-files.imgix.net/9b89dafe-b565-431d-9093-23e626ae286a.png?auto=format"
+        }
+      ]
+    },
+    "hacker_news": {
+      "name": "Hacker News",
+      "status": "success",
+      "items_count": 15,
+      "items": [
+        {
+          "title": "In Edison’s Revenge, Data Centers Are Transitioning From AC to DC",
+          "url": "https://spectrum.ieee.org/data-center-dc",
+          "points": 36,
+          "comments": 14,
+          "author": "jnord",
+          "time": 1774399495
+        },
+        {
+          "title": "Goodbye to Sora",
+          "url": "https://twitter.com/soraofficialapp/status/2036532795984715896",
+          "points": 365,
+          "comments": 292,
+          "author": "mikeocool",
+          "time": 1774382465
+        },
+        {
+          "title": "Flighty Airports",
+          "url": "https://flighty.com/airports",
+          "points": 51,
+          "comments": 13,
+          "author": "skogstokig",
+          "time": 1774398585
+        },
+        {
+          "title": "I wanted to build vertical SaaS for pest control, so I took a technician job",
+          "url": "https://www.onhand.pro/p/i-wanted-to-build-vertical-saas-for-pest-control-i-took-a-technician-job-instead",
+          "points": 193,
+          "comments": 76,
+          "author": "tezclarke",
+          "time": 1774387473
+        },
+        {
+          "title": "Show HN: I took back Video.js after 16 years and we rewrote it to be 88% smaller",
+          "url": "https://videojs.org/blog/videojs-v10-beta-hello-world-again",
+          "points": 200,
+          "comments": 29,
+          "author": "Heff",
+          "time": 1774375428
+        },
+        {
+          "title": "Apple Business",
+          "url": "https://www.apple.com/newsroom/2026/03/introducing-apple-business-a-new-all-in-one-platform-for-businesses-of-all-sizes/",
+          "points": 518,
+          "comments": 316,
+          "author": "soheilpro",
+          "time": 1774366181
+        },
+        {
+          "title": "Arm AGI CPU",
+          "url": "https://newsroom.arm.com/blog/introducing-arm-agi-cpu",
+          "points": 276,
+          "comments": 214,
+          "author": "RealityVoid",
+          "time": 1774373442
+        },
+        {
+          "title": "Tell HN: Litellm 1.82.7 and 1.82.8 on PyPI are compromised",
+          "url": "https://github.com/BerriAI/litellm/issues/24512",
+          "points": 484,
+          "comments": 372,
+          "author": "dot_treo",
+          "time": 1774353989
+        },
+        {
+          "title": "A Compiler Writing Journey",
+          "url": "https://github.com/DoctorWkt/acwj",
+          "points": 25,
+          "comments": 0,
+          "author": "ibobev",
+          "time": 1774395887
+        },
+        {
+          "title": "Algorithm Visualizer",
+          "url": "https://algorithm-visualizer.org/",
+          "points": 16,
+          "comments": 1,
+          "author": "vinhnx",
+          "time": 1774061246
+        },
+        {
+          "title": "An Aural Companion for Decades, CBS News Radio Crackles to a Close",
+          "url": "https://www.nytimes.com/2026/03/21/business/media/cbs-news-radio-appraisal.html",
+          "points": 15,
+          "comments": 2,
+          "author": "tintinnabula",
+          "time": 1774131625
+        },
+        {
+          "title": "What happened to GEM?",
+          "url": "https://dfarq.homeip.net/whatever-happened-to-gem/",
+          "points": 42,
+          "comments": 18,
+          "author": "naves",
+          "time": 1774046752
+        },
+        {
+          "title": "Wine 11 rewrites how Linux runs Windows games at kernel with massive speed gains",
+          "url": "https://www.xda-developers.com/wine-11-rewrites-linux-runs-windows-games-speed-gains/",
+          "points": 671,
+          "comments": 241,
+          "author": "felineflock",
+          "time": 1774377292
+        },
+        {
+          "title": "Show HN: Email.md – Markdown to responsive, email-safe HTML",
+          "url": "https://www.emailmd.dev/",
+          "points": 217,
+          "comments": 49,
+          "author": "dancablam",
+          "time": 1774369560
+        },
+        {
+          "title": "Hypura – A storage-tier-aware LLM inference scheduler for Apple Silicon",
+          "url": "https://github.com/t8/hypura",
+          "points": 191,
+          "comments": 75,
+          "author": "tatef",
+          "time": 1774368142
+        }
+      ]
+    },
+    "github_trending": {
+      "name": "GitHub Trending",
+      "status": "success",
+      "items_count": 15,
+      "items": [
+        {
+          "name": "freeCodeCamp/freeCodeCamp",
+          "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
+          "language": "TypeScript",
+          "stars_today": 0,
+          "total_stars": 438790,
+          "url": "https://github.com/freeCodeCamp/freeCodeCamp"
+        },
+        {
+          "name": "public-apis/public-apis",
+          "description": "A collective list of free APIs",
+          "language": "Python",
+          "stars_today": 0,
+          "total_stars": 415738,
+          "url": "https://github.com/public-apis/public-apis"
+        },
+        {
+          "name": "EbookFoundation/free-programming-books",
+          "description": ":books: Freely available programming books",
+          "language": "Python",
+          "stars_today": 0,
+          "total_stars": 384539,
+          "url": "https://github.com/EbookFoundation/free-programming-books"
+        },
+        {
+          "name": "kamranahmedse/developer-roadmap",
+          "description": "Interactive roadmaps, guides and other educational content to help developers grow in their careers.",
+          "language": "TypeScript",
+          "stars_today": 0,
+          "total_stars": 351619,
+          "url": "https://github.com/kamranahmedse/developer-roadmap"
+        },
+        {
+          "name": "donnemartin/system-design-primer",
+          "description": "Learn how to design large-scale systems. Prep for the system design interview.  Includes Anki flashcards.",
+          "language": "Python",
+          "stars_today": 0,
+          "total_stars": 340107,
+          "url": "https://github.com/donnemartin/system-design-primer"
+        },
+        {
+          "name": "openclaw/openclaw",
+          "description": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 ",
+          "language": "TypeScript",
+          "stars_today": 0,
+          "total_stars": 334472,
+          "url": "https://github.com/openclaw/openclaw"
+        },
+        {
+          "name": "vinta/awesome-python",
+          "description": "An opinionated list of Python frameworks, libraries, tools, and resources.",
+          "language": "Python",
+          "stars_today": 0,
+          "total_stars": 288819,
+          "url": "https://github.com/vinta/awesome-python"
+        },
+        {
+          "name": "awesome-selfhosted/awesome-selfhosted",
+          "description": "A list of Free Software network services and web applications which can be hosted on your own servers",
+          "language": "Unknown",
+          "stars_today": 0,
+          "total_stars": 281897,
+          "url": "https://github.com/awesome-selfhosted/awesome-selfhosted"
+        },
+        {
+          "name": "facebook/react",
+          "description": "The library for web and native user interfaces.",
+          "language": "JavaScript",
+          "stars_today": 0,
+          "total_stars": 244161,
+          "url": "https://github.com/facebook/react"
+        },
+        {
+          "name": "torvalds/linux",
+          "description": "Linux kernel source tree",
+          "language": "C",
+          "stars_today": 0,
+          "total_stars": 224923,
+          "url": "https://github.com/torvalds/linux"
+        },
+        {
+          "name": "tensorflow/tensorflow",
+          "description": "An Open Source Machine Learning Framework for Everyone",
+          "language": "C++",
+          "stars_today": 0,
+          "total_stars": 194322,
+          "url": "https://github.com/tensorflow/tensorflow"
+        },
+        {
+          "name": "ohmyzsh/ohmyzsh",
+          "description": "🙃   A delightful community-driven (with 2,400+ contributors) framework for managing your zsh configuration. Includes 300+ optional plugins (rails, git, macOS, hub, docker, homebrew, node, php, python, etc), 140+ themes to spice up your morning, and an auto-update tool that makes it easy to keep up with the latest updates from the community.",
+          "language": "Shell",
+          "stars_today": 0,
+          "total_stars": 185607,
+          "url": "https://github.com/ohmyzsh/ohmyzsh"
+        },
+        {
+          "name": "microsoft/vscode",
+          "description": "Visual Studio Code",
+          "language": "TypeScript",
+          "stars_today": 0,
+          "total_stars": 183028,
+          "url": "https://github.com/microsoft/vscode"
+        },
+        {
+          "name": "Significant-Gravitas/AutoGPT",
+          "description": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+          "language": "Python",
+          "stars_today": 0,
+          "total_stars": 182789,
+          "url": "https://github.com/Significant-Gravitas/AutoGPT"
+        },
+        {
+          "name": "n8n-io/n8n",
+          "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+          "language": "TypeScript",
+          "stars_today": 0,
+          "total_stars": 180890,
+          "url": "https://github.com/n8n-io/n8n"
+        }
+      ]
+    },
+    "youtube_trending": {
+      "name": "YouTube Trending",
+      "status": "success",
+      "items_count": 20,
+      "items": [
+        {
+          "title": "🧩 ПОСЛЕДНЯЯ ЗАГАДКА Resident Evil Requiem - РЕШЕНА! #residentevil #residentevil9 #загадка",
+          "channel": "Plag1at Shorts",
+          "channelId": "UCCblt03bAxrvEify2W-dCVQ",
+          "channelSubscribers": 9570,
+          "videoId": "iD7nO6Fyp40",
+          "url": "https://www.youtube.com/watch?v=iD7nO6Fyp40",
+          "thumbnail": "https://i.ytimg.com/vi/iD7nO6Fyp40/maxresdefault.jpg",
+          "views": 3431255,
+          "likes": 60955,
+          "likeRatio": "1.78",
+          "commentCount": 757,
+          "duration": "1:27",
+          "durationRaw": "PT1M27S",
+          "definition": "hd",
+          "publishedAt": "2026-03-02T18:19:50Z",
+          "category": "Programming",
+          "region": "US",
+          "tags": []
+        },
+        {
+          "title": "Subscribe for more coding tips⬆️ #cheat#exam#lotion#test#blackbox#professor",
+          "channel": "Study with mishti",
+          "channelId": "UCeKQmMHb4dinQLzE2YNUZpw",
+          "channelSubscribers": 688,
+          "videoId": "qA4D40URfhM",
+          "url": "https://www.youtube.com/watch?v=qA4D40URfhM",
+          "thumbnail": "https://i.ytimg.com/vi/qA4D40URfhM/maxresdefault.jpg",
+          "views": 2381366,
+          "likes": 16564,
+          "likeRatio": "0.70",
+          "commentCount": 42,
+          "duration": "0:20",
+          "durationRaw": "PT20S",
+          "definition": "hd",
+          "publishedAt": "2026-03-18T18:30:36Z",
+          "category": "한국 개발",
+          "region": "KR",
+          "tags": [
+            "programming",
+            "what is programming",
+            "learn programming",
+            "coding for beginners",
+            "programming and development"
+          ]
+        },
+        {
+          "title": "Automatic Bike Indicator using Arduino 🤯",
+          "channel": "MW Electronics Lab",
+          "channelId": "UCh5kt5BgdQj87aMMuRh9pPw",
+          "channelSubscribers": 100000,
+          "videoId": "kxandMfOCmA",
+          "url": "https://www.youtube.com/watch?v=kxandMfOCmA",
+          "thumbnail": "https://i.ytimg.com/vi/kxandMfOCmA/maxresdefault.jpg",
+          "views": 2126324,
+          "likes": 7265,
+          "likeRatio": "0.34",
+          "commentCount": 220,
+          "duration": "0:05",
+          "durationRaw": "PT5S",
+          "definition": "hd",
+          "publishedAt": "2026-03-17T13:39:26Z",
+          "category": "Coding",
+          "region": "US",
+          "tags": [
+            "#electronics",
+            "#diyprojects",
+            "#diy",
+            "#tutorial",
+            "#educational"
+          ]
+        },
+        {
+          "title": "#apple software developer Interview Question",
+          "channel": "Coding With Sagar",
+          "channelId": "UC9EM16FgJ0yxKW8j9NBpOyQ",
+          "channelSubscribers": 467000,
+          "videoId": "JPXJD7r4rk0",
+          "url": "https://www.youtube.com/watch?v=JPXJD7r4rk0",
+          "thumbnail": "https://i.ytimg.com/vi/JPXJD7r4rk0/maxresdefault.jpg",
+          "views": 840775,
+          "likes": 33366,
+          "likeRatio": "3.97",
+          "commentCount": 155,
+          "duration": "1:05",
+          "durationRaw": "PT1M5S",
+          "definition": "hd",
+          "publishedAt": "2026-03-16T05:34:54Z",
+          "category": "Software Dev",
+          "region": "US",
+          "tags": [
+            "software development basics",
+            "coding for beginners",
+            "programming logic building",
+            "binary concept in coding",
+            "problem solving for developers"
+          ]
+        },
+        {
+          "title": "7 new open source AI tools you need right now…",
+          "channel": "Fireship",
+          "channelId": "UCsBjURrPoezykLs9EqgamOA",
+          "channelSubscribers": 4130000,
+          "videoId": "Xn-gtHDsaPY",
+          "url": "https://www.youtube.com/watch?v=Xn-gtHDsaPY",
+          "thumbnail": "https://i.ytimg.com/vi/Xn-gtHDsaPY/maxresdefault.jpg",
+          "views": 714298,
+          "likes": 33527,
+          "likeRatio": "4.69",
+          "commentCount": 1113,
+          "duration": "6:15",
+          "durationRaw": "PT6M15S",
+          "definition": "hd",
+          "publishedAt": "2026-03-12T17:49:19Z",
+          "category": "Coding",
+          "region": "US",
+          "tags": [
+            "webdev",
+            "app development",
+            "lesson",
+            "tutorial",
+            "open source"
+          ]
+        },
+        {
+          "title": "Trending Template Eid VN Code | Eid Special Reels | Eid Template Video | Instagram Trending Template",
+          "channel": "Kunal Unfiltered ",
+          "channelId": "UCGekMKYtQKOjNqnFKh46SGw",
+          "channelSubscribers": 111000,
+          "videoId": "I4XCAe4Cwpc",
+          "url": "https://www.youtube.com/watch?v=I4XCAe4Cwpc",
+          "thumbnail": "https://i.ytimg.com/vi/I4XCAe4Cwpc/maxresdefault.jpg",
+          "views": 661364,
+          "likes": 21616,
+          "likeRatio": "3.27",
+          "commentCount": 87,
+          "duration": "0:23",
+          "durationRaw": "PT23S",
+          "definition": "hd",
+          "publishedAt": "2026-03-17T13:44:50Z",
+          "category": "Programming",
+          "region": "US",
+          "tags": [
+            "Eid2026 Reels",
+            "Eid Template",
+            "Eid Reels VN Code Template",
+            "Eid Reels Template",
+            "Trending Eid Template"
+          ]
+        },
+        {
+          "title": "The Ultimate Beginner’s Guide to OpenClaw",
+          "channel": "Metics Media",
+          "channelId": "UCuwpzP90g1LuGk6JUNms_AQ",
+          "channelSubscribers": 545000,
+          "videoId": "st534T7-mdE",
+          "url": "https://www.youtube.com/watch?v=st534T7-mdE",
+          "thumbnail": "https://i.ytimg.com/vi/st534T7-mdE/maxresdefault.jpg",
+          "views": 565257,
+          "likes": 16796,
+          "likeRatio": "2.97",
+          "commentCount": 504,
+          "duration": "56:42",
+          "durationRaw": "PT56M42S",
+          "definition": "hd",
+          "publishedAt": "2026-03-09T14:56:20Z",
+          "category": "Programming",
+          "region": "US",
+          "tags": [
+            "openclaw beginners guide",
+            "how to set-up openclaw bot on a vps (beginner guide)",
+            "openclaw guide",
+            "openclaw setup guide",
+            "openclaw beginners"
+          ]
+        },
+        {
+          "title": "Linus Torvalds about  Vibe codeing 🤯🤯 #linux #programming #cybersecurity",
+          "channel": "Manish sir",
+          "channelId": "UCkAn98bdU1LzZ3m-LLU-GcA",
+          "channelSubscribers": 2000,
+          "videoId": "3tWRq1Dv1as",
+          "url": "https://www.youtube.com/watch?v=3tWRq1Dv1as",
+          "thumbnail": "https://i.ytimg.com/vi/3tWRq1Dv1as/maxresdefault.jpg",
+          "views": 547853,
+          "likes": 15745,
+          "likeRatio": "2.87",
+          "commentCount": 416,
+          "duration": "2:18",
+          "durationRaw": "PT2M18S",
+          "definition": "hd",
+          "publishedAt": "2026-03-20T12:28:22Z",
+          "category": "Software Dev",
+          "region": "US",
+          "tags": []
+        },
+        {
+          "title": "Ex-Google Maps PM Vibe Coded Palantir In a Weekend (Palantir Noticed)",
+          "channel": "Bilawal Sidhu",
+          "channelId": "UC7bGK0A1weWfNaRfO0hGVdg",
+          "channelSubscribers": 135000,
+          "videoId": "rXvU7bPJ8n4",
+          "url": "https://www.youtube.com/watch?v=rXvU7bPJ8n4",
+          "thumbnail": "https://i.ytimg.com/vi/rXvU7bPJ8n4/maxresdefault.jpg",
+          "views": 546907,
+          "likes": 25408,
+          "likeRatio": "4.65",
+          "commentCount": 1367,
+          "duration": "10:16",
+          "durationRaw": "PT10M16S",
+          "definition": "hd",
+          "publishedAt": "2026-02-24T14:01:20Z",
+          "category": "Coding",
+          "region": "US",
+          "tags": [
+            "vibe coding",
+            "Palantir",
+            "geospatial",
+            "Google Earth",
+            "satellite tracking"
+          ]
+        },
+        {
+          "title": "AI 잘 쓰는 사람들이 클로드 스킬 먼저 세팅하는 이유",
+          "channel": "유튜브신쌤",
+          "channelId": "UC-6DLwseTZG-l4JprVV2MIQ",
+          "channelSubscribers": 145000,
+          "videoId": "8o6qC5qw4r0",
+          "url": "https://www.youtube.com/watch?v=8o6qC5qw4r0",
+          "thumbnail": "https://i.ytimg.com/vi/8o6qC5qw4r0/maxresdefault.jpg",
+          "views": 479534,
+          "likes": 7903,
+          "likeRatio": "1.65",
+          "commentCount": 288,
+          "duration": "11:09",
+          "durationRaw": "PT11M9S",
+          "definition": "hd",
+          "publishedAt": "2026-02-28T11:00:24Z",
+          "category": "한국 개발",
+          "region": "KR",
+          "tags": [
+            "유튜브",
+            "클로드",
+            "클로드AI",
+            "Claude",
+            "Claude4.6"
+          ]
+        },
+        {
+          "title": "Claude Code - Full Tutorial for Beginners",
+          "channel": "Tech With Tim",
+          "channelId": "UC4JX40jDee_tINbkjycV4Sg",
+          "channelSubscribers": 1980000,
+          "videoId": "ntDIxaeo3Wg",
+          "url": "https://www.youtube.com/watch?v=ntDIxaeo3Wg",
+          "thumbnail": "https://i.ytimg.com/vi/ntDIxaeo3Wg/maxresdefault.jpg",
+          "views": 456988,
+          "likes": 9904,
+          "likeRatio": "2.17",
+          "commentCount": 312,
+          "duration": "35:49",
+          "durationRaw": "PT35M49S",
+          "definition": "hd",
+          "publishedAt": "2026-02-27T13:01:25Z",
+          "category": "Programming",
+          "region": "US",
+          "tags": [
+            "tech with tim",
+            "claude code tutorial",
+            "ai automation for beginners",
+            "automate workflows",
+            "openai api guide"
+          ]
+        },
+        {
+          "title": "The End of Coding: Andrej Karpathy on Agents, AutoResearch, and the Loopy Era of AI",
+          "channel": "No Priors: AI, Machine Learning, Tech, & Startups",
+          "channelId": "UCSI7h9hydQ40K5MJHnCrQvw",
+          "channelSubscribers": 70900,
+          "videoId": "kwSVtQ7dziU",
+          "url": "https://www.youtube.com/watch?v=kwSVtQ7dziU",
+          "thumbnail": "https://i.ytimg.com/vi/kwSVtQ7dziU/maxresdefault.jpg",
+          "views": 430056,
+          "likes": 9951,
+          "likeRatio": "2.31",
+          "commentCount": 691,
+          "duration": "1:06:32",
+          "durationRaw": "PT1H6M32S",
+          "definition": "hd",
+          "publishedAt": "2026-03-20T13:27:35Z",
+          "category": "Coding",
+          "region": "US",
+          "tags": []
+        },
+        {
+          "title": "Linus Torvalds Explains The Joy Of Coding #shorts #linux #knowledge  #programmer #bug",
+          "channel": "WebKnower",
+          "channelId": "UCJfCYYF5b1wqfTCn6u34Q4Q",
+          "channelSubscribers": 101000,
+          "videoId": "1bHgms6IUWg",
+          "url": "https://www.youtube.com/watch?v=1bHgms6IUWg",
+          "thumbnail": "https://i.ytimg.com/vi/1bHgms6IUWg/maxresdefault.jpg",
+          "views": 387736,
+          "likes": 11146,
+          "likeRatio": "2.87",
+          "commentCount": 206,
+          "duration": "0:24",
+          "durationRaw": "PT24S",
+          "definition": "hd",
+          "publishedAt": "2026-03-16T06:55:57Z",
+          "category": "한국 개발",
+          "region": "KR",
+          "tags": [
+            "linus torvalds",
+            "linus torvalds interview",
+            "creator of linux",
+            "who created linux",
+            "linux programming"
+          ]
+        },
+        {
+          "title": "Apple’s New M5 Max Changes the Local AI Story",
+          "channel": "Alex Ziskind",
+          "channelId": "UCajiMK_CY9icRhLepS8_3ug",
+          "channelSubscribers": 470000,
+          "videoId": "XGe7ldwFLSE",
+          "url": "https://www.youtube.com/watch?v=XGe7ldwFLSE",
+          "thumbnail": "https://i.ytimg.com/vi/XGe7ldwFLSE/maxresdefault.jpg",
+          "views": 330736,
+          "likes": 11177,
+          "likeRatio": "3.38",
+          "commentCount": 762,
+          "duration": "13:59",
+          "durationRaw": "PT13M59S",
+          "definition": "hd",
+          "publishedAt": "2026-03-09T20:00:32Z",
+          "category": "Software Dev",
+          "region": "US",
+          "tags": [
+            "software developer",
+            "programmer",
+            "software development",
+            "programming",
+            "developer"
+          ]
+        },
+        {
+          "title": "Interview with a 'sweating' AI CEO (2026)",
+          "channel": "Kai Lentit",
+          "channelId": "UCi8C7TNs2ohrc6hnRQ5Sn2w",
+          "channelSubscribers": 333000,
+          "videoId": "tnYaExb5JvM",
+          "url": "https://www.youtube.com/watch?v=tnYaExb5JvM",
+          "thumbnail": "https://i.ytimg.com/vi/tnYaExb5JvM/maxresdefault.jpg",
+          "views": 326319,
+          "likes": 18509,
+          "likeRatio": "5.67",
+          "commentCount": 1059,
+          "duration": "4:06",
+          "durationRaw": "PT4M6S",
+          "definition": "hd",
+          "publishedAt": "2026-03-18T17:04:48Z",
+          "category": "Software Dev",
+          "region": "US",
+          "tags": [
+            "programming humor",
+            "software development humor",
+            "nextgen ai",
+            "ai humor",
+            "ai news"
+          ]
+        },
+        {
+          "title": "구글 신제품 때문에 완전히 멘탈이 나가버린 유저들",
+          "channel": "코딩애플",
+          "channelId": "UCSLrpBAzr-ROVGHQ5EmxnUg",
+          "channelSubscribers": 436000,
+          "videoId": "Pq12GuQw0_c",
+          "url": "https://www.youtube.com/watch?v=Pq12GuQw0_c",
+          "thumbnail": "https://i.ytimg.com/vi/Pq12GuQw0_c/maxresdefault.jpg",
+          "views": 298352,
+          "likes": 6133,
+          "likeRatio": "2.06",
+          "commentCount": 487,
+          "duration": "5:43",
+          "durationRaw": "PT5M43S",
+          "definition": "hd",
+          "publishedAt": "2026-03-11T03:00:34Z",
+          "category": "한국 개발",
+          "region": "KR",
+          "tags": [
+            "개발자",
+            "취업",
+            "코딩",
+            "프로그래밍",
+            "자바스크립트"
+          ]
+        },
+        {
+          "title": "Using Claude Code Remote Control",
+          "channel": "Claude",
+          "channelId": "UCV03SRZXJEz-hchIAogeJOg",
+          "channelSubscribers": 114000,
+          "videoId": "Ko7_tC1fMMM",
+          "url": "https://www.youtube.com/watch?v=Ko7_tC1fMMM",
+          "thumbnail": "https://i.ytimg.com/vi/Ko7_tC1fMMM/maxresdefault.jpg",
+          "views": 275067,
+          "likes": 7629,
+          "likeRatio": "2.77",
+          "commentCount": 435,
+          "duration": "2:40",
+          "durationRaw": "PT2M40S",
+          "definition": "hd",
+          "publishedAt": "2026-03-17T23:19:22Z",
+          "category": "Programming",
+          "region": "US",
+          "tags": []
+        },
+        {
+          "title": "Learn Coding & Get a Job (in 2026) 🔥",
+          "channel": "CodeWithHarry",
+          "channelId": "UCeVMnSShP_Iviwkknt83cww",
+          "channelSubscribers": 9520000,
+          "videoId": "YBB3GbluHjA",
+          "url": "https://www.youtube.com/watch?v=YBB3GbluHjA",
+          "thumbnail": "https://i.ytimg.com/vi/YBB3GbluHjA/maxresdefault.jpg",
+          "views": 257167,
+          "likes": 10706,
+          "likeRatio": "4.16",
+          "commentCount": 851,
+          "duration": "19:17",
+          "durationRaw": "PT19M17S",
+          "definition": "hd",
+          "publishedAt": "2026-03-11T15:32:19Z",
+          "category": "Web Dev",
+          "region": "US",
+          "tags": []
+        },
+        {
+          "title": "Web Development Roadmap 2026 (No BS Guide!)",
+          "channel": "CodeWithHarry",
+          "channelId": "UCeVMnSShP_Iviwkknt83cww",
+          "channelSubscribers": 9520000,
+          "videoId": "-4e3ewcTupM",
+          "url": "https://www.youtube.com/watch?v=-4e3ewcTupM",
+          "thumbnail": "https://i.ytimg.com/vi/-4e3ewcTupM/maxresdefault.jpg",
+          "views": 240785,
+          "likes": 11223,
+          "likeRatio": "4.66",
+          "commentCount": 789,
+          "duration": "17:04",
+          "durationRaw": "PT17M4S",
+          "definition": "hd",
+          "publishedAt": "2026-03-06T16:00:01Z",
+          "category": "Web Dev",
+          "region": "US",
+          "tags": []
+        },
+        {
+          "title": "Gen AI + Full Stack Web Development Project | React, Node, JWT, Gemini",
+          "channel": "Sheryians Coding School",
+          "channelId": "UCc7gpqMnnOSbU_F2-5MVVZw",
+          "channelSubscribers": 648000,
+          "videoId": "zG3hNL08Dro",
+          "url": "https://www.youtube.com/watch?v=zG3hNL08Dro",
+          "thumbnail": "https://i.ytimg.com/vi/zG3hNL08Dro/maxresdefault.jpg",
+          "views": 106393,
+          "likes": 3961,
+          "likeRatio": "3.72",
+          "commentCount": 342,
+          "duration": "5:56:05",
+          "durationRaw": "PT5H56M5S",
+          "definition": "hd",
+          "publishedAt": "2026-02-28T15:17:06Z",
+          "category": "Web Dev",
+          "region": "US",
+          "tags": [
+            "sheryians",
+            "sheryians coding school",
+            "web development",
+            "web development projects",
+            "coding"
+          ]
+        }
+      ]
+    },
+    "geeknews": {
+      "name": "GeekNews",
+      "status": "partial",
+      "items_count": 0,
+      "items": []
+    },
+    "dev_to": {
+      "name": "Dev.to",
+      "status": "success",
+      "items_count": 10,
+      "items": [
+        {
+          "title": "Check Up with Each Other",
+          "author": "francistrdev",
+          "url": "https://dev.to/francistrdev/check-up-with-each-other-2ogc",
+          "reactions": 33,
+          "comments": 13,
+          "tags": [
+            "devchallenge",
+            "wecoded",
+            "dei",
+            "career"
+          ],
+          "published_at": "2026-03-24T19:07:08Z"
+        },
+        {
+          "title": "The Ultimate Job Finding-Management Tool",
+          "author": "annavi11arrea1",
+          "url": "https://dev.to/annavi11arrea1/the-ultimate-job-finding-managment-tool-522i",
+          "reactions": 23,
+          "comments": 12,
+          "tags": [
+            "webdev",
+            "webscraping",
+            "ai",
+            "programming"
+          ],
+          "published_at": "2026-03-24T03:05:20Z"
+        },
+        {
+          "title": "AI Writes Code. You Own Quality.",
+          "author": "helderberto",
+          "url": "https://dev.to/helderberto/ai-writes-code-you-own-quality-19g0",
+          "reactions": 11,
+          "comments": 7,
+          "tags": [
+            "ai",
+            "software",
+            "development",
+            "programming"
+          ],
+          "published_at": "2026-03-24T15:43:40Z"
+        },
+        {
+          "title": "React Components vs Spaghetti: 5 Signs Your UI Is Becoming Unmaintainable",
+          "author": "gavincettolo",
+          "url": "https://dev.to/gavincettolo/react-components-vs-spaghetti-5-signs-your-ui-is-becoming-unmaintainable-120m",
+          "reactions": 25,
+          "comments": 7,
+          "tags": [
+            "webdev",
+            "react",
+            "javascript",
+            "cleancode"
+          ],
+          "published_at": "2026-03-24T08:30:00Z"
+        },
+        {
+          "title": "Implementing a RAG system: Crawl",
+          "author": "glen_yu",
+          "url": "https://dev.to/gde/implementing-a-rag-system-crawl-5li",
+          "reactions": 6,
+          "comments": 3,
+          "tags": [
+            "rag",
+            "genai",
+            "opensource",
+            "adk"
+          ],
+          "published_at": "2026-03-24T18:00:00Z"
+        },
+        {
+          "title": "Construí um gerador de playlists no Spotify com Claude",
+          "author": "leugarcez",
+          "url": "https://dev.to/leugarcez/construi-um-gerador-de-playlists-no-spotify-com-claude-18ge",
+          "reactions": 73,
+          "comments": 4,
+          "tags": [
+            "ai",
+            "api",
+            "nextjs",
+            "braziliandevs"
+          ],
+          "published_at": "2026-03-24T02:01:08Z"
+        },
+        {
+          "title": "Top 7 Featured DEV Posts of the Week",
+          "author": "jess",
+          "url": "https://dev.to/devteam/top-7-featured-dev-posts-of-the-week-4ig2",
+          "reactions": 15,
+          "comments": 3,
+          "tags": [
+            "top7",
+            "discuss"
+          ],
+          "published_at": "2026-03-24T19:57:22Z"
+        },
+        {
+          "title": "From Engineering Floor to App Store: What 10 Years as a Manufacturing Engineer Taught Me About Building Software",
+          "author": "wong2kim",
+          "url": "https://dev.to/wong2kim/i-spent-10-years-in-manufacturing-now-i-build-ios-apps-with-ai-1mea",
+          "reactions": 9,
+          "comments": 0,
+          "tags": [
+            "beginners",
+            "ai",
+            "career",
+            "discuss"
+          ],
+          "published_at": "2026-03-24T03:37:45Z"
+        },
+        {
+          "title": "Why Purging Nginx Cache Is Only Half the Job (And How I Built the Other Half)",
+          "author": "psauxit",
+          "url": "https://dev.to/psauxit/why-purging-nginx-cache-is-only-half-the-job-and-how-i-built-the-other-half-3bhp",
+          "reactions": 5,
+          "comments": 0,
+          "tags": [
+            "nginx",
+            "wordpress",
+            "devops",
+            "opensource"
+          ],
+          "published_at": "2026-03-24T02:18:52Z"
+        },
+        {
+          "title": "Your AI Agent Can Be Hijacked With 3 Lines of JSON",
+          "author": "acacian",
+          "url": "https://dev.to/acacian/your-ai-agent-can-be-hijacked-with-3-lines-of-json-5878",
+          "reactions": 3,
+          "comments": 2,
+          "tags": [
+            "ai",
+            "security",
+            "python",
+            "opensource"
+          ],
+          "published_at": "2026-03-24T14:29:58Z"
+        }
+      ]
+    },
+    "lobsters": {
+      "name": "Lobsters",
+      "status": "success",
+      "items_count": 10,
+      "items": [
+        {
+          "title": "Debunking zswap and zram myths",
+          "url": "https://chrisdown.name/2026/03/24/zswap-vs-zram-when-to-use-what.html",
+          "points": 78,
+          "comments": 32,
+          "tags": [
+            "linux",
+            "performance"
+          ],
+          "author": "javierhonduco"
+        },
+        {
+          "title": "curl > dev/sda",
+          "url": "https://astrid.tech/2026/03/24/0/curl-to-dev-sda/",
+          "points": 70,
+          "comments": 19,
+          "tags": [
+            "osdev"
+          ],
+          "author": "abhin4v"
+        },
+        {
+          "title": "Hegel, a universal property-based testing protocol and family of PBT libraries",
+          "url": "https://hegel.dev",
+          "points": 33,
+          "comments": 18,
+          "tags": [
+            "testing"
+          ],
+          "author": "winter"
+        },
+        {
+          "title": "Announcing TypeScript 6.0",
+          "url": "https://devblogs.microsoft.com/typescript/announcing-typescript-6-0/",
+          "points": 51,
+          "comments": 11,
+          "tags": [
+            "javascript",
+            "release"
+          ],
+          "author": "ehamberg"
+        },
+        {
+          "title": "LiteLLM Compromised by Credential Stealer",
+          "url": "https://futuresearch.ai/blog/litellm-pypi-supply-chain-attack/",
+          "points": 28,
+          "comments": 5,
+          "tags": [
+            "security",
+            "vibecoding"
+          ],
+          "author": "Cajunvoodoo"
+        },
+        {
+          "title": "Go Naming Conventions: A Practical Guide",
+          "url": "https://www.alexedwards.net/blog/go-naming-conventions",
+          "points": 17,
+          "comments": 7,
+          "tags": [
+            "go"
+          ],
+          "author": "cgrinds"
+        },
+        {
+          "title": "\"﷽\" U+FDFD: ARABIC LIGATURE BISMILLAH AR-RAHMAN AR-RAHEEM (Unicode Character)",
+          "url": "https://unicodeplus.com/U+FDFD",
+          "points": 8,
+          "comments": 4,
+          "tags": [
+            "a11y"
+          ],
+          "author": "JordiGH"
+        },
+        {
+          "title": "Adding structured concurrency to JavaScript",
+          "url": "https://github.com/bakkot/structured-concurrency-for-js",
+          "points": 9,
+          "comments": 4,
+          "tags": [
+            "javascript"
+          ],
+          "author": "bakkot"
+        },
+        {
+          "title": "Inside Ohm's PEG-to-Wasm compiler",
+          "url": "https://ohmjs.org/blog/2026/03/12/peg-to-wasm",
+          "points": 15,
+          "comments": 0,
+          "tags": [
+            "compilers",
+            "wasm"
+          ],
+          "author": "pdubroy"
+        },
+        {
+          "title": "Pine64 FOSDEM 2026 Update",
+          "url": "https://pine64.org/2026/03/24/march_2026_fosdem/",
+          "points": 21,
+          "comments": 1,
+          "tags": [
+            "hardware"
+          ],
+          "author": "Aks"
+        }
+      ]
+    },
+    "indie_hackers": {
+      "name": "Indie Hackers",
+      "status": "partial",
+      "items_count": 0,
+      "items": []
+    },
+    "techcrunch": {
+      "name": "TechCrunch",
+      "status": "success",
+      "items_count": 10,
+      "items": [
+        {
+          "title": "Amazon just bought a startup making kid-size humanoid robots",
+          "url": "https://techcrunch.com/2026/03/24/amazon-just-bought-a-startup-making-kid-size-humanoid-robots/",
+          "author": "Kirsten Korosec",
+          "date": "Wed, 25 Mar 2026 00:53:39 +0000"
+        },
+        {
+          "title": "With $3.5B in fresh capital, Kleiner Perkins is going all in on AI",
+          "url": "https://techcrunch.com/2026/03/24/with-3-5b-in-fresh-capital-kleiner-perkins-is-going-all-in-on-ai/",
+          "author": "Marina Temkin",
+          "date": "Wed, 25 Mar 2026 00:47:20 +0000"
+        },
+        {
+          "title": "New Mexico just handed Meta its first courtroom defeat over child safety, and the rest of the country is watching",
+          "url": "https://techcrunch.com/2026/03/24/new-mexico-just-handed-meta-its-first-courtroom-defeat-over-child-safety-and-the-rest-of-the-country-is-watching/",
+          "author": "Connie Loizos",
+          "date": "Wed, 25 Mar 2026 00:14:12 +0000"
+        },
+        {
+          "title": "Lululemon bets Epoch Biodesign can eat its shorts, literally",
+          "url": "https://techcrunch.com/2026/03/24/lululemon-bets-epoch-biodesign-can-eat-its-shorts-literally/",
+          "author": "Tim De Chant",
+          "date": "Wed, 25 Mar 2026 00:01:00 +0000"
+        },
+        {
+          "title": "OpenAI’s Sora was the creepiest app on your phone &#8212; now it&#8217;s shutting down",
+          "url": "https://techcrunch.com/2026/03/24/openais-sora-was-the-creepiest-app-on-your-phone-now-its-shutting-down/",
+          "author": "Amanda Silberling",
+          "date": "Tue, 24 Mar 2026 23:57:55 +0000"
+        },
+        {
+          "title": "Accel, Prosus pick six &#8216;off-the-map&#8217; startups for inaugural India cohort",
+          "url": "https://techcrunch.com/2026/03/24/accel-prosus-pick-six-off-the-map-startups-for-inaugural-india-cohort-atoms/",
+          "author": "Jagmeet Singh",
+          "date": "Tue, 24 Mar 2026 23:30:00 +0000"
+        },
+        {
+          "title": "Kentucky woman rejects $26M offer to turn her farm into a data center",
+          "url": "https://techcrunch.com/2026/03/24/kentucky-woman-rejects-26-million-offer-to-turn-her-farm-into-a-data-center/",
+          "author": "Graham Starr",
+          "date": "Tue, 24 Mar 2026 22:22:57 +0000"
+        },
+        {
+          "title": "Anthropic hands Claude Code more control, but keeps it on a leash",
+          "url": "https://techcrunch.com/2026/03/24/anthropic-hands-claude-code-more-control-but-keeps-it-on-a-leash/",
+          "author": "Rebecca Bellan",
+          "date": "Tue, 24 Mar 2026 21:00:30 +0000"
+        },
+        {
+          "title": "Spotify tests new tool to stop AI slop from being attributed to real artists",
+          "url": "https://techcrunch.com/2026/03/24/spotify-tests-new-tool-to-stop-ai-slop-from-being-attributed-to-real-artists/",
+          "author": "Aisha Malik",
+          "date": "Tue, 24 Mar 2026 20:56:25 +0000"
+        },
+        {
+          "title": "Databricks bought two startups to underpin its new AI security product",
+          "url": "https://techcrunch.com/2026/03/24/databricks-buys-two-startups-lakewatch-antimatter-siftd-ai-security/",
+          "author": "Julie Bort",
+          "date": "Tue, 24 Mar 2026 20:40:56 +0000"
+        }
+      ]
+    },
+    "google_trends": {
+      "name": "Google Trends",
+      "status": "success",
+      "items_count": 10,
+      "items": [
+        {
+          "title": "ios 26.4",
+          "traffic": "100+",
+          "related_queries": [],
+          "news_items": [
+            {
+              "title": "Apple releases iOS, iPadOS, macOS 26.4 with a long list of medium-size tweaks",
+              "url": "https://arstechnica.com/gadgets/2026/03/apple-releases-ios-ipados-macos-26-4-with-a-long-list-of-medium-size-tweaks/"
+            },
+            {
+              "title": "New Apple Emojis For 2026 - Apple iOS 26.4 Emoji Changelog",
+              "url": "https://blog.emojipedia.org/apple-ios-26-4-emoji-changelog/"
+            },
+            {
+              "title": "You Can Download iOS 26.4 on Your iPhone Right Now",
+              "url": "https://www.cnet.com/tech/services-and-software/download-ios-26-4-iphone/"
+            }
+          ],
+          "tech_relevant": true
+        },
+        {
+          "title": "sora",
+          "traffic": "200+",
+          "related_queries": [],
+          "news_items": [
+            {
+              "title": "Exclusive | OpenAI Scraps Sora Video Platform Months After Launch",
+              "url": "https://www.wsj.com/tech/ai/openai-set-to-discontinue-sora-video-platform-app-a82a9e4e"
+            },
+            {
+              "title": "Disney Exits OpenAI Deal After AI Giant Shutters Sora",
+              "url": "https://www.hollywoodreporter.com/business/digital/openai-shutting-down-sora-ai-video-app-1236546187/"
+            },
+            {
+              "title": "OpenAI, the developer of ChatGPT, will discontinue its artificial intelligence (AI) video-generation..",
+              "url": "https://www.mk.co.kr/en/world/11997537"
+            }
+          ],
+          "tech_relevant": true
+        },
+        {
+          "title": "카카오게임즈",
+          "traffic": "500+",
+          "related_queries": [],
+          "news_items": [
+            {
+              "title": "카카오, 카카오게임즈 경영권 라인야후에 매각한다",
+              "url": "https://www.chosun.com/economy/tech_it/2026/03/25/2QZJY6FXMFH6PDMQCVGSLDTLQA/"
+            },
+            {
+              "title": "카카오게임즈, 최대 주주 라인야후로…3000억 투자 유치",
+              "url": "https://zdnet.co.kr/view/?no=20260325083032"
+            },
+            {
+              "title": "[특징주] &apos;라인야후에 인수&apos; 카카오게임즈, 장 초반 9% 급등",
+              "url": "https://www.yna.co.kr/view/AKR20260325039900008"
+            }
+          ],
+          "tech_relevant": false
+        },
+        {
+          "title": "한패스",
+          "traffic": "500+",
+          "related_queries": [],
+          "news_items": [
+            {
+              "title": "[특징주] 한패스, 코스닥 시장 첫발 내디디며 장초반 &apos;따블&apos; 넘겨",
+              "url": "https://www.yna.co.kr/view/AKR20260325041900008"
+            },
+            {
+              "title": "[어제장 오늘장] 외국인 플랫폼 기업 &apos;한패스&apos; 코스닥 상장…성적표는?",
+              "url": "https://v.daum.net/v/20260325082706273"
+            },
+            {
+              "title": "&apos;외국인 금융 플랫폼&apos; 한패스, 코스닥 데뷔",
+              "url": "https://marketin.edaily.co.kr/News/ReadE?newsId=02525606645386928"
+            }
+          ],
+          "tech_relevant": false
+        },
+        {
+          "title": "김희은 셰프",
+          "traffic": "100+",
+          "related_queries": [],
+          "news_items": [
+            {
+              "title": "김희은 셰프, 눈물의 가정사 고백… &quot;17년 만에 만난 母, 암투병 중&quot;",
+              "url": "https://www.newsis.com/view/NISX20260325_0003562366"
+            },
+            {
+              "title": "“앨범속 선남선녀”…고2때 재회한 엄마 암투병중, 김희은 가슴아픈 가정사",
+              "url": "https://www.mk.co.kr/news/culture/11997649"
+            },
+            {
+              "title": "&apos;동상이몽2&apos; 김희은♥윤대현, 2026 미쉐린 가이드 초대장 받고 &apos;감격&apos;···4년 연속 초대에 &apos;감사&apos;",
+              "url": "https://news.nate.com/view/20260325n04375"
+            }
+          ],
+          "tech_relevant": false
+        },
+        {
+          "title": "휴전",
+          "traffic": "100+",
+          "related_queries": [],
+          "news_items": [
+            {
+              "title": "&quot;美, &apos;이란과 한달간 휴전 후 15개항 협상&apos; 추진&quot; 이스라엘 매체",
+              "url": "https://www.newsis.com/view/NISX20260325_0003562410"
+            },
+            {
+              "title": "협상 기대 부채질하면서 최정예 병력 급파…트럼프의 속내는?",
+              "url": "https://v.daum.net/v/20260325100303818"
+            },
+            {
+              "title": "[속보]“미국·이란 1개월 간 휴전할 것…이르면 26일 협상” 외신 보도",
+              "url": "https://www.munhwa.com/article/11577064"
+            }
+          ],
+          "tech_relevant": false
+        },
+        {
+          "title": "살라",
+          "traffic": "500+",
+          "related_queries": [],
+          "news_items": [
+            {
+              "title": "살라흐, EPL 리버풀 떠난다…올 시즌 후 9년 동행 마무리",
+              "url": "https://www.yna.co.kr/view/AKR20260325013400007"
+            },
+            {
+              "title": "&quot;떠나기 쉽지 않았다&quot; 손흥민과는 달라도 너무 다른 마지막…&apos;파라오&apos; 살라, 이번 시즌 끝으로 리버풀과 결별",
+              "url": "https://v.daum.net/v/fLqbWjvmHp"
+            },
+            {
+              "title": "&quot;살라, 호날두 넘었다&quot; 리버풀 전설의 극찬.. &quot;삐진 표정도 위대함 증거&quot;",
+              "url": "https://www.chosun.com/sports/world-football/2026/03/25/GY4DONLFHE2TSZTGMVQTSYTEMM/"
+            }
+          ],
+          "tech_relevant": false
+        },
+        {
+          "title": "박왕열",
+          "traffic": "2000+",
+          "related_queries": [],
+          "news_items": [
+            {
+              "title": "&apos;마약왕&apos; 박왕열 한국 송환 &quot;공범과 범죄수익 끝까지 추적&quot;",
+              "url": "https://imnews.imbc.com/news/2026/politics/article/6810026_36911.html"
+            },
+            {
+              "title": "“넌 남자도 아녀”…시종일관 침묵하던 ‘마약왕’ 박왕열의 한 마디",
+              "url": "https://www.chosun.com/national/national_general/2026/03/25/YG54GPRMEZAUHG5A25YSZKDT6Y/"
+            },
+            {
+              "title": "“박○열이라고 있죠?” 한마디에…한인 3명 살해 ‘마약왕’ 한국 철창행 [지금뉴스]",
+              "url": "https://news.kbs.co.kr/news/view.do?ncd=8517384"
+            }
+          ],
+          "tech_relevant": false
+        },
+        {
+          "title": "날씨",
+          "traffic": "100000+",
+          "related_queries": [],
+          "news_items": [
+            {
+              "title": "일교차 15~20도, 수도권 미세먼지 ‘나쁨’···전남·제주는 비",
+              "url": "https://v.daum.net/v/20260325071700710"
+            },
+            {
+              "title": "남부 비, 전국에 먼지…낮기온 20도 육박",
+              "url": "https://news.kbs.co.kr/news/view.do?ncd=8517542"
+            },
+            {
+              "title": "낮 기온 최고 20도 안팎 &apos;포근&apos;…남부는 비[오늘날씨]",
+              "url": "https://www.newsis.com/view/NISX20260324_0003562311"
+            }
+          ],
+          "tech_relevant": false
+        },
+        {
+          "title": "weather",
+          "traffic": "2000+",
+          "related_queries": [],
+          "news_items": [
+            {
+              "title": "Back-And-Forth Weather",
+              "url": "https://www.wandtv.com/weather/weather-blog/back-and-forth-weather/article_791560ac-4cfe-40be-b864-a64a121d7714.html"
+            },
+            {
+              "title": "Severe storm risk for Chicago area on Thursday",
+              "url": "https://www.cbsnews.com/chicago/video/severe-storm-risk-for-chicago-area-on-thursday/"
+            },
+            {
+              "title": "Record Heat, Storms, Then Cooler",
+              "url": "https://www.wthitv.com/weather/forecast/record-heat-storms-then-cooler/article_bc6f2d22-247e-537f-893c-369cda1eb0f8.html"
+            }
+          ],
+          "tech_relevant": false
+        }
+      ]
+    },
+    "korean_tech_trends": {
+      "name": "Korean Tech Trends",
+      "status": "partial",
+      "items_count": 0,
+      "items": []
+    },
+    "playstore_niche": {
+      "name": "Play Store Niche",
+      "status": "success",
+      "items_count": 10,
+      "items": [
+        {
+          "id": "net.workoutinc.tai_chi_for_beginners",
+          "title": "Tai Chi for Beginners Seniors",
+          "developer": "7M Limited",
+          "url": "https://play.google.com/store/apps/details?id=net.workoutinc.tai_chi_for_beginners",
+          "score": 4.7727275,
+          "reviews": 565,
+          "installs": "100,000+",
+          "offersIAP": true,
+          "iapRange": "$19.99 - $59.99 per item",
+          "category": "HEALTH_AND_FITNESS",
+          "collection": "TOP_GROSSING",
+          "country": "us",
+          "rank": 45,
+          "nicheScore": 100,
+          "platform": "android",
+          "icon": "https://play-lh.googleusercontent.com/PDJCfalSdlxTGbCYMSaCVqEqzbBi6TeOKsedbYQkHXw-EoOCkXF0lkIGIjBB2m1rsLHo8iEVC3VzhetCI2vgzt0",
+          "released": "Nov 11, 2025",
+          "updated": 1772520692000,
+          "isRecent": true
+        },
+        {
+          "id": "com.labs326.antique",
+          "title": "Antique Identifier Zophi",
+          "developer": "326 LAB - FZCO",
+          "url": "https://play.google.com/store/apps/details?id=com.labs326.antique",
+          "score": 4.697943,
+          "reviews": 670,
+          "installs": "100,000+",
+          "offersIAP": true,
+          "iapRange": "$3.99 - $39.99 per item",
+          "category": "LIFESTYLE",
+          "collection": "TOP_FREE",
+          "country": "us",
+          "rank": 41,
+          "nicheScore": 100,
+          "platform": "android",
+          "icon": "https://play-lh.googleusercontent.com/ASDcmhUC4O6kaahIe5SMZUqUCLQAKrsL8DS6pKXMokgidM54iTgpWenuP_ORbnG65KPNIvhZkw9JeAPa7b_EvQ",
+          "released": "Oct 10, 2025",
+          "updated": 1771239542000,
+          "isRecent": true
+        },
+        {
+          "id": "com.yarnpal.ai",
+          "title": "YarnPal - Crochet for Beginner",
+          "developer": "PIXELCELL PTE. LIMITED",
+          "url": "https://play.google.com/store/apps/details?id=com.yarnpal.ai",
+          "score": 4.6247973,
+          "reviews": 849,
+          "installs": "1,000,000+",
+          "offersIAP": true,
+          "iapRange": "$3.99 - $49.99 per item",
+          "category": "LIFESTYLE",
+          "collection": "TOP_GROSSING",
+          "country": "us",
+          "rank": 33,
+          "nicheScore": 100,
+          "platform": "android",
+          "icon": "https://play-lh.googleusercontent.com/-4MuBBNJ5PBpvCcnHtizCJa2YMGn8y_vEF19fCGBB2EbDuc8AIkUCHW3JHZ2ijQWPvd5xwdT2UKSoW8NjtfVS-s",
+          "released": "Aug 28, 2025",
+          "updated": 1773302942000,
+          "isRecent": true
+        },
+        {
+          "id": "com.officedocument.word.docx.document.viewer",
+          "title": "Word Document: DOCX, PDF, XLSX",
+          "developer": "iKame Applications - Begamob Global",
+          "url": "https://play.google.com/store/apps/details?id=com.officedocument.word.docx.document.viewer",
+          "score": 4.534288,
+          "reviews": 2053,
+          "installs": "50,000,000+",
+          "offersIAP": true,
+          "iapRange": "$1.99 - $39.99 per item",
+          "category": "PRODUCTIVITY",
+          "collection": "TOP_FREE",
+          "country": "us",
+          "rank": 50,
+          "nicheScore": 100,
+          "platform": "android",
+          "icon": "https://play-lh.googleusercontent.com/kAjUn6oIH50YUItJ5sJuTp8VJiUOcyR9YQ6UJhR3BcllDZSjF8DnkF-sQpprPCZQTSoS",
+          "released": "Jan 27, 2020",
+          "updated": 1774157647000,
+          "isRecent": false
+        },
+        {
+          "id": "translate.voice.translator.camera.translation.free.all.language.app",
+          "title": "Translate - Translator",
+          "developer": "ZANKHANA PTE LTD",
+          "url": "https://play.google.com/store/apps/details?id=translate.voice.translator.camera.translation.free.all.language.app",
+          "score": 4.6573706,
+          "reviews": 943,
+          "installs": "10,000,000+",
+          "offersIAP": true,
+          "iapRange": "$1.99 - $64.99 per item",
+          "category": "PRODUCTIVITY",
+          "collection": "TOP_FREE",
+          "country": "us",
+          "rank": 53,
+          "nicheScore": 100,
+          "platform": "android",
+          "icon": "https://play-lh.googleusercontent.com/cKq-YgVoluSoflJcf1_VYmdsLrzJxMIUqocQitmj_iZfcTiEBRfbkYv7FC8vIsx7afE",
+          "released": "Jan 16, 2024",
+          "updated": 1772769208000,
+          "isRecent": false
+        },
+        {
+          "id": "com.glority.everlens",
+          "title": "Mobile Scanner App - Scan PDF",
+          "developer": "Glority Global Group Ltd.",
+          "url": "https://play.google.com/store/apps/details?id=com.glority.everlens",
+          "score": 4.611413,
+          "reviews": 1927,
+          "installs": "10,000,000+",
+          "offersIAP": true,
+          "iapRange": "$0.99 - $39.99 per item",
+          "category": "PRODUCTIVITY",
+          "collection": "TOP_GROSSING",
+          "country": "us",
+          "rank": 38,
+          "nicheScore": 100,
+          "platform": "android",
+          "icon": "https://play-lh.googleusercontent.com/1xa5hmoDC_lq7sntiQYEoOS3AJ5ZwYvZ4dzgjPprNx63Qyevp_6kZVbN3ZcuOPTuvpBe",
+          "released": "Dec 27, 2019",
+          "updated": 1766628801000,
+          "isRecent": false
+        },
+        {
+          "id": "com.replit.app",
+          "title": "Replit: Vibe code with AI Fast",
+          "developer": "Replit",
+          "url": "https://play.google.com/store/apps/details?id=com.replit.app",
+          "score": 4.5767717,
+          "reviews": 1402,
+          "installs": "5,000,000+",
+          "offersIAP": true,
+          "iapRange": "$19.99 - $204.99 per item",
+          "category": "PRODUCTIVITY",
+          "collection": "TOP_GROSSING",
+          "country": "us",
+          "rank": 42,
+          "nicheScore": 100,
+          "platform": "android",
+          "icon": "https://play-lh.googleusercontent.com/6300b2b5NYeoFhwVthpDW28aoUeaqMGEAijYCyiAic2WCVeMMo09gOz11ODKkD4AaDUKpX7zvbico6Af1L7mEw",
+          "released": "Oct 14, 2022",
+          "updated": 1773265349000,
+          "isRecent": false
+        },
+        {
+          "id": "com.sarasoft.es.fivethreeone",
+          "title": "Wendler log 531 Pro",
+          "developer": "SaraSoft",
+          "url": "https://play.google.com/store/apps/details?id=com.sarasoft.es.fivethreeone",
+          "score": 4.8916254,
+          "reviews": 916,
+          "installs": "10,000+",
+          "offersIAP": false,
+          "iapRange": "N/A",
+          "category": "HEALTH_AND_FITNESS",
+          "collection": "TOP_PAID",
+          "country": "us",
+          "rank": 50,
+          "nicheScore": 100,
+          "platform": "android",
+          "icon": "https://play-lh.googleusercontent.com/UpRezkwNEVIFzL7Is5QK7VFrIKAviYUcTbu4F-Q_GLXFc0mHUkQq3xyA8ngOvfpyBRU",
+          "released": "Jan 20, 2015",
+          "updated": 1774184901000,
+          "isRecent": false
+        },
+        {
+          "id": "com.appediet.appediet",
+          "title": "AI Calorie Counter - Appediet",
+          "developer": "Appediet Information PTE. LTD",
+          "url": "https://play.google.com/store/apps/details?id=com.appediet.appediet",
+          "score": 4.734927,
+          "reviews": 364,
+          "installs": "500,000+",
+          "offersIAP": true,
+          "iapRange": "$6.99 - $95.00 per item",
+          "category": "HEALTH_AND_FITNESS",
+          "collection": "TOP_FREE",
+          "country": "us",
+          "rank": 45,
+          "nicheScore": 95,
+          "platform": "android",
+          "icon": "https://play-lh.googleusercontent.com/ONZMjbf458-8OY_oQ_8LEy0UsWRxV3WazznHh6A_pEkkqGjlOVbRxpTWfoC0Mz89qw",
+          "released": "Apr 28, 2025",
+          "updated": 1774369832000,
+          "isRecent": true
+        },
+        {
+          "id": "com.cleansweep.plus",
+          "title": "Clean Sweep Plus",
+          "developer": "StarOnline",
+          "url": "https://play.google.com/store/apps/details?id=com.cleansweep.plus",
+          "score": 4.512121,
+          "reviews": 795,
+          "installs": "1,000,000+",
+          "offersIAP": false,
+          "iapRange": "N/A",
+          "category": "TOOLS",
+          "collection": "TOP_FREE",
+          "country": "us",
+          "rank": 40,
+          "nicheScore": 95,
+          "platform": "android",
+          "icon": "https://play-lh.googleusercontent.com/iaqBJzFG3F6Te8pWV427c6-T1I-8ReLmCelT6sBHOqkrdqMsM_5ryt895L-tTiGP98v_zbF5uBaGmSTYxSSGyQ",
+          "released": "Jul 31, 2025",
+          "updated": 1762742140000,
+          "isRecent": true
+        }
+      ]
+    },
+    "appstore_niche": {
+      "name": "App Store Niche",
+      "status": "success",
+      "items_count": 10,
+      "items": [
+        {
+          "id": "6757728397",
+          "title": "VoKit - Image Effects Creator",
+          "developer": "韵迪 林",
+          "url": "https://apps.apple.com/us/app/vokit-image-effects-creator/id6757728397?uo=4",
+          "score": 4.59363,
+          "reviews": 1004,
+          "offersIAP": false,
+          "price": 0,
+          "category": "TOOLS",
+          "collection": "TOP_FREE",
+          "country": "us",
+          "rank": 31,
+          "nicheScore": 95,
+          "platform": "ios",
+          "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/9c/7d/17/9c7d1734-e8db-bb11-8c45-b9ae9951427d/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg",
+          "released": "2026-01-19T08:00:00Z",
+          "updated": "2026-03-16T01:55:36Z",
+          "isRecent": true
+        },
+        {
+          "id": "6749690755",
+          "title": "iPhone Cleaner - Virus Protect",
+          "developer": "Ranger Bookie Investments LLC",
+          "url": "https://apps.apple.com/us/app/iphone-cleaner-virus-protect/id6749690755?uo=4",
+          "score": 4.73198,
+          "reviews": 2664,
+          "offersIAP": false,
+          "price": 0,
+          "category": "TOOLS",
+          "collection": "TOP_GROSSING",
+          "country": "us",
+          "rank": 43,
+          "nicheScore": 95,
+          "platform": "ios",
+          "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/6a/c7/a7/6ac7a78d-f078-adc5-ab38-45aa28aa6d80/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg",
+          "released": "2025-10-28T07:00:00Z",
+          "updated": "2026-01-28T07:57:23Z",
+          "isRecent": true
+        },
+        {
+          "id": "1532203461",
+          "title": "Export contacts by Covve",
+          "developer": "Covve",
+          "url": "https://apps.apple.com/us/app/export-contacts-by-covve/id1532203461?uo=4",
+          "score": 4.75966,
+          "reviews": 1552,
+          "offersIAP": false,
+          "price": 3.99,
+          "category": "PRODUCTIVITY",
+          "collection": "TOP_PAID",
+          "country": "us",
+          "rank": 31,
+          "nicheScore": 95,
+          "platform": "ios",
+          "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/eb/1c/9d/eb1c9d2c-cb82-da5a-5c1d-915fa5e8c990/PlayerAppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+          "released": "2020-10-15T07:00:00Z",
+          "updated": "2025-05-30T10:50:43Z",
+          "isRecent": false
+        },
+        {
+          "id": "415038787",
+          "title": "Photo Measures",
+          "developer": "Cubent",
+          "url": "https://apps.apple.com/us/app/photo-measures/id415038787?uo=4",
+          "score": 4.57143,
+          "reviews": 518,
+          "offersIAP": false,
+          "price": 6.99,
+          "category": "PRODUCTIVITY",
+          "collection": "TOP_PAID",
+          "country": "us",
+          "rank": 39,
+          "nicheScore": 95,
+          "platform": "ios",
+          "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4c/be/5d/4cbe5d74-bb0a-4c86-9f60-e67d345b1144/AppIcon-1x_U007emarketing-0-9-0-85-220-0.png/512x512bb.jpg",
+          "released": "2011-01-20T04:24:00Z",
+          "updated": "2024-04-19T16:03:22Z",
+          "isRecent": false
+        },
+        {
+          "id": "1037668281",
+          "title": "CNC Machinist Calculator Pro",
+          "developer": "Shane Anderson",
+          "url": "https://apps.apple.com/us/app/cnc-machinist-calculator-pro/id1037668281?uo=4",
+          "score": 4.71017,
+          "reviews": 659,
+          "offersIAP": false,
+          "price": 14.99,
+          "category": "PRODUCTIVITY",
+          "collection": "TOP_PAID",
+          "country": "us",
+          "rank": 41,
+          "nicheScore": 95,
+          "platform": "ios",
+          "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/8a/31/b2/8a31b230-6249-169a-d247-07c419529aac/AppIcon-1x_U007emarketing-85-220-3.png/512x512bb.jpg",
+          "released": "2015-09-25T12:37:13Z",
+          "updated": "2024-10-05T19:54:27Z",
+          "isRecent": false
+        },
+        {
+          "id": "1201419241",
+          "title": "Bullet Journal Companion",
+          "developer": "Lightcage LLC",
+          "url": "https://apps.apple.com/us/app/bullet-journal-companion/id1201419241?uo=4",
+          "score": 4.5023,
+          "reviews": 1959,
+          "offersIAP": false,
+          "price": 4.99,
+          "category": "PRODUCTIVITY",
+          "collection": "TOP_PAID",
+          "country": "us",
+          "rank": 45,
+          "nicheScore": 95,
+          "platform": "ios",
+          "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/3f/fa/66/3ffa662b-bc33-3d33-e47d-5a92a3edcf43/AppIcon-1x_U007emarketing-0-10-0-85-220.png/512x512bb.jpg",
+          "released": "2017-02-24T03:24:46Z",
+          "updated": "2023-11-01T09:20:05Z",
+          "isRecent": false
+        },
+        {
+          "id": "6738115267",
+          "title": "AI Calorie Counter:FoodPilot",
+          "developer": "Hong Kong Radiant Limited",
+          "url": "https://apps.apple.com/us/app/ai-calorie-counter-foodpilot/id6738115267?uo=4",
+          "score": 4.70539,
+          "reviews": 1558,
+          "offersIAP": false,
+          "price": 0,
+          "category": "HEALTH_AND_FITNESS",
+          "collection": "TOP_FREE",
+          "country": "us",
+          "rank": 41,
+          "nicheScore": 95,
+          "platform": "ios",
+          "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/36/4c/36/364c361c-7664-1163-4ac1-c0a5b355acb4/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg",
+          "released": "2024-11-26T08:00:00Z",
+          "updated": "2026-03-20T01:40:54Z",
+          "isRecent": false
+        },
+        {
+          "id": "6748968935",
+          "title": "Payout: Claim Class Actions",
+          "developer": "PAYOUT LLC",
+          "url": "https://apps.apple.com/us/app/payout-claim-class-actions/id6748968935?uo=4",
+          "score": 4.57582,
+          "reviews": 3970,
+          "offersIAP": false,
+          "price": 0,
+          "category": "FINANCE",
+          "collection": "TOP_GROSSING",
+          "country": "us",
+          "rank": 36,
+          "nicheScore": 85,
+          "platform": "ios",
+          "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/5b/fe/a0/5bfea05f-21b8-db0d-5a65-3a95346422fc/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+          "released": "2025-08-02T07:00:00Z",
+          "updated": "2026-03-20T04:53:43Z",
+          "isRecent": true
+        },
+        {
+          "id": "6747917472",
+          "title": "DFCleanup-AI Cleaner Storage",
+          "developer": "飞 杜",
+          "url": "https://apps.apple.com/us/app/dfcleanup-ai-cleaner-storage/id6747917472?uo=4",
+          "score": 4.48424,
+          "reviews": 1935,
+          "offersIAP": false,
+          "price": 0,
+          "category": "TOOLS",
+          "collection": "TOP_FREE",
+          "country": "us",
+          "rank": 32,
+          "nicheScore": 85,
+          "platform": "ios",
+          "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/71/88/aa/7188aaf7-c828-d6ac-f4b4-f4a03fb9ddfc/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg",
+          "released": "2025-07-22T07:00:00Z",
+          "updated": "2025-11-26T18:40:46Z",
+          "isRecent": true
+        },
+        {
+          "id": "6740909540",
+          "title": "Manus AI",
+          "developer": "BUTTERFLY EFFECT PTE. LTD.",
+          "url": "https://apps.apple.com/us/app/manus-ai/id6740909540?uo=4",
+          "score": 4.76495,
+          "reviews": 22974,
+          "offersIAP": false,
+          "price": 0,
+          "category": "PRODUCTIVITY",
+          "collection": "TOP_FREE",
+          "country": "us",
+          "rank": 39,
+          "nicheScore": 75,
+          "platform": "ios",
+          "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/78/6b/9e/786b9e88-1e1c-c4a7-0044-e798eef39e76/IconManus-0-0-1x_U007epad-0-1-0-P3-85-220.png/512x512bb.jpg",
+          "released": "2025-03-27T07:00:00Z",
+          "updated": "2026-02-25T02:23:57Z",
+          "isRecent": true
+        }
+      ]
+    },
+    "app_reviews": {
+      "name": "App Review Complaints",
+      "status": "success",
+      "items_count": 5,
+      "items": [
+        {
+          "appId": "6757728397",
+          "appName": "VoKit - Image Effects Creator",
+          "platform": "ios",
+          "category": "TOOLS",
+          "appScore": 4.59363,
+          "appReviews": 1004,
+          "appRank": 31,
+          "reviewCount": 20,
+          "top_complaints": [
+            {
+              "theme": "pricing/subscription",
+              "count": 11,
+              "sample_reviews": [
+                "Doesn’t look like me whatsoever. Total waste of money.",
+                "Do not fall for this app. I downloaded it out of curiosity just to see what it was about, and it ended up being a complete waste of money. I spent $4 to test it, and I’ve never regretted spending $4 m"
+              ]
+            },
+            {
+              "theme": "ads",
+              "count": 5,
+              "sample_reviews": [
+                "Do not fall for this app. I downloaded it out of curiosity just to see what it was about, and it ended up being a complete waste of money. I spent $4 to test it, and I’ve never regretted spending $4 m",
+                "I lost $7 worth of \"coins\" on 3 generated pictures that 100% don't look like me. I uploaded an unedited good quality  picture of myself, so the picture that I provided did not impact the end result. D"
+              ]
+            },
+            {
+              "theme": "sync/data",
+              "count": 4,
+              "sample_reviews": [
+                "I lost $7 worth of \"coins\" on 3 generated pictures that 100% don't look like me. I uploaded an unedited good quality  picture of myself, so the picture that I provided did not impact the end result. D",
+                "This app is awful. The subscription gives you coins that you use to create pictures. It states that you only use the coins if you are happy with the picture. Well, had the pictures don’t even look lik"
+              ]
+            },
+            {
+              "theme": "missing features",
+              "count": 3,
+              "sample_reviews": [
+                "Don’t purchase this every time you make something they want more money from you",
+                "This app is awful. The subscription gives you coins that you use to create pictures. It states that you only use the coins if you are happy with the picture. Well, had the pictures don’t even look lik"
+              ]
+            },
+            {
+              "theme": "slow/performance",
+              "count": 1,
+              "sample_reviews": [
+                "My first time downloading it they can list let me try one of the AI couple photos before paying it and it’s not right so I hate it"
+              ]
+            },
+            {
+              "theme": "notifications",
+              "count": 1,
+              "sample_reviews": [
+                "Bought points for nothing cause it won’t let me generate at picture I’m trying to achieve. It allows to to pick one of my pictures then when I tap next it’s just blank!!! So annoying"
+              ]
+            }
+          ],
+          "sample_reviews": [
+            {
+              "score": 1,
+              "text": ".",
+              "thumbsUp": 0
+            },
+            {
+              "score": 1,
+              "text": "Doesn’t look like me whatsoever. Total waste of money.",
+              "thumbsUp": 0
+            },
+            {
+              "score": 1,
+              "text": "Do not fall for this app. I downloaded it out of curiosity just to see what it was about, and it ended up being a complete waste of money. I spent $4 to test it, and I’ve never regretted spending $4 more.\n\nI purchased 400 coins, only to find that each prompt costs 200 coins. After using one prompt, ",
+              "thumbsUp": 0
+            },
+            {
+              "score": 1,
+              "text": "You pay money to get the pro account, only for it to give you a set amount of coins and each photo takes 100. And that’s if it will even give you one. I am not impressed. Quickly cancelled my subscription and deleted. NOT WORTH THE MONEY!",
+              "thumbsUp": 0
+            },
+            {
+              "score": 1,
+              "text": "I lost $7 worth of \"coins\" on 3 generated pictures that 100% don't look like me. I uploaded an unedited good quality  picture of myself, so the picture that I provided did not impact the end result. Don't bother using this app.",
+              "thumbsUp": 0
+            }
+          ]
+        },
+        {
+          "appId": "6749690755",
+          "appName": "iPhone Cleaner - Virus Protect",
+          "platform": "ios",
+          "category": "TOOLS",
+          "appScore": 4.73198,
+          "appReviews": 2664,
+          "appRank": 43,
+          "reviewCount": 15,
+          "top_complaints": [
+            {
+              "theme": "pricing/subscription",
+              "count": 9,
+              "sample_reviews": [
+                "when i first downloaded it i was stuck on the subscription page not finding the exit out button. next i’m trying to see what to do but everything just needs payment.",
+                "What’s the point of letting me select what things I want to get rid of if I have to pay for it to actually delete it"
+              ]
+            },
+            {
+              "theme": "ads",
+              "count": 7,
+              "sample_reviews": [
+                "when i first downloaded it i was stuck on the subscription page not finding the exit out button. next i’m trying to see what to do but everything just needs payment.",
+                "This company is running malicious pop up ads where if you install the app from their tracking link, it switches to being a rogue antivirus. It says your iPhone has 5 “generic trojans” and that you nee"
+              ]
+            },
+            {
+              "theme": "missing features",
+              "count": 6,
+              "sample_reviews": [
+                "when i first downloaded it i was stuck on the subscription page not finding the exit out button. next i’m trying to see what to do but everything just needs payment.",
+                "What’s the point of letting me select what things I want to get rid of if I have to pay for it to actually delete it"
+              ]
+            },
+            {
+              "theme": "crash/bugs",
+              "count": 1,
+              "sample_reviews": [
+                "when i first downloaded it i was stuck on the subscription page not finding the exit out button. next i’m trying to see what to do but everything just needs payment."
+              ]
+            },
+            {
+              "theme": "slow/performance",
+              "count": 1,
+              "sample_reviews": [
+                "I paid for the year believing that this app would clean up my tablet and help it run smoother so to speak. It claims that it will help improve the battery life as well as clean up the pictures and it’"
+              ]
+            }
+          ],
+          "sample_reviews": [
+            {
+              "score": 1,
+              "text": "With all the technology apple has why this?",
+              "thumbsUp": 0
+            },
+            {
+              "score": 1,
+              "text": "when i first downloaded it i was stuck on the subscription page not finding the exit out button. next i’m trying to see what to do but everything just needs payment.",
+              "thumbsUp": 0
+            },
+            {
+              "score": 1,
+              "text": "What’s the point of letting me select what things I want to get rid of if I have to pay for it to actually delete it",
+              "thumbsUp": 0
+            },
+            {
+              "score": 1,
+              "text": "This company is running malicious pop up ads where if you install the app from their tracking link, it switches to being a rogue antivirus. It says your iPhone has 5 “generic trojans” and that you need to pay $12.99 per week to fix it. Genuinely despicable.",
+              "thumbsUp": 0
+            },
+            {
+              "score": 1,
+              "text": "I paid for the year believing that this app would clean up my tablet and help it run smoother so to speak. It claims that it will help improve the battery life as well as clean up the pictures and it’s done nothing. \nPlease return my money.",
+              "thumbsUp": 0
+            }
+          ]
+        },
+        {
+          "appId": "1532203461",
+          "appName": "Export contacts by Covve",
+          "platform": "ios",
+          "category": "PRODUCTIVITY",
+          "appScore": 4.75966,
+          "appReviews": 1552,
+          "appRank": 31,
+          "reviewCount": 10,
+          "top_complaints": [
+            {
+              "theme": "sync/data",
+              "count": 7,
+              "sample_reviews": [
+                "Everytime I tried to export the contacts the App would crash.",
+                "App is broken. Worked great for a while, but something happened within the last month or two where the export button just crashes the app."
+              ]
+            },
+            {
+              "theme": "ads",
+              "count": 4,
+              "sample_reviews": [
+                "Some of the phone numbers where left in a cell formula instead of the actual numbers.",
+                "Able to export to file, sure. However there is no way to restore, making this rather pointless.\n\nEdit: To answer the developer, it is true that there is no need for a solution to backup and restore to"
+              ]
+            },
+            {
+              "theme": "missing features",
+              "count": 3,
+              "sample_reviews": [
+                "If you decide you want to export contacts again in a different format, you have to pay twice.",
+                "Paid for this and no option to export as vcf file. Useless. The only options provided are solicitations for positive reviews."
+              ]
+            },
+            {
+              "theme": "crash/bugs",
+              "count": 2,
+              "sample_reviews": [
+                "Everytime I tried to export the contacts the App would crash.",
+                "App is broken. Worked great for a while, but something happened within the last month or two where the export button just crashes the app."
+              ]
+            },
+            {
+              "theme": "pricing/subscription",
+              "count": 2,
+              "sample_reviews": [
+                "Total waste of time and money.\nBoooooo!!!!!",
+                "If you decide you want to export contacts again in a different format, you have to pay twice."
+              ]
+            }
+          ],
+          "sample_reviews": [
+            {
+              "score": 1,
+              "text": "Some of the phone numbers where left in a cell formula instead of the actual numbers.",
+              "thumbsUp": 0
+            },
+            {
+              "score": 1,
+              "text": "Total waste of time and money.\nBoooooo!!!!!",
+              "thumbsUp": 0
+            },
+            {
+              "score": 1,
+              "text": "Everytime I tried to export the contacts the App would crash.",
+              "thumbsUp": 0
+            },
+            {
+              "score": 1,
+              "text": "App is broken. Worked great for a while, but something happened within the last month or two where the export button just crashes the app.",
+              "thumbsUp": 0
+            },
+            {
+              "score": 1,
+              "text": "If you decide you want to export contacts again in a different format, you have to pay twice.",
+              "thumbsUp": 0
+            }
+          ]
+        },
+        {
+          "appId": "415038787",
+          "appName": "Photo Measures",
+          "platform": "ios",
+          "category": "PRODUCTIVITY",
+          "appScore": 4.57143,
+          "appReviews": 518,
+          "appRank": 39,
+          "reviewCount": 8,
+          "top_complaints": [
+            {
+              "theme": "crash/bugs",
+              "count": 2,
+              "sample_reviews": [
+                "Spent hours measuring my large and very complex back yard then inputting the data into this app using a drone photo. All seemed to be ok for two days, but now the measurements are not lining up over t",
+                "I have loved this AP for years, but lately it developed a glitch. Reached out to developers and crickets.  Can’t see my lines. Useless unless you can see lines. Straight, arrows, angles nothing."
+              ]
+            },
+            {
+              "theme": "missing features",
+              "count": 2,
+              "sample_reviews": [
+                "I don't get it – this app doesn't actually measure anything. It's just a graphic app which lets you add measurements to objects in photos.  The iPhone already has that functionality built into screens",
+                "For $$… this app is awful. I wish I could get my money back. The measurements are ALL WRONG and the little toggle marker floats all over the place. It’s VERY frustrating. Not worth ANY money. I would "
+              ]
+            },
+            {
+              "theme": "ads",
+              "count": 2,
+              "sample_reviews": [
+                "I don't get it – this app doesn't actually measure anything. It's just a graphic app which lets you add measurements to objects in photos.  The iPhone already has that functionality built into screens",
+                "Spent hours measuring my large and very complex back yard then inputting the data into this app using a drone photo. All seemed to be ok for two days, but now the measurements are not lining up over t"
+              ]
+            },
+            {
+              "theme": "pricing/subscription",
+              "count": 1,
+              "sample_reviews": [
+                "For $$… this app is awful. I wish I could get my money back. The measurements are ALL WRONG and the little toggle marker floats all over the place. It’s VERY frustrating. Not worth ANY money. I would "
+              ]
+            },
+            {
+              "theme": "sync/data",
+              "count": 1,
+              "sample_reviews": [
+                "Spent hours measuring my large and very complex back yard then inputting the data into this app using a drone photo. All seemed to be ok for two days, but now the measurements are not lining up over t"
+              ]
+            }
+          ],
+          "sample_reviews": [
+            {
+              "score": 1,
+              "text": "I thought this app would take measurements of objects after calibrating by inputting the size of an object with a known size. However it doesn’t measure anything. It’s just an app that lets you draw lines and make notes on your photo. Useless for my purposes.",
+              "thumbsUp": 0
+            },
+            {
+              "score": 1,
+              "text": "This app does not take measurements. It is only an app for superimposing measurements that you have taken by hand onto a photo.",
+              "thumbsUp": 0
+            },
+            {
+              "score": 1,
+              "text": "I don't get it – this app doesn't actually measure anything. It's just a graphic app which lets you add measurements to objects in photos.  The iPhone already has that functionality built into screenshots.",
+              "thumbsUp": 0
+            },
+            {
+              "score": 1,
+              "text": "For $$… this app is awful. I wish I could get my money back. The measurements are ALL WRONG and the little toggle marker floats all over the place. It’s VERY frustrating. Not worth ANY money. I would have given it NO STARS… but it needed something to move forwarded. ANNOYED.",
+              "thumbsUp": 0
+            },
+            {
+              "score": 1,
+              "text": "Spent hours measuring my large and very complex back yard then inputting the data into this app using a drone photo. All seemed to be ok for two days, but now the measurements are not lining up over the photo properly—they show up a good inch lower on the photo and there’s no fixing it. I’ve restart",
+              "thumbsUp": 0
+            }
+          ]
+        },
+        {
+          "appId": "1037668281",
+          "appName": "CNC Machinist Calculator Pro",
+          "platform": "ios",
+          "category": "PRODUCTIVITY",
+          "appScore": 4.71017,
+          "appReviews": 659,
+          "appRank": 41,
+          "reviewCount": 9,
+          "top_complaints": [
+            {
+              "theme": "missing features",
+              "count": 4,
+              "sample_reviews": [
+                "I would have given this 5 stars a few years ago. It’s a great app and has a lot of useful information, but the creators of it seem to have abandoned it and aren’t adding any more features. Which is a ",
+                "If you have no concept of machining, this may help you a little, but the calculator on your phone works pretty well too.  True position calculator is ok, but it would be better if it allowed you to in"
+              ]
+            },
+            {
+              "theme": "ads",
+              "count": 4,
+              "sample_reviews": [
+                "I would have given this 5 stars a few years ago. It’s a great app and has a lot of useful information, but the creators of it seem to have abandoned it and aren’t adding any more features. Which is a ",
+                "No easy reference chart for threads with major and minor diameters etc. you have to go through multiple menus to look up a specific tap or thread size"
+              ]
+            },
+            {
+              "theme": "pricing/subscription",
+              "count": 2,
+              "sample_reviews": [
+                "If you have no concept of machining, this may help you a little, but the calculator on your phone works pretty well too.  True position calculator is ok, but it would be better if it allowed you to in",
+                "Couldn’t find anything as far as a definitive list of features of this app. Doesn’t have what I was looking for, at least I can’t find anything useful for what I wanted in the app. Wasted money."
+              ]
+            },
+            {
+              "theme": "sync/data",
+              "count": 1,
+              "sample_reviews": [
+                "I’d love more table charts. \nBetter separation from calculator to data table and other stuff. \nWish it started up faster. \nBut many other good things to use.\n\nAlso wish it didn’t turn off my audio whe"
+              ]
+            }
+          ],
+          "sample_reviews": [
+            {
+              "score": 3,
+              "text": "I would have given this 5 stars a few years ago. It’s a great app and has a lot of useful information, but the creators of it seem to have abandoned it and aren’t adding any more features. Which is a shame cause this is my go to apps for machinist reference.",
+              "thumbsUp": 0
+            },
+            {
+              "score": 1,
+              "text": "I bought this app several years ago.  I  gave them a 5 star review the first time.  They ask me every month for another review. Now you get 1 star.",
+              "thumbsUp": 0
+            },
+            {
+              "score": 1,
+              "text": "No easy reference chart for threads with major and minor diameters etc. you have to go through multiple menus to look up a specific tap or thread size",
+              "thumbsUp": 0
+            },
+            {
+              "score": 1,
+              "text": "If you have no concept of machining, this may help you a little, but the calculator on your phone works pretty well too.  True position calculator is ok, but it would be better if it allowed you to input what print dimensions are.  The speed/feed calculator doesn’t give recommended spindle speed, on",
+              "thumbsUp": 0
+            },
+            {
+              "score": 3,
+              "text": "I just download the app I will update when I have some experience.",
+              "thumbsUp": 0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "key_trends": [
+    "Artificial Intelligence",
+    "Productivity",
+    "Developer Tools",
+    "TypeScript",
+    "Python",
+    "No-Code",
+    "Task Management",
+    "Product Hunt",
+    "SaaS",
+    "Audio",
+    "agents",
+    "Business",
+    "Robots",
+    "faster",
+    "Tech"
+  ]
+}
