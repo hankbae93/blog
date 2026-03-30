@@ -1,0 +1,212 @@
+---
+title: "Weekly Summary | 2026-W13"
+date: "2026-01-01"
+description: "1인 개발자를 위한 데일리 트렌드 인사이트"
+keywords:
+  - "트렌드"
+  - "인사이트"
+  - "1인개발자"
+openGraph:
+  type: "article"
+  title: "Weekly Summary | 2026-W13"
+  description: "1인 개발자를 위한 데일리 트렌드 인사이트"
+  url: "https://www.hankbae.cloud/summaries/weekly/2026-W13"
+  siteName: "Hank Dev Log"
+  locale: "ko_KR"
+  images:
+    - url: "https://www.hankbae.cloud/assets/og-image.png"
+      width: 1200
+      height: 630
+      alt: "Weekly Summary | 2026-W13"
+twitter:
+  card: "summary_large_image"
+  title: "Weekly Summary | 2026-W13"
+  description: "1인 개발자를 위한 데일리 트렌드 인사이트"
+  images:
+    - "https://www.hankbae.cloud/assets/og-image.png"
+canonical: "https://www.hankbae.cloud/summaries/weekly/2026-W13"
+---
+
+# 주간 PRD 인사이트 - 2026년 W13주차
+
+&gt; **요약**: AI 에이전트 생태계가 "만드는 도구"에서 "운영·수익화·오케스트레이션" 단계로 전환된 주. 동시에 PyPI 공급망 공격(LiteLLM·Telnyx)이 연쇄 발생하며 AI 인프라 보안이 긴급 의제로 부상했고, "De-AI" 제품과 GitHub 탈출(Codeberg/Forgejo) 움직임이 기술 커뮤니티의 반작용을 가시화했다.
+
+## 이번 주 핵심 숫자
+
+| 지표 | 값 |
+|------|-----|
+| 분석한 제품 | 70개 |
+| 발견한 트렌드 | 5개 |
+| 액션 아이템 | 9개 |
+| PH 최고 업보트 | Claude Computer Use 512↑ |
+| HN 최고 포인트 | GitHub→Codeberg 이주 515pts |
+| 인디앱 베스트 | YarnPal - Crochet 1M+ 설치, #34 TOP_GROSSING |
+| GitHub 주목 | openclaw/openclaw 340K⭐ (W12 328K→W13 340K) |
+
+---
+
+## 1. 주간 트렌드 TOP 5
+
+### 1. AI 에이전트 성숙 사이클: 생성→관찰→수익화→오케스트레이션 🔥 Rising
+**이번 주 등장 횟수**: 7회 (매일)
+**관련 제품/기사**:
+- [Agentplace AI Agents](https://www.producthunt.com/posts/agentplace-ai-agents) (496↑) — 에이전트 빌더 플랫폼
+- [Crossnode](https://www.producthunt.com/posts/crossnode) (286↑, 57댓글) — 에이전트→유료 SaaS 변환기
+- [Cekura](https://www.producthunt.com/posts/cekura) (361↑) — AI 에이전트 관찰성 플랫폼
+- [Parallel Code](https://www.producthunt.com/posts/parallel-code) (146↑) — 멀티에이전트 git worktree 관리
+- [Cline Kanban](https://www.producthunt.com/posts/cline-kanban) (144↑) — 에이전트 태스크 칸반보드
+- [CrabTalk](https://www.producthunt.com/posts/crabtalk) (170↑) — 8MB 경량 에이전트 데몬
+- [Agentation](https://www.producthunt.com/posts/agentation) (352↑) — UI 어노테이션으로 에이전트 학습
+
+**왜 주목해야 하나**:
+W12까지 에이전트의 "수직 확장"(코딩→디자인→CRM)이 핵심이었다면, W13은 에이전트의 **운영 인프라**가 폭발했다. Crossnode의 "에이전트→SaaS 변환"은 수익화를, Cekura는 관찰성을, Parallel Code/Cline Kanban은 오케스트레이션을 해결한다. PH 상위 10개 중 7개가 AI/에이전트 관련이 된 날(03-29)이 이 흐름의 정점.
+
+**1인 개발자 기회**:
+에이전트 수익화 대시보드 — Crossnode처럼 에이전트를 SaaS로 패키징하되, 결제·사용량·고객 관리를 한 화면에서 처리하는 "Stripe for Agents" 미들웨어. 또는 Cline Kanban 방식의 에이전트 태스크 매니저를 VS Code 외 에디터(Neovim, JetBrains)로 확장.
+
+---
+
+### 2. AI 공급망 보안 위기 — PyPI 연쇄 공격 🚨 Critical
+**이번 주 등장 횟수**: 4회
+**관련 제품/기사**:
+- LiteLLM PyPI 악성코드 사건 (HN 484pts, 03-25)
+- LiteLLM 실시간 대응 후속 (HN 290pts, 03-27)
+- Telnyx PyPI 공급망 공격 (03-28, 연속 2일째)
+- Claude Code `.claude/` 폴더 구조 분석 (HN 347pts) — 에이전트 보안 아키텍처 관심
+
+**왜 주목해야 하나**:
+같은 주에 LiteLLM과 Telnyx 두 개의 PyPI 공급망 공격이 연쇄 발생한 것은 AI 도구 생태계의 보안 취약점이 구조적 문제임을 보여준다. 에이전트가 `pip install`로 의존성을 자동 설치하는 "바이브코딩" 환경에서 공급망 공격의 파급력이 기존보다 훨씬 크다. Claude Code 아키텍처에 대한 HN의 높은 관심(347pts)도 "에이전트가 내 시스템에서 뭘 하는가"에 대한 불안의 반영.
+
+**1인 개발자 기회**:
+AI 프로젝트 전용 SBOM(소프트웨어 부품 목록) 생성기 — `npx ai-sbom` 한 줄로 프로젝트의 모든 AI 관련 의존성을 스캔, 알려진 취약점 매칭, 리스크 스코어 출력. 또는 에이전트 샌드박싱 도구(에이전트의 파일시스템·네트워크 접근을 컨테이너로 격리).
+
+---
+
+### 3. "De-AI" & 플랫폼 탈출 — 기술 반작용 가시화 📈 Accelerating
+**이번 주 등장 횟수**: 5회
+**관련 제품/기사**:
+- [Apparent for Gmail](https://www.producthunt.com/posts/apparent-for-gmail) (172↑) — Gmail에서 AI 기능 제거 확장
+- GitHub→Codeberg 이주 급증 (HN 515pts, 03-27)
+- Fedora, Forgejo로 전환 결정
+- AI 챗봇 과잉 사과 연구 (HN 498pts, 03-29)
+- 바이브코딩 품질 논쟁 "90% Claude 출력이 별점 2 미만" (HN, 03-26)
+
+**왜 주목해야 하나**:
+W12의 "EnshittifAIcation" 담론이 W13에서 **실제 제품과 행동**으로 전환되었다. Apparent for Gmail은 "AI를 빼는 것"이 제품이 된 첫 사례이고, GitHub→Codeberg 이주(515pts)는 플랫폼 종속에 대한 개발자 행동이 가시화된 것이다. 동시에 AI 챗봇의 과잉 사과 연구(498pts)는 현재 AI UX의 한계에 대한 학술적 검증.
+
+**1인 개발자 기회**:
+"De-tech" 브라우저 확장 시리즈 — Gmail뿐 아니라 YouTube, LinkedIn, Twitter에서 AI 추천/AI 생성 콘텐츠를 필터링하는 확장 모음. "AI-free 모드"를 토글로 제공. 또는 GitHub→Forgejo 원클릭 마이그레이션 CLI + Forgejo 플러그인 마켓플레이스.
+
+---
+
+### 4. 오디오 AI 3파전 — 음성·음악·TTS 동시 폭발 ⚡ Inflection Point
+**이번 주 등장 횟수**: 4회
+**관련 제품/기사**:
+- [Gemini 3.1 Flash Live](https://www.producthunt.com/posts/gemini-3-1-flash-live) (283↑) — 실시간 오디오 + 함수 호출
+- [Cohere Transcribe](https://www.producthunt.com/posts/cohere-transcribe) (121↑) — 2B 파라미터 음성 모델, 14개 언어
+- [Suno v5.5](https://www.producthunt.com/posts/suno-v5-5) (182↑) — AI 음악 생성
+- [Voxtral TTS by Mistral AI](https://www.producthunt.com/posts/voxtral-tts) (155↑) — 텍스트→음성
+- [SUN](https://www.producthunt.com/posts/sun) (253↑) — 온디맨드 오디오 학습 플랫폼
+- Listen To This — 기사→팟캐스트 변환
+
+**왜 주목해야 하나**:
+하루(03-28)에 Gemini, Mistral, Suno가 동시에 오디오 AI 제품을 출시한 것은 텍스트/이미지 다음 전장이 "음성·오디오"임을 선언한 것이다. Cohere Transcribe의 오픈소스 접근(4.92 PH 평점)은 Whisper 독점에 도전하는 첫 진지한 경쟁자. SUN(253↑)과 Listen To This는 "읽기→듣기" 전환의 수요를 확인.
+
+**1인 개발자 기회**:
+도메인 특화 오디오 AI 앱 — 의료 상담 녹음 자동 요약, 법률 증언 실시간 전사, 회의록→액션아이템 추출 등 특정 산업의 오디오 워크플로우를 자동화. Cohere Transcribe(오픈소스)를 베이스로 구축 가능.
+
+---
+
+### 5. 노코드 백엔드 & 스프레드시트 API 패턴 성숙 📈 Accelerating
+**이번 주 등장 횟수**: 4회
+**관련 제품/기사**:
+- [Sheet Ninja](https://www.producthunt.com/posts/sheet-ninja) (280↑) — Google Sheets→REST API, 바이브코딩 백엔드
+- [Stripe Projects](https://www.producthunt.com/posts/stripe-projects) (165↑) — CLI 기반 풀스택 프로비저닝
+- [Auto Mode by Claude Code](https://www.producthunt.com/posts/auto-mode-by-claude-code) (427↑) — 코드 자동 생성·유지보수
+- [Claude Code auto-fix](https://www.producthunt.com/posts/claude-code-auto-fix) (307↑) — PR 유지보수 자동화
+- Replit: App & Website Builder (Android TOP_GROSSING #43, 5M+ 설치)
+
+**왜 주목해야 하나**:
+Sheet Ninja의 "스프레드시트가 곧 백엔드" 모델이 280↑를 얻은 것은 1인 개발자에게 가장 직접적인 시그널이다. Stripe Projects의 "CLI 한 줄로 결제·인증·DB 세팅"과 결합하면 문자 그대로 코드 없이 SaaS를 런칭할 수 있는 스택이 완성된다. Replit의 5M+ 설치는 이 흐름이 모바일까지 확장됨을 보여준다.
+
+**1인 개발자 기회**:
+스프레드시트 API 래퍼 템플릿 — Sheet Ninja + Stripe Projects + Vercel을 결합한 "제로코드 SaaS 스타터킷". 특정 유스케이스(예약 시스템, 재고 관리, CRM)별 템플릿을 Gumroad에서 $19~$49에 판매.
+
+---
+
+## 2. 이번 주 베스트 제품
+
+| 순위 | 제품명 | 카테고리 | Upvotes | 핵심 가치 |
+|------|--------|----------|---------|-----------|
+| 1 | [Claude Computer Use](https://www.producthunt.com/posts/claude-computer-use) | AI Agent | 512↑ | 자율 데스크톱 제어 에이전트 |
+| 2 | [Agentplace AI Agents](https://www.producthunt.com/posts/agentplace-ai-agents) | AI Platform | 496↑ | 5.0 평점, 에이전트 빌더 올인원 |
+| 3 | [Auto Mode by Claude Code](https://www.producthunt.com/posts/auto-mode-by-claude-code) | Dev Tools | 427↑ | 코드 자동 생성·유지보수 모드 |
+| 4 | [Kitty Points Leaderboard](https://www.producthunt.com/posts/kitty-points-leaderboard) | Gamification | 368↑ | PH 커뮤니티 게이미피케이션 |
+| 5 | [Cekura](https://www.producthunt.com/posts/cekura) | AI Observability | 361↑ | AI 에이전트 분석·관찰성 플랫폼 |
+| 6 | [Agentation](https://www.producthunt.com/posts/agentation) | AI/UX | 352↑ | UI 어노테이션으로 에이전트 훈련 |
+| 7 | [SlapMac](https://www.producthunt.com/posts/slapmac) | Entertainment | 319↑ | 밈 제품, MacBook 때리기 앱 |
+| 8 | [Clico](https://www.producthunt.com/posts/clico) | AI Writing | 316↑ | 브라우저 컨텍스트 기반 AI 글쓰기 |
+| 9 | [Claude Code auto-fix](https://www.producthunt.com/posts/claude-code-auto-fix) | Dev Tools | 307↑ | PR 자동 유지보수·수정 |
+| 10 | [Pendium](https://www.producthunt.com/posts/pendium) | SEO/AI | 288↑ | AEO(AI Engine Optimization) 선구자 |
+
+---
+
+## 3. 주간 GitHub 하이라이트
+
+| 저장소 | 언어 | 주간 ⭐ | 설명 |
+|--------|------|---------|------|
+| openclaw/openclaw | TypeScript | +12,000 (328K→340K) | 오픈소스 로컬 AI 어시스턴트, 5주 연속 폭발 성장 |
+| Significant-Gravitas/AutoGPT | Python | +200 (182.7K→182.9K) | AI 에이전트 프레임워크, 안정적 유지 |
+| n8n-io/n8n | TypeScript | +300 (181.3K→181.6K) | 워크플로우 자동화, 에이전트 오케스트레이션 수요와 연동 |
+| freeCodeCamp/freeCodeCamp | TypeScript | +200 (438.8K→439.2K) | 무료 프로그래밍 교육 |
+| microsoft/vscode | TypeScript | +200 (182.9K→183.2K) | VS Code, Neovim 0.12.0과 에디터 경쟁 |
+
+**주목**: openclaw/openclaw가 W11(313K) → W12(328K) → W13(340K)로 5주 연속 주 1만+⭐ 성장 지속. 4월 중 400K 돌파가 현실적 — 로컬 AI 에이전트의 사실상 표준.
+
+---
+
+## 4. Indie Hackers 수익화 사례
+
+### 💰 이번 주 베스트 사례
+**YarnPal - Crochet** — Android LIFESTYLE #34 TOP_GROSSING
+- 핵심 전략: 100K→1M+ 설치를 수개월 만에 달성. 뜨개질이라는 초니치에서 AI 패턴 생성 + 커뮤니티 기능으로 높은 ARPU 확보
+- 배울 점: "취미 + AI 가이드" 조합은 충성 유저와 높은 지불 의향을 동시에 만듦. 매주 #34~#37 안정 유지
+
+### 💰 주목할 장수 앱 패턴
+- **Sleep Machine** (iOS #31, 2,946 리뷰, 4.73 평점) — 2009년 출시 16년째 수익. 단순 기능+안정성으로 장기 생존
+- **Export contacts by Covve** (iOS PRODUCTIVITY #31, $3.99) — 6년째 안정적 차트 유지. 단일 기능 유틸리티의 생명력
+- **Bullet Journal Companion** (iOS #31, 1,959 리뷰, $4.99) — 2017년 출시 후 업데이트 중단, 사용자 불만 폭주. **명확한 대체 앱 기회**
+
+### 💰 이번 주 발견된 니치
+- **Tai Chi for Beginners Seniors** (Android #35~#44 매일 차트 유지) — $19.99~$59.99 IAP, 시니어 대상 높은 ARPU
+- **HoloDex - TCG Scan & Collect** (Android TOOLS #39) — AI 카드 인식 + 컬렉션 관리, 247 리뷰
+- **Thrift & Profit Finder - Gemli** (Android LIFESTYLE #45) — 리셀/중고 수익 최적화, 727 리뷰
+- **DAWG - Self Discipline** (Android #45) — 남성 자기개발 브랜딩, 182 리뷰, 빠른 성장
+
+---
+
+## 5. 주간 액션 아이템 종합
+
+### 🚀 이번 주 실행 추천
+- [ ] **에이전트 수익화 대시보드 MVP**: Crossnode(286↑) 같은 "에이전트→SaaS" 변환 니즈를 결제·사용량·고객 관리 한 화면으로 해결. Stripe API + Next.js로 2주 내 MVP 가능
+- [ ] **AI 의존성 보안 스캐너**: `npx ai-sbom` — LiteLLM/Telnyx 사태가 증명한 수요. AI 프로젝트의 PyPI/npm 의존성을 스캔하고 알려진 취약점 매칭
+- [ ] **Bullet Journal Companion 대체앱**: 1,959 리뷰 앱이 업데이트 중단 + 사용자 불만 → 검증된 수요. SwiftUI + 로컬 저장으로 2-3주 내 출시 가능
+
+### 👀 계속 관찰
+- [ ] **De-AI 시장 확대**: Apparent for Gmail(172↑) 이후 다른 서비스용 "AI 제거" 확장이 등장하는지. Microsoft Copilot 롤백(W12)에 이은 추가 사례 모니터링
+- [ ] **오디오 AI 경쟁**: Cohere Transcribe(오픈소스) vs Whisper vs Gemini Live — 어떤 모델이 도메인별 표준이 되는지
+- [ ] **GitHub 탈출 후속**: Codeberg/Forgejo 이주 도구 수요가 실제 프로덕트로 이어지는지. Fedora Forgejo 전환의 파급효과
+- [ ] **AEO(AI Engine Optimization)**: Pendium(288↑)이 제시한 "AI 검색엔진 최적화" 카테고리의 성장 추이
+
+### ⏸️ 보류/재검토
+- [ ] **스프레드시트 API 래퍼 템플릿**: Sheet Ninja(280↑)가 강한 수요를 보였으나, 기존 Airtable/Notion API 래퍼와의 차별화 포인트를 더 검증 필요. Sheet Ninja의 API 스펙 공개 후 결정
+- [ ] **에이전트 비용 모니터링**: W12에서 추천했으나, 이번 주 Cekura(361↑)가 관찰성 시장을 빠르게 점유 중. Cekura가 커버하지 않는 "비용 최적화 추천" 영역으로 스코프 재조정 필요
+
+---
+
+## 6. 다음 주 관전 포인트
+
+1. **에이전트 보안 표준화**: LiteLLM/Telnyx 연쇄 공격 이후 Python 생태계의 대응. PyPI의 새로운 보안 정책이나 서명 요구사항이 발표될지 — 나오면 보안 도구 수요 급증
+2. **Google TurboQuant 후속**: LLM 압축 기술이 한국 반도체 시장에 충격을 준 만큼, 다른 빅테크의 경량화 발표가 이어질지. 에지 디바이스 LLM 시장 재편 시그널
+3. **멀티에이전트 오케스트레이션 표준**: Parallel Code, Cline Kanban, Claude Code auto-fix 등 에이전트 관리 도구가 폭발하는 중. 어떤 패턴(칸반, git worktree, 대화형)이 표준이 되는지
+4. **Sora 셧다운 파장**: OpenAI의 B2C AI 비디오 철수 이후 Runway, Pika, Kling 등 경쟁자들의 반응. AI 비디오가 B2B로 피벗하는지, 시장 자체가 위축되는지
