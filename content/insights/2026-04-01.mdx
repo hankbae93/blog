@@ -1,0 +1,711 @@
+---
+title: "Insight | 2026-04-01"
+date: "2026-04-01"
+description: "AI가 세금 신고부터 광고 운영까지 접수 — 자동화 에이전트 전성시대"
+keywords:
+  - "AI 에이전트"
+  - "광고 자동화"
+  - "오픈소스 보안"
+  - "니치 헬스앱"
+openGraph:
+  type: "article"
+  title: "Insight | 2026-04-01"
+  description: "AI가 세금 신고부터 광고 운영까지 접수 — 자동화 에이전트 전성시대"
+  url: "https://www.hankbae.cloud/insights/2026-04-01"
+  siteName: "Hank Dev Log"
+  locale: "ko_KR"
+  images:
+    - url: "https://www.hankbae.cloud/assets/og-image.png"
+      width: 1200
+      height: 630
+      alt: "Insight | 2026-04-01"
+twitter:
+  card: "summary_large_image"
+  title: "Insight | 2026-04-01"
+  description: "AI가 세금 신고부터 광고 운영까지 접수 — 자동화 에이전트 전성시대"
+  images:
+    - "https://www.hankbae.cloud/assets/og-image.png"
+canonical: "https://www.hankbae.cloud/insights/2026-04-01"
+---
+
+
+# 2026-04-01 데일리 인사이트
+
+## 오늘의 흐름
+
+&gt; **한 줄 요약**: AI가 단순 대화를 넘어 세금 신고, 광고 운영, 이메일 관리까지 실행하는 에이전트로 진화하며, 개발자에게는 보안 공급망 위협이 새로운 현실로 다가오고 있다.
+
+1. **AI 에이전트 실행 시대**: Claude Code 컴퓨터 제어, Jupid 세금 자동 분류, Pixero 광고 자동화 등 "대화"에서 "실행"으로 전환
+2. **오픈소스 보안 경보**: Axios 공급망 공격 발생, LiteLLM 해킹으로 Mercor 피해 — npm/PyPI 의존성 관리가 생존 문제
+3. **건강/웰니스 니치 앱 강세**: Cal AI, MenuFit, Tai Chi 등 건강 관련 니치 앱이 앱스토어 상위권 대거 진입
+
+---
+
+## 오늘의 신호
+
+| 신호 | 의미 | 기회 |
+|------|------|------|
+| PH Top 10 중 7개가 AI 에이전트/자동화 제품 | AI UX가 "챗봇"에서 "실행 에이전트"로 완전히 전환됨 | 특정 워크플로우를 자동화하는 MCP 서버/플러그인 개발 |
+| OpenAI $852B 기업가치로 펀딩 마감 | AI 인프라 투자 과열이지만 개발자 도구 수요는 확실 | AI 인프라 위에서 동작하는 경량 도구가 기회 |
+| Axios npm 패키지 공급망 공격 (Lobsters 50점) | JavaScript 생태계 보안 위험이 현실화 | 의존성 감사/보안 스캔 도구 수요 증가 |
+| Claude Code 소스 유출 기사 HN 884점 | AI 코딩 도구 내부 작동에 대한 관심 폭발 | AI 코딩 도구 관련 교육 콘텐츠/블로그 기회 |
+| Cal AI, MenuFit 등 건강 앱 신규 진입 다수 | 건강/칼로리 추적 시장이 여전히 성장 중 | AI 기반 식단/운동 특화 니치 앱 |
+
+---
+
+## Product Hunt 오늘의 제품
+
+### 1. Jupid ⬆️ 510 | 💬 117
+![thumbnail](https://ph-files.imgix.net/92d18165-2a76-43da-aa4b-6cc32f7db73c.png?auto=format)
+
+🔗 [Product Hunt](https://www.producthunt.com/products/jupid?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29) | [공식 사이트](https://www.producthunt.com/r/IV445DDMYNBMML?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29)
+📂 Fintech, Accounting
+
+#### 이 제품은 무엇인가?
+은행 계좌를 연결하면 AI가 사업 거래를 IRS Schedule C 카테고리에 자동 분류해주는 세금 신고 도구다. LLM이 금융 거래에 약한 문제(컨텍스트 손실, 일관성 없는 분류)를 데이터 레이어에서 해결한다.
+- 핵심 기능: 거래 자동 분류(~96% 정확도), 누락 공제 발견(연 평균 $1,249), Schedule C 5분 작성
+- 작동 방식: 은행 연결 → 벤더 관계 학습 → 영구 기억 → Claude Code와 연동
+
+#### 왜 주목할만한가?
+"LLM이 못하는 영역"을 정확히 짚어서 데이터 레이어로 보완한 접근이 인상적이다. AI 위에 올리는 도메인 특화 데이터 계층이라는 패턴은 다른 영역에도 적용 가능하다.
+
+| 구분 | 내용 |
+|------|------|
+| 타겟 사용자 | 미국 프리랜서/1인 사업자 |
+| 기존 대비 차별점 | LLM의 금융 약점을 데이터 레이어로 보완, 벤더별 영구 기억 |
+| 수익 모델 | 무료 체험 + 첫 3개월 50% 할인 구독 |
+| 제작자 | 5인 팀 |
+| 커뮤니티 반응 | 댓글 117개, 높은 관심 |
+
+**배울 점**: "AI가 잘 못하는 특정 영역"을 찾아 데이터 레이어를 만들어주는 것이 하나의 제품 패턴이 될 수 있다.
+
+---
+
+### 2. Computer Use in Claude Code ⬆️ 344 | 💬 3 | ⭐ 4.97
+![thumbnail](https://ph-files.imgix.net/0ecf8d00-b87b-4fdb-a497-5c98fcaa4064.avif?auto=format)
+
+🔗 [Product Hunt](https://www.producthunt.com/products/claude?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29) | [공식 사이트](https://www.producthunt.com/r/YWBXBLA4J4FAAV?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29)
+📂 Artificial Intelligence, Computers
+
+#### 이 제품은 무엇인가?
+Claude Code CLI에서 Claude가 macOS 화면을 보고, 앱을 열고, 클릭하고, 타이핑할 수 있는 기능이다. 터미널을 떠나지 않고 네이티브 앱 테스트, 시각적 디버깅, GUI 전용 도구 자동화가 가능하다.
+- 핵심 기능: 화면 인식, 마우스/키보드 제어, 앱 실행
+- 작동 방식: CLI 명령 → Claude가 화면 캡처 → 시각적 이해 → 입력 실행
+
+#### 왜 주목할만한가?
+코딩 AI가 텍스트 편집을 넘어 GUI까지 제어하는 시대가 열렸다. 평점 4.97로 사용자 만족도가 극히 높다.
+
+| 구분 | 내용 |
+|------|------|
+| 타겟 사용자 | macOS 개발자 |
+| 기존 대비 차별점 | CLI에서 GUI 제어까지 통합 |
+| 수익 모델 | Claude 구독 내 포함 |
+| 제작자 | Anthropic |
+| 커뮤니티 반응 | 댓글 3개, 평점 4.97/5.0 |
+
+**배울 점**: AI 에이전트의 "행동 범위 확장"이 핵심 트렌드다. 텍스트 → 코드 → GUI까지.
+
+---
+
+### 3. Pixero AI ⬆️ 281 | 💬 30
+![thumbnail](https://ph-files.imgix.net/b3339f8f-6bbd-479c-a4b4-008a958a7ff4.png?auto=format)
+
+🔗 [Product Hunt](https://www.producthunt.com/products/pixero-ai-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29) | [공식 사이트](https://www.producthunt.com/r/IHF5OGGMBRR6XW?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29)
+📂 Marketing, Artificial Intelligence, Photo & Video
+
+#### 이 제품은 무엇인가?
+URL 하나만 넣으면 Meta 광고 캠페인을 처음부터 끝까지 자동으로 실행하는 AI 에이전트다. 브랜드 분석, 전략 수립, 광고 소재 생성, 캠페인 배포 및 관리까지 9분 만에 완료한다.
+- 핵심 기능: 브랜드 스크래핑, AI 광고 소재 생성, Meta Ads 자동 배포/관리
+- 작동 방식: URL 입력 → 브랜드 분석 → 전략 수립 → 소재 생성 → Meta에 캠페인 라이브
+
+#### 왜 주목할만한가?
+Google 엔지니어 출신이 만든 제품으로, "URL 하나로 광고 캠페인 완성"이라는 극단적으로 단순한 UX가 인상적이다. Viktor(6위)도 Slack에서 광고를 관리하는 도구로, 광고 자동화 카테고리에 2개 제품이 동시 진입했다.
+
+| 구분 | 내용 |
+|------|------|
+| 타겟 사용자 | 소규모 비즈니스, 마케터 |
+| 기존 대비 차별점 | URL만으로 엔드투엔드 캠페인 실행 (9분) |
+| 수익 모델 | 미공개 (SaaS 추정) |
+| 제작자 | 2인 (전 Google 엔지니어) |
+| 커뮤니티 반응 | 댓글 30개 |
+
+**배울 점**: "입력을 극한까지 줄이는 것"이 AI 제품의 핵심 경쟁력이다. URL 하나가 전체 워크플로우를 대체한다.
+
+---
+
+### 4. Solvea ⬆️ 215 | 💬 15
+📂 Productivity, Artificial Intelligence, Vibe coding
+
+노코드로 AI 리셉셔니스트를 만드는 올인원 플랫폼이다. 전화, 채팅, 이메일로 24/7 고객 응대, 주문 추적, 제품 추천, 예약 관리를 수행한다.
+
+### 5. Perplexity API Platform ⬆️ 195 | 💬 4
+📂 API, SaaS, Developer Tools
+
+Perplexity의 풀 에이전트 스택 API다. 멀티 프로바이더 모델 접근, 200B+ URL 실시간 검색, SOTA 임베딩을 하나의 API 키로 제공한다. "5개 벤더를 조합할 필요 없이 하나로" 가 핵심 가치.
+
+### 6~10위 요약
+
+| 순위 | 제품 | 투표 | 핵심 |
+|------|------|------|------|
+| 6 | Viktor for Media Buyers | 176 | Slack에서 Meta/Google 광고 관리 AI 코워커 |
+| 7 | Stamp | 148 | 사용자 스타일을 학습하는 AI 이메일/캘린더 비서 |
+| 8 | Metabase Data Studio | 140 | AI 분석을 위한 시맨틱 레이어 구축 도구 |
+| 9 | Google Ads MCP Server | 136 | Claude에서 직접 Google Ads 관리하는 MCP 서버 |
+| 10 | Qwen3.5-Omni | 131 | 텍스트/이미지/오디오/비디오 네이티브 옴니 모델 |
+
+---
+
+## 앱 마켓 니치 트렌드
+
+Play Store와 App Store에서 30~150위권에 있는 앱 중 **대기업이 아닌 개발사**가 만든 **평점 4.0 이상** 앱을 분석합니다. 1인 개발자가 진입할 수 있는 기회를 찾는 것이 목표입니다.
+
+### 1. Cal AI - Food Calorie Tracker 🆕 📱 Android | HEALTH_AND_FITNESS #32
+![icon](https://play-lh.googleusercontent.com/ONZMjbf458-8OY_oQ_8LEy0UsWRxV3WazznHh6A_pEkkqGjlOVbRxpTWfoC0Mz89qw)
+
+🔗 [Play Store](https://play.google.com/store/apps/details?id=com.viraldevelopment.calai)
+⭐ 4.68 | 📊 리뷰 1,454개 | 📥 미공개 | 🗓️ 신규 진입
+
+#### 이 앱은 무엇인가?
+AI를 활용한 음식 칼로리 추적 앱이다. 음식 사진을 찍으면 AI가 자동으로 칼로리와 영양소를 분석해준다.
+- 핵심 기능: AI 음식 인식, 칼로리 자동 계산, 영양소 추적
+- 작동 방식: 사진 촬영 → AI 분석 → 칼로리/영양소 기록
+
+#### 왜 주목할만한가?
+TOP_GROSSING #32에 신규 진입하며 니치 점수 100점을 기록했다. "Improvement Tech LLC"라는 소규모 개발사가 만들었으며, AI 칼로리 추적이라는 명확한 가치 제안으로 빠르게 성장 중이다.
+
+| 구분 | 내용 |
+|------|------|
+| 타겟 사용자 | 다이어트/건강 관리 중인 일반인 |
+| 기존 대비 차별점 | AI 사진 인식으로 수동 입력 제거 |
+| 수익 모델 | 인앱 구매 (미공개) |
+| 개발사 규모 | 소규모 (Improvement Tech LLC) |
+| 성공 요인 | 사진 한 장으로 끝나는 극단적 간편함 |
+
+**1인 개발자가 배울 점**: "사진 → AI 분석 → 기록"이라는 패턴은 칼로리뿐 아니라 다른 추적 영역(약물, 피부 상태, 식물 건강 등)에도 적용 가능하다.
+
+---
+
+### 2. MenuFit - Healthy Eating Out 🆕 📱 iOS | HEALTH_AND_FITNESS #38
+![icon](https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/72/df/bb/72dfbbe6-0558-e347-7c12-fa8d72440eff/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg)
+
+🔗 [App Store](https://apps.apple.com/us/app/menufit-healthy-eating-out/id6746144481?uo=4)
+⭐ 4.79 | 📊 리뷰 25,235개 | 🗓️ 신규 진입
+
+#### 이 앱은 무엇인가?
+외식할 때 건강한 메뉴를 선택할 수 있도록 도와주는 앱이다. 레스토랑 메뉴의 영양 정보를 분석하고 건강한 선택지를 추천해준다.
+- 핵심 기능: 레스토랑 메뉴 영양 분석, 건강한 메뉴 추천
+- 작동 방식: 레스토랑 선택 → 메뉴 영양 정보 확인 → 건강한 옵션 추천
+
+#### 왜 주목할만한가?
+리뷰 25,235개라는 압도적인 사용자 기반으로 TOP_FREE에 신규 진입했다. "외식 시 건강한 선택"이라는 매우 구체적인 페인포인트를 공략한 점이 인상적이다.
+
+| 구분 | 내용 |
+|------|------|
+| 타겟 사용자 | 외식이 잦은 건강 관심 소비자 |
+| 기존 대비 차별점 | 일반 칼로리 앱이 아닌 "외식 특화" |
+| 수익 모델 | 무료 (TOP_FREE) |
+| 개발사 규모 | 소규모 (Kosco Digital LLC) |
+| 성공 요인 | "외식"이라는 구체적 상황에 포커스 |
+
+**1인 개발자가 배울 점**: 넓은 카테고리(칼로리 추적) 안에서 특정 상황(외식)에만 집중하면 대형 앱과 경쟁하지 않고도 성장할 수 있다.
+
+---
+
+### 3. ClaimHunt – Claim Settlement 🆕 📱 iOS | FINANCE #40
+![icon](https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/18/19/3f/18193f2b-12bb-32e4-9a8a-1cb6ff405323/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg)
+
+🔗 [App Store](https://apps.apple.com/us/app/claimhunt-claim-settlement/id6755202426?uo=4)
+⭐ 4.67 | 📊 리뷰 110개 | 🗓️ 2025년 11월 출시
+
+#### 이 앱은 무엇인가?
+집단 소송이나 보험 청구에서 받을 수 있는 보상금을 찾아주는 앱이다. 사용자가 해당하는 집단 소송을 검색하고 청구 절차를 안내한다.
+- 핵심 기능: 집단 소송 검색, 청구 자격 확인, 보상금 신청 안내
+- 작동 방식: 프로필 입력 → 해당 소송 매칭 → 청구 절차 가이드
+
+#### 왜 주목할만한가?
+리뷰 110개로 아직 초기 단계이지만 TOP_GROSSING #40에 진입했다. "몰라서 못 받는 보상금"이라는 독특한 페인포인트를 공략한다. 니치 점수 85.
+
+| 구분 | 내용 |
+|------|------|
+| 타겟 사용자 | 미국 소비자 (집단 소송 대상자) |
+| 기존 대비 차별점 | 보상금 청구라는 유니크한 카테고리 |
+| 수익 모델 | 인앱 구매 (TOP_GROSSING) |
+| 개발사 규모 | 소규모 (Push Apps) |
+| 성공 요인 | "돈을 찾아준다"는 명확한 가치 제안 |
+
+**1인 개발자가 배울 점**: "사용자가 모르는 혜택을 알려주는" 앱은 자연스럽게 높은 전환율을 가진다.
+
+---
+
+### 4. Open Relay - Open WebUI Client 🆕 📱 iOS | PRODUCTIVITY #42
+
+🔗 [App Store](https://apps.apple.com/us/app/open-relay-open-webui-client/id6759630325?uo=4)
+⭐ 5.0 | 📊 리뷰 4개 | 🗓️ 신규 진입
+
+#### 이 앱은 무엇인가?
+Open WebUI (셀프호스팅 AI 채팅 인터페이스)의 iOS 네이티브 클라이언트다. 자체 서버에서 운영하는 LLM에 모바일로 접근할 수 있게 해준다.
+- 핵심 기능: Open WebUI 서버 연결, 모바일 AI 채팅
+- 작동 방식: Open WebUI 서버 URL 입력 → iOS에서 네이티브 채팅
+
+#### 왜 주목할만한가?
+리뷰 4개에 평점 5.0, 1인 개발자(Abhishek Bhardwaj)가 만든 유료 앱으로 TOP_PAID #42에 진입했다. 셀프호스팅 AI 사용자라는 작지만 열성적인 시장을 정확히 공략했다.
+
+| 구분 | 내용 |
+|------|------|
+| 타겟 사용자 | Open WebUI 셀프호스팅 사용자 |
+| 기존 대비 차별점 | Open WebUI 전용 네이티브 iOS 클라이언트 |
+| 수익 모델 | 유료 앱 (TOP_PAID) |
+| 개발사 규모 | 1인 개발자 |
+| 성공 요인 | 오픈소스 프로젝트의 모바일 갭 공략 |
+
+**1인 개발자가 배울 점**: 인기 오픈소스 프로젝트의 "모바일 클라이언트 부재"를 노리는 것이 검증된 전략이다. n8n, Ollama 등도 같은 기회가 있다.
+
+---
+
+### 5. Tai Chi for Beginners Seniors 📱 Android | HEALTH_AND_FITNESS #45
+![icon](https://play-lh.googleusercontent.com/PDJCfalSdlxTGbCYMSaCVqEqzbBi6TeOKsedbYQkHXw-EoOCkXF0lkIGIjBB2m1rsLHo8iEVC3VzhetCI2vgzt0)
+
+🔗 [Play Store](https://play.google.com/store/apps/details?id=net.workoutinc.tai_chi_for_beginners)
+⭐ 4.67 | 📊 리뷰 596개 | 📥 100,000+ 설치 | 🗓️ 2025년 11월 출시
+
+#### 이 앱은 무엇인가?
+시니어를 위한 태극권 입문 앱이다. 초보자가 따라할 수 있는 가이드 영상과 루틴을 제공한다.
+- 핵심 기능: 태극권 가이드 영상, 단계별 루틴, 진행 추적
+- 작동 방식: 레벨 선택 → 영상 따라하기 → 진행 기록
+
+#### 왜 주목할만한가?
+니치 점수 100으로 최고점이다. "시니어 + 태극권"이라는 극도로 좁은 니치에서 IAP $19.99~$59.99의 높은 가격대를 유지하며 TOP_GROSSING #45에 올랐다.
+
+| 구분 | 내용 |
+|------|------|
+| 타겟 사용자 | 태극권에 관심 있는 시니어 |
+| 기존 대비 차별점 | 시니어 + 태극권 극한 니치 |
+| 수익 모델 | IAP $19.99~$59.99 |
+| 개발사 규모 | 소규모 (7M Limited) |
+| 성공 요인 | 시니어 시장의 높은 지불 의향 |
+
+**1인 개발자가 배울 점**: 시니어 타겟 운동/건강 앱은 경쟁이 적고 지불 의향이 높다. "요가 for 시니어", "스트레칭 for 시니어" 등으로 확장 가능.
+
+---
+
+### 여전히 순위권인 앱 (이전 분석 참조)
+
+| 앱 | 플랫폼 | 현재 순위 | 변동 | 최근 분석일 |
+|----|--------|-----------|------|------------|
+| [Export contacts by Covve](https://apps.apple.com/us/app/export-contacts-by-covve/id1532203461?uo=4) | iOS | #31 | +12 | 2026-03-25 |
+| [HoloDex - TCG Scan & Collect](https://play.google.com/store/apps/details?id=com.getholodex.app) | Android | #33 | NEW | 2026-03-29 |
+| [Replit: App & Website Builder](https://play.google.com/store/apps/details?id=com.replit.app) | Android | #40 | NEW | 2026-03-29 |
+| [Photo Measures](https://apps.apple.com/us/app/photo-measures/id415038787?uo=4) | iOS | #41 | NEW | 2026-03-26 |
+| [Authenticator App](https://apps.apple.com/us/app/authenticator-app/id6754900760?uo=4) | iOS | #34 | NEW | 2026-03-28 |
+
+### 앱 마켓 니치 기회 요약
+
+| 기회 영역 | 사례 | 접근 전략 | 난이도 |
+|-----------|------|-----------|--------|
+| AI 칼로리 추적 | Cal AI, MenuFit | 특정 상황(외식/간식/술자리)에 특화 | ⭐⭐ |
+| 오픈소스 모바일 클라이언트 | Open Relay | 인기 셀프호스팅 도구의 네이티브 앱 | ⭐⭐ |
+| 시니어 건강/운동 | Tai Chi for Beginners | 시니어 타겟 운동 가이드 앱 | ⭐ |
+| 보상금/혜택 알림 | ClaimHunt | 정부 혜택/환급금 찾기 도구 | ⭐⭐⭐ |
+| 취미 특화 학습 | YarnPal (뜨개질) | 구체적 취미 + AI 가이드 | ⭐⭐ |
+
+---
+
+## 앱 마켓 급상승 알림
+
+### 오늘의 급상승 앱 (전일 대비 +10위 이상)
+
+| 앱 | 플랫폼 | 카테고리 | 어제 | 오늘 | 변동 |
+|----|--------|----------|------|------|------|
+| [Export contacts by Covve](https://apps.apple.com/us/app/export-contacts-by-covve/id1532203461?uo=4) | iOS | PRODUCTIVITY | #43 | #31 | +12 |
+
+**급상승 원인 분석:**
+- Export contacts by Covve: 연락처 내보내기 앱으로, 4월 초 분기 시작에 따른 비즈니스 정리 수요 증가 가능성. 이미 8회 피처된 꾸준한 인기 앱.
+
+### 신규 진입 앱
+
+| 앱 | 플랫폼 | 카테고리 | 진입 순위 | 리뷰 | 평점 |
+|----|--------|----------|-----------|------|------|
+| [Cal AI](https://play.google.com/store/apps/details?id=com.viraldevelopment.calai) | Android | HEALTH_AND_FITNESS | #32 | 1,454 | 4.68 |
+| [MenuFit](https://apps.apple.com/us/app/menufit-healthy-eating-out/id6746144481?uo=4) | iOS | HEALTH_AND_FITNESS | #38 | 25,235 | 4.79 |
+| [ClaimHunt](https://apps.apple.com/us/app/claimhunt-claim-settlement/id6755202426?uo=4) | iOS | FINANCE | #40 | 110 | 4.67 |
+| [Open Relay](https://apps.apple.com/us/app/open-relay-open-webui-client/id6759630325?uo=4) | iOS | PRODUCTIVITY | #42 | 4 | 5.0 |
+
+**신규 진입 앱 분석:**
+- 건강/피트니스 카테고리에서 Cal AI와 MenuFit이 동시 진입. AI 기반 식단 관리 시장이 확장 중.
+- Open Relay는 리뷰 4개에도 TOP_PAID에 진입 — 셀프호스팅 AI 시장의 모바일 수요가 분명히 존재한다.
+
+---
+
+## 해커뉴스 하이라이트
+
+### 주요 토론 (상위 6개)
+
+<div className="hn-card-grid">
+<HackerNewsCard title="Claude Code 소스 유출: 가짜 도구, 좌절 감지 정규식, 언더커버 모드" url="https://alex000kim.com/posts/2026-03-31-claude-code-source-leak/" points={884} comments={355} />
+<HackerNewsCard title="OpenAI, $852B 기업가치로 펀딩 라운드 마감" url="https://www.cnbc.com/2026/03/31/openai-funding-round-ipo.html" points={355} comments={302} />
+<HackerNewsCard title="Slop(AI 저질 코드)이 반드시 미래는 아니다" url="https://www.greptile.com/blog/ai-slopware-future" points={187} comments={337} />
+<HackerNewsCard title="하루에 점 하나 찍으면 정리가 된다 — 점 시스템" url="https://scottlawsonbc.com/post/dot-system" points={178} comments={59} />
+<HackerNewsCard title="Ministack: LocalStack을 대체하는 AWS 로컬 에뮬레이터" url="https://ministack.org/" points={154} comments={30} />
+<HackerNewsCard title="4D Doom — 4차원 FPS 게임" url="https://github.com/danieldugas/HYPERHELL" points={142} comments={31} />
+</div>
+
+### 주목할 기사
+
+#### Claude Code 소스 유출: 가짜 도구, 좌절 감지 정규식, 언더커버 모드 🔥🔥 884점 | 💬 355개
+**원문**: [The Claude Code Source Leak: fake tools, frustration regexes, undercover mode](https://alex000kim.com/posts/2026-03-31-claude-code-source-leak/)
+
+**무슨 내용인가?**
+Claude Code의 소스 코드가 유출되면서 내부 작동 방식이 공개되었다. 사용자의 좌절을 감지하는 정규식, 가짜 도구 호출 패턴, 은밀히 작동하는 모드 등이 발견되었다. 355개의 댓글이 달리며 AI 코딩 도구의 투명성에 대한 격렬한 토론이 이어졌다.
+
+**1인 개발자에게 의미하는 바**
+AI 코딩 도구가 단순한 코드 생성기가 아니라 복잡한 UX 엔지니어링의 산물이라는 것을 보여준다. "사용자 감정 감지"라는 패턴은 다른 도구에도 적용 가능한 아이디어.
+
+#### Slop(AI 저질 코드)이 반드시 미래는 아니다 🔥 187점 | 💬 337개
+**원문**: [Slop is not necessarily the future](https://www.greptile.com/blog/ai-slopware-future)
+
+**무슨 내용인가?**
+AI가 생성하는 저품질 코드("Slop")가 소프트웨어의 미래가 아닐 수 있다는 반론이다. 337개 댓글로 HN에서 가장 많은 토론을 유발했으며, AI 코딩의 품질 vs 속도 논쟁이 뜨거웠다.
+
+**1인 개발자에게 의미하는 바**
+AI 코드 품질 검증 도구, 코드 리뷰 자동화 등 "AI 코드의 품질을 높이는 도구" 수요가 명확히 존재한다.
+
+#### Ministack: LocalStack 대체제 🔥 154점 | 💬 30개
+**원문**: [Ministack (Replacement for LocalStack)](https://ministack.org/)
+
+**무슨 내용인가?**
+LocalStack의 대체제로 등장한 오픈소스 AWS 로컬 에뮬레이터다. LocalStack의 과도한 상용화에 불만을 가진 개발자들이 만든 프로젝트로 보인다.
+
+**1인 개발자에게 의미하는 바**
+오픈소스 → 상용화 과정에서 불만이 쌓이면 대안 프로젝트의 기회가 열린다. 이 패턴을 지켜보면 다음 기회를 예측할 수 있다.
+
+---
+
+## 깃허브 트렌딩
+
+<div className="github-card-grid">
+<GitHubRepoCard name="openclaw/openclaw" description="Your own personal AI assistant. Any OS. Any Platform. The lobster way." language="TypeScript" stars={343361} url="https://github.com/openclaw/openclaw" />
+<GitHubRepoCard name="n8n-io/n8n" description="Fair-code workflow automation platform with native AI capabilities." language="TypeScript" stars={181927} url="https://github.com/n8n-io/n8n" />
+<GitHubRepoCard name="Significant-Gravitas/AutoGPT" description="AutoGPT is the vision of accessible AI for everyone." language="Python" stars={183010} url="https://github.com/Significant-Gravitas/AutoGPT" />
+</div>
+
+### 주목할 프로젝트
+
+#### [openclaw/openclaw](https://github.com/openclaw/openclaw)
+<SourceTag tag="TypeScript" /> ⭐ 343,361
+
+**이 프로젝트는 무엇인가?**
+모든 OS, 모든 플랫폼에서 동작하는 개인용 AI 어시스턴트 프로젝트다. "The lobster way"라는 슬로건으로 오픈소스 AI 어시스턴트 카테고리에서 빠르게 성장 중이다.
+
+**왜 뜨고 있나?**
+YouTube에서도 OpenClaw 초보자 가이드(65만 뷰)가 트렌딩에 올라있다. Product Hunt의 AI 에이전트 트렌드와 맞물려 "나만의 AI 어시스턴트를 직접 만든다"는 셀프호스팅 수요가 증가하고 있다.
+
+**1인 개발자 활용법**
+OpenClaw 플러그인/테마/통합을 만들어 마켓플레이스에 올리는 것이 기회. Open Relay 앱처럼 모바일 클라이언트를 만드는 것도 가능하다.
+
+#### [n8n-io/n8n](https://github.com/n8n-io/n8n)
+<SourceTag tag="TypeScript" /> ⭐ 181,927
+
+**이 프로젝트는 무엇인가?**
+400개 이상의 통합을 지원하는 워크플로우 자동화 플랫폼이다. 비주얼 빌딩과 커스텀 코드를 결합하고, 네이티브 AI 기능을 내장하고 있다.
+
+**왜 뜨고 있나?**
+PH에서 Pixero, Viktor 등 자동화 에이전트가 대거 등장하면서, 이런 에이전트의 기반 인프라인 n8n에 대한 관심도 동반 상승 중이다.
+
+**1인 개발자 활용법**
+n8n 커스텀 노드(플러그인)를 만들어 특정 SaaS 도구와의 통합을 제공하면 수익화 가능하다.
+
+---
+
+## 기타 소스 하이라이트
+
+### Lobsters (개발자 커뮤니티)
+
+**[Axios 공급망 공격](https://socket.dev/blog/axios-npm-package-compromised)** - 50점
+<div className="source-tags">
+<SourceTag tag="javascript" />
+<SourceTag tag="security" />
+</div>
+
+Axios npm 패키지가 공급망 공격을 당했다. 주간 5천만+ 다운로드를 가진 핵심 라이브러리가 타깃이 되었다. npm 의존성 관리의 보안이 다시 한번 논란이 되고 있다.
+
+---
+
+**[GitHub 역대 가동률 차트](https://damrnelson.github.io/github-historical-uptime/)** - 41점
+<div className="source-tags">
+<SourceTag tag="vcs" />
+<SourceTag tag="web" />
+</div>
+
+GitHub의 역대 가동 시간을 시각화한 프로젝트. 개발자들이 GitHub 의존도와 가동률에 대해 토론 중이다.
+
+---
+
+**[당신의 헥스 에디터는 바이트를 색상 코딩해야 한다](https://simonomi.dev/blog/color-code-your-bytes/)** - 25점
+<div className="source-tags">
+<SourceTag tag="editors" />
+<SourceTag tag="practices" />
+</div>
+
+바이트 값에 따라 색상을 입히면 패턴을 시각적으로 인식할 수 있다는 제안. 개발 도구 UX 개선 아이디어.
+
+---
+
+**[서브프라임 기술 부채 위기](https://blog.happyfellow.dev/the-subprime-technical-debt-crisis/)** - 16점
+<div className="source-tags">
+<SourceTag tag="vibecoding" />
+</div>
+
+바이브 코딩으로 인해 쌓이는 기술 부채를 2008년 서브프라임 모기지 위기에 비유한 글. AI 코딩 품질 논쟁과 연결된다.
+
+---
+
+### TechCrunch (테크 뉴스)
+
+**[Mercor, 오픈소스 LiteLLM 해킹으로 사이버 공격 피해](https://techcrunch.com/2026/03/31/mercor-says-it-was-hit-by-cyberattack-tied-to-compromise-of-open-source-litellm-project/)**
+AI 채용 스타트업 Mercor가 LiteLLM 오픈소스 프로젝트의 해킹을 통해 공격당했다. Axios 사건과 함께 오픈소스 공급망 보안이 핵심 이슈로 부상.
+
+**[Anthropic이 바쁜 한 달을 보내고 있다](https://techcrunch.com/2026/03/31/anthropic-is-having-a-month/)**
+Claude Code 소스 유출, Computer Use 출시 등 Anthropic 관련 뉴스가 쏟아지고 있다.
+
+**[OpenAI, 아직 비상장인데 개인 투자자로부터 $3B 조달, 총 $122B 펀드레이즈](https://techcrunch.com/2026/03/31/openai-not-yet-public-raises-3b-from-retail-investors-in-monster-122b-fund-raise/)**
+OpenAI가 $852B 기업가치로 펀딩을 마감했다. AI 인프라 레벨의 투자 규모는 계속 커지지만, 실제 수익 모델은 아직 불명확.
+
+**[Salesforce, Slack에 AI 기능 30개 추가 대규모 업데이트](https://techcrunch.com/2026/03/31/salesforce-announces-an-ai-heavy-makeover-for-slack-with-30-new-features/)**
+Slack이 AI 중심으로 재편되고 있다. Viktor(PH 6위)가 Slack에서 광고를 관리하는 것과 맞물려, Slack이 AI 에이전트의 허브가 되는 추세.
+
+**[Yupp, a16z crypto로부터 $33M 조달 후 폐업](https://techcrunch.com/2026/03/31/yupp-ai-shuts-down-33m-a16z-crypto-chris-dixon/)**
+$33M을 받고도 폐업한 크립토/AI 스타트업. 자금이 성공을 보장하지 않는다는 교훈.
+
+---
+
+## YouTube 개발 콘텐츠
+
+<div className="youtube-grid">
+<YouTubeThumbnail id="qaB5HF4ax9M" title="Google이 UI/UX 디자인의 미래를 바꿨다..." views={1738515} channel="Fireship" />
+<YouTubeThumbnail id="Xn-gtHDsaPY" title="지금 당장 필요한 7가지 오픈소스 AI 도구" views={744774} channel="Fireship" />
+<YouTubeThumbnail id="3tWRq1Dv1as" title="리누스 토발즈가 바이브 코딩에 대해..." views={675924} channel="Manish sir" />
+<YouTubeThumbnail id="st534T7-mdE" title="OpenClaw 완전 초보자 가이드" views={659068} channel="Metics Media" />
+</div>
+
+### 더 많은 영상
+
+| # | 제목 | 채널 | 조회수 |
+|---|------|------|-------:|
+| 5 | [Andrej Karpathy: 코드 에이전트, 자동 연구, AI의 루프 시대](https://www.youtube.com/watch?v=kwSVtQ7dziU) | No Priors | 576,375 |
+| 6 | [에이전트들은 어떻게 함께 작동하는가?](https://www.youtube.com/watch?v=EXoIFK8viVM) | Microsoft Azure | 671,264 |
+| 7 | [2026 Claude 완전 초보자 튜토리얼](https://www.youtube.com/watch?v=rRrBbyv3ChM) | AI Foundations | 348,279 |
+| 8 | [2026 웹 개발 로드맵](https://www.youtube.com/watch?v=-4e3ewcTupM) | CodeWithHarry | 268,575 |
+| 9 | [React Native 풀 코스 2026](https://www.youtube.com/watch?v=4nVoLX2taFg) | JavaScript Mastery | 59,042 |
+
+### 주목할 영상
+
+<YouTubeEmbed id="qaB5HF4ax9M" title="Google이 UI/UX 디자인의 미래를 바꿨다..." views={1738515} channel="Fireship" />
+
+**왜 뜨고 있나**: Google Stitch라는 새로운 UI/UX 도구가 출시되면서 디자인 업계에 큰 반향을 일으키고 있다. Fireship의 173만 뷰는 개발자들의 높은 관심을 보여준다.
+**1인 개발자 시사점**: AI 기반 UI 생성 도구가 디자이너 없이도 고품질 UI를 만들 수 있게 해줄 가능성. 프로토타이핑 속도가 극적으로 빨라질 수 있다.
+
+<YouTubeEmbed id="kwSVtQ7dziU" title="Andrej Karpathy: 코드 에이전트, 자동 연구, AI의 루프 시대" views={576375} channel="No Priors" />
+
+**왜 뜨고 있나**: AI 분야의 핵심 인물 Karpathy가 "Loopy Era of AI"를 선언했다. 코드 에이전트가 반복적으로 작업하며 스스로 개선하는 패러다임이 도래했다는 주장이다.
+**1인 개발자 시사점**: AI 에이전트가 코드를 작성하고, 테스트하고, 수정하는 루프를 자율적으로 돌리는 시대. 1인 개발자의 생산성이 극대화될 수 있다.
+
+---
+
+## 테크 시그널
+
+### Google Trends 기술 관련 검색어
+
+오늘은 기술 관련 급상승 검색어가 없습니다. 한국 Google Trends 상위 10개는 모두 정치(박덕흠, 김관영), 연예(류화영), 생활(민방위, 청약홈, 에어부산, 국민카드, 한국장학재단), 게임(검은사막), 지리(독도) 관련이었습니다.
+
+### 한국 테크 커뮤니티 트렌드
+
+한국 테크 트렌드 데이터가 수집되지 않았습니다.
+
+<Callout type="info">
+다만 Google Trends의 "국민카드" 검색과 관련 뉴스에서 **KB국민카드의 스테이블코인 하이브리드 결제 모델** 구현 소식이 주목할 만합니다. 아발란체, 오픈에셋과 협업하여 카드 한 장으로 신용결제와 디지털 자산 결제를 동시에 하는 모델을 준비 중입니다. 한국에서 스테이블코인 결제 인프라가 현실화되고 있는 신호입니다.
+</Callout>
+
+---
+
+## 교차 분석: 오늘의 키 테마
+
+### 테마 1: AI 에이전트의 "실행" 시대
+
+#### 어디서 발견되었나?
+- Product Hunt: Jupid(세금 자동화), Pixero(광고 자동화), Viktor(Slack 광고 관리), Solvea(AI 리셉셔니스트), Computer Use(GUI 제어)
+- Hacker News: Claude Code 소스 유출(884점) — AI 코딩 도구의 복잡한 에이전트 로직 공개
+- YouTube: Karpathy의 "Loopy Era of AI"(57만 뷰), Microsoft의 "에이전트 협업"(67만 뷰)
+- TechCrunch: Salesforce가 Slack에 AI 기능 30개 추가
+
+#### 무엇을 의미하는가?
+
+<Callout type="info">
+AI가 "답변"에서 "실행"으로 완전히 전환되었다. 오늘 PH Top 10의 거의 모든 제품이 AI에게 실제 작업을 위임하는 도구다.
+</Callout>
+
+단순히 질문에 답하는 AI가 아니라, 은행 계좌에 접근하고(Jupid), Meta 광고를 집행하고(Pixero), 화면을 클릭하는(Computer Use) AI 에이전트의 시대가 열렸다. 이것은 "AI 래퍼" 수준을 넘어 실제 비즈니스 프로세스를 자동화하는 단계다.
+
+#### 기회 또는 경고
+
+<Steps>
+### 아이디어 1: 특정 SaaS의 MCP 서버 만들기
+Google Ads MCP Server(PH 9위)처럼 특정 SaaS 도구를 Claude/AI에서 제어할 수 있는 MCP 서버를 만들어 마켓플레이스에 등록한다. Shopify, Notion, Linear 등이 후보.
+
+### 아이디어 2: AI 에이전트 모니터링 도구
+AI가 실행하는 작업이 늘어나면 "AI가 뭘 했는지" 추적하고 감사하는 도구가 필요해진다. 에이전트 액션 로그, 비용 추적, 권한 관리 도구.
+</Steps>
+
+---
+
+### 테마 2: 오픈소스 공급망 보안 위기
+
+#### 어디서 발견되었나?
+- Lobsters: Axios 공급망 공격(50점) — npm 생태계 타깃
+- TechCrunch: LiteLLM 해킹으로 Mercor 피해
+- Hacker News: 1-Bit Bonsai/PrismML(126점) — 보안이 중요한 ML 인프라
+- Lobsters: RubyGems Fracture 인시던트 리포트(22점)
+
+#### 무엇을 의미하는가?
+
+<Callout type="warning">
+Axios, LiteLLM, RubyGems — 하루에 3개의 오픈소스 보안 사건이 동시에 보고되었다. 의존성 관리가 "좋은 습관"이 아니라 "생존 문제"가 되었다.
+</Callout>
+
+AI 에이전트가 더 많은 권한을 가지면서(은행 연결, 광고 집행), 이 에이전트가 의존하는 오픈소스 라이브러리의 보안이 훨씬 더 중요해졌다.
+
+#### 기회 또는 경고
+
+<Steps>
+### 액션 1: 의존성 감사 자동화
+프로젝트의 npm/pip 의존성을 자동으로 스캔하고, 알려진 취약점이 발견되면 즉시 알려주는 CI/CD 파이프라인 플러그인.
+
+### 액션 2: "의존성 최소화" 전략
+Axios처럼 인기 있는 라이브러리도 공격당할 수 있다. 가능하면 네이티브 fetch를 사용하고, 의존성을 줄이는 것이 최선의 보안.
+</Steps>
+
+---
+
+## 💡 아이디어 카드
+
+### 카드 1: SkinSync — AI 바코드 스캔 스킨케어 루틴 앱
+
+**조합 공식**: Cal AI의 "사진 → 자동 분석" UX + Skincare Routine 앱의 "수동 입력이 너무 불편하다" 불만(10건)
+
+**문제 발견 경로**:
+- App Store 니치: Skincare Routine 앱 — 평점 4.55, #33, $3.99 유료앱
+- 앱 리뷰 불만: "특정 브랜드만 지원" 10건, "수동 입력 지옥" 8건, "제품 데이터베이스 없음" 6건
+
+**문제**: 스킨케어 루틴을 관리하고 싶은 사용자가, 앱에 제품을 하나하나 수동으로 입력해야 하고, 특정 브랜드(The Ordinary 등)만 지원해서 대부분의 제품을 사용할 수 없다.
+
+**솔루션**: 바코드/사진 스캔으로 스킨케어 제품을 자동 인식하고, 성분을 분석하여 루틴을 구성해주는 앱.
+
+**MVP 스펙 (핵심 기능 3개)**:
+1. 바코드 스캔 → 제품 자동 인식 (Open Beauty Facts API 활용) - 수동 입력 제거
+2. 성분 충돌 체크 — "이 제품들을 같이 쓰면 안 됩니다" 경고
+3. 아침/저녁 루틴 타임라인 — 순서와 주기 관리
+
+**기술 스택**: React Native + Open Beauty Facts API + Barcode Scanner SDK
+
+**수익 검증 데이터**:
+- 유사 앱 [Skincare Routine]: 리뷰 623개, 평점 4.55, 순위 #33
+- 앱 리뷰 불만: "제품 DB 부족/수동 입력" (10건 동일 불만)
+- 예상 수익 모델: 유료 앱 $3.99~$4.99 (벤치마크: Skincare Routine $3.99)
+
+**1인 개발자 실현 가능성**: ⭐⭐⭐⭐☆ (4/5)
+
+| 평가 항목 | 점수 | 근거 |
+|-----------|------|------|
+| 기술 난이도 | ⭐⭐/5 | 바코드 스캔 SDK + 외부 DB API로 구현 가능 |
+| 시장 진입 장벽 | ⭐⭐/5 | 기존 앱의 리뷰 불만이 명확한 진입점 |
+| 초기 유저 확보 | ⭐⭐⭐/5 | Reddit r/SkincareAddiction, 뷰티 커뮤니티 |
+| 수익화 가능성 | ⭐⭐⭐⭐/5 | 기존 유료 앱 $3.99가 검증 |
+| MVP 개발 기간 | 2주 | 바코드 스캔 + 제품 DB + 루틴 관리 |
+
+**경쟁 분석**:
+- 기존 솔루션: Skincare Routine ($3.99)
+- 이들의 약점: "특정 브랜드만 지원(10건)", "수동 입력 너무 불편(8건)", "제품 DB 없음(6건)"
+- 이 아이디어의 차별점: 바코드 스캔으로 수동 입력 제거 + 오픈 제품 DB로 모든 브랜드 지원
+
+---
+
+### 카드 2: DepGuard — npm/pip 의존성 보안 대시보드
+
+**조합 공식**: Axios 공급망 공격(Lobsters 50점) + Ministack의 "기존 도구 불만 → 대안" 패턴(HN 154점) + GitHub 트렌딩의 개발자 도구 수요
+
+**문제 발견 경로**:
+- Lobsters: Axios npm 공급망 공격 — 50점, 29개 댓글
+- TechCrunch: LiteLLM 해킹으로 Mercor 피해
+- HN: 1-Bit Bonsai(126점) — ML 인프라 보안 관심
+
+**문제**: 개발자가 프로젝트의 npm/pip 의존성 중 어떤 것이 위험한지 실시간으로 모니터링하기 어렵다. Snyk이나 GitHub Dependabot이 있지만 설정이 복잡하고 알림이 과다하다.
+
+**솔루션**: package.json이나 requirements.txt를 드래그앤드롭하면 즉시 보안 점수와 위험도를 시각화해주는 웹 대시보드.
+
+**MVP 스펙 (핵심 기능 3개)**:
+1. 파일 업로드 → 의존성 트리 시각화 + 보안 점수 계산
+2. 위험 패키지 하이라이트 — 최근 공격 이력, 메인테이너 변경, 의심 패턴
+3. 주간 이메일 알림 — 모니터링 중인 프로젝트의 새로운 위험 감지
+
+**기술 스택**: Next.js + npm registry API + NVD(National Vulnerability Database) API
+
+**수익 검증 데이터**:
+- 유사 도구 Socket.dev: 시리즈 A 단계, npm 보안 전문 → 시장 검증됨
+- 수요 근거: Axios 사건 Lobsters 50점/29댓글, Snyk "너무 복잡하다" 불만 다수
+- 예상 수익 모델: 프리미엄 $9/월 (무제한 프로젝트 모니터링) — 벤치마크 Snyk 개인 무료, 팀 $25/월
+
+**1인 개발자 실현 가능성**: ⭐⭐⭐☆☆ (3/5)
+
+| 평가 항목 | 점수 | 근거 |
+|-----------|------|------|
+| 기술 난이도 | ⭐⭐⭐/5 | npm registry + NVD API 조합, 의존성 트리 파싱 |
+| 시장 진입 장벽 | ⭐⭐⭐/5 | Snyk, Socket.dev 있지만 "간단한 도구" 공백 |
+| 초기 유저 확보 | ⭐⭐⭐⭐/5 | HN/Reddit/Twitter 보안 이슈 때마다 바이럴 가능 |
+| 수익화 가능성 | ⭐⭐⭐/5 | 개발자 도구 SaaS, B2B 확장 가능 |
+| MVP 개발 기간 | 2주 | 파일 파싱 + API 조회 + 시각화 |
+
+**경쟁 분석**:
+- 기존 솔루션: Snyk, Socket.dev, GitHub Dependabot
+- 이들의 약점: 설정 복잡, 알림 과다, 기업 타깃(개인 개발자 소외)
+- 이 아이디어의 차별점: "드래그앤드롭 한 번으로 즉시 결과" — 설정 제로, 개인 개발자 타깃
+
+---
+
+### 카드 3: MealOut — 한국 외식 칼로리 추적기
+
+**조합 공식**: MenuFit의 "외식 특화 칼로리"(리뷰 25,235, TOP_FREE 진입) + Cal AI의 "AI 사진 인식"(니치 점수 100) + 한국 시장 공백
+
+**문제 발견 경로**:
+- App Store 니치: MenuFit — 리뷰 25,235개로 폭발적 성장, 하지만 미국 레스토랑만 지원
+- Play Store 니치: Cal AI — 니치 점수 100, AI 칼로리 추적 수요 확인
+- App Store 리뷰: Appediet — "한국 음식 인식 안 됨" 불만 패턴
+
+**문제**: 한국에서 외식할 때 칼로리를 추적하고 싶은 사용자가 있지만, 기존 앱은 미국 레스토랑/음식 위주라 김치찌개, 삼겹살, 떡볶이 등 한국 음식 데이터가 부족하다.
+
+**솔루션**: 한국 프랜차이즈/식당 메뉴의 칼로리 DB를 구축하고, 메뉴판 사진을 찍으면 영양 정보를 보여주는 앱.
+
+**MVP 스펙 (핵심 기능 3개)**:
+1. 한국 주요 프랜차이즈 20개 메뉴 칼로리 DB (식약처 공공데이터 활용)
+2. 메뉴판 사진 → OCR → 메뉴 매칭 → 칼로리 표시
+3. 일일 칼로리 기록 + 주간 리포트
+
+**기술 스택**: React Native + 식약처 공공 API + Google Cloud Vision OCR
+
+**수익 검증 데이터**:
+- 유사 앱 MenuFit: 리뷰 25,235개, TOP_FREE #38 → 외식 칼로리 추적 수요 확인
+- 유사 앱 Cal AI: 니치 점수 100, TOP_GROSSING #32 → AI 칼로리 추적 시장 성장
+- 예상 수익 모델: 프리미엄 구독 ₩4,900/월 (프랜차이즈 외 일반 식당 메뉴 분석)
+
+**1인 개발자 실현 가능성**: ⭐⭐⭐⭐☆ (4/5)
+
+| 평가 항목 | 점수 | 근거 |
+|-----------|------|------|
+| 기술 난이도 | ⭐⭐/5 | 공공 API + OCR + CRUD |
+| 시장 진입 장벽 | ⭐⭐/5 | 한국 시장 특화, 글로벌 앱이 못 채우는 공백 |
+| 초기 유저 확보 | ⭐⭐⭐⭐/5 | 다이어트 커뮤니티, 에브리타임, 블라인드 |
+| 수익화 가능성 | ⭐⭐⭐⭐/5 | MenuFit/Cal AI의 성장이 수요 증명 |
+| MVP 개발 기간 | 2주 | 공공데이터 파싱 + OCR + 기록 UI |
+
+**경쟁 분석**:
+- 기존 솔루션: 삼성 헬스, 눔, MyFitnessPal
+- 이들의 약점: 한국 외식 메뉴 데이터 부족, 프랜차이즈 메뉴 실시간 반영 안 됨
+- 이 아이디어의 차별점: 한국 프랜차이즈 특화 DB + 메뉴판 OCR로 "지금 이 식당에서" 즉시 칼로리 확인
