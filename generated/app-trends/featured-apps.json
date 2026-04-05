@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-03T01:37:57.814Z",
-  "total_apps": 127,
+  "last_updated": "2026-04-05T04:51:59.263Z",
+  "total_apps": 128,
   "featured": {
     "323061162": {
       "id": "323061162",
@@ -456,8 +456,8 @@
     "com.appediet.appediet": {
       "id": "com.appediet.appediet",
       "first_featured": "2026-02-04",
-      "last_featured": "2026-04-03",
-      "feature_count": 28,
+      "last_featured": "2026-04-05",
+      "feature_count": 29,
       "last_featured_dates": [
         "2026-02-04",
         "2026-02-09",
@@ -486,7 +486,8 @@
         "2026-03-28",
         "2026-03-29",
         "2026-03-30",
-        "2026-04-03"
+        "2026-04-03",
+        "2026-04-05"
       ]
     },
     "net.workoutinc.tai_chi_for_beginners": {
@@ -660,10 +661,9 @@
     "com.yarnpal.ai": {
       "id": "com.yarnpal.ai",
       "first_featured": "2026-02-06",
-      "last_featured": "2026-04-03",
-      "feature_count": 34,
+      "last_featured": "2026-04-05",
+      "feature_count": 35,
       "last_featured_dates": [
-        "2026-02-11",
         "2026-02-12",
         "2026-02-15",
         "2026-02-16",
@@ -692,14 +692,15 @@
         "2026-03-29",
         "2026-03-30",
         "2026-03-31",
-        "2026-04-03"
+        "2026-04-03",
+        "2026-04-05"
       ]
     },
     "6751181747": {
       "id": "6751181747",
       "first_featured": "2026-02-06",
-      "last_featured": "2026-03-09",
-      "feature_count": 11,
+      "last_featured": "2026-04-05",
+      "feature_count": 12,
       "last_featured_dates": [
         "2026-02-06",
         "2026-02-12",
@@ -711,7 +712,8 @@
         "2026-03-02",
         "2026-03-07",
         "2026-03-08",
-        "2026-03-09"
+        "2026-03-09",
+        "2026-04-05"
       ]
     },
     "io.foodvisor.foodvisor": {
@@ -1334,12 +1336,13 @@
     "com.DawgLabs.DAWG": {
       "id": "com.DawgLabs.DAWG",
       "first_featured": "2026-03-04",
-      "last_featured": "2026-04-03",
-      "feature_count": 3,
+      "last_featured": "2026-04-05",
+      "feature_count": 4,
       "last_featured_dates": [
         "2026-03-04",
         "2026-03-30",
-        "2026-04-03"
+        "2026-04-03",
+        "2026-04-05"
       ]
     },
     "6744321968": {
@@ -1418,24 +1421,26 @@
     "6751185513": {
       "id": "6751185513",
       "first_featured": "2026-03-18",
-      "last_featured": "2026-03-18",
-      "feature_count": 1,
+      "last_featured": "2026-04-05",
+      "feature_count": 2,
       "last_featured_dates": [
-        "2026-03-18"
+        "2026-03-18",
+        "2026-04-05"
       ]
     },
     "com.getholodex.app": {
       "id": "com.getholodex.app",
       "first_featured": "2026-03-20",
-      "last_featured": "2026-04-01",
-      "feature_count": 6,
+      "last_featured": "2026-04-05",
+      "feature_count": 7,
       "last_featured_dates": [
         "2026-03-20",
         "2026-03-21",
         "2026-03-22",
         "2026-03-29",
         "2026-03-31",
-        "2026-04-01"
+        "2026-04-01",
+        "2026-04-05"
       ]
     },
     "6747917472": {
@@ -1588,6 +1593,15 @@
       "feature_count": 1,
       "last_featured_dates": [
         "2026-04-03"
+      ]
+    },
+    "6757373812": {
+      "id": "6757373812",
+      "first_featured": "2026-04-05",
+      "last_featured": "2026-04-05",
+      "feature_count": 1,
+      "last_featured_dates": [
+        "2026-04-05"
       ]
     }
   }
