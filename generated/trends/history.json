@@ -1,11 +1,22 @@
 {
-  "last_updated": "2026-04-06",
+  "last_updated": "2026-04-07",
   "keywords": {
     "0": {
       "first_seen": "2026-03-29",
       "occurrences": [
         {
           "date": "2026-03-29",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "2026": {
+      "first_seen": "2026-04-07",
+      "occurrences": [
+        {
+          "date": "2026-04-07",
           "count": 4
         }
       ],
@@ -413,10 +424,14 @@
         {
           "date": "2026-04-06",
           "count": 11
+        },
+        {
+          "date": "2026-04-07",
+          "count": 11
         }
       ],
       "trend": "stable",
-      "total_count": 770
+      "total_count": 781
     },
     "menu bar apps": {
       "first_seen": "2026-02-01",
@@ -480,10 +495,14 @@
         {
           "date": "2026-04-06",
           "count": 3
+        },
+        {
+          "date": "2026-04-07",
+          "count": 8
         }
       ],
       "trend": "stable",
-      "total_count": 65
+      "total_count": 73
     },
     "software engineering": {
       "first_seen": "2026-02-01",
@@ -567,10 +586,14 @@
         {
           "date": "2026-03-23",
           "count": 8
+        },
+        {
+          "date": "2026-04-07",
+          "count": 3
         }
       ],
-      "trend": "rising",
-      "total_count": 126
+      "trend": "stable",
+      "total_count": 129
     },
     "chrome extensions": {
       "first_seen": "2026-02-01",
@@ -869,10 +892,14 @@
         {
           "date": "2026-04-06",
           "count": 8
+        },
+        {
+          "date": "2026-04-07",
+          "count": 11
         }
       ],
       "trend": "stable",
-      "total_count": 767
+      "total_count": 778
     },
     "artificial intelligence": {
       "first_seen": "2026-02-01",
@@ -1116,10 +1143,14 @@
         {
           "date": "2026-04-06",
           "count": 23
+        },
+        {
+          "date": "2026-04-07",
+          "count": 20
         }
       ],
       "trend": "stable",
-      "total_count": 1413
+      "total_count": 1433
     },
     "android": {
       "first_seen": "2026-02-01",
@@ -1415,10 +1446,14 @@
         {
           "date": "2026-04-06",
           "count": 3
+        },
+        {
+          "date": "2026-04-07",
+          "count": 8
         }
       ],
       "trend": "stable",
-      "total_count": 79
+      "total_count": 87
     },
     "a/b testing": {
       "first_seen": "2026-02-01",
@@ -1609,10 +1644,14 @@
         {
           "date": "2026-04-06",
           "count": 11
+        },
+        {
+          "date": "2026-04-07",
+          "count": 11
         }
       ],
       "trend": "stable",
-      "total_count": 324
+      "total_count": 335
     },
     "user experience": {
       "first_seen": "2026-02-01",
@@ -1761,10 +1800,14 @@
         {
           "date": "2026-04-06",
           "count": 8
+        },
+        {
+          "date": "2026-04-07",
+          "count": 3
         }
       ],
-      "trend": "rising",
-      "total_count": 44
+      "trend": "stable",
+      "total_count": 47
     },
     "nutrition": {
       "first_seen": "2026-02-01",
@@ -1973,10 +2016,14 @@
         {
           "date": "2026-04-06",
           "count": 2
+        },
+        {
+          "date": "2026-04-07",
+          "count": 1
         }
       ],
       "trend": "stable",
-      "total_count": 49
+      "total_count": 50
     },
     "praise": {
       "first_seen": "2026-02-01",
@@ -2140,10 +2187,14 @@
         {
           "date": "2026-04-02",
           "count": 11
+        },
+        {
+          "date": "2026-04-07",
+          "count": 3
         }
       ],
-      "trend": "rising",
-      "total_count": 88
+      "trend": "stable",
+      "total_count": 91
     },
     "time tracking": {
       "first_seen": "2026-02-02",
@@ -2400,10 +2451,14 @@
         {
           "date": "2026-04-03",
           "count": 8
+        },
+        {
+          "date": "2026-04-07",
+          "count": 17
         }
       ],
       "trend": "stable",
-      "total_count": 271
+      "total_count": 288
     },
     "marketing automation": {
       "first_seen": "2026-02-02",
@@ -2594,10 +2649,14 @@
         {
           "date": "2026-04-06",
           "count": 3
+        },
+        {
+          "date": "2026-04-07",
+          "count": 8
         }
       ],
       "trend": "stable",
-      "total_count": 314
+      "total_count": 322
     },
     "video": {
       "first_seen": "2026-02-02",
@@ -2665,10 +2724,14 @@
         {
           "date": "2026-04-05",
           "count": 8
+        },
+        {
+          "date": "2026-04-07",
+          "count": 8
         }
       ],
       "trend": "stable",
-      "total_count": 99
+      "total_count": 107
     },
     "hiring": {
       "first_seen": "2026-02-02",
@@ -3036,10 +3099,14 @@
         {
           "date": "2026-04-06",
           "count": 15
+        },
+        {
+          "date": "2026-04-07",
+          "count": 15
         }
       ],
       "trend": "stable",
-      "total_count": 734
+      "total_count": 749
     },
     "unknown": {
       "first_seen": "2026-02-02",
@@ -3263,10 +3330,14 @@
         {
           "date": "2026-04-06",
           "count": 4
+        },
+        {
+          "date": "2026-04-07",
+          "count": 4
         }
       ],
       "trend": "rising",
-      "total_count": 167
+      "total_count": 171
     },
     "python": {
       "first_seen": "2026-02-02",
@@ -3490,10 +3561,14 @@
         {
           "date": "2026-04-06",
           "count": 13
+        },
+        {
+          "date": "2026-04-07",
+          "count": 13
         }
       ],
       "trend": "stable",
-      "total_count": 716
+      "total_count": 729
     },
     "javascript": {
       "first_seen": "2026-02-02",
@@ -3717,10 +3792,14 @@
         {
           "date": "2026-04-06",
           "count": 2
+        },
+        {
+          "date": "2026-04-07",
+          "count": 2
         }
       ],
       "trend": "stable",
-      "total_count": 131
+      "total_count": 133
     },
     "c": {
       "first_seen": "2026-02-02",
@@ -3944,10 +4023,14 @@
         {
           "date": "2026-04-06",
           "count": 2
+        },
+        {
+          "date": "2026-04-07",
+          "count": 2
         }
       ],
       "trend": "stable",
-      "total_count": 115
+      "total_count": 117
     },
     "c++": {
       "first_seen": "2026-02-02",
@@ -4171,10 +4254,14 @@
         {
           "date": "2026-04-06",
           "count": 2
+        },
+        {
+          "date": "2026-04-07",
+          "count": 2
         }
       ],
       "trend": "stable",
-      "total_count": 115
+      "total_count": 117
     },
     "shell": {
       "first_seen": "2026-02-02",
@@ -4398,10 +4485,14 @@
         {
           "date": "2026-04-06",
           "count": 2
+        },
+        {
+          "date": "2026-04-07",
+          "count": 2
         }
       ],
       "trend": "stable",
-      "total_count": 115
+      "total_count": 117
     },
     "dart": {
       "first_seen": "2026-02-02",
@@ -4863,10 +4954,14 @@
         {
           "date": "2026-03-17",
           "count": 8
+        },
+        {
+          "date": "2026-04-07",
+          "count": 8
         }
       ],
-      "trend": "rising",
-      "total_count": 46
+      "trend": "stable",
+      "total_count": 54
     },
     "social media": {
       "first_seen": "2026-02-03",
@@ -5745,10 +5840,14 @@
         {
           "date": "2026-04-05",
           "count": 1
+        },
+        {
+          "date": "2026-04-07",
+          "count": 2
         }
       ],
       "trend": "stable",
-      "total_count": 93
+      "total_count": 95
     },
     "customer communication": {
       "first_seen": "2026-02-04",
@@ -6110,10 +6209,14 @@
         {
           "date": "2026-04-02",
           "count": 1
+        },
+        {
+          "date": "2026-04-07",
+          "count": 3
         }
       ],
       "trend": "stable",
-      "total_count": 46
+      "total_count": 49
     },
     "writing": {
       "first_seen": "2026-02-04",
@@ -6711,10 +6814,14 @@
         {
           "date": "2026-04-01",
           "count": 5
+        },
+        {
+          "date": "2026-04-07",
+          "count": 5
         }
       ],
       "trend": "stable",
-      "total_count": 55
+      "total_count": 60
     },
     "ideas": {
       "first_seen": "2026-02-04",
@@ -7317,10 +7424,14 @@
         {
           "date": "2026-04-06",
           "count": 1
+        },
+        {
+          "date": "2026-04-07",
+          "count": 1
         }
       ],
       "trend": "stable",
-      "total_count": 29
+      "total_count": 30
     },
     "인스타그램": {
       "first_seen": "2026-02-05",
@@ -7593,10 +7704,14 @@
         {
           "date": "2026-03-21",
           "count": 8
+        },
+        {
+          "date": "2026-04-07",
+          "count": 3
         }
       ],
       "trend": "rising",
-      "total_count": 30
+      "total_count": 33
     },
     "open-source,": {
       "first_seen": "2026-02-07",
@@ -8431,10 +8546,14 @@
         {
           "date": "2026-03-31",
           "count": 3
+        },
+        {
+          "date": "2026-04-07",
+          "count": 8
         }
       ],
       "trend": "stable",
-      "total_count": 115
+      "total_count": 123
     },
     "video streaming": {
       "first_seen": "2026-02-10",
@@ -17324,10 +17443,14 @@
         {
           "date": "2026-03-24",
           "count": 4
+        },
+        {
+          "date": "2026-04-07",
+          "count": 4
         }
       ],
-      "trend": "new",
-      "total_count": 4
+      "trend": "rising",
+      "total_count": 8
     },
     "종량제 봉투 대란": {
       "first_seen": "2026-03-24",
@@ -18962,6 +19085,127 @@
       ],
       "trend": "new",
       "total_count": 4
+    },
+    "space": {
+      "first_seen": "2026-04-07",
+      "occurrences": [
+        {
+          "date": "2026-04-07",
+          "count": 8
+        }
+      ],
+      "trend": "new",
+      "total_count": 8
+    },
+    "sports": {
+      "first_seen": "2026-04-07",
+      "occurrences": [
+        {
+          "date": "2026-04-07",
+          "count": 3
+        }
+      ],
+      "trend": "new",
+      "total_count": 3
+    },
+    "trusted?": {
+      "first_seen": "2026-04-07",
+      "occurrences": [
+        {
+          "date": "2026-04-07",
+          "count": 1
+        }
+      ],
+      "trend": "new",
+      "total_count": 1
+    },
+    "멤피스 대 클리블랜드": {
+      "first_seen": "2026-04-07",
+      "occurrences": [
+        {
+          "date": "2026-04-07",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "한국소방안전원": {
+      "first_seen": "2026-04-07",
+      "occurrences": [
+        {
+          "date": "2026-04-07",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "암": {
+      "first_seen": "2026-04-07",
+      "occurrences": [
+        {
+          "date": "2026-04-07",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "한덕수": {
+      "first_seen": "2026-04-07",
+      "occurrences": [
+        {
+          "date": "2026-04-07",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "코디 폰세": {
+      "first_seen": "2026-04-07",
+      "occurrences": [
+        {
+          "date": "2026-04-07",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "허찬미": {
+      "first_seen": "2026-04-07",
+      "occurrences": [
+        {
+          "date": "2026-04-07",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "양하은": {
+      "first_seen": "2026-04-07",
+      "occurrences": [
+        {
+          "date": "2026-04-07",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "축제": {
+      "first_seen": "2026-04-07",
+      "occurrences": [
+        {
+          "date": "2026-04-07",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
     }
   },
   "daily_summaries": [
@@ -19982,6 +20226,22 @@
         "design tools"
       ],
       "total_keywords": 44
+    },
+    {
+      "date": "2026-04-07",
+      "top_keywords": [
+        "artificial intelligence",
+        "saas",
+        "typescript",
+        "python",
+        "developer tools",
+        "marketing",
+        "productivity",
+        "space",
+        "github",
+        "menu bar apps"
+      ],
+      "total_keywords": 40
     }
   ],
   "metrics": {
@@ -21380,6 +21640,30 @@
       "youtube_trending": {
         "avgViews": 780927,
         "maxViews": 4142615,
+        "totalItems": 20
+      }
+    },
+    "2026-04-07": {
+      "product_hunt": {
+        "avgVotes": 192,
+        "maxVotes": 361,
+        "avgComments": 28,
+        "totalItems": 10
+      },
+      "hacker_news": {
+        "avgPoints": 258,
+        "maxPoints": 890,
+        "avgComments": 123,
+        "totalItems": 15
+      },
+      "github_trending": {
+        "avgStarsToday": 0,
+        "maxStarsToday": 0,
+        "totalItems": 15
+      },
+      "youtube_trending": {
+        "avgViews": 992380,
+        "maxViews": 4152539,
         "totalItems": 20
       }
     }
@@ -23216,6 +23500,37 @@
         },
         "youtube_trending": {
           "viewsChange": -30
+        }
+      }
+    },
+    "2026-04-07": {
+      "vs_yesterday": {
+        "product_hunt": {
+          "votesChange": 20,
+          "maxVotesChange": -22
+        },
+        "hacker_news": {
+          "pointsChange": 40,
+          "maxPointsChange": 42
+        },
+        "github_trending": {
+          "starsChange": null
+        },
+        "youtube_trending": {
+          "viewsChange": 27
+        }
+      },
+      "vs_last_week": {
+        "product_hunt": {
+          "votesChange": -4,
+          "maxVotesChange": -6
+        },
+        "hacker_news": {
+          "pointsChange": 57,
+          "maxPointsChange": 60
+        },
+        "youtube_trending": {
+          "viewsChange": 40
         }
       }
     }

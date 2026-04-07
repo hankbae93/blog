@@ -1,0 +1,751 @@
+---
+title: "Insight | 2026-04-07"
+date: "2026-04-07"
+description: "AI 에이전트 시각화 도구와 로컬 음성인식의 부상, 코딩 에이전트 신뢰 위기"
+keywords:
+  - "AI 에이전트"
+  - "음성인식"
+  - "코딩 에이전트"
+  - "니치 앱"
+  - "오픈소스"
+openGraph:
+  type: "article"
+  title: "Insight | 2026-04-07"
+  description: "AI 에이전트 시각화 도구와 로컬 음성인식의 부상, 코딩 에이전트 신뢰 위기"
+  url: "https://www.hankbae.cloud/insights/2026-04-07"
+  siteName: "Hank Dev Log"
+  locale: "ko_KR"
+  images:
+    - url: "https://www.hankbae.cloud/assets/og-image.png"
+      width: 1200
+      height: 630
+      alt: "Insight | 2026-04-07"
+twitter:
+  card: "summary_large_image"
+  title: "Insight | 2026-04-07"
+  description: "AI 에이전트 시각화 도구와 로컬 음성인식의 부상, 코딩 에이전트 신뢰 위기"
+  images:
+    - "https://www.hankbae.cloud/assets/og-image.png"
+canonical: "https://www.hankbae.cloud/insights/2026-04-07"
+---
+
+
+# 2026-04-07 데일리 인사이트
+
+## 오늘의 흐름
+
+&gt; **한 줄 요약**: AI 에이전트가 터미널에서 벗어나 시각적 대시보드로 진화하는 가운데, 로컬 음성인식과 코딩 에이전트의 신뢰성 논쟁이 동시에 뜨거워지고 있다.
+
+1. **에이전트 시각화**: OpenClaw 터미널 작업을 GUI로 옮긴 AgentPulse가 PH 3위 — "에이전트 관리"가 새로운 카테고리로
+2. **로컬 AI 전환**: Ghost Pepper(HN 240점), Walkie(PH 182표), Google 오프라인 받아쓰기 — 음성인식이 클라우드에서 로컬로 이동 중
+3. **에이전트 신뢰 위기**: "Claude Code가 복잡한 엔지니어링에 못 쓴다" HN 글이 766점 — 코딩 에이전트의 한계가 커뮤니티 최대 화두
+
+---
+
+## 오늘의 신호
+
+| 신호 | 의미 | 기회 |
+|------|------|------|
+| PH Top 3 중 2개가 AI 에이전트 관련(AgentPulse, PixVerse V6) | AI 도구가 "만드는 것"에서 "관리하는 것"으로 확장 | 에이전트 모니터링/대시보드 니치 도구 |
+| HN에서 로컬 STT 앱 Ghost Pepper 240점 + PH에서 Walkie 182표 | 프라이버시 + 오프라인 수요가 음성인식 시장 재편 | 로컬 모델 기반 특화 STT 도구(회의록, 메모) |
+| "Claude Code 복잡한 작업에 못 쓴다" HN 766점, 469댓글 | 코딩 에이전트 기대와 현실 격차 → 보조 도구 수요 | 에이전트 아웃풋 검증/디버깅 도구 |
+| Mailero "대부분의 헬프데스크는 과하다" — 솔로 파운더용 티켓 관리 | 소규모 팀을 위한 "덜어낸" 도구가 시장 형성 중 | 복잡한 SaaS의 미니멀 대안 |
+| Custody Tracker, Pollen Forecast 등 니치 유료 앱 신규 진입 | 초특화 니치에서 유료 모델이 여전히 작동 | 특정 직업/상황 전용 앱 |
+
+---
+
+## Product Hunt 오늘의 제품
+
+### 1. Moonshot ⬆️ 361 | 💬 35
+![thumbnail](https://ph-files.imgix.net/10dd95f7-48ed-412b-8322-b8ad7da90514.png?auto=format)
+
+🔗 [Product Hunt](https://www.producthunt.com/products/moonshot-13?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29) | [공식 사이트](https://www.producthunt.com/r/GDTDNLE4GZ3EBU?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29)
+📂 Space, GitHub, Menu Bar Apps
+
+#### 이 제품은 무엇인가?
+NASA의 Artemis II 미션을 실시간으로 추적하는 macOS 메뉴바 앱이다. SwiftUI로 제작되었으며, 미션 단계, 카운트다운, 승무원 정보, 실시간 텔레메트리 컨텍스트, 그리고 지구-달-오리온 타임라인을 우주 테마 UI로 보여준다.
+- 핵심 기능: Artemis II 미션 단계별 실시간 추적 + 카운트다운
+- 작동 방식: NASA 공개 미션 데이터를 활용한 메뉴바 위젯
+
+#### 왜 주목할만한가?
+이벤트 기반 추적 앱의 좋은 사례. 특정 이벤트(우주 미션)에 맞춘 한정 기간 앱이지만, 361표라는 높은 관심을 끌었다.
+
+| 구분 | 내용 |
+|------|------|
+| 타겟 사용자 | 우주 덕후, NASA/Artemis 팬 |
+| 기존 대비 차별점 | 메뉴바에서 바로 확인 가능한 미니멀 UX |
+| 수익 모델 | 무료 (오픈소스, GitHub 공개) |
+| 제작자 | 1인 개발자 |
+| 커뮤니티 반응 | 댓글 35개 |
+
+**배울 점**: 시의성 있는 이벤트 + 메뉴바 앱 = 바이럴 공식. 큰 이벤트에 맞춘 작은 유틸리티 앱은 짧은 개발 기간으로도 큰 주목을 받을 수 있다.
+
+---
+
+### 2. PixVerse V6 ⬆️ 251 | 💬 39 | ⭐ 4.33
+![thumbnail](https://ph-files.imgix.net/f95e4f14-f386-4a1f-ac97-b68522ca1240.jpeg?auto=format)
+
+🔗 [Product Hunt](https://www.producthunt.com/products/pixverse?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29)
+📂 Artificial Intelligence, Video
+
+#### 이 제품은 무엇인가?
+AI 비디오 생성 모델의 V6 업데이트. 사실적인 인체 텍스처, 자연스러운 물리 시뮬레이션, 시네마틱 색감을 제공한다. 복잡한 장면(격렬한 액션, 변신, 불렛타임)을 높은 성공률로 생성하며, 오디오 싱크도 지원한다.
+- 핵심 기능: 사실적 AI 비디오 생성 + 오디오 싱크
+- 작동 방식: 텍스트/이미지 → AI 비디오 변환, 팀 플랜(공유 크레딧) 지원
+
+#### 왜 주목할만한가?
+AI 비디오 품질이 "실제처럼 느껴지는" 수준에 도달했다는 신호. Mini Apps로 사진 → 비디오 광고 즉시 변환 기능은 이커머스 셀러에게 직접적 가치를 제공한다.
+
+| 구분 | 내용 |
+|------|------|
+| 타겟 사용자 | 콘텐츠 크리에이터, 이커머스 셀러, 스튜디오 |
+| 기존 대비 차별점 | 물리 시뮬레이션 + 오디오 싱크 + Mini Apps |
+| 수익 모델 | 크레딧 기반 과금 + 팀 플랜 |
+| 커뮤니티 반응 | 댓글 39개, 평점 4.33/5.0 |
+
+**배울 점**: AI 비디오 자체를 만드는 건 1인 개발자에겐 불가능하지만, AI 비디오 API를 활용한 "특화 워크플로우 도구"(예: 상품 사진 → 15초 광고 자동 생성)는 가능하다.
+
+---
+
+### 3. AgentPulse by Rectify ⬆️ 225 | 💬 36 | ⭐ 5.0
+![thumbnail](https://ph-files.imgix.net/fcc0f481-62f4-479f-977d-66cb0daf9d11.jpeg?auto=format)
+
+🔗 [Product Hunt](https://www.producthunt.com/products/rectify?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29)
+📂 SaaS, Developer Tools, Artificial Intelligence
+
+#### 이 제품은 무엇인가?
+OpenClaw(오픈소스 AI 어시스턴트)의 시각적 관리 대시보드. 터미널에서 하던 모든 작업(에이전트 모니터링, 세션 관리, 크론잡 실행, 비용 추적, 메모리 로그 확인, 스킬 관리)을 GUI로 할 수 있다. 팀용 역할 기반 접근 제어 지원.
+- 핵심 기능: 에이전트 모니터링 + 비용 추적 + 세션/메모리 관리
+- 작동 방식: OpenClaw 인스턴스에 연결하여 시각적 대시보드 제공
+
+#### 왜 주목할만한가?
+AI 에이전트가 충분히 복잡해져서 "에이전트를 관리하는 도구"가 필요해진 시점. 터미널 도구의 GUI 래퍼는 1인 개발자가 만들 수 있는 범위다.
+
+| 구분 | 내용 |
+|------|------|
+| 타겟 사용자 | OpenClaw 사용 팀, AI 에이전트 운영자 |
+| 기존 대비 차별점 | CLI만 있던 OpenClaw에 GUI + 팀 협업 기능 추가 |
+| 수익 모델 | SaaS (팀 플랜) |
+| 커뮤니티 반응 | 댓글 36개, 평점 5.0/5.0 |
+
+**배울 점**: 인기 있는 CLI 도구에 시각적 인터페이스를 입히는 것은 검증된 비즈니스 모델. 이미 사용자가 있는 오픈소스 프로젝트의 "비주얼 레이어"를 만드는 전략.
+
+---
+
+### 4. KREV ⬆️ 205 | 💬 15
+![thumbnail](https://ph-files.imgix.net/bed5efab-77d9-48df-b692-f7edf474cc45.png?auto=format)
+
+🔗 [Product Hunt](https://www.producthunt.com/products/krev?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29)
+📂 Marketing, Artificial Intelligence, E-Commerce
+
+#### 이 제품은 무엇인가?
+이커머스 브랜드를 위한 AI 크리에이티브 에이전트. 상품 이미지 한 장으로 제품 사진, 비디오 광고, 출시용 크리에이티브를 생성한다. 실제 광고 데이터와 검증된 크리에이티브 패턴을 기반으로 브랜드에 맞는 콘텐츠를 만든다.
+- 핵심 기능: 상품 이미지 → 다양한 광고 소재 자동 생성
+- 작동 방식: 광고 성과 데이터 + 브랜드 데이터를 학습하여 크리에이티브 생성
+
+| 구분 | 내용 |
+|------|------|
+| 타겟 사용자 | 이커머스 셀러, 마케터 |
+| 기존 대비 차별점 | "광고 성과 데이터 기반" 크리에이티브 생성 |
+| 수익 모델 | SaaS |
+
+**배울 점**: 범용 AI 이미지 생성이 아닌 "이커머스 광고"라는 구체적 유즈케이스에 집중한 점. 니치 + AI = 차별화.
+
+---
+
+### 5. Walkie ⬆️ 182 | 💬 24
+![thumbnail](https://ph-files.imgix.net/1f6815cb-81fa-4b44-9b4f-296891a8f006.jpeg?auto=format)
+
+🔗 [Product Hunt](https://www.producthunt.com/products/b150?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+PRD+Agent+Daily+Collector+%28ID%3A+267070%29)
+📂 Productivity, SaaS, Tech
+
+#### 이 제품은 무엇인가?
+데스크톱 음성-텍스트 변환 도구. 두 가지 모드 제공: Fast Mode(클라우드 전사 + 포맷팅), Local Mode(완전 온디바이스 받아쓰기). macOS와 Windows 모두 지원.
+- 핵심 기능: 로컬/클라우드 하이브리드 음성인식
+- 작동 방식: 선택적 온디바이스 처리로 프라이버시 보장
+
+#### 왜 주목할만한가?
+HN의 Ghost Pepper(로컬 STT for macOS, 240점)과 같은 날 등장. "로컬 음성인식" 수요가 동시다발적으로 표면화되고 있다.
+
+| 구분 | 내용 |
+|------|------|
+| 타겟 사용자 | 프라이버시 중시 사용자, 오프라인 환경 사용자 |
+| 기존 대비 차별점 | 로컬/클라우드 듀얼 모드 |
+| 수익 모델 | 무료(로컬) + 유료(클라우드) |
+
+**배울 점**: Whisper 등 오픈소스 모델 덕분에 로컬 STT 앱이 1인 개발자도 만들 수 있는 영역이 되었다. 특정 사용 시나리오(회의록, 저널링)에 특화하면 차별화 가능.
+
+---
+
+## 앱 마켓 니치 트렌드
+
+Play Store와 App Store에서 30~150위권에 있는 앱 중 **대기업이 아닌 개발사**가 만든 **평점 4.0 이상** 앱을 분석합니다. 1인 개발자가 진입할 수 있는 기회를 찾는 것이 목표입니다.
+
+### 1. Alimentor 2: Custody Tracker 🆕 📱 iOS | PRODUCTIVITY #31
+
+🔗 [App Store](https://apps.apple.com/us/app/alimentor-2-custody-tracker/id1428802675?uo=4)
+⭐ 4.85 | 📊 리뷰 1,264개 | 🗓️ 유료 앱
+
+#### 이 앱은 무엇인가?
+양육권/면접교섭 일정을 추적하는 앱. 이혼한 부모가 자녀 양육 시간, 방문 일정, 비용 분담 등을 기록하고 관리한다.
+- 핵심 기능: 양육 일정 캘린더 + 비용 추적 + 법적 기록용 리포트
+- 작동 방식: 양육 일정 입력 → 시각화 + 리포트 자동 생성
+
+#### 왜 주목할만한가?
+평점 4.85로 극히 높은 만족도. "법적으로 의미 있는 기록"이라는 명확한 가치 제안. 이 카테고리는 감정적으로 민감해 대기업이 진입하기 꺼리는 영역.
+
+| 구분 | 내용 |
+|------|------|
+| 타겟 사용자 | 이혼/별거 부모 |
+| 기존 대비 차별점 | 양육권 특화 캘린더 + 법적 증거용 리포트 |
+| 수익 모델 | 유료 앱 |
+| 개발사 규모 | 1인 (Tomasz Domanski) |
+| 성공 요인 | 극도로 니치한 시장에서 법적 필요를 충족 |
+
+**1인 개발자가 배울 점**: "법적 기록이 필요한 상황"은 유료 앱에 대한 저항이 거의 없다. 양육권, 계약, 근무시간 기록 등 법적 가치가 있는 니치 앱은 가격 민감도가 낮다.
+
+---
+
+### 2. iXpenseIt Pro: Manage Finance 🆕 📱 iOS | FINANCE #32
+
+🔗 [App Store](https://apps.apple.com/us/app/ixpenseit-pro-manage-finance/id284947174?uo=4)
+⭐ 4.70 | 📊 리뷰 1,657개
+
+#### 이 앱은 무엇인가?
+개인 재무 관리 앱. 수입/지출 추적, 예산 관리, 카테고리별 분석 리포트를 제공한다.
+- 핵심 기능: 지출 기록 + 예산 관리 + 시각화 리포트
+- 작동 방식: 수동 입력 기반의 심플한 가계부
+
+#### 왜 주목할만한가?
+2009년 출시된 앱이 여전히 TOP_PAID #32에 있다는 것은, 이 카테고리에서 "심플함"이 여전히 경쟁력이라는 증거.
+
+| 구분 | 내용 |
+|------|------|
+| 타겟 사용자 | 개인 재무 관리를 원하는 사용자 |
+| 기존 대비 차별점 | 구독 없는 일회성 구매 |
+| 수익 모델 | 유료 앱 |
+| 개발사 규모 | 소규모 (FYI Mobileware) |
+| 성공 요인 | 10년+ 꾸준한 업데이트 + 구독 피로 대안 |
+
+**1인 개발자가 배울 점**: 구독 피로가 심해지면서 "일회성 구매" 앱에 대한 수요가 재부상. 특히 가계부처럼 매일 쓰는 앱에서 구독 모델은 사용자 불만이 크다.
+
+---
+
+### 3. Tai Chi for Beginners Seniors 🆕 📱 Android | HEALTH_AND_FITNESS #47
+
+🔗 [Play Store](https://play.google.com/store/apps/details?id=net.workoutinc.tai_chi_for_beginners)
+⭐ 4.70 | 📊 리뷰 622개 | 📥 100,000+ 설치
+
+#### 이 앱은 무엇인가?
+시니어를 위한 태극권 가이드 앱. 초보자가 따라할 수 있는 동작 가이드와 루틴을 제공한다.
+- 핵심 기능: 태극권 동작 가이드 + 맞춤 루틴
+- 작동 방식: 영상/애니메이션 가이드 + 일일 루틴 추천
+
+#### 왜 주목할만한가?
+IAP $19.99~$59.99로 높은 가격대에도 니치 점수 100. "시니어 + 특정 운동"이라는 이중 니치에서 성공.
+
+| 구분 | 내용 |
+|------|------|
+| 타겟 사용자 | 시니어, 태극권 입문자 |
+| 기존 대비 차별점 | 시니어 전용 UX + 태극권 특화 |
+| 수익 모델 | 프리미엄 (IAP $19.99~$59.99) |
+| 개발사 규모 | 소규모 (7M Limited) |
+| 성공 요인 | 성장하는 시니어 건강 시장 + 경쟁이 적은 운동 카테고리 |
+
+**1인 개발자가 배울 점**: 시니어 타겟 앱은 높은 가격대를 수용하는 경향이 있다. "특정 연령대 + 특정 활동" 조합은 검색에서도 경쟁이 적다.
+
+---
+
+### 4. DAWG - Self Discipline & Focus 🆕 📱 Android | HEALTH_AND_FITNESS #34
+
+🔗 [Play Store](https://play.google.com/store/apps/details?id=com.DawgLabs.DAWG)
+⭐ 4.58 | 📊 리뷰 225개 | 📥 100,000+ 설치
+
+#### 이 앱은 무엇인가?
+자기 규율과 집중력 향상을 위한 습관 앱. "하드코어" 동기부여 스타일로 일일 챌린지, 습관 추적, 집중 타이머를 제공한다.
+- 핵심 기능: 일일 챌린지 + 습관 추적 + 집중 모드
+- 작동 방식: 게이미피케이션 요소로 자기 규율 습관 형성
+
+#### 왜 주목할만한가?
+TOP_GROSSING #34이면서 IAP $14.99~$49.99. "규율/자기개발" 니치에서 강한 브랜딩("DAWG")으로 차별화. 리뷰 225개에 10만+ 설치는 전환율이 높다는 의미.
+
+| 구분 | 내용 |
+|------|------|
+| 타겟 사용자 | 자기개발에 관심 있는 MZ세대 |
+| 기존 대비 차별점 | "하드코어" 브랜딩 + 게이미피케이션 |
+| 수익 모델 | 프리미엄 (IAP $14.99~$49.99) |
+| 개발사 규모 | 소규모 (DWG Labs) |
+| 성공 요인 | 강한 브랜드 아이덴티티 + 타겟 커뮤니티 |
+
+**1인 개발자가 배울 점**: 생산성/습관 앱에서 "브랜드 톤"이 차별화의 핵심. 기능이 비슷해도 "75 Hard 챌린지" 같은 특정 문화/움직임에 편승하면 충성 유저 확보 가능.
+
+---
+
+### 5. HomeCare for HomeKit 🆕 📱 iOS | LIFESTYLE #33
+
+🔗 [App Store](https://apps.apple.com/us/app/homecare-for-homekit/id6747270794?uo=4)
+⭐ 4.75 | 📊 리뷰 102개 | 💰 $9.99
+
+#### 이 앱은 무엇인가?
+Apple HomeKit 기기의 유지보수와 관리를 돕는 앱. 스마트홈 기기 상태 모니터링, 자동화 관리, 문제 진단을 제공한다.
+- 핵심 기능: HomeKit 기기 상태 대시보드 + 문제 진단
+- 작동 방식: HomeKit API를 활용한 기기 모니터링
+
+#### 왜 주목할만한가?
+1인 개발자(Anthonin Cocagne)가 $9.99 유료 앱으로 성공. Apple의 자체 Home 앱에 없는 "관리/진단" 기능을 제공하여 파워유저를 타겟.
+
+| 구분 | 내용 |
+|------|------|
+| 타겟 사용자 | HomeKit 파워유저 |
+| 기존 대비 차별점 | Apple Home 앱에 없는 진단/관리 기능 |
+| 수익 모델 | 유료 앱 ($9.99) |
+| 개발사 규모 | 1인 (Anthonin Cocagne) |
+| 성공 요인 | 플랫폼 공식 앱의 빈틈을 정확히 공략 |
+
+**1인 개발자가 배울 점**: 대기업 플랫폼(Apple, Google)의 공식 앱이 놓치는 "파워유저 기능"을 보완하는 앱은 $9.99도 기꺼이 지불하는 고객이 있다.
+
+---
+
+### 앱 마켓 니치 기회 요약
+
+| 기회 영역 | 사례 | 접근 전략 | 난이도 |
+|-----------|------|-----------|--------|
+| 법적 기록 앱 | Alimentor 2 | 특정 법적 상황(양육권, 근무시간)에 특화된 기록 앱 | ⭐⭐ |
+| 시니어 건강 | Tai Chi for Beginners | 특정 운동 + 시니어 UX 조합 | ⭐⭐ |
+| 구독 없는 유틸리티 | iXpenseIt Pro | 일회성 구매 모델로 구독 피로 공략 | ⭐⭐ |
+| 규율/자기개발 | DAWG | 강한 브랜딩 + 게이미피케이션 습관 앱 | ⭐⭐ |
+| 플랫폼 보완 | HomeCare | Apple/Google 공식 앱의 파워유저 기능 보완 | ⭐⭐⭐ |
+
+### 여전히 순위권인 앱 (이전 분석 참조)
+
+| 앱 | 플랫폼 | 현재 순위 | 변동 | 최근 분석일 |
+|----|--------|-----------|------|------------|
+| [YarnPal - Crochet for Beginner](https://play.google.com/store/apps/details?id=com.yarnpal.ai) | Android | #32 | +1 | 2026-04-05 |
+| [Cal AI - Food Calorie Tracker](https://play.google.com/store/apps/details?id=com.viraldevelopment.calai) | Android | #31 | NEW | 2026-04-01 |
+| [Open Relay - Open WebUI Client](https://apps.apple.com/us/app/open-relay-open-webui-client/id6759630325?uo=4) | iOS | #41 | NEW | 2026-04-01 |
+
+---
+
+## 앱 마켓 급상승 알림
+
+### 신규 진입 앱
+
+| 앱 | 플랫폼 | 카테고리 | 진입 순위 | 리뷰 | 평점 |
+|----|--------|----------|-----------|------|------|
+| [Alimentor 2: Custody Tracker](https://apps.apple.com/us/app/alimentor-2-custody-tracker/id1428802675?uo=4) | iOS | PRODUCTIVITY | #31 | 1,264 | 4.85 |
+| [iXpenseIt Pro](https://apps.apple.com/us/app/ixpenseit-pro-manage-finance/id284947174?uo=4) | iOS | FINANCE | #32 | 1,657 | 4.70 |
+| [Open Browser - Smart & Safe](https://play.google.com/store/apps/details?id=com.open.web.ai.browser) | Android | TOOLS | #36 | 2,476 | 4.77 |
+| [Dumbo Credit](https://apps.apple.com/us/app/dumbo-credit/id6745514687?uo=4) | iOS | FINANCE | #41 | 383 | 4.53 |
+| [Starting Strength Official](https://apps.apple.com/us/app/starting-strength-official/id1008697836?uo=4) | iOS | HEALTH_AND_FITNESS | #42 | 2,492 | 4.80 |
+| [Pocket Yoga Teacher](https://apps.apple.com/us/app/pocket-yoga-teacher/id471786434?uo=4) | iOS | HEALTH_AND_FITNESS | #45 | 666 | 4.56 |
+| [LuckySteps](https://play.google.com/store/apps/details?id=com.alphabet.step.luckygo) | Android | HEALTH_AND_FITNESS | #45 | 504 | 4.83 |
+
+**신규 진입 앱 분석:**
+- 건강/피트니스 카테고리에서 3개 앱이 동시 진입 (Starting Strength, Pocket Yoga, LuckySteps) — 봄철 운동 시즌 효과
+- Alimentor 2는 #31에 바로 진입하며 니치 점수 95 — 양육권 추적이라는 독특한 카테고리에서 강한 포지셔닝
+
+### 3일 연속 상승 중
+
+| 앱 | 플랫폼 | 카테고리 | 3일간 변동 | 현재 순위 |
+|----|--------|----------|------------|-----------|
+| [YarnPal - Crochet for Beginner](https://play.google.com/store/apps/details?id=com.yarnpal.ai) | Android | LIFESTYLE | +4 | #32 |
+
+**모멘텀 신호:**
+- YarnPal은 3일 연속 상승 중이며 니치 점수 100을 유지. 크로셰 뜨개질 앱이 꾸준히 상위권에 있다는 것은, DIY/공예 니치가 안정적인 수익을 만드는 카테고리라는 증거.
+
+---
+
+## 해커뉴스 하이라이트
+
+### 주요 토론 (상위 6개를 카드로 표시)
+
+<div className="hn-card-grid">
+<HackerNewsCard title="Sam Altman이 우리의 미래를 좌우한다 — 그를 믿을 수 있는가?" url="https://www.newyorker.com/magazine/2026/04/13/sam-altman-may-control-our-future-can-he-be-trusted" points={890} comments={327} />
+<HackerNewsCard title="이슈: Claude Code가 복잡한 엔지니어링에서 사용 불가" url="https://github.com/anthropics/claude-code/issues/42796" points={766} comments={469} />
+<HackerNewsCard title="암호학 엔지니어의 양자 컴퓨팅 타임라인 전망" url="https://words.filippo.io/crqc-timeline/" points={338} comments={142} />
+<HackerNewsCard title="표절당해서 배운 것들" url="https://belief.horse/notes/what-being-ripped-off-taught-me/" points={334} comments={182} />
+<HackerNewsCard title="독일 경찰, GandCrab/REvil 랜섬웨어 그룹 수장 실명 공개" url="https://krebsonsecurity.com/2026/04/germany-doxes-unkn-head-of-ru-ransomware-gangs-revil-gandcrab/" points={262} comments={135} />
+<HackerNewsCard title="Show HN: Ghost Pepper — macOS용 로컬 음성인식 (길게 누르기)" url="https://github.com/matthartman/ghost-pepper" points={240} comments={103} />
+</div>
+
+### 주목할 기사
+
+#### Claude Code가 복잡한 엔지니어링에서 사용 불가 🔥🔥 766점 | 💬 469개
+**원문**: [Issue: Claude Code is unusable for complex engineering tasks with Feb updates](https://github.com/anthropics/claude-code/issues/42796)
+
+**무슨 내용인가?**
+Claude Code가 2월 업데이트 이후 복잡한 엔지니어링 작업에서 사용할 수 없게 되었다는 GitHub 이슈. 469개 댓글이 달릴 만큼 많은 개발자가 공감하고 있으며, 코딩 에이전트의 현실적 한계에 대한 광범위한 토론으로 번졌다.
+
+**1인 개발자에게 의미하는 바**
+코딩 에이전트가 "단순 작업은 잘하지만 복잡한 시스템은 못 다룬다"는 인식이 형성되고 있다. 이는 에이전트 아웃풋을 검증하는 도구, 또는 에이전트가 잘 다루지 못하는 영역(아키텍처 결정, 시스템 설계)을 보조하는 도구에 기회가 있다는 신호.
+
+---
+
+#### Show HN: Ghost Pepper — macOS용 로컬 음성인식 🔥 240점 | 💬 103개
+**원문**: [Show HN: Ghost Pepper – Local hold-to-talk speech-to-text for macOS](https://github.com/matthartman/ghost-pepper)
+
+**무슨 내용인가?**
+macOS에서 키를 길게 누르면 로컬에서 음성을 텍스트로 변환해주는 오픈소스 도구. 클라우드 전송 없이 온디바이스에서 처리되어 프라이버시가 보장된다.
+
+**1인 개발자에게 의미하는 바**
+PH의 Walkie, TechCrunch의 Google 오프라인 받아쓰기 앱과 함께 "로컬 STT"가 오늘의 가장 뚜렷한 트렌드. Whisper 모델이 충분히 좋아진 지금, 특정 유즈케이스(의료 받아쓰기, 법률 녹취, 다국어 회의)에 특화된 로컬 STT 앱에 기회가 있다.
+
+---
+
+#### Launch HN: Freestyle — 코딩 에이전트를 위한 샌드박스 🔥 206점 | 💬 115개
+**원문**: [Launch HN: Freestyle – Sandboxes for Coding Agents](https://www.freestyle.sh/)
+
+**무슨 내용인가?**
+코딩 에이전트가 안전하게 코드를 실행할 수 있는 격리된 샌드박스 환경을 제공하는 서비스. 에이전트가 생성한 코드를 본 시스템에 영향 없이 테스트할 수 있다.
+
+**1인 개발자에게 의미하는 바**
+코딩 에이전트 생태계의 "인프라 레이어"가 형성되고 있다. 에이전트 자체를 만들기보다, 에이전트가 필요로 하는 주변 도구(샌드박스, 검증, 모니터링)가 실질적 비즈니스 기회.
+
+---
+
+## 깃허브 트렌딩
+
+<div className="github-card-grid">
+<GitHubRepoCard name="openclaw/openclaw" description="Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞" language="TypeScript" stars={350194} url="https://github.com/openclaw/openclaw" />
+<GitHubRepoCard name="n8n-io/n8n" description="Fair-code workflow automation platform with native AI capabilities" language="TypeScript" stars={182743} url="https://github.com/n8n-io/n8n" />
+<GitHubRepoCard name="Significant-Gravitas/AutoGPT" description="AutoGPT is the vision of accessible AI for everyone" language="Python" stars={183191} url="https://github.com/Significant-Gravitas/AutoGPT" />
+</div>
+
+### 주목할 프로젝트
+
+#### [openclaw/openclaw](https://github.com/openclaw/openclaw)
+<SourceTag tag="TypeScript" /> ⭐ 350,194
+
+**이 프로젝트는 무엇인가?**
+"모든 OS, 모든 플랫폼"을 지향하는 오픈소스 AI 어시스턴트. 터미널 기반으로 작동하며, 플러그인 시스템으로 다양한 기능을 확장할 수 있다. 오늘 PH에 출시된 AgentPulse가 이 프로젝트의 GUI 래퍼.
+
+**왜 뜨고 있나?**
+35만 스타를 돌파하며 AI 어시스턴트 카테고리에서 압도적 1위. AgentPulse의 PH 출시와 맞물려 다시 주목받고 있다.
+
+**1인 개발자 활용법**
+OpenClaw의 플러그인/스킬 마켓플레이스에 특화 도구를 만들어 배포하면, 이미 형성된 35만 유저 기반에 접근 가능. 또는 AgentPulse처럼 GUI 레이어를 만드는 전략도 검증됨.
+
+---
+
+#### [n8n-io/n8n](https://github.com/n8n-io/n8n)
+<SourceTag tag="TypeScript" /> ⭐ 182,743
+
+**이 프로젝트는 무엇인가?**
+AI 네이티브 기능을 갖춘 페어코드 워크플로우 자동화 플랫폼. 비주얼 빌더 + 커스텀 코드를 결합하여 400개+ 통합을 제공한다. 셀프호스팅 또는 클라우드 모두 가능.
+
+**왜 뜨고 있나?**
+AI 에이전트의 "워크플로우 오케스트레이션" 수요 증가. n8n이 AI 에이전트 노드를 추가하면서 Make/Zapier 대안으로 성장 중.
+
+**1인 개발자 활용법**
+n8n의 커스텀 노드를 만들어 특정 니치(한국 서비스 연동, 특화 데이터 처리)를 커버하면, n8n 커뮤니티를 통한 자연스러운 유저 확보 가능.
+
+---
+
+## 기타 소스 하이라이트
+
+### Lobsters (개발자 커뮤니티)
+
+**[Stamp It! 모든 프로그램은 버전을 보고해야 한다](https://michael.stapelberg.ch/posts/2026-04-05-stamp-it-all-programs-must-report-their-version/)** - 90점
+<div className="source-tags">
+<SourceTag tag="go" />
+<SourceTag tag="nix" />
+</div>
+
+프로그램의 버전 정보를 빌드 시점에 자동으로 임베딩해야 한다는 주장. Go와 Nix 생태계에서의 구현 방법을 상세히 설명. 배포/디버깅에서 버전 추적이 얼마나 중요한지 보여주는 실용적 글.
+
+---
+
+**[자유 시장의 거짓말: 스위스에 25Gbit 인터넷이 있고 미국에 없는 이유](https://sschueller.github.io/posts/the-free-market-lie/)** - 87점
+<div className="source-tags">
+<SourceTag tag="networking" />
+</div>
+
+스위스와 미국의 인터넷 인프라 차이를 분석. 규제와 경쟁 정책이 인터넷 속도에 미치는 영향을 데이터로 설명. 51개 댓글로 활발한 토론.
+
+---
+
+**[BrowserStack에서 누군가 사용자 이메일을 유출하고 있다](https://shkspr.mobi/blog/2026/04/someone-at-browserstack-is-leaking-users-email-address/)** - 64점
+<div className="source-tags">
+<SourceTag tag="privacy" />
+</div>
+
+테스팅 플랫폼 BrowserStack의 내부자 또는 시스템에서 사용자 이메일이 유출되고 있다는 보고. SaaS 서비스의 데이터 보안 문제를 상기시키는 사례.
+
+---
+
+### TechCrunch (테크 뉴스)
+
+**[Google이 오프라인 AI 받아쓰기 앱을 조용히 출시](https://techcrunch.com/2026/04/06/google-quietly-releases-an-offline-first-ai-dictation-app-on-ios/)**
+Google이 iOS에서 오프라인으로 작동하는 AI 받아쓰기 앱을 출시. PH의 Walkie, HN의 Ghost Pepper와 같은 날 보도되며 "로컬 STT" 트렌드를 확인. Google까지 오프라인 우선 전략을 택한 것은 프라이버시 수요가 주류화되었다는 신호.
+
+---
+
+**[OpenAI 출신들이 1억 달러 규모의 펀드를 조용히 운영 중](https://techcrunch.com/2026/04/06/openai-alums-have-been-quietly-investing-from-a-new-potentially-100m-fund/)**
+OpenAI를 떠난 인물들이 새 투자 펀드를 조성. AI 인재가 "만드는 것"에서 "투자하는 것"으로 이동하고 있으며, AI 스타트업 생태계가 2세대로 진입하고 있다는 신호.
+
+---
+
+**[북한의 웹 오픈소스 프로젝트 하이재킹, 수주간 준비된 것으로 보여](https://techcrunch.com/2026/04/06/north-koreas-hijack-of-one-of-the-webs-most-used-open-source-projects-was-likely-weeks-in-the-making/)**
+널리 사용되는 오픈소스 프로젝트가 북한에 의해 탈취당한 사건의 후속 분석. 오픈소스 공급망 보안이 갈수록 중요해지고 있다.
+
+---
+
+## YouTube 개발 콘텐츠
+
+<div className="youtube-grid">
+<YouTubeThumbnail id="Xn-gtHDsaPY" title="지금 당장 필요한 7개 오픈소스 AI 도구" views={765017} channel="Fireship" />
+<YouTubeThumbnail id="kwSVtQ7dziU" title="Andrej Karpathy: 코드 에이전트, AutoResearch, AI의 루프 시대" views={632232} channel="No Priors" />
+<YouTubeThumbnail id="rRrBbyv3ChM" title="2026년 Claude 완전 입문 튜토리얼" views={434716} channel="AI Foundations" />
+<YouTubeThumbnail id="XGe7ldwFLSE" title="Apple M5 Max가 로컬 AI의 판도를 바꾼다" views={367492} channel="Alex Ziskind" />
+</div>
+
+### 더 많은 영상
+
+| # | 제목 | 채널 | 조회수 |
+|---|------|------|-------:|
+| 5 | [Claude 초보자 가이드](https://www.youtube.com/watch?v=jw0pMr54Ztc) | AI Edge | 395,025 |
+| 6 | [유일한 OpenClaw 튜토리얼 (2026.3)](https://www.youtube.com/watch?v=CxErCGVo-oo) | Alex Finn | 316,226 |
+| 7 | [2026 최대 해킹 사건](https://www.youtube.com/watch?v=yiLIZLPNEm8) | Low Level | 277,700 |
+| 8 | [6개 프레임워크로 같은 앱 만들기](https://www.youtube.com/watch?v=bdFVDId2rFs) | Tastemaker Design | 31,117 |
+
+### 주목할 영상
+
+<YouTubeEmbed id="kwSVtQ7dziU" title="Andrej Karpathy: 코드 에이전트, AutoResearch, AI의 루프 시대" views={632232} channel="No Priors" />
+
+**왜 뜨고 있나**: Karpathy가 코딩 에이전트의 현재와 미래, 그리고 "루프형 AI"(반복적으로 스스로 개선하는 AI)에 대해 심층 논의. HN의 Claude Code 신뢰 위기와 맞물려 "에이전트는 어디까지 할 수 있나"에 대한 관심 폭발.
+
+**1인 개발자 시사점**: Karpathy가 강조하는 "AutoResearch" — AI가 자동으로 리서치하고 코드를 생성하는 패턴은 이미 현실화 중. 1인 개발자가 이 패턴을 특정 도메인(예: 특허 조사, 경쟁사 분석)에 적용하면 가치 있는 도구를 만들 수 있다.
+
+<YouTubeEmbed id="XGe7ldwFLSE" title="Apple M5 Max가 로컬 AI의 판도를 바꾼다" views={367492} channel="Alex Ziskind" />
+
+**왜 뜨고 있나**: M5 Max의 통합 메모리(최대 192GB)로 70B+ 모델을 로컬에서 실행 가능해졌다는 내용. 오늘의 "로컬 AI" 트렌드(Ghost Pepper, Walkie, Google 오프라인 STT)와 완벽하게 연결.
+
+**1인 개발자 시사점**: 로컬 AI 실행이 주류화되면 "로컬 모델 관리 도구", "모델 벤치마킹 앱" 등 주변 생태계에 기회가 생긴다. Ollama/LM Studio의 특정 유즈케이스 특화 버전을 고려해볼 만하다.
+
+---
+
+## 테크 시그널
+
+### Google Trends 기술 관련 검색어
+
+오늘은 기술 관련 급상승 검색어가 없습니다. Google Trends 한국 데이터에서 `tech_relevant: true`인 항목이 의미 있는 기술 키워드가 아닙니다.
+
+### 한국 테크 커뮤니티 트렌드
+
+한국 테크 트렌드 데이터가 오늘은 수집되지 않았습니다.
+
+---
+
+## 교차 분석: 오늘의 키 테마
+
+### 테마 1: 로컬 AI의 주류화
+
+#### 어디서 발견되었나?
+- Product Hunt: Walkie — 로컬/클라우드 듀얼 모드 STT (182표)
+- Hacker News: Ghost Pepper — macOS 로컬 STT (240점)
+- TechCrunch: Google 오프라인 AI 받아쓰기 앱 출시
+- YouTube: "Apple M5 Max가 로컬 AI 판도를 바꾼다" (36.7만뷰)
+- GitHub: OpenClaw 35만 스타 (로컬 실행 가능)
+
+#### 무엇을 의미하는가?
+
+<Callout type="info">
+"로컬 AI"가 더 이상 얼리어답터의 영역이 아니라 Google까지 참여하는 주류 트렌드로 전환되었다. 프라이버시 + 오프라인 + 비용 절감이라는 삼중 동기가 이 흐름을 가속화하고 있다.
+</Callout>
+
+Whisper, Llama 등 오픈소스 모델의 성숙 + Apple Silicon의 성능 향상이 결합되어 "클라우드 없이도 충분하다"는 인식이 형성 중. 특히 음성인식은 가장 먼저 로컬 전환이 일어나는 영역.
+
+#### 기회 또는 경고
+
+<Steps>
+### 아이디어 1: 니치 로컬 STT 앱
+Whisper 모델 위에 특화 기능(의료 용어 사전, 법률 용어 자동 교정)을 얹은 데스크톱 앱
+
+### 아이디어 2: 로컬 모델 관리 대시보드
+여러 로컬 AI 모델(Whisper, Llama, Stable Diffusion)을 한 곳에서 관리하는 맥 앱
+</Steps>
+
+---
+
+### 테마 2: 에이전트 생태계의 성숙
+
+#### 어디서 발견되었나?
+- Product Hunt: AgentPulse — OpenClaw GUI 관리 도구 (225표)
+- Hacker News: "Claude Code 복잡한 작업에 못 쓴다" (766점)
+- Hacker News: Freestyle — 코딩 에이전트 샌드박스 (206점)
+- Hacker News: Hippo — AI 에이전트용 생물학적 메모리 (51점)
+- Dev.to: "AGENTS.md의 74%가 에이전트 시간을 낭비" 린터 개발
+
+#### 무엇을 의미하는가?
+
+<Callout type="info">
+에이전트 자체보다 "에이전트를 잘 쓰기 위한 도구"가 더 큰 비즈니스 기회가 되고 있다. 에이전트가 충분히 복잡해져서 관리(AgentPulse), 안전(Freestyle), 메모리(Hippo), 검증 도구가 필요해진 단계.
+</Callout>
+
+766점의 Claude Code 불만 글은 "에이전트를 쓰고 싶지만 신뢰할 수 없다"는 커뮤니티 감정을 대변. 이 격차를 메우는 도구에 기회가 있다.
+
+#### 기회 또는 경고
+
+<Steps>
+### 아이디어 1: 에이전트 아웃풋 검증 도구
+코딩 에이전트가 생성한 코드의 품질/안전성을 자동 검사하는 CI 플러그인
+
+### 아이디어 2: 에이전트 세션 리플레이
+에이전트의 의사결정 과정을 시각적으로 리플레이하여 디버깅할 수 있는 도구
+</Steps>
+
+---
+
+### 테마 3: "덜어낸" SaaS의 부상
+
+#### 어디서 발견되었나?
+- Product Hunt: Mailero — "대부분의 헬프데스크는 과하다" (137표)
+- App Store: iXpenseIt Pro — 구독 없는 가계부가 여전히 #32
+- Lobsters: "사이즈가 중요하다 — 매우 빠른 연결에서도" (43점)
+- HN: "20년 만에 Google AdSense 끄다" (115점)
+
+#### 무엇을 의미하는가?
+
+<Callout type="info">
+"풀기능 SaaS"에 대한 피로감이 구체적 제품 수요로 전환되고 있다. Mailero의 "No setup, no complex workflows, no bloated features"가 정확히 이 감정을 대변한다.
+</Callout>
+
+구독 피로 + 기능 과잉에 대한 반발이 "한 가지만 잘 하는" 도구에 대한 수요를 만들고 있다. 1인 개발자에게 가장 자연스러운 포지셔닝.
+
+#### 기회 또는 경고
+
+<Steps>
+### 아이디어 1: 복잡한 SaaS의 미니멀 대안
+Jira → 단순 이슈 보드, Notion → 단순 노트, Zendesk → Mailero처럼
+
+### 아이디어 2: 일회성 구매 유틸리티
+구독 모델인 기존 앱의 핵심 기능만 일회성 구매로 제공
+</Steps>
+
+---
+
+## 💡 아이디어 카드
+
+### 카드 1: VoiceNote Clinic — 의료진용 로컬 음성 메모 앱
+
+**조합 공식**: Ghost Pepper의 [로컬 STT 기술] + ATracker PRO의 [시간 추적 불만 "iCloud 싱크 안 됨"]에서 발견한 "오프라인 우선 + 동기화" 수요
+
+**문제 발견 경로**:
+- HN: Ghost Pepper 240점 — 로컬 STT 수요 폭발
+- PH: Walkie 182표 — 로컬/클라우드 듀얼 모드가 핵심 가치
+- App Review: ATracker PRO에서 "iCloud 싱크 안 됨" 불만 (sync/data 테마 1건) + "구독 없이 기본 기능을 써야 한다" 불만 (pricing 테마 1건)
+
+**문제**: 프리랜서/소규모 사업자가 고객 미팅 중 메모를 남기고 싶지만, (1) 클라우드 STT는 민감 정보 걱정, (2) 기존 음성 메모 앱은 텍스트 정리가 안 됨, (3) 나중에 태스크를 추출하기 어려움
+
+**솔루션**: 로컬에서 음성을 텍스트로 변환하고, 자동으로 요약 + 액션 아이템을 추출하는 데스크톱 메모 앱
+
+**MVP 스펙 (핵심 기능 3개)**:
+1. 로컬 Whisper STT + 단축키 트리거 — 프라이버시 보장 음성→텍스트
+2. LLM 기반 자동 요약 + 액션 아이템 추출 — 메모를 바로 활용 가능
+3. 마크다운 내보내기 + 로컬 저장 — 외부 서비스 의존 제로
+
+**기술 스택**: Electron/Tauri + Whisper.cpp + 로컬 LLM(llama.cpp) 또는 선택적 Claude API
+
+**수익 검증 데이터**:
+- Ghost Pepper: GitHub에서 240점, 로컬 STT 수요 검증
+- ATracker PRO: 리뷰 714개, 평점 4.72, 순위 #35 — 시간/메모 추적 시장 존재
+- 예상 수익 모델: 일회성 구매 $19.99 — 벤치마크: Otter.ai 구독 $16.99/월 대비 저렴한 일회성 대안
+
+**1인 개발자 실현 가능성**: ⭐⭐⭐⭐☆ (4/5)
+
+| 평가 항목 | 점수 | 근거 |
+|-----------|------|------|
+| 기술 난이도 | ⭐⭐/5 | Whisper.cpp + 로컬 LLM 이미 성숙한 라이브러리 |
+| 시장 진입 장벽 | ⭐⭐/5 | Otter.ai는 클라우드 전용, 로컬은 아직 공백 |
+| 초기 유저 확보 | ⭐⭐⭐/5 | HN/Reddit 프라이버시 커뮤니티 + Product Hunt |
+| 수익화 가능성 | ⭐⭐⭐⭐/5 | 일회성 구매 모델로 구독 피로 공략 |
+| MVP 개발 기간 | 2주 | Tauri + Whisper.cpp 조합으로 빠른 프로토타입 |
+
+**경쟁 분석**:
+- 기존 솔루션: Otter.ai, Fireflies.ai, MacWhisper
+- 이들의 약점: 클라우드 필수(프라이버시 우려), 구독 모델, 범용 목적
+- 이 아이디어의 차별점: 100% 로컬 + 일회성 구매 + 자동 액션 아이템 추출
+
+---
+
+### 카드 2: AgentLens — 코딩 에이전트 세션 비교/감사 도구
+
+**조합 공식**: AgentPulse의 [에이전트 모니터링] + Claude Code 불만 글의 [복잡한 작업에서 에이전트가 실패] 766점
+
+**문제 발견 경로**:
+- HN: "Claude Code가 복잡한 엔지니어링에 못 쓴다" 766점, 469댓글
+- PH: AgentPulse 225표 — 에이전트 모니터링 도구 수요 확인
+- HN: Freestyle(에이전트 샌드박스) 206점 — 에이전트 안전 도구 수요
+
+**문제**: 개발자가 코딩 에이전트(Claude Code, OpenClaw 등)를 사용할 때, 에이전트가 왜 특정 결정을 했는지 추적할 수 없고, 같은 작업을 다른 에이전트/설정으로 실행했을 때 결과를 비교할 방법이 없다.
+
+**솔루션**: 코딩 에이전트의 세션 로그를 파싱하여 의사결정 트리를 시각화하고, 여러 실행을 비교 분석할 수 있는 웹 대시보드
+
+**MVP 스펙 (핵심 기능 3개)**:
+1. 에이전트 로그 파서 — Claude Code/OpenClaw 세션 로그를 구조화된 데이터로 변환
+2. 의사결정 타임라인 뷰 — 에이전트가 어떤 순서로 무슨 결정을 했는지 시각화
+3. A/B 비교 — 같은 작업의 두 세션을 나란히 비교
+
+**기술 스택**: Next.js + D3.js(시각화) + SQLite(로컬 저장)
+
+**수익 검증 데이터**:
+- Claude Code 이슈 글: 766점, 469댓글 — 에이전트 신뢰 문제가 최대 화두
+- AgentPulse: PH 225표 — 에이전트 관리 도구 시장 확인
+- 예상 수익 모델: 프리미엄 $9.99/월 — 기본 뷰 무료, 비교/팀 기능 유료
+
+**1인 개발자 실현 가능성**: ⭐⭐⭐☆☆ (3/5)
+
+| 평가 항목 | 점수 | 근거 |
+|-----------|------|------|
+| 기술 난이도 | ⭐⭐⭐/5 | 로그 파싱 + D3 시각화 필요 |
+| 시장 진입 장벽 | ⭐⭐/5 | 아직 전용 도구가 거의 없음 |
+| 초기 유저 확보 | ⭐⭐⭐⭐/5 | HN/GitHub에서 에이전트 불만 유저 직접 접근 가능 |
+| 수익화 가능성 | ⭐⭐⭐/5 | 개발자 도구 유료화는 검증된 모델 |
+| MVP 개발 기간 | 2주 | 로그 파서 + 기본 타임라인 뷰로 시작 |
+
+**경쟁 분석**:
+- 기존 솔루션: AgentPulse (범용 모니터링), Freestyle (샌드박스)
+- 이들의 약점: "비교 분석"과 "의사결정 추적" 기능 없음
+- 이 아이디어의 차별점: 에이전트의 "왜"를 추적하고 비교할 수 있는 유일한 도구
+
+---
+
+### 카드 3: CustodyLog — 양육 일정 + 비용 분담 자동화 웹앱
+
+**조합 공식**: Alimentor 2의 [양육권 추적 니치 성공, #31 진입] + Photo Measures의 [기록 앱 불만 "측정값이 어긋남, 데이터 유실"]
+
+**문제 발견 경로**:
+- App Trends: Alimentor 2 니치 점수 95, iOS #31 신규 진입 — 양육권 추적 수요 검증
+- App Review: Photo Measures에서 "데이터가 날아감", "측정값이 어긋남" 불만(crash/bugs 2건, sync/data 1건) — 기록 앱의 신뢰성 문제
+- App Review: Export Contacts에서 "내보내기 크래시" 불만 7건 — 데이터 내보내기 신뢰성이 핵심
+
+**문제**: 이혼/별거 부모가 양육 시간과 비용 분담을 기록해야 하지만, (1) Alimentor 2는 iOS 전용 네이티브 앱, (2) 양쪽 부모가 동시에 접근할 수 있는 공유 플랫폼이 없음, (3) 법원 제출용 PDF 리포트 생성이 번거로움
+
+**솔루션**: 양쪽 부모가 함께 사용하는 양육 일정 캘린더 + 비용 분담 계산 + 법원 제출용 리포트 자동 생성 웹앱
+
+**MVP 스펙 (핵심 기능 3개)**:
+1. 공유 양육 캘린더 — 양쪽 부모가 각자 입력, 변경 기록 자동 저장
+2. 비용 분담 트래커 — 의료비, 교육비 등 카테고리별 기록 + 자동 정산
+3. PDF 리포트 생성 — 법원 제출용 형식의 자동 리포트
+
+**기술 스택**: Next.js + Supabase(인증 + DB) + react-pdf
+
+**수익 검증 데이터**:
+- Alimentor 2: 리뷰 1,264개, 평점 4.85, 순위 #31 — 니치 시장 검증 완료
+- 리뷰 1,264 ÷ 20 ≈ 추정 DAU 63명 (니치 유료 앱으로서 상당한 수치)
+- 예상 수익 모델: 프리미엄 $9.99/월 — 기본 캘린더 무료, 리포트 생성 유료
+
+**1인 개발자 실현 가능성**: ⭐⭐⭐⭐☆ (4/5)
+
+| 평가 항목 | 점수 | 근거 |
+|-----------|------|------|
+| 기술 난이도 | ⭐⭐/5 | Next.js + Supabase CRUD, PDF 생성 |
+| 시장 진입 장벽 | ⭐⭐/5 | Alimentor 2는 iOS 전용, 웹 기반 대안 공백 |
+| 초기 유저 확보 | ⭐⭐⭐/5 | 이혼 관련 커뮤니티/포럼, 가정법 변호사 네트워크 |
+| 수익화 가능성 | ⭐⭐⭐⭐/5 | 법적 필요 = 높은 지불 의향 |
+| MVP 개발 기간 | 2주 | 캘린더 + 비용 입력 + PDF 내보내기 |
+
+**경쟁 분석**:
+- 기존 솔루션: Alimentor 2, OurFamilyWizard, Cozi Family Organizer
+- 이들의 약점: iOS 전용(Alimentor), 비싼 구독료(OurFamilyWizard $99/년), 양육 특화 아님(Cozi)
+- 이 아이디어의 차별점: 웹 기반(크로스 플랫폼) + 양쪽 부모 실시간 공유 + 합리적 가격
