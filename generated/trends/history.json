@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-29",
+  "last_updated": "2026-04-30",
   "keywords": {
     "0": {
       "first_seen": "2026-03-29",
@@ -18,10 +18,14 @@
         {
           "date": "2026-04-07",
           "count": 4
+        },
+        {
+          "date": "2026-04-30",
+          "count": 4
         }
       ],
-      "trend": "new",
-      "total_count": 4
+      "trend": "rising",
+      "total_count": 8
     },
     "open source": {
       "first_seen": "2026-02-01",
@@ -209,10 +213,14 @@
         {
           "date": "2026-04-29",
           "count": 3
+        },
+        {
+          "date": "2026-04-30",
+          "count": 8
         }
       ],
-      "trend": "rising",
-      "total_count": 393
+      "trend": "stable",
+      "total_count": 401
     },
     "developer tools": {
       "first_seen": "2026-02-01",
@@ -484,10 +492,14 @@
         {
           "date": "2026-04-29",
           "count": 14
+        },
+        {
+          "date": "2026-04-30",
+          "count": 20
         }
       ],
-      "trend": "stable",
-      "total_count": 887
+      "trend": "rising",
+      "total_count": 907
     },
     "menu bar apps": {
       "first_seen": "2026-02-01",
@@ -1004,10 +1016,14 @@
         {
           "date": "2026-04-29",
           "count": 8
+        },
+        {
+          "date": "2026-04-30",
+          "count": 8
         }
       ],
       "trend": "stable",
-      "total_count": 905
+      "total_count": 913
     },
     "artificial intelligence": {
       "first_seen": "2026-02-01",
@@ -1291,10 +1307,14 @@
         {
           "date": "2026-04-29",
           "count": 20
+        },
+        {
+          "date": "2026-04-30",
+          "count": 26
         }
       ],
       "trend": "stable",
-      "total_count": 1619
+      "total_count": 1645
     },
     "android": {
       "first_seen": "2026-02-01",
@@ -1614,10 +1634,14 @@
         {
           "date": "2026-04-29",
           "count": 3
+        },
+        {
+          "date": "2026-04-30",
+          "count": 3
         }
       ],
       "trend": "stable",
-      "total_count": 90
+      "total_count": 93
     },
     "a/b testing": {
       "first_seen": "2026-02-01",
@@ -1844,10 +1868,14 @@
         {
           "date": "2026-04-29",
           "count": 3
+        },
+        {
+          "date": "2026-04-30",
+          "count": 3
         }
       ],
       "trend": "stable",
-      "total_count": 399
+      "total_count": 402
     },
     "user experience": {
       "first_seen": "2026-02-01",
@@ -1903,10 +1931,14 @@
         {
           "date": "2026-04-14",
           "count": 3
+        },
+        {
+          "date": "2026-04-30",
+          "count": 3
         }
       ],
       "trend": "stable",
-      "total_count": 69
+      "total_count": 72
     },
     "seo": {
       "first_seen": "2026-02-01",
@@ -2121,10 +2153,14 @@
         {
           "date": "2026-04-29",
           "count": 2
+        },
+        {
+          "date": "2026-04-30",
+          "count": 2
         }
       ],
-      "trend": "rising",
-      "total_count": 25
+      "trend": "stable",
+      "total_count": 27
     },
     "ai": {
       "first_seen": "2026-02-01",
@@ -2268,10 +2304,14 @@
         {
           "date": "2026-04-28",
           "count": 1
+        },
+        {
+          "date": "2026-04-30",
+          "count": 1
         }
       ],
       "trend": "stable",
-      "total_count": 53
+      "total_count": 54
     },
     "praise": {
       "first_seen": "2026-02-01",
@@ -2361,10 +2401,14 @@
         {
           "date": "2026-04-29",
           "count": 1
+        },
+        {
+          "date": "2026-04-30",
+          "count": 1
         }
       ],
       "trend": "rising",
-      "total_count": 19
+      "total_count": 20
     },
     "container": {
       "first_seen": "2026-02-01",
@@ -2961,10 +3005,14 @@
         {
           "date": "2026-04-29",
           "count": 3
+        },
+        {
+          "date": "2026-04-30",
+          "count": 11
         }
       ],
       "trend": "stable",
-      "total_count": 375
+      "total_count": 386
     },
     "video": {
       "first_seen": "2026-02-02",
@@ -3475,10 +3523,14 @@
         {
           "date": "2026-04-29",
           "count": 15
+        },
+        {
+          "date": "2026-04-30",
+          "count": 15
         }
       ],
       "trend": "stable",
-      "total_count": 839
+      "total_count": 854
     },
     "unknown": {
       "first_seen": "2026-02-02",
@@ -3730,10 +3782,14 @@
         {
           "date": "2026-04-29",
           "count": 2
+        },
+        {
+          "date": "2026-04-30",
+          "count": 2
         }
       ],
       "trend": "stable",
-      "total_count": 185
+      "total_count": 187
     },
     "python": {
       "first_seen": "2026-02-02",
@@ -3985,10 +4041,14 @@
         {
           "date": "2026-04-29",
           "count": 11
+        },
+        {
+          "date": "2026-04-30",
+          "count": 11
         }
       ],
       "trend": "stable",
-      "total_count": 803
+      "total_count": 814
     },
     "javascript": {
       "first_seen": "2026-02-02",
@@ -4240,10 +4300,14 @@
         {
           "date": "2026-04-29",
           "count": 2
+        },
+        {
+          "date": "2026-04-30",
+          "count": 2
         }
       ],
       "trend": "stable",
-      "total_count": 147
+      "total_count": 149
     },
     "c": {
       "first_seen": "2026-02-02",
@@ -4495,10 +4559,14 @@
         {
           "date": "2026-04-29",
           "count": 2
+        },
+        {
+          "date": "2026-04-30",
+          "count": 2
         }
       ],
       "trend": "stable",
-      "total_count": 129
+      "total_count": 131
     },
     "c++": {
       "first_seen": "2026-02-02",
@@ -4750,10 +4818,14 @@
         {
           "date": "2026-04-29",
           "count": 2
+        },
+        {
+          "date": "2026-04-30",
+          "count": 2
         }
       ],
       "trend": "stable",
-      "total_count": 129
+      "total_count": 131
     },
     "shell": {
       "first_seen": "2026-02-02",
@@ -5005,10 +5077,14 @@
         {
           "date": "2026-04-29",
           "count": 2
+        },
+        {
+          "date": "2026-04-30",
+          "count": 2
         }
       ],
       "trend": "stable",
-      "total_count": 129
+      "total_count": 131
     },
     "dart": {
       "first_seen": "2026-02-02",
@@ -5076,10 +5152,14 @@
         {
           "date": "2026-04-29",
           "count": 2
+        },
+        {
+          "date": "2026-04-30",
+          "count": 2
         }
       ],
       "trend": "stable",
-      "total_count": 34
+      "total_count": 36
     },
     "mdx": {
       "first_seen": "2026-02-02",
@@ -5553,10 +5633,14 @@
         {
           "date": "2026-04-29",
           "count": 8
+        },
+        {
+          "date": "2026-04-30",
+          "count": 3
         }
       ],
-      "trend": "rising",
-      "total_count": 104
+      "trend": "stable",
+      "total_count": 107
     },
     "design tools": {
       "first_seen": "2026-02-03",
@@ -5688,10 +5772,14 @@
         {
           "date": "2026-04-29",
           "count": 3
+        },
+        {
+          "date": "2026-04-30",
+          "count": 14
         }
       ],
       "trend": "stable",
-      "total_count": 231
+      "total_count": 245
     },
     "open world games": {
       "first_seen": "2026-02-03",
@@ -5898,10 +5986,14 @@
         {
           "date": "2026-04-29",
           "count": 3
+        },
+        {
+          "date": "2026-04-30",
+          "count": 8
         }
       ],
       "trend": "stable",
-      "total_count": 93
+      "total_count": 101
     },
     "audio": {
       "first_seen": "2026-02-03",
@@ -6701,10 +6793,14 @@
         {
           "date": "2026-04-01",
           "count": 8
+        },
+        {
+          "date": "2026-04-30",
+          "count": 3
         }
       ],
       "trend": "stable",
-      "total_count": 134
+      "total_count": 137
     },
     "search": {
       "first_seen": "2026-02-04",
@@ -7035,10 +7131,14 @@
         {
           "date": "2026-04-29",
           "count": 8
+        },
+        {
+          "date": "2026-04-30",
+          "count": 8
         }
       ],
       "trend": "stable",
-      "total_count": 180
+      "total_count": 188
     },
     "xcode": {
       "first_seen": "2026-02-04",
@@ -7734,10 +7834,14 @@
         {
           "date": "2026-04-29",
           "count": 3
+        },
+        {
+          "date": "2026-04-30",
+          "count": 8
         }
       ],
       "trend": "rising",
-      "total_count": 19
+      "total_count": 27
     },
     "spreadsheets": {
       "first_seen": "2026-02-05",
@@ -8132,10 +8236,14 @@
         {
           "date": "2026-04-29",
           "count": 2
+        },
+        {
+          "date": "2026-04-30",
+          "count": 5
         }
       ],
       "trend": "stable",
-      "total_count": 39
+      "total_count": 44
     },
     "인스타그램": {
       "first_seen": "2026-02-05",
@@ -9203,10 +9311,14 @@
         {
           "date": "2026-04-29",
           "count": 3
+        },
+        {
+          "date": "2026-04-30",
+          "count": 8
         }
       ],
       "trend": "stable",
-      "total_count": 44
+      "total_count": 52
     },
     "tech": {
       "first_seen": "2026-02-10",
@@ -9758,10 +9870,14 @@
         {
           "date": "2026-03-30",
           "count": 3
+        },
+        {
+          "date": "2026-04-30",
+          "count": 3
         }
       ],
       "trend": "rising",
-      "total_count": 9
+      "total_count": 12
     },
     "crypto": {
       "first_seen": "2026-02-11",
@@ -12660,10 +12776,14 @@
         {
           "date": "2026-04-02",
           "count": 3
+        },
+        {
+          "date": "2026-04-30",
+          "count": 8
         }
       ],
       "trend": "rising",
-      "total_count": 30
+      "total_count": 38
     },
     "investing": {
       "first_seen": "2026-02-20",
@@ -13082,10 +13202,14 @@
         {
           "date": "2026-02-21",
           "count": 3
+        },
+        {
+          "date": "2026-04-30",
+          "count": 8
         }
       ],
-      "trend": "new",
-      "total_count": 3
+      "trend": "rising",
+      "total_count": 11
     },
     "ggml.ai": {
       "first_seen": "2026-02-21",
@@ -17777,10 +17901,14 @@
         {
           "date": "2026-03-20",
           "count": 8
+        },
+        {
+          "date": "2026-04-30",
+          "count": 3
         }
       ],
-      "trend": "new",
-      "total_count": 8
+      "trend": "rising",
+      "total_count": 11
     },
     "codebase": {
       "first_seen": "2026-03-20",
@@ -18280,10 +18408,14 @@
         {
           "date": "2026-03-23",
           "count": 4
+        },
+        {
+          "date": "2026-04-30",
+          "count": 4
         }
       ],
-      "trend": "new",
-      "total_count": 4
+      "trend": "rising",
+      "total_count": 8
     },
     "share": {
       "first_seen": "2026-03-23",
@@ -21308,6 +21440,105 @@
       ],
       "trend": "new",
       "total_count": 4
+    },
+    "fail": {
+      "first_seen": "2026-04-30",
+      "occurrences": [
+        {
+          "date": "2026-04-30",
+          "count": 1
+        }
+      ],
+      "trend": "new",
+      "total_count": 1
+    },
+    "이태양": {
+      "first_seen": "2026-04-30",
+      "occurrences": [
+        {
+          "date": "2026-04-30",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "내 새끼의 연애": {
+      "first_seen": "2026-04-30",
+      "occurrences": [
+        {
+          "date": "2026-04-30",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "이찬혁": {
+      "first_seen": "2026-04-30",
+      "occurrences": [
+        {
+          "date": "2026-04-30",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "돈": {
+      "first_seen": "2026-04-30",
+      "occurrences": [
+        {
+          "date": "2026-04-30",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "박원숙": {
+      "first_seen": "2026-04-30",
+      "occurrences": [
+        {
+          "date": "2026-04-30",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "aapl": {
+      "first_seen": "2026-04-30",
+      "occurrences": [
+        {
+          "date": "2026-04-30",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "충남 아산 fc": {
+      "first_seen": "2026-04-30",
+      "occurrences": [
+        {
+          "date": "2026-04-30",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "네이마르": {
+      "first_seen": "2026-04-30",
+      "occurrences": [
+        {
+          "date": "2026-04-30",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
     }
   },
   "daily_summaries": [
@@ -22488,6 +22719,22 @@
         "productivity"
       ],
       "total_keywords": 45
+    },
+    {
+      "date": "2026-04-30",
+      "top_keywords": [
+        "artificial intelligence",
+        "developer tools",
+        "typescript",
+        "design tools",
+        "github",
+        "python",
+        "api",
+        "open source",
+        "wearables",
+        "sales"
+      ],
+      "total_keywords": 42
     }
   ],
   "metrics": {
@@ -24111,6 +24358,30 @@
       "youtube_trending": {
         "avgViews": 922593,
         "maxViews": 3521368,
+        "totalItems": 20
+      }
+    },
+    "2026-04-30": {
+      "product_hunt": {
+        "avgVotes": 241,
+        "maxVotes": 524,
+        "avgComments": 74,
+        "totalItems": 10
+      },
+      "hacker_news": {
+        "avgPoints": 297,
+        "maxPoints": 1448,
+        "avgComments": 98,
+        "totalItems": 15
+      },
+      "github_trending": {
+        "avgStarsToday": 0,
+        "maxStarsToday": 0,
+        "totalItems": 15
+      },
+      "youtube_trending": {
+        "avgViews": 991033,
+        "maxViews": 3528024,
         "totalItems": 20
       }
     }
@@ -26194,6 +26465,24 @@
         },
         "youtube_trending": {
           "viewsChange": 4
+        }
+      }
+    },
+    "2026-04-30": {
+      "vs_yesterday": {
+        "product_hunt": {
+          "votesChange": 30,
+          "maxVotesChange": 36
+        },
+        "hacker_news": {
+          "pointsChange": 18,
+          "maxPointsChange": 1
+        },
+        "github_trending": {
+          "starsChange": null
+        },
+        "youtube_trending": {
+          "viewsChange": 7
         }
       }
     }
