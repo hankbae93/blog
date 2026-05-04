@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-03",
+  "last_updated": "2026-05-04",
   "keywords": {
     "0": {
       "first_seen": "2026-03-29",
@@ -229,18 +229,18 @@
         {
           "date": "2026-05-03",
           "count": 3
+        },
+        {
+          "date": "2026-05-04",
+          "count": 14
         }
       ],
       "trend": "stable",
-      "total_count": 415
+      "total_count": 429
     },
     "developer tools": {
       "first_seen": "2026-02-01",
       "occurrences": [
-        {
-          "date": "2026-02-03",
-          "count": 14
-        },
         {
           "date": "2026-02-04",
           "count": 3
@@ -516,10 +516,14 @@
         {
           "date": "2026-05-03",
           "count": 8
+        },
+        {
+          "date": "2026-05-04",
+          "count": 20
         }
       ],
       "trend": "stable",
-      "total_count": 949
+      "total_count": 969
     },
     "menu bar apps": {
       "first_seen": "2026-02-01",
@@ -766,10 +770,6 @@
       "first_seen": "2026-02-01",
       "occurrences": [
         {
-          "date": "2026-02-03",
-          "count": 14
-        },
-        {
           "date": "2026-02-04",
           "count": 3
         },
@@ -1048,18 +1048,18 @@
         {
           "date": "2026-05-03",
           "count": 14
+        },
+        {
+          "date": "2026-05-04",
+          "count": 11
         }
       ],
       "trend": "stable",
-      "total_count": 958
+      "total_count": 969
     },
     "artificial intelligence": {
       "first_seen": "2026-02-01",
       "occurrences": [
-        {
-          "date": "2026-02-03",
-          "count": 14
-        },
         {
           "date": "2026-02-04",
           "count": 26
@@ -1343,22 +1343,18 @@
         {
           "date": "2026-05-03",
           "count": 26
+        },
+        {
+          "date": "2026-05-04",
+          "count": 20
         }
       ],
       "trend": "stable",
-      "total_count": 1705
+      "total_count": 1725
     },
     "android": {
       "first_seen": "2026-02-01",
       "occurrences": [
-        {
-          "date": "2026-02-01",
-          "count": 14
-        },
-        {
-          "date": "2026-02-02",
-          "count": 3
-        },
         {
           "date": "2026-02-11",
           "count": 3
@@ -1414,10 +1410,14 @@
         {
           "date": "2026-04-29",
           "count": 8
+        },
+        {
+          "date": "2026-05-04",
+          "count": 8
         }
       ],
       "trend": "stable",
-      "total_count": 115
+      "total_count": 123
     },
     "travel": {
       "first_seen": "2026-02-01",
@@ -1495,10 +1495,6 @@
       "first_seen": "2026-02-01",
       "occurrences": [
         {
-          "date": "2026-02-01",
-          "count": 8
-        },
-        {
           "date": "2026-02-15",
           "count": 3
         },
@@ -1545,10 +1541,14 @@
         {
           "date": "2026-04-06",
           "count": 8
+        },
+        {
+          "date": "2026-05-04",
+          "count": 8
         }
       ],
       "trend": "stable",
-      "total_count": 89
+      "total_count": 97
     },
     "human resources": {
       "first_seen": "2026-02-01",
@@ -2201,10 +2201,14 @@
         {
           "date": "2026-05-03",
           "count": 2
+        },
+        {
+          "date": "2026-05-04",
+          "count": 2
         }
       ],
-      "trend": "rising",
-      "total_count": 33
+      "trend": "stable",
+      "total_count": 35
     },
     "ai": {
       "first_seen": "2026-02-01",
@@ -2831,10 +2835,14 @@
         {
           "date": "2026-05-03",
           "count": 3
+        },
+        {
+          "date": "2026-05-04",
+          "count": 3
         }
       ],
       "trend": "stable",
-      "total_count": 300
+      "total_count": 303
     },
     "marketing automation": {
       "first_seen": "2026-02-02",
@@ -3073,10 +3081,14 @@
         {
           "date": "2026-05-03",
           "count": 3
+        },
+        {
+          "date": "2026-05-04",
+          "count": 11
         }
       ],
       "trend": "stable",
-      "total_count": 411
+      "total_count": 422
     },
     "video": {
       "first_seen": "2026-02-02",
@@ -3169,10 +3181,6 @@
       "first_seen": "2026-02-02",
       "occurrences": [
         {
-          "date": "2026-02-02",
-          "count": 3
-        },
-        {
           "date": "2026-02-22",
           "count": 3
         },
@@ -3195,10 +3203,14 @@
         {
           "date": "2026-04-29",
           "count": 8
+        },
+        {
+          "date": "2026-05-04",
+          "count": 8
         }
       ],
       "trend": "rising",
-      "total_count": 39
+      "total_count": 47
     },
     "no-code": {
       "first_seen": "2026-02-02",
@@ -3348,10 +3360,6 @@
     "typescript": {
       "first_seen": "2026-02-02",
       "occurrences": [
-        {
-          "date": "2026-02-03",
-          "count": 11
-        },
         {
           "date": "2026-02-04",
           "count": 11
@@ -3607,18 +3615,18 @@
         {
           "date": "2026-05-03",
           "count": 15
+        },
+        {
+          "date": "2026-05-04",
+          "count": 15
         }
       ],
       "trend": "stable",
-      "total_count": 899
+      "total_count": 914
     },
     "unknown": {
       "first_seen": "2026-02-02",
       "occurrences": [
-        {
-          "date": "2026-02-03",
-          "count": 4
-        },
         {
           "date": "2026-02-04",
           "count": 4
@@ -3874,18 +3882,18 @@
         {
           "date": "2026-05-03",
           "count": 2
+        },
+        {
+          "date": "2026-05-04",
+          "count": 4
         }
       ],
       "trend": "stable",
-      "total_count": 193
+      "total_count": 197
     },
     "python": {
       "first_seen": "2026-02-02",
       "occurrences": [
-        {
-          "date": "2026-02-03",
-          "count": 13
-        },
         {
           "date": "2026-02-04",
           "count": 13
@@ -4141,18 +4149,18 @@
         {
           "date": "2026-05-03",
           "count": 11
+        },
+        {
+          "date": "2026-05-04",
+          "count": 11
         }
       ],
       "trend": "stable",
-      "total_count": 840
+      "total_count": 851
     },
     "javascript": {
       "first_seen": "2026-02-02",
       "occurrences": [
-        {
-          "date": "2026-02-03",
-          "count": 2
-        },
         {
           "date": "2026-02-04",
           "count": 2
@@ -4408,19 +4416,19 @@
         {
           "date": "2026-05-03",
           "count": 2
+        },
+        {
+          "date": "2026-05-04",
+          "count": 2
         }
       ],
       "trend": "stable",
-      "total_count": 155
+      "total_count": 157
     },
     "c": {
       "first_seen": "2026-02-02",
       "occurrences": [
         {
-          "date": "2026-02-03",
-          "count": 2
-        },
-        {
           "date": "2026-02-04",
           "count": 2
         },
@@ -4675,19 +4683,19 @@
         {
           "date": "2026-05-03",
           "count": 2
+        },
+        {
+          "date": "2026-05-04",
+          "count": 2
         }
       ],
       "trend": "stable",
-      "total_count": 137
+      "total_count": 139
     },
     "c++": {
       "first_seen": "2026-02-02",
       "occurrences": [
         {
-          "date": "2026-02-03",
-          "count": 2
-        },
-        {
           "date": "2026-02-04",
           "count": 2
         },
@@ -4942,19 +4950,19 @@
         {
           "date": "2026-05-03",
           "count": 2
+        },
+        {
+          "date": "2026-05-04",
+          "count": 2
         }
       ],
       "trend": "stable",
-      "total_count": 137
+      "total_count": 139
     },
     "shell": {
       "first_seen": "2026-02-02",
       "occurrences": [
         {
-          "date": "2026-02-03",
-          "count": 2
-        },
-        {
           "date": "2026-02-04",
           "count": 2
         },
@@ -5209,10 +5217,14 @@
         {
           "date": "2026-05-03",
           "count": 4
+        },
+        {
+          "date": "2026-05-04",
+          "count": 2
         }
       ],
       "trend": "stable",
-      "total_count": 141
+      "total_count": 143
     },
     "dart": {
       "first_seen": "2026-02-02",
@@ -5794,10 +5806,6 @@
       "first_seen": "2026-02-03",
       "occurrences": [
         {
-          "date": "2026-02-03",
-          "count": 11
-        },
-        {
           "date": "2026-02-09",
           "count": 11
         },
@@ -5932,10 +5940,14 @@
         {
           "date": "2026-05-02",
           "count": 3
+        },
+        {
+          "date": "2026-05-04",
+          "count": 3
         }
       ],
       "trend": "stable",
-      "total_count": 259
+      "total_count": 262
     },
     "open world games": {
       "first_seen": "2026-02-03",
@@ -6389,12 +6401,12 @@
       "first_seen": "2026-02-03",
       "occurrences": [
         {
-          "date": "2026-02-03",
+          "date": "2026-05-04",
           "count": 4
         }
       ],
       "trend": "new",
-      "total_count": 4
+      "total_count": 8
     },
     "중앙일보": {
       "first_seen": "2026-02-03",
@@ -6566,10 +6578,6 @@
       "first_seen": "2026-02-03",
       "occurrences": [
         {
-          "date": "2026-02-03",
-          "count": 5
-        },
-        {
           "date": "2026-02-04",
           "count": 1
         },
@@ -6700,10 +6708,14 @@
         {
           "date": "2026-05-02",
           "count": 5
+        },
+        {
+          "date": "2026-05-04",
+          "count": 5
         }
       ],
       "trend": "stable",
-      "total_count": 110
+      "total_count": 115
     },
     "customer communication": {
       "first_seen": "2026-02-04",
@@ -6874,10 +6886,14 @@
         {
           "date": "2026-05-01",
           "count": 3
+        },
+        {
+          "date": "2026-05-04",
+          "count": 8
         }
       ],
       "trend": "falling",
-      "total_count": 189
+      "total_count": 197
     },
     "vibe coding": {
       "first_seen": "2026-02-04",
@@ -7448,10 +7464,14 @@
         {
           "date": "2026-05-03",
           "count": 1
+        },
+        {
+          "date": "2026-05-04",
+          "count": 1
         }
       ],
       "trend": "stable",
-      "total_count": 67
+      "total_count": 68
     },
     "chain": {
       "first_seen": "2026-02-04",
@@ -8026,10 +8046,14 @@
         {
           "date": "2026-04-30",
           "count": 8
+        },
+        {
+          "date": "2026-05-04",
+          "count": 3
         }
       ],
       "trend": "rising",
-      "total_count": 27
+      "total_count": 30
     },
     "spreadsheets": {
       "first_seen": "2026-02-05",
@@ -8084,10 +8108,14 @@
         {
           "date": "2026-05-01",
           "count": 8
+        },
+        {
+          "date": "2026-05-04",
+          "count": 3
         }
       ],
       "trend": "stable",
-      "total_count": 37
+      "total_count": 40
     },
     "mac": {
       "first_seen": "2026-02-05",
@@ -8444,10 +8472,14 @@
         {
           "date": "2026-05-03",
           "count": 1
+        },
+        {
+          "date": "2026-05-04",
+          "count": 1
         }
       ],
       "trend": "rising",
-      "total_count": 46
+      "total_count": 47
     },
     "인스타그램": {
       "first_seen": "2026-02-05",
@@ -12815,10 +12847,14 @@
         {
           "date": "2026-03-01",
           "count": 3
+        },
+        {
+          "date": "2026-05-04",
+          "count": 3
         }
       ],
       "trend": "rising",
-      "total_count": 6
+      "total_count": 9
     },
     "tailscale": {
       "first_seen": "2026-02-19",
@@ -13043,10 +13079,14 @@
         {
           "date": "2026-04-13",
           "count": 8
+        },
+        {
+          "date": "2026-05-04",
+          "count": 3
         }
       ],
       "trend": "rising",
-      "total_count": 34
+      "total_count": 37
     },
     "venture capital": {
       "first_seen": "2026-02-20",
@@ -13062,10 +13102,14 @@
         {
           "date": "2026-03-10",
           "count": 8
+        },
+        {
+          "date": "2026-05-04",
+          "count": 11
         }
       ],
       "trend": "rising",
-      "total_count": 14
+      "total_count": 25
     },
     "fundraising": {
       "first_seen": "2026-02-20",
@@ -14359,10 +14403,14 @@
         {
           "date": "2026-04-09",
           "count": 8
+        },
+        {
+          "date": "2026-05-04",
+          "count": 8
         }
       ],
       "trend": "rising",
-      "total_count": 28
+      "total_count": 36
     },
     "제주한라대학교": {
       "first_seen": "2026-02-24",
@@ -22244,25 +22292,141 @@
       ],
       "trend": "new",
       "total_count": 5
+    },
+    "cars": {
+      "first_seen": "2026-05-04",
+      "occurrences": [
+        {
+          "date": "2026-05-04",
+          "count": 8
+        }
+      ],
+      "trend": "new",
+      "total_count": 8
+    },
+    "electric cars": {
+      "first_seen": "2026-05-04",
+      "occurrences": [
+        {
+          "date": "2026-05-04",
+          "count": 3
+        }
+      ],
+      "trend": "new",
+      "total_count": 3
+    },
+    "openai's": {
+      "first_seen": "2026-05-04",
+      "occurrences": [
+        {
+          "date": "2026-05-04",
+          "count": 1
+        }
+      ],
+      "trend": "new",
+      "total_count": 1
+    },
+    "버크셔 해서웨이": {
+      "first_seen": "2026-05-04",
+      "occurrences": [
+        {
+          "date": "2026-05-04",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "경제": {
+      "first_seen": "2026-05-04",
+      "occurrences": [
+        {
+          "date": "2026-05-04",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "항공권": {
+      "first_seen": "2026-05-04",
+      "occurrences": [
+        {
+          "date": "2026-05-04",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "고윤정": {
+      "first_seen": "2026-05-04",
+      "occurrences": [
+        {
+          "date": "2026-05-04",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "thứ hạng của espanyol gặp real madrid": {
+      "first_seen": "2026-05-04",
+      "occurrences": [
+        {
+          "date": "2026-05-04",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "허인회": {
+      "first_seen": "2026-05-04",
+      "occurrences": [
+        {
+          "date": "2026-05-04",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "담합": {
+      "first_seen": "2026-05-04",
+      "occurrences": [
+        {
+          "date": "2026-05-04",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "espanyol vs real madrid standings": {
+      "first_seen": "2026-05-04",
+      "occurrences": [
+        {
+          "date": "2026-05-04",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "klasemen espanyol vs real madrid": {
+      "first_seen": "2026-05-04",
+      "occurrences": [
+        {
+          "date": "2026-05-04",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
     }
   },
   "daily_summaries": [
-    {
-      "date": "2026-02-03",
-      "top_keywords": [
-        "artificial intelligence",
-        "marketing",
-        "developer tools",
-        "productivity",
-        "python",
-        "design tools",
-        "typescript",
-        "fintech",
-        "payments",
-        "e-commerce"
-      ],
-      "total_keywords": 55
-    },
     {
       "date": "2026-02-04",
       "top_keywords": [
@@ -23456,33 +23620,25 @@
         "analytics"
       ],
       "total_keywords": 42
+    },
+    {
+      "date": "2026-05-04",
+      "top_keywords": [
+        "developer tools",
+        "artificial intelligence",
+        "typescript",
+        "open source",
+        "github",
+        "venture capital",
+        "productivity",
+        "python",
+        "development",
+        "hiring"
+      ],
+      "total_keywords": 41
     }
   ],
   "metrics": {
-    "2026-02-02": {
-      "product_hunt": {
-        "avgVotes": 167,
-        "maxVotes": 359,
-        "avgComments": 13,
-        "totalItems": 10
-      },
-      "hacker_news": {
-        "avgPoints": 182,
-        "maxPoints": 582,
-        "avgComments": 72,
-        "totalItems": 15
-      },
-      "github_trending": {
-        "avgStarsToday": 0,
-        "maxStarsToday": 0,
-        "totalItems": 15
-      },
-      "youtube_trending": {
-        "avgViews": 661021,
-        "maxViews": 1547401,
-        "totalItems": 20
-      }
-    },
     "2026-02-03": {
       "product_hunt": {
         "avgVotes": 208,
@@ -25177,27 +25333,33 @@
         "maxViews": 2842103,
         "totalItems": 20
       }
+    },
+    "2026-05-04": {
+      "product_hunt": {
+        "avgVotes": 145,
+        "maxVotes": 292,
+        "avgComments": 11,
+        "totalItems": 10
+      },
+      "hacker_news": {
+        "avgPoints": 146,
+        "maxPoints": 577,
+        "avgComments": 81,
+        "totalItems": 15
+      },
+      "github_trending": {
+        "avgStarsToday": 0,
+        "maxStarsToday": 0,
+        "totalItems": 15
+      },
+      "youtube_trending": {
+        "avgViews": 605723,
+        "maxViews": 2865565,
+        "totalItems": 20
+      }
     }
   },
   "comparisons": {
-    "2026-02-02": {
-      "vs_yesterday": {
-        "product_hunt": {
-          "votesChange": 19,
-          "maxVotesChange": 8
-        },
-        "hacker_news": {
-          "pointsChange": 63,
-          "maxPointsChange": 5
-        },
-        "github_trending": {
-          "starsChange": null
-        },
-        "youtube_trending": {
-          "viewsChange": 11
-        }
-      }
-    },
     "2026-02-03": {
       "vs_yesterday": {
         "product_hunt": {
@@ -27330,6 +27492,24 @@
         },
         "youtube_trending": {
           "viewsChange": 2
+        }
+      }
+    },
+    "2026-05-04": {
+      "vs_yesterday": {
+        "product_hunt": {
+          "votesChange": 10,
+          "maxVotesChange": 22
+        },
+        "hacker_news": {
+          "pointsChange": -21,
+          "maxPointsChange": -16
+        },
+        "github_trending": {
+          "starsChange": null
+        },
+        "youtube_trending": {
+          "viewsChange": -11
         }
       }
     }
