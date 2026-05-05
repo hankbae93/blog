@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-04",
+  "last_updated": "2026-05-05",
   "keywords": {
     "0": {
       "first_seen": "2026-03-29",
@@ -233,18 +233,18 @@
         {
           "date": "2026-05-04",
           "count": 14
+        },
+        {
+          "date": "2026-05-05",
+          "count": 8
         }
       ],
       "trend": "stable",
-      "total_count": 429
+      "total_count": 437
     },
     "developer tools": {
       "first_seen": "2026-02-01",
       "occurrences": [
-        {
-          "date": "2026-02-04",
-          "count": 3
-        },
         {
           "date": "2026-02-05",
           "count": 23
@@ -520,10 +520,14 @@
         {
           "date": "2026-05-04",
           "count": 20
+        },
+        {
+          "date": "2026-05-05",
+          "count": 8
         }
       ],
       "trend": "stable",
-      "total_count": 969
+      "total_count": 977
     },
     "menu bar apps": {
       "first_seen": "2026-02-01",
@@ -603,10 +607,14 @@
         {
           "date": "2026-05-03",
           "count": 3
+        },
+        {
+          "date": "2026-05-05",
+          "count": 8
         }
       ],
       "trend": "stable",
-      "total_count": 90
+      "total_count": 98
     },
     "software engineering": {
       "first_seen": "2026-02-01",
@@ -707,14 +715,6 @@
       "first_seen": "2026-02-01",
       "occurrences": [
         {
-          "date": "2026-02-01",
-          "count": 8
-        },
-        {
-          "date": "2026-02-04",
-          "count": 3
-        },
-        {
           "date": "2026-02-07",
           "count": 11
         },
@@ -761,18 +761,18 @@
         {
           "date": "2026-04-14",
           "count": 8
+        },
+        {
+          "date": "2026-05-05",
+          "count": 8
         }
       ],
       "trend": "stable",
-      "total_count": 85
+      "total_count": 93
     },
     "productivity": {
       "first_seen": "2026-02-01",
       "occurrences": [
-        {
-          "date": "2026-02-04",
-          "count": 3
-        },
         {
           "date": "2026-02-05",
           "count": 3
@@ -1052,18 +1052,18 @@
         {
           "date": "2026-05-04",
           "count": 11
+        },
+        {
+          "date": "2026-05-05",
+          "count": 14
         }
       ],
       "trend": "stable",
-      "total_count": 969
+      "total_count": 983
     },
     "artificial intelligence": {
       "first_seen": "2026-02-01",
       "occurrences": [
-        {
-          "date": "2026-02-04",
-          "count": 26
-        },
         {
           "date": "2026-02-05",
           "count": 20
@@ -1347,10 +1347,14 @@
         {
           "date": "2026-05-04",
           "count": 20
+        },
+        {
+          "date": "2026-05-05",
+          "count": 23
         }
       ],
       "trend": "stable",
-      "total_count": 1725
+      "total_count": 1748
     },
     "android": {
       "first_seen": "2026-02-01",
@@ -1414,10 +1418,14 @@
         {
           "date": "2026-05-04",
           "count": 8
+        },
+        {
+          "date": "2026-05-05",
+          "count": 8
         }
       ],
       "trend": "stable",
-      "total_count": 123
+      "total_count": 131
     },
     "travel": {
       "first_seen": "2026-02-01",
@@ -1674,45 +1682,33 @@
         {
           "date": "2026-05-03",
           "count": 8
+        },
+        {
+          "date": "2026-05-05",
+          "count": 3
         }
       ],
       "trend": "stable",
-      "total_count": 104
+      "total_count": 107
     },
     "a/b testing": {
       "first_seen": "2026-02-01",
       "occurrences": [
         {
-          "date": "2026-02-01",
-          "count": 3
-        },
-        {
-          "date": "2026-02-03",
-          "count": 3
-        },
-        {
           "date": "2026-04-05",
+          "count": 3
+        },
+        {
+          "date": "2026-05-05",
           "count": 3
         }
       ],
       "trend": "rising",
-      "total_count": 9
+      "total_count": 12
     },
     "marketing": {
       "first_seen": "2026-02-01",
       "occurrences": [
-        {
-          "date": "2026-02-01",
-          "count": 3
-        },
-        {
-          "date": "2026-02-03",
-          "count": 14
-        },
-        {
-          "date": "2026-02-04",
-          "count": 8
-        },
         {
           "date": "2026-02-07",
           "count": 3
@@ -1912,18 +1908,18 @@
         {
           "date": "2026-05-01",
           "count": 8
+        },
+        {
+          "date": "2026-05-05",
+          "count": 11
         }
       ],
       "trend": "stable",
-      "total_count": 410
+      "total_count": 421
     },
     "user experience": {
       "first_seen": "2026-02-01",
       "occurrences": [
-        {
-          "date": "2026-02-03",
-          "count": 3
-        },
         {
           "date": "2026-02-07",
           "count": 8
@@ -1975,10 +1971,14 @@
         {
           "date": "2026-05-03",
           "count": 8
+        },
+        {
+          "date": "2026-05-05",
+          "count": 3
         }
       ],
       "trend": "stable",
-      "total_count": 83
+      "total_count": 86
     },
     "seo": {
       "first_seen": "2026-02-01",
@@ -2119,10 +2119,6 @@
       "first_seen": "2026-02-01",
       "occurrences": [
         {
-          "date": "2026-02-04",
-          "count": 1
-        },
-        {
           "date": "2026-02-07",
           "count": 1
         },
@@ -2205,22 +2201,18 @@
         {
           "date": "2026-05-04",
           "count": 2
+        },
+        {
+          "date": "2026-05-05",
+          "count": 2
         }
       ],
       "trend": "stable",
-      "total_count": 35
+      "total_count": 37
     },
     "ai": {
       "first_seen": "2026-02-01",
       "occurrences": [
-        {
-          "date": "2026-02-02",
-          "count": 1
-        },
-        {
-          "date": "2026-02-03",
-          "count": 1
-        },
         {
           "date": "2026-02-05",
           "count": 1
@@ -2360,10 +2352,14 @@
         {
           "date": "2026-05-02",
           "count": 1
+        },
+        {
+          "date": "2026-05-05",
+          "count": 1
         }
       ],
       "trend": "stable",
-      "total_count": 56
+      "total_count": 57
     },
     "praise": {
       "first_seen": "2026-02-01",
@@ -2481,10 +2477,6 @@
       "first_seen": "2026-02-02",
       "occurrences": [
         {
-          "date": "2026-02-02",
-          "count": 8
-        },
-        {
           "date": "2026-02-09",
           "count": 3
         },
@@ -2555,10 +2547,14 @@
         {
           "date": "2026-04-29",
           "count": 11
+        },
+        {
+          "date": "2026-05-05",
+          "count": 3
         }
       ],
       "trend": "stable",
-      "total_count": 113
+      "total_count": 116
     },
     "time tracking": {
       "first_seen": "2026-02-02",
@@ -3085,10 +3081,14 @@
         {
           "date": "2026-05-04",
           "count": 11
+        },
+        {
+          "date": "2026-05-05",
+          "count": 8
         }
       ],
       "trend": "stable",
-      "total_count": 422
+      "total_count": 430
     },
     "video": {
       "first_seen": "2026-02-02",
@@ -3361,10 +3361,6 @@
       "first_seen": "2026-02-02",
       "occurrences": [
         {
-          "date": "2026-02-04",
-          "count": 11
-        },
-        {
           "date": "2026-02-05",
           "count": 11
         },
@@ -3619,18 +3615,18 @@
         {
           "date": "2026-05-04",
           "count": 15
+        },
+        {
+          "date": "2026-05-05",
+          "count": 15
         }
       ],
       "trend": "stable",
-      "total_count": 914
+      "total_count": 929
     },
     "unknown": {
       "first_seen": "2026-02-02",
       "occurrences": [
-        {
-          "date": "2026-02-04",
-          "count": 4
-        },
         {
           "date": "2026-02-05",
           "count": 2
@@ -3886,18 +3882,18 @@
         {
           "date": "2026-05-04",
           "count": 4
+        },
+        {
+          "date": "2026-05-05",
+          "count": 4
         }
       ],
       "trend": "stable",
-      "total_count": 197
+      "total_count": 201
     },
     "python": {
       "first_seen": "2026-02-02",
       "occurrences": [
-        {
-          "date": "2026-02-04",
-          "count": 13
-        },
         {
           "date": "2026-02-05",
           "count": 13
@@ -4153,18 +4149,18 @@
         {
           "date": "2026-05-04",
           "count": 11
+        },
+        {
+          "date": "2026-05-05",
+          "count": 11
         }
       ],
       "trend": "stable",
-      "total_count": 851
+      "total_count": 862
     },
     "javascript": {
       "first_seen": "2026-02-02",
       "occurrences": [
-        {
-          "date": "2026-02-04",
-          "count": 2
-        },
         {
           "date": "2026-02-05",
           "count": 2
@@ -4420,19 +4416,19 @@
         {
           "date": "2026-05-04",
           "count": 2
+        },
+        {
+          "date": "2026-05-05",
+          "count": 2
         }
       ],
       "trend": "stable",
-      "total_count": 157
+      "total_count": 159
     },
     "c": {
       "first_seen": "2026-02-02",
       "occurrences": [
         {
-          "date": "2026-02-04",
-          "count": 2
-        },
-        {
           "date": "2026-02-05",
           "count": 2
         },
@@ -4687,19 +4683,19 @@
         {
           "date": "2026-05-04",
           "count": 2
+        },
+        {
+          "date": "2026-05-05",
+          "count": 2
         }
       ],
       "trend": "stable",
-      "total_count": 139
+      "total_count": 141
     },
     "c++": {
       "first_seen": "2026-02-02",
       "occurrences": [
         {
-          "date": "2026-02-04",
-          "count": 2
-        },
-        {
           "date": "2026-02-05",
           "count": 2
         },
@@ -4954,19 +4950,19 @@
         {
           "date": "2026-05-04",
           "count": 2
+        },
+        {
+          "date": "2026-05-05",
+          "count": 2
         }
       ],
       "trend": "stable",
-      "total_count": 139
+      "total_count": 141
     },
     "shell": {
       "first_seen": "2026-02-02",
       "occurrences": [
         {
-          "date": "2026-02-04",
-          "count": 2
-        },
-        {
           "date": "2026-02-05",
           "count": 2
         },
@@ -5221,10 +5217,14 @@
         {
           "date": "2026-05-04",
           "count": 2
+        },
+        {
+          "date": "2026-05-05",
+          "count": 2
         }
       ],
       "trend": "stable",
-      "total_count": 143
+      "total_count": 145
     },
     "dart": {
       "first_seen": "2026-02-02",
@@ -5598,10 +5598,6 @@
       "first_seen": "2026-02-03",
       "occurrences": [
         {
-          "date": "2026-02-03",
-          "count": 8
-        },
-        {
           "date": "2026-02-20",
           "count": 3
         },
@@ -5656,10 +5652,14 @@
         {
           "date": "2026-04-13",
           "count": 8
+        },
+        {
+          "date": "2026-05-05",
+          "count": 3
         }
       ],
       "trend": "stable",
-      "total_count": 85
+      "total_count": 88
     },
     "payments": {
       "first_seen": "2026-02-03",
@@ -5944,10 +5944,14 @@
         {
           "date": "2026-05-04",
           "count": 3
+        },
+        {
+          "date": "2026-05-05",
+          "count": 8
         }
       ],
       "trend": "stable",
-      "total_count": 262
+      "total_count": 270
     },
     "open world games": {
       "first_seen": "2026-02-03",
@@ -6324,12 +6328,12 @@
       "first_seen": "2026-02-03",
       "occurrences": [
         {
-          "date": "2026-02-03",
-          "count": 1
+          "date": "2026-05-05",
+          "count": 5
         }
       ],
       "trend": "new",
-      "total_count": 1
+      "total_count": 6
     },
     "maintainer": {
       "first_seen": "2026-02-03",
@@ -6764,10 +6768,6 @@
       "first_seen": "2026-02-04",
       "occurrences": [
         {
-          "date": "2026-02-04",
-          "count": 8
-        },
-        {
           "date": "2026-02-05",
           "count": 8
         },
@@ -6890,10 +6890,14 @@
         {
           "date": "2026-05-04",
           "count": 8
+        },
+        {
+          "date": "2026-05-05",
+          "count": 1
         }
       ],
       "trend": "falling",
-      "total_count": 197
+      "total_count": 198
     },
     "vibe coding": {
       "first_seen": "2026-02-04",
@@ -7378,10 +7382,6 @@
       "first_seen": "2026-02-04",
       "occurrences": [
         {
-          "date": "2026-02-04",
-          "count": 1
-        },
-        {
           "date": "2026-02-14",
           "count": 2
         },
@@ -7468,10 +7468,14 @@
         {
           "date": "2026-05-04",
           "count": 1
+        },
+        {
+          "date": "2026-05-05",
+          "count": 1
         }
       ],
       "trend": "stable",
-      "total_count": 68
+      "total_count": 69
     },
     "chain": {
       "first_seen": "2026-02-04",
@@ -8023,10 +8027,14 @@
         {
           "date": "2026-02-05",
           "count": 8
+        },
+        {
+          "date": "2026-05-05",
+          "count": 8
         }
       ],
-      "trend": "new",
-      "total_count": 8
+      "trend": "rising",
+      "total_count": 16
     },
     "database": {
       "first_seen": "2026-02-05",
@@ -9555,10 +9563,14 @@
         {
           "date": "2026-04-30",
           "count": 8
+        },
+        {
+          "date": "2026-05-05",
+          "count": 3
         }
       ],
       "trend": "stable",
-      "total_count": 52
+      "total_count": 55
     },
     "tech": {
       "first_seen": "2026-02-10",
@@ -11109,10 +11121,14 @@
         {
           "date": "2026-04-29",
           "count": 2
+        },
+        {
+          "date": "2026-05-05",
+          "count": 1
         }
       ],
       "trend": "stable",
-      "total_count": 11
+      "total_count": 12
     },
     "\"ai": {
       "first_seen": "2026-02-14",
@@ -11440,10 +11456,14 @@
         {
           "date": "2026-04-14",
           "count": 8
+        },
+        {
+          "date": "2026-05-05",
+          "count": 3
         }
       ],
       "trend": "rising",
-      "total_count": 14
+      "total_count": 17
     },
     "couples": {
       "first_seen": "2026-02-15",
@@ -14372,10 +14392,14 @@
         {
           "date": "2026-05-02",
           "count": 3
+        },
+        {
+          "date": "2026-05-05",
+          "count": 3
         }
       ],
       "trend": "rising",
-      "total_count": 25
+      "total_count": 28
     },
     "career": {
       "first_seen": "2026-02-24",
@@ -18220,10 +18244,14 @@
         {
           "date": "2026-03-20",
           "count": 1
+        },
+        {
+          "date": "2026-05-05",
+          "count": 1
         }
       ],
-      "trend": "new",
-      "total_count": 1
+      "trend": "stable",
+      "total_count": 2
     },
     "대한민국 구석구석": {
       "first_seen": "2026-03-20",
@@ -18705,10 +18733,14 @@
         {
           "date": "2026-03-23",
           "count": 4
+        },
+        {
+          "date": "2026-05-05",
+          "count": 4
         }
       ],
-      "trend": "new",
-      "total_count": 4
+      "trend": "rising",
+      "total_count": 8
     },
     "김혜성": {
       "first_seen": "2026-03-23",
@@ -20045,10 +20077,14 @@
         {
           "date": "2026-04-03",
           "count": 3
+        },
+        {
+          "date": "2026-05-05",
+          "count": 8
         }
       ],
-      "trend": "new",
-      "total_count": 3
+      "trend": "rising",
+      "total_count": 11
     },
     "trust": {
       "first_seen": "2026-04-03",
@@ -22035,10 +22071,14 @@
         {
           "date": "2026-05-03",
           "count": 4
+        },
+        {
+          "date": "2026-05-05",
+          "count": 4
         }
       ],
       "trend": "rising",
-      "total_count": 8
+      "total_count": 12
     },
     "올랜도 대 디트로이트": {
       "first_seen": "2026-05-02",
@@ -22424,57 +22464,108 @@
       ],
       "trend": "new",
       "total_count": 4
+    },
+    "comics & graphic novels": {
+      "first_seen": "2026-05-05",
+      "occurrences": [
+        {
+          "date": "2026-05-05",
+          "count": 3
+        }
+      ],
+      "trend": "new",
+      "total_count": 3
+    },
+    "응급실": {
+      "first_seen": "2026-05-05",
+      "occurrences": [
+        {
+          "date": "2026-05-05",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "met gala 2026": {
+      "first_seen": "2026-05-05",
+      "occurrences": [
+        {
+          "date": "2026-05-05",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "에릭 남": {
+      "first_seen": "2026-05-05",
+      "occurrences": [
+        {
+          "date": "2026-05-05",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "롯데 자이언츠": {
+      "first_seen": "2026-05-05",
+      "occurrences": [
+        {
+          "date": "2026-05-05",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "멧 갈라": {
+      "first_seen": "2026-05-05",
+      "occurrences": [
+        {
+          "date": "2026-05-05",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "이만기": {
+      "first_seen": "2026-05-05",
+      "occurrences": [
+        {
+          "date": "2026-05-05",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "iren": {
+      "first_seen": "2026-05-05",
+      "occurrences": [
+        {
+          "date": "2026-05-05",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "한윤 서": {
+      "first_seen": "2026-05-05",
+      "occurrences": [
+        {
+          "date": "2026-05-05",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
     }
   },
   "daily_summaries": [
-    {
-      "date": "2026-02-04",
-      "top_keywords": [
-        "artificial intelligence",
-        "saas",
-        "python",
-        "typescript",
-        "customer communication",
-        "development",
-        "vibe coding",
-        "marketing",
-        "seo",
-        "search"
-      ],
-      "total_keywords": 57
-    },
-    {
-      "date": "2026-02-04",
-      "top_keywords": [
-        "artificial intelligence",
-        "saas",
-        "python",
-        "typescript",
-        "customer communication",
-        "development",
-        "vibe coding",
-        "marketing",
-        "seo",
-        "search"
-      ],
-      "total_keywords": 57
-    },
-    {
-      "date": "2026-02-04",
-      "top_keywords": [
-        "artificial intelligence",
-        "saas",
-        "python",
-        "typescript",
-        "customer communication",
-        "development",
-        "vibe coding",
-        "marketing",
-        "seo",
-        "search"
-      ],
-      "total_keywords": 57
-    },
     {
       "date": "2026-02-05",
       "top_keywords": [
@@ -23636,33 +23727,25 @@
         "hiring"
       ],
       "total_keywords": 41
+    },
+    {
+      "date": "2026-05-05",
+      "top_keywords": [
+        "artificial intelligence",
+        "typescript",
+        "productivity",
+        "marketing",
+        "python",
+        "pets",
+        "design tools",
+        "android",
+        "menu bar apps",
+        "open source"
+      ],
+      "total_keywords": 45
     }
   ],
   "metrics": {
-    "2026-02-03": {
-      "product_hunt": {
-        "avgVotes": 208,
-        "maxVotes": 346,
-        "avgComments": 23,
-        "totalItems": 10
-      },
-      "hacker_news": {
-        "avgPoints": 177,
-        "maxPoints": 465,
-        "avgComments": 137,
-        "totalItems": 15
-      },
-      "github_trending": {
-        "avgStarsToday": 0,
-        "maxStarsToday": 0,
-        "totalItems": 15
-      },
-      "youtube_trending": {
-        "avgViews": 725253,
-        "maxViews": 1770115,
-        "totalItems": 20
-      }
-    },
     "2026-02-04": {
       "product_hunt": {
         "avgVotes": 240,
@@ -25357,43 +25440,33 @@
         "maxViews": 2865565,
         "totalItems": 20
       }
+    },
+    "2026-05-05": {
+      "product_hunt": {
+        "avgVotes": 165,
+        "maxVotes": 273,
+        "avgComments": 10,
+        "totalItems": 10
+      },
+      "hacker_news": {
+        "avgPoints": 249,
+        "maxPoints": 1080,
+        "avgComments": 143,
+        "totalItems": 15
+      },
+      "github_trending": {
+        "avgStarsToday": 0,
+        "maxStarsToday": 0,
+        "totalItems": 15
+      },
+      "youtube_trending": {
+        "avgViews": 798999,
+        "maxViews": 3216059,
+        "totalItems": 20
+      }
     }
   },
   "comparisons": {
-    "2026-02-03": {
-      "vs_yesterday": {
-        "product_hunt": {
-          "votesChange": 24,
-          "maxVotesChange": -4
-        },
-        "hacker_news": {
-          "pointsChange": -4,
-          "maxPointsChange": -21
-        },
-        "github_trending": {
-          "starsChange": null
-        },
-        "youtube_trending": {
-          "viewsChange": 10
-        }
-      },
-      "vs_last_week": {
-        "product_hunt": {
-          "votesChange": null,
-          "maxVotesChange": null
-        },
-        "hacker_news": {
-          "pointsChange": 16,
-          "maxPointsChange": 42
-        },
-        "github_trending": {
-          "starsChange": -100
-        },
-        "youtube_trending": {
-          "viewsChange": -54
-        }
-      }
-    },
     "2026-02-04": {
       "vs_yesterday": {
         "product_hunt": {
@@ -27510,6 +27583,40 @@
         },
         "youtube_trending": {
           "viewsChange": -11
+        }
+      }
+    },
+    "2026-05-05": {
+      "vs_yesterday": {
+        "product_hunt": {
+          "votesChange": 14,
+          "maxVotesChange": -7
+        },
+        "hacker_news": {
+          "pointsChange": 71,
+          "maxPointsChange": 87
+        },
+        "github_trending": {
+          "starsChange": null
+        },
+        "youtube_trending": {
+          "viewsChange": 32
+        }
+      },
+      "vs_last_week": {
+        "product_hunt": {
+          "votesChange": -16,
+          "maxVotesChange": -35
+        },
+        "hacker_news": {
+          "pointsChange": 5,
+          "maxPointsChange": 30
+        },
+        "github_trending": {
+          "starsChange": null
+        },
+        "youtube_trending": {
+          "viewsChange": -10
         }
       }
     }
