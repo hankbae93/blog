@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-01",
+  "last_updated": "2026-08-02",
   "keywords": {
     "0": {
       "first_seen": "2026-03-29",
@@ -35,10 +35,6 @@
       "first_seen": "2026-02-01",
       "occurrences": [
         {
-          "date": "2026-05-04",
-          "count": 14
-        },
-        {
           "date": "2026-05-05",
           "count": 8
         },
@@ -61,18 +57,18 @@
         {
           "date": "2026-08-01",
           "count": 11
+        },
+        {
+          "date": "2026-08-02",
+          "count": 11
         }
       ],
       "trend": "rising",
-      "total_count": 486
+      "total_count": 497
     },
     "developer tools": {
       "first_seen": "2026-02-01",
       "occurrences": [
-        {
-          "date": "2026-05-04",
-          "count": 20
-        },
         {
           "date": "2026-05-05",
           "count": 8
@@ -104,10 +100,14 @@
         {
           "date": "2026-08-01",
           "count": 3
+        },
+        {
+          "date": "2026-08-02",
+          "count": 17
         }
       ],
       "trend": "stable",
-      "total_count": 1064
+      "total_count": 1081
     },
     "menu bar apps": {
       "first_seen": "2026-02-01",
@@ -123,10 +123,14 @@
         {
           "date": "2026-08-01",
           "count": 8
+        },
+        {
+          "date": "2026-08-02",
+          "count": 8
         }
       ],
       "trend": "rising",
-      "total_count": 109
+      "total_count": 117
     },
     "software engineering": {
       "first_seen": "2026-02-01",
@@ -238,10 +242,6 @@
       "first_seen": "2026-02-01",
       "occurrences": [
         {
-          "date": "2026-05-04",
-          "count": 11
-        },
-        {
           "date": "2026-05-05",
           "count": 14
         },
@@ -268,18 +268,18 @@
         {
           "date": "2026-08-01",
           "count": 3
+        },
+        {
+          "date": "2026-08-02",
+          "count": 17
         }
       ],
       "trend": "stable",
-      "total_count": 1051
+      "total_count": 1068
     },
     "artificial intelligence": {
       "first_seen": "2026-02-01",
       "occurrences": [
-        {
-          "date": "2026-05-04",
-          "count": 20
-        },
         {
           "date": "2026-05-05",
           "count": 23
@@ -311,10 +311,14 @@
         {
           "date": "2026-08-01",
           "count": 23
+        },
+        {
+          "date": "2026-08-02",
+          "count": 17
         }
       ],
       "trend": "stable",
-      "total_count": 1882
+      "total_count": 1899
     },
     "android": {
       "first_seen": "2026-02-01",
@@ -467,20 +471,20 @@
       "first_seen": "2026-02-01",
       "occurrences": [
         {
-          "date": "2026-05-04",
-          "count": 8
-        },
-        {
           "date": "2026-05-09",
           "count": 3
         },
         {
           "date": "2026-07-31",
           "count": 14
+        },
+        {
+          "date": "2026-08-02",
+          "count": 3
         }
       ],
       "trend": "rising",
-      "total_count": 114
+      "total_count": 117
     },
     "human resources": {
       "first_seen": "2026-02-01",
@@ -936,10 +940,14 @@
         {
           "date": "2026-07-31",
           "count": 2
+        },
+        {
+          "date": "2026-08-02",
+          "count": 1
         }
       ],
       "trend": "rising",
-      "total_count": 63
+      "total_count": 64
     },
     "praise": {
       "first_seen": "2026-02-01",
@@ -1057,84 +1065,16 @@
       "first_seen": "2026-02-02",
       "occurrences": [
         {
-          "date": "2026-02-09",
-          "count": 3
-        },
-        {
-          "date": "2026-02-15",
-          "count": 3
-        },
-        {
-          "date": "2026-02-16",
-          "count": 8
-        },
-        {
-          "date": "2026-02-17",
-          "count": 3
-        },
-        {
-          "date": "2026-02-18",
-          "count": 8
-        },
-        {
-          "date": "2026-02-19",
-          "count": 3
-        },
-        {
-          "date": "2026-02-23",
-          "count": 3
-        },
-        {
-          "date": "2026-02-27",
-          "count": 8
-        },
-        {
-          "date": "2026-03-01",
-          "count": 8
-        },
-        {
-          "date": "2026-03-09",
-          "count": 8
-        },
-        {
-          "date": "2026-03-20",
-          "count": 8
-        },
-        {
-          "date": "2026-03-22",
-          "count": 3
-        },
-        {
-          "date": "2026-03-26",
-          "count": 3
-        },
-        {
-          "date": "2026-04-02",
-          "count": 11
-        },
-        {
-          "date": "2026-04-07",
-          "count": 3
-        },
-        {
-          "date": "2026-04-12",
-          "count": 3
-        },
-        {
-          "date": "2026-04-13",
-          "count": 8
-        },
-        {
-          "date": "2026-04-29",
-          "count": 11
-        },
-        {
           "date": "2026-05-05",
           "count": 3
+        },
+        {
+          "date": "2026-08-02",
+          "count": 8
         }
       ],
-      "trend": "stable",
-      "total_count": 116
+      "trend": "rising",
+      "total_count": 124
     },
     "time tracking": {
       "first_seen": "2026-02-02",
@@ -1343,10 +1283,6 @@
       "first_seen": "2026-02-02",
       "occurrences": [
         {
-          "date": "2026-05-04",
-          "count": 11
-        },
-        {
           "date": "2026-05-05",
           "count": 8
         },
@@ -1377,10 +1313,14 @@
         {
           "date": "2026-08-01",
           "count": 3
+        },
+        {
+          "date": "2026-08-02",
+          "count": 3
         }
       ],
       "trend": "stable",
-      "total_count": 490
+      "total_count": 493
     },
     "video": {
       "first_seen": "2026-02-02",
@@ -1589,10 +1529,6 @@
       "first_seen": "2026-02-02",
       "occurrences": [
         {
-          "date": "2026-05-04",
-          "count": 15
-        },
-        {
           "date": "2026-05-05",
           "count": 15
         },
@@ -1615,19 +1551,19 @@
         {
           "date": "2026-08-01",
           "count": 13
+        },
+        {
+          "date": "2026-08-02",
+          "count": 13
         }
       ],
       "trend": "rising",
-      "total_count": 994
+      "total_count": 1007
     },
     "unknown": {
       "first_seen": "2026-02-02",
       "occurrences": [
         {
-          "date": "2026-05-04",
-          "count": 4
-        },
-        {
           "date": "2026-05-05",
           "count": 4
         },
@@ -1650,19 +1586,19 @@
         {
           "date": "2026-08-01",
           "count": 2
+        },
+        {
+          "date": "2026-08-02",
+          "count": 2
         }
       ],
       "trend": "rising",
-      "total_count": 217
+      "total_count": 219
     },
     "python": {
       "first_seen": "2026-02-02",
       "occurrences": [
         {
-          "date": "2026-05-04",
-          "count": 11
-        },
-        {
           "date": "2026-05-05",
           "count": 11
         },
@@ -1685,19 +1621,19 @@
         {
           "date": "2026-08-01",
           "count": 17
+        },
+        {
+          "date": "2026-08-02",
+          "count": 15
         }
       ],
       "trend": "rising",
-      "total_count": 935
+      "total_count": 950
     },
     "javascript": {
       "first_seen": "2026-02-02",
       "occurrences": [
         {
-          "date": "2026-05-04",
-          "count": 2
-        },
-        {
           "date": "2026-05-05",
           "count": 2
         },
@@ -1720,19 +1656,19 @@
         {
           "date": "2026-08-01",
           "count": 4
+        },
+        {
+          "date": "2026-08-02",
+          "count": 4
         }
       ],
       "trend": "rising",
-      "total_count": 173
+      "total_count": 177
     },
     "c": {
       "first_seen": "2026-02-02",
       "occurrences": [
         {
-          "date": "2026-05-04",
-          "count": 2
-        },
-        {
           "date": "2026-05-05",
           "count": 2
         },
@@ -1755,10 +1691,14 @@
         {
           "date": "2026-08-01",
           "count": 2
+        },
+        {
+          "date": "2026-08-02",
+          "count": 2
         }
       ],
       "trend": "rising",
-      "total_count": 151
+      "total_count": 153
     },
     "c++": {
       "first_seen": "2026-02-02",
@@ -2031,10 +1971,6 @@
       "first_seen": "2026-02-02",
       "occurrences": [
         {
-          "date": "2026-05-04",
-          "count": 2
-        },
-        {
           "date": "2026-05-05",
           "count": 2
         },
@@ -2057,10 +1993,14 @@
         {
           "date": "2026-08-01",
           "count": 2
+        },
+        {
+          "date": "2026-08-02",
+          "count": 4
         }
       ],
       "trend": "rising",
-      "total_count": 155
+      "total_count": 159
     },
     "dart": {
       "first_seen": "2026-02-02",
@@ -2434,72 +2374,20 @@
       "first_seen": "2026-02-03",
       "occurrences": [
         {
-          "date": "2026-02-20",
-          "count": 3
-        },
-        {
-          "date": "2026-03-04",
-          "count": 8
-        },
-        {
-          "date": "2026-03-07",
-          "count": 8
-        },
-        {
-          "date": "2026-03-08",
-          "count": 8
-        },
-        {
-          "date": "2026-03-09",
-          "count": 3
-        },
-        {
-          "date": "2026-03-10",
-          "count": 8
-        },
-        {
-          "date": "2026-03-13",
-          "count": 8
-        },
-        {
-          "date": "2026-03-17",
-          "count": 3
-        },
-        {
-          "date": "2026-03-23",
-          "count": 3
-        },
-        {
-          "date": "2026-03-27",
-          "count": 3
-        },
-        {
-          "date": "2026-03-28",
-          "count": 3
-        },
-        {
-          "date": "2026-04-01",
-          "count": 8
-        },
-        {
-          "date": "2026-04-09",
-          "count": 3
-        },
-        {
-          "date": "2026-04-13",
-          "count": 8
-        },
-        {
           "date": "2026-05-05",
           "count": 3
         },
         {
           "date": "2026-05-08",
           "count": 8
+        },
+        {
+          "date": "2026-08-02",
+          "count": 3
         }
       ],
-      "trend": "stable",
-      "total_count": 96
+      "trend": "rising",
+      "total_count": 99
     },
     "payments": {
       "first_seen": "2026-02-03",
@@ -2930,40 +2818,16 @@
       "first_seen": "2026-02-03",
       "occurrences": [
         {
-          "date": "2026-02-11",
-          "count": 8
-        },
-        {
-          "date": "2026-02-28",
-          "count": 3
-        },
-        {
-          "date": "2026-03-13",
-          "count": 3
-        },
-        {
-          "date": "2026-03-19",
-          "count": 3
-        },
-        {
-          "date": "2026-03-23",
-          "count": 8
-        },
-        {
-          "date": "2026-04-01",
-          "count": 3
-        },
-        {
-          "date": "2026-04-09",
-          "count": 8
-        },
-        {
           "date": "2026-05-08",
           "count": 8
+        },
+        {
+          "date": "2026-08-02",
+          "count": 3
         }
       ],
-      "trend": "stable",
-      "total_count": 47
+      "trend": "rising",
+      "total_count": 50
     },
     "xai": {
       "first_seen": "2026-02-03",
@@ -2986,10 +2850,14 @@
         {
           "date": "2026-05-05",
           "count": 5
+        },
+        {
+          "date": "2026-08-02",
+          "count": 5
         }
       ],
-      "trend": "new",
-      "total_count": 6
+      "trend": "rising",
+      "total_count": 11
     },
     "maintainer": {
       "first_seen": "2026-02-03",
@@ -3585,213 +3453,33 @@
         {
           "date": "2026-08-01",
           "count": 3
+        },
+        {
+          "date": "2026-08-02",
+          "count": 8
         }
       ],
-      "trend": "new",
-      "total_count": 52
+      "trend": "rising",
+      "total_count": 60
     },
     "writing": {
       "first_seen": "2026-02-04",
       "occurrences": [
         {
-          "date": "2026-02-09",
-          "count": 3
-        },
-        {
-          "date": "2026-02-14",
-          "count": 3
-        },
-        {
-          "date": "2026-02-15",
-          "count": 8
-        },
-        {
-          "date": "2026-02-16",
-          "count": 3
-        },
-        {
-          "date": "2026-02-24",
-          "count": 8
-        },
-        {
-          "date": "2026-02-25",
-          "count": 3
-        },
-        {
-          "date": "2026-02-27",
-          "count": 3
-        },
-        {
-          "date": "2026-03-02",
-          "count": 3
-        },
-        {
-          "date": "2026-03-03",
-          "count": 3
-        },
-        {
-          "date": "2026-03-06",
-          "count": 8
-        },
-        {
-          "date": "2026-03-15",
-          "count": 8
-        },
-        {
-          "date": "2026-03-26",
-          "count": 11
-        },
-        {
-          "date": "2026-03-27",
-          "count": 8
-        },
-        {
-          "date": "2026-03-30",
-          "count": 8
-        },
-        {
-          "date": "2026-03-31",
-          "count": 3
-        },
-        {
-          "date": "2026-04-08",
-          "count": 11
-        },
-        {
-          "date": "2026-04-11",
-          "count": 8
-        },
-        {
-          "date": "2026-04-12",
-          "count": 3
-        },
-        {
-          "date": "2026-05-01",
-          "count": 3
-        },
-        {
-          "date": "2026-05-02",
-          "count": 3
-        },
-        {
           "date": "2026-05-06",
           "count": 8
+        },
+        {
+          "date": "2026-08-02",
+          "count": 3
         }
       ],
-      "trend": "stable",
-      "total_count": 125
+      "trend": "rising",
+      "total_count": 128
     },
     "api": {
       "first_seen": "2026-02-04",
       "occurrences": [
-        {
-          "date": "2026-02-11",
-          "count": 3
-        },
-        {
-          "date": "2026-02-12",
-          "count": 8
-        },
-        {
-          "date": "2026-02-14",
-          "count": 8
-        },
-        {
-          "date": "2026-02-17",
-          "count": 3
-        },
-        {
-          "date": "2026-02-20",
-          "count": 3
-        },
-        {
-          "date": "2026-02-26",
-          "count": 3
-        },
-        {
-          "date": "2026-02-27",
-          "count": 11
-        },
-        {
-          "date": "2026-02-28",
-          "count": 1
-        },
-        {
-          "date": "2026-03-02",
-          "count": 11
-        },
-        {
-          "date": "2026-03-04",
-          "count": 8
-        },
-        {
-          "date": "2026-03-05",
-          "count": 11
-        },
-        {
-          "date": "2026-03-10",
-          "count": 8
-        },
-        {
-          "date": "2026-03-11",
-          "count": 1
-        },
-        {
-          "date": "2026-03-14",
-          "count": 3
-        },
-        {
-          "date": "2026-03-19",
-          "count": 8
-        },
-        {
-          "date": "2026-03-20",
-          "count": 8
-        },
-        {
-          "date": "2026-03-23",
-          "count": 11
-        },
-        {
-          "date": "2026-03-30",
-          "count": 8
-        },
-        {
-          "date": "2026-03-31",
-          "count": 8
-        },
-        {
-          "date": "2026-04-01",
-          "count": 11
-        },
-        {
-          "date": "2026-04-03",
-          "count": 11
-        },
-        {
-          "date": "2026-04-05",
-          "count": 8
-        },
-        {
-          "date": "2026-04-14",
-          "count": 3
-        },
-        {
-          "date": "2026-04-29",
-          "count": 8
-        },
-        {
-          "date": "2026-04-30",
-          "count": 8
-        },
-        {
-          "date": "2026-05-01",
-          "count": 11
-        },
-        {
-          "date": "2026-05-02",
-          "count": 8
-        },
         {
           "date": "2026-05-07",
           "count": 8
@@ -3799,10 +3487,14 @@
         {
           "date": "2026-05-08",
           "count": 8
+        },
+        {
+          "date": "2026-08-02",
+          "count": 8
         }
       ],
-      "trend": "stable",
-      "total_count": 223
+      "trend": "rising",
+      "total_count": 231
     },
     "xcode": {
       "first_seen": "2026-02-04",
@@ -3846,94 +3538,6 @@
       "first_seen": "2026-02-04",
       "occurrences": [
         {
-          "date": "2026-02-14",
-          "count": 2
-        },
-        {
-          "date": "2026-02-17",
-          "count": 2
-        },
-        {
-          "date": "2026-02-25",
-          "count": 5
-        },
-        {
-          "date": "2026-02-28",
-          "count": 5
-        },
-        {
-          "date": "2026-03-01",
-          "count": 1
-        },
-        {
-          "date": "2026-03-02",
-          "count": 5
-        },
-        {
-          "date": "2026-03-03",
-          "count": 1
-        },
-        {
-          "date": "2026-03-06",
-          "count": 1
-        },
-        {
-          "date": "2026-03-07",
-          "count": 5
-        },
-        {
-          "date": "2026-03-08",
-          "count": 5
-        },
-        {
-          "date": "2026-03-09",
-          "count": 2
-        },
-        {
-          "date": "2026-03-13",
-          "count": 5
-        },
-        {
-          "date": "2026-03-15",
-          "count": 5
-        },
-        {
-          "date": "2026-03-17",
-          "count": 1
-        },
-        {
-          "date": "2026-03-21",
-          "count": 6
-        },
-        {
-          "date": "2026-03-27",
-          "count": 1
-        },
-        {
-          "date": "2026-04-06",
-          "count": 6
-        },
-        {
-          "date": "2026-04-10",
-          "count": 1
-        },
-        {
-          "date": "2026-04-12",
-          "count": 1
-        },
-        {
-          "date": "2026-04-29",
-          "count": 5
-        },
-        {
-          "date": "2026-05-03",
-          "count": 1
-        },
-        {
-          "date": "2026-05-04",
-          "count": 1
-        },
-        {
           "date": "2026-05-05",
           "count": 1
         },
@@ -3948,10 +3552,14 @@
         {
           "date": "2026-05-09",
           "count": 5
+        },
+        {
+          "date": "2026-08-02",
+          "count": 5
         }
       ],
-      "trend": "stable",
-      "total_count": 76
+      "trend": "rising",
+      "total_count": 81
     },
     "chain": {
       "first_seen": "2026-02-04",
@@ -4543,16 +4151,12 @@
       "first_seen": "2026-02-05",
       "occurrences": [
         {
-          "date": "2026-02-05",
+          "date": "2026-08-02",
           "count": 3
-        },
-        {
-          "date": "2026-03-01",
-          "count": 8
         }
       ],
-      "trend": "rising",
-      "total_count": 11
+      "trend": "new",
+      "total_count": 14
     },
     "notes": {
       "first_seen": "2026-02-05",
@@ -4611,10 +4215,14 @@
         {
           "date": "2026-08-01",
           "count": 8
+        },
+        {
+          "date": "2026-08-02",
+          "count": 3
         }
       ],
       "trend": "rising",
-      "total_count": 126
+      "total_count": 129
     },
     "html": {
       "first_seen": "2026-02-05",
@@ -6191,40 +5799,12 @@
       "first_seen": "2026-02-10",
       "occurrences": [
         {
-          "date": "2026-02-10",
-          "count": 3
-        },
-        {
-          "date": "2026-02-21",
-          "count": 3
-        },
-        {
-          "date": "2026-03-06",
-          "count": 8
-        },
-        {
-          "date": "2026-03-09",
-          "count": 3
-        },
-        {
-          "date": "2026-03-31",
-          "count": 8
-        },
-        {
-          "date": "2026-04-02",
-          "count": 8
-        },
-        {
-          "date": "2026-04-06",
-          "count": 8
-        },
-        {
-          "date": "2026-04-12",
-          "count": 8
+          "date": "2026-08-02",
+          "count": 11
         }
       ],
-      "trend": "rising",
-      "total_count": 49
+      "trend": "new",
+      "total_count": 60
     },
     "languages": {
       "first_seen": "2026-02-10",
@@ -6524,24 +6104,12 @@
       "first_seen": "2026-02-11",
       "occurrences": [
         {
-          "date": "2026-02-11",
-          "count": 3
-        },
-        {
-          "date": "2026-02-22",
-          "count": 3
-        },
-        {
-          "date": "2026-03-30",
-          "count": 3
-        },
-        {
-          "date": "2026-04-30",
+          "date": "2026-08-02",
           "count": 3
         }
       ],
-      "trend": "rising",
-      "total_count": 12
+      "trend": "new",
+      "total_count": 15
     },
     "crypto": {
       "first_seen": "2026-02-11",
@@ -9208,10 +8776,14 @@
         {
           "date": "2026-07-31",
           "count": 3
+        },
+        {
+          "date": "2026-08-02",
+          "count": 8
         }
       ],
-      "trend": "new",
-      "total_count": 31
+      "trend": "rising",
+      "total_count": 39
     },
     "wallpaper": {
       "first_seen": "2026-02-19",
@@ -16678,12 +16250,12 @@
       "first_seen": "2026-04-05",
       "occurrences": [
         {
-          "date": "2026-04-05",
+          "date": "2026-08-02",
           "count": 4
         }
       ],
       "trend": "new",
-      "total_count": 4
+      "total_count": 8
     },
     "민호": {
       "first_seen": "2026-04-05",
@@ -19806,25 +19378,141 @@
       ],
       "trend": "new",
       "total_count": 5
+    },
+    "simulation games": {
+      "first_seen": "2026-08-02",
+      "occurrences": [
+        {
+          "date": "2026-08-02",
+          "count": 3
+        }
+      ],
+      "trend": "new",
+      "total_count": 3
+    },
+    "animation": {
+      "first_seen": "2026-08-02",
+      "occurrences": [
+        {
+          "date": "2026-08-02",
+          "count": 3
+        }
+      ],
+      "trend": "new",
+      "total_count": 3
+    },
+    "이수현": {
+      "first_seen": "2026-08-02",
+      "occurrences": [
+        {
+          "date": "2026-08-02",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "aig 여자오픈": {
+      "first_seen": "2026-08-02",
+      "occurrences": [
+        {
+          "date": "2026-08-02",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "이정효": {
+      "first_seen": "2026-08-02",
+      "occurrences": [
+        {
+          "date": "2026-08-02",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "코트디부아르 축구 국가대표팀": {
+      "first_seen": "2026-08-02",
+      "occurrences": [
+        {
+          "date": "2026-08-02",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "gq": {
+      "first_seen": "2026-08-02",
+      "occurrences": [
+        {
+          "date": "2026-08-02",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "inter miami vs columbus": {
+      "first_seen": "2026-08-02",
+      "occurrences": [
+        {
+          "date": "2026-08-02",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "투자 전략": {
+      "first_seen": "2026-08-02",
+      "occurrences": [
+        {
+          "date": "2026-08-02",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "한국경제tv": {
+      "first_seen": "2026-08-02",
+      "occurrences": [
+        {
+          "date": "2026-08-02",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "화이트캡스 대 엘에이 fc": {
+      "first_seen": "2026-08-02",
+      "occurrences": [
+        {
+          "date": "2026-08-02",
+          "count": 4
+        }
+      ],
+      "trend": "new",
+      "total_count": 4
+    },
+    "macos": {
+      "first_seen": "2026-08-02",
+      "occurrences": [
+        {
+          "date": "2026-08-02",
+          "count": 5
+        }
+      ],
+      "trend": "new",
+      "total_count": 5
     }
   },
   "daily_summaries": [
-    {
-      "date": "2026-05-04",
-      "top_keywords": [
-        "developer tools",
-        "artificial intelligence",
-        "typescript",
-        "open source",
-        "github",
-        "venture capital",
-        "productivity",
-        "python",
-        "development",
-        "hiring"
-      ],
-      "total_keywords": 41
-    },
     {
       "date": "2026-05-05",
       "top_keywords": [
@@ -19952,33 +19640,25 @@
         "mac"
       ],
       "total_keywords": 42
+    },
+    {
+      "date": "2026-08-02",
+      "top_keywords": [
+        "productivity",
+        "artificial intelligence",
+        "developer tools",
+        "python",
+        "typescript",
+        "open source",
+        "apple",
+        "email",
+        "api",
+        "ios"
+      ],
+      "total_keywords": 40
     }
   ],
   "metrics": {
-    "2026-05-03": {
-      "product_hunt": {
-        "avgVotes": 132,
-        "maxVotes": 239,
-        "avgComments": 10,
-        "totalItems": 10
-      },
-      "hacker_news": {
-        "avgPoints": 185,
-        "maxPoints": 689,
-        "avgComments": 62,
-        "totalItems": 15
-      },
-      "github_trending": {
-        "avgStarsToday": 0,
-        "maxStarsToday": 0,
-        "totalItems": 15
-      },
-      "youtube_trending": {
-        "avgViews": 678576,
-        "maxViews": 2842103,
-        "totalItems": 20
-      }
-    },
     "2026-05-04": {
       "product_hunt": {
         "avgVotes": 145,
@@ -20184,27 +19864,33 @@
         "maxViews": 712289,
         "totalItems": 20
       }
+    },
+    "2026-08-02": {
+      "product_hunt": {
+        "avgVotes": 157,
+        "maxVotes": 273,
+        "avgComments": 15,
+        "totalItems": 10
+      },
+      "hacker_news": {
+        "avgPoints": 111,
+        "maxPoints": 345,
+        "avgComments": 48,
+        "totalItems": 15
+      },
+      "github_trending": {
+        "avgStarsToday": 0,
+        "maxStarsToday": 0,
+        "totalItems": 15
+      },
+      "youtube_trending": {
+        "avgViews": 273204,
+        "maxViews": 719071,
+        "totalItems": 20
+      }
     }
   },
   "comparisons": {
-    "2026-05-03": {
-      "vs_yesterday": {
-        "product_hunt": {
-          "votesChange": -16,
-          "maxVotesChange": -34
-        },
-        "hacker_news": {
-          "pointsChange": 19,
-          "maxPointsChange": 78
-        },
-        "github_trending": {
-          "starsChange": null
-        },
-        "youtube_trending": {
-          "viewsChange": 2
-        }
-      }
-    },
     "2026-05-04": {
       "vs_yesterday": {
         "product_hunt": {
@@ -20424,6 +20110,24 @@
         },
         "youtube_trending": {
           "viewsChange": 6
+        }
+      }
+    },
+    "2026-08-02": {
+      "vs_yesterday": {
+        "product_hunt": {
+          "votesChange": -13,
+          "maxVotesChange": -13
+        },
+        "hacker_news": {
+          "pointsChange": -42,
+          "maxPointsChange": -58
+        },
+        "github_trending": {
+          "starsChange": null
+        },
+        "youtube_trending": {
+          "viewsChange": 3
         }
       }
     }
